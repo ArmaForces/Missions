@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>AMM - Operacja Statek-Samolot</Polish>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Operacja Statek-Samolot</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <Polish>Koalicja skandynawska rusza odbić rosyjską wyspę pod władaniem duńskim, w zatoce fińskiej, okupowaną przez Koreę Północną.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <Polish>Koalicja skandynawska rusza odbić rosyjską wyspę pod władaniem duńskim, w zatoce fińskiej, okupowaną przez Koreę Północną.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <Polish>Korea Północna dokonała inwazji na rosyjską wyspę pod władaniem duńskim w zatoce fińskiej i umieścili tam ważne cele. 
+Nie wiadomo jak udało im się tam dostać, jak przemycili na Bałtyk 3 fregaty i lotniskowiec, ani tym bardziej skąd wytrzasnęli lotniskowiec.
+
+Koalicja skandynawska, złożona z Duńczyków, Norwegów i Szwedów zebrała siły i przygotowuje się do operacji odbicia wyspy. 
+Duńczycy wystawili fregatę i jednego F-16, Norwegowie dorzucili swojego F-16 oraz drużynę piechoty, a Szwedzi Blackhawka i 2 drużyny piechoty. 
+Razem stawią czoła flocie Hu Ju Sona z zadaniem odbicia wyspy oraz znalezienia odpowiedzi na nurtujące nas pytania.</Key>
+
+        <!-- TASKS -->
+
+        <!-- NAVY -->
+        <Key ID="STR_AFP_Scripts_Task_Navy_Title">
+            <Polish>Zneutralizuj północnokoreańską marynarkę wojenną</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Navy_Description">
+            <Polish>W skład marynarki wojennej wchodzą 3 fregaty i lotniskowiec.
+Lotniskowca nie damy rady zniszczyć, ale fregaty już można, a nawet trzeba.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AircraftCarrier_Title">
+            <Polish>Zneutralizuj lotniskowiec</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AircraftCarrier_Description">
+            <Polish>Niestety nie damy rady go zniszczyć, prawdopodobnie będziemy zmuszeni go przejąć poprzez abordaż.
+Może jednak w trakcie misji uda nam się coś wymyślić.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Frigates_Title">
+            <Polish>Zatop fregaty</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Frigates_Description">
+            <Polish>Zatopienie fregat jest kluczowe dla powodzenia misji.
+W przeciwnym razie nie będziemy w stanie przebić się na główną wyspę i będziemy musieli odwołać misję, żeby uniknąć olbrzymich strat.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Frigate_Title">
+            <Polish>Zatop fregatę</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Frigate_Description">
+            <Polish>Każda fregata uzbrojona jest w działo artyleryjskie, przeciwokrętowe pociski manewrujące, rakiety przeciwlotnicze oraz działko przeciwlotnicze C-RAM.
+Zniszczenie fregaty będzie prostsze jeżeli nasza fregata skupi na sobie ogień wrogiej, a lotnictwo w tym czasie spróbuje ją zbombardować.</Polish>
+        </Key>
+
+
+        <!-- AIRFIELD -->
+        <Key ID="STR_AFP_Scripts_Task_Airfield_Title">
+            <Polish>Zajmij lotnisko</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Airfield_Description">
+            <Polish>Pierwszym celem jest zajęcie lotniska, które stanowić będzie naszą bazę wypadową podczas operacji na głównej wyspie.
+Uwaga, na lotnisku może znajdować się broń przeciwlotnicza.</Polish>
+        </Key>
+
+        <!-- ANTI SHIP BATTERY -->
+        <Key ID="STR_AFP_Scripts_Task_AntiShipBattery_Title">
+            <Polish>Zlikwiduj obronę przeciwokrętową</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AntiShipBattery_Description">
+            <Polish>Umożliwi to sojuszniczej fregacie swobodne operowanie na wodach wokół głównej wyspy.</Polish>
+        </Key>
+
+        <!-- COMMS -->
+        <Key ID="STR_AFP_Scripts_Task_Comms_Title">
+            <Polish>Zniszcz wieżę komunikacyjną.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Comms_Description">
+            <Polish>Zniszczenie tej wieży uniemożliwi przeciwnikowi powiadomienie reszty sił o ataku.</Polish>
+        </Key>
+
+
+        <!-- ISLAND -->
+        <Key ID="STR_AFP_Scripts_Task_Island_Title">
+            <Polish>Zneutralizuj siły przeciwnika na wyspie</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Island_Description">
+            <Polish>Koreańczycy umieścili swoją obronę przeciwlotniczą i przeciwokrętową na sąsiedniej wyspie.
+Uniemożliwia ona operowanie naszemu lotnictwu i marynarce.
+Należy ją jak najszybciej zneutralizować.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_IslandAntiAirWeapons_Title">
+            <Polish>Zlikwiduj obronę przeciwlotniczą</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_IslandAntiAirWeapons_Description">
+            <Polish>Umożliwi to sojuszniczemu lotnictwu swobodne operowanie w przestrzeni powietrznej na zachodzie głównej wyspy.</Polish>
+        </Key>
+
+        <!-- AIRFIELD HQ -->
+        <Key ID="STR_AFP_Scripts_Task_AirfieldHQ_Title">
+            <Polish>Załóż bazę polową na lotnisku (opcjonalne)</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AirfieldHQ_Description">
+            <Polish>Na lotnisku możemy założyć bazę polową</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AirfieldFieldHospital_Title">
+            <Polish>Załóż szpital polowy (opcjonalne)</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AirfieldFieldHospital_Description">
+            <Polish>Szpital umożliwi nam szybsze leczenie rannych oraz zapewni dodatkowe zapasy medyczne. By go zbudować potrzebujemy 2 kartonów medycznych.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AirfieldServiceDepot_Title">
+            <Polish>Załóż punkt serwisowy (opcjonalne)</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AirfieldServiceDepot_Description">
+            <Polish>Punkt serwisowy umożliwi nam naprawę i przezbrojenie pojazdów. By go zbudować potrzebujemy pudła i beczek.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AirfieldInfantryArmory_Title">
+            <Polish>Załóż zbrojownię (opcjonalne)</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AirfieldInfantryArmory_Description">
+            <Polish>Zbrojownia dostarczy nam amunicji na piechoty. by ją zbudować potrzebujemy brązowych kartonów.</Polish>
+        </Key>
+
+        <!-- MAIN ISLAND -->
+        <Key ID="STR_AFP_Scripts_Task_FindImportantTargets_Title">
+            <Polish>Znajdź ważne cele</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_FindImportantTargets_Description">
+            <Polish>Koreańczycy umieścili na głównej wyspie ważne cele. Trzeba je znaleźć i postąpić odpowiednio, tj. zabezpieczyć, nie niszczyć.</Polish>
+        </Key>
+
+        <!-- ARTIFACTS -->
+        <Key ID="STR_AFP_Scripts_Task_Artifacts_Title">
+            <Polish>Znajdź artefakty</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Artifacts_Description">
+            <Polish>Intel na lotnisku wskazuje na obecność 3 bezcennych artefaktów na wyspie. Być może po to przybyli tu koreańczycy. Znajdźcie je i przywieźcie do bazy polowej, zostawcie w oznaczonej strefie.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_CingDzban_Title">
+            <Polish>Cing Dzban</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_CingMiska_Title">
+            <Polish>Cing Miska</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_CingFajkaWodna_Title">
+            <Polish>Cing Fajka Wodna</Polish>
+        </Key>
+
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <Original>Close</Original>
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <Original>Rename</Original>
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <Original>Custom</Original>
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
