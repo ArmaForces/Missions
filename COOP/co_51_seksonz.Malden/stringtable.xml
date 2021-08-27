@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>SEKSONZ - Dosadašnje Sranje</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English>Late afternoon 24 may 1994.</English>
+            <Polish>Późne popołudnie 24 maja 1994 roku.</Polish>
+        </Key>
+
+        <!--
+            RTB action handling
+        -->
+
+        <Key ID="STR_AFP_Scripts_StartRTB">
+            <English>Order return to base</English>
+            <Polish>Zarządź powrót do bazy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_FinishRTB">
+            <English>Finish return to base</English>
+            <Polish>Zakończ powrót do bazy</Polish>
+        </Key>
+
+        <!--
+            Tasks
+        -->
+
+        <Key ID="STR_AFP_Scripts_Task_RescueCivilians_Title">
+            <English>Evacuate civilian population</English>
+            <Polish>Ewakuuj ludność cywilną</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RescueCivilians_Description">
+            <English>All encountered civilians shall be evacuated to our base of operation, where they will be taken care of. It's best to group them into trucks and then transport rather than each one separately. Be advised, they might carry concealed firearms so search them ASAP.</English>
+            <Polish>Wszystkich napotkanych cywili musicie ewakuować do naszego posterunku gdzie zostaną oni objęci pomocą humanitarną. Najlepiej pakować ich do ciężarówek i wywozić grupami. Uważajcie jednak, część z nich może próbować przemycić broń, więc przeszukujcie przed ewakuowaniem ich.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Scripts_Task_GravesInvestigation_Title">
+            <English>Investigate graves</English>
+            <Polish>Zbadaj groby</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_GravesInvestigation_Description">
+            <English>Investigate graves and check if you can find more around.</English>
+            <Polish>Przeprowadź wizję lokalną grobów. Spróbuj znaleźć więcej.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Scripts_Task_ArrestGeneral_Title">
+            <English>Arrest general</English>
+            <Polish>Aresztuj generała</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_ArrestGeneral_Description">
+            <English>Commander of local Croatian forces will know more about our graves stuff. We need him alive at HQ ASAP.</English>
+            <Polish>Dowódca lokalnych sił chorwackich na pewno coś wie o tych grobach. Potrzebujemy dostarczyć go żywcem do bazy.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Scripts_Task_RTB_Title">
+            <English>Return to base</English>
+            <Polish>Powrót do bazy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RTB_Description">
+            <English>All units must return to base ASAP. Ending this task is possible for highest ranked person among alive ones, using satcom in base.</English>
+            <Polish>Wszystkie jednostki mają powrócić do bazy. Zakończenie zadania jest możliwe przez osoby najwyższe rangą spośród żyjących, przy użyciu satcomu w bazie.</Polish>
+        </Key>
+
+        <!--
+            Mission ending
+        -->
+
+        <Key ID="STR_AFP_Scripts_Debriefing_Success_Title">
+            <English>Mission Completed!</English>
+            <Polish>Misja ukończona!</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Debriefing_Success_Subtitle">
+            <English>Successfully rescued civilians and secured convoy route.</English>
+            <Polish>Ewakuowaliśmy ludność cywilną i zabezpieczyliśmy trasę konwoju.</Polish>
+        </Key>
+
+        <!--
+            AWACS Stuff
+        -->
+        <Key ID="STR_AFP_Scripts_AWACS_DetectedMessage">
+            <English>Detected %1 on %2 from You. Distance: %3 km</English>
+            <Polish>Wykryto %1 na %2 od Twojej pozycji. Odległość: %3 km</Polish>
+        </Key>
+        <!--
+            Rearm script
+        -->
+        <Key ID="STR_AFP_Scripts_AWACS_DetectedMessage">
+            <English>Rearm interface</English>
+            <Polish>Panel przezbrojenia</Polish>
+        </Key>
+
+    </Package>
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+		<!-- COMMON -->
+		<Key ID="STR_ArmaForces_Preset_Dialog_Close">
+			<Original>Close</Original>
+			<English>Close</English>
+			<Polish>Zamknij</Polish>
+		</Key>
+		<!-- GROUP RENAME -->
+		<Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+			<Original>Rename</Original>
+			<English>Rename</English>
+			<Polish>Zmień nazwę</Polish>
+		</Key>
+		<!-- VIEW DISTANCE -->
+		<Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+			<Original>Custom</Original>
+			<English>Custom</English>
+			<Polish>Ustaw własną</Polish>
+		</Key>
+	</Package>
+</Project>
