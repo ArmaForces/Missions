@@ -2,20 +2,30 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
+            <English>AMM - Operation Ship Plane</English>
             <Polish>AMM - Operacja Statek-Samolot</Polish>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
+            <English>Operation Ship Plane</English>
             <Polish>Operacja Statek-Samolot</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <Polish>Koalicja skandynawska rusza odbić rosyjską wyspę pod władaniem duńskim, w zatoce fińskiej, okupowaną przez Koreę Północną.</Polish>
+            <English>Scandinavian coalition, composed of Danish, Norwegian and Swedish forces prepares to retake the island occupied by North Korea.</English>
+            <Polish>Koalicja skandynawska złożona z Duńczyków, Norwegów i Szwedów przygotowuje się do odbicia wyspy okupowanej przez Koreę Północną.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <Polish>Koalicja skandynawska rusza odbić rosyjską wyspę pod władaniem duńskim, w zatoce fińskiej, okupowaną przez Koreę Północną.</Polish>
+            <English>Scandinavian coalition, composed of Danish, Norwegian and Swedish forces prepares to retake the island occupied by North Korea.</English>
+            <Polish>Koalicja skandynawska złożona z Duńczyków, Norwegów i Szwedów przygotowuje się do odbicia wyspy okupowanej przez Koreę Północną.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <English>North Korea invaded Russian island under Danish control in Gulf of Finland. 
+No one knows how they managed to get there unnoticed, how they smuggled 3 frigates and an aircraft carrier to Baltic Sea, and even how the hell did they get an aircraft carrier.
+
+Scandinavian coalition, composed of Danish, Norwegian and Swedish forces prepares to retake the island. 
+Danes prepared a frigate, a F-16 and an infantry squad, Norwegians added their F-16 and an infantry squad and Swedes fielded 2 Blackhawks and 2 infantry squads. 
+Together they will face Hu Ju Son's fleet with the task of retaking the island and finding answers to the questions bothering us.</English>
             <Polish>Korea Północna dokonała inwazji na rosyjską wyspę pod władaniem duńskim w zatoce fińskiej i umieścili tam ważne cele. 
 Nie wiadomo jak udało im się tam dostać, jak przemycili na Bałtyk 3 fregaty i lotniskowiec, ani tym bardziej skąd wytrzasnęli lotniskowiec.
 
@@ -27,30 +37,42 @@ Razem stawią czoła flocie Hu Ju Sona z zadaniem odbicia wyspy oraz znalezienia
 
         <!-- NAVY -->
         <Key ID="STR_AFP_Scripts_Task_Navy_Title">
-            <Polish>Zneutralizuj północnokoreańską marynarkę wojenną</Polish>
+            <English>Neutralize Hu Ju Son's fleet</English>
+            <Polish>Zneutralizuj flotę Hu Ju Sona</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Navy_Description">
-            <Polish>W skład marynarki wojennej wchodzą 3 fregaty i lotniskowiec.
+            <English>Hu Ju Son's fleet consists of 3 frigates and an aircraft carrier. 
+We will not be able to destroy the aircraft carrier but we can, and even must destroy the frigates.</English>
+            <Polish>W skład floty Hu Ju Sona wchodzą 3 fregaty i lotniskowiec. 
 Lotniskowca nie damy rady zniszczyć, ale fregaty już można, a nawet trzeba.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AircraftCarrier_Title">
+            <English>Neutralize the aircraft carrier</English>
             <Polish>Zneutralizuj lotniskowiec</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AircraftCarrier_Description">
+            <English>Unfortunately we will not be able to destroy it, probably we will need to board it. 
+Maybe we will come up with something during the mission.</English>
             <Polish>Niestety nie damy rady go zniszczyć, prawdopodobnie będziemy zmuszeni go przejąć poprzez abordaż.
 Może jednak w trakcie misji uda nam się coś wymyślić.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Frigates_Title">
+            <English>Sink frigates</English>
             <Polish>Zatop fregaty</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Frigates_Description">
+            <English>Sinking the frigates is crucial to mission's success. 
+Otherwise we will not be able to reach the main island and we will need to cancel the mission to avoid extensive casualties.</English>
             <Polish>Zatopienie fregat jest kluczowe dla powodzenia misji.
 W przeciwnym razie nie będziemy w stanie przebić się na główną wyspę i będziemy musieli odwołać misję, żeby uniknąć olbrzymich strat.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Frigate_Title">
+            <English>Sink frigate</English>
             <Polish>Zatop fregatę</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Frigate_Description">
+            <English>Each frigate is armed with artillery cannon, antiship cruise missiles, anti air missiles and C-RAM minigun. 
+Destroying enemy frigate will be easier if they focus on our frigate and our air assets tries to bomb them.</English>
             <Polish>Każda fregata uzbrojona jest w działo artyleryjskie, przeciwokrętowe pociski manewrujące, rakiety przeciwlotnicze oraz działko przeciwlotnicze C-RAM.
 Zniszczenie fregaty będzie prostsze jeżeli nasza fregata skupi na sobie ogień wrogiej, a lotnictwo w tym czasie spróbuje ją zbombardować.</Polish>
         </Key>
@@ -58,103 +80,133 @@ Zniszczenie fregaty będzie prostsze jeżeli nasza fregata skupi na sobie ogień
 
         <!-- AIRFIELD -->
         <Key ID="STR_AFP_Scripts_Task_Airfield_Title">
+            <English>Capture the airfield</English>
             <Polish>Zajmij lotnisko</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Airfield_Description">
+            <English>First task is to capture the airfield, which will be our field base during the operation. 
+Watch out, there may be enemy AA on the airfield.</English>
             <Polish>Pierwszym celem jest zajęcie lotniska, które stanowić będzie naszą bazę wypadową podczas operacji na głównej wyspie.
 Uwaga, na lotnisku może znajdować się broń przeciwlotnicza.</Polish>
         </Key>
 
         <!-- ANTI SHIP BATTERY -->
         <Key ID="STR_AFP_Scripts_Task_AntiShipBattery_Title">
+            <English>Eliminate anti ship defense</English>
             <Polish>Zlikwiduj obronę przeciwokrętową</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AntiShipBattery_Description">
+            <English>Destroying it will allow our frigate to operate freely on nearby waters.</English>
             <Polish>Umożliwi to sojuszniczej fregacie swobodne operowanie na wodach wokół głównej wyspy.</Polish>
         </Key>
 
         <!-- COMMS -->
         <Key ID="STR_AFP_Scripts_Task_Comms_Title">
+            <English>Destroy the comms tower.</English>
             <Polish>Zniszcz wieżę komunikacyjną.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Comms_Description">
+            <English>Destroying this comms tower will make enemy unable to contact the main island and warn them about the invasion.</English>
             <Polish>Zniszczenie tej wieży uniemożliwi przeciwnikowi powiadomienie reszty sił o ataku.</Polish>
         </Key>
 
 
         <!-- ISLAND -->
         <Key ID="STR_AFP_Scripts_Task_Island_Title">
+            <English>Neutralize enemy forces on the island.</English>
             <Polish>Zneutralizuj siły przeciwnika na wyspie</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Island_Description">
+            <English>Koreans set up their anti air and anti ship defense on neighboring island. 
+It makes our navy and air force to operate. 
+It must be neutralized ASAP.</English>
             <Polish>Koreańczycy umieścili swoją obronę przeciwlotniczą i przeciwokrętową na sąsiedniej wyspie.
 Uniemożliwia ona operowanie naszemu lotnictwu i marynarce.
 Należy ją jak najszybciej zneutralizować.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_IslandAntiAirWeapons_Title">
+            <English>Eliminate AA defense</English>
             <Polish>Zlikwiduj obronę przeciwlotniczą</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_IslandAntiAirWeapons_Description">
+            <English>It will enable our air assets to operate freely in airspace west of the main island.</English>
             <Polish>Umożliwi to sojuszniczemu lotnictwu swobodne operowanie w przestrzeni powietrznej na zachodzie głównej wyspy.</Polish>
         </Key>
 
         <!-- AIRFIELD HQ -->
         <Key ID="STR_AFP_Scripts_Task_AirfieldHQ_Title">
+            <English>Set up a field base at the airfield (optional)</English>
             <Polish>Załóż bazę polową na lotnisku (opcjonalne)</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AirfieldHQ_Description">
-            <Polish>Na lotnisku możemy założyć bazę polową</Polish>
+            <English>We can set up a field base at the airfield.</English>
+            <Polish>Na lotnisku możemy założyć bazę polową.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AirfieldFieldHospital_Title">
+            <English>Set up a field hospital (optional)</English>
             <Polish>Załóż szpital polowy (opcjonalne)</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AirfieldFieldHospital_Description">
+            <English>Field hospital will allow us to heal our men faster and will provide us with additional medical supplies. To build it we need 2 boxes of medical supplies.</English>
             <Polish>Szpital umożliwi nam szybsze leczenie rannych oraz zapewni dodatkowe zapasy medyczne. By go zbudować potrzebujemy 2 kartonów medycznych.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AirfieldServiceDepot_Title">
+            <English>Set up a service point (optional)</English>
             <Polish>Załóż punkt serwisowy (opcjonalne)</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AirfieldServiceDepot_Description">
+            <English>Service point will allow us to repair and rearm our vehicles. To build it we need a big box and a one barrels pallet.</English>
             <Polish>Punkt serwisowy umożliwi nam naprawę i przezbrojenie pojazdów. By go zbudować potrzebujemy pudła i beczek.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AirfieldInfantryArmory_Title">
+            <English>Set up an armory (optional)</English>
             <Polish>Załóż zbrojownię (opcjonalne)</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_AirfieldInfantryArmory_Description">
+            <English>Armory will provide the ammunition for infantry. To build it we need brown boxes.</English>
             <Polish>Zbrojownia dostarczy nam amunicji na piechoty. by ją zbudować potrzebujemy brązowych kartonów.</Polish>
         </Key>
 
         <!-- MAIN ISLAND -->
         <Key ID="STR_AFP_Scripts_Task_FindImportantTargets_Title">
+            <English>Locate important targets</English>
             <Polish>Znajdź ważne cele</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_FindImportantTargets_Description">
+            <English>Koreans placed important targets on the main island. They need to be located and secured, not destroyed.</English>
             <Polish>Koreańczycy umieścili na głównej wyspie ważne cele. Trzeba je znaleźć i postąpić odpowiednio, tj. zabezpieczyć, nie niszczyć.</Polish>
         </Key>
 
         <!-- ARTIFACTS -->
         <Key ID="STR_AFP_Scripts_Task_Artifacts_Title">
+            <English>Locate the artifacts</English>
             <Polish>Znajdź artefakty</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Artifacts_Description">
+            <English>Airfield intel tells about presence of 3 priceless artifact on the island. Probably this is why Koreans came here. Find them and deliver them to the field base, leave in the marked area.</English>
             <Polish>Intel na lotnisku wskazuje na obecność 3 bezcennych artefaktów na wyspie. Być może po to przybyli tu koreańczycy. Znajdźcie je i przywieźcie do bazy polowej, zostawcie w oznaczonej strefie.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_CingDzban_Title">
+            <English>Cing jug</English>
             <Polish>Cing Dzban</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_CingMiska_Title">
+            <English>Cing bowl</English>
             <Polish>Cing Miska</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_CingFajkaWodna_Title">
+            <English>Cing water pipe</English>
             <Polish>Cing Fajka Wodna</Polish>
         </Key>
 
 
         <!-- EVAC -->
         <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evacuation</English>
             <Polish>Ewakuacja</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
             <Polish>Powrót do bazy.</Polish>
         </Key>
 
