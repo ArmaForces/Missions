@@ -30,9 +30,9 @@ Scandinavian coalition, composed of Danish, Norwegian and Swedish forces prepare
 
 ### Execution
 
-Infantry starts splitted, 2 squads start on the coast of the island with the airfield (they form a first group), the remaining 2 start on a small island to the east (they are a second group). First group should remain silent until the second group destroys the comms tower, which will disable the communications of the airfield with the main island. After that both groups must eliminate all hostiles on both islands, taking control of them. When AA is eliminated, the air assets can enter their vehicles and start from an aircraft carrier.
+Infantry starts splitted. 2 squads start on the coast of the island with the airfield (they form a first group), the remaining 2 start on a small island to the east (they are a second group). First group should remain silent until the second group destroys the comms tower, which will disable the communications of the airfield with the main island. After that both groups must eliminate all hostiles on both islands, taking control of them. When AA is eliminated, the air assets can enter their vehicles and start from an aircraft carrier.
 
-When airfield is secured, helicopters may deliver the boxes (which are on the aircraft carrier) which can be used to build the field HQ. They should load the boxes inside the helicopters through ACE Cargo, otherwise they may unrecoverably lose the cargo mid-flight and you will need to choose which parts of field HQ you need.
+When airfield is secured, helicopters may deliver the boxes (which are on the aircraft carrier) which can be used to build the field HQ. They should load the boxes inside the helicopters through ACE Cargo instead of using sling loading, otherwise they may unrecoverably lose the cargo mid-flight and some parts of the field HQ may be not available.
 
 After regrouping and rearming you need to start the search for the artifacts on the main island. You might have found some intel at the airfield or the neighboring island, which may point you to the first spot (or tell you where not to search). You may use the planes for recon (as long as they are still alive), focus on interesting points like buildings, don't look in the middle of nowhere. Follow the intel you find along the mission (if any).
 
@@ -61,3 +61,7 @@ Total slots: 51
 
 - 2019-07-17
 - 2021-07-21 (upgraded version)
+
+## Authors
+
+- 3Mydlo3
