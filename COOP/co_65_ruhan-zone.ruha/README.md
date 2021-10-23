@@ -10,7 +10,14 @@ TODO: Fill
 
 ## Assets
 
-TODO:
+- Company HQ (3 man)
+- 2 Platoon HQ (3 man)
+  - 3 infantry squads each (8 man each)
+- Stryker ATGM (3 man)
+- Logistics detachment (3 man)
+
+Zeus slots: 2
+Total slots: 65
 
 ## Played on
 
