@@ -22,7 +22,7 @@ onLoadName = CSTRING(Mission_Title);
 class Header {
     gameType = Coop;
     minPlayers = 20;
-    maxPlayers = 51;
+    maxPlayers = 56;
 };
 
 /* Other stuff */

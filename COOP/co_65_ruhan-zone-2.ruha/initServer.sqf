@@ -1,21 +1,37 @@
 #include "script_component.hpp"
 
+// Disable AF Friendly Tracker
+["CBA_settingsInitialized", {
+    [QAFFTGVAR(enabled), false, 0, "server"] call CBA_settings_fnc_set;
+}] call CBA_fnc_addEventHandler;
+
 {
     [_x] call FUNC(hideAllMarkersInLayer);
 } forEach [
-    "1-RuhanperaSecured",
-    "2-HietalaSecured",
-    "3-KaracostamSecured",
-    "4-CounterattackSuccessfull",
-    "5-CounterattackKaracostam",
-    "6-CounterattackHietala",
-    "7-LZMonkeLost"
+    "1-ConstructionSiteEmpty",
+    "2-RuhaCounterattackSuccess"
 ];
 
-["RuhanperaSecured", {
-    ["0-Starting markers"] call FUNC(deleteAllMarkersInLayer);
-    ["1-RuhanperaSecured"] call FUNC(showAllMarkersInLayer);
+["EnableFriendlyTracker", {
+    [QAFFTGVAR(enabled), true, 0, "server"] call CBA_settings_fnc_set;
 }] call CBA_fnc_addEventHandler;
+
+["BravoDead", {
+    ["ReachedConstructionSite"] call CBA_fnc_localEvent;
+}] call CBA_fnc_addEventHandler;
+
+["ReachedConstructionSite", {
+    ["0-Starting markers"] call FUNC(deleteAllMarkersInLayer);
+    ["1-ConstructionSiteEmpty"] call FUNC(showAllMarkersInLayer);
+}] call CBA_fnc_addEventHandler;
+
+["EstablishedBridgeheadInNorthernRuha", {
+    ["1-ConstructionSiteEmpty"] call FUNC(deleteAllMarkersInLayer);
+    ["2-RuhaCounterattackSuccess"] call FUNC(showAllMarkersInLayer);
+}] call CBA_fnc_addEventHandler;
+
+
+// FROM PREVIOUS MISSION BELOW
 
 ["HietalaSecured", {
     ["1-RuhanperaSecured"] call FUNC(deleteAllMarkersInLayer);

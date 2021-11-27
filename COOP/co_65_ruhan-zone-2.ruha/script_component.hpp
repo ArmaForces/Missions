@@ -36,6 +36,19 @@
 #define PATHTOAFMF(var1,var2) PATHTOF_SYS(\x\afm\addons,var1,var2)
 #define QPATHTOAFMF(var1,var2) QUOTE(PATHTOAFMF(var1,var2))
 
+// AF Friendly Tracker
+#define AFFT_PREFIX afft
+#define AFFT_MODULE friendly_tracker
+
+#define AFFTGVAR(var) TRIPLES(AFFT_PREFIX,AFFT_MODULE,var)
+#define QAFFTGVAR(var) QUOTE(AFFTGVAR(AFFT_MODULE,var))
+
+#define AFFTFUNC(var1,var2) TRIPLES(DOUBLES(AFFT_PREFIX,var1),fnc,var2)
+#define QAFFTFUNC(var1,var2) QUOTE(AFFTFUNC(var1,var2))
+
+#define PATHTOAFFT(var1,var2) PATHTOF_SYS(\x\afft\addons,var1,var2)
+#define QPATHTOAFFT(var1,var2) QUOTE(PATHTOAFFT(var1,var2))
+
 // Preset stuff
 #define RESPAWN_HELPER_VR respawn
 

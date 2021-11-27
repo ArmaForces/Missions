@@ -1,5 +1,5 @@
 class CfgTasks {
-    class RuhanZone {
+    class RuhanZone2 {
         title = CSTRING(Mission_Title);
         description = CSTRING(Mission_Briefing);
         icon = "target";
@@ -7,181 +7,70 @@ class CfgTasks {
         conditionEventsSuccess[] = { "BangingComplete" };
     };
 
-    // Landing
-    class Land {
-        title = CSTRING(Task_Land_Title);
-        description = CSTRING(Task_Land_Description);
-        marker = "lz_monke";
-        parentTask = "RuhanZone";
-        icon = "land";
+    // Mission start
 
-        conditionEventsSuccess[] = { "LZMonke" };
-    };
-
-    // Attack
-    class Karacostam {
-        title = CSTRING(Task_Karacostam_Title);
-        description = CSTRING(Task_Karacostam_Description);
-        marker = "sys_marker_karacostam";
-        parentTask = "RuhanZone";
-        icon = "attack";
-
-        conditionEventsSuccess[] = { "KaracostamSecured" };
-    };
-
-    class Ruhanpera : Karacostam{
-        title = CSTRING(Task_Ruhanpera_Title);
-        description = CSTRING(Task_Ruhanpera_Description);
-        marker = "sys_marker_ruhanpera";
-        parentTask = "Karacostam";
-
-        conditionEventsSuccess[] = { "RuhanperaSecured" };
-    };
-
-    class Hietala : Ruhanpera {
-        title = CSTRING(Task_Hietala_Title);
-        description = CSTRING(Task_Hietala_Description);
-        marker = "sys_marker_hietala";
-
-        conditionEventsSuccess[] = { "HietalaSecured" };
-    };
-
-
-    // Defend
-    class HoldKaracostam {
-        title = CSTRING(Task_HoldKaracostam_Title);
-        description = CSTRING(Task_HoldKaracostam_Description);
-        createdShowNotification = "true";
-        marker = "sys_marker_karacostam"
-        parentTask = "RuhanZone";
-        icon = "defend";
-
-        conditionEventsShow[] = { "KaracostamSecured" };
-        onShowEvents[] = { "StartKaracostamDefense" };
-        conditionEventsCanceled[] = { "CounterattackSuccessfull" };
-    };
-
-    // Convoy
-    class Convoy {
-        title = CSTRING(Task_Convoy_Title);
-        description = CSTRING(Task_Convoy_Description);
-        createdShowNotification = "true";
-        marker = "sys_marker_stadium";
-        parentTask = "HoldKaracostam";
+    // Task for Bravo platoon
+    class Survive {
+        title = CSTRING(Task_Survive_Title);
+        description = CSTRING(Task_Survive_Description);
+        // createdShowNotification = "true";
+        owners[] = { "zeus", "bravoHq", "bravo1", "bravo2" };
+        marker = "sys_marker_second_line";
+        parentTask = "RuhanZone2";
         icon = "wait";
 
-        conditionEventsShow[] = { "StartKaracostamDefense" };
-        conditionEventsCanceled[] = { "CounterattackSuccessfull" };
+        // conditionEventsShow[] = { "LZMonkeLost" };
+        conditionEventsFailed[] = { "BravoDead" };
+        conditionEventsSuccess[] = { "ReachedConstructionSite" };
     };
 
-    // Prepare defenses
-    class PrepareDefenses {
-        title = CSTRING(Task_PrepareDefenses_Title);
-        description = CSTRING(Task_PrepareDefenses_Description);
-        createdShowNotification = "true";
-        parentTask = "HoldKaracostam";
-        icon = "use";
+    // Task for Alpha platoon
+    class ReachTheConstructionSite : Survive {
+        title = CSTRING(Task_ReachTheConstructionSite_Title);
+        description = CSTRING(Task_ReachTheConstructionSite_Description);
+        owners[] = { "zeus", "alphaHq", "alpha1", "alpha2", "alpha3", "alpha4" };
+        icon = "run";
 
-        conditionEventsShow[] = { "StartKaracostamDefense" };
-        onShowEvents[] = { "StartPreparingDefenses" };
+        conditionEventsCanceled[] = { "Evac" };
 
-        conditionEventsSuccessRequired = 4;
-        conditionEventsSuccess[] = { "NorthwestOfStadiumBuilt", "NortheastOfStadiumBuilt", "SoutheastOfStadiumBuilt", "SouthOfKaracostamBuilt" };
+        onSuccessEvents[] = { "EnableFriendlyTracker" };
+        onFailedEvents[] = { "EnableFriendlyTracker" };
     };
 
-    class NorthwestOfStadium {
-        title = CSTRING(Task_PrepareDefenses_Title);
-        description = CSTRING(Task_PrepareDefenses_Bunkers_Description);
-        marker = "sys_marker_northwestOfStadium";
-        parentTask = "PrepareDefenses";
-        icon = "use";
+    // Friendly Tracker Jammed
+    class FriendlyTrackerJammed {
+        title = CSTRING(Task_FriendlyTrackerJammed_Title);
+        description = CSTRING(Task_FriendlyTrackerJammed_Description);
+        parentTask = "RuhanZone2";
+        icon = "radio";
 
-        conditionEventsShow[] = { "StartPreparingDefenses" };
-        conditionEventsSuccess[] = { "NorthwestOfStadiumBuilt" };
+        conditionEventsCanceled[] = { "EnableFriendlyTracker" };
     };
 
-    class NortheastOfStadium : NorthwestOfStadium {
-        marker = "sys_marker_northeastOfStadium";
-        conditionEventsSuccess[] = { "NortheastOfStadiumBuilt" };
-    };
-
-    class SoutheastOfStadium : NorthwestOfStadium {
-        marker = "sys_marker_southeastOfStadium";
-        conditionEventsSuccess[] = { "SoutheastOfStadiumBuilt" };
-    };
-
-    class SouthOfKaracostam : NorthwestOfStadium {
-        marker = "sys_marker_southOfKaracostam";
-        conditionEventsSuccess[] = { "SouthOfKaracostamBuilt" };
-    };
-
-    // Retreat
+    // Counterattack in Ruha
     class Counterattack {
         title = CSTRING(Task_Counterattack_Title);
         description = CSTRING(Task_Counterattack_Description);
         createdShowNotification = "true";
-        parentTask = "RuhanZone";
-        icon = "danger";
+        parentTask = "RuhanZone2";
+        icon = "attack";
 
         conditionEventsShow[] = { "CounterattackStarted" };
-        conditionEventsSuccess[] = { "BangingComplete" };
+        conditionEventsFailed[] = { "Evac" };
+        conditionEventsSuccess[] = { "EstablishedBridgeheadInNorthernRuha" };
     };
 
-    class RetreatToKaracostam {
-        title = CSTRING(Task_RetreatToKaracostam_Title);
-        description = CSTRING(Task_RetreatToKaracostam_Description);
+    // Capture Officer
+    class CaptureOfficer {
+        title = CSTRING(Task_CaptureOfficer_Title);
+        description = CSTRING(Task_CaptureOfficer_Description);
         createdShowNotification = "true";
-        marker = "sys_marker_northeastOfStadium";
-        parentTask = "Counterattack";
-        icon = "run";
+        parentTask = "RuhanZone2";
+        icon = "kill";
 
-        conditionEventsShow[] = { "CounterattackStarted" };
-        conditionEventsSuccess[] = {"CounterattackSuccessfull"};
-    };
-
-    class AbandonStadium : RetreatToKaracostam {
-        title = CSTRING(Task_AbandonStadium_Title);
-        description = CSTRING(Task_AbandonStadium_Description);
-        createdShowNotification = "true";
-        marker = "sys_marker_first_line";
-
-        conditionEventsShow[] = { "CounterattackSuccessfull" };
-        conditionEventsSuccess[] = { "CounterattackKaracostam" };
-    };
-
-    class RetreatToHietala : RetreatToKaracostam {
-        title = CSTRING(Task_RetreatToHietala_Title);
-        description = CSTRING(Task_RetreatToHietala_Description);
-        createdShowNotification = "true";
-        marker = "sys_marker_second_line";
-
-        conditionEventsShow[] = { "CounterattackKaracostam" };
-        conditionEventsSuccess[] = { "CounterattackHietala" };
-    };
-
-    // Ending
-    class WaitForReinforcements {
-        title = CSTRING(Task_WaitForReinforcements_Title);
-        description = CSTRING(Task_WaitForReinforcements_Description);
-        createdShowNotification = "true";
-        marker = "sys_marker_second_line";
-        parentTask = "RuhanZone";
-        icon = "wait";
-
-        conditionEventsShow[] = { "CounterattackHietala" };
-        conditionEventsCanceled[] = { "LZMonkeLost" };
-    };
-
-    class Survive {
-        title = CSTRING(Task_Survive_Title);
-        description = CSTRING(Task_Survive_Description);
-        createdShowNotification = "true";
-        marker = "sys_marker_second_line";
-        parentTask = "RuhanZone";
-        icon = "wait";
-
-        conditionEventsShow[] = { "LZMonkeLost" };
-        conditionEventsSuccess[] = { "BangingComplete" };
+        conditionEventsShow[] = { "EstablishedBridgeheadInNorthernRuha" };
+        conditionEventsFailed[] = { "Evac", "OfficerDead" };
+        conditionEventsSuccess[] = { "OfficerCaptured" };
     };
 
     // Evac
@@ -189,7 +78,7 @@ class CfgTasks {
         title = CSTRING(Task_Evac_Title);
         description = CSTRING(Task_Evac_Description);
         createdShowNotification = "true";
-        parentTask = "RuhanZone";
+        parentTask = "RuhanZone2";
         icon = "run";
         marker = "sys_marker_base";
         

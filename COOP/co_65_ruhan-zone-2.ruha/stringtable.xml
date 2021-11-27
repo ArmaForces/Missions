@@ -2,161 +2,90 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <Polish>Strefa Ruhańska</Polish>
-            <English>Ruhan Zone</English>
+            <Polish>Strefa Ruhańska 2</Polish>
+            <English>Ruhan Zone 2</English>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <Polish>Strefa Ruhańska</Polish>
-            <English>Ruhan Zone</English>
+            <Polish>Strefa Ruhańska 2</Polish>
+            <English>Ruhan Zone 2</English>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
             <English>Ruha, 2010
 
-The ongoing hybrid war is devastating. Unknown forces captured the area west of the river. They recently managed to cross it over the northern bridge, pushing Ruhan Defense Forces south. They appear quite well armed and trained, which is why we suppose this might be a destabilization attempt orchestrated by a foreign intelligence.
+This morning Ruhan Special Forces managed to secure toys transport. Unfortunately we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.
 
-Our intel shows they are particularly interested in factories. We suppose it's a Russian effort to take control of Ruhan industry, known for high quality toys. They started gathering all the toys from the area at the Karanmanikko village stadium.
-
-Ruhan Defense Force, resupplied by NATO, began their counteroffensive this morning.</English>
+US forces have been deployed to the area to support Ruhan Defense Forces and launch a counterattack across the river in Ruha village.</English>
             <Polish>Ruha, 2010
 
-Trwająca wojna hybrydowa rujnuje okolicę. Nieznane siły przejęły obszar na zachód od rzeki. Niedawno dali radę przekroczyć rzekę pólnocnym mostem, wypychając Ruhańskie Siły Obronne na południe. Przeciwnicy są dobrze uzbrojeni i wyszkoleni, dlatego podejrzewany, że to może być próba destabilizacji sterowanej przez obcy wywiad.
+Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek. Niestety straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.
 
-Nasze dane wywiadowcze wskazują, że przeciwnik jest szczególnie zainteresowany fabrykami. Podejrzewamy, że to rosyjska próba przejęcia kontroli na Ruhańskim przemysłem, znanym z zabawek wysokiej jakości. Zaczęli zbierać wszystkie zabawki z okolicy na stadionie w wiosce Karanmanikko.
-
-Ruhańskie Siły Obronne, zaopatrzone przez NATO, rozpoczęł kontrofensywę tego poranka.</Polish>
+Siły amerykańskie przybyły na pomoc Ruhańskim Siłom Obronnym i zamierzają rozpocząć kontratak przez rzekę w wiosce Ruha.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>Ruhan special forces are tasked with securing toys transport.</English>
-            <Polish>Ruhańskie siły specjalne wyruszają odbić transport zabawek.</Polish>
+            <English>Ruhan special forces are trapped on a construction site.</English>
+            <Polish>Ruhańskie siły specjalne są w potrzasku na placu budowy.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <English>You will land on LZ Monke, support the ongoing assault on Ruhanpera and advance further north to secure Karasomething village and it's stadium, where all toys are stored. Friendly convoy will transport the toys out of the village.</English>
-            <Polish>Wylądujecie na LZ Monke, wesprzecie trwający atak na Ruhanperę a następnie zaatakujecie na północ w kierunku wioski Karacostam i stadionu, na którym przechowywane są wszystkie zabawki. Sojuszniczy konwój przetransportuje zabawki z wioski.</Polish>
+            <English>As Alpha platoon, your task will be to reach the trapped Bravo platoon as quickly as possible, to save them from inevitable death.</English>
+            <Polish>Waszym zadaniem jako plutonu Alpha będzie dotarcie do uwięzionego plutonu Bravo tak szybko, jak to możliwe, ratując ich od nieuchronnej śmierci.</Polish>
         </Key>
 
         <!-- TASKS -->
 
-        <!-- LAND -->
-        <Key ID="STR_AFP_Scripts_Task_Land_Title">
-            <English>Land on LZ Monke</English>
-            <Polish>Wyląduj na LZ Monke</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Land_Description">
-            <English>LZ is going to be hot, be prepared for that!</English>
-            <Polish>LZ będzie gorące, bądźcie przygotowani!</Polish>
-        </Key>
-
-        <!-- ATTACK -->
-        <Key ID="STR_AFP_Scripts_Task_Karacostam_Title">
-            <English>Capture Karasomething</English>
-            <Polish>Zajmij Karacostam</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Karacostam_Description">
-            <English>We need to capture the village and the stadium where the toys are stored.</English>
-            <Polish>Musimy zająć wioskę i stadion, gdzie przechowywane są zabawki.</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Ruhanpera_Title">
-            <English>Capture Ruhanpera</English>
-            <Polish>Zajmij Ruhanperę</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Ruhanpera_Description">
-            <English>Our armed forces began attack on Ruhanpera. After landing we need to help them conquer the village. Only then we may advance north.</English>
-            <Polish>Sojusznicze jednostki rozpoczęły atak na Ruhanperę. Po wylądowaniu musimy pomóc im w zajęciu wioski zanim ruszymy na północ.</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Hietala_Title">
-            <English>Capture Hietala</English>
-            <Polish>Zajmij Hietalę</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Hietala_Description">
-            <English>The village stands in our way to the target, we need to capture it so our forces can fortify it and cover our back.</English>
-            <Polish>Wioska znajduje się po drodze do celu, musimy ją zając by wojska sojusznicze mogły się tam umocnić i osłaniać nasze tyły.</Polish>
-        </Key>
-
-        <!-- DEFENSE -->
-        <Key ID="STR_AFP_Scripts_Task_HoldKaracostam_Title">
-            <English>Hold Karasomething</English>
-            <Polish>Utrzymaj Karacostam</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_HoldKaracostam_Description">
-            <English>After securing the village, we need to secure and hold it in case of a counterattack.</English>
-            <Polish>Po zajęciu wioski musimy ją zabezpieczyć i utrzymać w razie kontrataku.</Polish>
-        </Key>
-
-        <!-- CONVOY -->
-        <Key ID="STR_AFP_Scripts_Task_Convoy_Title">
-            <English>Protect the convoy route until all toys are transported</English>
-            <Polish>Zabezpieczaj trasę konwoju dopóki wszystkie zabawki nie zostaną wywiezione</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Convoy_Description">
-            <English>Our task is to protect the convoy and the stadium during the loading and transporting the toys. This might take a bit so make yourself comfortable.</English>
-            <Polish>Naszym zadaniem jest zabezpieczanie konwoju i stadionu w trakcie wywożenia zabawek. To może trochę zająć, więc czas na walenie konia.</Polish>
-        </Key>
-
-
-        <!-- FORTIFICATIONS -->
-        <Key ID="STR_AFP_Scripts_Task_PrepareDefenses_Title">
-            <English>Prepare fortifications</English>
-            <Polish>Przygotuj umocnienia</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_PrepareDefenses_Description">
-            <English>We need to be prepared for counterattack. Preparing some defensive positions around stadium will make it easier to defend the stadium and convoy.</English>
-            <Polish>Musimy się przygotować na wypadek kontrakatu. Przygotowanie kilku pozycji obronnych znacznie ułatwi obronę stadionu i konwoju.</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_PrepareDefenses_Bunkers_Description">
-            <English>Our engineers should use supplies to build fortifications at this position.</English>
-            <Polish>Nasi inżynierowie powinni dostarczyć zaopatrzenie do budowy fortyfikacji w tym miejscu.</Polish>
-        </Key>
-
-        <!-- RETREAT -->
-        <Key ID="STR_AFP_Scripts_Task_Counterattack_Title">
-            <English>Counterattack</English>
-            <Polish>Kontratak</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_Counterattack_Description">
-            <English>Enemy has launcher a counterattack.</English>
-            <Polish>Przeciwnik rozpoczął kontratak.</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_RetreatToKaracostam_Title">
-            <English>Abandon Northeast fortifications</English>
-            <Polish>Porzuć północnowschodnie fortyfikacje</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_RetreatToKaracostam_Description">
-            <English>Our forces on the east report that Russian armed forces are pushing them south and convoy route is in danger. We need to focus on defending the village.</English>
-            <Polish>Nasze jednostki donoszą, że rosyjskie siły wypychają ich na południe i trasa konwoju jest zagrożona. Musimy skupić się na obronie wioski.</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_AbandonStadium_Title">
-            <English>Abandon Stadium</English>
-            <Polish>Olej stadion</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_AbandonStadium_Description">
-            <English>We cannot hold the stadium, we need to fall back a bit to next fortifications, in southern part of the village.</English>
-            <Polish>Nie damy rady utrzymać stadionu, musimy się wycofać do umocnień w południowej części wioski.</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_RetreatToHietala_Title">
-            <English>Retreat to Hietala</English>
-            <Polish>Wycofaj się do Hietali</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_RetreatToHietala_Description">
-            <English>They are overwhelming us, we need to fall back further. Friendly forces prepared defensive positions near Hietala, we need to reach them ASAP.</English>
-            <Polish>Jest ich zbyt wielu, przygważdżają nas, musimy się wycofać jeszcze dalej. Sojusznicze siły przygotowały pozycje obronne w pobliżu Hietali, musimy się tam dostać jak najszybciej.</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_WaitForReinforcements_Title">
-            <English>Wait for reinforcements</English>
-            <Polish>Czekaj na posiłki</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Task_WaitForReinforcements_Description">
-            <English>Friendly reinforcements should arrive here soon.</English>
-            <Polish>Posiłki powinny dotrzeć tu lada moment.</Polish>
-        </Key>
+        <!-- Task for Bravo platoon -->
         <Key ID="STR_AFP_Scripts_Task_Survive_Title">
             <English>Survive</English>
             <Polish>Przeżyj</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_Survive_Description">
-            <English>We've lost control of LZ Monke, you are surrounded. Not much more to say, YOYO.</English>
-            <Polish>Utraciliśmy kontrolę nad LZ Monke, jesteście otoczeni. Co tu więcej mówić, YOYO.</Polish>
+            <English>We've lost control of LZ Monke, you are surrounded. Not much more to say, YOYO.
+
+We've found some supplies left in our logistics vehicles. We have prepared a makeshift medical facility on the ground floor in the main room.</English>
+            <Polish>Utraciliśmy kontrolę nad LZ Monke, jesteście otoczeni. Co tu więcej mówić, YOYO.
+
+Znaleźliśmy trochę zaopatrzenia w pojazdach logistycznych. Na parterze w głównym pomieszczeniu przygotowaliśmy prowizoryczny punkt medyczny.</Polish>
+        </Key>
+
+        <!-- Task for Alpha platoon -->
+        <Key ID="STR_AFP_Scripts_Task_ReachTheConstructionSite_Title">
+            <English>Reach the construction site</English>
+            <Polish>Dotrzyj na plac budowy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_ReachTheConstructionSite_Description">
+            <English>This morning Ruhan Special Forces managed to secure toys transport in the north but we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.</English>
+            <Polish>Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek na północy, ale straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.</Polish>
+        </Key>
+
+        <!-- Friendly Tracker -->
+        <Key ID="STR_AFP_Scripts_Task_FriendlyTrackerJammed_Title">
+            <English>Friendly Tracker Jammed</English>
+            <Polish>Zakłócenia Friendly Trackera</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_FriendlyTrackerJammed_Description">
+            <English>Our Friendly Tracker is jammed and does not work. We need to either find and disable the enemy jamming station or wait until new relays are set up.</English>
+            <Polish>Nasz Friendly Tracker jest zakłócany i nie działa. Musimy albo znaleźć i wyłączyć wrogą stację zakłócającą, albo poczekać, aż zostaną ustawione nowe przekaźniki.</Polish>
+        </Key>
+
+        <!-- COUNTERATTACK -->
+        <Key ID="STR_AFP_Scripts_Task_Counterattack_Title">
+            <English>Counterattack</English>
+            <Polish>Kontratak</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Counterattack_Description">
+            <English>We need to support american counterattack thourgh the river in Ruha village.</English>
+            <Polish>Musimy wesprzeć amerykański kontratak przez rzekę w wiosce Ruha.</Polish>
+        </Key>
+
+        <!-- CAPTURE OFFICER -->
+        <Key ID="STR_AFP_Scripts_Task_CaptureOfficer_Title">
+            <English>Kidnap officer</English>
+            <Polish>Pojmij oficera</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_CaptureOfficer_Description">
+            <English>There is a highly ranked officer somewhere. Find him and bring to base alive.</English>
+            <Polish>Gdzieś w pobliżu znajduje się wysoki rangą oficer. Znajdźcie go i przywieźcie w całości (żywego).</Polish>
         </Key>
 
         <!-- EVAC -->
