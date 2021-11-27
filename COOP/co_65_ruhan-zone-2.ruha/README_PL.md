@@ -1,4 +1,4 @@
-# Strefa Ruhańska
+# Strefa Ruhańska 2
 
 ## Opis misji
 
@@ -30,14 +30,11 @@ Wylądujecie na LZ Monke, wesprzecie trwający atak na Ruhanperę a następnie z
 
 ## Assets
 
-- Dowództwo kompanii (3 ludzi)
 - 2 Dowództwa plutonu (3 ludzi)
   - 3 drużyny piechoty w każdym (po 8 ludzi)
-- Stryker ATGM (3 ludzi)
-- Logistyka (3 ludzi)
 
 Zeus slots: 2
-Total slots: 65
+Total slots: 56
 
 ## Rozegrana
 
