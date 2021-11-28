@@ -28,8 +28,16 @@ Siły amerykańskie przybyły na pomoc Ruhańskim Siłom Obronnym i zamierzają 
             <Polish>Ruhańskie siły specjalne są w potrzasku na placu budowy.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <English>As Alpha platoon, your task will be to reach the trapped Bravo platoon as quickly as possible, to save them from inevitable death.</English>
-            <Polish>Waszym zadaniem jako plutonu Alpha będzie dotarcie do uwięzionego plutonu Bravo tak szybko, jak to możliwe, ratując ich od nieuchronnej śmierci.</Polish>
+            <English>Ruha, 2010
+
+This morning Ruhan Special Forces managed to secure toys transport. Unfortunately we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.
+
+US forces have been deployed to the area to support Ruhan Defense Forces and launch a counterattack across the river in Ruha village.</English>
+            <Polish>Ruha, 2010
+
+Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek. Niestety straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.
+
+Siły amerykańskie przybyły na pomoc Ruhańskim Siłom Obronnym i zamierzają rozpocząć kontratak przez rzekę w wiosce Ruha.</Polish>
         </Key>
 
         <!-- TASKS -->
@@ -54,8 +62,12 @@ Znaleźliśmy trochę zaopatrzenia w pojazdach logistycznych. Na parterze w gł�
             <Polish>Dotrzyj na plac budowy</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_ReachTheConstructionSite_Description">
-            <English>This morning Ruhan Special Forces managed to secure toys transport in the north but we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.</English>
-            <Polish>Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek na północy, ale straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.</Polish>
+            <English>This morning Ruhan Special Forces managed to secure toys transport in the north but we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.
+
+As Alpha platoon, your task will be to reach the trapped Bravo platoon as quickly as possible, to save them from inevitable death.</English>
+            <Polish>Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek na północy, ale straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.
+
+Waszym zadaniem jako plutonu Alpha będzie dotarcie do uwięzionego plutonu Bravo tak szybko, jak to możliwe, ratując ich od nieuchronnej śmierci.</Polish>
         </Key>
 
         <!-- Friendly Tracker -->

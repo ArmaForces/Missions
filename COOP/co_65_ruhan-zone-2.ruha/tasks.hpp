@@ -4,7 +4,7 @@ class CfgTasks {
         description = LSTRING(Mission_Briefing);
         icon = "target";
 
-        conditionEventsSuccess[] = { "BangingComplete" };
+        conditionEventsSuccess[] = { "OfficerCaptured" };
     };
 
     // Mission start
@@ -32,9 +32,6 @@ class CfgTasks {
         icon = "run";
 
         conditionEventsCanceled[] = { "Evac" };
-
-        onSuccessEvents[] = { "EnableFriendlyTracker" };
-        onFailedEvents[] = { "EnableFriendlyTracker" };
     };
 
     // Friendly Tracker Jammed
@@ -53,9 +50,10 @@ class CfgTasks {
         description = LSTRING(Task_Counterattack_Description);
         createdShowNotification = "true";
         parentTask = "RuhanZone2";
+        marker = "sys_marker_ruha_bridge";
         icon = "attack";
 
-        conditionEventsShow[] = { "CounterattackStarted" };
+        conditionEventsShow[] = { "ReachedConstructionSite", "CounterattackStarted" };
         conditionEventsFailed[] = { "Evac" };
         conditionEventsSuccess[] = { "EstablishedBridgeheadInNorthernRuha" };
     };

@@ -41,7 +41,7 @@
 #define AFFT_MODULE friendly_tracker
 
 #define AFFTGVAR(var) TRIPLES(AFFT_PREFIX,AFFT_MODULE,var)
-#define QAFFTGVAR(var) QUOTE(AFFTGVAR(AFFT_MODULE,var))
+#define QAFFTGVAR(var) QUOTE(AFFTGVAR(var))
 
 #define AFFTFUNC(var1,var2) TRIPLES(DOUBLES(AFFT_PREFIX,var1),fnc,var2)
 #define QAFFTFUNC(var1,var2) QUOTE(AFFTFUNC(var1,var2))

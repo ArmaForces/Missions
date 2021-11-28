@@ -5,6 +5,11 @@
     [QAFFTGVAR(enabled), false, 0, "server"] call CBA_settings_fnc_set;
 }] call CBA_fnc_addEventHandler;
 
+// Randomly enable Friendly Tracker after 45-60 minutes
+[{
+    ["EnableFriendlyTracker"] call CBA_fnc_serverEvent;
+}, [], 2700 + random 900] call CBA_fnc_waitAndExecute;
+
 {
     [_x] call FUNC(hideAllMarkersInLayer);
 } forEach [
