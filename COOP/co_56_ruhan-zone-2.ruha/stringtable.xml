@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Strefa Ruhańska 2</Polish>
+            <English>Ruhan Zone 2</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Strefa Ruhańska 2</Polish>
+            <English>Ruhan Zone 2</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English>Ruha, 2010
+
+This morning Ruhan Special Forces managed to secure toys transport. Unfortunately we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.
+
+US forces have been deployed to the area to support Ruhan Defense Forces and launch a counterattack across the river in Ruha village.</English>
+            <Polish>Ruha, 2010
+
+Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek. Niestety straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.
+
+Siły amerykańskie przybyły na pomoc Ruhańskim Siłom Obronnym i zamierzają rozpocząć kontratak przez rzekę w wiosce Ruha.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <English>Ruhan special forces are trapped on a construction site.</English>
+            <Polish>Ruhańskie siły specjalne są w potrzasku na placu budowy.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <English>Ruha, 2010
+
+This morning Ruhan Special Forces managed to secure toys transport. Unfortunately we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.
+
+US forces have been deployed to the area to support Ruhan Defense Forces and launch a counterattack across the river in Ruha village.</English>
+            <Polish>Ruha, 2010
+
+Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek. Niestety straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.
+
+Siły amerykańskie przybyły na pomoc Ruhańskim Siłom Obronnym i zamierzają rozpocząć kontratak przez rzekę w wiosce Ruha.</Polish>
+        </Key>
+
+        <!-- TASKS -->
+
+        <!-- Task for Bravo platoon -->
+        <Key ID="STR_AFP_Scripts_Task_Survive_Title">
+            <English>Survive</English>
+            <Polish>Przeżyj</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Survive_Description">
+            <English>We've lost control of LZ Monke, you are surrounded. Not much more to say, YOYO.
+
+We've found some supplies left in our logistics vehicles. We have prepared a makeshift medical facility on the ground floor in the main room.</English>
+            <Polish>Utraciliśmy kontrolę nad LZ Monke, jesteście otoczeni. Co tu więcej mówić, YOYO.
+
+Znaleźliśmy trochę zaopatrzenia w pojazdach logistycznych. Na parterze w głównym pomieszczeniu przygotowaliśmy prowizoryczny punkt medyczny.</Polish>
+        </Key>
+
+        <!-- Task for Alpha platoon -->
+        <Key ID="STR_AFP_Scripts_Task_ReachTheConstructionSite_Title">
+            <English>Reach the construction site</English>
+            <Polish>Dotrzyj na plac budowy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_ReachTheConstructionSite_Description">
+            <English>This morning Ruhan Special Forces managed to secure toys transport in the north but we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.
+
+As Alpha platoon, your task will be to reach the trapped Bravo platoon as quickly as possible, to save them from inevitable death.</English>
+            <Polish>Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek na północy, ale straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.
+
+Waszym zadaniem jako plutonu Alpha będzie dotarcie do uwięzionego plutonu Bravo tak szybko, jak to możliwe, ratując ich od nieuchronnej śmierci.</Polish>
+        </Key>
+
+        <!-- Friendly Tracker -->
+        <Key ID="STR_AFP_Scripts_Task_FriendlyTrackerJammed_Title">
+            <English>Friendly Tracker Jammed</English>
+            <Polish>Zakłócenia Friendly Trackera</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_FriendlyTrackerJammed_Description">
+            <English>Our Friendly Tracker is jammed and does not work. We need to either find and disable the enemy jamming station or wait until new relays are set up.</English>
+            <Polish>Nasz Friendly Tracker jest zakłócany i nie działa. Musimy albo znaleźć i wyłączyć wrogą stację zakłócającą, albo poczekać, aż zostaną ustawione nowe przekaźniki.</Polish>
+        </Key>
+
+        <!-- COUNTERATTACK -->
+        <Key ID="STR_AFP_Scripts_Task_Counterattack_Title">
+            <English>Counterattack</English>
+            <Polish>Kontratak</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Counterattack_Description">
+            <English>We need to support american counterattack thourgh the river in Ruha village.</English>
+            <Polish>Musimy wesprzeć amerykański kontratak przez rzekę w wiosce Ruha.</Polish>
+        </Key>
+
+        <!-- CAPTURE OFFICER -->
+        <Key ID="STR_AFP_Scripts_Task_CaptureOfficer_Title">
+            <English>Kidnap officer</English>
+            <Polish>Pojmij oficera</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_CaptureOfficer_Description">
+            <English>There is a highly ranked officer somewhere. Find him and bring to base alive.</English>
+            <Polish>Gdzieś w pobliżu znajduje się wysoki rangą oficer. Znajdźcie go i przywieźcie w całości (żywego).</Polish>
+        </Key>
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evac</English>
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
