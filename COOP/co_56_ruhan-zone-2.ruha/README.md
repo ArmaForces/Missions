@@ -2,31 +2,25 @@
 
 ## Mission Description
 
-Ruhan special forces are tasked with securing toys transport.
+Ruhan special forces are trapped on a construction site.
 
 ## Briefing
 
 Ruha, 2010
 
-The ongoing hybrid war is devastating. Unknown forces captured the area west of the river. They recently managed to cross it over the northern bridge, pushing Ruhan Defense Forces south. They appear quite well armed and trained, which is why we suppose this might be a destabilization attempt orchestrated by a foreign intelligence.
+This morning Ruhan Special Forces managed to secure toys transport. Unfortunately we lost contact with them after LZ Monke was lost. Last time they reported from a construction site near Hietala. This was fortificated position and if they are still alive, most likely they are hiding there.
 
-Our intel shows they are particularly interested in factories. We suppose it's a Russian effort to take control of Ruhan industry, known for high quality toys. They started gathering all the toys from the area at the Karanmanikko village stadium.
-
-Ruhan Defense Force, resupplied by NATO, began their counteroffensive this morning.
+US forces have been deployed to the area to support Ruhan Defense Forces and launch a counterattack across the river in Ruha village.
 
 ### Tasks
 
-1. Land on LZ Monke
-2. Support the assault on Ruhanpera
-3. Capture Hietala
-4. Capture Karasomething
-5. Prepare fortifications
-6. Protect the convoy
-7. Hold Karasomething
+1. Reach the construction site before survivors are overwhelmed
+2. Break through the river in Ruha
+3. Find high ranked officer and secure for extraction
 
 ### Execution
 
-You will land on LZ Monke, support the ongoing assault on Ruhanpera and advance further north to secure Karasomething village and it's stadium, where all toys are stored. Friendly convoy will transport the toys out of the village.
+As Alpha platoon, your task will be to reach the trapped Bravo platoon as quickly as possible, to save them from inevitable death. Then, both platoons will head to Ruha, counterattack through the river and attempt to kidnap highly ranked officer.
 
 ## Assets
 
@@ -38,21 +32,18 @@ Total slots: 56
 
 ## Played on
 
-- 2021-09-25
+- 2021-11-27
 
 ## Zeus stuff
 
 ### Mission flow
 
 ```sqf
-["LZMonke"] call CBA_fnc_serverEvent;
-["RuhanperaSecured"] call CBA_fnc_serverEvent;
-["HietalaSecured"] call CBA_fnc_serverEvent;
-["KaracostamSecured"] call CBA_fnc_serverEvent;
-["CounterattackStarted"] call CBA_fnc_serverEvent;
-["CounterattackSuccessfull"] call CBA_fnc_serverEvent;
-["CounterattackKaracostam"] call CBA_fnc_serverEvent;
-["CounterattackHietala"] call CBA_fnc_serverEvent;
-["LZMonkeLost"] call CBA_fnc_serverEvent;
-["BangingComplete"] call CBA_fnc_serverEvent;
+["BravoDead"] call CBA_fnc_serverEvent;
+["ReachedConstructionSite"] call CBA_fnc_serverEvent;
+
+["EstablishedBridgeheadInNorthernRuha"] call CBA_fnc_serverEvent;
+
+["OfficerDead"] call CBA_fnc_serverEvent;
+["OfficerCaptured"] call CBA_fnc_serverEvent;
 ```sqf

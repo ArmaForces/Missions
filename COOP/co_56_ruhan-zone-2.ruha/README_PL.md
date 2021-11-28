@@ -2,31 +2,25 @@
 
 ## Opis misji
 
-Ruhańskie siły specjalne wyruszają odbić transport zabawek.
+Ruhańskie siły specjalne są w potrzasku na placu budowy.
 
 ## Briefing
 
 Ruha, 2010
 
-Trwająca wojna hybrydowa rujnuje okolicę. Nieznane siły przejęły obszar na zachód od rzeki. Niedawno dali radę przekroczyć rzekę pólnocnym mostem, wypychając Ruhańskie Siły Obronne na południe. Przeciwnicy są dobrze uzbrojeni i wyszkoleni, dlatego podejrzewany, że to może być próba destabilizacji sterowanej przez obcy wywiad.
+Tego ranka Ruhańskie Siły Specjalne zabezpieczyły transport zabawek. Niestety straciliśmy z nimi kontakt po utracie LZ Monke. Ostatni raz zgłosili się z placu budowy w pobliżu Hietali. To była ufortyfikowana pozycja i, jeżeli jeszcze żyją, najprawdopodobniej tam się ukrywają.
 
-Nasze dane wywiadowcze wskazują, że przeciwnik jest szczególnie zainteresowany fabrykami. Podejrzewamy, że to rosyjska próba przejęcia kontroli na Ruhańskim przemysłem, znanym z zabawek wysokiej jakości. Zaczęli zbierać wszystkie zabawki z okolicy na stadionie w wiosce Karanmanikko.
-
-Ruhańskie Siły Obronne, zaopatrzone przez NATO, rozpoczęł kontrofensywę tego poranka.
+Siły amerykańskie przybyły na pomoc Ruhańskim Siłom Obronnym i zamierzają rozpocząć kontratak przez rzekę w wiosce Ruha.
 
 ### Zadania
 
-1. Wyląduj na LZ Monke
-2. Wesprzyj atak na Ruhanperę
-3. Zajmij Hietalę
-4. Zajmij Karacostam
-5. Przygotuj fortyfikacje
-6. Osłaniaj konwój
-7. Utrzymaj Karacostam
+1. Dotrzyj na plac budowy zanim Bravo zostanie przytłoczone atakami
+2. Przebij się przez obronę na rzece w Ruha
+3. Znajdź i porwij wysokiego rangą oficera
 
 ### Wykonanie
 
-Wylądujecie na LZ Monke, wesprzecie trwający atak na Ruhanperę a następnie zaatakujecie na północ w kierunku wioski Karacostam i stadionu, na którym przechowywane są wszystkie zabawki. Sojuszniczy konwój przetransportuje zabawki z wioski.
+Waszym zadaniem jako plutonu Alpha będzie dotarcie do uwięzionego plutonu Bravo tak szybko, jak to możliwe, ratując ich od nieuchronnej śmierci. Później wszyscy pojedziecie do Ruha i przeprowadzicie kontratak przez rzekę oraz spróbujecie porwać wrogiego oficera.
 
 ## Assets
 
@@ -38,21 +32,18 @@ Total slots: 56
 
 ## Rozegrana
 
-- 2021-09-25
+- 2021-11-27
 
 ## Rzeczy dla Zeusa
 
 ### Przebieg misji
 
 ```sqf
-["LZMonke"] call CBA_fnc_serverEvent;
-["RuhanperaSecured"] call CBA_fnc_serverEvent;
-["HietalaSecured"] call CBA_fnc_serverEvent;
-["KaracostamSecured"] call CBA_fnc_serverEvent;
-["CounterattackStarted"] call CBA_fnc_serverEvent;
-["CounterattackSuccessfull"] call CBA_fnc_serverEvent;
-["CounterattackKaracostam"] call CBA_fnc_serverEvent;
-["CounterattackHietala"] call CBA_fnc_serverEvent;
-["LZMonkeLost"] call CBA_fnc_serverEvent;
-["BangingComplete"] call CBA_fnc_serverEvent;
+["BravoDead"] call CBA_fnc_serverEvent;
+["ReachedConstructionSite"] call CBA_fnc_serverEvent;
+
+["EstablishedBridgeheadInNorthernRuha"] call CBA_fnc_serverEvent;
+
+["OfficerDead"] call CBA_fnc_serverEvent;
+["OfficerCaptured"] call CBA_fnc_serverEvent;
 ```sqf
