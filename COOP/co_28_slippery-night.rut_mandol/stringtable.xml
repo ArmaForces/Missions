@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <!-- <English>Slippery Night</English> -->
+            <Polish>Śliska Noc</Polish>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <!-- <English>Slippery Night</English> -->
+            <Polish>Śliska Noc</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <!-- <English>Generic Mountaneous Country, 1986
+
+TODO: FILL THE DESCRIPTION IN ENGLISH</English> -->
+            <Polish>Generyczny Górzysty Kraj, 1986
+
+Armia USA przybyła do GGK w trakcie wojny domowej 1984 w odpowiedzi na doniesienia o broni biologicznej. Armia USA sprawuje kontrolę nad północną częścią prowincji poprzez sieć baz operacyjnych. Niestety nie przewidzieli, że ukształtowanie terenu praktycznie uniemożliwia wytyczenie nowych szlaków dla pojazdów i zostaje im wykorzystywanie starych, wąskich oraz mocno zaniedbanych tras. Wreszcie po 2 latach poszukiwań udało im się odnaleźć broń biologiczną, w istnienie której wszyscy już wątpili. Waszym zadaniem będzie transport cennego ładunku.
+
+Stacjonujecie w zachodniej części prowincji. Jedyne połączenie z cywilizacją prowadzi przez najtrudniejszą trasę, z którą jak do tej pory przyjdzie Wam się zmierzyć. Osuwiska, urwiska i widmo zsunięcia się w przepaść przy drobnym błędzie, wystawią Wasze umiejętności jazdy (i fizykę army) na próbę. Jeżeli ktoś wyleci z drogi, nie będziecie mogli nic z tym zrobić. A gdzie jeszcze miejsce na przeciwników, którzy będą chcieli Wam ten transport uniemożliwić lub przejąć dla siebie.
+
+Misja konwój.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <!-- <English>TODO</English> -->
+            <Polish>Amerykanie muszą przejąć broń biologiczną i przetransportować ją przez kanion.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <!-- <English>Generic Mountaneous Country, 1986
+
+TODO: FILL THE DESCRIPTION IN ENGLISH</English> -->
+            <Polish>Generyczny Górzysty Kraj, 1986
+
+Armia USA przybyła do GGK w trakcie wojny domowej 1984 w odpowiedzi na doniesienia o broni biologicznej. Armia USA sprawuje kontrolę nad północną częścią prowincji poprzez sieć baz operacyjnych. Niestety nie przewidzieli, że ukształtowanie terenu praktycznie uniemożliwia wytyczenie nowych szlaków dla pojazdów i zostaje im wykorzystywanie starych, wąskich oraz mocno zaniedbanych tras. Wreszcie po 2 latach poszukiwań udało im się odnaleźć broń biologiczną, w istnienie której wszyscy już wątpili. Waszym zadaniem będzie transport cennego ładunku.
+
+Stacjonujecie w zachodniej części prowincji. Jedyne połączenie z cywilizacją prowadzi przez najtrudniejszą trasę, z którą jak do tej pory przyjdzie Wam się zmierzyć. Osuwiska, urwiska i widmo zsunięcia się w przepaść przy drobnym błędzie, wystawią Wasze umiejętności jazdy (i fizykę army) na próbę. Jeżeli ktoś wyleci z drogi, nie będziecie mogli nic z tym zrobić. A gdzie jeszcze miejsce na przeciwników, którzy będą chcieli Wam ten transport uniemożliwić lub przejąć dla siebie.
+
+Misja konwój.</Polish>
+        </Key>
+
+        <!-- MARKERS -->
+        <Key ID="STR_AFP_Scripts_Marker_Canyon">
+            <English>Deadly canyon</English>
+            <Polish>Śmiertelny kanion</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_Garrison">
+            <English>Garrison</English>
+            <Polish>Garnizon</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_GuardTower">
+            <English>Guard Tower</English>
+            <Polish>Wieża strażnicza</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_Helipads">
+            <English>Helipads</English>
+            <Polish>Lądowiska helikopterów</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_MandolBase">
+            <English>Mandol base</English>
+            <Polish>Baza Mandol</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_PlayersBase">
+            <English>Your base</English>
+            <Polish>Wasza baza</Polish>
+        </Key>
+
+        <!-- TASKS -->
+
+        <!-- Bioweapon -->
+        <Key ID="STR_AFP_Scripts_Task_FindBioweapon_Title">
+            <!-- <English>Find bioweapon</English> -->
+            <Polish>Znajdź broń biologiczną</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_FindBioweapon_Description">
+            <!-- <English>TODO</English> -->
+            <Polish>Po długich poszukiwaniach prawdopodobnie udało nam się namierzyć broń biologiczną, która była powodem całej interwencji.
+
+Znajdujecie się w pobliżu przewidywanej lokalizacji, gotowi do przeprowadzenia akcji przejęcia broni. 
+
+W wiosce znajduje się uzbrojona milicja. Nie są oni do nas wrogo nastawieni, ale nie spodoba im się nasza nocna wizyta. Nigdy nie wpuszczają nas do wioski w nocy, ale pozwalają nam sprawdzić okolicę. Część z Was zostanie na zewnątrz i będzie stwarzała pozory.
+Helikopter nigdy nie bierze udziału w nocnym patrolu, także musi zostać w bazie do momentu, gdy będzie miała rozpocząć się akcja. W przeciwnym razie milicja może ogarnąć, że coś jest nie tak.
+Ze względu na obecność ludności cywilnej w wiosce, unikajcie wchodzenia do budynków w celu uniknięcia wykrycia. W budynkach jest też bardzo ciemno i nie będziecie widzieć kto jest w środku.
+
+ROE:
+Nie strzelać jeżeli nie strzelają do Was. Macie pozwolenie na otwarcie ognia do milicji po zlokalizowaniu broni biologicznej. Do tego czasu dupa nisko i cicho.
+</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_EnterTheVillage_Title">
+            <!-- <English>Enter the village</English> -->
+            <Polish>Wejdź do wioski</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_EnterTheVillage_Description">
+            <!-- <English>TODO</English> -->
+            <Polish>Musicie niezauważeni wejść do wioski, unikając wzroku lokalnej milicji. Znaleźliśmy 2 wejścia, które powinny być nieobstawione przez ewentualne patrole. Najlepiej będzie się podzielić, żeby uniknąć tworzenia zbyt dużej grupy, którą będzie łatwo wykryć. Da nam to też większe możliwości szukania broni biologicznej.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_EnterTheVillageWest_Title">
+            <!-- <English>Western entrance</English> -->
+            <Polish>Zachodnie wejście</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_EnterTheVillageWest_Description">
+            <!-- <English></English> -->
+            <Polish>Do wejścia można się dostać idąc wzdłuż drogi do miasta. Po dostrzeżeniu bramy w murze na uboczu drogi, będziecie musieli przemieścić się w lewo wzdłuż budynków. Uważajcie jednak z wyglądaniem zza rogu. W pobliżu bramy często znajduje się wartownik. Poczekajcie aż się oddali i szybko przejdźcie pod nim w lewo po rampie, trzymając się jak najbliżej północnej ściany. Powoli, uważając na budynki po lewej, zmierzajcie wzdłuż ściany w kierunku schodów. Wejdźcie po schodach do budynku. Znajduje się tam nasz kontakt, więc nie musicie się niczego obawiać. Zejdzie z góry, by dać Wam jakieś wskazówki, ale nie czekajcie zbyt długo i nie szukajcie go.
+
+Gdy wszyscy znajdziecie się w budynku, możecie użyć drugich drzwi by przejść do wioski. Uważajcie na wieżę strażniczą znajdującą się na północny zachód od domu. Będziecie musieli przejść pod nią w kierunku garnizonu. Obejdźcie garnizon i podejdźcie jak najbliżej się da do muru targowiska od zachodu.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_EnterTheVillageEast_Title">
+            <!-- <English>Eastern entrance</English> -->
+            <Polish>Wschodnie wejście</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_EnterTheVillageEast_Description">
+            <!-- <English></English> -->
+            <Polish>By dostać się do wejścia musicie iść tak jak do wejścia zachodniego. Przed bramą będziecie musieli przeskoczyć za murek po prawej stronie drogi. Upewnijcie się, że strażnik koło bramy Was nie widzi. Przejdźcie wzdłuż murku pod same zabudowania, po prawej stronie w samym rogu jest dziura w płocie, możecie się tamtędy wspiąć.
+
+Teraz musicie przejść wzdłuż budynków z powrotem w kierunku głównej drogi. Nie wychylajcie się zza rogu, głównego wjazdu pilnuje zbuowany na podwyższeniu, trzykondygnacyjny, zawierający dwa piętra i przyziemie budynek. Jedna z osób zostających na zewnątrz będzie musiała dać Wam znać, że możecie kontynuować. Wtedy szybko przeskoczcie pod budynek. Uważajcie podczas wchodzenia po schodach, tego co jest za budynkiem nikt już nie zobaczy z zewnątrz. </Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_SilentlyApproachMarket_Title">
+            <!-- <English>Silently approach market</English> -->
+            <Polish>Skrycie dotrzyj do targowiska</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_SilentlyApproachMarket_Description">
+            <!-- <English></English> -->
+            <Polish>Broń biologiczna prawdopodobnie jest zlokalizowana na targowisku. Zadaliśmy sobie wiele trudu, żeby ją namierzyć, więc musimy mieć pewność, że damy radę ją przejąć, nim otworzymy ogień.
+
+Skrycie, poruszając się w cieniu i unikając wzroku strażników, dotrzyjcie w pobliże targowiska, dyskretnie zlokalizujcie broń biologiczną i przygotujcie się do jej przejęcia.</Polish>
+        </Key>
+        
+
+        <!-- Convoy -->
+        <Key ID="STR_AFP_Scripts_Task_DeliverBioweaponToBase_Title">
+            <!-- <English></English> -->
+            <Polish>Dostarcz ładunek do bazy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_DeliverBioweaponToBase_Description">
+            <!-- <English></English> -->
+            <Polish>Musimy dostarczyć broń biologiczną do bazy w Mandol. Najpierw powinniśmy się udać do naszej bazy i poczekać na helikopter transportowy.</Polish>
+        </Key>
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evac</English>
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
