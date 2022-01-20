@@ -57,6 +57,7 @@ class CfgTasks {
         createdShowNotification = "true";
         conditionEventsShow[] = { "PlayersNearTheMarket", "PlayersDetected" };
         conditionEventsSuccess[] = { "BioweaponSecured" };
+        conditionEventsFailed[] = { "BioweaponDestroyed" };
     };
 
     // Convoy
@@ -68,6 +69,7 @@ class CfgTasks {
 
         conditionEventsShow[] = { "BioweaponSecured" };
         conditionEventsSuccess[] = { "CargoDelivered" };
+        conditionEventsFailed[] = { "BioweaponDestroyed" };
     };
 
     // Evac
@@ -77,7 +79,7 @@ class CfgTasks {
         icon = "run";
         marker = "sys_marker_base";
         
-        conditionEventsShow[] = {"Evac"};
-        conditionEventsSuccess[] = {"EvacCompleted"};
+        conditionEventsShow[] = { "Evac", "BioweaponDestroyed" };
+        conditionEventsSuccess[] = { "EvacCompleted" };
     };
 };

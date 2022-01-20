@@ -27,3 +27,9 @@ if (!isNil QUOTE(RESPAWN_HELPER_VR)) then {
 ["CBA_settingsInitialized", {
     [QAFFTGVAR(enabled), false, 0, "server"] call CBA_settings_fnc_set;
 }] call CBA_fnc_addEventHandler;
+
+[{!isNil "bioweaponSuitcase"}, {
+    [{isNil "bioweaponSuitcase"}, {
+        ["BioweaponDestroyed"] call CBA_fnc_localEvent;
+    }] call CBA_fnc_waitUntilAndExecute;
+}] call CBA_fnc_waitUntilAndExecute;
