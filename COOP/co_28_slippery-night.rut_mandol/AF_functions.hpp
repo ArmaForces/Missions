@@ -12,6 +12,7 @@ class ADDON {
 
         // Mission custom
         class deleteAllMarkersInLayer {};
+        class getHighestRankedAlivePlayers {};
         class hideAllMarkersInLayer {};
         class showAllMarkersInLayer {};
     };

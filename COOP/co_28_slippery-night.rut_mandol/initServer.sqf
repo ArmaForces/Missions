@@ -23,6 +23,10 @@ if (!isNil QUOTE(RESPAWN_HELPER_VR)) then {
     }, [], random 3] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
 
+["PlayersReachedBase", {
+    [QAFMGVAR(respawn,force)] call CBA_fnc_globalEvent;
+}] call CBA_fnc_addEventHandler;
+
 // Disable AF Friendly Tracker
 ["CBA_settingsInitialized", {
     [QAFFTGVAR(enabled), false, 0, "server"] call CBA_settings_fnc_set;
@@ -32,4 +36,8 @@ if (!isNil QUOTE(RESPAWN_HELPER_VR)) then {
     [{isNil "bioweaponSuitcase"}, {
         ["BioweaponDestroyed"] call CBA_fnc_localEvent;
     }] call CBA_fnc_waitUntilAndExecute;
+}] call CBA_fnc_waitUntilAndExecute;
+
+[{call FUNC(getHighestRankedAlivePlayers) findIf {_x distance getMarkerPos "marker_playersBase" < 100} != -1}, {
+    ["PlayersReachedBase"] call CBA_fnc_localEvent;
 }] call CBA_fnc_waitUntilAndExecute;
