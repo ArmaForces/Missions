@@ -31,7 +31,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="mm_2021-12-08_slippery-night";
+sourceName="MM_2021-12-08_Slippery-Night";
 addons[]=
 {
 	"A3_Ui_F",
