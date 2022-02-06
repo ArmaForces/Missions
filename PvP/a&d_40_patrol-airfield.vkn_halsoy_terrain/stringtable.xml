@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFSG">
+    <Package name="Patrol">
+        <Key ID="STR_AFSG_Patrol_DisplayName">
+            <Polish>OFP Patrol PvP</Polish>
+        </Key>
+        <Key ID="STR_AFSG_Patrol_Mission_Description">
+            <!--<English>Late afternoon 24 may 1994.</English>-->
+            <Polish>Norweska wyspa Halsoy, zimna wojna.
+Na lokalnym lotnisku USAF zaraz odbędzie się zmiana warty. Sabotażyści przygotowują się do infiltracji.</Polish>
+        </Key>
+
+        <!--
+            Tasks
+        -->
+
+        <Key ID="STR_AFSG_Patrol_Task_Laptop_Title">
+            <!--<English>Order return to base</English>-->
+            <Polish>Pobierz dane z laptopa</Polish>
+        </Key>
+        <Key ID="STR_AFSG_Patrol_Task_Laptop_Title">
+            <!--<English>Finish return to base</English>-->
+            <Polish>Na piętrze budynku znajduje się laptop, pobierzcie z niego dane.</Polish>
+        </Key>
+
+        <Key ID="STR_AFSG_Patrol_Task_SUV_Title">
+            <!--<English>Order return to base</English>-->
+            <Polish>Ukradnij SUVa</Polish>
+        </Key>
+        <Key ID="STR_AFSG_Patrol_Task_SUV_Title">
+            <!--<English>Finish return to base</English>-->
+            <Polish>W pobliżu hangarów transportowych znajduje się samolot zdolny przetransportować samochód. Ucieknijcie z lotniska.</Polish>
+        </Key>
+
+        <Key ID="STR_AFSG_Patrol_Task_JetDestroy_Title">
+            <!--<English>Order return to base</English>-->
+            <Polish>Zniszcz samolot</Polish>
+        </Key>
+        <Key ID="STR_AFSG_Patrol_Task_JetDestroy_Title">
+            <!--<English>Finish return to base</English>-->
+            <Polish>W pobliżu Radar Station Bravo pod namiotami stoją A-10. Zniszczcie przynajmniej 2.</Polish>
+        </Key>
+
+
+        <!--
+            Mission ending
+        -->
+
+        <Key ID="STR_AFSG_Patrol_Debriefing_BLUFOR_WON_Title">
+            <!--<English>Mission Completed!</English>-->
+            <Polish>BLUFOR Zwycięża!</Polish>
+        </Key>
+
+        <Key ID="STR_AFSG_Patrol_Debriefing_BLUFOR_WON_Subtitle">
+            <!--<English>Mission Completed!</English>-->
+            <Polish>Infiltratorzy nie wykonali zadania.</Polish>
+        </Key>
+
+        <Key ID="STR_AFSG_Patrol_Debriefing_REDFOR_WON_Title">
+            <!--<English>Mission Completed!</English>-->
+            <Polish>REDFOR Zwycięża!</Polish>
+        </Key>
+
+        <Key ID="STR_AFSG_Patrol_Debriefing_REDFOR_WON_Subtitle">
+            <!--<English>Mission Completed!</English>-->
+            <Polish>Infiltratorzy wykonali zadanie.</Polish>
+        </Key>
+    </Package>
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+		<!-- COMMON -->
+		<Key ID="STR_ArmaForces_Preset_Dialog_Close">
+			<Original>Close</Original>
+			<English>Close</English>
+			<Polish>Zamknij</Polish>
+		</Key>
+		<!-- GROUP RENAME -->
+		<Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+			<Original>Rename</Original>
+			<English>Rename</English>
+			<Polish>Zmień nazwę</Polish>
+		</Key>
+		<!-- VIEW DISTANCE -->
+		<Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+			<Original>Custom</Original>
+			<English>Custom</English>
+			<Polish>Ustaw własną</Polish>
+		</Key>
+	</Package>
+</Project>
