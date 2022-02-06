@@ -1,4 +1,6 @@
 class CfgTasks {
+    tag = QUOTE(DOUBLES(PREFIX,COMPONENT));
+
     class PatrolPvP {
         title = CSTRING(DisplayName);
         description = CSTRING(Mission_Description);
