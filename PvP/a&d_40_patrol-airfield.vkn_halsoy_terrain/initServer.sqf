@@ -87,10 +87,11 @@ if (isDedicated) then {
     GVAR(playersConnected) pushBackUnique [_uid, _unit];
 
     private _msg = format ["Players ready %1/%2", count GVAR(playersConnected), playersNumber WEST];
-    //private _msg = format ["Players ready %1/%2", count GVAR(playersConnected), 1];
+
     if (!GVAR(serverInitialized)) then {
         [QGVAR(showSystemMessage), [_msg]] call CBA_fnc_globalEvent;
     };
+
     if (count GVAR(playersConnected) isEqualTo playersNumber WEST && {!GVAR(serverInitialized)}) then {
         private _msg = format ["Starting initialization with %1/%2 players ready.", count GVAR(playersConnected), playersNumber WEST];
         [QGVAR(showSystemMessage), [_msg]] call CBA_fnc_globalEvent;
@@ -121,6 +122,7 @@ if (isDedicated) then {
     call FUNC(initializeBluforSpawn);
     call FUNC(initializeRedforSpawn);
     [QGVAR(showSystemMessage), ["Spawns initialized"]] call CBA_fnc_localEvent;
+
     // Wait until all opfor players change their side and show them tasks
     [{count (allPlayers select {side _x isEqualTo EAST}) isEqualTo count GVAR(playersOpfor)}, {
         [QGVAR(showSystemMessage), ["Publishing OPFOR tasks"]] call CBA_fnc_localEvent;
