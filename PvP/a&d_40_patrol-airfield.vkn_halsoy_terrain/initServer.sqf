@@ -142,3 +142,10 @@ if (isDedicated) then {
     // 12 s timeout because 11 s is default wirecutting duration
     [{!alive _this}, {deleteVehicle _this}, _fence, 12] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
+
+[QGVAR(showOpforTasks), {
+    // Check if SUV task can be shown
+    if (!isNil "suv") then {
+        [QGVAR(suvSpawned)] call CBA_fnc_localEvent;
+    };
+}] call CBA_fnc_addEventHandler;

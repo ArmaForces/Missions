@@ -4,7 +4,7 @@
         <Key ID="STR_AFSG_Patrol_DisplayName">
             <Polish>OFP Patrol PvP</Polish>
         </Key>
-        <Key ID="STR_AFSG_Patrol_Mission_Description">
+        <Key ID="STR_AFSG_Patrol_Mission_ShortDescription">
             <English>Norwegian island Haloy, cold war.
 There will be a shift change on the local USAF airfield. Saboteurs prepare for infiltration.
             </English>
@@ -20,7 +20,7 @@ Na lokalnym lotnisku USAF zaraz odbędzie się zmiana warty. Sabotażyści przyg
             <English>Download the data from laptop</English>
             <Polish>Pobierz dane z laptopa</Polish>
         </Key>
-        <Key ID="STR_AFSG_Patrol_Task_Laptop_Title">
+        <Key ID="STR_AFSG_Patrol_Task_Laptop_Description">
             <English>There is a laptop on the first floor of the building. Download the data from it.</English>
             <Polish>Na piętrze budynku znajduje się laptop, pobierzcie z niego dane.</Polish>
         </Key>
@@ -29,16 +29,16 @@ Na lokalnym lotnisku USAF zaraz odbędzie się zmiana warty. Sabotażyści przyg
             <English>Steal the SUV</English>
             <Polish>Ukradnij SUVa</Polish>
         </Key>
-        <Key ID="STR_AFSG_Patrol_Task_SUV_Title">
+        <Key ID="STR_AFSG_Patrol_Task_SUV_Description">
             <English>There is a cargo plane near the transport hangar that can accomotade the SUV. Escape the airport.</English>
             <Polish>W pobliżu hangarów transportowych znajduje się samolot zdolny przetransportować samochód. Ucieknijcie z lotniska.</Polish>
         </Key>
 
-        <Key ID="STR_AFSG_Patrol_Task_JetDestroy_Title">
+        <Key ID="STR_AFSG_Patrol_Task_Jets_Title">
             <English>Destroy the plane</English>
             <Polish>Zniszcz samolot</Polish>
         </Key>
-        <Key ID="STR_AFSG_Patrol_Task_JetDestroy_Title">
+        <Key ID="STR_AFSG_Patrol_Task_Jets_Description">
             <English>There are A-10s near Radar Station Bravo, hidden under hangar tents. Destroy at least 2 of them.</English>
             <Polish>W pobliżu Radar Station Bravo pod namiotami stoją A-10. Zniszczcie przynajmniej 2.</Polish>
         </Key>

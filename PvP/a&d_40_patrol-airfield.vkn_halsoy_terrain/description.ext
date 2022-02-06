@@ -13,10 +13,13 @@ disableChannels[] = {1, 2, 3, 4, 5};
 
 /* Mission description and stuff */
 author = "3Mydlo3";
-onLoadIntro = CSTRING(DisplayName);
+onLoadIntro = CSTRING(Mission_ShortDescription);
 briefingName = CSTRING(DisplayName);
-onLoadMission = CSTRING(DisplayName);
-onLoadName = CSTRING(DisplayName);
+onLoadMission = CSTRING(Mission_ShortDescription);
+onLoadName = CSTRING(Mission_Title);
+
+loadScreen = "images\screen.paa";
+overviewPicture = "images\screen.paa"
 
 /* Other stuff */
 disabledAI = true;

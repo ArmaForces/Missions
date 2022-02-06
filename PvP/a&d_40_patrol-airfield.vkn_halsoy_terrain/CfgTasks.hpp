@@ -3,13 +3,15 @@ class CfgTasks {
 
     class PatrolPvP {
         title = CSTRING(DisplayName);
-        description = CSTRING(Mission_Description);
+        description = CSTRING(Mission_ShortDescription);
         icon = "defend";
         initialState = "CREATED";
     };
 
     class Laptop {
         owners[] = { "EAST" };
+        parentTask = "PatrolPvP";
+
         object = "laptop";
         icon = "download";
 
@@ -22,11 +24,16 @@ class CfgTasks {
         object = "suv";
         icon = "car";
 
+        conditionEventsShow[] += { QGVAR(suvSpawned) };
+        conditionEventsShowRequired = 2;
+
         conditionEventsSuccess[] = { "SUVSuccessful" };
     };
 
     class Jets : Laptop {
         owners[] = { "EAST" };
+        object = "";
+        marker = "sys_marker_radar_station_bravo";
         icon = "plane";
 
         conditionEventsSuccess[] = { "JetsSuccessful" };
