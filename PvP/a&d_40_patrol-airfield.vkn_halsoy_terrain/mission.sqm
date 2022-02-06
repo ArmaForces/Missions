@@ -53,7 +53,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -3347,8 +3347,8 @@ class Mission
 		year=2020;
 		month=4;
 		day=3;
-		hour=14;
-		minute=19;
+		hour=4;
+		minute=20;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -3380,6 +3380,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -3396,7 +3397,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3420,11 +3421,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -3489,6 +3485,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -3505,7 +3502,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3529,11 +3526,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -3640,6 +3632,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -3656,7 +3649,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3680,11 +3673,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -3749,6 +3737,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -3765,7 +3754,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3789,11 +3778,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -3919,6 +3903,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -3935,7 +3920,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3959,11 +3944,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4028,6 +4008,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4044,7 +4025,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4068,11 +4049,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4138,6 +4114,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4154,7 +4131,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4178,11 +4155,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4247,6 +4219,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4263,7 +4236,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4287,11 +4260,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4417,6 +4385,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4433,7 +4402,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4457,11 +4426,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4526,6 +4490,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4542,7 +4507,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4566,11 +4531,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4635,6 +4595,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4651,7 +4612,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4675,11 +4636,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4744,6 +4700,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4760,7 +4717,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4784,11 +4741,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -4914,6 +4866,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -4930,7 +4883,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4954,11 +4907,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5023,6 +4971,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5039,7 +4988,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5063,11 +5012,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5132,6 +5076,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5148,7 +5093,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5172,11 +5117,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5241,6 +5181,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5257,7 +5198,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5281,11 +5222,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5412,6 +5348,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5428,7 +5365,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5452,11 +5389,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5521,6 +5453,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5537,7 +5470,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5561,11 +5494,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5630,6 +5558,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5646,7 +5575,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5670,11 +5599,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5739,6 +5663,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5755,7 +5680,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5779,11 +5704,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -5909,6 +5829,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -5925,7 +5846,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5949,11 +5870,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6018,6 +5934,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6034,7 +5951,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6058,11 +5975,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6127,6 +6039,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6143,7 +6056,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6167,11 +6080,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6236,6 +6144,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6252,7 +6161,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6276,11 +6185,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6406,6 +6310,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6422,7 +6327,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6446,11 +6351,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6516,6 +6416,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6532,7 +6433,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6556,11 +6457,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6626,6 +6522,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6642,7 +6539,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6666,11 +6563,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6736,6 +6628,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6752,7 +6645,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6776,11 +6669,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -6907,6 +6795,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -6923,7 +6812,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6947,11 +6836,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7017,6 +6901,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7033,7 +6918,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7057,11 +6942,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7127,6 +7007,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7143,7 +7024,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7167,11 +7048,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7236,6 +7112,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7252,7 +7129,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7276,11 +7153,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7407,6 +7279,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7423,7 +7296,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7447,11 +7320,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7517,6 +7385,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7533,7 +7402,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7557,11 +7426,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7626,6 +7490,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7642,7 +7507,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7666,11 +7531,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7736,6 +7596,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7752,7 +7613,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7776,11 +7637,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -7907,6 +7763,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -7923,7 +7780,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7947,11 +7804,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -8017,6 +7869,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -8033,7 +7886,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8057,11 +7910,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -8127,6 +7975,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -8143,7 +7992,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8167,11 +8016,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -8236,6 +8080,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="CUP_arifle_M16A2";
+								flashlight="CUP_acc_Flashlight";
 								class primaryMuzzleMag
 								{
 									name="CUP_30Rnd_556x45_Stanag_Tracer_Red";
@@ -8252,7 +8097,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8276,11 +8121,6 @@ class Mission
 									class Item4
 									{
 										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_EarPlugs";
 										count=1;
 									};
 								};
@@ -29891,6 +29731,7 @@ class Mission
 							class Attributes
 							{
 								init="this call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -29911,6 +29752,7 @@ class Mission
 							class Attributes
 							{
 								init="this call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -29931,6 +29773,7 @@ class Mission
 							class Attributes
 							{
 								init="this call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -29951,6 +29794,7 @@ class Mission
 							class Attributes
 							{
 								init="this call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -29971,6 +29815,7 @@ class Mission
 							class Attributes
 							{
 								init="this call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -29991,6 +29836,7 @@ class Mission
 							class Attributes
 							{
 								init="this call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -30011,6 +29857,7 @@ class Mission
 							class Attributes
 							{
 								init="[this, ""Radar Station Bravo Barracks East""] call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -30031,6 +29878,7 @@ class Mission
 							class Attributes
 							{
 								init="[this, ""Radar Station Bravo Barracks North""] call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -30051,6 +29899,7 @@ class Mission
 							class Attributes
 							{
 								init="this call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
@@ -30071,6 +29920,7 @@ class Mission
 							class Attributes
 							{
 								init="[this, ""East entrance back""] call afsg_patrol_fnc_initCamera;";
+								presence=0.80000001;
 								reportRemoteTargets=1;
 								reportOwnPosition=1;
 							};
