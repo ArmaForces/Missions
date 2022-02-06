@@ -32,6 +32,7 @@ class ADDON {
         class changeSide {};
         class createStartPositionMarker {};
         class deleteStartPositionsMarkers {};
+        class initCamera {};
         class initializeBluforSpawn {};
         class initializeRedforSpawn {};
         class deleteAtRandom {};
