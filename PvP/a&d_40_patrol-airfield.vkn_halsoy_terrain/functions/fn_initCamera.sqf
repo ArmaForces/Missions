@@ -25,6 +25,8 @@ _cone hideObjectGlobal true;
 _cone enableSimulationGlobal false;
 _drone attachTo [_cone];
 
+_drone disableTIEquipment true;
+
 // Set name
 if (_cameraName isEqualTo "") then {
 	private _nearestMarkers = allMapMarkers apply {[_drone distance getMarkerPos _x, _x]};
