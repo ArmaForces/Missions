@@ -19,7 +19,8 @@ GVAR(playerInitialized) = false;
     if (GVAR(playerInitialized)) exitWith {};
     GVAR(playerInitialized) = true;
 
-    player addItem "ACE_EarPlugs";
+    // Add buttplugs only when ACE Hearing is enabled
+    // player addItem "ACE_EarPlugs";
     {player removeItem _x} forEach ([] call acre_api_fnc_getCurrentRadioList);
     if (_side isEqualTo WEST) then {
         // Do stuff for WEST if any
