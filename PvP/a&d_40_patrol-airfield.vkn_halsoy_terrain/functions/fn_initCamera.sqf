@@ -35,4 +35,9 @@ if (_cameraName isEqualTo "") then {
 	_cameraName = markerText _nearestMarker;
 };
 
+private _markerName = format ["marker_camera_%1", _cameraName];
+private _marker = createMarkerLocal [_markerName, getPos _drone];
+_marker setMarkerTypeLocal "Warning";
+_marker setMarkerColor "ColorEAST";
+
 _drone setGroupIdGlobal [_cameraName];
