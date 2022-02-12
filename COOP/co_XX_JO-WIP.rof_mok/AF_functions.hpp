@@ -9,5 +9,7 @@ class ADDON {
         class setViewDistance {};
         class viewDistanceGUI {};
         class playerActions {};
+
+        class addAndForcePointer {};
     };
 };
