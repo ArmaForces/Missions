@@ -11,5 +11,6 @@ class ADDON {
         class playerActions {};
 
         class addAndForcePointer {};
+        class holsterWeapon {};
     };
 };
