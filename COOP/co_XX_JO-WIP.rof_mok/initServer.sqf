@@ -75,6 +75,17 @@
     [_x, "init", {
         [
             (_this select 0),
+            ["National NAPA",1],
+            true
+        ] call BIS_fnc_initVehicle;
+    }] call CBA_fnc_addClassEventHandler;
+} forEach [
+    "CUP_O_BRDM2_HQ_CHDKZ"];
+
+{
+    [_x, "init", {
+        [
+            (_this select 0),
             [
                 "Camo", 0.6,
                 "Olive", 0.6,

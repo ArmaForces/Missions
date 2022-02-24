@@ -1,15 +1,22 @@
 class CfgTasks {
-    class JO_Unnamed {
+    class OperationTartan {
         title = CSTRING(Mission_Title);
         description = CSTRING(Mission_Briefing);
         icon = "unknown";
     };
 
+    class Recon {
+        parentTask = "OperationTartan";
+        icon = "scout";
+        owner[] = { "reconTeam", "zeus" };
+        conditionEventsCancelled[] = { "PlayersDetected" };
+        conditionEventsFailed[] = { "PlayersDead" };
+        conditionEventsSuccess[] = { "EvacCompleted" };
+    }
+
     // Evac
     class Evac {
-        title = CSTRING(Task_Evac_Title);
-        description = CSTRING(Task_Evac_Description);
-        parentTask = "JO_Unnamed";
+        parentTask = "OperationTartan";
         icon = "run";
         marker = "sys_marker_base";
         

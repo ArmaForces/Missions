@@ -2,28 +2,36 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <English>JO</English>
-            <Polish>JO</Polish>
+            <English>Operation Tartan</English>
+            <Polish>Operacja Tartan</Polish>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <English>JO</English>
-            <Polish>JO</Polish>
+            <English>Operation Tartan</English>
+            <Polish>Operacja Tartan</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>JO</English>
-            <Polish>JO</Polish>
+            <!-- <English>JO</English> -->
+            <Polish>Siły zbrojne Wielkiej Brytanii utraciły kontrolę nad półwyspem Mull of Kintyre. Obszar został zajęty bez wystrzału, dowództwo nie ma pojęcia co się tam dzieje. Tuż przed desantem wysłany został oddział zwiadowczy, którego zadaniem jest zbadanie aktualnej sytuacji.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>JO</English>
-            <Polish>JO</Polish>
+            <!-- <English>JO</English> -->
+            <Polish>Grupa zwiadowców zostaje zrzucona na półwyspie w celu dokonania rozpoznania obszaru i zidentyfikowania stacjonujących sił wroga.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <English>JO</English>
-            <Polish>JO</Key>
+            <!-- <English>BRIEFING PLACEHOLDER EN</English> -->
+            <Polish>BRIEFING PLACEHOLDER PL</Key>
 
         <!-- TASKS -->
+        <Key ID="STR_AFP_Scripts_Task_Recon_Title">
+            <!-- <English>Evacuation</English> -->
+            <Polish>Rekonesans</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Recon_Description">
+            <!-- <English>Return to base.</English> -->
+            <Polish>Musicie pozostać niewykryci i przeprowadzić rozpoznanie wyznaczonego obszaru, zanim główne siły rozpoczną desant. Nie dajcie się nikomu zobaczyć. Zarówno o przeciwniku jak i o ludności cywilnej nie wiemy kompletnie nic, każda informacja jest na wagę złota. Jeżeli nie przeżyjecie, nie będziecie mogli przekazać zdobytych informacji i materiałów wywiadowczych (w tym screenów!) dowództwu. W dowolnym momencie możecie przerwać zwiad i zdecydować się na ewakuację, żeby móc przekazać zdobyte do tego momentu materiały wywiadowcze.</Polish>
+        </Key>
 
         <!-- EVAC -->
         <Key ID="STR_AFP_Scripts_Task_Evac_Title">
