@@ -111,3 +111,18 @@
     "CUP_O_Hilux_unarmed_CHDKZ",
     "CUP_O_Hilux_DSHKM_CHDKZ"];
 
+
+// MARKERS
+["SouthendAreaSecured", {
+    "marker_southend_area" setMarkerColorLocal "ColorWEST";
+    "marker_southend_area" setMarkerBrush "FDiagonal";
+}] call CBA_fnc_addEventHandler;
+
+["VillaAreaSecured", {
+    "marker_villa_area" setMarkerColorLocal "ColorWEST";
+    "marker_villa_area" setMarkerBrush "FDiagonal";
+}] call CBA_fnc_addEventHandler;
+
+["CampBrunericanBayDestroyed", {
+    deleteMarker "marker_camp_brunerican_bay";
+}] call CBA_fnc_addEventHandler;
