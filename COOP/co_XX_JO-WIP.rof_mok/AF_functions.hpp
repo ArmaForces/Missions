@@ -12,5 +12,10 @@ class ADDON {
 
         class addAndForcePointer {};
         class holsterWeapon {};
+
+        // Tasks
+        class taskConditionsAdd {};
+        class taskConditionsInit { postInit = 1; };
+        class taskConditionsLoop {};
     };
 };
