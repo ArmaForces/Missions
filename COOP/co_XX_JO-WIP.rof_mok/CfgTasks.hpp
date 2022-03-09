@@ -33,8 +33,8 @@ class CfgTasks {
     class SecureSouthendArea : Landing {
         icon = "attack";
 
-        conditionEventsSuccess[] = { "SouthendSecured" };
-        conditionEventsSuccessRequired = 1;
+        conditionEventsSuccess[] = { "SouthendSecured", "CampBrunericanBayDestroyed", "RestOfSouthendAreaSecured" };
+        conditionEventsSuccessRequired = 3;
         onSuccessEvents[] = { "SouthendAreaSecured" };
     };
     
@@ -56,8 +56,8 @@ class CfgTasks {
     class SecureVillaArea : Landing {
         icon = "attack";
 
-        conditionEventsSuccess[] = { "VillaSecured" };
-        conditionEventsSuccessRequired = 1;
+        conditionEventsSuccess[] = { "VillaSecured", "RestOfVillaAreaSecured" };
+        conditionEventsSuccessRequired = 2;
         onSuccessEvents[] = { "VillaAreaSecured" };
     };
 
@@ -91,6 +91,7 @@ class CfgTasks {
 
     class SAMs : Landing {
         icon = "destroy";
+        marker = "";
 
         conditionEventsSuccess[] = { "SAMsDestroyed" };
     };
