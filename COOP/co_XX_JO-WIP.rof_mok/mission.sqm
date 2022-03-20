@@ -31,7 +31,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="JO_2022-02-26_JO-WIP";
+sourceName="MM_2022-03-09_Operation-Tartan";
 addons[]=
 {};
 class AddonsMetaData

@@ -32,6 +32,7 @@ class CfgTasks {
     /* SOUTHEND AREA */
     class SecureSouthendArea : Landing {
         icon = "attack";
+        marker = "";
 
         conditionEventsSuccess[] = { "SouthendSecured", "CampBrunericanBayDestroyed", "RestOfSouthendAreaSecured" };
         conditionEventsSuccessRequired = 3;
@@ -55,6 +56,7 @@ class CfgTasks {
     /* VILLA AREA */
     class SecureVillaArea : Landing {
         icon = "attack";
+        marker = "";
 
         conditionEventsSuccess[] = { "VillaSecured", "RestOfVillaAreaSecured" };
         conditionEventsSuccessRequired = 2;
@@ -72,6 +74,7 @@ class CfgTasks {
     /* ADDITIONAL TASKS */
     class RadioTowers : Landing {
         icon = "radio";
+        marker = "";
 
         conditionEventsSuccess[] = { "WestRadioTowerSecured", "EastRadioTowerSecured" };
         conditionEventsSuccessRequired = 2;
