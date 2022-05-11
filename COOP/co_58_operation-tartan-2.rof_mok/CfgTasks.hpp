@@ -42,6 +42,16 @@ class CfgTasks {
         conditionEventsSuccess[] = { "HillBunkersBuilt" };
     }
 
+    class OptionalDeliverWeaponsWest : OptionalBuildWestFortifications {
+        icon = "rearm";
+        conditionEventsSuccess[] = { "WeaponsDeliveredWest" };
+    };
+
+    class OptionalDeliverWeaponsHill : OptionalBuildHillFortifications {
+        icon = "rearm";
+        conditionEventsSuccess[] = { "WeaponsDeliveredHill" };
+    };
+
     /* VILLA AREA */
     class SecureVillaArea : DefendSouthend {
         icon = "attack";
