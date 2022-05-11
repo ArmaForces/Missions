@@ -7,56 +7,13 @@ class CfgTasks {
         icon = "unknown";
     };
 
-    /* RECON */
-    class Recon {
+    /* VILLA AREA */
+    class SecureVillaArea {
         parentTask = "OperationTartan";
-        icon = "scout";
-        initialState = "SUCCEEDED";
-
-        conditionEventsCancelled[] = { "PlayersDetected" };
-        conditionEventsFailed[] = { "PlayersDead" };
-        conditionEventsSuccess[] = { "EvacCompleted" };
-    }
-
-    /* LANDING */
-    class Landing {
-        parentTask = "OperationTartan";
-        icon = "land";
-        marker = "sys_marker_landing";
+        icon = "attack";
 
         conditionEventsCancelled[] = { "Evac" };
         conditionEventsFailed[] = { "PlayersDead" };
-        conditionEventsSuccess[] = { "PlayersLanded" };
-    };
-
-    /* SOUTHEND AREA */
-    class SecureSouthendArea : Landing {
-        icon = "attack";
-        marker = "";
-
-        conditionEventsSuccess[] = { "SouthendSecured", "CampBrunericanBayDestroyed", "RestOfSouthendAreaSecured" };
-        conditionEventsSuccessRequired = 3;
-        onSuccessEvents[] = { "SouthendAreaSecured" };
-    };
-    
-    class Southend : SecureSouthendArea {
-        parentTask = "SecureSouthendArea";
-        marker = "sys_marker_southend";
-
-        conditionEventsSuccess[] = { "SouthendSecured" };
-    };
-    class CampBrunericanBay : Southend {
-        title = CSTRING(Task_Camp_Title);
-        description = CSTRING(Task_Camp_Description);
-        marker = "marker_camp_brunerican_bay";
-
-        conditionEventsSuccess[] = { "CampBrunericanBayDestroyed" };
-    };
-
-    /* VILLA AREA */
-    class SecureVillaArea : Landing {
-        icon = "attack";
-        marker = "";
 
         conditionEventsSuccess[] = { "VillaSecured", "RestOfVillaAreaSecured" };
         conditionEventsSuccessRequired = 2;
@@ -68,16 +25,19 @@ class CfgTasks {
         marker = "marker_villa";
 
         conditionEventsSuccess[] = { "VillaSecured" };
+        conditionEventsSuccessRequired = 1;
     };
 
 
     /* ADDITIONAL TASKS */
-    class RadioTowers : Landing {
+    class RadioTowers : SecureVillaArea {
         icon = "radio";
         marker = "";
+        initialState = "CREATED";
 
         conditionEventsSuccess[] = { "WestRadioTowerSecured", "EastRadioTowerSecured" };
         conditionEventsSuccessRequired = 2;
+        onSuccessEvents[] = {};
     };
 
     class WestRadioTower : RadioTowers {
@@ -92,17 +52,20 @@ class CfgTasks {
         conditionEventsSuccess[] = { "EastRadioTowerSecured" };
     };
 
-    class SAMs : Landing {
+    class SAMs : SecureVillaArea {
         icon = "destroy";
         marker = "";
 
         conditionEventsSuccess[] = { "SAMsDestroyed" };
+        conditionEventsSuccessRequired = 1;
+        onSuccessEvents[] = {};
     };
 
     class WestSAMSite : SAMs {
         title = CSTRING(Task_SAM_Title);
         description = CSTRING(Task_SAM_Description);
         parentTask = "SAMs";
+        initialState = "SUCCEEDED";
 
         marker = "marker_sam_west";
         conditionEventsSuccess[] = { "WestSAMSiteDestroyed" };
@@ -120,6 +83,7 @@ class CfgTasks {
         description = CSTRING(Task_RadarCapture_Description);
         icon = "interact";
         marker = "marker_radar_base";
+        initialState = "CREATED";
 
         conditionEventsCancelled[] = { "EastRadarDestroyed" };
         conditionEventsSuccess[] = { "EastRadarCaptured" };
@@ -142,5 +106,56 @@ class CfgTasks {
         
         conditionEventsShow[] = {"Evac"};
         conditionEventsSuccess[] = {"EvacCompleted"};
+    };
+
+
+
+
+    /* TASKS FROM 1st PART */
+
+    /* RECON */
+    class Recon {
+        parentTask = "OperationTartan";
+        icon = "scout";
+        initialState = "SUCCEEDED";
+
+        conditionEventsCancelled[] = { "PlayersDetected" };
+        conditionEventsFailed[] = { "PlayersDead" };
+        conditionEventsSuccess[] = { "EvacCompleted" };
+    }
+
+    /* LANDING */
+    class Landing : SecureVillaArea {
+        icon = "land";
+        marker = "sys_marker_landing";
+        initialState = "SUCCEEDED";
+
+        conditionEventsSuccess[] = { "PlayersLanded" };
+        onSuccessEvents[] = {};
+    };
+
+    /* SOUTHEND AREA */
+    class SecureSouthendArea : Landing {
+        icon = "attack";
+        marker = "";
+        initialState = "SUCCEEDED";
+
+        conditionEventsSuccess[] = { "SouthendSecured", "CampBrunericanBayDestroyed", "RestOfSouthendAreaSecured" };
+        conditionEventsSuccessRequired = 3;
+        onSuccessEvents[] = { "SouthendAreaSecured" };
+    };
+    
+    class Southend : SecureSouthendArea {
+        parentTask = "SecureSouthendArea";
+        marker = "sys_marker_southend";
+
+        conditionEventsSuccess[] = { "SouthendSecured" };
+    };
+    class CampBrunericanBay : Southend {
+        title = CSTRING(Task_Camp_Title);
+        description = CSTRING(Task_Camp_Description);
+        marker = "marker_camp_brunerican_bay";
+
+        conditionEventsSuccess[] = { "CampBrunericanBayDestroyed" };
     };
 };

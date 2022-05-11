@@ -8,6 +8,16 @@
     _x setFuel random 0.8 + 0.2;
 } forEach vehicles;
 
+// EQUIPMENT BOXES
+
+private _pressBox = missionNamespace getVariable "press_box";
+
+_pressBox addItemCargoGlobal ["XZ_CamRecorder_1", 1];
+_pressBox addItemCargoGlobal ["XZ_CamRecorder_2", 1];
+_pressBox addItemCargoGlobal ["Xnooz_AppareilPhoto", 1];
+_pressBox addItemCargoGlobal ["Xnooz_micro1", 1];
+_pressBox addItemCargoGlobal ["Xnooz_micro2", 1];
+
 /* SET CAMO FOR SPAWNED VEHICLES */
 
 {
@@ -58,7 +68,7 @@
     [_x, "init", {
         [
             (_this select 0),
-            ["National Party",1],
+            ["NAPA",1],
             true
         ] call BIS_fnc_initVehicle;
     }] call CBA_fnc_addClassEventHandler;
@@ -70,17 +80,6 @@
     "CUP_O_BRDM2_CHDKZ",
     "CUP_O_BRDM2_HQ_CHDKZ",
     "CUP_O_BRDM2_ATGM_CHDKZ"];
-
-{
-    [_x, "init", {
-        [
-            (_this select 0),
-            ["National NAPA",1],
-            true
-        ] call BIS_fnc_initVehicle;
-    }] call CBA_fnc_addClassEventHandler;
-} forEach [
-    "CUP_O_BRDM2_HQ_CHDKZ"];
 
 {
     [_x, "init", {
@@ -113,16 +112,20 @@
 
 
 // MARKERS
-["SouthendAreaSecured", {
+// This was done in previous mission
+
+// ["SouthendAreaSecured", {
     "marker_southend_area" setMarkerColorLocal "ColorWEST";
     "marker_southend_area" setMarkerBrush "FDiagonal";
-}] call CBA_fnc_addEventHandler;
+// }] call CBA_fnc_addEventHandler;
+
+// ["CampBrunericanBayDestroyed", {
+    deleteMarker "marker_camp_brunerican_bay";
+// }] call CBA_fnc_addEventHandler;
+
+// Not done
 
 ["VillaAreaSecured", {
     "marker_villa_area" setMarkerColorLocal "ColorWEST";
     "marker_villa_area" setMarkerBrush "FDiagonal";
-}] call CBA_fnc_addEventHandler;
-
-["CampBrunericanBayDestroyed", {
-    deleteMarker "marker_camp_brunerican_bay";
 }] call CBA_fnc_addEventHandler;

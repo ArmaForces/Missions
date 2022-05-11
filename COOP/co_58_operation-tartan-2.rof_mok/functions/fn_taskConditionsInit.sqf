@@ -16,14 +16,14 @@ if (!isServer) exitWith { nil };
 
 GVAR(conditionsWithEvents) = [];
 
-[{
-    !alive west_sam;
-}, "WestSAMSiteDestroyed"] call FUNC(taskConditionsAdd);
+// [{
+//     !alive west_sam;
+// }, "WestSAMSiteDestroyed"] call FUNC(taskConditionsAdd);
 
-[{
-    !alive east_sam;
-}, "EastSAMSiteDestroyed"] call FUNC(taskConditionsAdd);
+// [{
+//     !alive east_sam;
+// }, "EastSAMSiteDestroyed"] call FUNC(taskConditionsAdd);
 
 // OLD
 
-[nil] call FUNC(taskConditionsLoop);
+[] call FUNC(taskConditionsLoop);
