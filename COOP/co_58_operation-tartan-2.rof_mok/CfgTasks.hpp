@@ -7,13 +7,45 @@ class CfgTasks {
         icon = "unknown";
     };
 
-    /* VILLA AREA */
-    class SecureVillaArea {
+    /* SOUTHEND DEFENSE */
+    class DefendSouthend {
         parentTask = "OperationTartan";
-        icon = "attack";
+        icon = "defend";
+        marker = "sys_marker_southend";
 
         conditionEventsCancelled[] = { "Evac" };
         conditionEventsFailed[] = { "PlayersDead" };
+    };
+
+    class OptionalBuildFortifications : DefendSouthend {
+        parentTask = "DefendSouthend";
+        icon = "use";
+        marker = "";
+
+        conditionEventsSuccess[] = { "WestBunkersBuilt", "HillBunkersBuilt" };
+        conditionEventsSuccessRequired = 2;
+        
+        onSuccessEvents[] = { "SouthendFortificationsBuilt" };
+    };
+
+    class OptionalBuildWestFortifications : OptionalBuildFortifications {
+        parentTask = "OptionalBuildFortifications";
+        marker = "";
+        object = "west_fortifications";
+        
+        conditionEventsSuccess[] = { "WestBunkersBuilt" };
+    };
+
+    class OptionalBuildHillFortifications : OptionalBuildWestFortifications {
+        object = "hill_fortifications";
+
+        conditionEventsSuccess[] = { "HillBunkersBuilt" };
+    }
+
+    /* VILLA AREA */
+    class SecureVillaArea : DefendSouthend {
+        icon = "attack";
+        marker = "";
 
         conditionEventsSuccess[] = { "VillaSecured", "RestOfVillaAreaSecured" };
         conditionEventsSuccessRequired = 2;
@@ -30,7 +62,7 @@ class CfgTasks {
 
 
     /* ADDITIONAL TASKS */
-    class RadioTowers : SecureVillaArea {
+    class RadioTowers : DefendSouthend {
         icon = "radio";
         marker = "";
         initialState = "CREATED";
@@ -52,7 +84,7 @@ class CfgTasks {
         conditionEventsSuccess[] = { "EastRadioTowerSecured" };
     };
 
-    class SAMs : SecureVillaArea {
+    class SAMs : DefendSouthend {
         icon = "destroy";
         marker = "";
 
