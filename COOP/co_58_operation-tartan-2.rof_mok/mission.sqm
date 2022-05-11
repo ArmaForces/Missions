@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=8236;
+		nextID=8240;
 	};
 	class MarkerIDProvider
 	{
@@ -68,7 +68,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -438,7 +438,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=67;
+		items=69;
 		class Item0
 		{
 			dataType="Layer";
@@ -58223,8 +58223,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16239.103,6.2053261,735.44873};
-				angles[]={6.2166171,0,0.09966857};
+				position[]={16252.083,8.0708551,751.51068};
+				angles[]={6.2415423,0,0.044970755};
 			};
 			side="Empty";
 			flags=4;
@@ -58234,7 +58234,6 @@ class Mission
 			};
 			id=7938;
 			type="Land_PlasticCase_01_medium_black_F";
-			atlOffset=-0.00048923492;
 		};
 		class Item57
 		{
@@ -58281,7 +58280,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16234.662,5.6217012,736.41394};
+						position[]={16247.643,7.7169433,752.47589};
 						angles[]={0,3.1065116,0};
 					};
 					side="Civilian";
@@ -58290,10 +58289,58 @@ class Mission
 					{
 						description="Producent";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Journalist";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="SmokeShellBlue";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=10;
+									};
+									class Item2
+									{
+										name="AFMED_apap";
+										count=5;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Press_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							goggles="G_WirelessEarpiece_F";
+							headgear="H_PASGT_basic_blue_press_F";
+						};
 					};
 					id=8167;
 					type="C_Journalist_01_War_F";
-					atlOffset=1.9073486e-005;
+					atlOffset=0.00050830841;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58323,7 +58370,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16236.153,5.7640672,736.39594};
+						position[]={16249.134,7.7832985,752.45789};
 						angles[]={0,3.1065116,0};
 					};
 					side="Civilian";
@@ -58332,10 +58379,58 @@ class Mission
 					{
 						description="Dziennikarz";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Journalist";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="SmokeShellBlue";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=10;
+									};
+									class Item2
+									{
+										name="AFMED_apap";
+										count=5;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Press_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							goggles="G_WirelessEarpiece_F";
+							headgear="H_PASGT_basic_blue_press_F";
+						};
 					};
 					id=8168;
 					type="C_Journalist_01_War_F";
-					atlOffset=1.9073486e-005;
+					atlOffset=0.00050878525;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58365,7 +58460,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16237.471,5.907105,736.40094};
+						position[]={16250.451,7.8428326,752.46289};
 						angles[]={0,3.1065116,0};
 					};
 					side="Civilian";
@@ -58374,10 +58469,58 @@ class Mission
 					{
 						description="Kamerzysta";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_C_Journalist";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="SmokeShellBlue";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=10;
+									};
+									class Item2
+									{
+										name="AFMED_apap";
+										count=5;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Press_F";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							goggles="G_WirelessEarpiece_F";
+							headgear="H_PASGT_basic_blue_press_F";
+						};
 					};
 					id=8169;
 					type="C_Journalist_01_War_F";
-					atlOffset=1.9073486e-005;
+					atlOffset=0.00050878525;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58407,7 +58550,7 @@ class Mission
 			{
 			};
 			id=8166;
-			atlOffset=1.9073486e-005;
+			atlOffset=0.00050830841;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -60085,6 +60228,65 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16250.29,10.289572,755.40399};
+				angles[]={6.2431998,0,0.043301616};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=8236;
+			type="Land_PartyTent_01_F";
+			atlOffset=0.0040006638;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item68
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16248.336,8.4933624,748.4917};
+				angles[]={6.2348919,3.1563232,0.044977132};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=8239;
+			type="SatelliteAntenna_01_Black_F";
 		};
 	};
 	class Connections
