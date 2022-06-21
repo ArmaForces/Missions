@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Krystol, 3Mydlo3
- * Does something important
+ * Spawns plane in air on given coordinates.
  *
  * Example:
  * call afp_scripts_fnc_spawnPlaneAirborne

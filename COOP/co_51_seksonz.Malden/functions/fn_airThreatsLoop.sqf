@@ -1,3 +1,14 @@
+#include "script_component.hpp"
+/*
+ * Author: 3Mydlo3
+ * Handles spawning air threats in a loop
+ *
+ * Example:
+ * call afp_scripts_fnc_airThreatsLoop
+ *
+ * Public: No
+ */
+
 #define BLUE_PLANE "KOS_CRO_MiG_29"
 #define BLUE_HELI_1 "KOS_CRO_Mi24V_UPK"
 #define BLUE_HELI_2 "KOS_CRO_mi17amtsh3_camo"
@@ -11,7 +22,10 @@
 #define RED_SPAWN "sys_saf_air_spawn"
 #define BLUE_SPAWN "sys_cro_air_spawn"
 
+if (!isServer) exitWith {};
+
 {
+	systemChat format ["[AIR-LOOP] Spawning %1", _x#0];
 	private _plane = _x call FUNC(spawnPlaneAirborne);
 	private _pilot = driver _plane;
 	private _waypoint = group _pilot addWaypoint [getMarkerPos "sys_marker_la_trinite", 0];

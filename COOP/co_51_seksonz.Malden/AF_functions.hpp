@@ -16,23 +16,24 @@ class ADDON {
         class getNearestLocationName {};
 
         // Tasks
-        class tasksClientEvents { postInit = 1 };
-        class tasksServerEvents { postInit = 1 };
+        class tasksClientEvents { postInit = 1; };
+        class tasksServerEvents { postInit = 1; };
 
         // Stuff
-        class awacsInit { postInit = 1 };
+        class awacsInit { postInit = 1; };
+        class airThreatsLoop {};
         class awacsLoop {};
         class getHighestRankedPlayers {};
-        class mapCleanup { postInit = 1 };
+        class mapCleanup { postInit = 1; };
         class markerDecayLoop {};
 
         // Civilians handling
-        class botComplyInit { postInit = 1 };
+        class botComplyInit { postInit = 1; };
         //class botFlee {};
         //class botPunch {};
         class botSurrender {};
         class callComply {};
-        class preInit { preInit = 1 };
+        class preInit { preInit = 1; };
     };
 };
 
