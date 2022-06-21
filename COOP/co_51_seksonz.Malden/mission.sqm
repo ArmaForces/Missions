@@ -78,7 +78,6 @@ addons[]=
 	"rhsusf_c_troops",
 	"CUP_TrackedVehicles_M113",
 	"A3_Structures_F_Bootcamp_VR_Helpers",
-	"acre_api",
 	"A3_Modules_F_Curator_Curator",
 	"ace_headless",
 	"KOS_CRO_HV_artillery",
@@ -177,7 +176,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=114;
+		items=113;
 		class Item0
 		{
 			className="RHS_US_A2_AirImport";
@@ -434,456 +433,449 @@ class AddonsMetaData
 		};
 		class Item40
 		{
-			className="acre_api";
-			name="ACRE2 - API";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item41
-		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item42
+		class Item41
 		{
 			className="ace_headless";
 			name="ACE3 - Headless";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item42
 		{
 			className="KOS_CRO_HV_artillery";
 			name="KOS_CRO_HV_artillery";
 		};
-		class Item44
+		class Item43
 		{
 			className="sfp_tgb11";
 			name="sfp_tgb11";
 		};
-		class Item45
+		class Item44
 		{
 			className="CUP_WheeledVehicles_Ural";
 			name="CUP_WheeledVehicles_Ural";
 		};
-		class Item46
+		class Item45
 		{
 			className="A3_Missions_F_Oldman";
 			name="Arma 3 Old Man - Playable Content";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item46
 		{
 			className="A3_Structures_F_Enoch";
 			name="Arma 3 Contact Platform - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item48
+		class Item47
 		{
 			className="A3_Structures_F_Exp_Cultural";
 			name="Arma 3 Apex - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item49
+		class Item48
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item50
+		class Item49
 		{
 			className="A3_Structures_F_Enoch_Commercial";
 			name="Arma 3 Contact Platform - Commercial Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item50
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item51
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item53
+		class Item52
 		{
 			className="afm_flags";
 			name="AFM - flags";
 			author="ArmaForces";
 		};
-		class Item54
+		class Item53
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item55
+		class Item54
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item56
+		class Item55
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item57
+		class Item56
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item58
+		class Item57
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item59
+		class Item58
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item60
+		class Item59
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item61
+		class Item60
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item61
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item63
+		class Item62
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item64
+		class Item63
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item65
+		class Item64
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item66
+		class Item65
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item66
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item67
 		{
 			className="A3_Structures_F_Exp_Infrastructure";
 			name="Arma 3 Apex - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item69
+		class Item68
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item70
+		class Item69
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item71
+		class Item70
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item72
+		class Item71
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item73
+		class Item72
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item74
+		class Item73
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item75
+		class Item74
 		{
 			className="MAI_main";
 			name="mai_main";
 		};
-		class Item76
+		class Item75
 		{
 			className="KOS_CRO_HV_infantry";
 			name="KOS_CRO_HV_infantry";
 		};
-		class Item77
+		class Item76
 		{
 			className="KOS_CRO_HV_BM21";
 			name="KOS_CRO_HV_BM21";
 		};
-		class Item78
+		class Item77
 		{
 			className="KOS_CRO_HV_Pilots";
 			name="KOS_CRO_HV_Pilots";
 		};
-		class Item79
+		class Item78
 		{
 			className="KOS_CRO_HV_mi24";
 			name="KOS_CRO_HV_mi24";
 		};
-		class Item80
+		class Item79
 		{
 			className="KOS_CRO_HV_T72";
 			name="KOS_CRO_HV_T72";
 		};
-		class Item81
+		class Item80
 		{
 			className="rhs_c_airweapons";
 			name="rhs_c_airweapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item82
+		class Item81
 		{
 			className="rhssaf_c_weapons";
 			name="RHS: SAF Weapons configuration";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item83
+		class Item82
 		{
 			className="rhsgref_c_weapons";
 			name="GREF Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item84
+		class Item83
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item85
+		class Item84
 		{
 			className="rhssaf_main";
 			name="RHS: SAF main";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item86
+		class Item85
 		{
 			className="A3_Ui_F_Orange";
 			name="Arma 3 Orange - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item87
+		class Item86
 		{
 			className="CUP_Creatures_People_Civil_Chernarus";
 			name="CUP_Creatures_People_Civil_Chernarus";
 		};
-		class Item88
+		class Item87
 		{
 			className="CUP_Weapons_Makarov";
 			name="CUP_Weapons_Makarov";
 		};
-		class Item89
+		class Item88
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item90
+		class Item89
 		{
 			className="ace_compat_rhs_saf3";
 			name="ACE3 - RHS SAF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item91
+		class Item90
 		{
 			className="ace_compat_rhs_gref3";
 			name="ACE3 - RHS GREF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item92
+		class Item91
 		{
 			className="CUP_WheeledVehicles_Skoda";
 			name="CUP_WheeledVehicles_Skoda";
 		};
-		class Item93
+		class Item92
 		{
 			className="CUP_WheeledVehicles_S1203";
 			name="CUP_WheeledVehicles_S1203";
 		};
-		class Item94
+		class Item93
 		{
 			className="CUP_WheeledVehicles_Lada";
 			name="CUP_WheeledVehicles_Lada";
 		};
-		class Item95
+		class Item94
 		{
 			className="CUP_WheeledVehicles_Datsun";
 			name="CUP_WheeledVehicles_Datsun";
 		};
-		class Item96
+		class Item95
 		{
 			className="CUP_WheeledVehicles_V3S";
 			name="CUP_WheeledVehicles_V3S";
 		};
-		class Item97
+		class Item96
 		{
 			className="CUP_WheeledVehicles_Ikarus";
 			name="CUP_WheeledVehicles_Ikarus";
 		};
-		class Item98
+		class Item97
 		{
 			className="CUP_WheeledVehicles_Volha";
 			name="CUP_WheeledVehicles_Volha";
 		};
-		class Item99
+		class Item98
 		{
 			className="rhssaf_c_troops";
 			name="RHS: SAF infantry configuration";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item100
+		class Item99
 		{
 			className="rhssaf_c_vehicles";
 			name="RHS: SAF vehicles";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org";
 		};
-		class Item101
+		class Item100
 		{
 			className="CUP_StandaloneTerrains_Core";
 			name="CUP_StandaloneTerrains_Core";
 		};
-		class Item102
+		class Item101
 		{
 			className="CUP_WheeledVehicles_BTR80";
 			name="CUP_WheeledVehicles_BTR80";
 		};
-		class Item103
+		class Item102
 		{
 			className="CUP_Creatures_Military_CDF";
 			name="CUP_Creatures_Military_CDF";
 		};
-		class Item104
+		class Item103
 		{
 			className="CUP_Weapons_East_Attachments";
 			name="CUP_Weapons_East_Attachments";
 		};
-		class Item105
+		class Item104
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item106
+		class Item105
 		{
 			className="CUP_Weapons_Grenades";
 			name="CUP_Weapons_Grenades";
 		};
-		class Item107
+		class Item106
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item108
+		class Item107
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item109
+		class Item108
 		{
 			className="CUP_WheeledVehicles_UAZ";
 			name="CUP_WheeledVehicles_UAZ";
 		};
-		class Item110
+		class Item109
 		{
 			className="A3_Props_F_Argo";
 			name="Arma 3 Malden - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item111
+		class Item110
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item112
+		class Item111
 		{
 			className="afm_map";
 			name="AFM - map";
 			author="ArmaForces";
 		};
-		class Item113
+		class Item112
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
@@ -20516,154 +20508,25 @@ class Mission
 					name="Moduły";
 					class Entities
 					{
-						items=10;
+						items=8;
 						class Item0
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7041.5215,125.96707,10027.673};
+								position[]={7041.521,125.96707,10027.673};
 								angles[]={0,3.1415927,0};
 							};
 							side="Empty";
 							flags=5;
 							class Attributes
 							{
-								name="respawn_coop";
+								name="respawn";
 							};
 							id=4227;
 							type="VR_3DSelector_01_default_F";
 						};
 						class Item1
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={7041.5215,124.84925,10029.673};
-								angles[]={0.034386542,3.1415927,0};
-							};
-							id=4228;
-							type="acre_api_basicMissionSetup";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="acre_api_basicMissionSetup_DefaultRadio";
-									expression="_this setVariable ['DefaultRadio',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="acre_api_basicMissionSetup_BabelSetup";
-									expression="_this setVariable ['BabelSetup',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="acre_api_basicMissionSetup_RadioSetup";
-									expression="_this setVariable ['RadioSetup',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="acre_api_basicMissionSetup_DefaultRadio_Three";
-									expression="_this setVariable ['DefaultRadio_Three',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="acre_api_basicMissionSetup_DefaultRadio_Four";
-									expression="_this setVariable ['DefaultRadio_Four',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="acre_api_basicMissionSetup_DefaultRadio_Two";
-									expression="_this setVariable ['DefaultRadio_Two',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-								};
-								nAttributes=6;
-							};
-						};
-						class Item2
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -20755,7 +20618,7 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item3
+						class Item2
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -20846,7 +20709,7 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item4
+						class Item3
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -20861,7 +20724,7 @@ class Mission
 							type="HeadlessClient_F";
 							atlOffset=-7.6293945e-006;
 						};
-						class Item5
+						class Item4
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -20875,7 +20738,7 @@ class Mission
 							id=4232;
 							type="HeadlessClient_F";
 						};
-						class Item6
+						class Item5
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -20890,7 +20753,7 @@ class Mission
 							type="HeadlessClient_F";
 							atlOffset=-7.6293945e-006;
 						};
-						class Item7
+						class Item6
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -20904,232 +20767,7 @@ class Mission
 							id=4234;
 							type="HeadlessClient_F";
 						};
-						class Item8
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={7041.5215,124.78046,10031.673};
-								angles[]={6.278439,0,0.0036539643};
-							};
-							id=4235;
-							type="acre_api_nameChannels";
-							atlOffset=-7.6293945e-006;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="acre_api_nameChannels_Channel_1";
-									expression="_this setVariable ['Channel_1',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ALPHA";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="acre_api_nameChannels_Channel_2";
-									expression="_this setVariable ['Channel_2',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="BRAVO";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="acre_api_nameChannels_Channel_3";
-									expression="_this setVariable ['Channel_3',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="CHARLIE";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="acre_api_nameChannels_Channel_4";
-									expression="_this setVariable ['Channel_4',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="---------";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="acre_api_nameChannels_Channel_5";
-									expression="_this setVariable ['Channel_5',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="DOW_PIECH";
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="acre_api_nameChannels_SideSelect";
-									expression="_this setVariable ['SideSelect',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="acre_api_nameChannels_Channel_6";
-									expression="_this setVariable ['Channel_6',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="DOW_WSP";
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="acre_api_nameChannels_Channel_7";
-									expression="_this setVariable ['Channel_7',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="---------";
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="acre_api_nameChannels_Channel_8";
-									expression="_this setVariable ['Channel_8',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="DOW_POW";
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="acre_api_nameChannels_Channel_9";
-									expression="_this setVariable ['Channel_9',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="---------";
-										};
-									};
-								};
-								class Attribute10
-								{
-									property="acre_api_nameChannels_Channel_10";
-									expression="_this setVariable ['Channel_10',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="CROSSROADS";
-										};
-									};
-								};
-								nAttributes=11;
-							};
-						};
-						class Item9
+						class Item7
 						{
 							dataType="Comment";
 							class PositionInfo
