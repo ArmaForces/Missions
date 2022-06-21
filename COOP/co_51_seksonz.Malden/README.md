@@ -30,7 +30,7 @@ TODO:
   - 3 squads (8 man each)
   - 2 transport trucks
 - Mechanized infantry platoon
-  - 2 squads with Strv 90C (6+3 man each)
+  - 3 squads with Strv 90C (6+3 man each)
 - Support platoon
   - Logistics detachment (4 man)
     - Ammo truck
@@ -41,8 +41,8 @@ TODO:
 - Air support
   - AH-64A (2 man)
 
-Zeus slots: 1
-Total slots: 56
+Zeus slots: 2
+Total slots: 66
 
 ### Support
 
