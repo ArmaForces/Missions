@@ -16,16 +16,17 @@
 params ["_unit", "_caller"];
 
 if (
-    isNil {_unit getVariable "surrenderDone"}
-    || {!isNil {_unit getVariable "fleeScript"}
-    || {!alive _unit or isPlayer _unit
-    || {(_unit getVariable ["ace_captives_isHandcuffed", false])}}
+    !(_unit getVariable [QGVAR(surrenderDone), false])
+    || {_unit getVariable [QGVAR(fleeScript), false]
+    || {!alive _unit 
+    || {isPlayer _unit
+    || {(_unit getVariable ["ace_captives_isHandcuffed", false])}}}
     }) exitWith {};
 
-_unit setVariable ["fleeScript", 1, true];
+_unit setVariable [QGVAR(fleeScript), true, true];
 
-private _wh = _unit getVariable "whObject";
-private _weapon = _unit getVariable "whWeapon";
+private _wh = _unit getVariable QGVAR(whObject);
+private _weapon = _unit getVariable QGVAR(whWeapon);
 
 private _cannotFlee = 1;
 private _voice = "";
@@ -88,13 +89,13 @@ private _voice = "";
             _unit stop false;
             [_unit] orderGetIn true;
 
-            _unit setVariable ["fleeScript", nil, true];
-            _unit setVariable ["surrenderDone", nil, true];
+            _unit setVariable [QGVAR(fleeScript), nil, true];
+            _unit setVariable [QGVAR(surrenderDone), nil, true];
 
     } else {
         [{!alive (_this select 0) || {(_this select 0) getVariable ["ace_captives_isHandcuffed", false]}}, {
-            (_this select 0) setVariable ["fleeScript", nil, true];
-            (_this select 0) setVariable ["surrenderDone", nil, true];
+            (_this select 0) setVariable [QGVAR(fleeScript), nil, true];
+            (_this select 0) setVariable [QGVAR(surrenderDone), nil, true];
         }, [_unit]] call CBA_fnc_waitUntilAndExecute;
     };
 }, [], 1] call CBA_fnc_waitAndExecute;

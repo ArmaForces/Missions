@@ -14,11 +14,15 @@
 
 params ["_unit"];
 
-_unit setVariable ["hasActionPunch", 1, true];
+_unit setVariable [QGVAR(hasActionPunch), 1, true];
 
 // TODO: Refactor whole
 
-if (!isNil {_unit getVariable "surrenderInProgress"} or !isNil {_unit getVariable "surrenderDone"} or !alive _unit or isPlayer _unit or (_unit getVariable ["ace_captives_isHandcuffed", false])) exitWith {};
+if (_unit getVariable [QGVAR(surrenderInProgress), false]
+|| {_unit getVariable [QGVAR(surrenderDone), false]
+|| {!alive _unit 
+|| {isPlayer _unit 
+|| {_unit getVariable ["ace_captives_isHandcuffed", false]}}}}) exitWith {};
 
 private _fnc_shit = {
 
@@ -51,9 +55,11 @@ private _fnc_shit = {
 
         _unit playAction "PlayerCrouch";
         [_unit, ["courage", ((_unit skill "courage") - 0.5)]] remoteExec ["setskill", 2];
-        _unit setVariable ["hasActionPunch", nil, true];
+        _unit setVariable [QGVAR(hasActionPunch), nil, true];
     }, nil, 9999, true, true, "", "true", 3, false];
 _unit setUserActionText [_punch , "Zmuś do poddania się (uderz)", "<img size='2' image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\letters\Z_ca'/>"];
 };
 
 [_unit] remoteExecCall []
+
+// TODO: Finish removePrimaryWeaponItem
