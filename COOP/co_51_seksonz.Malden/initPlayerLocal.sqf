@@ -9,20 +9,13 @@ CUP_stopLampCheck = true;
     player addItem "ACE_EarPlugs";
 }, [], -1] call CBA_fnc_waitUntilAndExecute;
 
-[] spawn {
-    while { alive player } do {
-        waitUntil { getTerrainGrid > 25 };
-        setTerrainGrid 25;
-    };
-};
-
-if (headgear player isEqualTo "sfp_m37w_helmet_un") then {
-    [player] call FUNC(callComply);
-};
+// if (headgear player isEqualTo "sfp_m37w_helmet_un") then {
+//     [player] call FUNC(callComply);
+// };
 
 // Actions to remove obstacles from road
 // Faster for logistic guys
-private _actionDuration = if ((player getVariable ["ACE_IsEngineer", 0]) >= 2) then {10} else {30};
+private _actionDuration = if ((player getVariable ["ACE_IsEngineer", 0]) >= 2) then {10} else {60};
 {
     [_x, LLSTRING(Remove_Garbage), "", "",
     "_this distance _target < 3",
@@ -33,20 +26,20 @@ private _actionDuration = if ((player getVariable ["ACE_IsEngineer", 0]) >= 2) t
 } forEach roadblock_items;
 
 
-ural_rearm addAction [
-    LLSTRING(Rearm), 
-    {
-        params ["_target", "_caller", "_actionId", "_arguments"];
-        [_target] call AF_fnc_casRearmOpen;
-    },
-    [],
-    10, 
-    true, 
-    true, 
-    "",
-    "true",
-    2,
-    false,
-    "",
-    ""
-];
+// ural_rearm addAction [
+//     LLSTRING(Rearm), 
+//     {
+//         params ["_target", "_caller", "_actionId", "_arguments"];
+//         [_target] call AF_fnc_casRearmOpen;
+//     },
+//     [],
+//     10, 
+//     true, 
+//     true, 
+//     "",
+//     "true",
+//     2,
+//     false,
+//     "",
+//     ""
+// ];

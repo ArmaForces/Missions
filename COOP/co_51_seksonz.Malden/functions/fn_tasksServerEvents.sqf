@@ -19,7 +19,7 @@ if (!isServer) exitWith {};
 
 [{CBA_missionTime >= 0.2}, {
 	call FUNC(airThreatsLoop);
-}, [], 10] call CBA_fnc_waitUntilAndExecute;
+}, [], 3600] call CBA_fnc_waitUntilAndExecute;
 
 ["OfficerStart", {
 	[{!alive cro_general}, {

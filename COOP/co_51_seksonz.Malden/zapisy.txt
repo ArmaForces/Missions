@@ -1,0 +1,27 @@
+AF!importuj-zapisy
+AF!zrob-zapisy SEKSONZ - Dosadašnje Sranje
+AF!data 2022-06-22 19:45
+AF!zamkniecie 2022-06-20 23:59
+AF!modlista SEKSONZ
+
+#AF!dodaj-sekcje Zeusi | :soap: [1] @3Mydlo3#3733
+AF!dodaj-sekcje Zulu | :wsciekly_zulu: [1] Dowódca kompanii @Monke#1765 | :pan_maruda: [2] Dowódca plutonu
+AF!dodaj-sekcje Alpha | :wsciekly_zulu: [1] SL | :pan_maruda: [1] TL | :ambulance: [1] Medyk | :gun: [1] LKM | :bomb: [1] Saper | :beton: [3] BPP
+AF!dodaj-sekcje Bravo | :wsciekly_zulu: [1] SL | :pan_maruda: [1] TL | :ambulance: [1] Medyk | :gun: [1] LKM | :bomb: [1] Saper | :beton: [3] BPP
+AF!dodaj-sekcje Charlie | :wsciekly_zulu: [1] SL | :pan_maruda: [1] TL | :ambulance: [1] Medyk | :gun: [1] LKM | :bomb: [1] Saper | :beton: [3] BPP
+AF!dodaj-sekcje Delta | :wsciekly_zulu: [1] SL @Zaborz#3633 | :boom: [1] Strzelec AA @Piesa#0044 | :wheelchair: [1] Kierowca @mikkeboss#8341 | :bow_and_arrow: [1] Strzelec @Krystol#2262
+AF!dodaj-sekcje Echo | :wsciekly_zulu: [1] SL | :pan_maruda: [1] TL | :ambulance: [1] Medyk | :gun: [1] LKM | :bomb: [1] Saper | :beton: [1] BPP | :krystolek: [1] Dowódca | :wheelchair: [1] Kierowca | :bow_and_arrow: [1] Strzelec
+AF!dodaj-sekcje Foxtrot | :wsciekly_zulu: [1] SL @bolec#7138 | :pan_maruda: [1] TL | :ambulance: [1] Medyk | :gun: [1] LKM @JurijPietrowicz™#0894 | :bomb: [1] Saper @WINDOWS_95_SE#1026 | :beton: [1] BPP | :krystolek: [1] Dowódca @veteran29#1337 | :wheelchair: [1] Kierowca @3Mydlo3#3733 | :bow_and_arrow: [1] Strzelec @Aden#0167
+AF!dodaj-sekcje Golf | :truck: [4] Logistyk
+AF!dodaj-sekcje November (AH-64A) | :helicopter: [1] Pilot | :bow_and_arrow: [1] Strzelec @Ajvar#6914
+
+AF!opis Wyspa Maldićek, morze adriatyckie, rok 1994.
+Wojna w Jugosławii trwa w najlepsze. Krwawy konflikt pochłania kolejne istnienia a końca tego przelewu krwi nie widać. Nie ominął również wyspy Maldićek, jednej z chorwackich wysp w archipelagu. Tak naprawdę nie wiadomo do końca kto z kim i przeciwko komu, ale na wyspie pojawiły się siły m.in. serbskie i bośniackie przenosząc konflikt również tutaj.
+
+:warning: Uwagi :warning:
+- Misja bez Zeusa.
+- Echo i Foxtrot mają IFV Strf 9040 jako część drużyny.
+- November ma bardzo niski priorytet, tj. jeżeli gdziekolwiek będzie brakowało ludzi to załoga zostanie tam przesunięta w pierwszej kolejności. Wyjątkiem może być bardzo dobra załoga.
+- Wasze życie jest cenne, nie ma respów (lepiej się wycofać/wezwać na wsparcie).
+
+https://cdn.discordapp.com/attachments/600089051445461012/722122491442626590/20200615171611_1.jpg

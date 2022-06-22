@@ -20,17 +20,18 @@ class ADDON {
         class tasksServerEvents { postInit = 1; };
 
         // Stuff
-        class awacsInit { postInit = 1; };
-        class airThreatsLoop {};
+        // class awacsInit { postInit = 1; };
+        // class airThreatsLoop {};
         class awacsLoop {};
         class getHighestRankedPlayers {};
         class mapCleanup { postInit = 1; };
         class markerDecayLoop {};
+        class spawnPlaneAirborne {};
 
         // Civilians handling
-        class botComplyInit { postInit = 1; };
-        //class botFlee {};
-        //class botPunch {};
+        // class botComplyInit { postInit = 1; };
+        // class botFlee {};
+        // class botPunch {};
         class botSurrender {};
         class callComply {};
         class preInit { preInit = 1; };

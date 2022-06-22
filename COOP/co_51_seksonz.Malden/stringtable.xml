@@ -5,8 +5,8 @@
             <Polish>SEKSONZ - Dosadašnje Sranje</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>Late afternoon 24 may 1994.</English>
-            <Polish>Późne popołudnie 24 maja 1994 roku.</Polish>
+            <English>Late afternoon 24 may 1994. Swedish Expeditionary UN Corpse is tasked with route secure task.</English>
+            <Polish>Późne popołudnie 24 maja 1994 roku. Szwedzki Ekspedycyjny Korpus Sił ONZ ma zabezpieczyć trasę konwoju.</Polish>
         </Key>
 
         <!--
@@ -27,12 +27,12 @@
         -->
 
         <Key ID="STR_AFP_Scripts_Task_RescueCivilians_Title">
-            <English>Evacuate civilian population</English>
-            <Polish>Ewakuuj ludność cywilną</Polish>
+            <English>Protect civilian population</English>
+            <Polish>Chroń ludność cywilną</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Task_RescueCivilians_Description">
-            <English>All encountered civilians shall be evacuated to our base of operation, where they will be taken care of. It's best to group them into trucks and then transport rather than each one separately. Be advised, they might carry concealed firearms so search them ASAP.</English>
-            <Polish>Wszystkich napotkanych cywili musicie ewakuować do naszego posterunku gdzie zostaną oni objęci pomocą humanitarną. Najlepiej pakować ich do ciężarówek i wywozić grupami. Uważajcie jednak, część z nich może próbować przemycić broń, więc przeszukujcie przed ewakuowaniem ich.</Polish>
+            <English>All encountered civilians shall be protected against possible attacks of various military threats. When you secure the area, they will be taken care of by different unit. </English>
+            <Polish>Wszystkich napotkanych cywili musicie chronić przed zagrożeniem ze strony innych wojsk w regionie. Gdy zabezpieczycie teren, inna jednostka zajmie się dostarczeniem pomocy humanitarnej.</Polish>
         </Key>
 
         <Key ID="STR_AFP_Scripts_Task_GravesInvestigation_Title">
@@ -85,9 +85,13 @@
         <!--
             Rearm script
         -->
-        <Key ID="STR_AFP_Scripts_AWACS_DetectedMessage">
+        <Key ID="STR_AFP_Scripts_Rearm">
             <English>Rearm interface</English>
             <Polish>Panel przezbrojenia</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Remove_Garbage">
+            <English>Remove roadblock (requires engineer)</English>
+            <Polish>Usuń blokadę (wymaga inżyniera)</Polish>
         </Key>
 
     </Package>
