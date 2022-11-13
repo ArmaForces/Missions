@@ -188,6 +188,43 @@ Waszym głównym celem jest miasteczko Southend i jego bezpośrednie sąsiedztwo
             <Polish>Obóz</Polish>
         </Key>
 
+        <!-- ROLES -->
+        <Key ID="STR_AFP_Scripts_Role_CompanyLeader">
+            <English>Company Leader@Zulu</English>
+            <Polish>Dowódca Kompanii@Zulu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_SquadLeaderAlpha">
+            <English>Squad Leader@Alpha</English>
+            <Polish>Dowódca Drużyny@Alpha</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_SquadLeaderBravo">
+            <English>Squad Leader@Bravo</English>
+            <Polish>Dowódca Drużyny@Bravo</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_SquadLeaderCharlie">
+            <English>Squad Leader@Charlie</English>
+            <Polish>Dowódca Drużyny@Charlie</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_SquadLeaderDelta">
+            <English>Squad Leader@Delta</English>
+            <Polish>Dowódca Drużyny@Delta</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_MedevacLeader">
+            <English>Medevac Leader@Zulu</English>
+            <Polish>Dowódca Medevac@Oscar</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_WSO">
+            <English>Weapon Systems Officer</English>
+            <Polish>Oficer Uzbrojenia</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_HelicopterCopilot">
+            <English>Helicopter copilot</English>
+            <Polish>Drugi pilot śmigłowca</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Role_HelicopterGunner">
+            <English>Helicopter gunner</English>
+            <Polish>Strzelec śmigłowca</Polish>
+        </Key>
     </Package>
 </Project>
 

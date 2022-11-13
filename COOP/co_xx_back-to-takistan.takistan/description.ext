@@ -67,11 +67,12 @@ class RscInfoTextEdit : RscInfoText {
             font = "EtelkaMonospacePro";
             idc = 310169;
             sizeEx = 0.045;
+            // style = "0x01 + 0x10";
             style = "0x01 + 0x10 + 0x200";
             // style = "0x01 + 0x10 + 0x200 + 0x100";
             h = "(8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
-            w = "(22 * ( ((safezoneW / safezoneH) min 1.2) / 40))";
-            x = "(safezoneX + safezoneW - 23 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+            w = "(35 * ( ((safezoneW / safezoneH) min 1.2) / 40))";
+            x = "(safezoneX + safezoneW - 36 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
             y = "(safezoneY + safezoneH - 14 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
             // h = "(5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
             // w = "(20 * ( ((safezoneW / safezoneH) min 1.2) / 40))";
