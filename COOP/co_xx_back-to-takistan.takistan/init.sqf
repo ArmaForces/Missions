@@ -4,7 +4,7 @@ minviewdistance = 500;
 maxviewdistance = 10000;
 
 // TODO: Remove
-skipTime 2;
+// skipTime 2;
 
 if (!hasInterface || isServer) then {
 	[QGVAR(BastamStartEscape), {

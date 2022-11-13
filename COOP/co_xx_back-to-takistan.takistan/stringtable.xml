@@ -172,9 +172,21 @@ Waszym głównym celem jest miasteczko Southend i jego bezpośrednie sąsiedztwo
 
 
         <!-- MARKERS -->
-        <Key ID="STR_AFP_Scripts_Marker_Villa">
-            <English>Villa</English>
-            <Polish>Willa</Polish>
+        <Key ID="STR_AFP_Scripts_Marker_FieldHospital">
+            <English>Field Hospital</English>
+            <Polish>Szpital polowy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_AirfieldServicePoint">
+            <English>Airfield Service Point</English>
+            <Polish>Lotniskowy Punkt Serwisowy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_AntiAircraft">
+            <English>Anti-Aircraft emplacements</English>
+            <Polish>Stanowiska przeciwlotnicze</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Minefield">
+            <English>Minefield</English>
+            <Polish>Pole minowe</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Marker_RUAF">
             <English>RUAF HQ</English>

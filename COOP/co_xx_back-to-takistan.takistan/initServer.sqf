@@ -3,12 +3,19 @@
 ["sys_marker_feruz_abad", "Feruz Agood"] call FUNC(renameLocation);
 
 
+// Hercules drive through taxi
+hercules2_unitCapture engineOn true;
+#include "unitCaptureData\UC_hercules2.hpp"
+[hercules2_unitCapture, HERCULES2_UC_DATA] spawn BIS_fnc_unitPlay;
+
 // {
 //     [_x, "cup_acc_zenit_2ds"] call FUNC(addAndForcePointer);
 // } forEach (allUnits select {side _x isEqualTo EAST});
 
 {
-    _x setFuel random 0.8 + 0.2;
+    if (fuel _x isEqualTo 1) then {
+        _x setFuel random 0.8 + 0.2;
+    };
 } forEach vehicles;
 
 /* SET CAMO FOR SPAWNED VEHICLES */
