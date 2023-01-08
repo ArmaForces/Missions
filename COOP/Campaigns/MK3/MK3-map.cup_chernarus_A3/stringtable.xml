@@ -13,6 +13,14 @@
             <English>Resistance camp</English>
             <Polish>Obóz partyzantów</Polish>
         </Key>
+        <Key ID="STR_MKR_Markers_MilitaryBase">
+            <English>Military base</English>
+            <Polish>Baza wojskowa</Polish>
+        </Key>
+        <Key ID="STR_MKR_Markers_MilitaryCamp">
+            <English>Military camp</English>
+            <Polish>Obóz wojskowy</Polish>
+        </Key>
 
     </Package>
 </Project>

@@ -12,11 +12,11 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=32;
+		nextID=50;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=3;
 	};
 	class LayerIndexProvider
 	{
@@ -24,29 +24,35 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={269.2341,195.20035,6628.5269};
-		dir[]={0.22138275,-0.25946483,-0.94009936};
-		up[]={0.059486572,0.96573025,-0.25260985};
-		aside[]={-0.97342902,6.7553628e-008,-0.22923286};
+		pos[]={272.1918,195.3118,6569.7119};
+		dir[]={0.096252114,-0.47195399,0.87636143};
+		up[]={0.05152582,0.88162243,0.4691352};
+		aside[]={0.99402869,-1.4264879e-007,-0.10917531};
 	};
 };
 binarizationWanted=0;
 sourceName="MK3-map";
 addons[]=
 {
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"CUP_Misc3_Config"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
 		};
 	};
 };
@@ -81,7 +87,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
@@ -114,6 +120,83 @@ class Mission
 			type="hd_flag";
 			colorName="ColorGUER";
 			id=28;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={2154.698,89.636002,3333.697};
+			name="marker_base_pavlovo";
+			text="@STR_MKR_Markers_MilitaryBase";
+			type="hd_flag";
+			colorName="ColorEAST";
+			id=44;
+			atlOffset=-0.00015258789;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={1144.423,185.34,7248.8628};
+			name="marker_camp_dam";
+			text="@STR_MKR_Markers_MilitaryCamp";
+			type="hd_flag";
+			colorName="ColorEAST";
+			id=45;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={2504.0232,191.99734,5128.1978};
+			name="marker_base_zelenogorsk";
+			text="@STR_MKR_Markers_MilitaryBase";
+			type="hd_flag";
+			colorName="ColorEAST";
+			id=46;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2466.8213,206.63228,5137.9863};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=47;
+			type="FlagCarrierINS";
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2146.6938,109.11258,3359.5698};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=48;
+			type="FlagCarrierINS";
+			atlOffset=3.0517578e-005;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1136.6289,189.3365,7259.8857};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=49;
+			type="FlagCarrierINS";
 		};
 	};
 };
