@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="MKR">
+    <Package name="Scripts">
+        <Key ID="STR_MKR_Scripts_DisplayName">
+            <English>Soapy Campaign: Resistance</English>
+            <Polish>Mydlana Kampania: Partyzanci</Polish>
+        </Key>
+    </Package>
+
+    <!-- MARKERS -->
+    <Package name="Markers">
+        <Key ID="STR_MKR_Markers_ResistanceCamp">
+            <English>Resistance camp</English>
+            <Polish>Obóz partyzantów</Polish>
+        </Key>
+
+    </Package>
+</Project>
