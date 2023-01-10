@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=85;
+		nextID=105;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=20;
+		nextID=23;
 	};
 	class Camera
 	{
@@ -37,8 +37,10 @@ addons[]=
 	"CUP_WheeledVehicles_Skoda",
 	"CUP_WheeledVehicles_Lada",
 	"A3_Boat_F_Boat_Transport_01",
+	"CUP_WheeledVehicles_UAZ",
 	"A3_Weapons_F_Explosives",
 	"A3_Modules_F_Curator_Mines",
+	"rhs_c_weapons",
 	"A3_Ui_F",
 	"CUP_Misc3_Config"
 };
@@ -46,7 +48,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=9;
 		class Item0
 		{
 			className="CUP_WheeledVehicles_Skoda";
@@ -66,26 +68,38 @@ class AddonsMetaData
 		};
 		class Item3
 		{
+			className="CUP_WheeledVehicles_UAZ";
+			name="CUP_WheeledVehicles_UAZ";
+		};
+		class Item4
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
+		{
+			className="rhs_c_weapons";
+			name="AFRF Weapons Pack";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item7
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item8
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
@@ -135,7 +149,7 @@ class Mission
 			name="Domy";
 			class Entities
 			{
-				items=8;
+				items=11;
 				class Item0
 				{
 					dataType="Comment";
@@ -165,7 +179,7 @@ class Mission
 					name="Pojazdy";
 					class Entities
 					{
-						items=3;
+						items=4;
 						class Item0
 						{
 							dataType="Object";
@@ -321,9 +335,162 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={326.45999,285.4263,8555.0283};
+								angles[]={0.10098474,3.4015419,6.1349545};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								name="hypek_veh";
+								textures="Green_Soviet";
+							};
+							id=89;
+							type="CUP_B_UAZ_Unarmed_CDF";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="VehicleCustomization";
+									expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=2;
+															class Item0
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="Green_Soviet";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=1;
+																};
+															};
+														};
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=8;
+															class Item0
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="hide_spare_wheel";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item2
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="hide_lower_tarp";
+																};
+															};
+															class Item3
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item4
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="hide_upper_tarp";
+																};
+															};
+															class Item5
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item6
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="hide_light_covers";
+																};
+															};
+															class Item7
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=1;
+																};
+															};
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=58;
-					atlOffset=-151.44482;
+					atlOffset=-124.70605;
 				};
 				class Item3
 				{
@@ -378,7 +545,7 @@ class Mission
 					name="Przedmioty";
 					class Entities
 					{
-						items=4;
+						items=5;
 						class Item0
 						{
 							dataType="Object";
@@ -453,13 +620,82 @@ class Mission
 							id=80;
 							type="DemoCharge_F";
 						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={317.58191,287.22739,8561.2021};
+								angles[]={-0,4.0852556,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="if (isServer) then {" \n "  this addWeaponCargoGlobal [""sgun_HunterShotgun_01_F"", 1];" \n "  this addMagazineCargoGlobal [""CUP_1Rnd_12Gauge_Pellets_No00_Buck"", 20];" \n "  this addMagazineCargoGlobal [""CUP_1Rnd_12Gauge_Slug"", 20];" \n "};";
+								name="hypek_cargo";
+							};
+							id=104;
+							type="rhs_7ya37_1_single";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=83;
-					atlOffset=0.024096966;
+					atlOffset=-54.417725;
+				};
+				class Item8
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={4638.2769,339.00699,10067.357};
+					};
+					title="Nakimeteles";
+					description="Mateusz ""Wolf"" Żmigrodzki - ksiądz katolicki. Po latach pracy w Serbii wrócił do Polski i objął posadę proboszcza parafii w Sandomierzu. Posiada talent do rozwiązywania zagadek kryminalnych, co sprawia, że często angażuje się w ich wyjaśnianie. Niestety, pewnego feralnego dnia postanowił nakarmić Ciałem Bożym jedną z parafianek, którą za skrzynkę wódki kupił w Serbii. Pech chciał, że później ją odsprzedał za skrzynkę whisky. Udzielenie komunii świętej i przedwczesnego namaszczenia młodej kobiecie nie spodobało się nowemu właścicielowi kobiety, niejakiemu Franzowi. Ks. Mateusz był tym samym zmuszony do opuszczenia rodzinnych rejonów. " \n "Fan karmienia hostią młodych, serbskich kobiet. Uznany szachista - przypisuje mu się opracowanie tzw. gambitu sandomierskiego, czyli otwarcia szachowego, które od buta na sukę składa gońca, szkoczka i wieżę oponenta (bez strat włąsnych). Zajmował się też reżyserią - nakręcił dwa filmy o wycieczce krajobrazowej dzieci z zespołem Downa (kolejno w Kołobrzegu i w Świebodzinie).";
+					id=85;
+					atlOffset=-0.00042724609;
+				};
+				class Item9
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={8421.6191,132.78735,12881.281};
+					};
+					title="Ajvar";
+					description="Papalugos Inos, syn greckich imgrantów którzy uciekli z Grecji na Czernoruś przed pogromami. Pracownik szpitala powiatowego w Severgradzie, w którym dorobił się na krzywdzie ludzkiej, drobnym kopertą i sprytnej księgowości w szpitalnej aptece dorobił się razem z rodziną 2 budek z Gyrosem w mieście. W mieście znany jako lokalny król Fety który nie oszczędza na składnikach, stosuje wczorajsze pieczywo a tego co oczy nie widzą tego nie żal stosuje tekturę.";
+					id=86;
+				};
+				class Item10
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={319.19601,287.082,8566.0439};
+					};
+					title="Hypek";
+					description="Ivanion Hypev - Były student ekonomii na Uniwersytecie Czernogórskim, został z niego wyrzucony po aresztowaniu podczas protestów. By uniknąć prześladowań ze strony Czedaków uciekł z miasta i zamieszkał na zachód od Bogatyrki w starej chatce oddziedziczonej wraz z UAZ'em po dziadku. Zajmuje się głównie sprzedawaniem na lewo drewna i przemytem papierosów przez Takistańską granice. Hobbystycznie poluje na grzybiarzy w pobliskich lasach pożyczoną od kuzyna strzelbą.  " \n "";
+					id=87;
 				};
 			};
 			id=1;
-			atlOffset=-32.082478;
+			atlOffset=-70.343811;
 		};
 		class Item1
 		{
