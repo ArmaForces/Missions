@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=59;
+		nextID=85;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=20;
 	};
 	class Camera
 	{
@@ -34,37 +34,68 @@ binarizationWanted=0;
 sourceName="MK3-map";
 addons[]=
 {
+	"CUP_WheeledVehicles_Skoda",
+	"CUP_WheeledVehicles_Lada",
+	"A3_Boat_F_Boat_Transport_01",
+	"A3_Weapons_F_Explosives",
+	"A3_Modules_F_Curator_Mines",
 	"A3_Ui_F",
-	"CUP_Misc3_Config",
-	"CUP_WheeledVehicles_Skoda"
+	"CUP_Misc3_Config"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=7;
 		class Item0
+		{
+			className="CUP_WheeledVehicles_Skoda";
+			name="CUP_WheeledVehicles_Skoda";
+		};
+		class Item1
+		{
+			className="CUP_WheeledVehicles_Lada";
+			name="CUP_WheeledVehicles_Lada";
+		};
+		class Item2
+		{
+			className="A3_Boat_F";
+			name="Arma 3 Alpha - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item1
+		class Item6
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
-		};
-		class Item2
-		{
-			className="CUP_WheeledVehicles_Skoda";
-			name="CUP_WheeledVehicles_Skoda";
 		};
 	};
 };
 dlcs[]=
 {
-	"CUP_Vehicles"
+	"CUP_Vehicles",
+	"Curator"
 };
 randomSeed=54071;
 class ScenarioData
@@ -104,7 +135,7 @@ class Mission
 			name="Domy";
 			class Entities
 			{
-				items=3;
+				items=8;
 				class Item0
 				{
 					dataType="Comment";
@@ -134,7 +165,7 @@ class Mission
 					name="Pojazdy";
 					class Entities
 					{
-						items=1;
+						items=3;
 						class Item0
 						{
 							dataType="Object";
@@ -147,8 +178,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setPlateNumber ""TK-LMB013C""";
-								name="veh_bolec";
+								init="this setPlateNumber ""TK-LMB073C"";";
+								name="bolec_veh";
 								textures="Blue";
 							};
 							id=57;
@@ -221,12 +252,214 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4564.897,340.45908,10236.269};
+								angles[]={6.2805109,2.5205696,6.2805333};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="if (isServer) then {" \n "  this setObjectTexture [0, ""#(rgb,1,1,1)color(0.125,0.125,0.125,0.75)""]" \n "};" \n "" \n "this setPlateNumber ""CH-CHN137U"";";
+								name="nielu_veh";
+							};
+							id=62;
+							type="CUP_C_Lada_CIV";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={10885.699,1.2435327,2331.1655};
+								angles[]={0,1.3832386,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								name="hefalump_boat";
+							};
+							id=84;
+							type="C_Rubberboat";
+							atlOffset=1.4192371;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=58;
+					atlOffset=-151.44482;
+				};
+				class Item3
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={4464.1167,339.0043,10290.034};
+						angles[]={0,0,0.0026744273};
+					};
+					title="Majkboss";
+					description="Krasnolitus Bracelos - emerytowany kapitan czarnoruskiej armii, kiedys zajmowal sie uzbrojeniem w czarnoruskim lotnictwie. Z uwagi na wszechobecny beton i korupcje przeszedl na emeryture od razu po otrzymaniu praw emerytalnych. Na emeryturze zajmuje sie strzelectwem, jest fanem greckiego sera feta oraz posiada dwie agamy. Mieszka w malym domku z ogrodkiem";
+					id=59;
+				};
+				class Item4
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={4563.1279,339.03503,10238.779};
+						angles[]={6.2805109,0,6.2805333};
+					};
+					title="nielu";
+					description="Janek „jemniom” jemniołek  " \n "Syn Stanisława jemniołka, taksówkarza z czernogorska którego czedacy zamknęli za niewinność i podłożone dewizy. Po zamknięciu ojca wyszedł na ulice protestować przeciwko opresyjnej władzy. Podczas okrzyku opisującego co zawsze należy się do mordy czedackim kurwom, spałowany przezeń poprzysiągł zemstę.  " \n " " \n "Po godzinach robi własne mixtapey i kolekcjonuje dresy. Przejął po ojcu klitkę w chruszczówce w czerno oraz czarną ładę.";
+					id=60;
+					atlOffset=-3.0517578e-005;
+				};
+				class Item5
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={12232.038,20.328329,9517.4482};
+					};
+					title="Czesiek";
+					description="Jan (Honza) Mikes - 35 letni Czech, którego największym osiągnięciem było zachowanie trzeźwości do 2 tercji podczas ostatniego meczu Czechy - Rosja. Mieszka w 22 metrowej kawalerce i ostatni raz sprzątał ją przed wizytą matki. Ma widoczną nadwagę, z której jest tak samo dumny jak ze swojej fryzury (krótko z przodu, długo z tyłu). Jedyne o co dba to on sam i koszulka hokejowej reprezentacji Czech z autografem Jarimira Jagra. Śmierdzi smażonym serem i marynowanymi parówkami (utopence). Jego dieta składa się z knedli, smażonego sera i piwa. Mówi wyłącznie po czesku.";
+					id=64;
+				};
+				class Item6
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={10832.34,6.5500484,2497.3855};
+					};
+					title="Hefalump";
+					description="Raashid ""Kaboom"" el-Karam - Arabski dezerter, fan materiałów wybuchowych, od dziecka bawił się granatami, wyrzutniami rakiet, i innymi materiałami wybuchowymi, przez co stracił dwa palce u lewej stopy. Uciekł do Czarnorusi by uniknąć sądu wojennego za kradzież 3 min przeciwpiechotnych oraz C4. Aktualnie Rybak, posiada małą chatkę nad wybrzeżem, łódź rybacką a także swój stragan na pobliskim targu gdzie handluje rybami. Wiek bliżej nie określony, ciemne włosy i ciemna karnacja. W okolicy swojej chatki zakopał dane miny a c4 znajduje się pod drewnianą podłogą w jego domu.";
+					id=65;
+				};
+				class Item7
+				{
+					dataType="Layer";
+					name="Przedmioty";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={10835.478,6.0519953,2481.218};
+								angles[]={0.016004669,0,0.023998277};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="private _wepholder = createVehicle [""groundWeaponHolder"", getPos this, [], 0, ""CAN_COLLIDE""];  " \n "_wepholder addMagazineCargo [""ATMine_Range_Mag"", 1];" \n "deleteVehicle this;";
+								name="hefalump_mine_1";
+							};
+							id=79;
+							type="ATMine";
+							atlOffset=-4.7683716e-007;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={10835.58,6.0274234,2482.989};
+								angles[]={0.013334315,0,0.023998277};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="private _wepholder = createVehicle [""groundWeaponHolder"", getPos this, [], 0, ""CAN_COLLIDE""];  " \n "_wepholder addMagazineCargo [""ATMine_Range_Mag"", 1];" \n "deleteVehicle this;";
+								name="hefalump_mine_2";
+							};
+							id=81;
+							type="ATMine";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={10832.433,5.9733167,2481.8889};
+								angles[]={0.018675024,0,0.021327924};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="private _wepholder = createVehicle [""groundWeaponHolder"", getPos this, [], 0, ""CAN_COLLIDE""];  " \n "_wepholder addMagazineCargo [""ATMine_Range_Mag"", 1];" \n "deleteVehicle this;";
+								name="hefalump_mine_3";
+							};
+							id=82;
+							type="ATMine";
+							atlOffset=-4.7683716e-007;
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={10832.009,5.7703972,2500.168};
+								angles[]={0.0026703537,1.8403798,0.018657569};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="private _wepholder = createVehicle [""groundWeaponHolder"", getPos this, [], 0, ""CAN_COLLIDE""];  " \n "_wepholder addMagazineCargo [""DemoCharge_Remote_Mag"", 1];" \n "deleteVehicle this;";
+								name="hefalump_c4";
+							};
+							id=80;
+							type="DemoCharge_F";
+						};
+					};
+					id=83;
+					atlOffset=0.024096966;
 				};
 			};
 			id=1;
-			atlOffset=9.536377;
+			atlOffset=-32.082478;
 		};
 		class Item1
 		{
