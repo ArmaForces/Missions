@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=50;
+		nextID=57;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=13;
 	};
 	class Camera
 	{
@@ -35,13 +35,14 @@ sourceName="MK3-map";
 addons[]=
 {
 	"A3_Ui_F",
-	"CUP_Misc3_Config"
+	"CUP_Misc3_Config",
+	"CUP_WheeledVehicles_Lada"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -54,7 +55,16 @@ class AddonsMetaData
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
+		class Item2
+		{
+			className="CUP_WheeledVehicles_Lada";
+			name="CUP_WheeledVehicles_Lada";
+		};
 	};
+};
+dlcs[]=
+{
+	"CUP_Vehicles"
 };
 randomSeed=54071;
 class ScenarioData
@@ -87,7 +97,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=10;
 		class Item0
 		{
 			dataType="Layer";
@@ -197,6 +207,51 @@ class Mission
 			};
 			id=49;
 			type="FlagCarrierINS";
+		};
+		class Item8
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={6388.8271,16.484978,2730.3281};
+			};
+			title="Bolec";
+			description="Aslanbek Abdurakhman - syn imigrantów z Takistanu. Mieszka na przedmieściach Czernogórska. Całe życie pracował w lokalnej fabryce smrodu, w której po przejęciu władzy przez Czedaków jest więcej pracy i mniej siana.";
+			id=50;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6361.8701,7.5454063,2758.3701};
+				angles[]={-0,2.3550198,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this setPlateNumber ""TK-LMB013C""";
+			};
+			id=55;
+			type="CUP_C_Lada_TK_CIV";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
