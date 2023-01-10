@@ -36,7 +36,7 @@ addons[]=
 {
 	"A3_Ui_F",
 	"CUP_Misc3_Config",
-	"CUP_WheeledVehicles_Lada"
+	"CUP_WheeledVehicles_Skoda"
 };
 class AddonsMetaData
 {
@@ -57,8 +57,8 @@ class AddonsMetaData
 		};
 		class Item2
 		{
-			className="CUP_WheeledVehicles_Lada";
-			name="CUP_WheeledVehicles_Lada";
+			className="CUP_WheeledVehicles_Skoda";
+			name="CUP_WheeledVehicles_Skoda";
 		};
 	};
 };
@@ -232,9 +232,10 @@ class Mission
 			class Attributes
 			{
 				init="this setPlateNumber ""TK-LMB013C""";
+				textures="Blue";
 			};
 			id=55;
-			type="CUP_C_Lada_TK_CIV";
+			type="CUP_C_Skoda_CR_CIV";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -250,7 +251,57 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Blue";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};
