@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=57;
+		nextID=59;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13;
+		nextID=15;
 	};
 	class Camera
 	{
@@ -97,14 +97,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
 			name="Domy";
 			class Entities
 			{
-				items=1;
+				items=3;
 				class Item0
 				{
 					dataType="Comment";
@@ -117,9 +117,116 @@ class Mission
 					id=0;
 					atlOffset=0.00030517578;
 				};
+				class Item1
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={6388.8271,16.484978,2730.3281};
+					};
+					title="Bolec";
+					description="Aslanbek Abdurakhman - syn imigrantów z Takistanu. Mieszka na przedmieściach Czernogórska. Całe życie pracował w lokalnej fabryce smrodu, w której po przejęciu władzy przez Czedaków jest więcej pracy i mniej siana.";
+					id=50;
+				};
+				class Item2
+				{
+					dataType="Layer";
+					name="Pojazdy";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={6361.8701,7.537024,2758.3701};
+								angles[]={0,2.3550251,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="this setPlateNumber ""TK-LMB013C""";
+								name="veh_bolec";
+								textures="Blue";
+							};
+							id=57;
+							type="CUP_C_Skoda_CR_CIV";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="VehicleCustomization";
+									expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=2;
+															class Item0
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="Blue";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=1;
+																};
+															};
+														};
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+					};
+					id=58;
+				};
 			};
 			id=1;
-			atlOffset=0.00030517578;
+			atlOffset=9.536377;
 		};
 		class Item1
 		{
@@ -207,102 +314,6 @@ class Mission
 			};
 			id=49;
 			type="FlagCarrierINS";
-		};
-		class Item8
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={6388.8271,16.484978,2730.3281};
-			};
-			title="Bolec";
-			description="Aslanbek Abdurakhman - syn imigrantów z Takistanu. Mieszka na przedmieściach Czernogórska. Całe życie pracował w lokalnej fabryce smrodu, w której po przejęciu władzy przez Czedaków jest więcej pracy i mniej siana.";
-			id=50;
-		};
-		class Item9
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6361.8701,7.5454063,2758.3701};
-				angles[]={-0,2.3550198,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this setPlateNumber ""TK-LMB013C""";
-				textures="Blue";
-			};
-			id=55;
-			type="CUP_C_Skoda_CR_CIV";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Blue";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 	};
 };
