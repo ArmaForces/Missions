@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=105;
+		nextID=111;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=23;
+		nextID=26;
 	};
 	class Camera
 	{
@@ -38,6 +38,8 @@ addons[]=
 	"CUP_WheeledVehicles_Lada",
 	"A3_Boat_F_Boat_Transport_01",
 	"CUP_WheeledVehicles_UAZ",
+	"CUP_wheeledvehicles_Octaiva",
+	"CUP_WheeledVehicles_S1203",
 	"A3_Weapons_F_Explosives",
 	"A3_Modules_F_Curator_Mines",
 	"rhs_c_weapons",
@@ -48,7 +50,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=11;
 		class Item0
 		{
 			className="CUP_WheeledVehicles_Skoda";
@@ -73,33 +75,43 @@ class AddonsMetaData
 		};
 		class Item4
 		{
+			className="CUP_wheeledvehicles_Octaiva";
+			name="CUP_wheeledvehicles_Octaiva";
+		};
+		class Item5
+		{
+			className="CUP_WheeledVehicles_S1203";
+			name="CUP_WheeledVehicles_S1203";
+		};
+		class Item6
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item7
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item8
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item7
+		class Item9
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item10
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
@@ -149,7 +161,7 @@ class Mission
 			name="Domy";
 			class Entities
 			{
-				items=11;
+				items=15;
 				class Item0
 				{
 					dataType="Comment";
@@ -179,7 +191,7 @@ class Mission
 					name="Pojazdy";
 					class Entities
 					{
-						items=4;
+						items=6;
 						class Item0
 						{
 							dataType="Object";
@@ -488,9 +500,217 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={8427.2959,119.91957,12905.95};
+								angles[]={6.2618575,1.7155539,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="this setPlateNumber ""CH-SV4JV4R"";";
+								name="ajvar_veh_1";
+								textures="Black";
+							};
+							id=105;
+							type="CUP_C_Octavia_CIV";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="VehicleCustomization";
+									expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=2;
+															class Item0
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="Black";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=1;
+																};
+															};
+														};
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={8423.4258,119.96911,12904.506};
+								angles[]={6.2698507,1.8160675,6.2805324};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="this setPlateNumber ""CH-SV4JV4R2"";";
+								name="ajvar_veh_2";
+								textures="Blue";
+							};
+							id=106;
+							type="CUP_C_S1203_CIV_CR";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="VehicleCustomization";
+									expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=2;
+															class Item0
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="Blue";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=1;
+																};
+															};
+														};
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=4;
+															class Item0
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="hideLightBar";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=1;
+																};
+															};
+															class Item2
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="Majak_start";
+																};
+															};
+															class Item3
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+														};
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=58;
-					atlOffset=-197.10451;
+					atlOffset=-159.65231;
 				};
 				class Item3
 				{
@@ -691,9 +911,55 @@ class Mission
 					description="Ivanion Hypev - Były student ekonomii na Uniwersytecie Czernogórskim, został z niego wyrzucony po aresztowaniu podczas protestów. By uniknąć prześladowań ze strony Czedaków uciekł z miasta i zamieszkał na zachód od Bogatyrki w starej chatce oddziedziczonej wraz z UAZ'em po dziadku. Zajmuje się głównie sprzedawaniem na lewo drewna i przemytem papierosów przez Takistańską granice. Hobbystycznie poluje na grzybiarzy w pobliskich lasach pożyczoną od kuzyna strzelbą.  " \n "";
 					id=87;
 				};
+				class Item11
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={8058.4771,123.79559,12493.01};
+					};
+					title="Haverex";
+					description="Waldemar Biały - polski chemik, zafascynowany kryształami, który pracuje w okolicznej fabryce i na pół etatu w szkole, hobbistycznie przemyca niemiecką chemię którą sprzedaje sąsiadom. Ukrywa w piwnicy ""hodowle"" niebieskich kryształów i pare beczek siarczku dichlorodietylu po swoim prapra dziadku z niemieckimi korzeniami. Mówi się by lepiej zapukać do niego, niż żeby on pierwszy do ciebie zapukał." \n "" \n "Chemia z Niemiec jak i kryształy na papiery typu ""potrzebuje to do laboratorium"" itp mogły by być przetransportowane poprawnie oznakowanych beczkach z wiadomą zawartością, plus ma powiedzmy znajomego który zajmuje się transportem dlatego też nie ma powiedzmy problemu z tym aż takiego.";
+					id=107;
+				};
+				class Item12
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={8460.8447,121.787,12904.91};
+					};
+					title="Saper";
+					description="Janusz Сгам - nauczyciel wuefu na Czarnorusi, rozrywki to picie, oglądanie meczu lokalnej ligi klasy G (której to by był gwiazdą gdyby nie kontuzja kolana w '97) i kazanie robić pajacyków żeńskiej grupie, gdzie są osobniki z dużym biustem. Po przewaleniu całych oszczędności na scam'ie kryptowalutowym postanowił się dorobić na wojnie.";
+					id=108;
+					atlOffset=0.0001373291;
+				};
+				class Item13
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={4530.6479,294.177,6363.395};
+					};
+					title="Stalker";
+					description="Ojciec Andriej Stalkerow- " \n "Ksiądz z miejsciwości Pogorewka. Przed inwazją wiódł spokojny żywot prowincjonalnego  księdza spędzającego beztrosko czas na defraudacji kościelnych pieniędzy i rozwiązywaniu problemów mieszkańców. Po inwazji Czedaków mając już dość naprzykrzania się i sprawianacych we wsi problemów nowych ""Gospodarzy"" wypowiedział na kazaniu poniższe słowa " \n """Basta kurwa""";
+					id=109;
+					atlOffset=2.5842285;
+				};
+				class Item14
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={6693.7983,349.44745,8431.166};
+					};
+					title="Command DDOS";
+					description="Polski prosty człowiek urodzony na Opolszczyźnie w Polsce, zasłynął z bycia abstynentem alkoholowym z wyboru. Człowiek o wielkim sercu. Mimo że sam nie pije, to poleje dla swoich. " \n "Jego charakterystyczną cechą jest absolutny brak umiejętności pisania tekstów ciekawych i poprawnych. Mimo to legendy głoszą, że głównym powodem jego dołączenia do budującego się właśnie ruchu oporu jest marzenie. Marzenie napisania książki ""Jak uczestniczyłem w 3 wojnie światowej, a rządziła mną małpa"". Dodatkowo zawsze marzył o karierze dziennikarza wojennego. Teraz tylko wypadałoby wyjaśnić kwestie: " \n "jak taki człowiek dołączył do ruchu oporu oraz jak wybrano mu taką ksywę. " \n "Otóż pewnego ciężkiego dnia w Karolu coś pękło i jego abstynencja została postawiona na próbę. Próbę, której nie podołała. Poszedł do pierwszego lepszego monopolowego w okolicy i kupił swoje pierwsze piwo. Wypił je i skończył pośrodku Czarnorusi mając w ręce jedynie butelkę piwa Komandos.  " \n "Dodatkowo niestety posiada absolutny brak poczucia humoru. :blobderpy: ";
+					id=110;
+				};
 			};
 			id=1;
-			atlOffset=-94.702652;
+			atlOffset=-64.902954;
 		};
 		class Item1
 		{
