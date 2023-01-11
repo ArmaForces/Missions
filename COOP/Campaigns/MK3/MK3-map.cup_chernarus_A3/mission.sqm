@@ -271,14 +271,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={4564.897,340.45908,10236.269};
-								angles[]={6.2805109,2.5205696,6.2805333};
+								position[]={6363.835,7.5454116,2760.9031};
+								angles[]={0,2.3974717,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
-								init="if (isServer) then {" \n "  this setObjectTexture [0, ""#(rgb,1,1,1)color(0.125,0.125,0.125,0.75)""]" \n "};" \n "" \n "this setPlateNumber ""CH-CHN137U"";";
+								init="if (isServer) then {" \n "  this setObjectTexture [0, ""#(rgb,1,1,1)color(0.1,0.1,0.1,0.75)""]" \n "};" \n "" \n "this setPlateNumber ""CH-CHN137U"";";
 								name="nielu_veh";
 							};
 							id=62;
@@ -490,7 +490,7 @@ class Mission
 						};
 					};
 					id=58;
-					atlOffset=-124.70605;
+					atlOffset=-197.10451;
 				};
 				class Item3
 				{
@@ -509,13 +509,11 @@ class Mission
 					dataType="Comment";
 					class PositionInfo
 					{
-						position[]={4563.1279,339.03503,10238.779};
-						angles[]={6.2805109,0,6.2805333};
+						position[]={6380.4448,16.484978,2736.4607};
 					};
 					title="nielu";
 					description="Janek „jemniom” jemniołek  " \n "Syn Stanisława jemniołka, taksówkarza z czernogorska którego czedacy zamknęli za niewinność i podłożone dewizy. Po zamknięciu ojca wyszedł na ulice protestować przeciwko opresyjnej władzy. Podczas okrzyku opisującego co zawsze należy się do mordy czedackim kurwom, spałowany przezeń poprzysiągł zemstę.  " \n " " \n "Po godzinach robi własne mixtapey i kolekcjonuje dresy. Przejął po ojcu klitkę w chruszczówce w czerno oraz czarną ładę.";
 					id=60;
-					atlOffset=-3.0517578e-005;
 				};
 				class Item5
 				{
@@ -626,10 +624,9 @@ class Mission
 							class PositionInfo
 							{
 								position[]={317.58191,287.22739,8561.2021};
-								angles[]={-0,4.0852556,0};
+								angles[]={0,4.0852556,0};
 							};
 							side="Empty";
-							flags=4;
 							class Attributes
 							{
 								init="if (isServer) then {" \n "  this addWeaponCargoGlobal [""sgun_HunterShotgun_01_F"", 1];" \n "  this addMagazineCargoGlobal [""CUP_1Rnd_12Gauge_Pellets_No00_Buck"", 20];" \n "  this addMagazineCargoGlobal [""CUP_1Rnd_12Gauge_Slug"", 20];" \n "};";
@@ -637,6 +634,7 @@ class Mission
 							};
 							id=104;
 							type="rhs_7ya37_1_single";
+							atlOffset=0.25650024;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -657,7 +655,7 @@ class Mission
 						};
 					};
 					id=83;
-					atlOffset=-54.417725;
+					atlOffset=-121.0547;
 				};
 				class Item8
 				{
@@ -695,7 +693,7 @@ class Mission
 				};
 			};
 			id=1;
-			atlOffset=-70.343811;
+			atlOffset=-94.702652;
 		};
 		class Item1
 		{
