@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=111;
+		nextID=119;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=35;
 	};
 	class Camera
 	{
@@ -40,6 +40,7 @@ addons[]=
 	"CUP_WheeledVehicles_UAZ",
 	"CUP_wheeledvehicles_Octaiva",
 	"CUP_WheeledVehicles_S1203",
+	"CUP_WheeledVehicles_Tractor",
 	"A3_Weapons_F_Explosives",
 	"A3_Modules_F_Curator_Mines",
 	"rhs_c_weapons",
@@ -50,7 +51,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			className="CUP_WheeledVehicles_Skoda";
@@ -85,33 +86,38 @@ class AddonsMetaData
 		};
 		class Item6
 		{
+			className="CUP_WheeledVehicles_Tractor";
+			name="CUP_WheeledVehicles_Tractor";
+		};
+		class Item7
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item8
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item9
+		class Item10
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item11
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
@@ -161,7 +167,7 @@ class Mission
 			name="Domy";
 			class Entities
 			{
-				items=15;
+				items=17;
 				class Item0
 				{
 					dataType="Comment";
@@ -191,7 +197,7 @@ class Mission
 					name="Pojazdy";
 					class Entities
 					{
-						items=6;
+						items=7;
 						class Item0
 						{
 							dataType="Object";
@@ -518,6 +524,7 @@ class Mission
 							};
 							id=105;
 							type="CUP_C_Octavia_CIV";
+							atlOffset=-0.00026702881;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -708,9 +715,43 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={12215.985,179.05212,7322.0972};
+								angles[]={0.0010918301,1.6020726,6.2821498};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								name="seweryn_veh";
+							};
+							id=115;
+							type="CUP_C_Tractor_CIV";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=58;
-					atlOffset=-159.65231;
+					atlOffset=-100.01634;
 				};
 				class Item3
 				{
@@ -763,7 +804,7 @@ class Mission
 					name="Przedmioty";
 					class Entities
 					{
-						items=5;
+						items=6;
 						class Item0
 						{
 							dataType="Object";
@@ -873,9 +914,44 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={916.14551,247.25873,8943.5117};
+								angles[]={0,1.8754503,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="if (isServer) then {" \n "  this addWeaponCargoGlobal [""sgun_HunterShotgun_01_F"", 1];" \n "  this addMagazineCargoGlobal [""CUP_1Rnd_12Gauge_Pellets_No00_Buck"", 20];" \n "  this addMagazineCargoGlobal [""CUP_1Rnd_12Gauge_Slug"", 20];" \n "};";
+								name="piesa_cargo";
+							};
+							id=118;
+							type="rhs_7ya37_1_single";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=83;
-					atlOffset=-121.0547;
+					atlOffset=-142.83688;
 				};
 				class Item8
 				{
@@ -921,6 +997,7 @@ class Mission
 					title="Haverex";
 					description="Waldemar Biały - polski chemik, zafascynowany kryształami, który pracuje w okolicznej fabryce i na pół etatu w szkole, hobbistycznie przemyca niemiecką chemię którą sprzedaje sąsiadom. Ukrywa w piwnicy ""hodowle"" niebieskich kryształów i pare beczek siarczku dichlorodietylu po swoim prapra dziadku z niemieckimi korzeniami. Mówi się by lepiej zapukać do niego, niż żeby on pierwszy do ciebie zapukał." \n "" \n "Chemia z Niemiec jak i kryształy na papiery typu ""potrzebuje to do laboratorium"" itp mogły by być przetransportowane poprawnie oznakowanych beczkach z wiadomą zawartością, plus ma powiedzmy znajomego który zajmuje się transportem dlatego też nie ma powiedzmy problemu z tym aż takiego.";
 					id=107;
+					atlOffset=7.6293945e-006;
 				};
 				class Item12
 				{
@@ -957,9 +1034,32 @@ class Mission
 					description="Polski prosty człowiek urodzony na Opolszczyźnie w Polsce, zasłynął z bycia abstynentem alkoholowym z wyboru. Człowiek o wielkim sercu. Mimo że sam nie pije, to poleje dla swoich. " \n "Jego charakterystyczną cechą jest absolutny brak umiejętności pisania tekstów ciekawych i poprawnych. Mimo to legendy głoszą, że głównym powodem jego dołączenia do budującego się właśnie ruchu oporu jest marzenie. Marzenie napisania książki ""Jak uczestniczyłem w 3 wojnie światowej, a rządziła mną małpa"". Dodatkowo zawsze marzył o karierze dziennikarza wojennego. Teraz tylko wypadałoby wyjaśnić kwestie: " \n "jak taki człowiek dołączył do ruchu oporu oraz jak wybrano mu taką ksywę. " \n "Otóż pewnego ciężkiego dnia w Karolu coś pękło i jego abstynencja została postawiona na próbę. Próbę, której nie podołała. Poszedł do pierwszego lepszego monopolowego w okolicy i kupił swoje pierwsze piwo. Wypił je i skończył pośrodku Czarnorusi mając w ręce jedynie butelkę piwa Komandos.  " \n "Dodatkowo niestety posiada absolutny brak poczucia humoru. :blobderpy: ";
 					id=110;
 				};
+				class Item15
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={12218.322,177.20988,7304.2646};
+					};
+					title="Seweryn";
+					description="Kuta 'Napi' Napletes - prosty rolnik, który kiedyś przeszedł Zete a po niej wiódł spokojne, chłopskie życie. Żył skromnie, za to bez wygód. Po chłopsku. 5 rano pobudeczka, kaca leczył pracą. Najpierw świniom żreć dać, bańki z mlekiem wystawić na drogę i w pole kurwa twoja mać do zachodu słońca. I tak do usranej śmierci czasu ataku.  " \n "Ma traktor i z jakiegoś powodu panicznie boi się luster";
+					id=116;
+				};
+				class Item16
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={944.64899,250.149,8910.5898};
+					};
+					title="Piesa";
+					description="Toivo Iwanowicz Igel " \n "" \n "Opis: Lat 42, były milicjant. " \n "Zawód: Obecnie bezrobotny, utrzymuje się z kłusownictwa i drobnych fuch. " \n "Życiowy cel: Zemsta" \n "Alignment: Chaotic Good" \n "" \n "Syn Czarnoruskiego komendanta milicji i Estońskiej pisarki. Urodzony w Kuressaare skąd pochodzi matka, przed ukończeniem pierwszego roku życia wyjechał do Czarnorusi, konkretnie do Berezina gdzie dowództwo nad lokalną milicją objął jego ojciec. W młodości zafascynowany mechaniką i chemią. Po ukończeniu szkół, za namową matki, podróżował przez dwa lata po krajach bałtyckich po czym wrócił do domu i wstąpił do centrum wyszkolenia milicji by ostatecznie pójśc w ślady ojca. " \n "W wieku 22 lat ożenił się z serbską imigrantką Jovanką Blagojević, zawodową kucharką i aktorką-amatorką. Po dwóch latach urodził im się syn Duszan, rok później córka Lilian. Toivo przesłużył spokojnie ponad półtorej dekady wspiąwszy się do stopnia katpitana, wraz z rodziną mieszkał w domu na przedmieściach Berezina. W wieku 35 lat traci żonę, która umiera na suchoty. W rezultacie tego wydarzenia Toivo popada w nałóg heroinowy, znacznie pogorszył się stan jego zdrowia, został też zdegradowany do stopnia podporucznika i zawieszony (wyłącznie za sprawą ojca udało mu się uniknąć dyscyplinarnego zwolnienia) w obowiązkach służbowych. Kolejne 2 lata spędził w ośrodkach odwykowych i na rehabilitacji. Dzieci w tym czasie zostały przeniesione do Estonii, pod opiekę dziadków ze strony matki.W wieku 38 lat ponownie zatrudniony w milicji, bez szans na dalsze awanse. Rok później wywalczył powrót piętnastoletniego syna i czternastoletniej córki pod jego opiekę w Berezinie." \n "W czasie przewrotu aktywnie działał przy koordynacji ruchu milicyjnego ruchu oporu, do czasu aż w czasie jednego ze starć dowodzony przez niego oddział został zdziesiątkowany, a sam Toivo schwytany. Docelowo miał zostać publicznie i pokazowo stracony w Czernogórsku, został jednak odbity z transportu przez niedobitki milicji z Berezina. Dowiaduje się wtedy, że w ramach ""kary"" za sprzeciwstawianie się nowej władzy, czedacy dobrali się do jego rodziny. Jego córka została zgwałcona i powieszona przez czedackich żołdaków, a syn zastrzelony gdy próbował ją ratować. To samo spotkało też jego rodziców. Życie Toivo kolejny raz legło w gruzach, a on sam wrócił do nałogu. Przeniósł się na zachodnią część Czarnorusi (w prawym, górnym rogu mapy jest taki domek w lesie jeśli dobrze pamiętam, wyślę później koordynaty chyba, że sam coś znajdziesz) do domu swojego pradziadka ze strony ojca, gdzie osiedlił się by hodować mak, gotować kompot i oddawać się ostatniej przyjemności jaka mu w życiu została. Zostawił za sobą swoją przeszłość i nazwisko. Lokalnym mieszkańcom, których czasem spotykał lub dla których wykonywał drobne prace przedstawiał się tylko jako ""Piesa"". Mało kto też pytał, zwykle okoliczna ludność omijała starego narkomana z daleka." \n "Po ponad dwóch latach tej lichej egzystencji usłyszał o formujących się oddziałach partyzanckich. Obudziło to w nim wspomnienia i pomogło chociaż na jakiś czas wrócić do trzeźwości (mniej więcej). Na nowo rozpalona nienawiść do przeciwnika działała motywująco. Poprzysiągł zemstę na czedakach. Uzbrojony w myśliwski sztucer swojego pradziadka oraz kilkanaście schowanych za pazuchą strzykawek z makowym wywarem (na wszelki wypadek), wyruszył do lasu... ";
+					id=117;
+					atlOffset=-0.00042724609;
+				};
 			};
 			id=1;
-			atlOffset=-64.902954;
+			atlOffset=-107.22946;
 		};
 		class Item1
 		{
