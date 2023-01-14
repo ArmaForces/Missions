@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=119;
+		nextID=123;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=35;
+		nextID=38;
 	};
 	class Camera
 	{
@@ -41,6 +41,7 @@ addons[]=
 	"CUP_wheeledvehicles_Octaiva",
 	"CUP_WheeledVehicles_S1203",
 	"CUP_WheeledVehicles_Tractor",
+	"CUP_WheeledVehicles_TT650",
 	"A3_Weapons_F_Explosives",
 	"A3_Modules_F_Curator_Mines",
 	"rhs_c_weapons",
@@ -51,7 +52,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			className="CUP_WheeledVehicles_Skoda";
@@ -91,33 +92,38 @@ class AddonsMetaData
 		};
 		class Item7
 		{
+			className="CUP_WheeledVehicles_TT650";
+			name="CUP_WheeledVehicles_TT650";
+		};
+		class Item8
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item10
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item10
+		class Item11
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item12
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
@@ -197,7 +203,7 @@ class Mission
 					name="Pojazdy";
 					class Entities
 					{
-						items=7;
+						items=8;
 						class Item0
 						{
 							dataType="Object";
@@ -749,9 +755,93 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={930.37421,247.96448,8940.6611};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								name="piesa_veh";
+								textures="Rusty";
+							};
+							id=122;
+							type="CUP_C_TT650_CIV";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="VehicleCustomization";
+									expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=2;
+															class Item0
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="Rusty";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=1;
+																};
+															};
+														};
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="ARRAY";
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=58;
-					atlOffset=-100.01634;
+					atlOffset=-144.92856;
 				};
 				class Item3
 				{
@@ -1059,7 +1149,7 @@ class Mission
 				};
 			};
 			id=1;
-			atlOffset=-107.22946;
+			atlOffset=-107.21429;
 		};
 		class Item1
 		{
