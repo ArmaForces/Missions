@@ -1,0 +1,10 @@
+class CfgFunctions
+{
+	class MKR
+	{
+		class Init
+		{
+			class removeMapObjects { preInit = 1 };
+		};
+	};
+};
