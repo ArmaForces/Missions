@@ -63,6 +63,11 @@ private _pos = getArray (configFile >> "CfgWorlds" >> worldName >> "centerPositi
 private _toHide = nearestObjects [_pos, [], worldSize, false];
 private _toHideFiltered = _toHide select {typeOf _x in _rm || {((getModelInfo _x)#0) in _rm}};
 
+if (is3DEN) then {
+    private _allEditorObjects = all3DENEntities select 0;
+    _toHideFiltered = _toHideFiltered select {!(_x in _allEditorObjects)};
+};
+
 {
     _x hideObjectGlobal true;
 } forEach _toHideFiltered;
