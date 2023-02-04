@@ -10,9 +10,6 @@ params ["_plane"];
 private _radioPreset = RADIO_REDFOR_PRESET;
 private _loadout = L159_REDFOR_LOADOUT;
 
-private _planeInitialized = _plane getVariable ["MDL_PvPJets_initialized", false];
-if (_planeInitialized) exitWith { false };
-
 _plane addEventHandler ["Killed", {
 	params ["_plane"];
 
@@ -23,7 +20,7 @@ _plane addEventHandler ["Killed", {
 	[EAST, -10] call BIS_fnc_respawnTickets;
 }];
 
-[_plane, _loadout] remoteExec ["MDL_PvPJets_fnc_planeChangeLoadout", 0];
+[_plane, _loadout] call MDL_PvPJets_fnc_planeChangeLoadout;
 if (ACRE_Loaded && {_radioPreset isNotEqualTo ""}) then {
 	[_plane, _radioPreset] call acre_api_fnc_setVehicleRacksPreset;
 };
@@ -31,7 +28,5 @@ if (ACRE_Loaded && {_radioPreset isNotEqualTo ""}) then {
 _plane setVehicleReportOwnPosition true;
 _plane setVehicleReportRemoteTargets true;
 _plane setVehicleReceiveRemoteTargets true;
-
-_plane setVariable ["MDL_PvPJets_initialized", true];
 
 true

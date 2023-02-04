@@ -16,9 +16,9 @@ Runs local. Effect local.
 
 params ["_plane"];
 
-if (typeOf _plane == L159_BLUFOR) then {
+if (typeOf _plane isEqualTo L159_BLUFOR) then {
 	[_plane] call MDL_PvPJets_fnc_planeWestInit;
 };
-if (typeOf _plane == L159_REDFOR) then {
+if (typeOf _plane isEqualTo L159_REDFOR) then {
 	[_plane] call MDL_PvPJets_fnc_planeEastInit;
 };
