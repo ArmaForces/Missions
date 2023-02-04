@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=633;
+		nextID=635;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=48;
+		nextID=60;
 	};
 	class Camera
 	{
@@ -361,7 +361,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=109;
+		items=110;
 		class Item0
 		{
 			dataType="Marker";
@@ -690,7 +690,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorWEST";
-			alpha=0.7499153;
+			alpha=0.5;
 			fillName="FDiagonal";
 			a=5000;
 			b=5000;
@@ -705,7 +705,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
-			alpha=0.7499153;
+			alpha=0.5;
 			fillName="BDiagonal";
 			a=5000;
 			b=5000;
@@ -979,11 +979,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=475;
 							type="rhs_l159_cdf_b_CDF";
@@ -1001,11 +1000,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=476;
 							type="rhs_l159_cdf_b_CDF";
@@ -1023,11 +1021,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=477;
 							type="rhs_l159_cdf_b_CDF";
@@ -1045,11 +1042,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=478;
 							type="rhs_l159_cdf_b_CDF";
@@ -1067,11 +1063,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=479;
 							type="rhs_l159_cdf_b_CDF";
@@ -1089,11 +1084,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=480;
 							type="rhs_l159_cdf_b_CDF";
@@ -1110,11 +1104,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=481;
 							type="rhs_l159_cdf_b_CDF";
@@ -1125,43 +1118,40 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={26758.91,24.742376,24572.869};
-								angles[]={0.017332481,1.2371529,0.049293593};
+								position[]={26758.91,24.743244,24572.871};
+								angles[]={0.01733112,1.2371593,0.049288094};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=484;
 							type="rhs_l159_cdf_b_CDF";
-							atlOffset=-0.00089836121;
 						};
 						class Item8
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={26764.027,25.533916,24558.768};
-								angles[]={0,1.2371529,0};
+								position[]={26764.027,25.534054,24558.768};
+								angles[]={0,1.2371593,0};
 							};
 							side="Empty";
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=485;
 							type="rhs_l159_cdf_b_CDF";
-							atlOffset=0.27686119;
+							atlOffset=0.27699852;
 						};
 						class Item9
 						{
@@ -1175,11 +1165,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=486;
 							type="rhs_l159_cdf_b_CDF";
@@ -1197,11 +1186,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=482;
 							type="rhs_l159_cdf_b_CDF";
@@ -1219,11 +1207,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=483;
 							type="rhs_l159_cdf_b_CDF";
@@ -1241,11 +1228,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=586;
 							type="rhs_l159_cdf_b_CDF";
@@ -1262,14 +1248,14 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=587;
 							type="rhs_l159_cdf_b_CDF";
+							atlOffset=3.6239624e-005;
 						};
 						class Item14
 						{
@@ -1283,11 +1269,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=588;
 							type="rhs_l159_cdf_b_CDF";
@@ -1305,11 +1290,10 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=589;
 							type="rhs_l159_cdf_b_CDF";
@@ -1327,14 +1311,14 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=590;
 							type="rhs_l159_cdf_b_CDF";
+							atlOffset=-0.0012931824;
 						};
 						class Item17
 						{
@@ -1348,22 +1332,22 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""];" \n " [WEST, -10] call BIS_fnc_respawnTickets; " \n "}];}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
-								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;";
+								pylons="rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_zpl20_hei;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;rhs_mag_FFAR_7_USAF;;";
 							};
 							id=591;
 							type="rhs_l159_cdf_b_CDF";
+							atlOffset=-9.1552734e-005;
 						};
 					};
 					id=488;
-					atlOffset=-0.07771492;
+					atlOffset=-0.078065872;
 				};
 			};
 			id=361;
-			atlOffset=-0.49069786;
+			atlOffset=-0.49073219;
 		};
 		class Item10
 		{
@@ -1830,7 +1814,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -1852,7 +1835,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -1873,7 +1855,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -1894,7 +1875,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -1915,7 +1895,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -1937,7 +1916,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -1958,7 +1936,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -1980,7 +1957,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2002,7 +1978,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2023,7 +1998,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2045,7 +2019,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2066,7 +2039,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2087,7 +2059,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2108,7 +2079,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2129,7 +2099,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2150,7 +2119,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2171,7 +2139,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2193,7 +2160,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2215,7 +2181,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2223,6 +2188,7 @@ class Mission
 							};
 							id=630;
 							type="I_Plane_Fighter_03_dynamicLoadout_F";
+							atlOffset=-0.017089844;
 						};
 						class Item19
 						{
@@ -2236,7 +2202,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{this addEventHandler [""Killed"", { " \n " params [""_unit"", ""_killer"", ""_instigator"", ""_useEffects""]; " \n " [EAST, -10] call BIS_fnc_respawnTickets;" \n "}];" \n "}";
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
 								reportOwnPosition=1;
@@ -2244,14 +2209,15 @@ class Mission
 							};
 							id=631;
 							type="I_Plane_Fighter_03_dynamicLoadout_F";
+							atlOffset=-0.0042972565;
 						};
 					};
 					id=500;
-					atlOffset=0.084178925;
+					atlOffset=0.082183838;
 				};
 			};
 			id=377;
-			atlOffset=0.17122841;
+			atlOffset=0.17028809;
 		};
 		class Item11
 		{
@@ -7526,6 +7492,36 @@ class Mission
 			{
 			};
 			id=622;
+		};
+		class Item109
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={26760.492,22.612429,24559.6};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=634;
+					type="B_Helipilot_F";
+					atlOffset=-4.0054321e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=633;
+			atlOffset=-4.0054321e-005;
 		};
 	};
 	class Connections
