@@ -1,13 +1,37 @@
 #include "defines.hpp"
 #include "gui\gui_settings.hpp"
 
-enableDebugConsole = 1;
-
-disabledAI = true;
+/* Respawn stuff */
 respawn = 3;
 respawnButton = 1;
 respawnOnStart = 0;
 respawnDelay = 10;
-respawnTemplates[] = {"Counter","Base"};
+respawnTemplates[] = {"Counter", "Base"};
 respawnDialog = 0;
-disableChannels[]={2,3,4,5};
+
+disableChannels[] = {1, 2, 3, 4, 5};
+
+/* Mission description and stuff */
+author = "3Mydlo3";
+onLoadIntro = $STR_AFSG_PvPJets_Mission_ShortDescription;
+briefingName = $STR_AFSG_PvPJets_DisplayName;
+onLoadMission = $STR_AFSG_PvPJets_Mission_ShortDescription;
+onLoadName = $STR_AFSG_PvPJets_DisplayName;
+
+/* Other stuff */
+disabledAI = true;
+joinUnassigned = 0;
+
+class Header {
+	gameType = "TDM";
+	minPlayers = 2;
+	maxPlayers = 40;
+};
+
+// https://github.com/acemod/ACEX/tree/master/addons/killtracker
+class CfgDebriefingSections {
+    class acex_killTracker {
+        title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
+};
