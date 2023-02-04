@@ -361,7 +361,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=110;
+		items=109;
 		class Item0
 		{
 			dataType="Marker";
@@ -7492,36 +7492,6 @@ class Mission
 			{
 			};
 			id=622;
-		};
-		class Item109
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={26760.492,22.612429,24559.6};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=634;
-					type="B_Helipilot_F";
-					atlOffset=-4.0054321e-005;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=633;
-			atlOffset=-4.0054321e-005;
 		};
 	};
 	class Connections
