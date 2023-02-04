@@ -1,0 +1,13 @@
+#include "defines.hpp"
+#include "gui\gui_settings.hpp"
+
+enableDebugConsole = 1;
+
+disabledAI = true;
+respawn = 3;
+respawnButton = 1;
+respawnOnStart = 0;
+respawnDelay = 10;
+respawnTemplates[] = {"Counter","Base"};
+respawnDialog = 0;
+disableChannels[]={2,3,4,5};
