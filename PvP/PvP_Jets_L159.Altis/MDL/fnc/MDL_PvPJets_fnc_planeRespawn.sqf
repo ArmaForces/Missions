@@ -21,6 +21,12 @@ private _radioPreset = "";
 
 if (typeOf _plane == L159_BLUFOR) then {
 	_plane addEventHandler ["Killed", {
+		params ["_plane"];
+
+		{
+			_x setDamage 1;
+		} forEach crew _plane;
+		
 		[WEST, -10] call BIS_fnc_respawnTickets;
 	}];
 	
@@ -29,6 +35,12 @@ if (typeOf _plane == L159_BLUFOR) then {
 };
 if (typeOf _plane == L159_REDFOR) then {
 	_plane addEventHandler ["Killed", {
+		params ["_plane"];
+		
+		{
+			_x setDamage 1;
+		} forEach crew _plane;
+
 		[EAST, -10] call BIS_fnc_respawnTickets;
 	}];
 

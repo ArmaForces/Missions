@@ -14,6 +14,12 @@ private _planeInitialized = _plane getVariable ["MDL_PvPJets_initialized", false
 if (_planeInitialized) exitWith { false };
 
 _plane addEventHandler ["Killed", {
+	params ["_plane"];
+
+	{
+		_x setDamage 1;
+	} forEach crew _plane;
+	
 	[WEST, -10] call BIS_fnc_respawnTickets;
 }];
 
