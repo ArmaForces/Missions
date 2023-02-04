@@ -15,7 +15,7 @@ if (_planeInitialized) exitWith { false };
 
 _plane addEventHandler ["Killed", {
 	params ["_plane"];
-	
+
 	{
 		_x setDamage 1;
 	} forEach crew _plane;
@@ -24,12 +24,14 @@ _plane addEventHandler ["Killed", {
 }];
 
 [_plane, _loadout] remoteExec ["MDL_PvPJets_fnc_planeChangeLoadout", 0];
-[_plane, _radioPreset] call acre_api_fnc_setVehicleRacksPreset;
+if (ACRE_Loaded && {_radioPreset isNotEqualTo ""}) then {
+	[_plane, _radioPreset] call acre_api_fnc_setVehicleRacksPreset;
+};
 
 _plane setVehicleReportOwnPosition true;
 _plane setVehicleReportRemoteTargets true;
 _plane setVehicleReceiveRemoteTargets true;
 
-_plane setVariable ["MDL_PvPJets_initialized", true, true];
+_plane setVariable ["MDL_PvPJets_initialized", true];
 
 true
