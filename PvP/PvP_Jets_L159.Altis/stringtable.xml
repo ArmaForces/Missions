@@ -20,5 +20,9 @@
             <English>Take-off</English>
             <Polish>Wystartuj</Polish>
         </Key>
+        <Key ID="STR_AFSG_PvPJets_NotificationQueuePosition">
+            <English>Your queue position %1</English>
+            <Polish>Twoja pozycja w kolejce %1</Polish>
+        </Key>
     </Package>
 </Project>

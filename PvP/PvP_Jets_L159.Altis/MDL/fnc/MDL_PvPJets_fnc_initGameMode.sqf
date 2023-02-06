@@ -29,6 +29,24 @@ if (hasInterface) then {
         localize "STR_AFSG_PvPJets_ActionStart",
         {
             ["MDL_PVP_startRequest", player] call CBA_fnc_serverEvent;
-        }
+
+            [[localize "STR_LOAD_INTRO", 1.5], true] call CBA_fnc_notify;
+        },
+        nil,
+        1e10,
+        true,
+        true,
+        "",
+        "_originalTarget in _this"
     ]] call CBA_fnc_addPlayerAction;
+
+    ["MDL_PVP_startPosition", {
+        params ["_queue"];
+
+        [
+            [format [localize "STR_AFSG_PvPJets_NotificationQueuePosition", (_queue find player) + 1], 1.5],
+            true
+        ] call CBA_fnc_notify;
+
+    }] call CBA_fnc_addEventHandler;
 };
