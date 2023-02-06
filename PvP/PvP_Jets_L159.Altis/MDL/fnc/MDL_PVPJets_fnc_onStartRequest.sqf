@@ -1,12 +1,12 @@
 
 params ["_player"];
 
-if (!isNull (_player getVariable ["MDL_PVP_spawner", objNull])) exitWith {
+if (!isNull (_player getVariable ["MDL_PVP_handlingSpawner", objNull]) && {!is3DENPreview}) exitWith {
     diag_log text format ["[PVP] ERROR: onStartRequest - player %1 already in queue", name _player];
 };
 
 private _spawner = missionNamespace getVariable format ["MDL_PVP_catapult%1", playerSide];
-_player setVariable ["MDL_PVP_spawner", _spawner, true];
+_player setVariable ["MDL_PVP_handlingSpawner", _spawner, true];
 
 diag_log text format ["[PVP] INFO: onStartRequest - adding player %1 to queue for %2", name _player, _spawner];
 
@@ -27,20 +27,21 @@ if (count _queue == 1) then {
             diag_log text format ["[PVP] INFO: onStartRequest - empty queue for %1", _spawner];
         };
 
-        private _player = _queue deleteAt 0;
-
-        private _plane = [_spawner, side group _player] call MDL_PVPJets_fnc_spawnPlane;
-        _plane lock 2;
-        [_player, _plane] remoteExec ["moveInDriver", _player];
-
-        if (MDL_PVP_catapult) then {
-            [_plane, _player] spawn {
-                params ["_plane", "_player"];
-                waitUntil {_player in _plane};
-                [_plane] call BIS_fnc_AircraftCatapultLaunch;
-            };
+        //--- check if last spawned plane has pilot / moved from spawn
+        private _lastPlane = _spawner getVariable ["MDL_PVP_spawnerLastPlane", objNull];
+        if (crew _lastPlane isEqualTo []) then {
+            diag_log text format ["[PVP] ERROR: onStartRequest - last spawned plane is empty %1", _spawner];
+            deleteVehicle _lastPlane;
         };
-        _player setVariable ["MDL_PVP_spawner", nil, true];
+        //-------------
+
+        private _player = _queue deleteAt 0;
+        ["MDL_PVP_startPosition", [_queue], _queue] call CBA_fnc_targetEvent;
+
+        private _plane = [_spawner, _player] call MDL_PvPJets_fnc_launchPlane;
+
+        _spawner setVariable ["MDL_PVP_spawnerLastPlane", _plane];
+        _player setVariable ["MDL_PVP_handlingSpawner", nil, true];
 
         // handle next queue element
         [_fnc_queue, _this, 5] call CBA_fnc_waitAndExecute;

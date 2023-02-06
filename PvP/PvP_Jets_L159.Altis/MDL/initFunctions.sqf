@@ -20,6 +20,7 @@ DFUNC(MDL_PvPJets_fnc_getAdmin);
 DFUNC(MDL_PvPJets_fnc_initGameMode);
 DFUNC(MDL_PvPJets_fnc_configureDialog);
 
+DFUNC(MDL_PvPJets_fnc_launchPlane);
 DFUNC(MDL_PVPJets_fnc_spawnPlane);
 DFUNC(MDL_PvPJets_fnc_onPlaneKilled);
 DFUNC(MDL_PvPJets_fnc_onPlaneGetOut);
