@@ -1,14 +1,29 @@
+
+// call compileScript ["MDL\initFunctions.sqf"];
+
+#define QUOTE(VAR) #VAR
+#define DFUNC(VAR) VAR = compileScript ['MDL\fnc\VAR.sqf']
+
 MDL_fncsInitialized = false;
+
 #include "config.sqf";
 
-//MDL_fnc_VehicleEH = compile preprocessFileLineNumbers "MDL\fnc\MDL_fnc_VehicleEH.sqf";
-MDL_PvPJets_fnc_planeRespawn = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_planeRespawn.sqf";
-MDL_PvPJets_fnc_planeWestInit = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_planeWestInit.sqf";
-MDL_PvPJets_fnc_planeEastInit = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_planeEastInit.sqf";
-//MDL_PvPJets_fnc_planeGetLoadoutByName = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_planeGetLoadoutByName.sqf";
-MDL_PvPJets_fnc_planeChangeLoadout = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_planeChangeLoadout.sqf";
-//MDL_PvPJets_fnc_radar_killed = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_radar_killed.sqf";
-//MDL_PvPJets_fnc_spawn_airfields = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_spawn_airfields.sqf";
-//MDL_PvPJets_fnc_spawnerAddPlanes = compile preprocessFileLineNumbers "MDL\fnc\MDL_PvPJets_fnc_spawnerAddPlanes.sqf";
+if (isNil "MDL_PVP_configured") then {
+    MDL_PVP_preset = createHashMap;
+    MDL_PVP_tickets = 500;
+	MDL_PVP_catapult = true;
+
+	MDL_PVP_configured = false;
+};
+
+DFUNC(MDL_PvPJets_fnc_getAdmin);
+DFUNC(MDL_PvPJets_fnc_initGameMode);
+DFUNC(MDL_PvPJets_fnc_configureDialog);
+
+DFUNC(MDL_PVPJets_fnc_spawnPlane);
+DFUNC(MDL_PvPJets_fnc_onPlaneKilled);
+DFUNC(MDL_PvPJets_fnc_onPlaneGetOut);
+
+DFUNC(MDL_PVPJets_fnc_onStartRequest);
 
 MDL_fncsInitialized = true;

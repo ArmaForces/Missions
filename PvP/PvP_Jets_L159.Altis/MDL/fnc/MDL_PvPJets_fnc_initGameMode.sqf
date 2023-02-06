@@ -1,0 +1,34 @@
+waitUntil {
+    (getClientState == "BRIEFING READ" || !isMultiplayer) &&
+    {!isNull findDisplay 46} &&
+    {!visibleMap || !hasInterface}
+};
+
+diag_log text "[PVP] INFO: initGameMode";
+
+[] call MDL_PvPJets_fnc_configureDialog;
+
+waitUntil {MDL_PVP_configured};
+
+"MDL_PVP_Wait" cutText ["", "BLACK IN"];
+
+diag_log text format ["[PVP] INFO: initGameMode - preset %1", MDL_PVP_preset get "displayName"];
+diag_log text format ["[PVP] INFO: initGameMode - tickets %1", MDL_PVP_tickets];
+
+if (isServer) then {
+    // adjust tickets
+    {
+        [_x, (MDL_PVP_tickets - ([_x] call BIS_fnc_respawnTickets))] call BIS_fnc_respawnTickets;
+    } forEach [WEST, EAST];
+
+    ["MDL_PVP_startRequest", {call MDL_PVPJets_fnc_onStartRequest}] call CBA_fnc_addEventHandler;
+};
+
+if (hasInterface) then {
+    [[
+        localize "STR_AFSG_PvPJets_ActionStart",
+        {
+            ["MDL_PVP_startRequest", player] call CBA_fnc_serverEvent;
+        }
+    ]] call CBA_fnc_addPlayerAction;
+};

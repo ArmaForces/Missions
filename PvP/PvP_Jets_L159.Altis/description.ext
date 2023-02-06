@@ -12,7 +12,7 @@ respawnDialog = 0;
 disableChannels[] = {1, 2, 3, 4, 5};
 
 /* Mission description and stuff */
-author = "3Mydlo3";
+author = "3Mydlo3, veteran29";
 onLoadIntro = $STR_AFSG_PvPJets_Mission_ShortDescription;
 briefingName = $STR_AFSG_PvPJets_DisplayName;
 onLoadMission = $STR_AFSG_PvPJets_Mission_ShortDescription;

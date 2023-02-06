@@ -2,11 +2,23 @@
 <Project name="AFSG">
     <Package name="PvPJets">
         <Key ID="STR_AFSG_PvPJets_DisplayName">
-            <Polish>PvP Jets L-159</Polish>
+            <Polish>PvP Jets</Polish>
         </Key>
         <Key ID="STR_AFSG_PvPJets_Mission_ShortDescription">
             <English>War Tunder style jets PvP.</English>
             <Polish>PvP samolotami w stylu War Thundera.</Polish>
+        </Key>
+        <Key ID="STR_AFSG_PvPJets_Configure">
+            <English>Configure Game Mode</English>
+            <Polish>Skonfiguruj Tryb Gry</Polish>
+        </Key>
+        <Key ID="STR_AFSG_PvPJets_ConfigureTickets">
+            <English>Tickets %1</English>
+            <Polish>Tickety %1</Polish>
+        </Key>
+        <Key ID="STR_AFSG_PvPJets_ActionStart">
+            <English>Take-off</English>
+            <Polish>Wystartuj</Polish>
         </Key>
     </Package>
 </Project>
