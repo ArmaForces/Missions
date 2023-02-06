@@ -9,7 +9,7 @@ if (MDL_PVP_catapult) then {
     [_plane, _player] spawn {
         params ["_plane", "_player"];
         waitUntil {_player in _plane};
-        [_plane] call BIS_fnc_AircraftCatapultLaunch;
+        [_plane] remoteExec ["BIS_fnc_aircraftCatapultLaunch", _plane];
     };
 };
 
