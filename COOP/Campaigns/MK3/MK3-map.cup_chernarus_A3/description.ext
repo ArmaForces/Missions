@@ -1,3 +1,32 @@
+#include "script_component.hpp"
+
+/* Respawn stuff */
+respawn = 3;
+respawnDelay = 1e10;
+respawnTemplates[] = {"afm_respawn_default"};
+// Jeśli misja nie przewiduje standardowego respawnu na czas to można usunąć "Counter".
+// Tj. dla misji permadeath i z własnym respawnem np. po wykonaniu zadania.
+// Dla kompatybilności z modułem obserwatora:
+respawnTemplatesVirtual[] = {"Spectator"};
+
+disableChannels[] = {1, 2, 3, 4, 5};
+
+/* Mission description and stuff */
+author = "3Mydlo3";
+onLoadIntro = CSTRING(Mission_ShortDescription);
+briefingName = CSTRING(DisplayName);
+onLoadMission = CSTRING(Mission_ShortDescription);
+onLoadName = CSTRING(Mission_Title);
+
+class Header {
+    gameType = Coop;
+    minPlayers = 20;
+    maxPlayers = 51;
+};
+
+/* Other stuff */
+disabledAI = true;
+
 class CfgFunctions
 {
 	class MKR
