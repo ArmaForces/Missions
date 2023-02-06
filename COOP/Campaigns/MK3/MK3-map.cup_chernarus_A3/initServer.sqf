@@ -1,5 +1,11 @@
 #include "script_component.hpp"
 
+{
+    if (fuel _x isEqualTo 1) then {
+        _x setFuel random 0.8 + 0.2;
+    };
+} forEach vehicles;
+
 // 0 setFog 0.2;
 // 0 setOvercast 1;
 // 0 setRain 1;

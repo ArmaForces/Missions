@@ -1,4 +1,4 @@
-#define PREFIX AFP
+#define PREFIX MKR
 #define COMPONENT Scripts
 
 // Version
