@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="MKR">
+    <Package name="Scripts">
+        <Key ID="STR_MKR_Scripts_DisplayName">
+            <English>Soapy Campaign: Resistance</English>
+            <Polish>Mydlana Kampania: Partyzanci</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_DisplayNameShort">
+            <English>SC: Resistance</English>
+            <Polish>MK: Partyzanci</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Rationale">
+            <Polish>Cała kampania nastawiona jest na maksymalny możliwy realizm oraz podejście, że życie jest najważniejsze i nie warto go ryzykować jak nie trzeba. Liczebność przeciwnika będzie realistyczna a co za tym idzie, będzie on musiał być dużo bardziej skuteczny. Taktyka kryj ryj będzie Waszym chlebem powszednim a dobre manewrowanie i flankowanie główną bronią. Koniec fal bezmyślnych botów, nadchodzi czas myślenia głowom a nie dupom.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_Title">
+            <English>SC:R: Hot Pursuit</English>
+            <Polish>MK:R: Gorący Pościg</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_Briefing">
+            <Polish>Groźni bandyci zostali aresztowani zeszłej nocy. Dziś rano zostaną przetransportowani przez Milicyjny konwój do Czernogórska.</Polish>
+        </Key>
+    </Package>
+
+    <!-- MARKERS -->
+    <Package name="Markers">
+        <Key ID="STR_MKR_Markers_ResistanceCamp">
+            <English>Resistance camp</English>
+            <Polish>Obóz partyzantów</Polish>
+        </Key>
+        <Key ID="STR_MKR_Markers_MilitaryBase">
+            <English>Military base</English>
+            <Polish>Baza wojskowa</Polish>
+        </Key>
+        <Key ID="STR_MKR_Markers_MilitaryCamp">
+            <English>Military camp</English>
+            <Polish>Obóz wojskowy</Polish>
+        </Key>
+
+    </Package>
+</Project>
