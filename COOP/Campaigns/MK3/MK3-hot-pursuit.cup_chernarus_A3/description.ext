@@ -9,7 +9,7 @@ respawnTemplates[] = {"afm_respawn_default"};
 // Dla kompatybilności z modułem obserwatora:
 respawnTemplatesVirtual[] = {"Spectator"};
 
-disableChannels[] = {1, 2, 3, 4, 5};
+disableChannels[] = {2, 3, 4, 5};
 
 /* Mission description and stuff */
 author = "3Mydlo3";

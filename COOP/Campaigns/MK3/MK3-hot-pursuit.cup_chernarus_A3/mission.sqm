@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=950;
+		nextID=953;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=183;
+		nextID=193;
 	};
 	class Camera
 	{
-		pos[]={3638.5139,61.147255,2498.9087};
-		dir[]={-0.91891181,-0.35943949,0.16257295};
-		up[]={-0.35395005,0.93316561,0.062619969};
-		aside[]={0.17421621,-1.6175909e-007,0.98472148};
+		pos[]={2164.4153,476.46292,5486.5566};
+		dir[]={-0.78871632,-0.57980984,-0.20436156};
+		up[]={-0.56128043,0.81474698,-0.14543141};
+		aside[]={-0.25082457,-6.8292138e-008,0.9680419};
 	};
 };
 binarizationWanted=0;
@@ -535,7 +535,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=131;
+		items=134;
 		class Item0
 		{
 			dataType="Object";
@@ -6689,7 +6689,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6568.979,7.5486817,2415.3071};
+								position[]={6568.979,7.548357,2415.3074};
 								angles[]={0,0.68954468,0};
 							};
 							side="Empty";
@@ -6697,12 +6697,27 @@ class Mission
 							class Attributes
 							{
 								init="this setPlateNumber ""CH-CHM121"";";
+								name="convoyCar_1";
 							};
 							id=770;
 							type="CUP_C_S1203_Militia_CIV";
+							atlOffset=0.037000179;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ace_repair_editorLoadedWheels";
+									expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=2;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ammoBox";
 									expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -6715,7 +6730,20 @@ class Mission
 										};
 									};
 								};
-								nAttributes=1;
+								class Attribute2
+								{
+									property="ace_cargo_space";
+									expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=8;
+										};
+									};
+								};
+								nAttributes=3;
 							};
 						};
 						class Item8
@@ -6723,21 +6751,35 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6577.2095,7.5486774,2407.8623};
-								angles[]={0,0.78268039,0};
+								position[]={6577.209,7.548357,2407.8623};
+								angles[]={0,0.78267545,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
 								init="this setPlateNumber ""CH-CHM125"";";
+								name="convoyCar_3";
 							};
 							id=757;
 							type="CUP_C_S1203_Militia_CIV";
-							atlOffset=0.037320614;
+							atlOffset=0.037000179;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ace_repair_editorLoadedWheels";
+									expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=2;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ammoBox";
 									expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -6750,7 +6792,20 @@ class Mission
 										};
 									};
 								};
-								nAttributes=1;
+								class Attribute2
+								{
+									property="ace_cargo_space";
+									expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=8;
+										};
+									};
+								};
+								nAttributes=3;
 							};
 						};
 						class Item9
@@ -6758,21 +6813,35 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6572.8101,7.5486774,2411.8323};
-								angles[]={0,0.68954819,0};
+								position[]={6572.8101,7.548357,2411.8323};
+								angles[]={0,0.68954468,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
 								init="this setPlateNumber ""CH-CHM124"";";
+								name="convoyCar_2";
 							};
 							id=756;
 							type="CUP_C_S1203_Militia_CIV";
-							atlOffset=0.037320614;
+							atlOffset=0.037000179;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ace_repair_editorLoadedWheels";
+									expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=2;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ammoBox";
 									expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -6785,12 +6854,25 @@ class Mission
 										};
 									};
 								};
-								nAttributes=1;
+								class Attribute2
+								{
+									property="ace_cargo_space";
+									expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=8;
+										};
+									};
+								};
+								nAttributes=3;
 							};
 						};
 					};
 					id=772;
-					atlOffset=6.0402679;
+					atlOffset=6.0398788;
 				};
 				class Item3
 				{
@@ -6854,7 +6936,7 @@ class Mission
 				};
 			};
 			id=775;
-			atlOffset=-101.0997;
+			atlOffset=-101.09978;
 		};
 		class Item16
 		{
@@ -8377,8 +8459,9 @@ class Mission
 			position[]={3794.073,6.7247725,2537.554};
 			class Attributes
 			{
-				condition="this and dayTime < 6.16";
-				onActivation="private _vehicle = thisList apply {vehicle _x} select {_x isKindOf ""vehicle""} select 0;" \n "" \n "_vehicle setHitPointDamage [""hitLFWheel"", 1];";
+				text="Psuje koło przed 6:10";
+				condition="dayTime < 6.16 and {convoyCar_1 in thisList || {convoyCar_2 in thisList or {convoyCar_3 in thisList}}}";
+				onActivation="private _randomWheel = selectRandom [""hitRFWheel"", ""hitLFWheel""];" \n "" \n "if (convoyCar_1 in thisList) exitWith {" \n "  convoyCar_1 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_2 in thisList) exitWith {" \n "  convoyCar_2 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_3 in thisList) exitWith {" \n "  convoyCar_3 setHitPointDamage [_randomWheel, 1];" \n "};" \n "";
 				activationBy="ANYPLAYER";
 			};
 			id=946;
@@ -8391,11 +8474,54 @@ class Mission
 			position[]={1668.374,145.16832,3978.345};
 			class Attributes
 			{
-				condition="this and dayTime < 6.25";
-				onActivation="private _vehicle = thisList apply {vehicle _x} select {_x isKindOf ""vehicle""} select 0;" \n "" \n "_vehicle setHitPointDamage [""hitRFWheel"", 1];";
-				activationBy="ANYPLAYER";
+				text="Psuje koło przed 6:15";
+				condition="dayTime < 6.25 and {convoyCar_1 in thisList || {convoyCar_2 in thisList or {convoyCar_3 in thisList}}}";
+				onActivation="private _randomWheel = selectRandom [""hitRFWheel"", ""hitLFWheel""];" \n "" \n "if (convoyCar_1 in thisList) exitWith {" \n "  convoyCar_1 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_2 in thisList) exitWith {" \n "  convoyCar_2 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_3 in thisList) exitWith {" \n "  convoyCar_3 setHitPointDamage [_randomWheel, 1];" \n "};" \n "";
+				activationBy="ANY";
 			};
 			id=947;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item131
+		{
+			dataType="Trigger";
+			position[]={1738.8973,152.42659,4051.1885};
+			class Attributes
+			{
+				text="Psuje koło przed 6:15";
+				condition="dayTime < 6.25 and {convoyCar_1 in thisList || {convoyCar_2 in thisList or {convoyCar_3 in thisList}}}";
+				onActivation="private _randomWheel = selectRandom [""hitRFWheel"", ""hitLFWheel""];" \n "" \n "if (convoyCar_1 in thisList) exitWith {" \n "  convoyCar_1 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_2 in thisList) exitWith {" \n "  convoyCar_2 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_3 in thisList) exitWith {" \n "  convoyCar_3 setHitPointDamage [_randomWheel, 1];" \n "};" \n "";
+				activationBy="ANY";
+			};
+			id=950;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item132
+		{
+			dataType="Trigger";
+			position[]={1894.5594,173.56871,4306.0444};
+			class Attributes
+			{
+				text="Psuje koło przed 6:15";
+				condition="dayTime < 6.25 and {convoyCar_1 in thisList || {convoyCar_2 in thisList or {convoyCar_3 in thisList}}}";
+				onActivation="private _randomWheel = selectRandom [""hitRFWheel"", ""hitLFWheel""];" \n "" \n "if (convoyCar_1 in thisList) exitWith {" \n "  convoyCar_1 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_2 in thisList) exitWith {" \n "  convoyCar_2 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_3 in thisList) exitWith {" \n "  convoyCar_3 setHitPointDamage [_randomWheel, 1];" \n "};" \n "";
+				activationBy="ANY";
+			};
+			id=951;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item133
+		{
+			dataType="Trigger";
+			position[]={2708.874,99.559799,2743.552};
+			class Attributes
+			{
+				text="Psuje koło przed 6:11";
+				condition="dayTime < 6.18 and {convoyCar_1 in thisList || {convoyCar_2 in thisList or {convoyCar_3 in thisList}}}";
+				onActivation="private _randomWheel = selectRandom [""hitRFWheel"", ""hitLFWheel""];" \n "" \n "if (convoyCar_1 in thisList) exitWith {" \n "  convoyCar_1 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_2 in thisList) exitWith {" \n "  convoyCar_2 setHitPointDamage [_randomWheel, 1];" \n "};" \n "" \n "if (convoyCar_3 in thisList) exitWith {" \n "  convoyCar_3 setHitPointDamage [_randomWheel, 1];" \n "};" \n "";
+				activationBy="ANYPLAYER";
+			};
+			id=952;
 			type="EmptyDetectorAreaR50";
 		};
 	};

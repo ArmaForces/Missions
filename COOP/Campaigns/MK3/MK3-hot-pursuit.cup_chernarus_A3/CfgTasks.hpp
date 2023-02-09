@@ -13,7 +13,7 @@ class CfgTasks
     class Survive
     {
         title = "Przeżyj";
-        description = "No nie chcesz ginąć.";
+        description = "No nie chcesz ginąć. Jeżeli nie masz wyjścia, poddaj się.";
         icon = "heal";
 
         createdShowNotification = "true";
@@ -27,7 +27,7 @@ class CfgTasks
     class Resistance
     {
         title = "Partyzanci";
-        description = "Nie chcecie nikogo zabić.";
+        description = "W końcu nienawiść do okupanta przerodziła się w prawdziwe działania. Pamiętajcie, nie chcecie nikogo zabić! Jeżeli nie będzie wyjścia, poddaj się.";
         icon = "meet";
         parentTask = "HotPursuit";
 
@@ -52,7 +52,7 @@ class CfgTasks
         parentTask = "Resistance";
 
         createdShowNotification = "true";
-        conditionEventsShow[] = { "DoorsBreached" };
+        conditionEventsShow[] = { "ResistanceTimeToRun" };
         conditionEventsSuccess[] = { "ResistanceEscaped" };
     };
 
@@ -95,7 +95,7 @@ class CfgTasks
     class Convoy : Militia
     {
         title = "Konwój";
-        description = "Konwój wyruszy w trasę o 6:05."; //TODO: Change hours
+        description = "Na mapie, kolorem brązowym, została zaznaczona trasa konwoju. Jest to najszybsza trasa biorąc pod uwagę mułowatość Waszych starych już lodówek, którym wieki zajmuje rozpędzenie się. Jedźcie ostrożnie, bo zbytnie szarżowanie może skończyć się awariami. Konwój wyruszy w trasę o 6:05. Nie rozdzielajcie się! W Komarowie powinniście być koło 6:10. W Pawłowie powinniście być około 6:15. Około 6:20 dotrzecie na posterunek. Przeniesiecie aresztowanych do pojazdów, załadujecie skradzione rzeczy i ruszycie w drogę powrotną tą samą trasą."; //TODO: Change hours
         icon = "car";
         parentTask = "Militia";
 

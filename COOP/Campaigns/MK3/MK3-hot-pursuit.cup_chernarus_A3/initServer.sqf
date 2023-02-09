@@ -43,3 +43,8 @@
 // GF PostProcess Editor parameters: Copy the following line to clipboard and click Import in the editor.
 //[[false,100,[0.05,0.05,0.3,0.3]],[false,200,[0.05,0.05,true]],[false,300,[1,0.2,0.2,1,1,1,1,0.05,0.01,0.05,0.01,0.1,0.1,0.2,0.2]],[true,1500,[1,1,0,[0,0,0,0],[1,1,1.5,0.78],[0.33,0.33,0.57,0],[0,0,0,0,0,0,4]]],[false,500,[1]],[false,2000,[0.2,1,1,0.5,0.5,true]],[false,2500,[1,1,1]]]
 
+["DoorsBreached", {
+    [{
+        ["ResistanceTimeToRun"] call CBA_fnc_globalEvent;
+    }, [], 75] call CBA_fnc_waitAndExecute;
+}] call CBA_fnc_addEventHandler;

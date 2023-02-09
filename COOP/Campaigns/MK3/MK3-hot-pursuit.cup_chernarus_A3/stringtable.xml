@@ -16,6 +16,10 @@
             <English>SC:R: Hot Pursuit</English>
             <Polish>MK:R: Gorący Pościg</Polish>
         </Key>
+        <Key ID="STR_MKR_Scripts_Mission_ShortDescription">
+            <!-- <English></English> -->
+            <Polish>Groźni bandyci zostaną dziś przetransportowani przez Milicję do Czernogórska.</Polish>
+        </Key>
         <Key ID="STR_MKR_Scripts_Mission_Briefing">
             <Polish>Groźni bandyci zostali aresztowani zeszłej nocy. Dziś rano zostaną przetransportowani przez Milicyjny konwój do Czernogórska.</Polish>
         </Key>
