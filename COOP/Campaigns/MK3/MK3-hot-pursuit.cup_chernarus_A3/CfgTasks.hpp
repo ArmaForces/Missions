@@ -59,7 +59,7 @@ class CfgTasks
     class Bandits
     {
         title = "Bandyci";
-        description = "Zostaliście aresztowani po pościgu dzień wcześniej. Wieźliście kasę i broń. Wszystko to znajduje się aktualnie razem z Wami na komisariacie. Podobno niedługo ma przyjechać transport zabrać Was i to co mieliście ze sobą do Czernogórska. Nie znacie nikogo, kto mógłby Wam pomóc, działaliście tylko we 3. Nie jesteście chętni do współpracy z nikim, ale cenicie sobie życie i wolność.";
+        description = "Zostaliście aresztowani po pościgu dzień wcześniej. Wieźliście kasę i broń. Wszystko to znajduje się aktualnie razem z Wami na komisariacie. Podobno niedługo ma przyjechać transport zabrać Was i to co mieliście ze sobą do Czernogórska. Nie znacie nikogo, kto mógłby Wam pomóc, działaliście tylko we 3. Nie jesteście chętni do współpracy z nikim, ale cenicie sobie życie i wolność. Ogólnie nie chcecie nikogo zabijać, zależy Wam tylko na pieniądzach.";
         icon = "meet";
         parentTask = "HotPursuit";
 
@@ -72,20 +72,26 @@ class CfgTasks
         description = "Wygląda na to, że macie przesrane.";
         icon = "wait";
         parentTask = "Bandits";
+
+        conditionEventsSuccess[] = { "BanditsCanEscape" };
     };
 
     class BanditsEscape : Bandits
     {
         title = "Uciekaj";
-        description = "Wiej ile sił w nogach!";
+        description = "Wiej ile sił w nogach! W razie potrzeby, ukradnij samochód.";
         icon = "run";
         parentTask = "Bandits";
+
+        createdShowNotification = "true";
+        conditionCodeShow = "units banditsGroup findIf {!(_x getVariable [""ace_captives_isHandcuffed"", true])} != -1";
+        onShowEvents[] = { "BanditsCanEscape" };
     };
 
     class Militia
     {
         title = "Milicja";
-        description = "Milicja jako tako zachowała jeszcze resztki godności po przewrocie. Wielką wpadką wizerunkową było brutalne stłumienie protestów antyrządowych, ale od tamtej pory Milicja stara się odzyskać zaufanie społeczeństwa. Nie łamiecie prawa. Nie męczycie ludności cywilnej. Przede wszystkim zapewniacie bezpieczeństwo i pilnujecie porządku. Jeżeli coś wydaje się podejrzane, zgłaszacie, obserwujecie i dopiero w razie potrzeby, interweniujecie. Możecie przekraczać prędkość tylko jadąc na sygnale. Jeżeli jest więcej niż 1 pojazd w kolumnie, sygnał dźwiękowy syreny można wyłączyć, żeby zachować zmysły.";
+        description = "Milicja jako tako zachowała jeszcze resztki godności po przewrocie. Wielką wpadką wizerunkową było brutalne stłumienie protestów antyrządowych, ale od tamtej pory Milicja stara się odzyskać zaufanie społeczeństwa. Nie łamiecie prawa. Nie męczycie ludności cywilnej. Przede wszystkim zapewniacie bezpieczeństwo i pilnujecie porządku. Jeżeli coś wydaje się podejrzane, zgłaszacie, obserwujecie i dopiero w razie potrzeby, interweniujecie. W miarę możliwości, staracie się aresztować, chyba że Wasze życie jest zagrożone. Możecie przekraczać prędkość tylko jadąc na sygnale. Jeżeli jest więcej niż 1 pojazd w kolumnie, sygnał dźwiękowy syreny można wyłączyć, żeby zachować zmysły.";
         icon = "meet";
         parentTask = "HotPursuit";
 
@@ -95,7 +101,7 @@ class CfgTasks
     class Convoy : Militia
     {
         title = "Konwój";
-        description = "Na mapie, kolorem brązowym, została zaznaczona trasa konwoju. Jest to najszybsza trasa biorąc pod uwagę mułowatość Waszych starych już lodówek, którym wieki zajmuje rozpędzenie się. Jedźcie ostrożnie, bo zbytnie szarżowanie może skończyć się awariami. Konwój wyruszy w trasę o 6:05. Nie rozdzielajcie się! W Komarowie powinniście być koło 6:10. W Pawłowie powinniście być około 6:15. Około 6:20 dotrzecie na posterunek. Przeniesiecie aresztowanych do pojazdów, załadujecie skradzione rzeczy i ruszycie w drogę powrotną tą samą trasą."; //TODO: Change hours
+        description = "Na mapie, kolorem brązowym, została zaznaczona trasa konwoju. Jest to najszybsza trasa biorąc pod uwagę mułowatość Waszych starych już lodówek, którym wieki zajmuje rozpędzenie się. Jedźcie ostrożnie, bo zbytnie szarżowanie może skończyć się awariami. Przy okazji rozejrzycie się czy nie ma nic podejrzanego po drodze. Konwój wyruszy w trasę o 6:05. Nie rozdzielajcie się! W Komarowie powinniście być koło 6:10. W Pawłowie powinniście być około 6:15. Około 6:20 dotrzecie na posterunek. Przeniesiecie aresztowanych do pojazdów, załadujecie skradzione rzeczy i ruszycie w drogę powrotną tą samą trasą."; //TODO: Change hours
         icon = "car";
         parentTask = "Militia";
 
