@@ -13,9 +13,9 @@ disableChannels[] = {1, 2, 3, 4, 5};
 
 /* Mission description and stuff */
 author = "3Mydlo3";
-onLoadIntro = CSTRING(Mission_ShortDescription);
+onLoadIntro = CSTRING(Mission_Title);
 briefingName = CSTRING(DisplayName);
-onLoadMission = CSTRING(Mission_ShortDescription);
+onLoadMission = CSTRING(Mission_Title);
 onLoadName = CSTRING(Mission_Title);
 
 class Header {
