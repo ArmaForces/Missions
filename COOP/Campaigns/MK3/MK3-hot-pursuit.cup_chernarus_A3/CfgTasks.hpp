@@ -17,7 +17,7 @@ class CfgTasks
         icon = "heal";
 
         createdShowNotification = "true";
-        conditionCodeShow = "CBA_missionTime > 300";
+        conditionCodeShow = "CBA_missionTime > 600";
         conditionEventsShow[] = { "MissionStarted" };
 
         // Condition for failure local for each player.
@@ -126,7 +126,7 @@ class CfgTasks
     class Patrol1 : Patrol
     {
         title = "Patrol 1";
-        description = "Jako Patrol 1 pojedziecie do Viboru.";
+        description = "Jako Patrol 1 pojedziecie do Wiboru. Następnie możecie skręcić w stronę Lopatino i przed miastem skręcić na południe do Miszkina lub pojechać do Kabanina.";
         parentTask = "Patrol";
 
         owners[] = { "zeus", "patrol1Group" };
@@ -135,7 +135,7 @@ class CfgTasks
     class Patrol2 : Patrol
     {
         title = "Patrol 2";
-        description = "Jako Patrol 2 pojedziecie do Kabanina.";
+        description = "Jako Patrol 2 pojedziecie do Kabanina przez Pogorewkę i Rogowo. W drodze powrotnej przejedźcie przez Pulkowo.";
         parentTask = "Patrol";
 
         owners[] = { "zeus", "patrol2Group" };
@@ -144,7 +144,7 @@ class CfgTasks
     class Patrol3 : Patrol
     {
         title = "Patrol 3";
-        description = "Jako Patrol 3 pojedziecie do .";
+        description = "Jako Patrol 3 pojedziecie do Kamenki i Komarewa. Następnie zahaczycie o Bor i Pawłowo z drodze powrotnej, chyba że spotkacie konwój, wtedy możecie wracać na posterunek razem z nimi.";
         parentTask = "Patrol";
 
         owners[] = { "zeus", "patrol3Group" };
@@ -153,7 +153,7 @@ class CfgTasks
     class Patrol4 : Patrol
     {
         title = "Patrol 4";
-        description = "Jako Patrol 4 pojedziecie do .";
+        description = "Jako Patrol 4 pojedziecie do Kozłowki, następnie sprawdzicie jak sprawy mają się na tamie po zachodniej stronie Zelenogorska. Jeżeli wystarczy Wam czasu, przejedźcie się do Pulkowa.";
         parentTask = "Patrol";
 
         owners[] = { "zeus", "patrol4Group" };

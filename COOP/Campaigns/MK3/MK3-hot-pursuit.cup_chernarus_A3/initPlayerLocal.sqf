@@ -8,6 +8,19 @@ CUP_stopLampCheck = true;
     call FUNC(playerActions);
 }, [], -1] call CBA_fnc_waitUntilAndExecute;
 
+[{alive player}, {
+    if (side player isNotEqualTo RESISTANCE) exitWith {
+        // Chance for cigarettes
+        if (random 1 > 0.5) then {
+            player addItem "murshun_cigs_cigpack";
+        };
+        // Chance for lighter or matches
+        if (random 1 > 0.5) then {
+            player addItem (selectRandom ["murshun_cigs_lighter", "murshun_cigs_matches"]);
+        };
+    };
+}, [], -1] call CBA_fnc_waitUntilAndExecute;
+
 [{
     private _roleDescription = roleDescription player;
     private _monkeyIndex = _roleDescription find "@";
@@ -41,26 +54,84 @@ CUP_stopLampCheck = true;
 
         // TODO: Consider removing rank names for resistance.
 
+        private _side = switch (side player) do {
+            case WEST: { "Milicja" };
+            case EAST: { "" };
+            case INDEPENDENT: { "Czarnoruski Ruch Oporu" };
+            case CIVILIAN: { "Czarnoruskie Koleje Samochodowe" };
+            default { "JAK TO WIDZISZ TO MYDLARZ COŚ SPIERDOLIŁ" };
+        };
+
+        private _rankAndName = if (side player isEqualTo WEST) then {
+            format ["%1 %2",
+                diwako_dui_nametags_RankNames get "default" get rank player,
+                name player]
+        } else {
+            format ["%1", name player]
+        };
+
+        private _location = "";
+        if (side player isEqualTo WEST) then {
+            _location = "Posterunek Milicji w Zelenogorsku";
+        };
+        if (convoyGroup isEqualTo group player) then {
+            _location = "Posterunek Milicji w Chernogorsku";
+        };
+        if (side player isEqualTo INDEPENDENT) then {
+            _location = "W lesie na zachód od Zelenogorska";
+        };
+        if (banditsGroup isEqualTo group player) then {
+            _location = "Areszt w Zelenogorsku";
+        };
+
         [
             LLSTRING(Mission_Title),
             {format ["%1 %2", LLSTRING(Date), [daytime, "HH:MM:SS"] call BIS_fnc_timeToString]},
-            format ["%1 %2",
-                diwako_dui_nametags_RankNames get "default" get rank player,
-                name player],
+            _rankAndName,
             format ["%1 - %2", _playerGroupName, _playerRole],
-            "Czarnoruscy Partyzanci", // TODO: Change this to apropriate unit based on player side/unit
-            "W lesie na zachód od Zelenogorska" // TODO: Change this to apropriate location
+            _side, // TODO: Change this to apropriate unit based on player side/unit
+            _location // TODO: Change this to apropriate location
         ] spawn FUNC(infoText);
     }, [_playerRole, _playerGroupName], 4, {
         params ["_playerRole", "_playerGroupName"];
 
+        private _side = switch (side player) do {
+            case WEST: { "Milicja" };
+            case EAST: { "" };
+            case INDEPENDENT: { "Czarnoruski Ruch Oporu" };
+            case CIVILIAN: { "Czarnoruskie Koleje Samochodowe" };
+            default { "JAK TO WIDZISZ TO MYDLARZ COŚ SPIERDOLIŁ" };
+        };
+
+        private _rankAndName = if (side player isEqualTo WEST) then {
+            format ["%1 %2", rank player, name player]
+        } else {
+            format ["%1", name player]
+        };
+
+        private _location = "";
+        if (side player isEqualTo WEST) then {
+            _location = "Posterunek Milicji w Zelenogorsku";
+        };
+        if (convoyGroup isEqualTo group player) then {
+            _location = "Posterunek Milicji w Chernogorsku";
+        };
+        if (side player isEqualTo INDEPENDENT) then {
+            _location = "W lesie na zachód od Zelenogorska";
+        };
+        if (banditsGroup isEqualTo group player) then {
+            _location = "Areszt w Zelenogorsku";
+        };
+        if (player isEqualTo busDriver) then { _location = "Pętla w Lopatino"; };
+        if (player isEqualTo busTicketer) then { _location = "Przystanek w Vyborze"; };
+
         [
             LLSTRING(Mission_Title),
             format ["%1 %2", LLSTRING(Date), [daytime, "HH:MM:SS"] call BIS_fnc_timeToString],
-            format ["%1 %2", rank player, name player],
+            _rankAndName,
             format ["%1 - %2", _playerGroupName, _playerRole],
-            "Czarnoruscy Partyzanci", // TODO: Change this to apropriate unit based on player side/unit
-            "W lesie na zachód od Zelenogorska" // TODO: Change this to apropriate location
+            _side, // TODO: Change this to apropriate unit based on player side/unit
+            _location // TODO: Change this to apropriate location
         ] spawn FUNC(infoText);
     }] call CBA_fnc_waitUntilAndExecute;
 }, [], 5] call CBA_fnc_waitAndExecute;
@@ -103,7 +174,7 @@ private _action = [
 			}, [_caller, -1, [_explosive, 0], "ACE_Clacker"]] call CBA_fnc_waitUntilAndExecute;
 		};
 	},
-	{missionNamespace getVariable [QGVAR(door2_closedNoCharge), true]},
+	{missionNamespace getVariable [QGVAR(door2_closedNoCharge), true] && {side player isEqualTo RESISTANCE}},
 	{},
 	[_door2positionWorld],
 	_door2position,// "door_2",
@@ -112,6 +183,30 @@ private _action = [
 
 [militia_station, 0, [], _action] call ace_interact_menu_fnc_addActionToObject;
 
+// 6:05
+[{daytime > 6.08334}, {
+    playMusic "COD_MW_All_Ghilled_Up_Part_1";
+}] call CBA_fnc_waitUntilAndExecute;
+
+// 6:07:45
+[{daytime > 6.13300}, {
+    playMusic "COD_MW_All_Ghilled_Up_Part_3";
+}] call CBA_fnc_waitUntilAndExecute;
+
+// 6:10
+[{daytime > 6.16667}, {
+    playMusic "FC2_12_Eighteen_Bullets";
+}] call CBA_fnc_waitUntilAndExecute;
+
+// 6:13
 [{daytime > 6.21950}, {
-	playMusic "ACTION_PD2_09_Razormind";
+    if (side player isEqualTo RESISTANCE) then {
+	    playMusic "ACTION_PD2_09_Razormind";
+    } else {
+        playMusic "COD_MW_All_Ghilled_Up_Part_5";
+        [{daytime > 6.24695}, {
+
+            playMusic "ACTION_John_Wick_Shots_Fired";
+        }] call CBA_fnc_waitUntilAndExecute;
+    };
 }] call CBA_fnc_waitUntilAndExecute;
