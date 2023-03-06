@@ -21,6 +21,10 @@
             <English>Military camp</English>
             <Polish>Obóz wojskowy</Polish>
         </Key>
+        <Key ID="STR_MKR_Markers_Checkpoint">
+            <English>Checkpoint</English>
+            <Polish>Punkt kontrolny</Polish>
+        </Key>
 
     </Package>
 </Project>
