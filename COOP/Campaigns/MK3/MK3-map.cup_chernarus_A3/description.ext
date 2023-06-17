@@ -49,10 +49,25 @@ class CfgFunctions
 
     class MKR
     {
+        tag = QUOTE(ADDON);
         class Init
 		{
-			class removeMapObjects { preInit = 1 };
+            class checkLicensePlates { postInit = 1; };
+            class createMilitiaRecord {};
+            class createVehiclesRecord {};
+            class isMilitia {};
+			class removeMapObjects { preInit = 1; };
 		};
+        class acre
+        {
+            class initCbRadioPreset { postInit = 1; };
+            class addCbRadio {};
+        };
+        class utils
+        {
+            class hasAnyDocument {};
+            class getDocuments {};
+        };
     };
 };
 

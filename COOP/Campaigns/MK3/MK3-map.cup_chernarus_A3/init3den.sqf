@@ -1,1 +1,1 @@
-[] call MKR_fnc_removeMapObjects;
+[] call MKR_Scripts_fnc_removeMapObjects;

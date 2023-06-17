@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+GVAR(cbRadioPresetInitialized) = false;
+
 {
     if (fuel _x isEqualTo 1) then {
         _x setFuel random 0.8 + 0.2;
