@@ -1,12 +1,19 @@
 #include "script_component.hpp"
 
 GVAR(cbRadioPresetInitialized) = false;
+GVAR(allDocuments) = createHashMap;
 
 {
     if (fuel _x isEqualTo 1) then {
         _x setFuel random 0.8 + 0.2;
     };
 } forEach vehicles;
+
+call FUNC(initDocuments);
+
+[QGVAR(addDocument), {
+    _this call FUNC(addDocument);
+}] call CBA_fnc_addEventHandler;
 
 // 0 setFog 0.2;
 // 0 setOvercast 1;

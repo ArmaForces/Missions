@@ -13,6 +13,8 @@
  * Public: No
  */
 
+if (!isServer) exitWith {};
+
 private _vehicles = vehicles;
 private _licensePlateAndVehicle = _vehicles apply {[getPlateNumber _x, _x]};
 private _licensePlates = _licensePlateAndVehicle apply {_x select 0};

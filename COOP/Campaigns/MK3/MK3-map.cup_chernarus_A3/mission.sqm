@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3702.3181,327.0784,8581.4521};
-		dir[]={-0.85196579,-0.52290839,-0.027229516};
-		up[]={-0.52264631,0.85238683,-0.016704079};
-		aside[]={-0.031944662,6.7404471e-008,0.99949825};
+		pos[]={2691.6077,221.03653,5072.0967};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -2083,7 +2083,7 @@ class Mission
 						};
 					};
 					id=83;
-					atlOffset=-18.012573;
+					atlOffset=-42.217117;
 				};
 				class Item8
 				{
@@ -2298,7 +2298,7 @@ class Mission
 				};
 			};
 			id=1;
-			atlOffset=-72.130447;
+			atlOffset=-72.158966;
 		};
 		class Item1
 		{
@@ -8811,7 +8811,7 @@ class Mission
 							};
 							id=722;
 							type="CUP_C_Lada_CIV";
-							atlOffset=3.0517578e-005;
+							atlOffset=-6.1035156e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -8950,7 +8950,7 @@ class Mission
 						};
 					};
 					id=712;
-					atlOffset=-45.051178;
+					atlOffset=-45.049622;
 				};
 				class Item1
 				{
@@ -8977,7 +8977,6 @@ class Mission
 							};
 							id=716;
 							type="CUP_C_Lada_CIV";
-							atlOffset=3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15132,7 +15131,7 @@ class Mission
 							};
 							id=1605;
 							type="CUP_C_Golf4_CR_Civ";
-							atlOffset=3.0517578e-005;
+							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15219,6 +15218,7 @@ class Mission
 							};
 							id=1660;
 							type="CUP_C_Ikarus_Chernarus";
+							atlOffset=-6.1035156e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15318,6 +15318,7 @@ class Mission
 							};
 							id=1662;
 							type="CUP_C_Ikarus_Chernarus";
+							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15401,7 +15402,7 @@ class Mission
 						};
 					};
 					id=715;
-					atlOffset=2.6614075;
+					atlOffset=2.6619873;
 				};
 				class Item2
 				{
@@ -15542,6 +15543,7 @@ class Mission
 							};
 							id=760;
 							type="CUP_LADA_LM_CIV";
+							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15864,7 +15866,7 @@ class Mission
 						};
 					};
 					id=756;
-					atlOffset=9.5345802;
+					atlOffset=9.5345764;
 				};
 				class Item3
 				{
@@ -16675,7 +16677,7 @@ class Mission
 				};
 			};
 			id=711;
-			atlOffset=-33.922043;
+			atlOffset=-33.922089;
 		};
 		class Item10
 		{

@@ -53,20 +53,23 @@ class CfgFunctions
         class Init
 		{
             class checkLicensePlates { postInit = 1; };
+            class createGeneralBriefing {};
             class createMilitiaRecord {};
             class createVehiclesRecord {};
-            class isMilitia {};
+            class initBriefing {};
+            class initDocuments {};
 			class removeMapObjects { preInit = 1; };
 		};
         class acre
         {
-            class initCbRadioPreset { postInit = 1; };
             class addCbRadio {};
+            class initCbRadioPreset { postInit = 1; };
         };
         class utils
         {
             class hasAnyDocument {};
             class getDocuments {};
+            class isMilitia {};
         };
     };
 };

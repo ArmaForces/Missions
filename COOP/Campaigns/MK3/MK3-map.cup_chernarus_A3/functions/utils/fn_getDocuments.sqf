@@ -5,17 +5,18 @@
  * Gets unit's documents.
  *
  * Arguments:
- * None
+ * Unit <OBJECT>
  *
  * Return Value:
- * <ARRAY>
+ * List of documents in format: <ARRAY>
+ *  0: Document name <STRING>
+ *  1: Document content <STRING>
  *
  * Public: No
  */
 
 params ["_unit"];
 
-[
-    ["ID", "Bongo dongo"],
-    ["Prawo jazdy", "Jazda z kurwami"]
-]
+private _uid = getPlayerUID _unit;
+
+GVAR(allDocuments) getOrDefault [_uid, []]

@@ -5,7 +5,7 @@
  * Checks if unit has any document like ID or driver license.
  *
  * Arguments:
- * None
+ * Unit <OBJECT>
  *
  * Return Value:
  * True if has any document <BOOL>
@@ -15,4 +15,4 @@
 
 params ["_unit"];
 
-true
+[_unit] call FUNC(getDocuments) isNotEqualTo []

@@ -15,12 +15,12 @@
 
 params [["_unit", player]];
 
-_unit createDiarySubject ["generalBriefing", "Kartoteka"];
+// _unit createDiarySubject ["Diary", "Briefing"];
 
-_unit createDiaryRecord ["generalBriefing", ["Opcje medyczne",
+_unit createDiaryRecord ["Diary", ["Opcje medyczne",
     "Menu medyczne dostępne tylko dla medyków lub w szpitalu/pojeździe medycznym."
 ]];
 
-_unit createDiaryRecord ["generalBriefing", ["Główne założenia",
+_unit createDiaryRecord ["Diary", ["Główne założenia",
     "Wasze życie jest cenne i nie chcecie go stracić."
 ]];

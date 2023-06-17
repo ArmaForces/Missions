@@ -67,12 +67,7 @@ CUP_stopLampCheck = true;
     }] call CBA_fnc_waitUntilAndExecute;
 }, [], 5] call CBA_fnc_waitAndExecute;
 
-// Show militia records for militia players only
-private _isMilitiaPlayer = [player] call FUNC(isMilitia);
-if (_isMilitiaPlayer || GVAR(isZeus)) then {
-    call FUNC(createMilitiaRecord);
-    call FUNC(createVehiclesRecord);
-};
+[player] call FUNC(initBriefing);
 
 // Enable medical menu for medics only
 private _isMedic = [player] call ACEFUNC(medical_treatment,isMedic);
