@@ -108,6 +108,14 @@ GVAR(allDocuments) set [
         ["Pozwolenie na broń", "AKM, CZ 550, 6P9"]
 ]];
 
+// Monkey
+GVAR(allDocuments) set [
+    "TBD_Monkey_UID", [
+        ["ID", ["Dimitrij Monkyrov", 1969] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Legitymacja wojskowa", "Szeregowy Armii Czedackiej<br/>Zdegradowany ze stopnia podpułkownika za zdefraudowanie transportu wojskowego<br/>Miejsce służby: Obóz Tishina"]
+]];
+
 // Nielu
 GVAR(allDocuments) set [
     "TBD_Nielu_UID", [
