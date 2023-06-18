@@ -27,9 +27,13 @@ private _createRecordFunc = {
     ]];
 };
 
-["CH-ZG3131", "Łada", "Czerwony", "Nieznany", "Czerwona Łada. Zatrzymana z Ziukiem Garlińskim jako kierowcą po napadzie na komisariat. Stoi w milicyjnym warsztacie do rozwiązania sprawy."] call _createRecordFunc;
-["CH-ZG2742", "Łada", "Czerwony", "Nieznany", "Kradziona czerwona Łada. Porzucona w Pulkowie po napadzie na komisariat. Stoi w milicyjnym warsztacie do rozwiązania sprawy."] call _createRecordFunc;
-["CH-RG021 ", "Golf IV", "Czerwony", "Nieznany", "Kradziony czerwony Golf, zmazana ostatnia cyfra na tablicy. Właściciel nieznany. Porzucony w Pustoszce po napadzie na komisariat. Stoi w milicyjnym warsztacie do rozwiązania sprawy."] call _createRecordFunc;
+["CH-ZGM004", "Łada", "Milicyjna", "Komisariat w Zelenogorsku", "Prowadzona przez milicjanta uległa wypadkowi czołowemu z autobusem ChKS jadącym środkiem drogi. Stan do kasacji, chyba że mechanik coś wyczaruje. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> i oczekuje na naprawę."] call _createRecordFunc;
+["CH-ZGM002", "Łada", "Milicyjna", "Komisariat w Zelenogorsku", "Stojąca na drodze uległa wypadkowi czołowemu z autobusem ChKS, który nie zauważył jej zza budynku. Mocno zniszczony przód, do odratowania. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> i oczekuje na naprawę."] call _createRecordFunc;
+["CH-ZG3131", "Łada", "Czerwony", "Nieznany", "Czerwona Łada. Zatrzymana z Ziukiem Garlińskim jako kierowcą po napadzie na komisariat. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> do rozwiązania sprawy."] call _createRecordFunc;
+["CH-ZG2742", "Łada", "Czerwony", "Nieznany", "Kradziona czerwona Łada. Porzucona w Pulkowie po napadzie na komisariat. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> do rozwiązania sprawy."] call _createRecordFunc;
+["CH-RG021 ", "Golf IV", "Czerwony", "Nieznany", "Kradziony czerwony Golf, zmazana ostatnia cyfra na tablicy. Właściciel nieznany. Porzucony w Pustoszce po napadzie na komisariat. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> do rozwiązania sprawy."] call _createRecordFunc;
+["CH-CKS012", "Ikarus", "ChKS", "Komisariat w Zelenogorsku", "Prowadzony przez autobusiarza uległ wypadkowi czołowemu z milicyjną Ładą. Autobusiarz został obciążony mandatem za nieostrożną jazdę. Mocno uszkodzony. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> i oczekuje na naprawę."] call _createRecordFunc;
+["CH-CKS006", "Ikarus", "ChKS", "Komisariat w Zelenogorsku", "Prowadzony przez autobusiarza uległ wypadkowi czołowemu z milicyjną Ładą. Autobusiarz został obciążony mandatem za przekroczenie prędkości w terenie zabudowanym i wjechanie w pojazd milicyjny. Lekko uszkodzony. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> i oczekuje na naprawę."] call _createRecordFunc;
 
 /*
  * Transforms array of short codes and long names into <br/> delimited string for display.

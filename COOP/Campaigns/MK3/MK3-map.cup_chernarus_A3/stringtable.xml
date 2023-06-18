@@ -77,6 +77,14 @@
             <English>Don't shoot unless fired upon. Don't shoot if that could put someone at risk. Shoot only if clear sight.</English>
             <Polish>Nie strzelać jeżeli nie strzelają do Was. Nie strzelaj jeżeli mogłoby to narazić kogoś na niebezpieczeństwo. Strzelaj tylko jeżeli widzisz cel.</Polish>
         </Key>
+        <Key ID="STR_MKR_Briefing_TrafficRules_Title">
+            <English>Traffic rules</English>
+            <Polish>Przepisy ruchu drogowego</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_TrafficRules">
+            <English>Adhere to signs. Speed limit in urban areas: 50 km/h. Speed limit outside of urban areas: 90 km/h. Speed limit outside of urban areas on a road with line marked shoulder: 140 km/h.</English>
+            <Polish>Stosuj się do znaków. Limit prędkości w obszarze zabudowanym: 50 km/h. Limit prędkości poza obszarem zabudowanym: 90 km/h. Limit prędkości poza obszarem zabudowanym na drodze z wyznaczonym liniami poboczem: 140 km/h.</Polish>
+        </Key>
     </Package>
 
     <Package name="Briefing_Civilian">
