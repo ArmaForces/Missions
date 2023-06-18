@@ -80,7 +80,8 @@ GVAR(allDocuments) set [
     "TBD_Hyperion_UID", [
         ["ID", "Ivanion Hypev" call _idFunc],
         ["Prawo jazdy", "Samochód"],
-        ["Pozwolenie na broń", "Brak własnej broni"]
+        ["Pozwolenie na broń", "Brak własnej broni"],
+        ["Własność pojazdu", "UAZ 8014 MA"]
 ]];
 
 // Jay
@@ -119,7 +120,8 @@ GVAR(allDocuments) set [
     "TBD_Piesa_UID", [
         ["ID", ["Toivo Iwanowicz", 1980] call _idFunc],
         ["Prawo jazdy", "Samochód; Motocykl"],
-        ["Pozwolenie na broń", "Sztucer"]
+        ["Pozwolenie na broń", "Myśliwski sztucer po pradziadzie"],
+        ["Własność pojazdu", "Zardzewiały TT650"]
 ]];
 
 // Renchon

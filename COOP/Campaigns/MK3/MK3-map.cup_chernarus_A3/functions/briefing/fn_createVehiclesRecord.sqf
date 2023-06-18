@@ -13,14 +13,16 @@
  * Public: No
  */
 
+#define DIARY_NAME "vehicleRecord"
+
 params [["_unit", player]];
 
-_unit createDiarySubject ["vehiclesRecord", "Numery pojazdów"];
+_unit createDiarySubject [DIARY_NAME, "Numery pojazdów"];
 
 private _createRecordFunc = {
     params ["_licensePlate", "_model", "_color", "_owner", "_description"];
 
-    _unit createDiaryRecord ["vehiclesRecord", [_licensePlate,
+    _unit createDiaryRecord [DIARY_NAME, [_licensePlate,
         format ["Model: %1 <br/>Kolor: %2 <br/>Właściciel: %3<br/><br/>Opis:<br/>%4", _model, _color, _owner, _description]
     ]];
 };
@@ -70,6 +72,6 @@ private _text = format ["Kody krajów:<br/>%1<br/><br/>Kody miast Czarnorusi:<br
     [_countryCodes] call _registrationCodeRecordFunc,
     [_chernarusCityCodes] call _registrationCodeRecordFunc];
 
-_unit createDiaryRecord ["vehiclesRecord", ["Kody rejestracji",
+_unit createDiaryRecord [DIARY_NAME, ["Kody rejestracji",
     _text
 ]];

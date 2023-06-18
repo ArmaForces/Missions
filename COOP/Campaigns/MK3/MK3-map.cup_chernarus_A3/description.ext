@@ -50,27 +50,38 @@ class CfgFunctions
     class MKR
     {
         tag = QUOTE(ADDON);
-        class Init
-		{
-            class checkLicensePlates { postInit = 1; };
-            class createGeneralBriefing {};
-            class createMilitiaRecord {};
-            class createVehiclesRecord {};
-            class initBriefing {};
-            class initDocuments {};
-			class removeMapObjects { preInit = 1; };
-		};
-        class acre
+        class Acre
         {
             class addCbRadio {};
             class initCbRadioPreset { postInit = 1; };
         };
-        class utils
+        class Briefing
         {
-            class hasAnyDocument {};
-            class getDocuments {};
+            class createCivilianBriefing {};
+            class createGeneralBriefing {};
+            class createMilitiaBriefing {};
+            class createMilitiaRecord {};
+            class createOpforBriefing {};
+            class createResistanceBriefing {};
+            class createVehiclesRecord {};
+        };
+        class Common
+        {
             class isMilitia {};
         };
+        class Documents
+        {
+            class addDocument {};
+            class getDocuments {};
+            class hasAnyDocument {};
+        };
+        class Init
+		{
+            class checkLicensePlates { postInit = 1; };
+            class initBriefing {};
+            class initDocuments {};
+			class removeMapObjects { preInit = 1; };
+		};
     };
 };
 

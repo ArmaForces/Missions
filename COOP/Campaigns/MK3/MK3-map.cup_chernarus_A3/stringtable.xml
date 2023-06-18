@@ -5,13 +5,221 @@
             <English>Soapy Campaign: Resistance</English>
             <Polish>Mydlana Kampania: Partyzanci</Polish>
         </Key>
+        <Key ID="STR_MKR_Scripts_DisplayNameShort">
+            <English>SC: Resistance</English>
+            <Polish>MK: Partyzanci</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_Title">
+            <English>SC:R: Campaign Map</English>
+            <Polish>MK:R: Mapa Kampanii</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_ShortDescription">
+            <Polish>Mapa Mydlanej Kampanii będąca bazą dla wszystkich misji.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_Briefing">
+            <Polish>Mapa Mydlanej Kampanii odzwierciedlająca aktualny stan kampanii, będąca bazą dla wszystkich misji.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing">
+        <Key ID="STR_MKR_Briefing_GeneralRules_Title">
+            <English>General rules</English>
+            <Polish>Zasady ogólne</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules">
+            <English>General rules apply to all players, unless specified different:</English>
+            <Polish>Zasady ogólne dotyczące wszystkich grających, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_2">
+            <English>Try to feel your character and its tasks.</English>
+            <Polish>Postaraj się wczuć w postać i jej zadania.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_3">
+            <English>Respect Rules of Engagement. Avoid unnecessary escalation which may lead to your or others death.</English>
+            <Polish>Respektuj RoE (Rules of Engagement). Unikaj niepotrzebnej eskalacji mogącej doprowadzić do śmierci Twojej lub innych.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_4">
+            <English>When in doubt, call backup and patiently wait.</English>
+            <Polish>W razie wątpliwości wezwij wsparcie i czekaj cierpliwie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_5">
+            <English>Don't spoil other player's gameplay. Mind your actions.</English>
+            <Polish>Nie psuj rozgrywki innym. Uważaj na swoje działania.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_6">
+            <English>Due to possible desync: Don't ram vehicles. Be extremely careful when overtaking or following other vehicles. Make sure there is enough space for overtake. If someone is overtaking you with high speed, leave him some space instead of blocking him.</English>
+            <Polish>Z powodu możliwych desynców: Nie taranuj pojazdów. Bądź ekstremalnie ostrożny podczas wyprzedzania lub jechania za innymi pojazdami. Upewnij się, że jest wystarczająco miejsca na wyprzedzenie. Jeżeli ktoś Cię wyprzedza jadąc dużo szybciej, zrób mu miejsce zamiast blokować.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_7">
+            <English>Drive on road unless driving offroad vehicle. If offroad is necessary, keep speed limited to 20 km/h.</English>
+            <Polish>Jeździj po drodze, chyba że jedziesz pojazdem offroadowym. Jeżeli zjechanie z drogi jest konieczne, utrzymuj prędkość do 20 km/h.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_MedicalSystem">
+            <English>Medical system</English>
+            <Polish>System medyczny</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_MedicalStuff">
+            <English>Medical menu available only for medics or in hospital/medical vehicle. Please don't enable it manually.</English>
+            <Polish>Menu medyczne dostępne tylko dla medyków lub w szpitalu/pojeździe medycznym. Proszę o nie kombinowanie i nie włączanie go ręcznie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Rationale">
+            <Polish>Cała kampania nastawiona jest na maksymalny możliwy realizm oraz podejście, że życie jest najważniejsze i nie warto go ryzykować jak nie trzeba. Liczebność przeciwnika będzie realistyczna a co za tym idzie, będzie on musiał być dużo bardziej skuteczny. Taktyka kryj ryj będzie Waszym chlebem powszednim a dobre manewrowanie i flankowanie główną bronią. Koniec fal bezmyślnych botów, nadchodzi czas myślenia głowom a nie dupom.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_RoE_Title">
+            <English>Rules of Engagement</English>
+            <Polish>RoE (Zasady zaangażowania)</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_RoE">
+            <English>Don't shoot unless fired upon. Don't shoot if that could put someone at risk. Shoot only if clear sight.</English>
+            <Polish>Nie strzelać jeżeli nie strzelają do Was. Nie strzelaj jeżeli mogłoby to narazić kogoś na niebezpieczeństwo. Strzelaj tylko jeżeli widzisz cel.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Civilian">
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_Title">
+            <English>Civilian rules</English>
+            <Polish>Zasady cywilów</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules">
+            <English>Rules apply to all civilian players, unless specified different:</English>
+            <Polish>Zasady dotyczące wszystkich cywilów, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_2">
+            <English>Your task is to create background for a mission, not to become a main character.</English>
+            <Polish>Twoim głównym zadaniem jest stworzenie tła dla misji a nie zostanie główną gwiazdą.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_3">
+            <English>Obey the rules unless allowed not to by your task.</English>
+            <Polish>Przestrzegaj przepisów jeżeli nie koliduje to z Twoim zadaniem.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_4">
+            <English>If you have no tasks assigned, play with your character and think of something to do.</English>
+            <Polish>Jeżeli nie masz przydzielonego żadnego zadania, wczuj się w postać i wymyśl coś sensownego.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_5">
+            <English>Keep your assigned vehicle. Don't steal random vehicles.</English>
+            <Polish>Trzymaj się przypisanego środka transportu. Nie kradnij losowych pojazdów.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_RoE">
+            <English>When you hear shots - you run. If they threaten you with a gun, you do what they say. If you have your own gun, don't use it unless it's safe to.</English>
+            <Polish>Gdy słyszysz strzały - uciekasz. Jeżeli grożą Ci bronią, robisz co mówią. Jeżeli masz własną broń, nie używasz jej jeśli to dla Ciebie niebezpieczne.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Militia">
+        <Key ID="STR_MKR_Briefing_Militia_Rules_Title">
+            <English>Militia rules</English>
+            <Polish>Zasady milicji</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules">
+            <English>Rules apply to all militia players, unless specified different:</English>
+            <Polish>Zasady dotyczące wszystkich milicjantów, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_2">
+            <English>Firearms use is a last resort! Militia doesn't shoot everyone on sight. Your task is to arrest criminals if possible.</English>
+            <Polish>Użycie broni to ostateczność! Milicja nie strzela do wszystkich jak leci. Twoim zadaniem jest aresztowanie jeżeli możliwe.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_3">
+            <English>Respect Rules of Engagement. First ask. Seek peaceful resolutions. Shoot only if your or others life is endangered.</English>
+            <Polish>Respektuj RoE (Rules of Engagement). Najpierw pytaj. Szukaj pokojowych rozwiązań. Strzelaj tylko jeżeli życie Twoje lub innych jest zagrożone.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_4">
+            <English>Call backup immediately in case of any issues.</English>
+            <Polish>W przypadku jakichkolwiek problemów od razu wezwać wsparcie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_5">
+            <English>Don't stop civilians without suspicions.</English>
+            <Polish>Nie zatrzymuj cywili nie mając bez podejrzeń.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_6">
+            <English>When a person is fleeing, pursue him instead of shooting.</English>
+            <Polish>Gdy ktoś ucieka, goń go zamiast strzelać.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Opfor">
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_Title">
+            <English>OPFOR rules</English>
+            <Polish>Zasady OPFOR</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules">
+            <English>Rules apply to all OPFOR players, unless specified different:</English>
+            <Polish>Zasady dotyczące wszystkich graczy OPFORu, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_2">
+            <English>Firearms use out of military area must have good reasoning.</English>
+            <Polish>Użycie broni poza terenem wojskowym musi być dobrze uzasadnione.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_3">
+            <English>When working with Militia, cooperate but as equal sides. Don't execute their orders without thought.</English>
+            <Polish>W trakcie wspólnego działania z Milicją kooperuj, ale na równych zasadach. Nie wykonuj ich rozkazów bezmyślnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_4">
+            <English>Stealing vehicles in unacceptable offense.</English>
+            <Polish>Zabór pojazdów jest niedopuszczalny.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_5">
+            <English>You can't be recruited to Resistance.</English>
+            <Polish>Nie możesz zostać zrekrutowany do Ruchu Oporu.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Resistance">
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_Title">
+            <English>Resistance rules</English>
+            <Polish>Zasady Ruchu Oporu</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules">
+            <English>Rules apply to all Resistance players, unless specified different:</English>
+            <Polish>Zasady dotyczące całego Ruchu Oporu, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_2">
+            <English>Don't kill.</English>
+            <Polish>Nie zabijaj.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_3">
+            <English>Civilians are considered friendly. Don't take any actions against them.</English>
+            <Polish>Cywile są uznawani za przyjaznych. Nie podejmuj żadnych akcji przeciwko nim.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_4">
+            <English>Don't steal civilian vehicles. If you have to, do it so that Resistance can't be credited for it.</English>
+            <Polish>Nie kradnij pojazdów cywilnych. A jak już musisz to tak, żeby nie było to do powiązania z Ruchem Oporu.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_5">
+            <English>If you see an opportunity, consider recruiting to Resistance. Doesn't hurt to ask at least.</English>
+            <Polish>Jeżeli widzisz okazję, staraj się zrekrutować do Ruchu Oporu. Samo zapytanie nie zaszkodzi.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_RoE">
+            <English>Don't point the gun at people unless they threaten you or point at you. Always try to deescalate. Don't shoot first unless your task requires you to.</English>
+            <Polish>Nie celuj bronią w ludzi dopóki Ci nie grożą lub nie celują w Ciebie. Zawsze staraj się deeskalować. Nie strzelaj pierwszy, chyba że zadanie wymaga inaczej.</Polish>
+        </Key>
     </Package>
 
     <!-- MARKERS -->
     <Package name="Markers">
-        <Key ID="STR_MKR_Markers_ResistanceCamp">
-            <English>Resistance camp</English>
-            <Polish>Obóz partyzantów</Polish>
+        <Key ID="STR_MKR_Markers_Checkpoint">
+            <English>Checkpoint</English>
+            <Polish>Punkt kontrolny</Polish>
         </Key>
         <Key ID="STR_MKR_Markers_MilitaryBase">
             <English>Military base</English>
@@ -21,10 +229,9 @@
             <English>Military camp</English>
             <Polish>Obóz wojskowy</Polish>
         </Key>
-        <Key ID="STR_MKR_Markers_Checkpoint">
-            <English>Checkpoint</English>
-            <Polish>Punkt kontrolny</Polish>
+        <Key ID="STR_MKR_Markers_ResistanceCamp">
+            <English>Resistance camp</English>
+            <Polish>Obóz partyzantów</Polish>
         </Key>
-
     </Package>
 </Project>

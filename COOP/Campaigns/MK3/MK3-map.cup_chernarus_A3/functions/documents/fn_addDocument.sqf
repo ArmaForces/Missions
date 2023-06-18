@@ -28,7 +28,13 @@ _documentDetails params ["_documentName", "_documentContent"];
 
 private _uid = getPlayerUID _unit;
 
-private _documents = GVAR(allDocuments) getOrDefault [_uid, []];
+private _documents = GVAR(allDocuments) getOrDefault [_uid, objNull];
+
+if (isNull _documents) then {
+    // Add empty array by ref so we always modify array already present in hash map
+    _documents = [];
+    GVAR(allDocuments) set [_uid, _documents];
+};
 
 private _existingDocumentWithTheSameNameIndex = _documents findIf {_x select 0 isEqualTo _documentName};
 
@@ -41,5 +47,7 @@ _documents pushBack _documentDetails;
 
 // Possibly not necessary as pushBack modifies original array
 // GVAR(allDocuments) set [_uid, _documents];
+
+publicVariable QGVAR(allDocuments);
 
 true

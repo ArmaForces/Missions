@@ -5,7 +5,7 @@
  * Gets unit's documents.
  *
  * Arguments:
- * Unit <OBJECT>
+ * Unit or UID <OBJECT or STRING>
  *
  * Return Value:
  * List of documents in format: <ARRAY>
@@ -17,6 +17,10 @@
 
 params ["_unit"];
 
-private _uid = getPlayerUID _unit;
+private _uid = if (_unit isEqualType "") then {
+    _unit
+} else {
+    getPlayerUID _unit
+};
 
 GVAR(allDocuments) getOrDefault [_uid, []]

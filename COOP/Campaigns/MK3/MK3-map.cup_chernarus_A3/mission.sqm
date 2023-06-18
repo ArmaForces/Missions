@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=1663;
+		nextID=1666;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=819;
+		nextID=911;
 	};
 	class Camera
 	{
-		pos[]={2691.6077,221.03653,5072.0967};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={3816.5042,320.88388,8818.6973};
+		dir[]={0.14020142,-0.39709547,0.90702242};
+		up[]={0.060660746,0.91777343,0.39244097};
+		aside[]={0.98827493,1.6768172e-007,-0.15276106};
 	};
 };
 binarizationWanted=0;
-sourceName="MK3-map";
+sourceName="mk3-map";
 addons[]=
 {
 	"CUP_WheeledVehicles_Skoda",
@@ -850,7 +850,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=26;
+		items=28;
 		class Item0
 		{
 			dataType="Layer";
@@ -2282,7 +2282,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2763.5757,275.45093,9919.1592};
-								angles[]={0,3.6750216,-0};
+								angles[]={0,3.6750216,0};
 							};
 							side="Empty";
 							flags=5;
@@ -8798,7 +8798,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3648.7031,300.90503,8600.9619};
-								angles[]={-0,5.0594125,0.0079935296};
+								angles[]={0,5.0594125,0.0079935296};
 							};
 							side="Empty";
 							flags=4;
@@ -8964,8 +8964,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3656.0325,300.96671,8600.2813};
-								angles[]={6.2805109,0.50646621,0.013336525};
+								position[]={3656.033,300.96677,8600.2813};
+								angles[]={6.2805147,0.50645965,0.013334315};
 							};
 							side="Empty";
 							flags=4;
@@ -8977,22 +8977,10 @@ class Mission
 							};
 							id=716;
 							type="CUP_C_Lada_CIV";
+							atlOffset=3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
-								{
-									property="ammoBox";
-									expression="[_this,_value] call bis_fnc_initAmmoBox;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
-										};
-									};
-								};
-								class Attribute1
 								{
 									property="VehicleCustomization";
 									expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
@@ -9110,7 +9098,33 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								class Attribute1
+								{
+									property="ENH_AdvancedDamage";
+									expression="if (local _this) then {parseSimpleArray _value params ['_hitpoints', '_damage']; {if ((_damage # _forEachIndex) == 0) then {continue}; _this setHitPointDamage [_x, _damage # _forEachIndex, false]} forEach _hitpoints}";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[""hitlfwheel"",""hitlf2wheel"",""hitrfwheel"",""hitrf2wheel"",""hitfuel"",""hitengine"",""hitbody"",""hitglass1"",""hitglass2"",""hitglass3"",""hitglass4"",""hitglass5"",""hitglass6"",""hitrglass"",""hitlglass"",""hitlbwheel"",""hitlmwheel"",""hitrbwheel"",""hitrmwheel"",""hithull"",""#l svetlo"",""#p svetlo"",""#l svetlo"",""#p svetlo"",""#l svetlo"",""#p svetlo"",""#majak_hit"",""#majak_hit""],[0,0,0,0,0,0,0,0,0,0,0.70365,0,0.77,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=3;
 							};
 						};
 						class Item1
@@ -24635,6 +24649,72 @@ class Mission
 			type="Empty";
 			id=1633;
 			atlOffset=-0.00018310547;
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3821.4448,310.99142,8850.6016};
+						angles[]={-0,3.5864613,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=1665;
+					type="CUP_C_C_Policeman_01";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=1665;
+						item1=1664;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=1663;
+		};
+		class Item27
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3821.4448,312.42542,8850.5518};
+				angles[]={-0,3.5864613,0};
+			};
+			side="Civilian";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=1664;
+			type="CUP_LADA_LM_CIV";
 		};
 	};
 };
