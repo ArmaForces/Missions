@@ -12,11 +12,11 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1666;
+		nextID=1671;
 	};
 	class MarkerIDProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class LayerIndexProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3816.5042,320.88388,8818.6973};
-		dir[]={0.14020142,-0.39709547,0.90702242};
-		up[]={0.060660746,0.91777343,0.39244097};
-		aside[]={0.98827493,1.6768172e-007,-0.15276106};
+		pos[]={8076.2524,125.57314,3112.7114};
+		dir[]={-0.89463675,-0.33982664,0.29047683};
+		up[]={-0.3233014,0.94044578,0.10497523};
+		aside[]={0.30884656,-7.5309072e-007,0.95122904};
 	};
 };
 binarizationWanted=0;
@@ -850,7 +850,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=28;
+		items=27;
 		class Item0
 		{
 			dataType="Layer";
@@ -8964,8 +8964,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3656.033,300.96677,8600.2813};
-								angles[]={6.2805147,0.50645965,0.013334315};
+								position[]={3656.3696,300.96558,8598.4492};
+								angles[]={6.2805109,5.7553854,0.0080009829};
 							};
 							side="Empty";
 							flags=4;
@@ -8977,7 +8977,7 @@ class Mission
 							};
 							id=716;
 							type="CUP_C_Lada_CIV";
-							atlOffset=3.0517578e-005;
+							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12731,7 +12731,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3660.79,301.47058,8596.8682};
+								position[]={3662.4026,301.47189,8595.499};
 								angles[]={6.2778478,2.2451172,0.0053377044};
 							};
 							side="Empty";
@@ -12742,7 +12742,6 @@ class Mission
 							};
 							id=1493;
 							type="CUP_I_V3S_Refuel_TKG";
-							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -23622,7 +23621,7 @@ class Mission
 					name="Fixed bridges";
 					class Entities
 					{
-						items=4;
+						items=8;
 						class Item0
 						{
 							dataType="Logic";
@@ -23741,13 +23740,133 @@ class Mission
 							type="CUP_A2_Road_bridge_asf1_25";
 							atlOffset=8.102478;
 						};
+						class Item4
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={8253.8057,6.9943295,3072.2937};
+							};
+							areaSize[]={5,-1,5};
+							flags=1;
+							id=1667;
+							type="ModuleHideTerrainObjects_F";
+							atlOffset=0.91312981;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="#filter";
+									expression="_this setVariable [""#filter"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=8;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="#hideLocally";
+									expression="_this setVariable [""#hideLocally"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={8251.8496,-1.9791613,3073.7285};
+								angles[]={0.0012877869,5.3201737,0.0018457776};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=1668;
+							type="CUP_A2_Road_bridge_asf1_25";
+							atlOffset=2.0287986;
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={8272.127,-1.9347773,3059.636};
+								angles[]={0.0011519173,5.3201647,0.0011519173};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=1669;
+							type="CUP_A2_Road_bridge_asf1_25";
+							atlOffset=3.1609998;
+						};
+						class Item7
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={8272.2178,7.411541,3059.5435};
+							};
+							areaSize[]={5,-1,5};
+							flags=1;
+							id=1670;
+							type="ModuleHideTerrainObjects_F";
+							atlOffset=1.2912121;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="#filter";
+									expression="_this setVariable [""#filter"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=8;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="#hideLocally";
+									expression="_this setVariable [""#hideLocally"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=1540;
-					atlOffset=-76.111084;
+					atlOffset=14.265455;
 				};
 			};
 			id=1539;
-			atlOffset=-29.125916;
+			atlOffset=-51.288513;
 		};
 		class Item21
 		{
@@ -24652,69 +24771,12 @@ class Mission
 		};
 		class Item26
 		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={3821.4448,310.99142,8850.6016};
-						angles[]={-0,3.5864613,0};
-					};
-					side="Civilian";
-					flags=6;
-					class Attributes
-					{
-					};
-					id=1665;
-					type="CUP_C_C_Policeman_01";
-				};
-			};
-			class Attributes
-			{
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=1;
-				};
-				class Links
-				{
-					items=1;
-					class Item0
-					{
-						linkID=0;
-						item0=1665;
-						item1=1664;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-				};
-			};
-			id=1663;
-		};
-		class Item27
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3821.4448,312.42542,8850.5518};
-				angles[]={-0,3.5864613,0};
-			};
-			side="Civilian";
-			flags=6;
-			class Attributes
-			{
-			};
-			id=1664;
-			type="CUP_LADA_LM_CIV";
+			dataType="Marker";
+			position[]={3651.197,299.39499,8586.4121};
+			name="sys_marker_militia_parking";
+			type="Empty";
+			id=1666;
+			atlOffset=0.00045776367;
 		};
 	};
 };
