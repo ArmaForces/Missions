@@ -82,8 +82,8 @@
             <Polish>Przepisy ruchu drogowego</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_TrafficRules">
-            <English>Adhere to signs. Speed limit in urban areas: 50 km/h. Speed limit outside of urban areas: 90 km/h. Speed limit outside of urban areas on a road with line marked shoulder: 140 km/h.</English>
-            <Polish>Stosuj się do znaków. Limit prędkości w obszarze zabudowanym: 50 km/h. Limit prędkości poza obszarem zabudowanym: 90 km/h. Limit prędkości poza obszarem zabudowanym na drodze z wyznaczonym liniami poboczem: 140 km/h.</Polish>
+            <English>Adhere to signs. Speed limit in urban areas: 50 km/h. Speed limit outside of urban areas: 90 km/h. Speed limit outside of urban areas on a road with line marked shoulder: 120 km/h.</English>
+            <Polish>Stosuj się do znaków. Limit prędkości w obszarze zabudowanym: 50 km/h. Limit prędkości poza obszarem zabudowanym: 90 km/h. Limit prędkości poza obszarem zabudowanym na drodze z wyznaczonym liniami poboczem: 120 km/h.</Polish>
         </Key>
     </Package>
 
