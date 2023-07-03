@@ -10,63 +10,123 @@ CUP_stopLampCheck = true;
     call FUNC(playerActions);
 }, [], -1] call CBA_fnc_waitUntilAndExecute;
 
-[{
-    private _roleDescription = roleDescription player;
-    private _monkeyIndex = _roleDescription find "@";
-    private _playerRole = if (_monkeyIndex isEqualTo -1) then {
-        _roleDescription
-    } else {
-        if (_monkeyIndex isEqualTo 0) then {
-            // Localize name
-            private _localizedRoleDescription = localize _roleDescription;
-            // Check again for CBA lobby group name
-            _monkeyIndex = _localizedRoleDescription find "@";
-            if (_monkeyIndex isEqualTo -1) then {
-                _localizedRoleDescription
-            } else {
-                _localizedRoleDescription select [0, _monkeyIndex];
-            };
-        } else {
-            // Remove CBA lobby group name
-            _roleDescription select [0, _monkeyIndex]
-        };
-    };
+// [{
+//     private _roleDescription = roleDescription player;
+//     private _monkeyIndex = _roleDescription find "@";
+//     private _playerRole = if (_monkeyIndex isEqualTo -1) then {
+//         _roleDescription
+//     } else {
+//         if (_monkeyIndex isEqualTo 0) then {
+//             // Localize name
+//             private _localizedRoleDescription = localize _roleDescription;
+//             // Check again for CBA lobby group name
+//             _monkeyIndex = _localizedRoleDescription find "@";
+//             if (_monkeyIndex isEqualTo -1) then {
+//                 _localizedRoleDescription
+//             } else {
+//                 _localizedRoleDescription select [0, _monkeyIndex];
+//             };
+//         } else {
+//             // Remove CBA lobby group name
+//             _roleDescription select [0, _monkeyIndex]
+//         };
+//     };
 
-    if (_playerRole isEqualTo "") then {
-        _playerRole = getText (configFile >> "CfgVehicles" >> typeOf player >> "displayName");
-    };
+//     if (_playerRole isEqualTo "") then {
+//         _playerRole = getText (configFile >> "CfgVehicles" >> typeOf player >> "displayName");
+//     };
 
-    private _playerGroupName = groupid group player;
+//     private _playerGroupName = groupid group player;
 
-    [{!isNil "diwako_dui_nametags_RankNames"}, {
-        params ["_playerRole", "_playerGroupName"];
+//     [{!isNil "diwako_dui_nametags_RankNames"}, {
+//         params ["_playerRole", "_playerGroupName"];
 
-        // TODO: Consider removing rank names for resistance.
+//         // TODO: Consider removing rank names for resistance.
 
-        [
-            LLSTRING(Mission_Title),
-            {format ["%1 %2", LLSTRING(Date), [daytime, "HH:MM:SS"] call BIS_fnc_timeToString]},
-            format ["%1 %2",
-                diwako_dui_nametags_RankNames get "default" get rank player,
-                name player],
-            format ["%1 - %2", _playerGroupName, _playerRole],
-            "Czarnoruscy Partyzanci", // TODO: Change this to apropriate unit based on player side/unit
-            "W lesie na zachód od Zelenogorska" // TODO: Change this to apropriate location
-        ] spawn FUNC(infoText);
-    }, [_playerRole, _playerGroupName], 4, {
-        params ["_playerRole", "_playerGroupName"];
+//         private _side = switch (side player) do {
+//             case WEST: { "Milicja" };
+//             case EAST: { "" };
+//             case INDEPENDENT: { "Czarnoruski Ruch Oporu" };
+//             case CIVILIAN: { "Mieszkaniec Czarnorusi" };
+//             default { "JAK TO WIDZISZ TO MYDLARZ COŚ SPIERDOLIŁ" };
+//         };
 
-        [
-            LLSTRING(Mission_Title),
-            format ["%1 %2", LLSTRING(Date), [daytime, "HH:MM:SS"] call BIS_fnc_timeToString],
-            format ["%1 %2", rank player, name player],
-            format ["%1 - %2", _playerGroupName, _playerRole],
-            "Czarnoruscy Partyzanci", // TODO: Change this to apropriate unit based on player side/unit
-            "W lesie na zachód od Zelenogorska" // TODO: Change this to apropriate location
-        ] spawn FUNC(infoText);
-    }] call CBA_fnc_waitUntilAndExecute;
-}, [], 5] call CBA_fnc_waitAndExecute;
+//         private _rankAndName = if (side player isEqualTo WEST) then {
+//             format ["%1 %2",
+//                 diwako_dui_nametags_RankNames get "default" get rank player,
+//                 name player]
+//         } else {
+//             format ["%1", name player]
+//         };
 
+//         private _location = "";
+//         // TODO: Determine location via trigger area + fallback to map locations
+//         if (side player isEqualTo WEST) then {
+//             _location = "Posterunek Milicji w Zelenogorsku";
+//         };
+//         if (convoyGroup isEqualTo group player) then {
+//             _location = "Posterunek Milicji w Chernogorsku";
+//         };
+//         if (side player isEqualTo INDEPENDENT) then {
+//             _location = "W lesie na zachód od Zelenogorska";
+//         };
+//         if (banditsGroup isEqualTo group player) then {
+//             _location = "Areszt w Zelenogorsku";
+//         };
+
+//         [
+//             LLSTRING(Mission_Title),
+//             {format ["%1 %2", LLSTRING(Date), [daytime, "HH:MM:SS"] call BIS_fnc_timeToString]},
+//             _rankAndName,
+//             format ["%1 - %2", _playerGroupName, _playerRole],
+//             _side, // TODO: Change this to apropriate unit based on player side/unit
+//             _location // TODO: Change this to apropriate location
+//         ] spawn FUNC(infoText);
+//     }, [_playerRole, _playerGroupName], 4, {
+//         params ["_playerRole", "_playerGroupName"];
+
+//         private _side = switch (side player) do {
+//             case WEST: { "Milicja" };
+//             case EAST: { "" };
+//             case INDEPENDENT: { "Czarnoruski Ruch Oporu" };
+//             case CIVILIAN: { "Mieszkaniec Czarnorusi" };
+//             default { "JAK TO WIDZISZ TO MYDLARZ COŚ SPIERDOLIŁ" };
+//         };
+
+//         private _rankAndName = if (side player isEqualTo WEST) then {
+//             format ["%1 %2", rank player, name player]
+//         } else {
+//             format ["%1", name player]
+//         };
+
+//         private _location = "";
+//         if (side player isEqualTo WEST) then {
+//             _location = "Posterunek Milicji w Zelenogorsku";
+//         };
+//         if (convoyGroup isEqualTo group player) then {
+//             _location = "Posterunek Milicji w Chernogorsku";
+//         };
+//         if (side player isEqualTo INDEPENDENT) then {
+//             _location = "W lesie na zachód od Zelenogorska";
+//         };
+//         if (banditsGroup isEqualTo group player) then {
+//             _location = "Areszt w Zelenogorsku";
+//         };
+//         if (player isEqualTo busDriver) then { _location = "Pętla w Lopatino"; };
+//         if (player isEqualTo busTicketer) then { _location = "Przystanek w Vyborze"; };
+
+//         [
+//             LLSTRING(Mission_Title),
+//             format ["%1 %2", LLSTRING(Date), [daytime, "HH:MM:SS"] call BIS_fnc_timeToString],
+//             _rankAndName,
+//             format ["%1 - %2", _playerGroupName, _playerRole],
+//             _side, // TODO: Change this to apropriate unit based on player side/unit
+//             _location // TODO: Change this to apropriate location
+//         ] spawn FUNC(infoText);
+//     }] call CBA_fnc_waitUntilAndExecute;
+// }, [], 5] call CBA_fnc_waitAndExecute;
+
+[FUNC(initIntroText), [], 5] call CBA_fnc_waitAndExecute;
 [player] call FUNC(initBriefing);
 
 // Enable medical menu for medics only
@@ -124,7 +184,7 @@ private _insertChildren = {
 };
 
 private _condition = {[player] call FUNC(hasAnyDocument)};
-private _action = [QGVAR(documents), "Pokaż dokumenty", "", {}, _condition, _insertChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
+private _action = [QGVAR(documents), LLSTRING(ShowDocuments), "", {}, _condition, _insertChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
 
 // // Documents node
 // private _action = [
@@ -182,6 +242,14 @@ private _action = [QGVAR(documents), "Pokaż dokumenty", "", {}, _condition, _in
 //     _action,
 //     false
 // ] call ACEFUNC(interact_menu,addActionToClass);
+
+
+
+
+
+
+[QGVAR(showIntroText), FUNC(initIntroText)] call CBA_fnc_addEventHandler;
+
 
 
 

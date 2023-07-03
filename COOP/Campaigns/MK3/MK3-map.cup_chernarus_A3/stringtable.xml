@@ -19,6 +19,11 @@
         <Key ID="STR_MKR_Scripts_Mission_Briefing">
             <Polish>Mapa Mydlanej Kampanii odzwierciedlająca aktualny stan kampanii, będąca bazą dla wszystkich misji.</Polish>
         </Key>
+
+        <Key ID="STR_MKR_Scripts_ShowDocuments">
+            <English>Show documents</English>
+            <Polish>Pokaż dokumenty</Polish>
+        </Key>
     </Package>
 
     <Package name="Briefing">
@@ -65,6 +70,14 @@
         <Key ID="STR_MKR_Briefing_MedicalStuff">
             <English>Medical menu available only for medics or in hospital/medical vehicle. Please don't enable it manually.</English>
             <Polish>Menu medyczne dostępne tylko dla medyków lub w szpitalu/pojeździe medycznym. Proszę o nie kombinowanie i nie włączanie go ręcznie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_OtherChanges_Title">
+            <English>Other changes</English>
+            <Polish>Inne zmiany</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_OtherChanges">
+            <English>Militia Lada's power has been boosted to allow pursuits.</English>
+            <Polish>Milicyjne Łady zostały dopakowane mocą, żeby umożliwić prowadzenie pościgu.</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_Rationale">
             <Polish>Cała kampania nastawiona jest na maksymalny możliwy realizm oraz podejście, że życie jest najważniejsze i nie warto go ryzykować jak nie trzeba. Liczebność przeciwnika będzie realistyczna a co za tym idzie, będzie on musiał być dużo bardziej skuteczny. Taktyka kryj ryj będzie Waszym chlebem powszednim a dobre manewrowanie i flankowanie główną bronią. Koniec fal bezmyślnych botów, nadchodzi czas myślenia głowom a nie dupom.</Polish>
@@ -149,7 +162,7 @@
         </Key>
         <Key ID="STR_MKR_Briefing_Militia_Rules_5">
             <English>Don't stop civilians without suspicions.</English>
-            <Polish>Nie zatrzymuj cywili nie mając bez podejrzeń.</Polish>
+            <Polish>Nie zatrzymuj cywili nie mając podejrzeń.</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_Militia_Rules_6">
             <English>When a person is fleeing, pursue him instead of shooting.</English>
