@@ -75,6 +75,10 @@ class CfgFunctions
             class getDocuments {};
             class hasAnyDocument {};
         };
+        class InfoText
+        {
+            class initIntroText {};
+        };
         class Init
 		{
             class checkLicensePlates { postInit = 1; };
