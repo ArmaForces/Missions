@@ -20,7 +20,7 @@
 params [["_unit", player]];
 
 _unit createDiarySubject [DIARY_NAME, LLSTRING(DisplayName)];
-_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(TrafficRules_Title), BLLSTRING(TrafficRules)]];
+_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(OtherChanges_Title), BLLSTRING(OtherChanges)]];
 _unit createDiaryRecord [DIARY_NAME, [BLLSTRING(MedicalSystem), BLLSTRING(MedicalStuff)]];
 
 private _listSeparator = "<br/>- ";
