@@ -168,4 +168,10 @@ GVAR(allDocuments) set [
         ["Prawo jazdy", "Samochód"]
 ]];
 
+// TODO: Assignable documents
+GVAR(allDocuments) set [
+    "TBD_ASSIGNABLE", [
+        ["Dowód rejestracyjny", "Łada, Zielona, CH-NP444"]
+]];
+
 publicVariable QGVAR(allDocuments);

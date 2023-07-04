@@ -62,6 +62,15 @@ private _createRecordFunc = {
     ]
 ] call _createRecordFunc;
 
+["Wowrynowicz Piotr",
+    "Dezerter z armii Czedackiej",
+    "<marker name='sys_marker_wowrynowicz-piotr'>Wybor</marker>",
+    [],
+    [
+        "Dwa tygodnie temu opuścił swoją jednostkę stacjonującą w Diabelskim Zamku. Patrole dotychczas skierowane w miejsce zamieszkania poszukiwanego stwierdziły że nie ma go w domu. Poszukiwany może być uzbrojony. Najprawdopodobniej ubrany w elementy wojskowego wyposażenia. Należy zachować szczególną ostrożność w kontakcie z Poszukiwanym."
+    ]
+] call _createRecordFunc;
+
 // player createDiaryRecord [DIARY_NAME, ["Jemniołek Stanisław",
 //     "Taksówkarz z Czernogórska.
 //     <p>

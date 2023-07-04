@@ -5,29 +5,29 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=9;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=1933;
+		nextID=1947;
 	};
 	class MarkerIDProvider
 	{
-		nextID=12;
+		nextID=13;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1108;
+		nextID=1206;
 	};
 	class Camera
 	{
-		pos[]={2970.5129,342.39523,7607.0176};
-		dir[]={0.37794691,-0.10653487,-0.91974181};
-		up[]={0.04050364,0.99430037,-0.09856499};
-		aside[]={-0.92500532,5.341135e-007,-0.38011304};
+		pos[]={3752.0342,354.94052,8916.1367};
+		dir[]={0.28577426,-0.57995057,0.76303679};
+		up[]={0.20341593,0.81462371,0.54313231};
+		aside[]={0.93658924,1.5975966e-006,-0.35077384};
 	};
 };
 binarizationWanted=0;
@@ -939,7 +939,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=37;
+		items=40;
 		class Item0
 		{
 			dataType="Layer";
@@ -14286,13 +14286,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3662.4026,301.47189,8595.499};
-								angles[]={6.2778478,2.2451172,0.0053377044};
+								position[]={3662.4028,301.47189,8595.499};
+								angles[]={6.2778444,2.2451217,0.0053407075};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
+								init="this setPlateNumber ""CH-WB4153"";";
 								dynamicSimulation=1;
 							};
 							id=1493;
@@ -32090,6 +32091,82 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2826.345,274.03534,9951.9814};
+						angles[]={-0,4.1772618,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=1935;
+					type="CUP_C_C_Citizen_Random";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=1935;
+						item1=1934;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=1933;
+			atlOffset=-3.0517578e-005;
+		};
+		class Item38
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2677.6511,275.4754,10049.991};
+				angles[]={-0,4.1772618,0};
+			};
+			side="Civilian";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=1934;
+			type="CUP_C_Lada_CIV";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={3771.3213,311.01999,8987.7041};
+			name="sys_marker_wowrynowicz-piotr";
+			type="Empty";
+			id=1946;
 		};
 	};
 	class Connections

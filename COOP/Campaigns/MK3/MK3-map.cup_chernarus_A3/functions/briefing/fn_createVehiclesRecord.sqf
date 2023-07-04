@@ -34,6 +34,7 @@ private _createRecordFunc = {
 ["CH-RG021 ", "Golf IV", "Czerwony", "Nieznany", "Kradziony czerwony Golf, zmazana ostatnia cyfra na tablicy. Właściciel nieznany. Porzucony w Pustoszce po napadzie na komisariat. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> do rozwiązania sprawy."] call _createRecordFunc;
 ["CH-CKS012", "Ikarus", "ChKS", "Komisariat w Zelenogorsku", "Prowadzony przez autobusiarza uległ wypadkowi czołowemu z milicyjną Ładą. Autobusiarz został obciążony mandatem za nieostrożną jazdę. Mocno uszkodzony. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> i oczekuje na naprawę."] call _createRecordFunc;
 ["CH-CKS006", "Ikarus", "ChKS", "Komisariat w Zelenogorsku", "Prowadzony przez autobusiarza uległ wypadkowi czołowemu z milicyjną Ładą. Autobusiarz został obciążony mandatem za przekroczenie prędkości w terenie zabudowanym i wjechanie w pojazd milicyjny. Lekko uszkodzony. Stoi w <marker name='sys_marker_militia_parking'>milicyjnym warsztacie</marker> i oczekuje na naprawę."] call _createRecordFunc;
+["CH-CH1534", "Łada", "Błękitny", "Obywatel Czernogórska", "Skradziony tydzień temu w Czernogórsku."] call _createRecordFunc;
 
 /*
  * Transforms array of short codes and long names into <br/> delimited string for display.
