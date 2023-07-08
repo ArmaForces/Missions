@@ -65,6 +65,10 @@ class CfgFunctions
             class createResistanceBriefing {};
             class createVehiclesRecord {};
         };
+        class Bus
+        {
+            class initBusStops { preInit = 1; };
+        };
         class Common
         {
             class isMilitia {};
