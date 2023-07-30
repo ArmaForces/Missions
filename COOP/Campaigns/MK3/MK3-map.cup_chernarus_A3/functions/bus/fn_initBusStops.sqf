@@ -38,7 +38,10 @@ private _dddFnc = {
         if (_timetable isNotEqualTo "") then {
             _timetable = format ["%1\n-----\n%2", _timetable, _lineDepartures];
         } else {
-            _timetable = _lineDepartures;
+            private _arrowLocation = [_arrow] call FUNC(getNearestLocationWithAvailableName);
+            private _locationName = [_arrowLocation] call FUNC(getLocationName);
+
+            _timetable = format ["%1\n=====\n%2", _locationName, _lineDepartures];
         };
         TRACE_1("Updated timetable: %1", _timetable);
 
@@ -49,76 +52,75 @@ private _dddFnc = {
     INFO_4("Line %1 has stops: %2", _lineNumber, str _line);
 };
 
-[{
-    params ["_dddFnc"];
-    // Stop | Time to arrive from previous (min)
-    private _line1ScheduleFromLopatino = [
-        [bus_lopatino_loop, 0],
-        [bus_vibor_from_lopatino, 3],
-        [bus_pustoshka_from_vibor, 2],
-        [bus_pustoshka_church, 1],
-        [bus_sosnovka_to_zelenogorsk, 4],
-        [bus_zelenogorsk_from_sosnovka, 2]
-    ];
+// Stop | Time to arrive from previous (min)
+private _line1ScheduleFromLopatino = [
+    [bus_lopatino_loop, 0],
+    [bus_vibor_from_lopatino, 3],
+    [bus_pustoshka_from_vibor, 2],
+    [bus_pustoshka_church, 1],
+    [bus_sosnovka_to_zelenogorsk, 4],
+    [bus_zelenogorsk_from_sosnovka, 2],
+    [bus_zelenogorsk_centre_to_south, 1],
+    [bus_zelenogorsk_train_station, 2]
+];
 
-    private _line1ScheduleFromZelenogorsk = [
-        [bus_zelenogorsk_train_station, 0],
-        [bus_zelenogorsk_centre_to_north, 2],
-        [bus_zelenogorsk_to_sosnovka, 1],
-        [bus_sosnovka_from_zelenogorsk, 4],
-        [bus_pustoshka_to_vibor, 4],
-        [bus_vibor_from_pustoshka, 2],
-        [bus_lopatino, 3],
-        [bus_lopatino_loop, 1]
-    ];
+private _line1ScheduleFromZelenogorsk = [
+    [bus_zelenogorsk_train_station, 0],
+    [bus_zelenogorsk_centre_to_north, 2],
+    [bus_zelenogorsk_to_sosnovka, 1],
+    [bus_sosnovka_from_zelenogorsk, 4],
+    [bus_pustoshka_to_vibor, 4],
+    [bus_vibor_from_pustoshka, 2],
+    [bus_lopatino, 3],
+    [bus_lopatino_loop, 1]
+];
 
-    private _line2ScheduleFromLopatino = [
-        [bus_lopatino_loop, 0],
-        [bus_vibor_from_lopatino, 3],
-        [bus_kabanino_to_stary_sobor, 2],
-        [bus_stary_sobor_from_kabanino, 2],
-        [bus_rogovo_to_pogorevka, 3],
-        [bus_pogorevka_from_rogovo, 2],
-        [bus_zelenogorsk_train_station, 2]
-    ];
+private _line2ScheduleFromLopatino = [
+    [bus_lopatino_loop, 0],
+    [bus_vibor_from_lopatino, 3],
+    [bus_kabanino_to_stary_sobor, 2],
+    [bus_stary_sobor_from_kabanino, 2],
+    [bus_rogovo_to_pogorevka, 3],
+    [bus_pogorevka_from_rogovo, 2],
+    [bus_zelenogorsk_train_station, 2]
+];
 
-    private _line2ScheduleFromZelenogorsk = [
-        [bus_zelenogorsk_train_station, 0],
-        [bus_pogorevka_to_rogovo, 7],
-        [bus_rogovo_from_pogorevka, 2],
-        [bus_stary_sobor_to_kabanino, 3],
-        [bus_kabanino_from_stary_sobor, 2],
-        [bus_vibor_from_kabanino, 3],
-        [bus_lopatino, 3],
-        [bus_lopatino_loop, 1]
-    ];
+private _line2ScheduleFromZelenogorsk = [
+    [bus_zelenogorsk_train_station, 0],
+    [bus_pogorevka_to_rogovo, 7],
+    [bus_rogovo_from_pogorevka, 2],
+    [bus_stary_sobor_to_kabanino, 3],
+    [bus_kabanino_from_stary_sobor, 2],
+    [bus_vibor_from_kabanino, 3],
+    [bus_lopatino, 3],
+    [bus_lopatino_loop, 1]
+];
 
-    // Line no. | Start | End | Start hours
-    [1, "Lopatino", "Zelenogorsk p. Pustoshka", [
-        7, 8, 9
-    ], _line1ScheduleFromLopatino] call _dddFnc;
+// Line no. | Start | End | Start hours
+[1, "Lopatino", "Zelenogorsk p. Pustoshka", [
+    7, 8, 9
+], _line1ScheduleFromLopatino] call _dddFnc;
 
-    [1, "Zelenogorsk", "Lopatino p. Pustoshka", [
-        7.2, 8.3, 9.4
-    ], _line1ScheduleFromZelenogorsk] call _dddFnc;
+[1, "Zelenogorsk", "Lopatino p. Pustoshka", [
+    7.2, 8.3, 9.4
+], _line1ScheduleFromZelenogorsk] call _dddFnc;
 
-    [2, "Lopatino", "Zelenogorsk p. Stary Sobor", [
-        7.1, 8.3, 9.5
-    ], _line2ScheduleFromLopatino] call _dddFnc;
+[2, "Lopatino", "Zelenogorsk p. Stary Sobor", [
+    7.1, 8.3, 9.5
+], _line2ScheduleFromLopatino] call _dddFnc;
 
-    [2, "Zelenogorsk", "Lopatino p. Stary Sobor", [
-        7.3, 8.5, 9.7
-    ], _line2ScheduleFromZelenogorsk] call _dddFnc;
+[2, "Zelenogorsk", "Lopatino p. Stary Sobor", [
+    7.3, 8.5, 9.7
+], _line2ScheduleFromZelenogorsk] call _dddFnc;
 
-    private _allArrows = allMissionObjects ARROW_HELPER;
-    private _arrowsWithoutLineAssigned = _allArrows
-        select {_x getVariable [QGVAR(busTimetable), ""] isEqualTo ""};
+private _allArrows = allMissionObjects ARROW_HELPER;
+private _arrowsWithoutLineAssigned = _allArrows
+    select {_x getVariable [QGVAR(busTimetable), ""] isEqualTo ""};
 
-    {
-        WARNING_2("Arrow %1 on position %2 has no line assigned.", str _x, position _x);
-        deleteVehicle _x;
-    } forEach _arrowsWithoutLineAssigned;
-}, [_dddFnc]] call CBA_fnc_execNextFrame;
+{
+    WARNING_2("Arrow %1 on position %2 has no line assigned.", str _x, position _x);
+    deleteVehicle _x;
+} forEach _arrowsWithoutLineAssigned;
 
 // Initialize bus stops
 private _busStopModels = [
@@ -204,24 +206,23 @@ private _action = [
 
     _dummyLocalHelper enableSimulation false;
 
-    // Arrows will appear after mission init, but this entire script runs in preInit, so a delay is needed.
-    [{
-        params ["_position", "_dummyLocalHelper"];
-        private _busStopArrows = nearestObjects [_position, [ARROW_HELPER], 10];
-        if (count _busStopArrows > 0) then {
-            private _arrow = _busStopArrows select 0;
-            _dummyLocalHelper setVariable [QGVAR(busStopArrow), _arrow];
-            private _arrowTimetable = _arrow getVariable [QGVAR(busTimetable), ""];
-            if (_arrowTimetable isNotEqualTo "") then {
-                INFO_1("Found bus stop arrow with a timetable near %1", _position);
-            } else {
-                INFO_1("Found bus stop arrow without a timetable near %1", _position);
-            };
+    private _busStopArrows = nearestObjects [_position, [ARROW_HELPER], 10];
+    if (count _busStopArrows > 0) then {
+        private _arrow = _busStopArrows select 0;
+
+        _dummyLocalHelper setVariable [QGVAR(busStopArrow), _arrow];
+        _arrow setVariable [QGVAR(busStop), _dummyLocalHelper];
+
+        private _arrowTimetable = _arrow getVariable [QGVAR(busTimetable), ""];
+        if (_arrowTimetable isNotEqualTo "") then {
+            INFO_1("Found bus stop arrow with a timetable near %1", _position);
         } else {
-            WARNING_1("Not found bus stop arrow near %1", _position);
-            deleteVehicle _dummyLocalHelper;
+            INFO_1("Found bus stop arrow without a timetable near %1", _position);
         };
-    }, [_position, _dummyLocalHelper]] call CBA_fnc_execNextFrame;
+    } else {
+        WARNING_1("Not found bus stop arrow near %1", _position);
+        deleteVehicle _dummyLocalHelper;
+    };
 
     [_dummyLocalHelper, 0, [], _action] call ace_interact_menu_fnc_addActionToObject;
 } forEach _busStops;

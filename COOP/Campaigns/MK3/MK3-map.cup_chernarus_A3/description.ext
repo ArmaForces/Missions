@@ -67,7 +67,7 @@ class CfgFunctions
         };
         class Bus
         {
-            class initBusStops { preInit = 1; };
+            class initBusStops { postInit = 1; };
         };
         class Common
         {
@@ -90,6 +90,13 @@ class CfgFunctions
             class initDocuments {};
 			class removeMapObjects { preInit = 1; };
 		};
+        class SerialKillers
+        {
+            class getAllMapCities {};
+            class getLocationName {};
+            class getNearestLocationWithAvailableName {};
+            class initSerialKillersFunctions { preInit = 1; }
+        };
     };
 };
 
