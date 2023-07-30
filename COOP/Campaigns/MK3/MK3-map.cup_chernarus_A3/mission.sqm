@@ -28263,6 +28263,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="this setVariable [""MKR_Scripts_busStopName"", localize ""STR_MKR_BusStops_PustoshkaChurch""];";
 										name="bus_pustoshka_church";
 									};
 									id=2037;
@@ -28297,6 +28298,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="this setVariable [""MKR_Scripts_busStopName"", localize ""STR_MKR_BusStops_LopatinoLoop""];";
 										name="bus_lopatino_loop";
 									};
 									id=2039;
@@ -28349,6 +28351,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="this setVariable [""MKR_Scripts_busStopName"", localize ""STR_MKR_BusStops_StarySoborShop""];";
 										name="bus_stary_sobor_from_kabanino";
 									};
 									id=2042;
@@ -28366,6 +28369,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="this setVariable [""MKR_Scripts_busStopName"", localize ""STR_MKR_BusStops_StarySoborShop""];";
 										name="bus_stary_sobor_to_kabanino";
 									};
 									id=2043;
@@ -28486,6 +28490,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="this setVariable [""MKR_Scripts_busStopName"", localize ""STR_MKR_BusStops_ZelenogorskLoop""];";
 										name="bus_zelenogorsk_train_station";
 									};
 									id=2050;
@@ -28538,6 +28543,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="this setVariable [""MKR_Scripts_busStopName"", localize ""STR_MKR_BusStops_ZelenogorskChurch""];";
 										name="bus_zelenogorsk_to_sosnovka";
 									};
 									id=2053;
@@ -28556,6 +28562,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="this setVariable [""MKR_Scripts_busStopName"", localize ""STR_MKR_BusStops_ZelenogorskChurch""];";
 										name="bus_zelenogorsk_from_sosnovka";
 									};
 									id=2054;

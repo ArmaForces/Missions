@@ -25,7 +25,7 @@ private _dddFnc = {
         _x params ["_arrow", "_timeToArriveFromPrevious"];
         _timeToArriveTotal = _timeToArriveTotal + _timeToArriveFromPrevious;
 
-        private _lineHeaderFormatted = format ["Line %1: %2 - %3", _lineNumber, _origin, _destination];
+        private _lineHeaderFormatted = format [LELSTRING(BusStops,LineX), _lineNumber, _origin, _destination];
 
         private _departureTimes = _originDepartureHours
             apply {_x + _timeToArriveTotal * (1/60)}
@@ -38,10 +38,13 @@ private _dddFnc = {
         if (_timetable isNotEqualTo "") then {
             _timetable = format ["%1\n-----\n%2", _timetable, _lineDepartures];
         } else {
-            private _arrowLocation = [_arrow] call FUNC(getNearestLocationWithAvailableName);
-            private _locationName = [_arrowLocation] call FUNC(getLocationName);
+            private _arrowLocationName = _arrow getVariable [QGVAR(busStopName), ""];
+            if (_arrowLocationName isEqualTo "") then {
+                private _arrowLocation = [_arrow] call FUNC(getNearestLocationWithAvailableName);
+                _arrowLocationName = [_arrowLocation] call FUNC(getLocationName);
+            };
 
-            _timetable = format ["%1\n=====\n%2", _locationName, _lineDepartures];
+            _timetable = format ["%1\n=====\n%2", _arrowLocationName, _lineDepartures];
         };
         TRACE_1("Updated timetable: %1", _timetable);
 
@@ -97,19 +100,19 @@ private _line2ScheduleFromZelenogorsk = [
 ];
 
 // Line no. | Start | End | Start hours
-[1, "Lopatino", "Zelenogorsk p. Pustoshka", [
+[1, "Lopatino", LELSTRING(BusStops,Line1_ZelenogorskViaPustoshka), [
     7, 8, 9
 ], _line1ScheduleFromLopatino] call _dddFnc;
 
-[1, "Zelenogorsk", "Lopatino p. Pustoshka", [
+[1, "Zelenogorsk", LELSTRING(BusStops,Line1_LopatinoViaPustoshka), [
     7.2, 8.3, 9.4
 ], _line1ScheduleFromZelenogorsk] call _dddFnc;
 
-[2, "Lopatino", "Zelenogorsk p. Stary Sobor", [
+[2, "Lopatino", LELSTRING(BusStops,Line2_ZelenogorskViaStarySobor), [
     7.1, 8.3, 9.5
 ], _line2ScheduleFromLopatino] call _dddFnc;
 
-[2, "Zelenogorsk", "Lopatino p. Stary Sobor", [
+[2, "Zelenogorsk", LELSTRING(BusStops,Line2_LopatinoViaStarySobor), [
     7.3, 8.5, 9.7
 ], _line2ScheduleFromZelenogorsk] call _dddFnc;
 

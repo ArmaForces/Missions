@@ -19,6 +19,10 @@
         <Key ID="STR_MKR_Scripts_Mission_Briefing">
             <Polish>Mapa Mydlanej Kampanii odzwierciedlająca aktualny stan kampanii, będąca bazą dla wszystkich misji.</Polish>
         </Key>
+        <Key ID="STR_MKR_Scripts_Date">
+            <English>20th March 2022</English>
+            <Polish>20 marca 2022</Polish>
+        </Key>
 
         <Key ID="STR_MKR_Scripts_ShowDocuments">
             <English>Show documents</English>
@@ -233,6 +237,50 @@
         <Key ID="STR_MKR_Briefing_Resistance_RoE">
             <English>Don't point the gun at people unless they threaten you or point at you. Always try to deescalate. Don't shoot first unless your task requires you to.</English>
             <Polish>Nie celuj bronią w ludzi dopóki Ci nie grożą lub nie celują w Ciebie. Zawsze staraj się deeskalować. Nie strzelaj pierwszy, chyba że zadanie wymaga inaczej.</Polish>
+        </Key>
+    </Package>
+
+    <!-- BUS STOPS -->
+    <Package name="BusStops">
+        <Key ID="STR_MKR_BusStops_LineX">
+            <English>Line %1: %2 - %3</English>
+            <Polish>Linia %1: %2 - %3</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line1_ZelenogorskViaPustoshka">
+            <English>Zelenogorsk via Pustoshka</English>
+            <Polish>Zelenogorsk p. Pustoszka</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line1_LopatinoViaPustoshka">
+            <English>Lopatino via Pustoshka</English>
+            <Polish>Lopatino p. Pustoszka</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line2_ZelenogorskViaStarySobor">
+            <English>Zelenogorsk via Stary Sobor</English>
+            <Polish>Zelenogorsk p. Stary Sobor</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line2_LopatinoViaStarySobor">
+            <English>Lopatino via Stary Sobor</English>
+            <Polish>Lopatino p. Stary Sobor</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_LopatinoLoop">
+            <English>Lopatino (Loop)</English>
+            <Polish>Lopatino (Pętla)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_PustoshkaChurch">
+            <English>Pustoshka (Church)</English>
+            <Polish>Pustoszka (Cerkiew)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_StarySoborShop">
+            <English>Stary Sobor (Shop)</English>
+            <Polish>Stary Sobor (Sklep)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_ZelenogorskChurch">
+            <English>Zelenogorsk (Church)</English>
+            <Polish>Zelenogorsk (Cerkiew)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_ZelenogorskLoop">
+            <English>Zelenogorsk (Loop)</English>
+            <Polish>Zelenogorsk (Pętla)</Polish>
         </Key>
     </Package>
 
