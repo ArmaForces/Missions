@@ -97,6 +97,10 @@ class CfgFunctions
             class getNearestLocationWithAvailableName {};
             class initSerialKillersFunctions { preInit = 1; }
         };
+        class Skills
+        {
+            class getSkills {};
+        };
     };
 };
 

@@ -244,6 +244,64 @@ private _action = [QGVAR(documents), LLSTRING(ShowDocuments), "", {}, _condition
 // ] call ACEFUNC(interact_menu,addActionToClass);
 
 
+[QGVAR(showZeusMessage), {
+    params ["_unit", "_skillName", "_skillBonusScore", "_rollResult"];
+
+    // TODO: Change to ACE function after release
+    // if (call ACEFUNC(common,hasZeusAccess)) exitWith {
+    if (!isNull getAssignedCuratorLogic player) exitWith {
+        private _rollMessage = format [LLSTRING(Skills_RolledMessage), localize _skillName, _skillBonusScore, _rollResult];
+        _unit commandChat _rollMessage;
+    };
+}] call CBA_fnc_addEventHandler;
+
+
+private _insertSkillsChildren = {
+    params ["_target", "_player", "_params"];
+
+    private _skills = [player] call FUNC(getSkills);
+
+    private _rollSkillFnc = {
+        params ["_target", "_player", "_skill"];
+        _skill params ["_skillName", "_skillBonusScore"];
+
+        private _rollResult = ceil random 20 + _skillBonusScore;
+
+        [QGVAR(showZeusMessage), [_player, _skillName, _skillBonusScore, _rollResult]] call CBA_fnc_globalEvent;
+    };
+
+    private _actions = [];
+    {
+        _x params ["_skillName", "_skillBonusScore"];
+        // private _actionName = format ["skill:%1", _skillName];
+        private _actionName = _skillName;
+        private _action = [_actionName, localize _skillName, "", _rollSkillFnc, {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
+        _actions pushBack [_action, [], _target];
+    } forEach _skills;
+
+    _actions
+};
+
+private _skillsAction = [QGVAR(skills), LLSTRING(Skills), "", {}, {true}, _insertSkillsChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
+
+[
+    typeOf (player),
+    1,
+    ["ACE_SelfActions"],
+    _skillsAction,
+    false
+] call ACEFUNC(interact_menu,addActionToClass);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

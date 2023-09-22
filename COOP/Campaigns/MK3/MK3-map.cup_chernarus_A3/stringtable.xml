@@ -28,6 +28,38 @@
             <English>Show documents</English>
             <Polish>Pokaż dokumenty</Polish>
         </Key>
+        <Key ID="STR_MKR_Scripts_Skills">
+            <English>Skills</English>
+            <Polish>Umiejętności</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Deception">
+            <English>Deception</English>
+            <Polish>Ściemnianie</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_History">
+            <English>History</English>
+            <Polish>Historia</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Insight">
+            <English>Insight</English>
+            <Polish>Intuicja</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Intimidation">
+            <English>Intimidation</English>
+            <Polish>Zastraszenie</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Investigation">
+            <English>Investigation</English>
+            <Polish>Dochodzenie</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Persuasion">
+            <English>Persuasion</English>
+            <Polish>Perswazja</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_RolledMessage">
+            <English>Rolled %1 (%2): %3</English>
+            <Polish>Rzucił %1 (%2): %3</Polish>
+        </Key>
     </Package>
 
     <Package name="Briefing">
