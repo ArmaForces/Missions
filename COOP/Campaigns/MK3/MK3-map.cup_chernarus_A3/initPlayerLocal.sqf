@@ -274,8 +274,9 @@ private _insertSkillsChildren = {
     {
         _x params ["_skillName", "_skillBonusScore"];
         // private _actionName = format ["skill:%1", _skillName];
+        private _nodeName = format ["%1 (%2)", localize _skillName, _skillBonusScore];
         private _actionName = _skillName;
-        private _action = [_actionName, localize _skillName, "", _rollSkillFnc, {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
+        private _action = [_actionName, _nodeName, "", _rollSkillFnc, {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
         _actions pushBack [_action, [], _target];
     } forEach _skills;
 
