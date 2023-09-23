@@ -382,4 +382,16 @@
             <Polish>Obóz partyzantów</Polish>
         </Key>
     </Package>
+
+    <!-- Locations -->
+    <Package name="Locations">
+        <Key ID="STR_MKR_Locations_ZelenogorskMilitiaStation">
+            <English>Militia Station in Zelenogorsk</English>
+            <Polish>Posterunek Milicji w Zelenogorsku</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_CampTishina">
+            <English>Tishina Chedaki Camp</English>
+            <Polish>Obóz Czedacki Tishina</Polish>
+        </Key>
+    </Package>
 </Project>

@@ -24,22 +24,36 @@ private _sideName = switch (side player) do {
 };
 
 private _location = "";
-// TODO: Determine location via trigger area + fallback to map locations
-if (side player isEqualTo WEST) then {
-    _location = "Posterunek Milicji w Zelenogorsku";
-};
-if (convoyGroup isEqualTo group player) then {
-    _location = "Posterunek Milicji w Chernogorsku";
-};
-if (side player isEqualTo INDEPENDENT) then {
-    _location = "W lesie na zachód od Zelenogorska";
-};
-if (banditsGroup isEqualTo group player) then {
-    _location = "Areszt w Zelenogorsku";
-};
-if (player isEqualTo busDriver) then { _location = "Pętla w Lopatino"; };
-if (player isEqualTo busTicketer) then { _location = "Przystanek w Vyborze"; };
 
+// Check custom locations first
+if (!isNil QGVAR(customLocations)) then {
+    private _areasContainingPlayer = GVAR(customLocations) select {player inArea (_x select 1)};
+    if (count _areasContainingPlayer isEqualTo 0) exitWith {};
+
+    if (count _areasContainingPlayer isNotEqualTo 1) then {
+        // TODO: Consider sorting by area size (smaller => more specific)[_areasContainingPlayer, [], {player distance _x}] call BIS_fnc_sortBy;
+        [_areasContainingPlayer, [], {player distance (_x select 1 select 0)}] call BIS_fnc_sortBy;
+    };
+
+    _location = localize (_areasContainingPlayer select 0 select 0);
+};
+
+// If unsuccessful, try other ways
+if (_location isEqualTo "") then {
+    private _nearestLocation = [player] call FUNC(getNearestLocationWithAvailableName);
+    _location = [_nearestLocation] call FUNC(getLocationName);
+    // if (convoyGroup isEqualTo group player) then {
+    //     _location = "Posterunek Milicji w Chernogorsku";
+    // };
+    // if (side player isEqualTo INDEPENDENT) then {
+    //     _location = "W lesie na zachód od Zelenogorska";
+    // };
+    // if (banditsGroup isEqualTo group player) then {
+    //     _location = "Areszt w Zelenogorsku";
+    // };
+    // if (player isEqualTo busDriver) then { _location = "Pętla w Lopatino"; };
+    // if (player isEqualTo busTicketer) then { _location = "Przystanek w Vyborze"; };
+};
 
 private _roleDescription = roleDescription player;
 private _monkeyIndex = _roleDescription find "@";

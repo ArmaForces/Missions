@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2126;
+		nextID=2131;
 	};
 	class MarkerIDProvider
 	{
-		nextID=13;
+		nextID=14;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1925;
+		nextID=1926;
 	};
 	class Camera
 	{
-		pos[]={2769.8591,222.00198,5369.5073};
-		dir[]={0.59003282,-0.44579038,-0.67315096};
-		up[]={0.29384422,0.89513743,-0.33523819};
-		aside[]={-0.75200856,-1.4901161e-008,-0.6591534};
+		pos[]={1125.3447,199.38287,7223.0864};
+		dir[]={-0.27128637,-0.81247652,0.5160287};
+		up[]={-0.3780722,0.58299392,0.71915191};
+		aside[]={0.88513565,0,0.46533307};
 	};
 };
 binarizationWanted=0;
@@ -955,7 +955,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=44;
+		items=45;
 		class Item0
 		{
 			dataType="Layer";
@@ -4345,7 +4345,7 @@ class Mission
 				};
 			};
 			id=1;
-			atlOffset=51.607185;
+			atlOffset=-38.737778;
 		};
 		class Item1
 		{
@@ -19366,11 +19366,11 @@ class Mission
 						};
 					};
 					id=792;
-					atlOffset=-1.6859112;
+					atlOffset=0.62326431;
 				};
 			};
 			id=791;
-			atlOffset=-1.6859112;
+			atlOffset=0.62326431;
 		};
 		class Item10
 		{
@@ -22251,6 +22251,7 @@ class Mission
 									};
 									id=1875;
 									type="rhs_7ya37_1_single";
+									atlOffset=0.040008545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -22450,6 +22451,7 @@ class Mission
 									};
 									id=1889;
 									type="rhs_7ya37_1_single";
+									atlOffset=0.040008545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -22580,6 +22582,7 @@ class Mission
 									};
 									id=1896;
 									type="CUP_armchair";
+									atlOffset=0.040008545;
 								};
 								class Item1
 								{
@@ -22598,6 +22601,7 @@ class Mission
 									};
 									id=1897;
 									type="CUP_armchair";
+									atlOffset=0.040267944;
 								};
 								class Item2
 								{
@@ -22615,6 +22619,7 @@ class Mission
 									};
 									id=1894;
 									type="CUP_vojenska_palanda";
+									atlOffset=0.039840698;
 								};
 								class Item3
 								{
@@ -22632,6 +22637,7 @@ class Mission
 									};
 									id=1895;
 									type="CUP_vojenska_palanda";
+									atlOffset=0.039398193;
 								};
 								class Item4
 								{
@@ -27558,7 +27564,7 @@ class Mission
 				};
 			};
 			id=868;
-			atlOffset=80.546219;
+			atlOffset=-117.26819;
 		};
 		class Item12
 		{
@@ -34973,6 +34979,48 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item44
+		{
+			dataType="Layer";
+			name="CustomLocations";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Trigger";
+					position[]={2734.7561,206.53,5373.3379};
+					angle=0.20205677;
+					class Attributes
+					{
+						text="$STR_MKR_Locations_ZelenogorskMilitiaStation";
+						sizeA=6.8559999;
+						sizeB=7.198;
+						sizeC=12.927;
+						isRectangle=1;
+					};
+					id=2129;
+					type="EmptyDetectorArea10x10";
+				};
+				class Item1
+				{
+					dataType="Trigger";
+					position[]={1141.949,185.34088,7249.083};
+					class Attributes
+					{
+						text="$STR_MKR_Locations_CampTishina";
+						sizeA=40.720001;
+						sizeB=40.424;
+						sizeC=14.555;
+						isRectangle=1;
+					};
+					id=2130;
+					type="EmptyDetectorArea10x10";
+				};
+			};
+			id=2126;
+			atlOffset=-118.09267;
 		};
 	};
 	class Connections

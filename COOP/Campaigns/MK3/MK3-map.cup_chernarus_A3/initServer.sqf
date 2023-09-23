@@ -1,7 +1,9 @@
 #include "script_component.hpp"
 
-GVAR(cbRadioPresetInitialized) = false;
 GVAR(allDocuments) = createHashMap;
+GVAR(cbRadioPresetInitialized) = false;
+GVAR(customLocations) = call FUNC(initCustomLocations);
+publicVariable QGVAR(customLocations);
 
 {
     if (fuel _x isEqualTo 1) then {
