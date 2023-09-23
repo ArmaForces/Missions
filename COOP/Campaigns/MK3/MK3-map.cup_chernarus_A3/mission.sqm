@@ -32303,7 +32303,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						description="Dowódca@Obóz Miszkino";
+						description="Dowódca@Obóz Tishina";
 						isPlayable=1;
 						class Inventory
 						{
@@ -33039,6 +33039,7 @@ class Mission
 			class Attributes
 			{
 				name="ext1Group";
+				init="this setVariable [""MKR_Scripts_isChedaki"", true];";
 			};
 			id=1826;
 			class CustomAttributes
@@ -33570,6 +33571,7 @@ class Mission
 			class Attributes
 			{
 				name="ext2Group";
+				init="this setVariable [""MKR_Scripts_isChedaki"", true];";
 			};
 			id=1830;
 			class CustomAttributes
@@ -34006,6 +34008,7 @@ class Mission
 			class Attributes
 			{
 				name="ext3Group";
+				init="this setVariable [""MKR_Scripts_isChedaki"", true];";
 			};
 			id=1836;
 			class CustomAttributes
@@ -34675,6 +34678,7 @@ class Mission
 			class Attributes
 			{
 				name="baseGroup";
+				init="this setVariable [""MKR_Scripts_isChedaki"", true];";
 			};
 			id=1844;
 			class CustomAttributes
@@ -34994,7 +34998,7 @@ class Mission
 					angle=0.20205677;
 					class Attributes
 					{
-						text="$STR_MKR_Locations_ZelenogorskMilitiaStation";
+						text="@STR_MKR_Locations_ZelenogorskMilitiaStation";
 						sizeA=6.8559999;
 						sizeB=7.198;
 						sizeC=12.927;
@@ -35009,7 +35013,7 @@ class Mission
 					position[]={1141.949,185.34088,7249.083};
 					class Attributes
 					{
-						text="$STR_MKR_Locations_CampTishina";
+						text="@STR_MKR_Locations_CampTishina";
 						sizeA=40.720001;
 						sizeB=40.424;
 						sizeC=14.555;

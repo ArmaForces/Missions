@@ -16,7 +16,13 @@
 private _playerName = name player;
 
 private _sideName = switch (side player) do {
-    case WEST: { "Milicja" };
+    case WEST: {
+        if (group player getVariable [QGVAR(isChedaki), false]) then {
+            LLSTRING(Sides_Chedaki)
+        } else {
+            LLSTRING(Sides_Militia)
+        };
+    };
     case EAST: { "" };
     case INDEPENDENT: { "Czarnoruski Ruch Oporu" };
     case CIVILIAN: { "Mieszkaniec Czarnorusi" };

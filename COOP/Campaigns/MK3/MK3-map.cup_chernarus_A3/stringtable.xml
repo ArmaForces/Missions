@@ -24,6 +24,23 @@
             <Polish>20 marca 2022</Polish>
         </Key>
 
+        <Key ID="STR_MKR_Scripts_Sides_Militia">
+            <English>Militia</English>
+            <Polish>Milicja</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Sides_Chedaki">
+            <English>Chedaki</English>
+            <Polish>Czedacy</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Sides_Resistance">
+            <English>Chernarus Resistance</English>
+            <Polish>Czarnoruski Ruch Oporu</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Sides_Civilian">
+            <English>Chernarus Citizen</English>
+            <Polish>Mieszkaniec Czarnorusi</Polish>
+        </Key>
+
         <Key ID="STR_MKR_Scripts_ShowDocuments">
             <English>Show documents</English>
             <Polish>Pokaż dokumenty</Polish>
