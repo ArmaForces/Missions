@@ -82,9 +82,10 @@ if (_playerRole isEqualTo "") then {
 
 private _playerGroupName = groupid group player;
 
-private _playerRankVanillaFunc = { rank player };
-private _playerRankDuiFunc = { diwako_dui_nametags_RankNames get "default" get rank player };
 private _playerRankFunc = {
+    private _playerRankVanillaFunc = { rank player };
+    private _playerRankDuiFunc = { diwako_dui_nametags_RankNames get "default" get rank player };
+
     if (side player isNotEqualTo WEST) exitWith { "" }; // TODO: Consider how to do it better
     if (!isNil "diwako_dui_nametags_RankNames") then { call _playerRankDuiFunc } else { call _playerRankVanillaFunc };
 };
