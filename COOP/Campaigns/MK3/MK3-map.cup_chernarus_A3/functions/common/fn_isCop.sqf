@@ -15,4 +15,4 @@
 
 params ["_unit"];
 
-side _unit isEqualTo WEST
+[_unit] call FUNC(isMilitia)

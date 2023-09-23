@@ -129,7 +129,33 @@ CUP_stopLampCheck = true;
 [FUNC(initIntroText), [], 5] call CBA_fnc_waitAndExecute;
 [FUNC(initPlayerPersonalVehicles), [], 5] call CBA_fnc_waitAndExecute;
 [player] call FUNC(initBriefing);
+
+// Add basic items
 player addItem "ACE_Cellphone";
+if (!isNil "zeus" && {player isEqualTo zeus}) then {
+    player addItem "ACE_key_master"
+} else {
+    switch (side player) do
+    {
+        case WEST: {
+            // Separate militia from chedaks as they should not share keys
+            if (player call FUNC(isMilitia)) then {
+                player addItem "ACE_key_west"
+            } else {
+                player addItem "ACE_key_east";
+            }
+        };
+        case EAST: { player addItem "ACE_key_east" };
+        case INDEPENDENT: { player addItem "ACE_key_indp" };
+        default {
+            if (player call FUNC(isMedicalService)) then {
+                // Nothing for medics
+            } else {
+                player addItem "ACE_key_lockpick"
+            };
+        };
+    };
+};
 
 // Init custom actions
 call FUNC(initDocumentsActions);

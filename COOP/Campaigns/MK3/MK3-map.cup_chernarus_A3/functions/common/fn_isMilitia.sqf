@@ -18,7 +18,7 @@ params ["_unit"];
 private _isMilitia = _unit getVariable [QGVAR(isMilitia), objNull];
 
 if (_isMilitia isEqualTo objNull) then {
-    _isMilitia = ["Police", typeOf _unit] call BIS_fnc_inString;
+    _isMilitia = "Police" in typeOf _unit;
     _unit setVariable [QGVAR(isMilitia), _isMilitia];
 };
 

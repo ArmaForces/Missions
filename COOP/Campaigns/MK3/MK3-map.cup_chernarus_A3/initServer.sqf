@@ -9,6 +9,15 @@ publicVariable QGVAR(customLocations);
     if (fuel _x isEqualTo 1) then {
         _x setFuel random 0.8 + 0.2;
     };
+
+    if (random 1 > 0.6) then {
+        [_x, true] call ACE_vehiclelock_fnc_setVehicleLockEH;
+    };
+
+    private _isMilitiaVehicle = typeOf _x in ["CUP_LADA_LM_CIV", "CUP_C_S1203_Militia_CIV"];
+    if (_isMilitiaVehicle) then {
+        _x setVariable ["ace_vehiclelock_lockSide", WEST];
+    };
 } forEach vehicles;
 
 call FUNC(initDocuments);

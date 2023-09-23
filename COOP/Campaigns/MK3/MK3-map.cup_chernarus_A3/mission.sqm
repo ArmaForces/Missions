@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2131;
+		nextID=2142;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1926;
+		nextID=2105;
 	};
 	class Camera
 	{
-		pos[]={1125.3447,199.38287,7223.0864};
-		dir[]={-0.27128637,-0.81247652,0.5160287};
-		up[]={-0.3780722,0.58299392,0.71915191};
-		aside[]={0.88513565,0,0.46533307};
+		pos[]={1156.1969,209.96959,7231.2856};
+		dir[]={0.82699543,-0.56132019,0.031595472};
+		up[]={0.560911,0.82759869,0.021429678};
+		aside[]={0.038177282,-1.8626451e-009,-0.99927104};
 	};
 };
 binarizationWanted=0;
-sourceName="mk3-map";
+sourceName="MK3-map";
 addons[]=
 {
 	"A3_Modules_F",
@@ -955,7 +955,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=45;
+		items=49;
 		class Item0
 		{
 			dataType="Layer";
@@ -11725,8 +11725,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2726.2949,201.6777,5181.8838};
-								angles[]={6.2778587,0.023096813,0};
+								position[]={2726.2949,201.6781,5181.8843};
+								angles[]={6.2778621,0.023090705,0};
 							};
 							side="Empty";
 							flags=4;
@@ -11738,7 +11738,6 @@ class Mission
 							};
 							id=729;
 							type="CUP_B_S1203_Ambulance_CR";
-							atlOffset=-0.00039672852;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11750,7 +11749,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+											value="[[[[""Medikit""],[1]],[[""Chemlight_red""],[2]],[[""ToolKit"",""ACE_fieldDressing"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_tourniquet"",""ACE_morphine"",""ACE_adenosine"",""ACE_epinephrine"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_salineIV_250"",""ACE_quikclot"",""AFMED_apap""],[1,10,10,10,8,4,2,2,1,1,2,5,20]],[[],[]]],false]";
 										};
 									};
 								};
@@ -19378,7 +19377,7 @@ class Mission
 			name="Locations";
 			class Entities
 			{
-				items=9;
+				items=10;
 				class Item0
 				{
 					dataType="Layer";
@@ -20045,7 +20044,7 @@ class Mission
 					name="Zelenogorsk";
 					class Entities
 					{
-						items=5;
+						items=6;
 						class Item0
 						{
 							dataType="Object";
@@ -20273,9 +20272,51 @@ class Mission
 								nAttributes=7;
 							};
 						};
+						class Item5
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={2728.156,200.15596,5179.8691};
+							};
+							areaSize[]={1.5264928,0,0.67187345};
+							flags=1;
+							id=2131;
+							type="ModuleHideTerrainObjects_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="#filter";
+									expression="_this setVariable [""#filter"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=8;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="#hideLocally";
+									expression="_this setVariable [""#hideLocally"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=795;
-					atlOffset=-1.0768738;
+					atlOffset=1.6943359;
 				};
 				class Item3
 				{
@@ -22251,7 +22292,6 @@ class Mission
 									};
 									id=1875;
 									type="rhs_7ya37_1_single";
-									atlOffset=0.040008545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -22451,7 +22491,6 @@ class Mission
 									};
 									id=1889;
 									type="rhs_7ya37_1_single";
-									atlOffset=0.040008545;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -22582,7 +22621,6 @@ class Mission
 									};
 									id=1896;
 									type="CUP_armchair";
-									atlOffset=0.040008545;
 								};
 								class Item1
 								{
@@ -22601,7 +22639,6 @@ class Mission
 									};
 									id=1897;
 									type="CUP_armchair";
-									atlOffset=0.040267944;
 								};
 								class Item2
 								{
@@ -22619,7 +22656,6 @@ class Mission
 									};
 									id=1894;
 									type="CUP_vojenska_palanda";
-									atlOffset=0.039840698;
 								};
 								class Item3
 								{
@@ -22637,7 +22673,6 @@ class Mission
 									};
 									id=1895;
 									type="CUP_vojenska_palanda";
-									atlOffset=0.039398193;
 								};
 								class Item4
 								{
@@ -26015,9 +26050,61 @@ class Mission
 					id=2097;
 					atlOffset=-0.32342529;
 				};
+				class Item9
+				{
+					dataType="Layer";
+					name="Lopatino";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={2739.8975,274.01001,10007.463};
+							};
+							areaSize[]={2.1333008,0,5.2822266};
+							flags=1;
+							id=2019;
+							type="ModuleHideTerrainObjects_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="#filter";
+									expression="_this setVariable [""#filter"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=15;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="#hideLocally";
+									expression="_this setVariable [""#hideLocally"",_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+					};
+					id=2132;
+				};
 			};
 			id=793;
-			atlOffset=-33.861847;
+			atlOffset=-0.15380859;
 		};
 		class Item11
 		{
@@ -29775,7 +29862,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Random Kabanino civilians";
+							value="Kabanino civilians";
 						};
 					};
 				};
@@ -29917,7 +30004,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Random Nadiezdino civilians";
+							value="Nadiezdino civilians";
 						};
 					};
 				};
@@ -30060,7 +30147,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Random Zelenogorsk civilians";
+							value="Zelenogorsk civilians";
 						};
 					};
 				};
@@ -30221,7 +30308,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Random Stary Sobor civilians";
+							value="Stary Sobor civilians";
 						};
 					};
 				};
@@ -30348,7 +30435,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Random Sosnowka civilians";
+							value="Sosnowka civilians";
 						};
 					};
 				};
@@ -34898,48 +34985,6 @@ class Mission
 		};
 		class Item41
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={2739.8975,274.01001,10007.463};
-			};
-			areaSize[]={2.1333008,0,5.2822266};
-			flags=1;
-			id=2019;
-			type="ModuleHideTerrainObjects_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="#filter";
-					expression="_this setVariable [""#filter"",_value]";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=15;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="#hideLocally";
-					expression="_this setVariable [""#hideLocally"",_value]";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item42
-		{
 			dataType="Marker";
 			position[]={4396.1582,309.59698,6087.4219};
 			name="marker_checkpoint_pogorevka_south";
@@ -34949,7 +34994,7 @@ class Mission
 			id=2113;
 			atlOffset=0.00012207031;
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34984,7 +35029,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Layer";
 			name="CustomLocations";
@@ -35026,16 +35071,196 @@ class Mission
 			id=2126;
 			atlOffset=-118.09267;
 		};
+		class Item44
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2735.0449,200.85977,5180.5586};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						description="Doktor@Pogotowie Ratunkowe";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Labcoat_01";
+								isBackpack=0;
+							};
+							watch="ItemWatch";
+						};
+					};
+					id=2134;
+					type="CUP_C_C_Doctor_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2733.925,200.85977,5180.9199};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						description="Doktor@Pogotowie Ratunkowe";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Labcoat_01";
+								isBackpack=0;
+							};
+							watch="ItemWatch";
+						};
+					};
+					id=2136;
+					type="CUP_C_C_Doctor_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2133;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Pogotowie Ratunkowe";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item45
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2740.033,200.85834,5176.0566};
+				angles[]={0,5.2269602,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2137;
+			type="ACE_medicalSupplyCrate_advanced";
+		};
+		class Item46
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2740.7456,200.85834,5177.2954};
+				angles[]={0,5.2269602,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2138;
+			type="ACE_medicalSupplyCrate_advanced";
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2739.1982,200.85834,5178.0444};
+				angles[]={0,2.0877111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2139;
+			type="ACE_medicalSupplyCrate_advanced";
+		};
+		class Item48
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2738.4827,200.85834,5176.8071};
+				angles[]={0,2.0877111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2140;
+			type="ACE_medicalSupplyCrate_advanced";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=14;
+			nextID=16;
 		};
 		class Links
 		{
-			items=14;
+			items=16;
 			class Item0
 			{
 				linkID=0;
@@ -35171,6 +35396,26 @@ class Mission
 				linkID=13;
 				item0=1400;
 				item1=2119;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item14
+			{
+				linkID=14;
+				item0=2134;
+				item1=729;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item15
+			{
+				linkID=15;
+				item0=2136;
+				item1=729;
 				class CustomData
 				{
 					type="Sync";

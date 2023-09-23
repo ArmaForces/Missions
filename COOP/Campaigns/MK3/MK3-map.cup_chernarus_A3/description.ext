@@ -72,6 +72,7 @@ class CfgFunctions
         class Common
         {
             class createChildActions {};
+            class hasPhone {};
             class isCop {};
             class isMedicalService {};
             class isMilitia {};
