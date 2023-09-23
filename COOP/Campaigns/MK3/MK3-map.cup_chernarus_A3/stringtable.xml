@@ -60,6 +60,10 @@
             <English>Rolled %1 (%2): %3</English>
             <Polish>Rzucił %1 (%2): %3</Polish>
         </Key>
+        <Key ID="STR_MKR_Scripts_Skills_RollConfirmation">
+            <English>Sent roll %1 (%2) to Zeus</English>
+            <Polish>Wysłano rzut %1 (%2) do Zeusa</Polish>
+        </Key>
     </Package>
 
     <Package name="Briefing">

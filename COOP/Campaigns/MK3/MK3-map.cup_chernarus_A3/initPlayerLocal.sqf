@@ -268,6 +268,8 @@ private _insertSkillsChildren = {
         private _rollResult = ceil random 20 + _skillBonusScore;
 
         [QGVAR(showZeusMessage), [_player, _skillName, _skillBonusScore, _rollResult]] call CBA_fnc_globalEvent;
+        private _confirmationMessage = format[LLSTRING(Skills_RollConfirmation), localize _skillName, _skillBonusScore];
+        _player commandChat _confirmationMessage;
     };
 
     private _actions = [];
