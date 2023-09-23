@@ -30,7 +30,7 @@ if (player call FUNC(isEmergencyService) || {!isNull getAssignedCuratorLogic pla
         _emergencyMessage = format ["%1 %2", _emergencyMessage, LLSTRING(Emergency_AmbulanceNeeded)];
     };
 
-    _unit commandChat _emergencyMessage;
+    _unit customChat [GVAR(emergencyNetId), _emergencyMessage];
 
     private _markerText = format [LLSTRING(EmergencyMarker), _localizedEmergencyTypeName, _time];
     [_position, _markerText] call FUNC(createEmergencyMarker);

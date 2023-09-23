@@ -5,6 +5,16 @@ GVAR(cbRadioPresetInitialized) = false;
 GVAR(customLocations) = call FUNC(initCustomLocations);
 publicVariable QGVAR(customLocations);
 
+private _channelName = "EmergencyNet";
+GVAR(emergencyNetId) = radioChannelCreate [[0.96, 0.3, 0.1, 1], _channelName, "112: %UNIT_NAME", []];
+[GVAR(emergencyNetId), {_this radioChannelAdd [player]}] remoteExec ["call", [0, -2] select isDedicated, _channelName];
+publicVariable QGVAR(emergencyNetId);
+
+private _channelName = "ZeusNet";
+GVAR(zeusNetId) = radioChannelCreate [[1.0, 0.8, 0.8, 1], _channelName, "ZEUS: %UNIT_NAME", []];
+[GVAR(zeusNetId), {_this radioChannelAdd [player]}] remoteExec ["call", [0, -2] select isDedicated, _channelName];
+publicVariable QGVAR(zeusNetId);
+
 {
     if (fuel _x isEqualTo 1) then {
         _x setFuel random 0.8 + 0.2;

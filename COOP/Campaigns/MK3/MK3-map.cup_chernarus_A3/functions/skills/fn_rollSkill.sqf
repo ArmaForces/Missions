@@ -26,4 +26,4 @@ private _rollResult = ceil random 20 + _skillBonusScore;
 
 private _confirmationMessage = format[LLSTRING(Skills_RollConfirmation), localize _skillName, _skillBonusScore];
 
-_player commandChat _confirmationMessage;
+_player customChat [GVAR(zeusNetId), _confirmationMessage];

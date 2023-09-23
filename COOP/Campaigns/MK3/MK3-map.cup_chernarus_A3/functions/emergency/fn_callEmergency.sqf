@@ -29,7 +29,9 @@ private _nearestLocationName = [_nearestLocationWithName] call FUNC(getLocationN
 [QGVAR(showEmergencyServicesNotification), [_player, _timeString, _position, _nearestLocationName, _type, _includeAmbulance]] call CBA_fnc_globalEvent;
 
 if (_includeAmbulance) then {
-    _player commandChat format [LLSTRING(Emergency_MilitiaAndAmbulanceCalled), localize _type];
+    private _message = format [LLSTRING(Emergency_MilitiaAndAmbulanceCalled), localize _type];
+    _player customChat [GVAR(emergencyNetId), _message];
 } else {
-    _player commandChat format [LLSTRING(Emergency_MilitiaCalled), localize _type];
+    private _message = format [LLSTRING(Emergency_MilitiaCalled), localize _type];
+    _player customChat [GVAR(emergencyNetId), _message];
 };

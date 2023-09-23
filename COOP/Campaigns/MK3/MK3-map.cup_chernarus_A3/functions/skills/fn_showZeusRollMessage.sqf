@@ -22,5 +22,5 @@ params ["_unit", "_skillName", "_skillBonusScore", "_rollResult"];
 // if (call ACEFUNC(common,hasZeusAccess)) exitWith {
 if (!isNull getAssignedCuratorLogic player) exitWith {
     private _rollMessage = format [LLSTRING(Skills_RolledMessage), localize _skillName, _skillBonusScore, _rollResult];
-    _unit commandChat _rollMessage;
+    _unit customChat [GVAR(zeusNetId), _rollMessage];
 };
