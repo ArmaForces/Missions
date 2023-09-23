@@ -132,11 +132,8 @@ addons[]=
 	"CUP_Editor_A2_Roads_Config",
 	"CUP_Weapons_Bren2",
 	"CUP_Weapons_West_Attachments",
-	"CDF90_Headgear",
-	"CDF90_Uniforms",
 	"ace_realisticnames",
 	"acre_sys_bf888s",
-	"CDF90_Vests",
 	"ace_grenades",
 	"CUP_Weapons_Makarov",
 	"jsrs_soundmod_cup_weapons",
@@ -150,7 +147,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=94;
+		items=91;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -654,63 +651,48 @@ class AddonsMetaData
 		};
 		class Item83
 		{
-			className="CDF90_Headgear";
-			name="CDF90_Headgear";
-		};
-		class Item84
-		{
-			className="CDF90_Uniforms";
-			name="CDF90_Uniforms";
-		};
-		class Item85
-		{
 			className="acre_sys_bf888s";
 			name="ACRE2 - BF 888S";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item86
-		{
-			className="CDF90_Vests";
-			name="CDF90_Vests";
-		};
-		class Item87
+		class Item84
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item88
+		class Item85
 		{
 			className="CUP_Weapons_Makarov";
 			name="CUP_Weapons_Makarov";
 		};
-		class Item89
+		class Item86
 		{
 			className="CUP_Weapons_AK";
 			name="jsrs_soundmod_cup_weapons";
 		};
-		class Item90
+		class Item87
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item91
+		class Item88
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item92
+		class Item89
 		{
 			className="CUP_Creatures_Military_PMC";
 			name="CUP_Creatures_Military_PMC";
 		};
-		class Item93
+		class Item90
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
