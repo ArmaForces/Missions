@@ -33,7 +33,9 @@ GVAR(allDocuments) set [
 GVAR(allDocuments) set [
     "TBD_Ajvar_UID", [
         ["ID", "Papalugos Inos" call _idFunc],
-        ["Prawo jazdy", "Samochód"]
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny Skoda", "Skoda Octavia, Czarna, CH-SV4JV4R"],
+        ["Dowód Rejestracyjny Gyros", "Skoda S1203, Zielona Gyros, CH-SV4JV4R2"]
 ]];
 
 // Bene
@@ -47,7 +49,8 @@ GVAR(allDocuments) set [
 GVAR(allDocuments) set [
     "TBD_Bolec_UID", [
         ["ID", "Aslanbek Abdurakhman" call _idFunc],
-        ["Prawo jazdy", "Samochód"]
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "Skoda 105L, Niebieska, TK-LMB073C"]
 ]];
 
 // Command DDOS
@@ -81,7 +84,7 @@ GVAR(allDocuments) set [
         ["ID", "Ivanion Hypev" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Pozwolenie na broń", "Brak własnej broni"],
-        ["Własność pojazdu", "UAZ 8014 MA"]
+        ["Dowód Rejestracyjny", "UAZ 8014 MA"]
 ]];
 
 // Jay
@@ -96,7 +99,9 @@ GVAR(allDocuments) set [
 GVAR(allDocuments) set [
     "TBD_Krystol_UID", [
         ["ID", "Bedřich Pavlaček" call _idFunc],
-        ["Prawo jazdy", "Samochód; Autobus; Motocykl"]
+        ["Prawo jazdy", "Samochód; Autobus; Motocykl"],
+        ["Legitymacja CKS", "Kierowca Czarnoruskich Kolei Samochodowych<br/>Bedřich Pavlaček<br/>Autobus CH-CKS003"],
+        ["Dowód Rejestracyjny", "TT650, Czerwono-biały, Bez numerów"]
 ]];
 
 // Mikkeboss
@@ -105,7 +110,8 @@ GVAR(allDocuments) set [
         ["ID", "Krasnolitus Bracelos" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Legitymacja wojskowa", "Kapitan Armii Czarnorusi<br/>W stanie spoczynku od 2020 roku<br/>Miejsce służby: Lotnisko Czarnoruś"],
-        ["Pozwolenie na broń", "AKM, CZ 550, 6P9"]
+        ["Pozwolenie na broń", "AKM, CZ 550, 6P9"],
+        ["Dowód Rejestracyjny", "Skoda Octavia, Biała, CH-LPM4J1K"]
 ]];
 
 // Monkey
@@ -120,7 +126,8 @@ GVAR(allDocuments) set [
 GVAR(allDocuments) set [
     "TBD_Nielu_UID", [
         ["ID", "Janek Jemniołek" call _idFunc],
-        ["Prawo jazdy", "Samochód"]
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "Łada, Czarna, CH-CHN137U"]
 ]];
 
 // Piesa
@@ -129,7 +136,7 @@ GVAR(allDocuments) set [
         ["ID", ["Toivo Iwanowicz", 1980] call _idFunc],
         ["Prawo jazdy", "Samochód; Motocykl"],
         ["Pozwolenie na broń", "Myśliwski sztucer po pradziadzie"],
-        ["Własność pojazdu", "Zardzewiały TT650"]
+        ["Dowód Rejestracyjny", "TT650, Zardzewiały, Bez numerów"]
 ]];
 
 // Renchon
@@ -140,11 +147,18 @@ GVAR(allDocuments) set [
         ["Pozwolenie na broń", "Sztucer"]
 ]];
 
+// Saper
+GVAR(allDocuments) set [
+    "TBD_Saper_UID", [
+        ["ID", "Janusz Сгам" call _idFunc]
+]];
+
 // Seweryn
 GVAR(allDocuments) set [
     "TBD_Seweryn_UID", [
         ["ID", "Kuta Napletes" call _idFunc],
-        ["Prawo jazdy", "Samochód; Traktor"]
+        ["Prawo jazdy", "Samochód; Traktor"],
+        ["Dowód Rejestracyjny", "Traktor CATOR 2009, Bez numerów"]
 ]];
 
 // Stalker
