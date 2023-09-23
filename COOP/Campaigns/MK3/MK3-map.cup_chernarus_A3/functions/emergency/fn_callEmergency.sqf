@@ -26,7 +26,7 @@ private _nearestLocationWithName = [_position] call FUNC(getNearestLocationWithA
 private _nearestLocationName = [_nearestLocationWithName] call FUNC(getLocationName);
 
 // Show different messages if ambulance is not included in an emergency call
-[QGVAR(emergencyServicesNotification), [_player, _timeString, _position, _nearestLocationName, _type, _includeAmbulance]] call CBA_fnc_globalEvent;
+[QGVAR(showEmergencyServicesNotification), [_player, _timeString, _position, _nearestLocationName, _type, _includeAmbulance]] call CBA_fnc_globalEvent;
 
 if (_includeAmbulance) then {
     _player commandChat format [LLSTRING(Emergency_MilitiaAndAmbulanceCalled), localize _type];

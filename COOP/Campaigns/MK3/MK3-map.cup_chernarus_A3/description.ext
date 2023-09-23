@@ -81,12 +81,15 @@ class CfgFunctions
             class addDocument {};
             class getDocuments {};
             class hasAnyDocument {};
+            class initDocumentsActions {};
             class showDocumentStatement {};
         };
         class Emergency
         {
             class callEmergency {};
             class createEmergencyMarker {};
+            class isEmergencyService {};
+            class showEmergencyServicesNotification {};
         };
         class InfoText
         {
@@ -100,6 +103,10 @@ class CfgFunctions
             class initPlayerPersonalVehicles {};
 			class removeMapObjects { preInit = 1; };
 		};
+        class Phone
+        {
+            class initPhoneActions {};
+        };
         class SerialKillers
         {
             class getAllMapCities {};
@@ -112,7 +119,9 @@ class CfgFunctions
         class Skills
         {
             class getSkills {};
+            class initSkillsActions {};
             class rollSkill {};
+            class showZeusRollMessage {};
         };
     };
 };

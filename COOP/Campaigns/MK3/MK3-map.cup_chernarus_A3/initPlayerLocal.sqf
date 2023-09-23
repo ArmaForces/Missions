@@ -131,179 +131,26 @@ CUP_stopLampCheck = true;
 [player] call FUNC(initBriefing);
 player addItem "ACE_Cellphone";
 
+// Init custom actions
+call FUNC(initDocumentsActions);
+call FUNC(initPhoneActions);
+call FUNC(initSkillsActions);
+
 // Enable medical menu for medics only
 private _isMedic = [player] call ACEFUNC(medical_treatment,isMedic);
 if (!_isMedic) then {
     [QACEGVAR(medical_gui,enableMedicalMenu), 0, 999999, "client", false] call CBA_settings_fnc_set;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-private _insertDocumentChildren = {
-    params ["_target", "_player", "_params"];
-
-    private _documents = [player] call FUNC(getDocuments);
-
-    private _documentsForActions = _documents apply {
-        _x params ["_documentName", "_documentContent"];
-        [_documentName, _documentName, FUNC(showDocumentStatement), _x]
-    };
-
-    [_documentsForActions] call FUNC(createChildActions);
-};
-
-private _condition = {[player] call FUNC(hasAnyDocument)};
-private _action = [QGVAR(documents), LLSTRING(ShowDocuments), "", {}, _condition, _insertDocumentChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
-
-// External action
-[
-    "CAManBase",
-    0,
-    ["ACE_MainActions"],
-    _action,
-    true
-] call ACEFUNC(interact_menu,addActionToClass);
-
-// Self action
-[
-    typeOf (player),
-    1,
-    ["ACE_SelfActions", "ACE_Equipment"],
-    _action,
-    false
-] call ACEFUNC(interact_menu,addActionToClass);
-
-
-
-
-
-[QGVAR(showZeusRollMessage), {
-    params ["_unit", "_skillName", "_skillBonusScore", "_rollResult"];
-
-    // TODO: Change to ACE function after release
-    // if (call ACEFUNC(common,hasZeusAccess)) exitWith {
-    if (!isNull getAssignedCuratorLogic player) exitWith {
-        private _rollMessage = format [LLSTRING(Skills_RolledMessage), localize _skillName, _skillBonusScore, _rollResult];
-        _unit commandChat _rollMessage;
-    };
-}] call CBA_fnc_addEventHandler;
-
-
-private _insertSkillsChildren = {
-    params ["_target", "_player", "_params"];
-
-    private _skills = [player] call FUNC(getSkills);
-
-    // Prepare skills for actions creation
-    private _skillsForActions = _skills apply {
-        _x params ["_skillName", "_skillBonusScore"];
-
-        [_skillName, format ["%1 (%2)", localize _skillName, _skillBonusScore], FUNC(rollSkill), _x]
-    };
-
-    [_skillsForActions] call FUNC(createChildActions);
-};
-
-private _skillsAction = [QGVAR(skills), LLSTRING(Skills), "", {}, {true}, _insertSkillsChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
-
-[
-    typeOf (player),
-    1,
-    ["ACE_SelfActions"],
-    _skillsAction,
-    false
-] call ACEFUNC(interact_menu,addActionToClass);
-
-
-
-
-
-[QGVAR(emergencyServicesNotification), {
-    if (!(player call FUNC(hasPhone))) exitWith {};
-
-    if (player call FUNC(isCop)
-    || {player call FUNC(isMedicalService)
-    || {!isNull getAssignedCuratorLogic player}}) then {
-        params ["_unit", "_time", "_position", "_nearestLocationName", "_emergencyTypeName", ["_needsAmbulance", false]];
-
-        private _localizedEmergencyTypeName = localize _emergencyTypeName;
-
-        private _emergencyMessage = format [LLSTRING(EmergencyMessage), _localizedEmergencyTypeName, _nearestLocationName, _time];
-        if (_needsAmbulance) then {
-            _emergencyMessage = format ["%1 %2", _emergencyMessage, LLSTRING(Emergency_AmbulanceNeeded)];
-        };
-
-        _unit commandChat _emergencyMessage;
-
-        private _markerText = format [LLSTRING(EmergencyMarker), _localizedEmergencyTypeName, _time];
-        [_position, _markerText] call FUNC(createEmergencyMarker);
-    };
-
-}] call CBA_fnc_addEventHandler;
-
-
-private _insertPhoneChildren = {
-    params ["_target", "_player", "_params"];
-
-    // Create child actions for 112 call with different report types
-    private _emergencyChildActions = {
-        params ["_target", "_player", "_params"];
-
-        private _types = [
-            ["emergency:accident", LLSTRING(Emergency_Accident), FUNC(callEmergency), [LSTRING(Emergency_Accident), true]],
-            ["emergency:violence", LLSTRING(Emergency_Violence), FUNC(callEmergency), [LSTRING(Emergency_Violence), true]],
-            ["emergency:tip", LLSTRING(Emergency_Tip), FUNC(callEmergency), [LSTRING(Emergency_Tip)]],
-            ["emergency:other", LLSTRING(Emergency_Other), FUNC(callEmergency), [LSTRING(Emergency_Other)]]
-        ];
-
-        [_types] call FUNC(createChildActions);
-    };
-
-    private _contacts = [
-        ["number:112", "112", {}, [], _emergencyChildActions]
-    ];
-
-    [_contacts] call FUNC(createChildActions);
-};
-
-
-
-private _phoneAction = [QGVAR(phone), localize "$STR_ace_explosives_cellphone_displayName", "", {}, {player call FUNC(hasPhone)}, _insertPhoneChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
-
-
-[
-    typeOf (player),
-    1,
-    ["ACE_SelfActions", "ACE_Equipment"],
-    _phoneAction,
-    false
-] call ACEFUNC(interact_menu,addActionToClass);
-
-
-
-
-
-
-
+/*
+    Custom CBA Event Handlers
+*/
+
+[QGVAR(showEmergencyServicesNotification), FUNC(showEmergencyServicesNotification)] call CBA_fnc_addEventHandler;
 
 [QGVAR(showIntroText), FUNC(initIntroText)] call CBA_fnc_addEventHandler;
 
+[QGVAR(showZeusRollMessage), FUNC(showZeusRollMessage)] call CBA_fnc_addEventHandler;
 
 
 
@@ -317,6 +164,10 @@ private _phoneAction = [QGVAR(phone), localize "$STR_ace_explosives_cellphone_di
 
 
 
+
+/*
+    SOME UNSORTED CRAP
+*/
 
 
 
