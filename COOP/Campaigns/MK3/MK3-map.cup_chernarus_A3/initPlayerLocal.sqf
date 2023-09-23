@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 GVAR(isZeus) = zeus isEqualTo player;
-player addItem "ItemMap";
+player assignItem "ItemMap";
 
 // Disable CUP street lights based on lighting levels (bad performance script)
 CUP_stopLampCheck = true;
@@ -17,7 +17,7 @@ CUP_stopLampCheck = true;
 
 // Add basic items
 [{
-    player addItem "ItemMap";
+    player assignItem "ItemMap";
     player addItem "ACE_Cellphone";
     if (!isNil "zeus" && {player isEqualTo zeus}) then {
         player addItem "ACE_key_master"
