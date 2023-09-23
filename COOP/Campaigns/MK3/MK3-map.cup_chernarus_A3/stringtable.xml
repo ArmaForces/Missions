@@ -410,5 +410,33 @@
             <English>Tishina Chedaki Camp</English>
             <Polish>Obóz Czedacki Tishina</Polish>
         </Key>
+        <Key ID="STR_MKR_Locations_CampTishinaWestOf">
+            <English>West of Tishina Camp</English>
+            <Polish>Na zachód od Obozu Tishina</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhood">
+            <English>Chernogorsk Freedom Neighborhood</English>
+            <Polish>Czernogórsk Osiedle Wolności</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodA">
+            <English>Chernogorsk Freedom Neighborhood bldg. A</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. A</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodB">
+            <English>Chernogorsk Freedom Neighborhood bldg. B</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. B</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodC">
+            <English>Chernogorsk Freedom Neighborhood bldg. C</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. C</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodD">
+            <English>Chernogorsk Freedom Neighborhood bldg. D</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. D</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodE">
+            <English>Chernogorsk Freedom Neighborhood bldg. E</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. E</Polish>
+        </Key>
     </Package>
 </Project>

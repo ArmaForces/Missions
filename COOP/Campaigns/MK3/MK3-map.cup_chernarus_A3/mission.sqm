@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2142;
+		nextID=2147;
 	};
 	class MarkerIDProvider
 	{
@@ -725,7 +725,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -1998,7 +1998,7 @@ class Mission
 									{
 										init="this setPlateNumber ""CH-CKS003"";";
 										name="krystol_bus";
-										textures="ChernaCiv";
+										textures="ChernaCivClean";
 									};
 									id=1726;
 									type="CUP_C_Ikarus_Chernarus";
@@ -2043,7 +2043,7 @@ class Mission
 																		class data
 																		{
 																			singleType="STRING";
-																			value="ChernaCiv";
+																			value="ChernaCivClean";
 																		};
 																	};
 																	class Item1
@@ -35017,17 +35017,17 @@ class Mission
 			name="CustomLocations";
 			class Entities
 			{
-				items=2;
+				items=6;
 				class Item0
 				{
 					dataType="Trigger";
-					position[]={2734.7561,206.53,5373.3379};
+					position[]={2737.7288,206.53,5366.293};
 					angle=0.20205677;
 					class Attributes
 					{
 						text="@STR_MKR_Locations_ZelenogorskMilitiaStation";
-						sizeA=6.8559999;
-						sizeB=7.198;
+						sizeA=12.427472;
+						sizeB=13.97678;
 						sizeC=12.927;
 						isRectangle=1;
 					};
@@ -35049,9 +35049,74 @@ class Mission
 					id=2130;
 					type="EmptyDetectorArea10x10";
 				};
+				class Item2
+				{
+					dataType="Trigger";
+					position[]={972.52594,173.69724,7251.7466};
+					angle=-3.1368783;
+					class Attributes
+					{
+						text="@STR_MKR_Locations_CampTishinaWestOf";
+						sizeA=52.45303;
+						sizeB=76.261101;
+						sizeC=12.927;
+						isRectangle=1;
+					};
+					id=2142;
+					type="EmptyDetectorArea10x10";
+					atlOffset=20.187714;
+				};
+				class Item3
+				{
+					dataType="Trigger";
+					position[]={6384.166,6.0999999,2733.6899};
+					angle=2.2306705;
+					class Attributes
+					{
+						text="@STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodB";
+						sizeA=6.8559999;
+						sizeB=8.2679996;
+						sizeC=15.995;
+						isRectangle=1;
+					};
+					id=2143;
+					type="EmptyDetectorArea10x10";
+				};
+				class Item4
+				{
+					dataType="Trigger";
+					position[]={6368.7749,6.1100001,2745.2639};
+					angle=2.2306705;
+					class Attributes
+					{
+						text="@STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodD";
+						sizeA=6.8559999;
+						sizeB=8.2679996;
+						sizeC=15.995;
+						isRectangle=1;
+					};
+					id=2145;
+					type="EmptyDetectorArea10x10";
+				};
+				class Item5
+				{
+					dataType="Trigger";
+					position[]={6385.73,6.0999999,2740.3669};
+					angle=2.2306705;
+					class Attributes
+					{
+						text="@STR_MKR_Locations_Chernogorsk_FreedomNeighborhood";
+						sizeA=49.587002;
+						sizeB=46.816002;
+						sizeC=21.423;
+						isRectangle=1;
+					};
+					id=2146;
+					type="EmptyDetectorArea10x10";
+				};
 			};
 			id=2126;
-			atlOffset=-118.09267;
+			atlOffset=-88.441391;
 		};
 		class Item44
 		{
