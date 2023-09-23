@@ -13,36 +13,27 @@
  * Public: No
  */
 
-private _insertDocumentChildren = {
+private _insertSkillsChildren = {
     params ["_target", "_player", "_params"];
 
-    private _documents = [player] call FUNC(getDocuments);
+    private _skills = [player] call FUNC(getSkills);
 
-    private _documentsForActions = _documents apply {
-        _x params ["_documentName", "_documentContent"];
-        [_documentName, _documentName, FUNC(showDocumentStatement), _x]
+    // Prepare skills for actions creation
+    private _skillsForActions = _skills apply {
+        _x params ["_skillName", "_skillBonusScore"];
+
+        [_skillName, format ["%1 (%2)", localize _skillName, _skillBonusScore], FUNC(rollSkill), _x]
     };
 
-    [_documentsForActions] call FUNC(createChildActions);
+    [_skillsForActions] call FUNC(createChildActions);
 };
 
-private _condition = {[player] call FUNC(hasAnyDocument)};
-private _action = [QGVAR(documents), LLSTRING(ShowDocuments), "", {}, _condition, _insertDocumentChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
+private _skillsAction = [QGVAR(skills), LLSTRING(Skills), "", {}, {true}, _insertSkillsChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
 
-// External action
-[
-    "CAManBase",
-    0,
-    ["ACE_MainActions"],
-    _action,
-    true
-] call ACEFUNC(interact_menu,addActionToClass);
-
-// Self action
 [
     typeOf (player),
     1,
-    ["ACE_SelfActions", "ACE_Equipment"],
-    _action,
+    ["ACE_SelfActions"],
+    _skillsAction,
     false
 ] call ACEFUNC(interact_menu,addActionToClass);
