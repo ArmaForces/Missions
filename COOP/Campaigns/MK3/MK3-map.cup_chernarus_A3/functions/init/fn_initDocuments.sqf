@@ -65,6 +65,13 @@ GVAR(allDocuments) set [
         ["ID", ["Jan Honza Mikes", 1987, "Česká republika"] call _idFunc]
 ]];
 
+// Godziak (OPFOR)
+GVAR(allDocuments) set [
+    "TBD_Godziak_UID", [
+        ["ID", ["Yewgenij Fisenko", nil, "Republika Czedacka"] call _idFunc],
+        ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"],
+]];
+
 // Haverex
 GVAR(allDocuments) set [
     "TBD_Haverex_UID", [
