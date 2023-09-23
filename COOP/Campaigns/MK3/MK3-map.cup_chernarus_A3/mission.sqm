@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2105;
+		nextID=2165;
 	};
 	class Camera
 	{
-		pos[]={1156.1969,209.96959,7231.2856};
-		dir[]={0.82699543,-0.56132019,0.031595472};
-		up[]={0.560911,0.82759869,0.021429678};
-		aside[]={0.038177282,-1.8626451e-009,-0.99927104};
+		pos[]={4510.9722,317.63428,6379.9165};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
-sourceName="MK3-map";
+sourceName="mk3-map";
 addons[]=
 {
 	"A3_Modules_F",
@@ -35238,11 +35238,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=16;
+			nextID=28;
 		};
 		class Links
 		{
-			items=16;
+			items=28;
 			class Item0
 			{
 				linkID=0;
@@ -35398,6 +35398,126 @@ class Mission
 				linkID=15;
 				item0=2136;
 				item1=729;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item16
+			{
+				linkID=16;
+				item0=1570;
+				item1=1617;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item17
+			{
+				linkID=17;
+				item0=1652;
+				item1=733;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item18
+			{
+				linkID=18;
+				item0=105;
+				item1=1703;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item19
+			{
+				linkID=19;
+				item0=1566;
+				item1=1703;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item20
+			{
+				linkID=20;
+				item0=1697;
+				item1=115;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item21
+			{
+				linkID=21;
+				item0=1695;
+				item1=84;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item22
+			{
+				linkID=22;
+				item0=57;
+				item1=1677;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item23
+			{
+				linkID=23;
+				item0=1679;
+				item1=62;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item24
+			{
+				linkID=24;
+				item0=1630;
+				item1=872;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item25
+			{
+				linkID=25;
+				item0=1630;
+				item1=1726;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item26
+			{
+				linkID=26;
+				item0=1621;
+				item1=122;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item27
+			{
+				linkID=27;
+				item0=1643;
+				item1=1654;
 				class CustomData
 				{
 					type="Sync";
