@@ -127,7 +127,9 @@ CUP_stopLampCheck = true;
 // }, [], 5] call CBA_fnc_waitAndExecute;
 
 [FUNC(initIntroText), [], 5] call CBA_fnc_waitAndExecute;
+[FUNC(initPlayerPersonalVehicles), [], 5] call CBA_fnc_waitAndExecute;
 [player] call FUNC(initBriefing);
+player addItem "ACE_Cellphone";
 
 // Enable medical menu for medics only
 private _isMedic = [player] call ACEFUNC(medical_treatment,isMedic);
@@ -153,47 +155,21 @@ if (!_isMedic) then {
 
 
 
-private _insertChildren = {
+private _insertDocumentChildren = {
     params ["_target", "_player", "_params"];
 
     private _documents = [player] call FUNC(getDocuments);
 
-    private _showDocumentStatement = {
-        params ["_target", "_player", "_documentData"];
-        _documentData params ["_documentName", "_documentContent"];
-
-        private _documentText = format ["%1<br/><br/>%2", _documentName, _documentContent];
-        private _lines = _documentText splitString "<>" select {_x find "br/" == -1};
-        private _size = 1.5 + 1 * count _lines;
-        if (_target isNotEqualTo _player) then {
-            ["ace_common_displayTextStructured", [format ["Pokazujesz:<br/>%1", _documentText], _size, _player], [_player]] call CBA_fnc_targetEvent;
-        };
-
-        ["ace_common_displayTextStructured", [_documentText, _size, _target], [_target]] call CBA_fnc_targetEvent;
+    private _documentsForActions = _documents apply {
+        _x params ["_documentName", "_documentContent"];
+        [_documentName, _documentName, FUNC(showDocumentStatement), _x]
     };
 
-    private _actions = [];
-    {
-        _x params ["_documentName", "_documentContent"];
-        private _actionName = format ["document:%1", _documentName];
-        private _action = [_actionName, _documentName, "", _showDocumentStatement, {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
-        _actions pushBack [_action, [], _target];
-    } forEach _documents;
-
-    _actions
+    [_documentsForActions] call FUNC(createChildActions);
 };
 
 private _condition = {[player] call FUNC(hasAnyDocument)};
-private _action = [QGVAR(documents), LLSTRING(ShowDocuments), "", {}, _condition, _insertChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
-
-// // Documents node
-// private _action = [
-//     QGVAR(documents),
-//     "Dokumenty",
-//     "",
-//     {},
-//     {[player] call FUNC(hasAnyDocument)}
-// ] call ACEFUNC(interact_menu,createAction);
+private _action = [QGVAR(documents), LLSTRING(ShowDocuments), "", {}, _condition, _insertDocumentChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
 
 // External action
 [
@@ -213,38 +189,11 @@ private _action = [QGVAR(documents), LLSTRING(ShowDocuments), "", {}, _condition
     false
 ] call ACEFUNC(interact_menu,addActionToClass);
 
-// // ID show
-// private _action = [
-//     QGVAR(documentId),
-//     "ID",
-//     "",
-//     {
-//         params ["_target", "_invoker", "_customParamsMaybe"];
-//         hint format ["D000pa: %1", _this]
-//     },
-//     {true}
-// ] call ACEFUNC(interact_menu,createAction);
-
-// // External action
-// [
-//     "CAManBase",
-//     0,
-//     ["ACE_MainActions", QGVAR(documents)],
-//     _action,
-//     true
-// ] call ACEFUNC(interact_menu,addActionToClass);
-
-// // Self action
-// [
-//     typeOf(player),
-//     1,
-//     ["ACE_SelfActions", "ACE_Equipment", QGVAR(documents)],
-//     _action,
-//     false
-// ] call ACEFUNC(interact_menu,addActionToClass);
 
 
-[QGVAR(showZeusMessage), {
+
+
+[QGVAR(showZeusRollMessage), {
     params ["_unit", "_skillName", "_skillBonusScore", "_rollResult"];
 
     // TODO: Change to ACE function after release
@@ -261,28 +210,14 @@ private _insertSkillsChildren = {
 
     private _skills = [player] call FUNC(getSkills);
 
-    private _rollSkillFnc = {
-        params ["_target", "_player", "_skill"];
-        _skill params ["_skillName", "_skillBonusScore"];
+    // Prepare skills for actions creation
+    private _skillsForActions = _skills apply {
+        _x params ["_skillName", "_skillBonusScore"];
 
-        private _rollResult = ceil random 20 + _skillBonusScore;
-
-        [QGVAR(showZeusMessage), [_player, _skillName, _skillBonusScore, _rollResult]] call CBA_fnc_globalEvent;
-        private _confirmationMessage = format[LLSTRING(Skills_RollConfirmation), localize _skillName, _skillBonusScore];
-        _player commandChat _confirmationMessage;
+        [_skillName, format ["%1 (%2)", localize _skillName, _skillBonusScore], FUNC(rollSkill), _x]
     };
 
-    private _actions = [];
-    {
-        _x params ["_skillName", "_skillBonusScore"];
-        // private _actionName = format ["skill:%1", _skillName];
-        private _nodeName = format ["%1 (%2)", localize _skillName, _skillBonusScore];
-        private _actionName = _skillName;
-        private _action = [_actionName, _nodeName, "", _rollSkillFnc, {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
-        _actions pushBack [_action, [], _target];
-    } forEach _skills;
-
-    _actions
+    [_skillsForActions] call FUNC(createChildActions);
 };
 
 private _skillsAction = [QGVAR(skills), LLSTRING(Skills), "", {}, {true}, _insertSkillsChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
@@ -299,8 +234,66 @@ private _skillsAction = [QGVAR(skills), LLSTRING(Skills), "", {}, {true}, _inser
 
 
 
+[QGVAR(emergencyServicesNotification), {
+    if (!(player call FUNC(hasPhone))) exitWith {};
+
+    if (player call FUNC(isCop)
+    || {player call FUNC(isMedicalService)
+    || {!isNull getAssignedCuratorLogic player}}) then {
+        params ["_unit", "_time", "_position", "_nearestLocationName", "_emergencyTypeName", ["_needsAmbulance", false]];
+
+        private _localizedEmergencyTypeName = localize _emergencyTypeName;
+
+        private _emergencyMessage = format [LLSTRING(EmergencyMessage), _localizedEmergencyTypeName, _nearestLocationName, _time];
+        if (_needsAmbulance) then {
+            _emergencyMessage = format ["%1 %2", _emergencyMessage, LLSTRING(Emergency_AmbulanceNeeded)];
+        };
+
+        _unit commandChat _emergencyMessage;
+
+        private _markerText = format [LLSTRING(EmergencyMarker), _localizedEmergencyTypeName, _time];
+        [_position, _markerText] call FUNC(createEmergencyMarker);
+    };
+
+}] call CBA_fnc_addEventHandler;
 
 
+private _insertPhoneChildren = {
+    params ["_target", "_player", "_params"];
+
+    // Create child actions for 112 call with different report types
+    private _emergencyChildActions = {
+        params ["_target", "_player", "_params"];
+
+        private _types = [
+            ["emergency:accident", LLSTRING(Emergency_Accident), FUNC(callEmergency), [LSTRING(Emergency_Accident), true]],
+            ["emergency:violence", LLSTRING(Emergency_Violence), FUNC(callEmergency), [LSTRING(Emergency_Violence), true]],
+            ["emergency:tip", LLSTRING(Emergency_Tip), FUNC(callEmergency), [LSTRING(Emergency_Tip)]],
+            ["emergency:other", LLSTRING(Emergency_Other), FUNC(callEmergency), [LSTRING(Emergency_Other)]]
+        ];
+
+        [_types] call FUNC(createChildActions);
+    };
+
+    private _contacts = [
+        ["number:112", "112", {}, [], _emergencyChildActions]
+    ];
+
+    [_contacts] call FUNC(createChildActions);
+};
+
+
+
+private _phoneAction = [QGVAR(phone), localize "$STR_ace_explosives_cellphone_displayName", "", {}, {player call FUNC(hasPhone)}, _insertPhoneChildren, [], "", 4, [false, false, false, false, false], {}] call ace_interact_menu_fnc_createAction;
+
+
+[
+    typeOf (player),
+    1,
+    ["ACE_SelfActions", "ACE_Equipment"],
+    _phoneAction,
+    false
+] call ACEFUNC(interact_menu,addActionToClass);
 
 
 

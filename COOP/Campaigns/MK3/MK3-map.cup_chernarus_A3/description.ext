@@ -71,6 +71,9 @@ class CfgFunctions
         };
         class Common
         {
+            class createChildActions {};
+            class isCop {};
+            class isMedicalService {};
             class isMilitia {};
         };
         class Documents
@@ -78,6 +81,12 @@ class CfgFunctions
             class addDocument {};
             class getDocuments {};
             class hasAnyDocument {};
+            class showDocumentStatement {};
+        };
+        class Emergency
+        {
+            class callEmergency {};
+            class createEmergencyMarker {};
         };
         class InfoText
         {
@@ -88,6 +97,7 @@ class CfgFunctions
             class checkLicensePlates { postInit = 1; };
             class initBriefing {};
             class initDocuments {};
+            class initPlayerPersonalVehicles {};
 			class removeMapObjects { preInit = 1; };
 		};
         class SerialKillers
@@ -96,10 +106,13 @@ class CfgFunctions
             class getLocationName {};
             class getNearestLocationWithAvailableName {};
             class initSerialKillersFunctions { preInit = 1; }
+            class markerDecay {};
+            class markerDecayLoop {};
         };
         class Skills
         {
             class getSkills {};
+            class rollSkill {};
         };
     };
 };

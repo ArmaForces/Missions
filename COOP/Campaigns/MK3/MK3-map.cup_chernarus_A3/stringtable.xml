@@ -28,6 +28,7 @@
             <English>Show documents</English>
             <Polish>Pokaż dokumenty</Polish>
         </Key>
+
         <Key ID="STR_MKR_Scripts_Skills">
             <English>Skills</English>
             <Polish>Umiejętności</Polish>
@@ -63,6 +64,48 @@
         <Key ID="STR_MKR_Scripts_Skills_RollConfirmation">
             <English>Sent roll %1 (%2) to Zeus</English>
             <Polish>Wysłano rzut %1 (%2) do Zeusa</Polish>
+        </Key>
+
+        <Key ID="STR_MKR_Scripts_OwnedVehicle">
+            <English>You own %1 with registration number %2</English>
+            <Polish>Jesteś właścicielem %1 z numerem rejestracyjnym %2</Polish>
+        </Key>
+
+        <Key ID="STR_MKR_Scripts_Emergency_MilitiaCalled">
+            <English>Reported %1 and called emergency services. Militia is on its way.</English>
+            <Polish>Zgłoszono %1 i wezwano służby ratownicze. Milicja jest w drodze.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_MilitiaAndAmbulanceCalled">
+            <English>Reported %1 and called emergency services. Militia and ambulance are on their way.</English>
+            <Polish>Zgłoszono %1 i wezwano służby ratownicze. Milicja i karetka są w drodze.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_EmergencyMessage">
+            <English>Reported %1 near %2 at %3.</English>
+            <Polish>Zgłoszono %1 w pobliżu %2 o godzinie %3.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_AmbulanceNeeded">
+            <English>Ambulance needed.</English>
+            <Polish>Potrzebna karetka.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_EmergencyMarker">
+            <English>%1 at %2</English>
+            <Polish>%1 o %2</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Accident">
+            <English>Accident</English>
+            <Polish>Wypadek</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Violence">
+            <English>Violence</English>
+            <Polish>Przemoc</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Tip">
+            <English>Tip</English>
+            <Polish>Donos</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Other">
+            <English>Other</English>
+            <Polish>Inne</Polish>
         </Key>
     </Package>
 
