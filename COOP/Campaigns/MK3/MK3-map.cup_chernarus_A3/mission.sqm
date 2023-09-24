@@ -33108,7 +33108,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="ext1Group";
+				name="chdkzGroup1";
 				init="this setVariable [""MKR_Scripts_isChedaki"", true];";
 			};
 			id=1826;
@@ -34907,7 +34907,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				textures="ChernaCiv";
+				textures="ChernaCivClean";
 			};
 			id=2017;
 			type="CUP_C_Ikarus_Chernarus";
@@ -34938,7 +34938,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ChernaCiv";
+													value="ChernaCivClean";
 												};
 											};
 											class Item1
@@ -35215,6 +35215,7 @@ class Mission
 			};
 			class Attributes
 			{
+				name="ambulance";
 			};
 			id=2133;
 			class CustomAttributes
