@@ -39,4 +39,8 @@
 // Preset stuff
 #define RESPAWN_HELPER_VR respawn
 
+// MK:R stuff
+#define VEHICLE_LOCKED_CHANCE 0.7
+#define VEHICLE_ALARM_CHANCE 0.5
+
 #include "\x\cba\addons\main\script_macros_mission.hpp"

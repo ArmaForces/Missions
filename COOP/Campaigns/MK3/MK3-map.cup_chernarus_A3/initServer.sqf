@@ -20,10 +20,14 @@ publicVariable QGVAR(zeusNetId);
         _x setFuel random 0.8 + 0.2;
     };
 
+    if (typeOf _x isEqualTo "RDS_Ikarus_Civ_01") then {
+        _x setObjectTextureGlobal [0, "z\aftm\addons\cup_vehicles\data\bus_exterior_co_no_plate.paa"];
+    };
+
     _x addItemCargoGlobal ["ACE_fieldDressing", ceil random 2 + 4];
     _x addItemCargoGlobal ["ACE_tourniquet", round random 1 + 1];
 
-    if (random 1 > 0.6) then {
+    if (random 1 > (1 - VEHICLE_LOCKED_CHANCE)) then {
         [_x, true] call ACE_vehiclelock_fnc_setVehicleLockEH;
     };
 
@@ -38,6 +42,8 @@ call FUNC(initDocuments);
 [QGVAR(addDocument), {
     _this call FUNC(addDocument);
 }] call CBA_fnc_addEventHandler;
+
+[QGVAR(carAlarm), FUNC(carAlarm)] call CBA_fnc_addEventHandler;
 
 // 0 setFog 0.2;
 // 0 setOvercast 1;

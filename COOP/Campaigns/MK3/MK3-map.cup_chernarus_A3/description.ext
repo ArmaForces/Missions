@@ -125,7 +125,13 @@ class CfgFunctions
             class rollSkill {};
             class showZeusRollMessage {};
         };
+        class VehicleLock
+        {
+            class carAlarm {};
+            class carAlarmLoop {};
+        };
     };
 };
 
 #include "CfgInfoText.hpp"
+#include "CfgTasks.hpp"

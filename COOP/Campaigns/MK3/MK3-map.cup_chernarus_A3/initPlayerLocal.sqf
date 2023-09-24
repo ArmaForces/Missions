@@ -27,18 +27,18 @@ CUP_stopLampCheck = true;
             case WEST: {
                 // Separate militia from chedaks as they should not share keys
                 if (player call FUNC(isMilitia)) then {
-                    player addItem "ACE_key_west"
+                    player addItem "ACE_key_west";
                 } else {
                     player addItem "ACE_key_east";
                 }
             };
-            case EAST: { player addItem "ACE_key_east" };
-            case INDEPENDENT: { player addItem "ACE_key_indp" };
+            case EAST: { player addItem "ACE_key_east"; };
+            case INDEPENDENT: { player addItem "ACE_key_indp"; };
             default {
                 if (player call FUNC(isMedicalService)) then {
                     // Nothing for medics
                 } else {
-                    player addItem "ACE_key_lockpick"
+                    player addItem "ACE_key_lockpick";
                 };
             };
         };
@@ -66,8 +66,21 @@ if (!_isMedic) then {
 
 [QGVAR(showZeusRollMessage), FUNC(showZeusRollMessage)] call CBA_fnc_addEventHandler;
 
+["ace_vehiclelock_startedLockpick", {
+    params ["_lockpickedVehicle"];
 
+    private _hasAlarm = _lockpickedVehicle getVariable [QGVAR(hasAlarm), objNull];
+    if (isNull _hasAlarm) then {
+        _hasAlarm = random 1 > (1 - VEHICLE_ALARM_CHANCE);
+        _lockpickedVehicle setVariable [QGVAR(hasAlarm), _hasAlarm, true];
+    };
 
+    if (_hasAlarm) then {
+        [QGVAR(carAlarm), [_lockpickedVehicle]] call CBA_fnc_globalEvent;
+    };
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(carAlarm), FUNC(carAlarm)] call CBA_fnc_addEventHandler;
 
 
 
