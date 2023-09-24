@@ -19,6 +19,21 @@ CUP_stopLampCheck = true;
 [{
     player assignItem "ItemMap";
     player addItem "ACE_Cellphone";
+
+    // Chance for cigarettes
+    if (random 1 > 0.5) then {
+        if (random 1 > 0.9) then {
+            player addItem "murshun_cigs_cig0";
+        } else {
+            player addItem "murshun_cigs_cigpack";
+        };
+    };
+    // Chance for lighter or matches
+    if (random 1 > 0.5) then {
+        player addItem (selectRandom ["murshun_cigs_lighter", "murshun_cigs_matches"]);
+    };
+
+    // Add keys
     if (!isNil "zeus" && {player isEqualTo zeus}) then {
         player addItem "ACE_key_master"
     } else {
