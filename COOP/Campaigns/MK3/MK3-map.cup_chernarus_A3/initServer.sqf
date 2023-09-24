@@ -20,16 +20,19 @@ publicVariable QGVAR(zeusNetId);
         _x setFuel random 0.8 + 0.2;
     };
 
+    if (random 1 > (1 - VEHICLE_LOCKED_CHANCE)) then {
+        [_x, true] call ACE_vehiclelock_fnc_setVehicleLockEH;
+    };
+
+    if (!(_x isKindOf "LandVehicle")) exitWith {};
+
     if (typeOf _x isEqualTo "RDS_Ikarus_Civ_01") then {
         _x setObjectTextureGlobal [0, "z\aftm\addons\cup_vehicles\data\bus_exterior_co_no_plate.paa"];
     };
 
     _x addItemCargoGlobal ["ACE_fieldDressing", ceil random 2 + 4];
     _x addItemCargoGlobal ["ACE_tourniquet", round random 1 + 1];
-
-    if (random 1 > (1 - VEHICLE_LOCKED_CHANCE)) then {
-        [_x, true] call ACE_vehiclelock_fnc_setVehicleLockEH;
-    };
+    _x addItemCargoGlobal ["rds_car_warning_triangle_to11", 1];
 
     private _isMilitiaVehicle = typeOf _x in ["CUP_LADA_LM_CIV", "CUP_C_S1203_Militia_CIV"];
     if (_isMilitiaVehicle) then {
