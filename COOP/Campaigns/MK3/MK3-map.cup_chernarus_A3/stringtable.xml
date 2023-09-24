@@ -171,25 +171,25 @@
             <English>Medical menu available only for medics or in hospital/medical vehicle. Please don't enable it manually.</English>
             <Polish>Menu medyczne dostępne tylko dla medyków lub w szpitalu/pojeździe medycznym. Proszę o nie kombinowanie i nie włączanie go ręcznie.</Polish>
         </Key>
-        <Key ID="STR_MKR_Briefing_EmergencySystem">
-            <English>Emergency number system</English>
-            <Polish>System numeru alarmowego</Polish>
+        <Key ID="STR_MKR_Briefing_EmergencyNumber">
+            <English>Emergency number (112)</English>
+            <Polish>Numer alarmowy (112)</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_EmergencyStuff">
             <English>If you have a cellphone in inventory, you can access emergency services menu via ACE Self Action -> Equipment -> Cellphone -> 112. When you use one of actions listed there, emergency services will be notified with your current position and type of emergency you choose. You'll probably need to wait a few minutes before they arrive. If they don't arrive in e.g., 4-5 minutes, retry the call freely. Don't abuse this as it's sent to Zeus too and you might get banned!</English>
             <Polish>Jeżeli masz w ekwipunku telefon komórkowy, możesz zadzwonić pod numer alarmowy poprzez ACE Self Action -> Ekwipunek -> Telefon komórkowy -> 112. Gdy użyjesz jednej z wylistowanych akcji, odpowiednie służby zostaną powiadomione o Twojej pozycji i wybranym typie problemu. Prawdopodobnie będziesz musiał poczekać kilka minut nim przyjadą. Jeżeli nie przyjadą w ciągu 4-5 minut, spokojnie wezwij jeszcze raz. Nie nadużywaj tych opcji, Zeus również dostaje notyfikacje i możesz zostać zbanowany!</Polish>
         </Key>
-        <Key ID="STR_MKR_Briefing_DocumentsSystem">
-            <English>Documents system</English>
-            <Polish>System dokumentów</Polish>
+        <Key ID="STR_MKR_Briefing_Documents">
+            <English>Documents</English>
+            <Polish>Dokumenty</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_DocumentsStuff">
             <English>If your character has documents assigned, they'll be available via ACE Self Action -> Documents. Using action will show you the document on the right handside of the screen. Action is also available on other players, which makes it possible to show the document to other player. Document will also be shown to you, just so you know what you're showing. Among the documents there could be various ID cards, passports, driver licenses, proofs of registration, various cards and others.</English>
             <Polish>Jeżeli Twoja postać posiada przypisane dokumenty, będą one dostępne pod ACE Self Action -> Dokumenty. Użycie akcji pokaże Ci dokument w okienku po prawej stronie ekranu. Akcja jest również dostępna na innych osobach, dzięki czemu można pokazać komuś dokument. Dokument pokaże się również Tobie, żebyś wiedział co pokazujesz. Pośród dokumentów mogą się znaleźć różnego rodzaju karty identyfikacyjne, paszporty, prawa jazdy, dowody rejestracyjne, legitymacje wszelkiego rodzaju i inne.</Polish>
         </Key>
-        <Key ID="STR_MKR_Briefing_SkillsSystem">
-            <English>Skills system</English>
-            <Polish>System umiejętności</Polish>
+        <Key ID="STR_MKR_Briefing_Skills">
+            <English>Skills</English>
+            <Polish>Umiejętności</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_SkillsStuff">
             <English>There's a test version of skills system in this mission. You should not use this on your own, only if asked by Zeus! This sends a message to Zeus, so be sure he asked you before even opening the menu, to avoid accidental messaging. Skills are accessible via ACE Self Action -> Skills -> Particular skill. Using the action results in a d20 roll + bonus listed in parenthesis by a skill name. The result is sent to Zeus and not revealed to you! This might be useful in cases where you're trying to convince someone of something, but they don't want to be convinced, to resolve the stalemate when Zeus notices that it could speed up the game.</English>
