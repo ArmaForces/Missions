@@ -20,6 +20,9 @@ publicVariable QGVAR(zeusNetId);
         _x setFuel random 0.8 + 0.2;
     };
 
+    _x addItemCargoGlobal ["ACE_fieldDressing", ceil random 2 + 4];
+    _x addItemCargoGlobal ["ACE_tourniquet", round random 1 + 1];
+
     if (random 1 > 0.6) then {
         [_x, true] call ACE_vehiclelock_fnc_setVehicleLockEH;
     };

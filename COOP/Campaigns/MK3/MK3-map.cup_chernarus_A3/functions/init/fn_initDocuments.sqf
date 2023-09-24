@@ -69,7 +69,7 @@ GVAR(allDocuments) set [
 GVAR(allDocuments) set [
     "TBD_Godziak_UID", [
         ["ID", ["Yewgenij Fisenko", nil, "Republika Czedacka"] call _idFunc],
-        ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"],
+        ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"]
 ]];
 
 // Haverex
