@@ -200,8 +200,8 @@
             <Polish>Inne zmiany</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_OtherChanges">
-            <English>Militia Lada's power has been boosted to allow pursuits.</English>
-            <Polish>Milicyjne Łady zostały dopakowane mocą, żeby umożliwić prowadzenie pościgu.</Polish>
+            <English>Militia Lada's power has been boosted to allow pursuits. Personal vehicles can be locked using unique keys. Militia and Chedaki vehicles are lockable using side key WEST and EAST respectively. Lockpicks allow opening closed vehicles. Two custom chat channels created for scripts use, don't use them.</English>
+            <Polish>Milicyjne Łady zostały dopakowane mocą, żeby umożliwić prowadzenie pościgu. Pojazdy osobiste są blokowane kluczami unikalnymi. Pojazdy Milicji i Czedaków kluczami stron odpowiedni WEST i EAST. Wytrychy pozwalają otworzyć zamknięte pojazdy. Dwa nowe kanały czatu na potrzeby skryptów, nie używać ich.</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_Rationale">
             <Polish>Cała kampania nastawiona jest na maksymalny możliwy realizm oraz podejście, że życie jest najważniejsze i nie warto go ryzykować jak nie trzeba. Liczebność przeciwnika będzie realistyczna a co za tym idzie, będzie on musiał być dużo bardziej skuteczny. Taktyka kryj ryj będzie Waszym chlebem powszednim a dobre manewrowanie i flankowanie główną bronią. Koniec fal bezmyślnych botów, nadchodzi czas myślenia głowom a nie dupom.</Polish>
