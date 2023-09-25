@@ -163,10 +163,10 @@ player addEventHandler ["HitPart", {
         private _setUnconscious = true;
         private _minimumUnconsciousTime = random 15 + 10;
         private _forceWakeupIfStable = true;
-        systemChat format ["Sleeping for %1", _minimumUnconsciousTime];
+        // systemChat format ["Sleeping for %1", _minimumUnconsciousTime];
         [_target, _setUnconscious] call ace_medical_status_fnc_setUnconsciousState;
         [{
-            systemChat "Wake up!";
+            // systemChat "Wake up!";
             [_this, false] call ace_medical_status_fnc_setUnconsciousState;
             _this setVariable ["crow_x26_canTase", true];
         }, _target, _minimumUnconsciousTime] call CBA_fnc_waitAndExecute;
@@ -174,16 +174,72 @@ player addEventHandler ["HitPart", {
     };
 }];
 
+/*
+GÓWNO OSRANE NIE DZIAŁĄ W DUPIE TO MAM
+["ace_firedPlayer", {
+    params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
+    // systemChat format ["FIREEEED! %1", _this];
+
+    #define THROWABLE_OBJECTS ["CANS_ammo", "BOTTLE_ammo", "ROCK_ammo"]
+    #define CANS_OBJECTS ["Land_Can_Dented_F", "Land_Can_Rusty_F", "Can_small", "Land_Can_V1_F", "Land_Can_V3_F", "Land_Can_V2_F", "Land_TacticalBacon_F"]
+    #define BOTTLE_OBJECTS ["Land_BottlePlastic_V2_F", "Land_BottlePlastic_V1_F"]
+
+    if (!(_ammo in THROWABLE_OBJECTS)) exitWith { nil };
+    // systemChat "Can thrown!";
+
+    // systemChat format ["Velocity: %1 | Mass: %2", str _velocity, _mass];
+
+    // private _newProjectile = createVehicle ["Land_Can_Dented_F", getPosATL _projectile, [], 0, "CAN_COLLIDE"];
+    private _vehicleType = selectRandom CANS_OBJECTS;
+    private _itemType = "CANS_MAG";
+    if (_ammo isEqualTo "BOTTLE_ammo") then {
+        _vehicleType = selectRandom BOTTLE_OBJECTS;
+    };
+
+    private _trackedProjectile = if (!(_ammo isEqualTo "ROCK_ammo")) then {
+        private _newProjectile = createVehicle [_vehicleType, getPosATL _projectile, [], 0, "CAN_COLLIDE"];
+        // _newProjectile setDir random 360;
+        private _velocity = velocity _projectile;
+        private _mass = getMass _projectile;
+        _newProjectile setMass (_mass * 100);
+        _newProjectile setVelocity _velocity;// vectorMultiply 100;
+        deleteVehicle _projectile;
+        _newProjectile
+    } else {
+        _itemType = "ROCK_MAG";
+        _projectile
+    };
+
+    [{
+        systemChat "Removing throwable";
+        deleteVehicle (_this select 0);
+        private _nearestHolders = nearestObjects [getPos (_this select 0), ["WeaponHolderSimulated", "GroundWeaponHolder", "Default"], 4];
+        private _holder = if (count _nearestHolders isEqualTo 0) then {
+            private _weaponHolder = createVehicle ["GroundWeaponHolder", [0, 0, 0], [], 0, "CAN_COLLIDE"];
+            _weaponHolder setPos getPos (_this select 0);
+        } else {
+            _nearestHolders select 0;
+        };
+
+        _holder addItemCargoGlobal [_this select 1, 1];
+        _holder addMagazineCargoGlobal [_this select 1, 1];
+    }, [_trackedProjectile, _itemType], 15] call CBA_fnc_waitAndExecute;
+}] call CBA_fnc_addEventHandler;
+*/
+
+/*
 // Handle cans hitting players
 player addEventHandler ["Fired", {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-    systemChat format ["Fired ammo: %1 | magazine: %2", _ammo, _magazine];
-    if (_ammo isNotEqualTo "CANS_ammo") exitWith { nil };
-    systemChat "Can thrown!";
+    // systemChat format ["Fired ammo: %1 | magazine: %2", _ammo, _magazine];
+
+    #define THROWABLE_OBJECTS ["CANS_ammo", "BOTTLE_ammo", "ROCK_ammo"]
+    if (!(_ammo in THROWABLE_OBJECTS)) exitWith { nil };
+    // systemChat "Can thrown!";
 
     private _velocity = velocity _projectile;
     private _mass = getMass _projectile;
-    systemChat format ["Velocity: %1 | Mass: %2", str _velocity, _mass];
+    // systemChat format ["Velocity: %1 | Mass: %2", str _velocity, _mass];
 
     // private _newProjectile = createVehicle ["Land_Can_Dented_F", getPosATL _projectile, [], 0, "CAN_COLLIDE"];
     private _newProjectile = createVehicle ["Land_Can_Rusty_F", getPosATL _projectile, [], 0, "CAN_COLLIDE"];
@@ -191,6 +247,21 @@ player addEventHandler ["Fired", {
     _newProjectile setMass (_mass * 100);
     _newProjectile setVelocity _velocity;// vectorMultiply 100;
     deleteVehicle _projectile;
+
+    [{speed _this < 0.1}, {
+        deleteVehicle _this;
+        private _nearestHolders = nearestObjects [getPos _this, ["WeaponHolderSimulated", "GroundWeaponHolder", "Default"], 4];
+        private _holder = if (count _nearestHolders isEqualTo 0) then {
+            private _weaponHolder = createVehicle ["GroundWeaponHolder", [0, 0, 0], [], 0, "CAN_COLLIDE"];
+            _weaponHolder setPos getPos _this;
+        } else {
+            _nearestHolders select 0;
+        };
+
+        _holder addItemCargoGlobal "";
+    }, _newProjectile, 15, {
+        deleteVehicle _this;
+    }] call CBA_fnc_waitUntilAndExecute;
 
     // [{
     //     private _projectile = _this;
@@ -222,3 +293,4 @@ player addEventHandler ["Fired", {
     //     [_object2, true] call ace_medical_status_fnc_setUnconsciousState;
     // }];
 }];
+*/
