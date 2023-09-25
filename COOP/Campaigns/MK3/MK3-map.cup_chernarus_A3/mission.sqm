@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2227;
+		nextID=2238;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2297;
+		nextID=2364;
 	};
 	class Camera
 	{
-		pos[]={3822.3345,317.72858,8860.6348};
-		dir[]={-0.95970076,-0.27812397,-0.040267866};
-		up[]={-0.27787948,0.96054524,-0.011659482};
-		aside[]={-0.041921891,9.3132257e-010,0.99912095};
+		pos[]={2862.7344,240.95631,5423.4727};
+		dir[]={-0.85954142,-0.47282955,-0.19454667};
+		up[]={-0.46121791,0.8811177,-0.10438824};
+		aside[]={-0.22077544,-5.3772237e-007,0.97543234};
 	};
 };
 binarizationWanted=0;
-sourceName="mk3-map";
+sourceName="MK3-map";
 addons[]=
 {
 	"A3_Modules_F",
@@ -51,6 +51,8 @@ addons[]=
 	"CUP_Creatures_People_Civil_Chernarus",
 	"A3_Weapons_F",
 	"CUP_Creatures_People_Civil_Takistan",
+	"CUP_Creatures_Military_USArmy",
+	"CUP_Creatures_Military_TakiInsurgents",
 	"CUP_Creatures_Military_CDF",
 	"CUP_Weapons_CZ75",
 	"CUP_Weapons_Ammunition",
@@ -75,6 +77,15 @@ addons[]=
 	"CUP_WheeledVehicles_Hilux",
 	"CUP_WheeledVehicles_UAZ",
 	"CUP_WheeledVehicles_Datsun",
+	"rhs_sounds",
+	"armaforces_rhs_cba_mag_compat_afrf",
+	"ace_compat_rhs_afrf3",
+	"acre_main",
+	"rhs_c_troops",
+	"A3_Weapons_F_Items",
+	"ace_medical_engine",
+	"ace_goggles",
+	"A3_Characters_F_Orange_Facewear",
 	"CUP_WheeledVehicles_Ural",
 	"CUP_WheeledVehicles_Volha",
 	"CUP_Wheeledvehicles_VWGolf",
@@ -138,18 +149,16 @@ addons[]=
 	"ace_grenades",
 	"CUP_Weapons_Makarov",
 	"jsrs_soundmod_cup_weapons",
-	"acre_main",
-	"rhs_c_troops",
 	"CUP_Creatures_Military_PMC",
-	"A3_Weapons_F_Items",
-	"ace_medical_engine",
+	"ace_optics",
+	"A3_Characters_F_Heads",
 	"A3_Structures_F_Heli_Furniture"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=92;
+		items=100;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -247,458 +256,509 @@ class AddonsMetaData
 		};
 		class Item16
 		{
+			className="CUP_Creatures_Military_USArmy";
+			name="CUP_Creatures_Military_USArmy";
+		};
+		class Item17
+		{
+			className="CUP_Creatures_Military_TakiInsurgents";
+			name="CUP_Creatures_Military_TakiInsurgents";
+		};
+		class Item18
+		{
 			className="CUP_Creatures_Military_CDF";
 			name="CUP_Creatures_Military_CDF";
 		};
-		class Item17
+		class Item19
 		{
 			className="CUP_Weapons_CZ75";
 			name="CUP_Weapons_CZ75";
 		};
-		class Item18
+		class Item20
 		{
 			className="CUP_Weapons_Ammunition";
 			name="CUP_Weapons_Ammunition";
 		};
-		class Item19
+		class Item21
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item22
 		{
 			className="A3_Characters_F_Enoch";
 			name="Arma 3 Contact Platform - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item23
 		{
 			className="CUP_Creatures_Military_NAPA";
 			name="CUP_Creatures_Military_NAPA";
 		};
-		class Item22
+		class Item24
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item25
 		{
 			className="afmed_medical_treatment";
 			name="AFMED - medical_treatment";
 			author="ArmaForces";
 		};
-		class Item24
+		class Item26
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item25
+		class Item27
 		{
 			className="murshun_cigs";
 			name="murshun_cigs";
 		};
-		class Item26
+		class Item28
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item29
 		{
 			className="rhsgref_c_troops";
 			name="GREF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item28
+		class Item30
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item31
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item32
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item31
+		class Item33
 		{
 			className="acre_sys_prc152";
 			name="ACRE2 - AN/PRC-152";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item32
+		class Item34
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item35
 		{
 			className="CUP_CAStructures_Rail";
 			name="CUP_CAStructures_Rail";
 		};
-		class Item34
+		class Item36
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item37
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item36
+		class Item38
 		{
 			className="rhsgref_c_a2port_armor";
 			name="BRDM-2";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item37
+		class Item39
 		{
 			className="CUP_WheeledVehicles_Hilux";
 			name="CUP_WheeledVehicles_Hilux";
 		};
-		class Item38
+		class Item40
 		{
 			className="CUP_WheeledVehicles_UAZ";
 			name="CUP_WheeledVehicles_UAZ";
 		};
-		class Item39
+		class Item41
 		{
 			className="CUP_WheeledVehicles_Datsun";
 			name="CUP_WheeledVehicles_Datsun";
 		};
-		class Item40
-		{
-			className="CUP_WheeledVehicles_Ural";
-			name="CUP_WheeledVehicles_Ural";
-		};
-		class Item41
-		{
-			className="CUP_WheeledVehicles_Volha";
-			name="CUP_WheeledVehicles_Volha";
-		};
 		class Item42
 		{
-			className="CUP_Wheeledvehicles_VWGolf";
-			name="CUP_Wheeledvehicles_VWGolf";
-		};
-		class Item43
-		{
-			className="CUP_WheeledVehicles_S1203";
-			name="CUP_WheeledVehicles_S1203";
-		};
-		class Item44
-		{
-			className="CUP_WheeledVehicles_V3S";
-			name="CUP_WheeledVehicles_V3S";
-		};
-		class Item45
-		{
-			className="CUP_WheeledVehicles_Pickup";
-			name="CUP_WheeledVehicles_Pickup";
-		};
-		class Item46
-		{
-			className="A3_Weapons_F_Enoch";
-			name="Arma 3 Contact Platform - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item47
-		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item48
-		{
-			className="CUP_Weapons_Deagle";
-			name="CUP_Weapons_Deagle";
-		};
-		class Item49
-		{
-			className="CUP_Editor_Plants_Config";
-			name="CUP_Editor_Plants_Config";
-		};
-		class Item50
-		{
-			className="CUP_Misc3_Config";
-			name="CUP_Misc3_Config";
-		};
-		class Item51
-		{
-			className="rhsgref_c_weapons";
-			name="GREF Weapons";
+			className="rhs_sounds";
+			name="AFRF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item52
+		class Item43
 		{
-			className="A3_Props_F_Orange";
-			name="Arma 3 Orange - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
+			className="armaforces_rhs_cba_mag_compat_afrf";
+			name="ArmaForces - RHS CBA Mag Compat - AFRF";
+			author="3Mydlo3, veteran29";
 		};
-		class Item53
+		class Item44
 		{
-			className="A3_Structures_F_Oldman";
-			name="Arma 3 Old Man - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item54
-		{
-			className="CUP_Editor_Structures_Config";
-			name="CUP_Editor_Structures_Config";
-		};
-		class Item55
-		{
-			className="CUP_Misc_e_Config";
-			name="CUP_Misc_e_Config";
-		};
-		class Item56
-		{
-			className="A3_Structures_F";
-			name="Arma 3 - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item57
-		{
-			className="A3_Props_F_Enoch";
-			name="Arma 3 Contact Platform - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item58
-		{
-			className="CUP_Editor_Signs_Config";
-			name="CUP_Editor_Signs_Config";
-		};
-		class Item59
-		{
-			className="ace_sitting";
-			name="ACE3 - Sitting";
+			className="ace_compat_rhs_afrf3";
+			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item60
-		{
-			className="A3_Structures_F_Enoch_Industrial";
-			name="Arma 3 Contact Platform - Industrial Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item61
-		{
-			className="A3_Misc_F";
-			name="Arma 3 - 3D Aids and Helpers";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item62
-		{
-			className="A3_Structures_F_EPC";
-			name="Arma 3 Win Episode - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item63
-		{
-			className="A3_Structures_F_Heli";
-			name="Arma 3 Helicopters - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item64
-		{
-			className="A3_Structures_F_EPA";
-			name="Arma 3 Survive Episode - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item65
-		{
-			className="CUP_CAMisc";
-			name="CUP_CAMisc";
-		};
-		class Item66
-		{
-			className="CUP_Core";
-			name="CUP_Core";
-		};
-		class Item67
-		{
-			className="CUP_Creatures_StaticWeapons";
-			name="CUP_Creatures_StaticWeapons";
-		};
-		class Item68
-		{
-			className="CUP_Editor_Buildings_Config";
-			name="CUP_Editor_Buildings_Config";
-		};
-		class Item69
-		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item70
-		{
-			className="A3_Structures_F_Kart";
-			name="Arma 3 Karts - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item71
-		{
-			className="CUP_CASigns2";
-			name="CUP_CASigns2";
-		};
-		class Item72
-		{
-			className="A3_Props_F_Exp";
-			name="Arma 3 Apex - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item73
-		{
-			className="CUP_CAStructures_E_Misc_Misc_Interier";
-			name="CUP_CAStructures_E_Misc_Misc_Interier";
-		};
-		class Item74
-		{
-			className="A3_Signs_F";
-			name="Arma 3 - Signs";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item75
-		{
-			className="ace_interaction";
-			name="ACE3 - Interaction";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item76
-		{
-			className="ace_cargo";
-			name="ACE3 - Cargo";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item77
-		{
-			className="CUP_Creatures_People_Core";
-			name="CUP_Creatures_People_Core";
-		};
-		class Item78
-		{
-			className="CUP_Editor_A2_Roads_Config";
-			name="CUP_Editor_A2_Roads_Config";
-		};
-		class Item79
-		{
-			className="CUP_Weapons_Bren2";
-			name="CUP_Weapons_Bren2";
-		};
-		class Item80
-		{
-			className="CUP_Weapons_West_Attachments";
-			name="CUP_Weapons_West_Attachments";
-		};
-		class Item81
-		{
-			className="CDF90_Headgear";
-			name="CDF90_Headgear";
-		};
-		class Item82
-		{
-			className="CDF90_Uniforms";
-			name="CDF90_Uniforms";
-		};
-		class Item83
-		{
-			className="acre_sys_bf888s";
-			name="ACRE2 - BF 888S";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item84
-		{
-			className="CDF90_Vests";
-			name="CDF90_Vests";
-		};
-		class Item85
-		{
-			className="ace_grenades";
-			name="ACE3 - Grenades";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item86
-		{
-			className="CUP_Weapons_Makarov";
-			name="CUP_Weapons_Makarov";
-		};
-		class Item87
-		{
-			className="CUP_Weapons_AK";
-			name="jsrs_soundmod_cup_weapons";
-		};
-		class Item88
+		class Item45
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item89
+		class Item46
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item47
+		{
+			className="ace_medical_engine";
+			name="ACE3 - Medical Engine";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item48
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item49
+		{
+			className="A3_Characters_F_Orange";
+			name="Arma 3 Orange - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item50
+		{
+			className="CUP_WheeledVehicles_Ural";
+			name="CUP_WheeledVehicles_Ural";
+		};
+		class Item51
+		{
+			className="CUP_WheeledVehicles_Volha";
+			name="CUP_WheeledVehicles_Volha";
+		};
+		class Item52
+		{
+			className="CUP_Wheeledvehicles_VWGolf";
+			name="CUP_Wheeledvehicles_VWGolf";
+		};
+		class Item53
+		{
+			className="CUP_WheeledVehicles_S1203";
+			name="CUP_WheeledVehicles_S1203";
+		};
+		class Item54
+		{
+			className="CUP_WheeledVehicles_V3S";
+			name="CUP_WheeledVehicles_V3S";
+		};
+		class Item55
+		{
+			className="CUP_WheeledVehicles_Pickup";
+			name="CUP_WheeledVehicles_Pickup";
+		};
+		class Item56
+		{
+			className="A3_Weapons_F_Enoch";
+			name="Arma 3 Contact Platform - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item57
+		{
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item58
+		{
+			className="CUP_Weapons_Deagle";
+			name="CUP_Weapons_Deagle";
+		};
+		class Item59
+		{
+			className="CUP_Editor_Plants_Config";
+			name="CUP_Editor_Plants_Config";
+		};
+		class Item60
+		{
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
+		};
+		class Item61
+		{
+			className="rhsgref_c_weapons";
+			name="GREF Weapons";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item62
+		{
+			className="A3_Props_F_Orange";
+			name="Arma 3 Orange - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item63
+		{
+			className="A3_Structures_F_Oldman";
+			name="Arma 3 Old Man - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item64
+		{
+			className="CUP_Editor_Structures_Config";
+			name="CUP_Editor_Structures_Config";
+		};
+		class Item65
+		{
+			className="CUP_Misc_e_Config";
+			name="CUP_Misc_e_Config";
+		};
+		class Item66
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item67
+		{
+			className="A3_Props_F_Enoch";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item68
+		{
+			className="CUP_Editor_Signs_Config";
+			name="CUP_Editor_Signs_Config";
+		};
+		class Item69
+		{
+			className="ace_sitting";
+			name="ACE3 - Sitting";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item70
+		{
+			className="A3_Structures_F_Enoch_Industrial";
+			name="Arma 3 Contact Platform - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item71
+		{
+			className="A3_Misc_F";
+			name="Arma 3 - 3D Aids and Helpers";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item72
+		{
+			className="A3_Structures_F_EPC";
+			name="Arma 3 Win Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item73
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item74
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item75
+		{
+			className="CUP_CAMisc";
+			name="CUP_CAMisc";
+		};
+		class Item76
+		{
+			className="CUP_Core";
+			name="CUP_Core";
+		};
+		class Item77
+		{
+			className="CUP_Creatures_StaticWeapons";
+			name="CUP_Creatures_StaticWeapons";
+		};
+		class Item78
+		{
+			className="CUP_Editor_Buildings_Config";
+			name="CUP_Editor_Buildings_Config";
+		};
+		class Item79
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item80
+		{
+			className="A3_Structures_F_Kart";
+			name="Arma 3 Karts - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item81
+		{
+			className="CUP_CASigns2";
+			name="CUP_CASigns2";
+		};
+		class Item82
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item83
+		{
+			className="CUP_CAStructures_E_Misc_Misc_Interier";
+			name="CUP_CAStructures_E_Misc_Misc_Interier";
+		};
+		class Item84
+		{
+			className="A3_Signs_F";
+			name="Arma 3 - Signs";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item85
+		{
+			className="ace_interaction";
+			name="ACE3 - Interaction";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item86
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item87
+		{
+			className="CUP_Creatures_People_Core";
+			name="CUP_Creatures_People_Core";
+		};
+		class Item88
+		{
+			className="CUP_Editor_A2_Roads_Config";
+			name="CUP_Editor_A2_Roads_Config";
+		};
+		class Item89
+		{
+			className="CUP_Weapons_Bren2";
+			name="CUP_Weapons_Bren2";
+		};
 		class Item90
+		{
+			className="CUP_Weapons_West_Attachments";
+			name="CUP_Weapons_West_Attachments";
+		};
+		class Item91
+		{
+			className="CDF90_Headgear";
+			name="CDF90_Headgear";
+		};
+		class Item92
+		{
+			className="CDF90_Uniforms";
+			name="CDF90_Uniforms";
+		};
+		class Item93
+		{
+			className="acre_sys_bf888s";
+			name="ACRE2 - BF 888S";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
+		};
+		class Item94
+		{
+			className="CDF90_Vests";
+			name="CDF90_Vests";
+		};
+		class Item95
+		{
+			className="ace_grenades";
+			name="ACE3 - Grenades";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item96
+		{
+			className="CUP_Weapons_Makarov";
+			name="CUP_Weapons_Makarov";
+		};
+		class Item97
+		{
+			className="CUP_Weapons_AK";
+			name="jsrs_soundmod_cup_weapons";
+		};
+		class Item98
 		{
 			className="CUP_Creatures_Military_PMC";
 			name="CUP_Creatures_Military_PMC";
 		};
-		class Item91
+		class Item99
 		{
-			className="ace_medical_engine";
-			name="ACE3 - Medical Engine";
+			className="ace_optics";
+			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
@@ -715,10 +775,10 @@ dlcs[]=
 	"Expansion",
 	"Mark",
 	"Kart",
+	"RHS_AFRF",
 	"ORANGE",
 	"Oldman",
-	"Heli",
-	"RHS_AFRF"
+	"Heli"
 };
 randomSeed=54071;
 class ScenarioData
@@ -2516,6 +2576,17 @@ class Mission
 							{
 								description="Papalugos Inos";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Labcoat_01";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+								};
 							};
 							id=1703;
 							type="CUP_C_C_Doctor_01";
@@ -2603,6 +2674,8 @@ class Mission
 										typeName="CUP_U_C_Pilot_01";
 										isBackpack=0;
 									};
+									map="ItemMap";
+									compass="ItemCompass";
 									watch="ItemWatch";
 								};
 							};
@@ -2685,6 +2758,18 @@ class Mission
 							{
 								description="Aslanbek Abdurakhman";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_O_TKI_Khet_Partug_08";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									goggles="CUP_G_Tan_Scarf_GPS";
+								};
 							};
 							id=1677;
 							type="CUP_C_TK_Man_08";
@@ -2765,6 +2850,17 @@ class Mission
 							{
 								description="Karol ""Komandos"" Wrobel";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Rocker_04";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+								};
 							};
 							id=1705;
 							type="CUP_C_C_Rocker_04";
@@ -2844,6 +2940,17 @@ class Mission
 							{
 								description="Waldemar Biały";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Labcoat_03";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+								};
 							};
 							id=1701;
 							type="CUP_C_C_Assistant_01";
@@ -2924,6 +3031,23 @@ class Mission
 							{
 								description="Raashid ""Kaboom"" el-Karam";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_O_TKI_Khet_Partug_06";
+										isBackpack=0;
+									};
+									class vest
+									{
+										typeName="CUP_V_OI_TKI_Jacket6_06";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									goggles="CUP_G_ESS_BLK_Ember";
+								};
 							};
 							id=1695;
 							type="CUP_C_TK_Man_06_Waist";
@@ -3097,6 +3221,17 @@ class Mission
 							{
 								description="Janek „Jemniom” Jemniołek";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Tracksuit_01";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+								};
 							};
 							id=1679;
 							type="CUP_C_C_Bully_01";
@@ -3178,6 +3313,17 @@ class Mission
 								name="busTicketer";
 								description="Kierowca autobusu@ChKS";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Suit_01";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+								};
 							};
 							id=1632;
 							type="CUP_C_C_Functionary_01";
@@ -3258,6 +3404,17 @@ class Mission
 							{
 								description="Janusz Сгам";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Labcoat_02";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+								};
 							};
 							id=1699;
 							type="CUP_C_C_Schoolteacher_01";
@@ -3338,6 +3495,18 @@ class Mission
 							{
 								description="Kuta 'Napi' Napletes";
 								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Villager_03";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="CUP_H_C_Beret_03";
+								};
 							};
 							id=1697;
 							type="CUP_C_C_Villager_03";
@@ -5549,7 +5718,7 @@ class Mission
 							};
 							id=581;
 							type="Box_Syndicate_Ammo_F";
-							atlOffset=1.1536255;
+							atlOffset=1.1535797;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -8770,6 +8939,7 @@ class Mission
 							};
 							id=187;
 							type="rhsgref_ins_zil131_open";
+							atlOffset=1.5258789e-005;
 						};
 						class Item16
 						{
@@ -8862,6 +9032,76 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=674;
 					type="rhsgref_ins_rifleman_akm";
@@ -8984,6 +9224,77 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Sport_Checkered";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=656;
 					type="rhsgref_ins_rifleman_akm";
@@ -9090,6 +9401,76 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=658;
 					type="rhsgref_ins_rifleman_akm";
@@ -9196,6 +9577,76 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=660;
 					type="rhsgref_ins_rifleman_akm";
@@ -9302,6 +9753,77 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Aviator";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=662;
 					type="rhsgref_ins_rifleman_akm";
@@ -9408,6 +9930,76 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=664;
 					type="rhsgref_ins_rifleman_akm";
@@ -9554,6 +10146,76 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=666;
 					type="rhsgref_ins_rifleman_akm";
@@ -9660,6 +10322,76 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=668;
 					type="rhsgref_ins_rifleman_akm";
@@ -9806,6 +10538,76 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=670;
 					type="rhsgref_ins_rifleman_akm";
@@ -9912,6 +10714,76 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=672;
 					type="rhsgref_ins_rifleman_akm";
@@ -10018,6 +10890,76 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm";
+								muzzle="rhs_acc_dtkakm";
+								firemode="rhs_weap_akm:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm_bakelite";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_reed";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm_bakelite";
+										count=3;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgd5";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="rhs_beanie_green";
+						};
 					};
 					id=676;
 					type="rhsgref_ins_rifleman_akm";
@@ -13282,7 +14224,7 @@ class Mission
 							};
 							id=1455;
 							type="CUP_C_S1203_CIV_CR";
-							atlOffset=-9.1552734e-005;
+							atlOffset=0.016937256;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26943,6 +27885,16 @@ class Mission
 							flags=7;
 							class Attributes
 							{
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="CUP_U_C_Villager_02";
+										isBackpack=0;
+									};
+									watch="ItemWatch";
+									headgear="CUP_H_C_Beret_02";
+								};
 							};
 							id=833;
 							type="CUP_C_C_Villager_02";
@@ -30008,6 +30960,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Villager_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beret_01";
+						};
 					};
 					id=1709;
 					type="CUP_C_C_Villager_01";
@@ -30055,6 +31019,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Worker_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beanie_01";
+						};
 					};
 					id=1715;
 					type="CUP_C_C_Worker_01";
@@ -30072,6 +31048,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Villager_02";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beret_02";
+						};
 					};
 					id=1720;
 					type="CUP_C_C_Villager_02";
@@ -30088,6 +31076,17 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Rocker_02";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1755;
 					type="CUP_C_C_Rocker_02";
@@ -30135,6 +31134,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Worker_02";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beanie_02";
+						};
 					};
 					id=1757;
 					type="CUP_C_C_Worker_02";
@@ -30214,6 +31225,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Villager_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beret_01";
+						};
 					};
 					id=1732;
 					type="CUP_C_C_Villager_01";
@@ -30260,6 +31283,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Villager_04";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beret_04";
+						};
 					};
 					id=1737;
 					type="CUP_C_C_Villager_04";
@@ -30276,6 +31311,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Worker_04";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beanie_04";
+						};
 					};
 					id=1739;
 					type="CUP_C_C_Worker_04";
@@ -30292,6 +31339,17 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Rocker_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1741;
 					type="CUP_C_C_Rocker_01";
@@ -30308,6 +31366,19 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Woodlander_04";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="CUP_G_Aviator";
+							headgear="CUP_H_C_Ushanka_04";
+						};
 					};
 					id=1743;
 					type="CUP_C_C_Woodlander_04";
@@ -30355,6 +31426,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Profiteer_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="H_Cap_tan";
+						};
 					};
 					id=1745;
 					type="CUP_C_C_Profiteer_01";
@@ -30402,6 +31485,17 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Citizen_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1747;
 					type="CUP_C_C_Citizen_01";
@@ -30418,6 +31512,17 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Citizen_03";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1749;
 					type="CUP_C_C_Citizen_03";
@@ -30434,6 +31539,17 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Citizen_02";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1751;
 					type="CUP_C_C_Citizen_02";
@@ -30450,6 +31566,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_racketeer_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="CUP_G_Spectacles";
+						};
 					};
 					id=1753;
 					type="CUP_C_C_Racketeer_01";
@@ -30499,6 +31627,26 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Functionary_jacket_01";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ItemMap";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1759;
 					type="CUP_C_C_Functionary_jacket_01";
@@ -30516,6 +31664,27 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Rocker_02";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ItemMap";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="CUP_G_Aviator";
+						};
 					};
 					id=1761;
 					type="CUP_C_C_Rocker_02";
@@ -30532,6 +31701,27 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Citizen_03";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ItemMap";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="CUP_G_Spectacles";
+						};
 					};
 					id=1764;
 					type="CUP_C_C_Citizen_03";
@@ -30548,6 +31738,26 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_racketeer_04";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ItemMap";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1767;
 					type="CUP_C_C_Racketeer_04";
@@ -30566,6 +31776,26 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Rocker_04";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ItemMap";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1771;
 					type="CUP_C_C_Rocker_04";
@@ -30582,6 +31812,28 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Worker_03";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ItemMap";
+										count=2;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="CUP_G_Spectacles_Tinted";
+							headgear="CUP_H_C_Beanie_03";
+						};
 					};
 					id=1773;
 					type="CUP_C_C_Worker_03";
@@ -30660,6 +31912,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Villager_02";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beret_02";
+						};
 					};
 					id=1775;
 					type="CUP_C_C_Villager_02";
@@ -30676,6 +31940,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Worker_03";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beanie_03";
+						};
 					};
 					id=1777;
 					type="CUP_C_C_Worker_03";
@@ -30692,6 +31968,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Villager_03";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beret_03";
+						};
 					};
 					id=1779;
 					type="CUP_C_C_Villager_03";
@@ -30708,6 +31996,17 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Tracksuit_04";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1781;
 					type="CUP_C_C_Bully_04";
@@ -30724,6 +32023,17 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Rocker_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=1783;
 					type="CUP_C_C_Rocker_01";
@@ -30740,6 +32050,18 @@ class Mission
 					class Attributes
 					{
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_racketeer_02";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="CUP_G_Spectacles";
+						};
 					};
 					id=1785;
 					type="CUP_C_C_Racketeer_02";
@@ -34464,6 +35786,91 @@ class Mission
 						name="baseCommander";
 						description="Dowódca@Obsada bazy";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_aks74u";
+								muzzle="rhs_acc_pgs64_74u";
+								firemode="rhs_weap_aks74u:FullAuto";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_545x39_7N6_AK";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhs_weap_rsp30_red";
+							};
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="rhsgref_uniform_specter";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="rhs_30Rnd_545x39_7N6_AK";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_rgn";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhs_6sh92_digi_radio";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="rhs_30Rnd_545x39_7N6_AK";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_545x39_AK_green";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Shades_Black";
+							headgear="rhsgref_patrolcap_specter";
+						};
 					};
 					id=1845;
 					type="rhsgref_ins_squadleader";
@@ -35421,6 +36828,8 @@ class Mission
 								typeName="CUP_U_C_Labcoat_01";
 								isBackpack=0;
 							};
+							map="ItemMap";
+							compass="ItemCompass";
 							watch="ItemWatch";
 						};
 					};
@@ -35464,6 +36873,8 @@ class Mission
 								typeName="CUP_U_C_Labcoat_01";
 								isBackpack=0;
 							};
+							map="ItemMap";
+							compass="ItemCompass";
 							watch="ItemWatch";
 						};
 					};
@@ -35896,6 +37307,7 @@ class Mission
 							};
 							id=2187;
 							type="Land_ChairPlastic_F";
+							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35993,6 +37405,7 @@ class Mission
 							};
 							id=2190;
 							type="Land_ChairPlastic_F";
+							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36025,6 +37438,7 @@ class Mission
 							};
 							id=2203;
 							type="Land_ChairPlastic_F";
+							atlOffset=0.069961548;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36290,7 +37704,7 @@ class Mission
 							};
 							id=2211;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.0027618408;
+							atlOffset=0.0028381348;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36802,7 +38216,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2737.2356,211.77214,5369.3872};
-						angles[]={-0,3.3420844,0};
+						angles[]={0,3.3420844,0};
 					};
 					side="Empty";
 					flags=4;
@@ -36836,7 +38250,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2739.0115,211.40067,5367.834};
-						angles[]={-0,3.1983905,0};
+						angles[]={0,3.1983905,0};
 					};
 					side="Empty";
 					flags=4;
@@ -36870,7 +38284,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2739.1067,211.40067,5369.1377};
-						angles[]={-0,0.21528202,0};
+						angles[]={0,0.21528202,0};
 					};
 					side="Empty";
 					flags=4;
@@ -36887,7 +38301,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2738.3665,211.77214,5369.1523};
-						angles[]={-0,3.2676353,0};
+						angles[]={0,3.2676353,0};
 					};
 					side="Empty";
 					flags=4;
@@ -36904,7 +38318,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2736.3689,211.40067,5369.4897};
-						angles[]={-0,2.3233569,0};
+						angles[]={0,2.3233569,0};
 					};
 					side="Empty";
 					flags=4;
@@ -36938,7 +38352,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2737.7495,211.68929,5367.9258};
-						angles[]={-0,3.337914,0};
+						angles[]={0,3.337914,0};
 					};
 					side="Empty";
 					flags=4;
@@ -36955,7 +38369,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2738.9167,211.40067,5366.7651};
-						angles[]={-0,4.6818419,0};
+						angles[]={0,4.6818419,0};
 					};
 					side="Empty";
 					flags=4;
