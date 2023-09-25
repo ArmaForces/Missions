@@ -817,7 +817,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										class data
@@ -834,6 +834,14 @@ class CustomAttributes
 											value="diwako_dui_nametags_enabled";
 										};
 									};
+									class Item2
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_advanced_fatigue_enabled";
+										};
+									};
 								};
 							};
 						};
@@ -844,7 +852,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										class data
@@ -873,6 +881,33 @@ class CustomAttributes
 										};
 									};
 									class Item1
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item2
 									{
 										class data
 										{
