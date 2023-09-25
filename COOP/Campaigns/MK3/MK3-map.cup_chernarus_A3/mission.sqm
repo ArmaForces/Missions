@@ -939,7 +939,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=43;
+		items=44;
 		class Item0
 		{
 			dataType="Layer";
@@ -36788,6 +36788,186 @@ class Mission
 			};
 			id=2217;
 			atlOffset=-88.52887;
+		};
+		class Item43
+		{
+			dataType="Layer";
+			name="Backup Roadblock items";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2737.2356,211.77214,5369.3872};
+						angles[]={-0,3.3420844,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2228;
+					type="RoadBarrier_small_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2736.1418,211.40067,5368.4746};
+						angles[]={0,3.399096,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2229;
+					type="RoadCone_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2739.0115,211.40067,5367.834};
+						angles[]={-0,3.1983905,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2236;
+					type="RoadCone_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2737.6409,211.68929,5366.8521};
+						angles[]={0,3.3429484,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2230;
+					type="RoadBarrier_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2739.1067,211.40067,5369.1377};
+						angles[]={-0,0.21528202,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2231;
+					type="RoadCone_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2738.3665,211.77214,5369.1523};
+						angles[]={-0,3.2676353,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2232;
+					type="RoadBarrier_small_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2736.3689,211.40067,5369.4897};
+						angles[]={-0,2.3233569,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2233;
+					type="RoadCone_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2735.937,211.40067,5367.2207};
+						angles[]={0,5.364553,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2227;
+					type="RoadCone_F";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2737.7495,211.68929,5367.9258};
+						angles[]={-0,3.337914,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2234;
+					type="RoadBarrier_F";
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2738.9167,211.40067,5366.7651};
+						angles[]={-0,4.6818419,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						skill=0.2;
+					};
+					id=2235;
+					type="RoadCone_F";
+				};
+			};
+			id=2237;
 		};
 	};
 	class Connections
