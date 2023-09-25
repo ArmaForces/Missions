@@ -174,6 +174,18 @@ player addEventHandler ["HitPart", {
     };
 }];
 
+["ace_firedPlayer", {
+    params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
+
+    #define THROWABLE_OBJECTS ["CANS_ammo", "BOTTLE_ammo", "ROCK_ammo"]
+    #define CANS_OBJECTS ["Land_Can_Dented_F", "Land_Can_Rusty_F", "Can_small", "Land_Can_V1_F", "Land_Can_V3_F", "Land_Can_V2_F", "Land_TacticalBacon_F"]
+    #define BOTTLE_OBJECTS ["Land_BottlePlastic_V2_F", "Land_BottlePlastic_V1_F"]
+
+    if (!(_ammo in THROWABLE_OBJECTS)) exitWith { nil };
+    // Safeguard to prevent throwables staying forever
+    [{deleteVehicle _this}, _projectile, 300] call CBA_fnc_waitAndExecute;
+}] call CBA_fnc_addEventHandler;
+
 /*
 GÓWNO OSRANE NIE DZIAŁĄ W DUPIE TO MAM
 ["ace_firedPlayer", {
