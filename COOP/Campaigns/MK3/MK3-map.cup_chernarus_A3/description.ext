@@ -101,7 +101,7 @@ class CfgFunctions
             class checkLicensePlates { postInit = 1; };
             class initBriefing {};
             class initCbRadio {};
-            class initCbRadioPreset {};
+            class initCbRadioPresets {};
             class initCustomLocations {};
             class initDocuments {};
             class initPlayerPersonalVehicles {};
