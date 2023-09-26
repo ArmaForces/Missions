@@ -5,6 +5,14 @@ GVAR(cbRadioPresetInitialized) = false;
 GVAR(customLocations) = call FUNC(initCustomLocations);
 publicVariable QGVAR(customLocations);
 
+// Setup weather
+ACEGVAR(weather,currentTemperature) = 2;
+publicVariable QACEGVAR(weather,currentTemperature);
+ACEGVAR(weather,currentHumitidy) = 0.70;
+publicVariable QACEGVAR(weather,currentHumitidy);
+0 setOvercast 0.3;
+
+// Setup custom chat channels for scripts
 private _channelName = "EmergencyNet";
 GVAR(emergencyNetId) = radioChannelCreate [[0.96, 0.3, 0.1, 1], _channelName, "112: %UNIT_NAME", []];
 [GVAR(emergencyNetId), {_this radioChannelAdd [player]}] remoteExec ["call", [0, -2] select isDedicated, _channelName];
@@ -15,6 +23,7 @@ GVAR(zeusNetId) = radioChannelCreate [[1.0, 0.8, 0.8, 1], _channelName, "ZEUS: %
 [GVAR(zeusNetId), {_this radioChannelAdd [player]}] remoteExec ["call", [0, -2] select isDedicated, _channelName];
 publicVariable QGVAR(zeusNetId);
 
+// Setup all vehicles with randomized stuff
 {
     if (fuel _x isEqualTo 1) then {
         _x setFuel random 0.8 + 0.2;
@@ -36,11 +45,19 @@ publicVariable QGVAR(zeusNetId);
 
     private _isMilitiaVehicle = typeOf _x in ["CUP_LADA_LM_CIV", "CUP_C_S1203_Militia_CIV"];
     if (_isMilitiaVehicle) then {
+        [_x, WEST] call FUNC(initCbRadio);
         _x setVariable ["ace_vehiclelock_lockSide", WEST];
+    } else {
+        private _vehicleSide = [_x] call BIS_fnc_objectSide;
+        [_x, _vehicleSide] call FUNC(initCbRadio);
     };
 } forEach vehicles;
 
 call FUNC(initDocuments);
+
+/*
+    Register Event Handlers
+*/
 
 [QGVAR(addDocument), {
     _this call FUNC(addDocument);

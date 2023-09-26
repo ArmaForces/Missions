@@ -15,6 +15,11 @@ CUP_stopLampCheck = true;
 [FUNC(initPlayerPersonalVehicles), [], 5] call CBA_fnc_waitAndExecute;
 [player] call FUNC(initBriefing);
 
+[{!isNil QGVAR(zeusNetId)}, {
+    GVAR(emergencyNetId) enableChannel [false];
+    GVAR(zeusNetId) enableChannel [false];
+}] call CBA_fnc_waitUntilAndExecute;
+
 // Add basic items
 [{
     player assignItem "ItemMap";
@@ -116,43 +121,43 @@ if (!_isMedic) then {
 
 
 
-private _door2position = [5.3, 6.9, -5];
-private _door2positionWorld = militia_station modelToWorldVisual _door2position;
+// private _door2position = [5.3, 6.9, -5];
+// private _door2positionWorld = militia_station modelToWorldVisual _door2position;
 
-private _action = [
-	"DoorBreachingCharge",
-	"Plant breaching charge",
-	"",
-	{
-		// systemChat format ["%1", _this];
-		if (missionNamespace getVariable [QGVAR(door2_closedNoCharge), true]) then {
-			missionNamespace setVariable [QGVAR(door2_closedNoCharge), false, true];
+// private _action = [
+// 	"DoorBreachingCharge",
+// 	"Plant breaching charge",
+// 	"",
+// 	{
+// 		// systemChat format ["%1", _this];
+// 		if (missionNamespace getVariable [QGVAR(door2_closedNoCharge), true]) then {
+// 			missionNamespace setVariable [QGVAR(door2_closedNoCharge), false, true];
 
-			params ["_object", "_caller", "_arguments"];
-			_arguments params ["_doorPosition"];
+// 			params ["_object", "_caller", "_arguments"];
+// 			_arguments params ["_doorPosition"];
 
-			private _explosive = [_caller, _doorPosition, 135, "AMP_Breaching_Charge_Mag", "Command", [], objNull] call ace_explosives_fnc_placeExplosive;
-			_explosive call bcdw_main_fnc_plantBreachingCharge;
+// 			private _explosive = [_caller, _doorPosition, 135, "AMP_Breaching_Charge_Mag", "Command", [], objNull] call ace_explosives_fnc_placeExplosive;
+// 			_explosive call bcdw_main_fnc_plantBreachingCharge;
 
-			[{
-				daytime > 6.25
-			}, {
-				_this call ace_explosives_fnc_detonateExplosive;
-			}, [_caller, -1, [_explosive, 0], "ACE_Clacker"]] call CBA_fnc_waitUntilAndExecute;
-		};
-	},
-	{missionNamespace getVariable [QGVAR(door2_closedNoCharge), true]},
-	{},
-	[_door2positionWorld],
-	_door2position,// "door_2",
-	50
-] call ace_interact_menu_fnc_createAction;
+// 			[{
+// 				daytime > 6.25
+// 			}, {
+// 				_this call ace_explosives_fnc_detonateExplosive;
+// 			}, [_caller, -1, [_explosive, 0], "ACE_Clacker"]] call CBA_fnc_waitUntilAndExecute;
+// 		};
+// 	},
+// 	{missionNamespace getVariable [QGVAR(door2_closedNoCharge), true]},
+// 	{},
+// 	[_door2positionWorld],
+// 	_door2position,// "door_2",
+// 	50
+// ] call ace_interact_menu_fnc_createAction;
 
-[militia_station, 0, [], _action] call ace_interact_menu_fnc_addActionToObject;
+// [militia_station, 0, [], _action] call ace_interact_menu_fnc_addActionToObject;
 
-[{daytime > 6.21950}, {
-	playMusic "ACTION_PD2_09_Razormind";
-}] call CBA_fnc_waitUntilAndExecute;
+// [{daytime > 6.21950}, {
+// 	playMusic "ACTION_PD2_09_Razormind";
+// }] call CBA_fnc_waitUntilAndExecute;
 
 // Handle taser shot
 player addEventHandler ["HitPart", {

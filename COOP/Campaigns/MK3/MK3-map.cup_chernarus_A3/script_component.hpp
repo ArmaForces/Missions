@@ -43,4 +43,9 @@
 #define VEHICLE_LOCKED_CHANCE 0.7
 #define VEHICLE_ALARM_CHANCE 0.5
 
+#define CB_RADIO_MODEL "ACRE_PRC117F"
+#define MILITIA_CB_PRESET "militiaCb"
+#define CHDKZ_CB_PRESET "chedakiCb"
+#define CIVILIAN_CB_PRESET "civilianCb"
+
 #include "\x\cba\addons\main\script_macros_mission.hpp"

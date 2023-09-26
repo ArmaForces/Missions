@@ -430,6 +430,10 @@
             <English>Militia Station in Zelenogorsk</English>
             <Polish>Posterunek Milicji w Zelenogorsku</Polish>
         </Key>
+        <Key ID="STR_MKR_Locations_CampResistance">
+            <English>Chernarus Resistance Camp</English>
+            <Polish>Obóz Ruchu Oporu</Polish>
+        </Key>
         <Key ID="STR_MKR_Locations_CampTishina">
             <English>Tishina Chedaki Camp</English>
             <Polish>Obóz Czedacki Tishina</Polish>
