@@ -111,7 +111,7 @@ class CfgTasks
     class PatrolCheckpointPogorevka : PatrolCheckpointPustoshka
     {
         title = "Punkt kontrolny Pogorewka";
-        description = "Punkt kontrolny wymaga obsadzenia przez jeden z patroli. Grupa Czedacka będzie Wam pomagać."
+        description = "Punkt kontrolny wymaga obsadzenia przez jeden z patroli. Grupa Czedacka będzie Wam pomagać.";
         marker = "marker_checkpoint_pogorevka_south";
     };
 
@@ -159,7 +159,7 @@ class CfgTasks
 
     class ChedaksCheckpoints {
         title = "Punkty kontrolne";
-        description = "W pobliżu Pustoszki i Pogorewki zorganizowane zostały punkty kontrolne, które obsadzacie w grupach trzyosobowych, w towarzystwie Milicji. Pilnujecie, żeby wszystko przebiegało zgodnie z procedurami oraz żeby nikt nie próbował omijać punktów kontrolnych (z punktu w Pustoszce widać (słabo) drogę z Pogorewki ze wschodu; z punktu w Pogorewce widać bardzo dobrze objazd przez Pulkowo). W przypadku podejrzeń, możecie wysłać radiowóz w celu sprawdzenia pojazdu."
+        description = "W pobliżu Pustoszki i Pogorewki zorganizowane zostały punkty kontrolne, które obsadzacie w grupach trzyosobowych, w towarzystwie Milicji. Pilnujecie, żeby wszystko przebiegało zgodnie z procedurami oraz żeby nikt nie próbował omijać punktów kontrolnych (z punktu w Pustoszce widać (słabo) drogę z Pogorewki ze wschodu; z punktu w Pogorewce widać bardzo dobrze objazd przez Pulkowo). W przypadku podejrzeń, możecie wysłać radiowóz w celu sprawdzenia pojazdu.";
         icon = "rifle";
 
         parentTask = "Chedaks";
