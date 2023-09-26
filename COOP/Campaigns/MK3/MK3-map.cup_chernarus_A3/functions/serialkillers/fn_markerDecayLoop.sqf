@@ -22,6 +22,6 @@ private _currentAlpha = markerAlpha _marker;
 
 if (_currentAlpha <= _decayRate) exitWith {deleteMarker _marker};
 
-_marker setMarkerAlpha (_currentAlpha - _decayRate);
+_marker setMarkerAlphaLocal (_currentAlpha - _decayRate);
 
 [FUNC(markerDecayLoop), [_marker, _decayRate], 15] call CBA_fnc_waitAndExecute;

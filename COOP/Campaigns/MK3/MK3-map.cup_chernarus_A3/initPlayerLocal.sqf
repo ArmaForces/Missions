@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
-GVAR(isZeus) = zeus isEqualTo player;
-player assignItem "ItemMap";
+GVAR(isZeus) = !isNil "zeus" && {zeus isEqualTo player};
 
 // Disable CUP street lights based on lighting levels (bad performance script)
 CUP_stopLampCheck = true;
@@ -15,10 +14,16 @@ CUP_stopLampCheck = true;
 [FUNC(initPlayerPersonalVehicles), [], 5] call CBA_fnc_waitAndExecute;
 [player] call FUNC(initBriefing);
 
-[{!isNil QGVAR(zeusNetId)}, {
-    GVAR(emergencyNetId) enableChannel [false];
-    GVAR(zeusNetId) enableChannel [false];
-}] call CBA_fnc_waitUntilAndExecute;
+6 enableChannel false;
+7 enableChannel false;
+8 enableChannel false;
+9 enableChannel false;
+10 enableChannel false;
+11 enableChannel false;
+12 enableChannel false;
+13 enableChannel false;
+14 enableChannel false;
+15 enableChannel false;
 
 // Add basic items
 [{

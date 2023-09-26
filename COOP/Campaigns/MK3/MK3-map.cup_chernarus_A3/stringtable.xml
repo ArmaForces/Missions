@@ -168,7 +168,7 @@
             <Polish>System medyczny</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_MedicalStuff">
-            <English>Medical menu available only for medics or in hospital/medical vehicle. Please don't enable it manually.</English>
+            <English>Medical menu is available only for medics or in hospital/medical vehicle. Please don't enable it manually.</English>
             <Polish>Menu medyczne dostępne tylko dla medyków lub w szpitalu/pojeździe medycznym. Proszę o nie kombinowanie i nie włączanie go ręcznie.</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_EmergencyNumber">
