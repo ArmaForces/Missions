@@ -787,7 +787,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -817,7 +817,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										class data
@@ -842,6 +842,14 @@ class CustomAttributes
 											value="ace_advanced_fatigue_enabled";
 										};
 									};
+									class Item3
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_weather_enabled";
+										};
+									};
 								};
 							};
 						};
@@ -852,7 +860,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										class data
@@ -921,6 +929,33 @@ class CustomAttributes
 													{
 														singleType="BOOL";
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
 													};
 												};
 												class Item1
