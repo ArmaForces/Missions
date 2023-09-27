@@ -30,7 +30,8 @@ publicVariable QGVAR(zeusNetId);
     };
 
     if (random 1 > (1 - VEHICLE_LOCKED_CHANCE)) then {
-        [_x, true] call ACE_vehiclelock_fnc_setVehicleLockEH;
+        _x lock true;
+        [QACEGVAR(vehiclelock,setVehicleLock), [_x, true], [_x]] call CBA_fnc_targetEvent;
     };
 
     if (!(_x isKindOf "LandVehicle")) exitWith {};
@@ -46,7 +47,7 @@ publicVariable QGVAR(zeusNetId);
     private _isMilitiaVehicle = typeOf _x in ["CUP_LADA_LM_CIV", "CUP_C_S1203_Militia_CIV"];
     if (_isMilitiaVehicle) then {
         [_x, WEST] call FUNC(initCbRadio);
-        _x setVariable ["ace_vehiclelock_lockSide", WEST];
+        _x setVariable ["ace_vehiclelock_lockSide", WEST, true];
     } else {
         private _vehicleSide = [_x] call BIS_fnc_objectSide;
         [_x, _vehicleSide] call FUNC(initCbRadio);
