@@ -242,6 +242,7 @@ class CfgTasks
         title = "Ziuk Garlinski";
         description = "Pamiętasz typa, bo jako jedyny kretyn z okradających bazę podał swoje prawdziwe dane. Będziesz chciał się z nim rozmówić i dołączyć do walki z tą niewdzięczną czedacką hołotą."
         icon = "meet";
+        parentTask = "Chedaks";
 
         owners[] = { "zeus", "monke" };
         conditionCodeSuccess = "monke distance ziuk < 5";
@@ -252,6 +253,7 @@ class CfgTasks
     {
         title = "Idź do swojego kibla na końcu bazy";
         icon = "run";
+        parentTask = "Chedaks";
 
         owners[] = { "zeus", "monke" };
         createdShowNotification = "true";

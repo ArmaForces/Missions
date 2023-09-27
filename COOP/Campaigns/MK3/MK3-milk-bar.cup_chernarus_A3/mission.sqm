@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2958;
+		nextID=3024;
 	};
 	class Camera
 	{
@@ -5565,7 +5565,7 @@ class Mission
 							};
 							id=581;
 							type="Box_Syndicate_Ammo_F";
-							atlOffset=1.1536255;
+							atlOffset=1.1535797;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -8786,6 +8786,7 @@ class Mission
 							};
 							id=187;
 							type="rhsgref_ins_zil131_open";
+							atlOffset=1.5258789e-005;
 						};
 						class Item16
 						{
@@ -13913,7 +13914,7 @@ class Mission
 							};
 							id=1455;
 							type="CUP_C_S1203_CIV_CR";
-							atlOffset=-9.1552734e-005;
+							atlOffset=0.016937256;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33416,6 +33417,7 @@ class Mission
 							};
 							id=2187;
 							type="Land_ChairPlastic_F";
+							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33513,6 +33515,7 @@ class Mission
 							};
 							id=2190;
 							type="Land_ChairPlastic_F";
+							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33545,6 +33548,7 @@ class Mission
 							};
 							id=2203;
 							type="Land_ChairPlastic_F";
+							atlOffset=0.069961548;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33810,7 +33814,7 @@ class Mission
 							};
 							id=2211;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.0027618408;
+							atlOffset=0.0028381348;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34164,6 +34168,7 @@ class Mission
 							};
 							id=1934;
 							type="CUP_C_Lada_CIV";
+							atlOffset=1.5258789e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34302,6 +34307,7 @@ class Mission
 						};
 					};
 					id=2219;
+					atlOffset=1.5258789e-005;
 				};
 			};
 			id=2217;
@@ -34546,6 +34552,18 @@ class Mission
 						name="chairsDriver";
 						description="Oleg Kropacek";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Worker_03";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beanie_03";
+						};
 					};
 					id=2261;
 					type="CUP_C_C_Worker_03";
@@ -34596,6 +34614,18 @@ class Mission
 						name="chairsAssistant";
 						description="Radosław Przyjazny";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Worker_04";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beanie_04";
+						};
 					};
 					id=2259;
 					type="CUP_C_C_Worker_04";
@@ -34642,7 +34672,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7003.4321,296.03519,7710.4072};
-				angles[]={-0,1.9291472,0};
+				angles[]={0,1.9291472,0};
 			};
 			side="Empty";
 			flags=4;
@@ -34692,6 +34722,17 @@ class Mission
 						name="lada_buyer";
 						description="Boris Grygar";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Citizen_02";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=2265;
 					type="CUP_C_C_Citizen_02";
@@ -34757,6 +34798,31 @@ class Mission
 						name="lada_driver";
 						description="Viktor Bobek";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Mechanic_03";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_C_EngineeringBag";
+								isBackpack=1;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="ToolKit";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=2267;
 					type="CUP_C_C_Mechanic_03";
@@ -34835,6 +34901,18 @@ class Mission
 						name="lada_seller";
 						description="Michal Korolenko";
 						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Villager_01";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="CUP_H_C_Beret_01";
+						};
 					};
 					id=2269;
 					type="CUP_C_C_Villager_01";
