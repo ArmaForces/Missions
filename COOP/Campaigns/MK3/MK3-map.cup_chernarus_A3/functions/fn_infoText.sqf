@@ -19,10 +19,11 @@
 
 // NO TABS, NO
 #define SPACE_ASCII 32
+#define AF_INTROTEXT_LAYER QGVAR(InfoTextLayer)
 
 private _fnc_createControl = {
 	// Register control
-	([] call bis_fnc_rscLayer) cutRsc ["rscInfoTextEdit", "plain"];
+	([AF_INTROTEXT_LAYER] call bis_fnc_rscLayer) cutRsc ["rscInfoTextEdit", "plain"];
 
 	disableSerialization;
 	private _display = uiNamespace getVariable "AFP_Scripts_InfoText";
@@ -31,7 +32,11 @@ private _fnc_createControl = {
 
 fnc_destroyControl = {
 	// Remove control
-	([] call bis_fnc_rscLayer) cutText ["", "plain"];
+	([AF_INTROTEXT_LAYER] call bis_fnc_rscLayer) cutText ["", "plain"];
+
+    disableSerialization;
+    private _display = uiNamespace getVariable "AFP_Scripts_InfoText";
+	_display closeDisplay 1;
 };
 
 fnc_renderMessageLines = {
@@ -57,18 +62,18 @@ fnc_refreshMessage = {
 	private _characterWasSpace = false;
 	private _lineEndReached = false;
 
-	diag_log format ["Text lines: %2 | Unhidden Characters: %1", _unhiddenCharacters, str _fullTextLines];
+	TRACE_2("Text lines: %2 | Unhidden Characters: %1", _unhiddenCharacters, str _fullTextLines);
 
 	private _refreshedText = _fullTextLines
 		apply {
-			diag_log format ["Line %1, left to unhide = %2", _x, _leftToUnhide];
+			TRACE_2("Line %1, left to unhide = %2", _x, _leftToUnhide);
 
 			// Necessary toArray before count due to ąęół etc.
 			private _lineArray = toArray _x;
 			private _lineLength = count _lineArray;
 			if (_leftToUnhide isEqualTo 0) then {
 				// Empty line
-				diag_log "Line is empty";
+				TRACE_1("Line is empty","");
 				""
 			} else {
 				if (_lineLength > _leftToUnhide) then {
@@ -76,21 +81,21 @@ fnc_refreshMessage = {
 					private _lastNotHiddenCharacter = _leftToUnhide - 1;
 					_leftToUnhide = 0;
 
-					diag_log format ["Found partially unhidden line with %1 length. Last not hidden character: %2", _lineLength, _lastNotHiddenCharacter];
+					TRACE_2("Found partially unhidden line with %1 length. Last not hidden character: %2", _lineLength, _lastNotHiddenCharacter);
 
 					private _anyMoreNonSpaceCharactersToUnhideInLine = false;
 					private _spaceCharactersRemaining = 0;
 					// Search for next character to unhide
 					for "_i" from _lastNotHiddenCharacter to (_lineLength - 1) do {
 						private _character = _lineArray select _i;
-						diag_log format ["Current character _i = %1 _character = %2", _i, _character];
+						TRACE_2("Current character _i = %1 _character = %2", _i, _character);
 						private _isNotSpaceCharacter = _character isNotEqualTo SPACE_ASCII;
 
 						if (_leftToUnhide isNotEqualTo 0) then {
-							diag_log "Yet to find non-space character";
+							TRACE_1("Yet to find non-space character","");
 							// Unhide found character
 							if (_isNotSpaceCharacter) then {
-								diag_log format ["Unhiding character %1 => %2", _i, toString [_character]];
+								TRACE_2("Unhiding character %1 => %2", _i, toString [_character]);
 							} else {
 								_characterWasSpace = true;
 							};
@@ -100,7 +105,7 @@ fnc_refreshMessage = {
 						} else {
 							// Hide character if it's not space
 							if (_isNotSpaceCharacter) then {
-								diag_log format ["Hiding character %1 => %2", _i, toString [_character]];
+								TRACE_2("Hiding character %1 => %2", _i, toString [_character]);
 								_lineArray set [_i, SPACE_ASCII];
 								_anyMoreNonSpaceCharactersToUnhideInLine = true;
 							} else {
@@ -120,7 +125,7 @@ fnc_refreshMessage = {
 					toString _lineArray
 				} else {
 					_leftToUnhide = _leftToUnhide - _lineLength;
-					diag_log format ["Found unhidden line with %1 length, %2 characters left to unhide", _lineLength, _leftToUnhide];
+					TRACE_2("Found unhidden line with %1 length, %2 characters left to unhide", _lineLength, _leftToUnhide);
 
 					// Check if character was unhidden as a part of full line unhide
 					if (_leftToUnhide isEqualTo 0) then {
@@ -153,18 +158,18 @@ fnc_hideMessageLoop = {
 	private _lineEndReached = false;
 	private _messageEndReached = false;
 
-	diag_log format ["Text lines: %2 | Unhidden Characters: %1", _unhiddenCharacters, str _fullTextLines];
+	TRACE_2("Text lines: %2 | Unhidden Characters: %1", _unhiddenCharacters, str _fullTextLines);
 
 	private _partiallyHiddenText = _fullTextLines
 		apply {
-			diag_log format ["Line %1, left to unhide = %2", _x, _leftToHide];
+			TRACE_2("Line %1, left to unhide = %2",_x,_leftToHide);
 
 			// Necessary toArray before count due to ąęół etc.
 			private _lineArray = toArray _x;
 			private _lineLength = count _lineArray;
 			if (_leftToHide isEqualTo 0) then {
 				// Empty line
-				diag_log "Line is empty";
+				TRACE_1("Line is empty","");
 				""
 			} else {
 				if (_lineLength > _leftToHide) then {
@@ -172,21 +177,21 @@ fnc_hideMessageLoop = {
 					private _lastNotHiddenCharacter = _leftToHide;
 					_leftToHide = 1;
 
-					diag_log format ["Found partially unhidden line with %1 length. Last not hidden character: %2", _lineLength, _lastNotHiddenCharacter];
+					TRACE_2("Found partially unhidden line with %1 length. Last not hidden character: %2", _lineLength, _lastNotHiddenCharacter);
 
 					private _anyMoreNonSpaceCharactersToUnhideInLine = false;
 					private _spaceCharactersRemaining = 0;
 					// Search for next character to unhide
 					for "_i" from (_lineLength - 1) to  _lastNotHiddenCharacter step -1 do {
 						private _character = _lineArray select _i;
-						diag_log format ["Current character _i = %1 _character = %2", _i, _character];
+						TRACE_2("Current character _i = %1 _character = %2",_i,_character);
 						private _isNotSpaceCharacter = _character isNotEqualTo SPACE_ASCII;
 
 						if (_leftToHide isNotEqualTo 0) then {
-							diag_log "Yet to find non-space character";
+							TRACE_1("Yet to find non-space character","");
 							// Unhide found character
 							if (_isNotSpaceCharacter) then {
-								diag_log format ["Hiding character %1 => %2", _i, toString [_character]];
+								TRACE_2("Hiding character %1 => %2", _i, toString [_character]);
 								_lineArray set [_i, SPACE_ASCII];
 								_leftToHide = 0;
 							};
@@ -195,7 +200,7 @@ fnc_hideMessageLoop = {
 						} else {
 							// Hide character if it's not space
 							if (_isNotSpaceCharacter) then {
-								diag_log format ["Hiding character %1 => %2", _i, toString [_character]];
+								TRACE_2("Hiding character %1 => %2", _i, toString [_character]);
 								_lineArray set [_i, SPACE_ASCII];
 								_anyMoreNonSpaceCharactersToUnhideInLine = true;
 							} else {
@@ -215,7 +220,7 @@ fnc_hideMessageLoop = {
 					toString _lineArray
 				} else {
 					_leftToHide = _leftToHide - _lineLength;
-					diag_log format ["Found unhidden line with %1 length, %2 characters left to unhide", _lineLength, _leftToUnhide];
+					TRACE_2("Found unhidden line with %1 length, %2 characters left to unhide",_lineLength,_leftToUnhide);
 
 					// Check if character was unhidden as a part of full line unhide
 					if (_leftToHide isEqualTo 0) then {
@@ -227,7 +232,8 @@ fnc_hideMessageLoop = {
 			};
 		};
 
-	private _messageEndReached = _unhiddenCharacters isEqualTo 0;
+    // Not sure why, but it hides all characters and doesn't terminate, therefore additional check if number had changed
+	private _messageEndReached = _unhiddenCharacters isEqualTo 0 || {_unhiddenCharacters isEqualTo _originalUnhiddenCharacters};
 
 	private _partiallyHiddenTextWithLineBreaks = _partiallyHiddenText
 		apply {_x insert [-1, "\n"]};
@@ -235,7 +241,7 @@ fnc_hideMessageLoop = {
 	_textControl ctrlcommit 0.01;
 
 	if (_messageEndReached) exitWith {
-		diag_log "Message fully faded";
+		INFO("Message fully faded");
 		call fnc_destroyControl;
 	};
 
@@ -266,18 +272,18 @@ private _fnc_unhideMessageLoop = {
 	private _characterWasSpace = false;
 	private _lineEndReached = false;
 
-	diag_log format ["Text lines: %2 | Unhidden Characters: %1", _unhiddenCharacters, str _fullTextLines];
+	TRACE_2("Text lines: %2 | Unhidden Characters: %1", _unhiddenCharacters, str _fullTextLines);
 
 	private _partiallyHiddenText = _fullTextLines
 		apply {
-			diag_log format ["Line %1, left to unhide = %2", _x, _leftToUnhide];
+			TRACE_2("Line %1, left to unhide = %2", _x, _leftToUnhide);
 
 			// Necessary toArray before count due to ąęół etc.
 			private _lineArray = toArray _x;
 			private _lineLength = count _lineArray;
 			if (_leftToUnhide isEqualTo 0) then {
 				// Empty line
-				diag_log "Line is empty";
+				TRACE_1("Line is empty","");
 				""
 			} else {
 				if (_lineLength > _leftToUnhide) then {
@@ -285,21 +291,21 @@ private _fnc_unhideMessageLoop = {
 					private _lastNotHiddenCharacter = _leftToUnhide - 1;
 					_leftToUnhide = 1;
 
-					diag_log format ["Found partially unhidden line with %1 length. Last not hidden character: %2", _lineLength, _lastNotHiddenCharacter];
+					TRACE_2("Found partially unhidden line with %1 length. Last not hidden character: %2", _lineLength, _lastNotHiddenCharacter);
 
 					private _anyMoreNonSpaceCharactersToUnhideInLine = false;
 					private _spaceCharactersRemaining = 0;
 					// Search for next character to unhide
 					for "_i" from _lastNotHiddenCharacter to (_lineLength - 1) do {
 						private _character = _lineArray select _i;
-						diag_log format ["Current character _i = %1 _character = %2", _i, _character];
+						TRACE_2("Current character _i = %1 _character = %2", _i, _character);
 						private _isNotSpaceCharacter = _character isNotEqualTo SPACE_ASCII;
 
 						if (_leftToUnhide isNotEqualTo 0) then {
-							diag_log "Yet to find non-space character";
+							TRACE_1("Yet to find non-space character","");
 							// Unhide found character
 							if (_isNotSpaceCharacter) then {
-								diag_log format ["Unhiding character %1 => %2", _i, toString [_character]];
+								TRACE_2("Unhiding character %1 => %2", _i, toString [_character]);
 							} else {
 								_characterWasSpace = true;
 							};
@@ -309,7 +315,7 @@ private _fnc_unhideMessageLoop = {
 						} else {
 							// Hide character if it's not space
 							if (_isNotSpaceCharacter) then {
-								diag_log format ["Hiding character %1 => %2", _i, toString [_character]];
+								TRACE_2("Hiding character %1 => %2", _i, toString [_character]);
 								_lineArray set [_i, SPACE_ASCII];
 								_anyMoreNonSpaceCharactersToUnhideInLine = true;
 							} else {
@@ -329,7 +335,7 @@ private _fnc_unhideMessageLoop = {
 					toString _lineArray
 				} else {
 					_leftToUnhide = _leftToUnhide - _lineLength;
-					diag_log format ["Found unhidden line with %1 length, %2 characters left to unhide", _lineLength, _leftToUnhide];
+					TRACE_2("Found unhidden line with %1 length, %2 characters left to unhide", _lineLength, _leftToUnhide);
 
 					// Check if character was unhidden as a part of full line unhide
 					if (_leftToUnhide isEqualTo 0) then {
@@ -350,7 +356,7 @@ private _fnc_unhideMessageLoop = {
 
 	if (_messageEndReached) exitWith {
 
-		diag_log "Message fully visible";
+		INFO("Message fully visible");
 		[
 			_textControl,
 			_textLines,
@@ -387,7 +393,7 @@ private _fnc_onFullyVisible = {
 		["_fadeDelay", 0.025],
 		["_fadePlaySound", ""]];
 
-	diag_log format ["Message will be fully visible for %1 seconds", _fullyVisibleSeconds];
+	INFO_1("Message will be fully visible for %1 seconds", _fullyVisibleSeconds);
 
 	for "_delay" from 0.1 to _fullyVisibleSeconds - 0.1 step 0.1 do {
 		[fnc_refreshMessage, [_textControl, _textLines, _unhiddenCharacters], _delay]  call CBA_fnc_waitAndExecute;
