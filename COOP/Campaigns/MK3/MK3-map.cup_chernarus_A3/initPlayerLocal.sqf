@@ -14,17 +14,6 @@ CUP_stopLampCheck = true;
 [FUNC(initPlayerPersonalVehicles), [], 5] call CBA_fnc_waitAndExecute;
 [player] call FUNC(initBriefing);
 
-6 enableChannel false;
-7 enableChannel false;
-8 enableChannel false;
-9 enableChannel false;
-10 enableChannel false;
-11 enableChannel false;
-12 enableChannel false;
-13 enableChannel false;
-14 enableChannel false;
-15 enableChannel false;
-
 // Add basic items
 [{
     player assignItem "ItemMap";

@@ -13,14 +13,12 @@ publicVariable QACEGVAR(weather,currentHumitidy);
 0 setOvercast 0.3;
 
 // Setup custom chat channels for scripts
-private _channelName = "EmergencyNet";
+private _channelName = LSTRING(Emergency_Channel);
 GVAR(emergencyNetId) = radioChannelCreate [[0.96, 0.3, 0.1, 1], _channelName, "112: %UNIT_NAME", []];
-[GVAR(emergencyNetId), {_this radioChannelAdd [player]}] remoteExec ["call", [0, -2] select isDedicated, _channelName];
 publicVariable QGVAR(emergencyNetId);
 
-private _channelName = "ZeusNet";
+private _channelName = LSTRING(Zeus_Channel);
 GVAR(zeusNetId) = radioChannelCreate [[1.0, 0.8, 0.8, 1], _channelName, "ZEUS: %UNIT_NAME", []];
-[GVAR(zeusNetId), {_this radioChannelAdd [player]}] remoteExec ["call", [0, -2] select isDedicated, _channelName];
 publicVariable QGVAR(zeusNetId);
 
 // Setup all vehicles with randomized stuff
