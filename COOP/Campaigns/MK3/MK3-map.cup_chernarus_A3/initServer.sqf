@@ -10,7 +10,8 @@ ACEGVAR(weather,currentTemperature) = 2;
 publicVariable QACEGVAR(weather,currentTemperature);
 ACEGVAR(weather,currentHumitidy) = 0.70;
 publicVariable QACEGVAR(weather,currentHumitidy);
-0 setOvercast 0.3;
+0 setOvercast 0.1;
+0 setFog [0.5, 0.01, 250];
 
 // Setup custom chat channels for scripts
 private _channelName = LSTRING(Emergency_Channel);

@@ -21,7 +21,7 @@ params ["_unit"];
 private _isCivilianPlayer = side player isEqualTo CIVILIAN;
 private _isMilitiaPlayer = [_unit] call FUNC(isMilitia);
 private _isOpforPlayer = side player isEqualTo WEST && {!_isMilitiaPlayer};
-private _isResistancePlayer = true;
+private _isResistancePlayer = [player] call FUNC(isResistance);
 
 if (_isCivilianPlayer || GVAR(isZeus)) then {
     [_unit] call FUNC(createCivilianBriefing);

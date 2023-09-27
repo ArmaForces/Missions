@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2246;
+		nextID=2248;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2562;
+		nextID=2694;
 	};
 	class Camera
 	{
-		pos[]={274.93692,206.9935,6511.0884};
-		dir[]={0.0023497059,-0.45261291,0.89174026};
-		up[]={0.0011926389,0.89169317,0.45262545};
-		aside[]={1.0000219,-5.3956501e-007,-0.0026364862};
+		pos[]={1117.038,155.22264,6657.7959};
+		dir[]={-0.48280883,-0.34779516,-0.80370033};
+		up[]={-0.17909969,0.93757063,-0.29813555};
+		aside[]={-0.85721594,0,0.51495737};
 	};
 };
 binarizationWanted=0;
-sourceName="MK3-map";
+sourceName="mk3-map";
 addons[]=
 {
 	"A3_Modules_F",
@@ -1224,6 +1224,7 @@ class Mission
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
+		startFog=0.5;
 		startWind=0.1;
 		startWaves=0.1;
 		forecastWeather=0;
@@ -1238,7 +1239,7 @@ class Mission
 		minute=16;
 		startFogBase=250;
 		forecastFogBase=250;
-		startFogDecay=0.017999999;
+		startFogDecay=0.0099999998;
 		forecastFogDecay=0.017999999;
 	};
 	class Entities
@@ -3829,6 +3830,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Ivanion Hypev@Partyzanci";
 								isPlayable=1;
 								class Inventory
@@ -3933,6 +3935,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Wojciech ""Mechanior"" Kazubowski";
 								isPlayable=1;
 								class Inventory
@@ -4045,6 +4048,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Ziuk Garlinski";
 								isPlayable=1;
 								class Inventory
@@ -4156,6 +4160,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Lesnik ze Staroye";
 								isPlayable=1;
 								class Inventory
@@ -4235,6 +4240,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Toivo Iwanowicz Igel";
 								isPlayable=1;
 								class Inventory
@@ -4326,6 +4332,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Krasnolitus Bracelos";
 								isPlayable=1;
 								class Inventory
@@ -4415,6 +4422,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Andriej Stalkerow";
 								isPlayable=1;
 								class Inventory
@@ -4509,6 +4517,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="this setVariable[""mkr_scripts_isResistance"", true];";
 								description="Dimitrij Monkyrov";
 								isPlayable=1;
 								class Inventory
@@ -4628,7 +4637,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={288.06516,186.91425,6601.7891};
-								angles[]={0,2.2460518,-0};
+								angles[]={0,2.2460518,0};
 							};
 							side="Independent";
 							flags=7;
@@ -5963,7 +5972,7 @@ class Mission
 							};
 							id=581;
 							type="Box_Syndicate_Ammo_F";
-							atlOffset=1.1535797;
+							atlOffset=1.1536255;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -9184,7 +9193,6 @@ class Mission
 							};
 							id=187;
 							type="rhsgref_ins_zil131_open";
-							atlOffset=1.5258789e-005;
 						};
 						class Item16
 						{
@@ -11536,7 +11544,7 @@ class Mission
 						};
 					};
 					id=712;
-					atlOffset=40.776367;
+					atlOffset=0.00053405762;
 				};
 				class Item1
 				{
@@ -14313,7 +14321,7 @@ class Mission
 							};
 							id=1455;
 							type="CUP_C_S1203_CIV_CR";
-							atlOffset=0.016937256;
+							atlOffset=-9.1552734e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20064,7 +20072,7 @@ class Mission
 				};
 			};
 			id=711;
-			atlOffset=-38.214279;
+			atlOffset=-39.423401;
 		};
 		class Item9
 		{
@@ -27623,7 +27631,7 @@ class Mission
 				};
 			};
 			id=868;
-			atlOffset=-117.26819;
+			atlOffset=-84.174652;
 		};
 		class Item12
 		{
@@ -35509,6 +35517,7 @@ class Mission
 			};
 			id=2119;
 			type="aftm_CUP_C_Golf4_Sport_CR_Civ";
+			atlOffset=-0.0038299561;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35533,7 +35542,7 @@ class Mission
 			name="CustomLocations";
 			class Entities
 			{
-				items=7;
+				items=9;
 				class Item0
 				{
 					dataType="Trigger";
@@ -35568,8 +35577,8 @@ class Mission
 				class Item2
 				{
 					dataType="Trigger";
-					position[]={972.52594,173.69724,7251.7466};
-					angle=-3.1368771;
+					position[]={972.52594,165.82076,7251.7466};
+					angle=3.1463079;
 					class Attributes
 					{
 						text="@STR_MKR_Locations_CampTishinaWestOf";
@@ -35580,7 +35589,7 @@ class Mission
 					};
 					id=2142;
 					type="EmptyDetectorArea10x10";
-					atlOffset=20.187714;
+					atlOffset=12.311234;
 				};
 				class Item3
 				{
@@ -35647,9 +35656,41 @@ class Mission
 					type="EmptyDetectorArea10x10";
 					atlOffset=1.5258789e-005;
 				};
+				class Item7
+				{
+					dataType="Trigger";
+					position[]={1343.45,212.39095,7249.856};
+					angle=3.1463048;
+					class Attributes
+					{
+						text="@STR_MKR_Locations_CampTishinaEastOf";
+						sizeA=52.452999;
+						sizeB=76.261002;
+						sizeC=12.927;
+						isRectangle=1;
+					};
+					id=2246;
+					type="EmptyDetectorArea10x10";
+				};
+				class Item8
+				{
+					dataType="Trigger";
+					position[]={1094.854,150.02296,6637.125};
+					angle=3.1463048;
+					class Attributes
+					{
+						text="@STR_MKR_Locations_TishinaDamRecreationComplex";
+						sizeA=52.452999;
+						sizeB=76.261002;
+						sizeC=12.927;
+						isRectangle=1;
+					};
+					id=2247;
+					type="EmptyDetectorArea10x10";
+				};
 			};
 			id=2126;
-			atlOffset=-116.90363;
+			atlOffset=-117.63541;
 		};
 		class Item39
 		{
@@ -36157,7 +36198,6 @@ class Mission
 							};
 							id=2187;
 							type="Land_ChairPlastic_F";
-							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36255,7 +36295,6 @@ class Mission
 							};
 							id=2190;
 							type="Land_ChairPlastic_F";
-							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36288,7 +36327,6 @@ class Mission
 							};
 							id=2203;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.069961548;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36554,7 +36592,7 @@ class Mission
 							};
 							id=2211;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.0028381348;
+							atlOffset=0.0027618408;
 							class CustomAttributes
 							{
 								class Attribute0

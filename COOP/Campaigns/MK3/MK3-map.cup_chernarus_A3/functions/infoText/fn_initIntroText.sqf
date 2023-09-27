@@ -25,7 +25,13 @@ private _sideName = switch (side player) do {
     };
     case EAST: { "" };
     case INDEPENDENT: { "Czarnoruski Ruch Oporu" };
-    case CIVILIAN: { "Mieszkaniec Czarnorusi" };
+    case CIVILIAN: {
+        if ([player] call FUNC(isResistance)) then {
+            "Czarnoruski Ruch Oporu"
+        } else {
+            "Mieszkaniec Czarnorusi"
+        }
+        };
     default { "JAK TO WIDZISZ TO MYDLARZ COŚ SPIERDOLIŁ" };
 };
 

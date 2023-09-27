@@ -76,6 +76,7 @@ class CfgFunctions
             class isCop {};
             class isMedicalService {};
             class isMilitia {};
+            class isResistance {};
         };
         class Documents
         {

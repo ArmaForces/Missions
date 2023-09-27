@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 GVAR(isZeus) = !isNil "zeus" && {zeus isEqualTo player};
+GVAR(cbRadioPresetInitialized) = false;
 
 // Disable CUP street lights based on lighting levels (bad performance script)
 CUP_stopLampCheck = true;
@@ -17,47 +18,53 @@ CUP_stopLampCheck = true;
 // Add basic items
 [{
     player assignItem "ItemMap";
-    player addItem "ACE_Cellphone";
+    player addItemToUniform "ACE_Cellphone";
+    player addItemToUniform "CUP_item_Money";
+    player addItemToUniform "CUP_item_Money";
+    player addItemToUniform "CUP_item_Money";
 
     // Chance for cigarettes
     if (random 1 > 0.5) then {
         if (random 1 > 0.9) then {
-            player addItem "murshun_cigs_cig0";
+            player addItemToUniform "murshun_cigs_cig0";
         } else {
-            player addItem "murshun_cigs_cigpack";
+            player addItemToUniform "murshun_cigs_cigpack";
         };
     };
     // Chance for lighter or matches
     if (random 1 > 0.5) then {
-        player addItem (selectRandom ["murshun_cigs_lighter", "murshun_cigs_matches"]);
+        player addItemToUniform (selectRandom ["murshun_cigs_lighter", "murshun_cigs_matches"]);
     };
 
     // Add keys
     if (!isNil "zeus" && {player isEqualTo zeus}) then {
-        player addItem "ACE_key_master"
+        player addItemToUniform "ACE_key_master"
     } else {
         switch (side player) do
         {
             case WEST: {
                 // Separate militia from chedaks as they should not share keys
                 if (player call FUNC(isMilitia)) then {
-                    player addItem "ACE_key_west";
+                    player addItemToUniform "ACE_key_west";
                 } else {
-                    player addItem "ACE_key_east";
+                    player addItemToUniform "ACE_key_east";
                 }
             };
             case EAST: {
-                player addItem "ACE_key_east";
+                player addItemToUniform "ACE_key_east";
             };
             case INDEPENDENT: {
-                player addItem "ACE_key_indp";
-                player addItem "ACE_key_lockpick";
+                player addItemToUniform "ACE_key_indp";
+                player addItemToUniform "ACE_key_lockpick";
             };
             default {
                 if (player call FUNC(isMedicalService)) then {
                     // Nothing for medics
                 } else {
-                    player addItem "ACE_key_lockpick";
+                    player addItemToUniform "ACE_key_lockpick";
+                    if ([player] call FUNC(isResistance)) then {
+                        player addItemToUniform "ACE_key_indp";
+                    };
                 };
             };
         };
@@ -72,7 +79,10 @@ call FUNC(initSkillsActions);
 // Enable medical menu for medics only
 private _isMedic = [player] call ACEFUNC(medical_treatment,isMedic);
 if (!_isMedic) then {
-    [QACEGVAR(medical_gui,enableMedicalMenu), 0, 999999, "client", false] call CBA_settings_fnc_set;
+    [{
+        [QACEGVAR(medical_gui,enableMedicalMenu), 0, 999999, "client", false] call CBA_settings_fnc_set;
+        ACEGVAR(medical_gui,enableMedicalMenu) = 0;
+    }] call afm_common_fnc_runAfterSettingsInit;
 };
 
 /*
