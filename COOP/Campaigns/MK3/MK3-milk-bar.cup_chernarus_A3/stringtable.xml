@@ -10,18 +10,19 @@
             <Polish>MK: Partyzanci</Polish>
         </Key>
         <Key ID="STR_MKR_Scripts_Mission_Title">
-            <English>SC:R: Campaign Map</English>
-            <Polish>MK:R: Mapa Kampanii</Polish>
+            <English>SC:R: Milk Bar</English>
+            <Polish>MK:R: Bar Mleczny</Polish>
         </Key>
         <Key ID="STR_MKR_Scripts_Mission_ShortDescription">
-            <Polish>Mapa Mydlanej Kampanii będąca bazą dla wszystkich misji.</Polish>
+            <English>After recent events it's time for a slow return to business as usual near Zelenogorsk.</English>
+            <Polish>Po wydarzeniach ostatnich tygodni, życie w regionie Zelenogorska powoli wraca do normy.</Polish>
         </Key>
         <Key ID="STR_MKR_Scripts_Mission_Briefing">
-            <Polish>Mapa Mydlanej Kampanii odzwierciedlająca aktualny stan kampanii, będąca bazą dla wszystkich misji.</Polish>
+            <Polish>Ostatni tydzień przyniósł długo wyczekiwane uspokojenie sytuacji w Zelenogorsku, choć ani Milicja, ani Czedacy, nie zdołali znaleźć odpowiedzialnych za ostatnie napady. Mimo iż czedaccy żołnierze wciąż czasem towarzyszą Milicji i wspólnie organizują punkty kontrolne, życie powoli wraca do normy.</Polish>
         </Key>
         <Key ID="STR_MKR_Scripts_Date">
-            <English>20th March 2022</English>
-            <Polish>20 marca 2022</Polish>
+            <English>24th March 2022</English>
+            <Polish>24 marca 2022</Polish>
         </Key>
 
         <Key ID="STR_MKR_Scripts_Sides_Militia">
@@ -469,6 +470,10 @@
         <Key ID="STR_MKR_Locations_TishinaDamRecreationComplex">
             <English>Recreation complex near Tishina Dam</English>
             <Polish>Kompleks rekreacyjny przy tamie Tishina</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_RailwayTranshipmentPoint">
+            <English>Railway reloading point</English>
+            <Polish>Punkt przeładunku kolejowego</Polish>
         </Key>
         <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhood">
             <English>Chernogorsk Freedom Neighborhood</English>

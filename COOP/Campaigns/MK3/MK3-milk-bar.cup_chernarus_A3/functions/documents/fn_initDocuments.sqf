@@ -65,13 +65,6 @@ GVAR(allDocuments) set [
         ["ID", ["Jan Honza Mikes", 1987, "Česká republika"] call _idFunc]
 ]];
 
-// Godziak (OPFOR)
-GVAR(allDocuments) set [
-    "TBD_Godziak_UID", [
-        ["ID", ["Yewgenij Fisenko", nil, "Republika Czedacka"] call _idFunc],
-        ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"]
-]];
-
 // Haverex
 GVAR(allDocuments) set [
     "TBD_Haverex_UID", [
@@ -146,14 +139,6 @@ GVAR(allDocuments) set [
         ["Dowód Rejestracyjny", "TT650, Zardzewiały, Bez numerów"]
 ]];
 
-// Piesa nie Piesa
-GVAR(allDocuments) set [
-    "TBD_Piesa2_UID", [
-        ["ID", ["Fiodor Piotrowicz Chwalewagner", 1967] call _idFunc],
-        ["Prawo jazdy", "Samochód"],
-        ["Dowód Rejestracyjny", "Wołga, Zielona, TODO"]
-]];
-
 // Renchon
 GVAR(allDocuments) set [
     "TBD_Renchon_UID", [
@@ -180,7 +165,8 @@ GVAR(allDocuments) set [
 GVAR(allDocuments) set [
     "TBD_Stalker_UID", [
         ["ID", "Andriej Stalkerow" call _idFunc],
-        ["Prawo jazdy", "Samochód"]
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "Wołga, Czarna, CH-PR0B0SZCZ"]
 ]];
 
 // Zaborz
@@ -198,9 +184,102 @@ GVAR(allDocuments) set [
 ]];
 
 // TODO: Assignable documents
+
+// Task #1 - kradziona Łada kierowca
 GVAR(allDocuments) set [
-    "TBD_ASSIGNABLE", [
+    "Viktor Bobek", [
+        ["ID", ["Viktor Bobek", 1976] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
         ["Dowód rejestracyjny", "Łada, Zielona, CH-NP444"]
+]];
+
+// Task #2 - kradziona Łada
+GVAR(allDocuments) set [
+    "Ctirad Cerny", [
+        ["ID", ["Ctirad Cerny", 1973] call _idFunc],
+        ["Prawo jazdy", "Samochód"]
+]];
+
+// Task #3 -
+GVAR(allDocuments) set [
+    "Matous Hruby", [
+        ["ID", ["Ctirad Cerny", 1973] call _idFunc],
+        ["Prawo jazdy", "Samochód"]
+]];
+
+// Task #4 Dezerter
+GVAR(allDocuments) set [
+    "Piotr Wowrynowicz", [
+        ["ID", ["Piotr Wowrynowicz", 1989] call _idFunc]
+]];
+
+// Task #5 - Szmugler fajek cywilny
+// Jabar
+GVAR(allDocuments) set [
+    "František Jabarećek", [
+        ["ID", ["František Jabarećek", 1991] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód rejestracyjny", "Łada, Zielona, CH-SS1243"]
+]];
+
+// Task #6 - Szmugler fajek czedak
+// Ajvar?
+GVAR(allDocuments) set [
+    "Boris Planicka", [
+        ["ID", ["Boris Planicka", 1994] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Legitymacja wojskowa", "Szeregowy Armii Czedackiej<br/>Miejsce służby: Obóz Tishina"]
+]];
+
+// Task #7 - Kierowca ciężarówki do fabryki krzeseł
+GVAR(allDocuments) set [
+    "Oleg Kropacek", [
+        ["ID", ["Oleg Kropacek", 1987] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód rejestracyjny", "Praga V3S, Żółty, numery TODO TBD"]
+]];
+
+// Task #8 - Pomocnik z krzesłami
+GVAR(allDocuments) set [
+    "Radosław Przyjazny", [
+        ["ID", ["Radosław Przyjazny", 1996] call _idFunc]
+]];
+
+// Task #
+
+// Piesa nie Piesa
+GVAR(allDocuments) set [
+    "TBD_Piesa2_UID", [
+        ["ID", ["Fiodor Piotrowicz Chwalewagner", 1967] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "Wołga, Zielona, TODO"]
+]];
+
+// Godziak (OPFOR)
+GVAR(allDocuments) set [
+    "TBD_Godziak_UID", [
+        ["ID", ["Yewgenij Fisenko", nil, "Republika Czedacka"] call _idFunc],
+        ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"]
+]];
+
+// Generic Chedaki
+GVAR(allDocuments) set [
+    "Bogdan Beranek", [
+        ["ID", ["Bogdan Beranek", 1992] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Legitymacja wojskowa", "Szeregowy Armii Czedackiej<br/>Miejsce służby: Obóz Tishina"]
+]];
+
+GVAR(allDocuments) set [
+    "Jaromir Smetana", [
+        ["ID", ["Jaromir Smetana", 1995] call _idFunc],
+        ["Legitymacja wojskowa", "Szeregowy Armii Czedackiej<br/>Miejsce służby: Obóz Tishina"]
+]];
+
+GVAR(allDocuments) set [
+    "Jaromir Kozel", [
+        ["ID", ["Jaromir Kozel", 1995] call _idFunc],
+        ["Legitymacja wojskowa", "Szeregowy Armii Czedackiej<br/>Miejsce służby: Obóz Tishina"]
 ]];
 
 publicVariable QGVAR(allDocuments);

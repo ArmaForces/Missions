@@ -31,7 +31,7 @@ GVAR(allDocuments) set [
 
 // Ajvar
 GVAR(allDocuments) set [
-    "TBD_Ajvar_UID", [
+    "76561197994901659", [
         ["ID", "Papalugos Inos" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Dowód Rejestracyjny Skoda", "Skoda Octavia, Czarna, CH-SV4JV4R"],
@@ -40,14 +40,14 @@ GVAR(allDocuments) set [
 
 // Bene
 GVAR(allDocuments) set [
-    "TBD_Bene_UID", [
+    "76561198001457336", [
         ["ID", ["Beniamino Castello", 1992] call _idFunc],
         ["Prawo jazdy", "Samochód; Samolot"]
 ]];
 
 // Bolec
 GVAR(allDocuments) set [
-    "TBD_Bolec_UID", [
+    "76561197962229109", [
         ["ID", "Aslanbek Abdurakhman" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Dowód Rejestracyjny", "Skoda 105L, Niebieska, TK-LMB073C"]
@@ -67,7 +67,7 @@ GVAR(allDocuments) set [
 
 // Godziak (OPFOR)
 GVAR(allDocuments) set [
-    "TBD_Godziak_UID", [
+    "76561198253276369", [
         ["ID", ["Yewgenij Fisenko", nil, "Republika Czedacka"] call _idFunc],
         ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"]
 ]];
@@ -80,14 +80,14 @@ GVAR(allDocuments) set [
 
 // Hefalump
 GVAR(allDocuments) set [
-    "TBD_Hefalump_UID", [
+    "76561198204208611", [
         ["ID", ["Raashid el-Karam", nil, "Republika Takistanu"] call _idFunc],
         ["Prawo jazdy", "Samochód"]
 ]];
 
 // Hyperion
 GVAR(allDocuments) set [
-    "TBD_Hyperion_UID", [
+    "76561198146225203", [
         ["ID", "Ivanion Hypev" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Pozwolenie na broń", "Brak własnej broni"],
@@ -96,7 +96,7 @@ GVAR(allDocuments) set [
 
 // Jay
 GVAR(allDocuments) set [
-    "TBD_Jay_UID", [
+    "76561198048944238", [
         ["ID", "TBD_Jay" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Paszport Polsatu", "TBD_Jay jest dziennikarzem<br/>Wystawca: AAN News"]
@@ -104,7 +104,7 @@ GVAR(allDocuments) set [
 
 // Krystol
 GVAR(allDocuments) set [
-    "TBD_Krystol_UID", [
+    "76561198073589142", [
         ["ID", "Bedřich Pavlaček" call _idFunc],
         ["Prawo jazdy", "Samochód; Autobus; Motocykl"],
         ["Legitymacja CKS", "Kierowca Czarnoruskich Kolei Samochodowych<br/>Bedřich Pavlaček<br/>Autobus CH-CKS003"],
@@ -113,7 +113,7 @@ GVAR(allDocuments) set [
 
 // Mikkeboss
 GVAR(allDocuments) set [
-    "TBD_Mikkeboss_UID", [
+    "76561198067129148", [
         ["ID", "Krasnolitus Bracelos" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Legitymacja wojskowa", "Kapitan Armii Czarnorusi<br/>W stanie spoczynku od 2020 roku<br/>Miejsce służby: Lotnisko Czarnoruś"],
@@ -123,7 +123,7 @@ GVAR(allDocuments) set [
 
 // Monkey
 GVAR(allDocuments) set [
-    "TBD_Monkey_UID", [
+    "76561198066994468", [
         ["ID", ["Dimitrij Monkyrov", 1969] call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Legitymacja wojskowa", "Szeregowy Armii Czedackiej<br/>Zdegradowany ze stopnia podpułkownika za zdefraudowanie transportu wojskowego<br/>Miejsce służby: Obóz Tishina"]
@@ -131,7 +131,7 @@ GVAR(allDocuments) set [
 
 // Nielu
 GVAR(allDocuments) set [
-    "TBD_Nielu_UID", [
+    "76561197987156621", [
         ["ID", "Janek Jemniołek" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Dowód Rejestracyjny", "Łada, Czarna, CH-CHN137U"]
@@ -139,7 +139,7 @@ GVAR(allDocuments) set [
 
 // Piesa
 GVAR(allDocuments) set [
-    "TBD_Piesa_UID", [
+    "76561198221934828", [
         ["ID", ["Toivo Iwanowicz", 1980] call _idFunc],
         ["Prawo jazdy", "Samochód; Motocykl"],
         ["Pozwolenie na broń", "Myśliwski sztucer po pradziadzie"],
@@ -148,7 +148,7 @@ GVAR(allDocuments) set [
 
 // Piesa nie Piesa
 GVAR(allDocuments) set [
-    "TBD_Piesa2_UID", [
+    "76561198221934828", [
         ["ID", ["Fiodor Piotrowicz Chwalewagner", 1967] call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Dowód Rejestracyjny", "Wołga, Zielona, TODO"]
@@ -156,7 +156,7 @@ GVAR(allDocuments) set [
 
 // Renchon
 GVAR(allDocuments) set [
-    "TBD_Renchon_UID", [
+    "76561198028964866", [
         ["ID", "Ziuk Garliński" call _idFunc],
         ["Prawo jazdy", "Samochód; Ciężarówka; Traktor"],
         ["Pozwolenie na broń", "Sztucer"]
@@ -164,13 +164,13 @@ GVAR(allDocuments) set [
 
 // Saper
 GVAR(allDocuments) set [
-    "TBD_Saper_UID", [
+    "76561198022680504", [
         ["ID", "Janusz Сгам" call _idFunc]
 ]];
 
 // Seweryn
 GVAR(allDocuments) set [
-    "TBD_Seweryn_UID", [
+    "76561198019933197", [
         ["ID", "Kuta Napletes" call _idFunc],
         ["Prawo jazdy", "Samochód; Traktor"],
         ["Dowód Rejestracyjny", "Traktor CATOR 2009, Bez numerów"]
@@ -178,21 +178,21 @@ GVAR(allDocuments) set [
 
 // Stalker
 GVAR(allDocuments) set [
-    "TBD_Stalker_UID", [
+    "76561198205788649", [
         ["ID", "Andriej Stalkerow" call _idFunc],
         ["Prawo jazdy", "Samochód"]
 ]];
 
 // Zaborz
 GVAR(allDocuments) set [
-    "TBD_Zaborz_UID", [
+    "76561198060965315", [
         ["Dowód Osobisty", ["Wojciech Kazubowski", 1992, "Rzeczpospolita Polska"] call _idFunc],
         ["Prawo jazdy", "Kategoria B<br/>Rzeczpospolita Polska"]
 ]];
 
 // Windows
 GVAR(allDocuments) set [
-    "TBD_Windows_UID", [
+    "76561198018567644", [
         ["ID", "TBD_Windows" call _idFunc],
         ["Prawo jazdy", "Samochód"]
 ]];
@@ -204,3 +204,5 @@ GVAR(allDocuments) set [
 ]];
 
 publicVariable QGVAR(allDocuments);
+
+// Jabar: 76561198055137986

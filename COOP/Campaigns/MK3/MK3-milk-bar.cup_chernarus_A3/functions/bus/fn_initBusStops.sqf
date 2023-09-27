@@ -58,7 +58,7 @@ private _dddFnc = {
 
 // Departure times (double[])
 // Stop | Time to arrive from previous (min)
-private _line1DeparturesFromLopatino = [7, 8, 9];
+private _line1DeparturesFromLopatino = [6, 7, 8, 9];
 private _line1ScheduleFromLopatino = [
     [bus_lopatino_loop, 0],
     [bus_vibor_from_lopatino, 3],
@@ -70,7 +70,7 @@ private _line1ScheduleFromLopatino = [
     [bus_zelenogorsk_train_station, 2]
 ];
 
-private _line1DeparturesFromZelenogorsk = [7.2, 8.3, 9.4];
+private _line1DeparturesFromZelenogorsk = [6.4, 7.4, 8.4, 9.4];
 private _line1ScheduleFromZelenogorsk = [
     [bus_zelenogorsk_train_station, 0],
     [bus_zelenogorsk_centre_to_north, 2],

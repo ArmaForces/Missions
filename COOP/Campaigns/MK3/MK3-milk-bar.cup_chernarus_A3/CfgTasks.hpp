@@ -4,7 +4,7 @@ class CfgTasks
     {
         title = CSTRING(Mission_Title);
         description = CSTRING(Mission_Briefing);
-        icon = "TBD_MISSION_ICON";
+        icon = "refuel";
 
         conditionEventsSuccess[] = { "MissionWon" };
         conditionEventsFailed[] = { "MissionFailed" };
@@ -58,46 +58,7 @@ class CfgTasks
         parentTask = "Militia";
 
         owners[] = { "zeus", "patrol1Group", "patrol2Group", "patrol3Group", "patrol4Group", "stationGroup" };
-
-        // conditionCodeSuccess = "daytime > 6.3";
-        // conditionEventsCanceled[] = { "MilitiaStationAlarm" };
     };
-
-    // class Patrol1 : Patrol
-    // {
-    //     title = "Patrol 1";
-    //     description = "Jako Patrol 1 pojedziecie do Wiboru. Następnie możecie skręcić w stronę Lopatino i przed miastem skręcić na południe do Miszkina lub pojechać do Kabanina.";
-    //     parentTask = "Patrol";
-
-    //     owners[] = { "zeus", "patrol1Group" };
-    // };
-
-    // class Patrol2 : Patrol
-    // {
-    //     title = "Patrol 2";
-    //     description = "Jako Patrol 2 pojedziecie do Kabanina przez Pogorewkę i Rogowo. W drodze powrotnej przejedźcie przez Pulkowo.";
-    //     parentTask = "Patrol";
-
-    //     owners[] = { "zeus", "patrol2Group" };
-    // };
-
-    // class Patrol3 : Patrol
-    // {
-    //     title = "Patrol 3";
-    //     description = "Jako Patrol 3 pojedziecie do Kamenki i Komarewa. Następnie zahaczycie o Bor i Pawłowo z drodze powrotnej, chyba że spotkacie konwój, wtedy możecie wracać na posterunek razem z nimi.";
-    //     parentTask = "Patrol";
-
-    //     owners[] = { "zeus", "patrol3Group" };
-    // };
-
-    // class Patrol4 : Patrol
-    // {
-    //     title = "Patrol 4";
-    //     description = "Jako Patrol 4 pojedziecie do Kozłowki, następnie sprawdzicie jak sprawy mają się na tamie po zachodniej stronie Zelenogorska. Jeżeli wystarczy Wam czasu, przejedźcie się do Pulkowa.";
-    //     parentTask = "Patrol";
-
-    //     owners[] = { "zeus", "patrol4Group" };
-    // };
 
     class PatrolCheckpointPustoshka : Patrol
     {
@@ -114,24 +75,6 @@ class CfgTasks
         description = "Punkt kontrolny wymaga obsadzenia przez jeden z patroli. Grupa Czedacka będzie Wam pomagać.";
         marker = "marker_checkpoint_pogorevka_south";
     };
-
-    // class PatrolStation : Patrol
-    // {
-    //     title = "Patrol 5";
-    //     description = "Jako Patrol 5 zostaniecie na posterunku, wypadło na Was, że zajmiecie się papierkową robotą a przy okazji przypilnujecie bandytów.";
-    //     parentTask = "Patrol";
-
-    //     owners[] = { "zeus", "stationGroup" };
-    // };
-
-    // class StationSituation : Militia
-    // {
-    //     title = "Alarm na komisariacie";
-    //     description = "Wygląda na to, że ktoś nieupoważniony jest na komisariacie. Wszystkie jednostki na syrenach na komisariat jak najszybciej!";
-
-    //     createdShowNotification = "true";
-    //     conditionEventsShow[] = { "MilitiaStationAlarm" };
-    // };
 
     /* Emergency Services */
 
@@ -182,39 +125,108 @@ class CfgTasks
         owners[] = { "zeus", "chdkzGroup1" };
     };
 
-    /* Civilian Tasks */
-
-    /* Other Tasks */
-
-    class Bandits
-    {
-        title = "Bandyci";
-        description = "Zostaliście aresztowani po pościgu dzień wcześniej. Wieźliście kasę i broń. Wszystko to znajduje się aktualnie razem z Wami na komisariacie. Podobno niedługo ma przyjechać transport zabrać Was i to co mieliście ze sobą do Czernogórska. Nie znacie nikogo, kto mógłby Wam pomóc, działaliście tylko we 3. Nie jesteście chętni do współpracy z nikim, ale cenicie sobie życie i wolność. Ogólnie nie chcecie nikogo zabijać, zależy Wam tylko na pieniądzach.";
-        icon = "meet";
-        parentTask = "TBD_MISSION_TITLE";
-
-        owners[] = { "zeus", "banditsGroup" };
-    };
-
-    class BanditsHope : Bandits
-    {
-        title = "Oczekuj na cud";
-        description = "Wygląda na to, że macie przesrane.";
-        icon = "wait";
-        parentTask = "Bandits";
-
-        conditionEventsSuccess[] = { "BanditsCanEscape" };
-    };
-
-    class BanditsEscape : Bandits
-    {
-        title = "Uciekaj";
-        description = "Wiej ile sił w nogach! W razie potrzeby, ukradnij samochód.";
-        icon = "run";
-        parentTask = "Bandits";
+    /*
+        Civilian Tasks
+    */
+    class GoToVibor {
+        title = "Zebranie w Wiborze";
+        description = "Przypomniało Ci się, że usłyszałeś pocztą pantoflową o jakimś zebraniu dziś rano w Wiborze. Ma się odbyć jakoś przed 7:00.";
+        icon = "move";
+        marker = "sys_marker_wibor";
 
         createdShowNotification = "true";
-        conditionCodeShow = "units banditsGroup findIf {!(_x getVariable [""ace_captives_isHandcuffed"", true])} != -1";
-        onShowEvents[] = { "BanditsCanEscape" };
+        conditionEventsShow[] = { "CiviliansToVibor" };
+        owners[] = { "zeus", "CIVILIAN" };
+    };
+
+    // Task #1
+    class StolenLada_Driver {
+        title = "Kradziona Łada";
+        description = "Tydzień temu razem ze wspólnikiem ukradliście w Czernogorsku błękitną ładę, wygląda na to że sytuacja przycichła więc pora przewieźć auto do dziupli. Podczas ostatniej rozmowy twój wspólnik wspominał że udało mu się zaleźć kupca. Twoim zadaniem jest dostać się samochodem do waszej dziupli w Łopatinie, Czekać będzie na ciebie twój wspólnik z którym udacie się do baru mlecznego w Wiborze gdzie ma czekać kupiec. Samochód ma lewe rejestracje i podrobiony dowód rejestracyjny. Dziupla znajduje się w szopie zaraz obok ceglanego domu naprzeciwko Cerkwii";
+        icon = "car";
+
+        owners[] = { "zeus", "lada_driver"};
+    };
+    // Task #2
+    class StolenLada_Co {
+        title = "Kradziona Łada";
+        description = "Tydzień temu razem ze wspólnikiem ukradliście w Czernogorsku błękitną ładę, samochód dotychczas stał w Garażu twojego wspólnika. W międzyczasie tobie udało się znaleźć kupca który za samochód oferuje niezłą kasę. Twoim zadaniem jest udanie się do waszej dziupli w Łopatinie, zaczekasz tam na wspólnika który ma dostarczyć auto, następnie udacie się do baru Mlecznego w Wiborze gdzie spotkacie się z kupcem. Wiesz że będzie mieć na sobie wojskowy plecak. Dziupla znajduje się w szopie zaraz obok ceglanego domu naprzeciwko Cerkwii.<br/><br/>Następnie wspólnie pojedziecie do Wiboru, gdzie umówiłeś się z kupcem w barze mlecznym. Będzie miał on na sobie wojskowy plecak.";
+        icon = "car";
+
+        owners[] = { "zeus", "lada_seller" };
+    };
+    // Task #3
+    class StolenLada_Buyer {
+        title = "Błękitna Łada";
+        description = "Wygląda na to że zrobiłeś niezły interes, Kilka dni temu poznałeś Faceta który po okazyjnej cenie sprzedaje błękitną Ładę w niezłym stanie a co ważniejsze, w okazyjnej cenie. Masz spotkać się z kupcem w barze Mlecznym w Wiborze, Twoim znakiem rozpoznawczym jest wojskowy plecak w którym trzymasz pieniądze.";
+        icon = "car";
+
+        owners[] = { "zeus", "lada_buyer" };
+    };
+
+    // Task #5
+    // Nikola Macecek
+    class SmuggleCigarettes {
+        title = "Przemyt fajek";
+        description = "Jesteś Czedackim żołnierzem i obecnie przebywasz na przepustce w Sosnowce. Poza służbą dorabiasz sobie przewożąc papierosy przemycane z Takistanu. Fajki schowane są w skrytce za stacją transformatorów w północnej części wsi. Musisz je znaleźć i przewieźć do Wiboru. Kolega z jednostki, któremu masz je przekazać będzie na ciebie czekać pod supermarketem około 6:15. Pamiętaj, że ostatnio jest nagonka na fajki z Takistanu!";
+
+        owners[] = { "zeus", "civ_smuggler" };
+    };
+
+    // Task #6
+    // Boris Planicka
+    class SmuggleCigarettes_Receiver {
+        title = "Odbierz dostawę fajek";
+        description = "Jesteś drobnym szmuglerem który handluje przemycanymi z Takistanu papierosami, do czego wykorzystujesz swoją obecność w Armii Czedackiej. Dzisiaj musisz odebrać nową dostawę od kolegi z jednostki z Sosnowki, który przemyca fajki z Takistanu w czasie przepustki. Masz spotkać się z nim pod supermarketem w Wiborze około 6:15. Masz dla niego skromną wypłatę za przewóz towaru. Pamiętaj, że ostatnio jest nagonka na fajki z Takistanu!";
+
+        owners[] = { "zeus", "chkdz_smuggler" };
+    };
+
+    // Task #7
+    class ChairsDriver {
+        title = "Przewóz krzeseł";
+        description = "Pracujesz jako kierowca ciężarówki, dzisiaj masz odebrać ładunek z kolejowego magazynu przeładunkowego pod Zelenogorskiem i przewieźć go pod pomnik w Wiborze. Dzisiaj będzie jechała z Tobą dodatkowa osoba do pomocy w załadunku, zabierz ją p"
+        icon = "box";
+
+        owners[] = { "zeus", "chairsDriver" };
+    };
+    // Task #8
+    class ChairsAssistant {
+        title = "Przewóz krzeseł";
+        description = "Pracujesz jako kierowca ciężarówki, dzisiaj masz odebrać ładunek z kolejowego magazynu przeładunkowego pod Zelenogorskiem i przewieźć go pod pomnik w Wiborze. Dzisiaj będzie jechała z Tobą dodatkowa osoba do pomocy w załadunku, zabierz ją p"
+        icon = "box";
+
+        owners[] = { "zeus", "chairsAssistant" };
+    };
+
+    class BusDriver {
+        title = "Kierowca autobusu";
+        description = "Jesteś kierowcą Czarnoruskich Kolei Autobusowych (CKS). Dziś obsługujesz linię Lopatino - Zelenogorsk. Zeus powinien dostarczyć Ci rozkład jazdy.";
+        icon = "move";
+
+        owners[] = { "zeus", "busDriver1", "busDriver2" };
+    };
+
+    /*
+        Other Tasks
+    */
+    class MonkeZiuk {
+        title = "Ziuk Garlinski";
+        description = "Pamiętasz typa, bo jako jedyny kretyn z okradających bazę podał swoje prawdziwe dane. Będziesz chciał się z nim rozmówić i dołączyć do walki z tą niewdzięczną czedacką hołotą."
+        icon = "meet";
+
+        owners[] = { "zeus", "monke" };
+        conditionCodeSuccess = "monke distance ziuk < 5";
+        onSuccessEvents[] = { "MonkePissed" };
+    };
+
+    class MonkeGoPissing {
+        title = "Idź do swojego kibla na końcu bazy";
+        icon = "run";
+
+        owners[] = { "zeus", "monke" };
+        createdShowNotification = "true";
+        conditionEventsShow[] = { "MonkeGoPiss" };
+        conditionEventsSuccess[] = { "MonkePissed" };
     };
 };
