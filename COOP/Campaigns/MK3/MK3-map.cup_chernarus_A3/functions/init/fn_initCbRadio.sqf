@@ -15,7 +15,7 @@
 
 params ["_vehicle", "_side"];
 
-[_vehicle, ["ACRE_VRC103", "CB Radio", "CB", false, ["inside"], [], CB_RADIO_MODEL, [], ["intercom_1"]], false] call acre_api_fnc_addRackToVehicle;
+[_vehicle, ["ACRE_VRC103", "CB Radio", "CB", false, ["inside"], [], CB_RADIO_MODEL, [], ["intercom_1"]], true] call acre_api_fnc_addRackToVehicle;
 
 private _radioPreset = if (_side isEqualTo WEST) then {
     MILITIA_CB_PRESET
