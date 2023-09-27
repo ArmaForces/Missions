@@ -18,9 +18,9 @@ params ["_unit"];
 [_unit] call FUNC(createGeneralBriefing);
 
 // Show militia records for militia players only
-private _isCivilianPlayer = true;
+private _isCivilianPlayer = side player isEqualTo CIVILIAN;
 private _isMilitiaPlayer = [_unit] call FUNC(isMilitia);
-private _isOpforPlayer = true;
+private _isOpforPlayer = side player isEqualTo WEST && {!_isMilitiaPlayer};
 private _isResistancePlayer = true;
 
 if (_isCivilianPlayer || GVAR(isZeus)) then {
