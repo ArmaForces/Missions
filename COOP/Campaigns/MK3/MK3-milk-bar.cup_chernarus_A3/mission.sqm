@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2258;
+		nextID=2270;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2892;
+		nextID=2958;
 	};
 	class Camera
 	{
-		pos[]={2742.1606,283.04196,9984.2842};
-		dir[]={-0.045443133,-0.55269593,0.83214933};
-		up[]={-0.030137505,0.833381,0.55187374};
-		aside[]={0.99851519,-4.9723894e-008,0.05452811};
+		pos[]={1135.8219,192.42639,7244.0088};
+		dir[]={0.12421946,-0.59514105,0.79397005};
+		up[]={0.091993429,0.80361903,0.58799016};
+		aside[]={0.98798376,3.4982804e-008,-0.15457471};
 	};
 };
 binarizationWanted=0;
-sourceName="mk3-milk-bar";
+sourceName="MK3-milk-bar";
 addons[]=
 {
 	"A3_Modules_F",
@@ -64,7 +64,6 @@ addons[]=
 	"murshun_cigs",
 	"ace_optics",
 	"A3_Characters_F_Exp",
-	"rhsgref_c_troops",
 	"A3_Weapons_F_Mark",
 	"A3_Drones_F_Weapons_F_Gamma_Items",
 	"ace_flashlights",
@@ -77,6 +76,7 @@ addons[]=
 	"CUP_WheeledVehicles_Hilux",
 	"CUP_WheeledVehicles_UAZ",
 	"CUP_WheeledVehicles_Datsun",
+	"rhsgref_c_troops",
 	"rhs_sounds",
 	"armaforces_rhs_cba_mag_compat_afrf",
 	"ace_compat_rhs_afrf3",
@@ -329,86 +329,86 @@ class AddonsMetaData
 		};
 		class Item29
 		{
-			className="rhsgref_c_troops";
-			name="GREF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item30
-		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item30
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item31
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item33
+		class Item32
 		{
 			className="acre_sys_prc152";
 			name="ACRE2 - AN/PRC-152";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item34
 		{
 			className="CUP_CAStructures_Rail";
 			name="CUP_CAStructures_Rail";
 		};
-		class Item36
+		class Item35
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item37
+		class Item36
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item38
+		class Item37
 		{
 			className="rhsgref_c_a2port_armor";
 			name="BRDM-2";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item39
+		class Item38
 		{
 			className="CUP_WheeledVehicles_Hilux";
 			name="CUP_WheeledVehicles_Hilux";
 		};
-		class Item40
+		class Item39
 		{
 			className="CUP_WheeledVehicles_UAZ";
 			name="CUP_WheeledVehicles_UAZ";
 		};
-		class Item41
+		class Item40
 		{
 			className="CUP_WheeledVehicles_Datsun";
 			name="CUP_WheeledVehicles_Datsun";
+		};
+		class Item41
+		{
+			className="rhsgref_c_troops";
+			name="GREF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item42
 		{
@@ -1209,14 +1209,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=37;
+		items=42;
 		class Item0
 		{
 			dataType="Layer";
 			name="Players";
 			class Entities
 			{
-				items=14;
+				items=12;
 				class Item0
 				{
 					dataType="Layer";
@@ -1306,8 +1306,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6361.8701,7.537024,2758.3701};
-										angles[]={0,2.3550251,0};
+										position[]={4366.2417,306.23843,7820.2749};
+										angles[]={6.2432094,2.3550251,6.2352247};
 									};
 									side="Empty";
 									flags=4;
@@ -1319,6 +1319,7 @@ class Mission
 									};
 									id=57;
 									type="CUP_C_Skoda_CR_CIV";
+									atlOffset=-0.0027770996;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1667,8 +1668,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={12215.985,179.05212,7322.0972};
-										angles[]={0.0010918301,1.6020726,6.2821498};
+										position[]={4372.8853,306.453,7825.2876};
+										angles[]={6.2378793,1.6020726,6.2405505};
 									};
 									side="Empty";
 									flags=4;
@@ -1678,6 +1679,7 @@ class Mission
 									};
 									id=115;
 									type="CUP_C_Tractor_CIV";
+									atlOffset=-0.0034179688;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2260,7 +2262,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2741.644,275.89981,10002.137};
+										position[]={2742.4163,275.89981,10002.655};
 										angles[]={0,3.1548049,0};
 									};
 									side="Empty";
@@ -2275,7 +2277,7 @@ class Mission
 								};
 							};
 							id=58;
-							atlOffset=-116.38768;
+							atlOffset=-31.043091;
 						};
 						class Item2
 						{
@@ -2707,98 +2709,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8421.918,132.78848,12881.336};
-								angles[]={0,3.5117943,0};
-							};
-							side="Civilian";
-							flags=3;
-							class Attributes
-							{
-								description="Papalugos Inos";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="CUP_U_C_Labcoat_01";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-								};
-							};
-							id=1703;
-							type="CUP_C_C_Doctor_01";
-							atlOffset=2.7996826;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="CUP_D_Male01_CZ";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.02;
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=1702;
-					atlOffset=2.7996826;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="groupID";
-							expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Ajvar";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item2
-				{
-					dataType="Group";
-					side="Civilian";
-					class Entities
-					{
-						items=1;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={6372.5752,16.496902,2742.0081};
+								position[]={4363.9448,305.17654,7826.8721};
 								angles[]={0,0.75796163,0};
 							};
 							side="Civilian";
@@ -2821,7 +2732,6 @@ class Mission
 							};
 							id=1683;
 							type="CUP_C_C_Pilot_01";
-							atlOffset=0.00047683716;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2858,7 +2768,6 @@ class Mission
 					{
 					};
 					id=1682;
-					atlOffset=0.00047683716;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2877,7 +2786,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Group";
 					side="Civilian";
@@ -2889,7 +2798,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6388.125,16.486439,2730.1611};
+								position[]={4368.3745,304.72733,7820.748};
 								angles[]={0,1.263182,0};
 							};
 							side="Civilian";
@@ -2913,7 +2822,7 @@ class Mission
 							};
 							id=1677;
 							type="CUP_C_TK_Man_08";
-							atlOffset=2.2888184e-005;
+							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2950,7 +2859,7 @@ class Mission
 					{
 					};
 					id=1676;
-					atlOffset=2.2888184e-005;
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2969,7 +2878,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Group";
 					side="Civilian";
@@ -2981,11 +2890,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6693.5962,349.44864,8431.123};
+								position[]={4370.0493,305.09317,7831.0659};
 								angles[]={0,5.1921453,0};
 							};
 							side="Civilian";
-							flags=3;
+							flags=7;
 							class Attributes
 							{
 								description="Karol ""Komandos"" Wrobel";
@@ -3004,7 +2913,6 @@ class Mission
 							};
 							id=1705;
 							type="CUP_C_C_Rocker_04";
-							atlOffset=3.2579956;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3041,7 +2949,6 @@ class Mission
 					{
 					};
 					id=1704;
-					atlOffset=3.2579956;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3060,7 +2967,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Group";
 					side="Civilian";
@@ -3072,7 +2979,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8058.272,123.79744,12493.294};
+								position[]={4365.7363,305.15674,7828.2666};
 							};
 							side="Civilian";
 							flags=7;
@@ -3094,7 +3001,6 @@ class Mission
 							};
 							id=1701;
 							type="CUP_C_C_Assistant_01";
-							atlOffset=0.0004119873;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3131,7 +3037,6 @@ class Mission
 					{
 					};
 					id=1700;
-					atlOffset=0.0004119873;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3150,7 +3055,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Group";
 					side="Civilian";
@@ -3162,7 +3067,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10831.21,6.5513635,2498.5701};
+								position[]={4368.5688,305.1102,7829.8633};
 								angles[]={0,2.0785825,0};
 							};
 							side="Civilian";
@@ -3191,7 +3096,7 @@ class Mission
 							};
 							id=1695;
 							type="CUP_C_TK_Man_06_Waist";
-							atlOffset=0.00026845932;
+							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3228,7 +3133,7 @@ class Mission
 					{
 					};
 					id=1694;
-					atlOffset=0.00026845932;
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3247,7 +3152,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Group";
 					side="Civilian";
@@ -3259,14 +3164,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6380.21,19.115435,2737.1357};
-								angles[]={0,1.5762242,0};
+								position[]={2739.8679,274.00394,9998.4863};
+								angles[]={0,2.8434598,0};
 							};
 							side="Civilian";
 							flags=7;
 							class Attributes
 							{
-								name="busDriver";
+								name="busDriver1";
 								description="Bedřich Pavlaček@ChKS";
 								isPlayable=1;
 								class Inventory
@@ -3284,7 +3189,6 @@ class Mission
 							};
 							id=1630;
 							type="CUP_C_C_Functionary_02";
-							atlOffset=0.00079536438;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3321,7 +3225,6 @@ class Mission
 					{
 					};
 					id=1629;
-					atlOffset=0.00079536438;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3340,7 +3243,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Group";
 					side="Civilian";
@@ -3431,7 +3334,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Group";
 					side="Civilian";
@@ -3443,99 +3346,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3797.5291,311.21341,8865.2324};
-								angles[]={0.0010297443,1.1869636,6.2826962};
-							};
-							side="Civilian";
-							flags=6;
-							class Attributes
-							{
-								name="busTicketer";
-								description="Kierowca autobusu@ChKS";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="CUP_U_C_Suit_01";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-								};
-							};
-							id=1632;
-							type="CUP_C_C_Functionary_01";
-							atlOffset=0.1100769;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="CUP_D_Male05_CZ";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.97000003;
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=1631;
-					atlOffset=0.1100769;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="groupID";
-							expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Norek";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item10
-				{
-					dataType="Group";
-					side="Civilian";
-					class Entities
-					{
-						items=1;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={8461.5723,121.78864,12906.402};
+								position[]={4361.7222,305.29617,7827.6396};
 								angles[]={0,3.1829219,0};
 							};
 							side="Civilian";
@@ -3558,7 +3369,6 @@ class Mission
 							};
 							id=1699;
 							type="CUP_C_C_Schoolteacher_01";
-							atlOffset=0.00033569336;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3595,7 +3405,6 @@ class Mission
 					{
 					};
 					id=1698;
-					atlOffset=0.00033569336;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3614,7 +3423,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item11
+				class Item9
 				{
 					dataType="Group";
 					side="Civilian";
@@ -3626,11 +3435,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={12216.208,177.21173,7302.585};
+								position[]={4372.895,305.09283,7827.6479};
 								angles[]={0,3.0992858,0};
 							};
 							side="Civilian";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
 								description="Kuta 'Napi' Napletes";
@@ -3650,7 +3459,7 @@ class Mission
 							};
 							id=1697;
 							type="CUP_C_C_Villager_03";
-							atlOffset=0.0004119873;
+							atlOffset=0.29098511;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3687,7 +3496,7 @@ class Mission
 					{
 					};
 					id=1696;
-					atlOffset=0.0004119873;
+					atlOffset=0.29098511;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3706,13 +3515,13 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item12
+				class Item10
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
-						items=8;
+						items=7;
 						class Item0
 						{
 							dataType="Object";
@@ -3721,7 +3530,7 @@ class Mission
 								position[]={969.5979,154.12584,7261.835};
 								angles[]={0,2.2568853,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -3811,7 +3620,7 @@ class Mission
 							{
 								position[]={969.1759,154.22308,7263.3198};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=5;
 							class Attributes
 							{
@@ -3913,7 +3722,7 @@ class Mission
 								position[]={968.71985,154.17319,7262.3286};
 								angles[]={0,3.3259342,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=5;
 							class Attributes
 							{
@@ -4014,7 +3823,7 @@ class Mission
 								position[]={2742.1328,200.85977,5175.7671};
 								angles[]={0,3.4394853,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=5;
 							class Attributes
 							{
@@ -4094,7 +3903,7 @@ class Mission
 							{
 								position[]={2742.6448,200.87195,5176.772};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=5;
 							class Attributes
 							{
@@ -4186,7 +3995,7 @@ class Mission
 								position[]={1361.7849,218.4762,7286.4639};
 								angles[]={0,3.3259342,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=5;
 							class Attributes
 							{
@@ -4286,7 +4095,7 @@ class Mission
 								position[]={1091.2515,150.33658,6639.062};
 								angles[]={0,3.3259342,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=5;
 							class Attributes
 							{
@@ -4388,101 +4197,6 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item7
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={6471.3809,464.56876,14905.058};
-								angles[]={0,3.3259342,0};
-							};
-							side="Independent";
-							flags=5;
-							class Attributes
-							{
-								init="this setVariable[""mkr_scripts_isResistance"", true];";
-								description="Dimitrij Monkyrov";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="rhsgref_uniform_specter";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="murshun_cigs_cigpack";
-												count=1;
-												ammoLeft=20;
-											};
-										};
-										class ItemCargo
-										{
-											items=4;
-											class Item0
-											{
-												name="ACE_elasticBandage";
-												count=3;
-											};
-											class Item1
-											{
-												name="AFMED_apap";
-												count=2;
-											};
-											class Item2
-											{
-												name="ACE_CableTie";
-												count=1;
-											};
-											class Item3
-											{
-												name="ACE_tourniquet";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									gps="ItemGPS";
-								};
-							};
-							id=1871;
-							type="CUP_B_CDF_Soldier_FST";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="CUP_D_Male01_CZ_ACR";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.04;
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
 					};
 					class Attributes
 					{
@@ -4507,7 +4221,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item13
+				class Item11
 				{
 					dataType="Group";
 					side="Independent";
@@ -4635,7 +4349,7 @@ class Mission
 				};
 			};
 			id=1;
-			atlOffset=-153.3779;
+			atlOffset=-17.981354;
 		};
 		class Item1
 		{
@@ -5851,7 +5565,7 @@ class Mission
 							};
 							id=581;
 							type="Box_Syndicate_Ammo_F";
-							atlOffset=1.1535797;
+							atlOffset=1.1536255;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -9072,7 +8786,6 @@ class Mission
 							};
 							id=187;
 							type="rhsgref_ins_zil131_open";
-							atlOffset=1.5258789e-005;
 						};
 						class Item16
 						{
@@ -12243,7 +11956,7 @@ class Mission
 							};
 							id=725;
 							type="CUP_C_S1203_CIV_CR";
-							atlOffset=0.00050354004;
+							atlOffset=0.00035095215;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14200,7 +13913,7 @@ class Mission
 							};
 							id=1455;
 							type="CUP_C_S1203_CIV_CR";
-							atlOffset=0.016937256;
+							atlOffset=-9.1552734e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30736,11 +30449,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2552.22,299.68381,6344.7617};
-						angles[]={0,4.895906,0};
+						position[]={2552.22,299.68332,6344.7617};
+						angles[]={0,4.8959107,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						isPlayable=1;
@@ -30759,6 +30472,37 @@ class Mission
 					};
 					id=1775;
 					type="CUP_C_C_Villager_02";
+					atlOffset=0.60800171;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male04_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -30854,7 +30598,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2505.2666,308.13577,6422.7139};
+						position[]={2505.2671,308.13571,6422.7139};
 					};
 					side="Civilian";
 					flags=5;
@@ -30875,6 +30619,37 @@ class Mission
 					};
 					id=1781;
 					type="CUP_C_C_Bully_04";
+					atlOffset=0.18701172;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male04_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -30939,7 +30714,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2507.917,305.13129,6396.6548};
+						position[]={2507.917,305.13144,6396.6548};
 					};
 					side="Civilian";
 					flags=5;
@@ -30961,12 +30736,44 @@ class Mission
 					};
 					id=1785;
 					type="CUP_C_C_Racketeer_02";
+					atlOffset=0.00015258789;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male03_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1774;
+			atlOffset=0.60800171;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32297,7 +32104,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""MKR_Scripts_isChedaki"", true];";
+						init="this setVariable [""MKR_Scripts_isChedaki"", true];" \n "" \n "if (local this && {player isEqualTo this}) then {" \n "[""Boris Planicka"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
 						name="chkdz_smuggler";
 						description="Boris Planicka";
 						isPlayable=1;
@@ -32423,7 +32230,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""MKR_Scripts_isChedaki"", true];";
+						init="this setVariable [""MKR_Scripts_isChedaki"", true];" \n "" \n "if (local this && {player isEqualTo this}) then {" \n "[""Bogdan Beranek"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
 						description="Bogdan Beranek";
 						isPlayable=1;
 						class Inventory
@@ -32548,7 +32355,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""MKR_Scripts_isChedaki"", true];";
+						init="this setVariable [""MKR_Scripts_isChedaki"", true];" \n "" \n "if (local this && {player isEqualTo this}) then {" \n "[""Jaromir Kozel"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
 						description="Jaromir Kozel";
 						isPlayable=1;
 						class Inventory
@@ -32673,7 +32480,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""MKR_Scripts_isChedaki"", true];";
+						init="this setVariable [""MKR_Scripts_isChedaki"", true];" \n "" \n "if (local this && {player isEqualTo this}) then {" \n "[""Jaromir Smetana"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
 						description="Jaromir Smetana";
 						isPlayable=1;
 						class Inventory
@@ -32989,7 +32796,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={972.52594,165.82076,7251.7466};
-					angle=3.146307;
+					angle=3.1463065;
 					class Attributes
 					{
 						text="@STR_MKR_Locations_CampTishinaWestOf";
@@ -33609,7 +33416,6 @@ class Mission
 							};
 							id=2187;
 							type="Land_ChairPlastic_F";
-							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33707,7 +33513,6 @@ class Mission
 							};
 							id=2190;
 							type="Land_ChairPlastic_F";
-							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33740,7 +33545,6 @@ class Mission
 							};
 							id=2203;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.069961548;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34006,7 +33810,7 @@ class Mission
 							};
 							id=2211;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.0028381348;
+							atlOffset=0.0027618408;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34347,7 +34151,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2660.1689,275.55643,10040.643};
+								position[]={1686.4127,145.57558,3769.5513};
 								angles[]={0,4.3633928,0};
 							};
 							side="Empty";
@@ -34360,7 +34164,6 @@ class Mission
 							};
 							id=1934;
 							type="CUP_C_Lada_CIV";
-							atlOffset=0.00021362305;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34499,11 +34302,10 @@ class Mission
 						};
 					};
 					id=2219;
-					atlOffset=0.00021362305;
 				};
 			};
 			id=2217;
-			atlOffset=-88.52887;
+			atlOffset=0.30574036;
 		};
 		class Item33
 		{
@@ -34721,6 +34523,360 @@ class Mission
 			id=2256;
 			atlOffset=0.00012207031;
 		};
+		class Item37
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7002.083,294.10144,7708.4546};
+						angles[]={0,3.1631298,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="if (local this && {player isEqualTo this}) then {" \n "[""Oleg Kropacek"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
+						name="chairsDriver";
+						description="Oleg Kropacek";
+						isPlayable=1;
+					};
+					id=2261;
+					type="CUP_C_C_Worker_03";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male04_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7003.4521,294.10144,7708.124};
+						angles[]={0,3.4394853,0};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						init="if (local this && {player isEqualTo this}) then {" \n "[""Radosław Przyjazny"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
+						name="chairsAssistant";
+						description="Radosław Przyjazny";
+						isPlayable=1;
+					};
+					id=2259;
+					type="CUP_C_C_Worker_04";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male05_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2260;
+		};
+		class Item38
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7003.4321,296.03519,7710.4072};
+				angles[]={-0,1.9291472,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this setPlateNumber ""CH-NS2312"";";
+			};
+			id=2263;
+			type="CUP_C_V3S_Covered_TKC";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit"",""Medikit""],[20,2]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item39
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2535.2991,194.56604,5025.8989};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="if (local this && {player isEqualTo this}) then {" \n "[""Boris Grygar"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
+						name="lada_buyer";
+						description="Boris Grygar";
+						isPlayable=1;
+					};
+					id=2265;
+					type="CUP_C_C_Citizen_02";
+					atlOffset=0.26899719;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male02_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2264;
+			atlOffset=0.26899719;
+		};
+		class Item40
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1685.553,144.14134,3767.7122};
+						angles[]={0,4.6764698,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="if (local this && {player isEqualTo this}) then {" \n "[""Viktor Bobek"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
+						name="lada_driver";
+						description="Viktor Bobek";
+						isPlayable=1;
+					};
+					id=2267;
+					type="CUP_C_C_Mechanic_03";
+					atlOffset=0.13700867;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male04_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Viktor Bobek";
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2266;
+			atlOffset=0.13700867;
+		};
+		class Item41
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6043.5112,301.09149,7808.144};
+						angles[]={0,3.8198624,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="if (local this && {player isEqualTo this}) then {" \n "[""Michal Korolenko"", getPlayerUID player] call MKR_Scripts_fnc_assignDocumentsToPlayer;" \n "};";
+						name="lada_seller";
+						description="Michal Korolenko";
+						isPlayable=1;
+					};
+					id=2269;
+					type="CUP_C_C_Villager_01";
+					atlOffset=0.00042724609;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="CUP_D_Male03_CZ";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2268;
+			atlOffset=0.00042724609;
+		};
 	};
 	class Connections
 	{
@@ -34904,8 +35060,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=105;
-				item1=1703;
+				item0=1697;
+				item1=115;
 				class CustomData
 				{
 					type="Sync";
@@ -34914,8 +35070,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=1566;
-				item1=1703;
+				item0=1695;
+				item1=84;
 				class CustomData
 				{
 					type="Sync";
@@ -34924,8 +35080,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=1697;
-				item1=115;
+				item0=57;
+				item1=1677;
 				class CustomData
 				{
 					type="Sync";
@@ -34934,8 +35090,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=1695;
-				item1=84;
+				item0=1679;
+				item1=62;
 				class CustomData
 				{
 					type="Sync";
@@ -34944,8 +35100,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=57;
-				item1=1677;
+				item0=1630;
+				item1=872;
 				class CustomData
 				{
 					type="Sync";
@@ -34954,8 +35110,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=1679;
-				item1=62;
+				item0=1621;
+				item1=122;
 				class CustomData
 				{
 					type="Sync";
@@ -34964,8 +35120,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=1630;
-				item1=872;
+				item0=1643;
+				item1=1654;
 				class CustomData
 				{
 					type="Sync";
@@ -34974,8 +35130,8 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=1621;
-				item1=122;
+				item0=1630;
+				item1=2257;
 				class CustomData
 				{
 					type="Sync";
@@ -34984,8 +35140,8 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=1643;
-				item1=1654;
+				item0=2263;
+				item1=2261;
 				class CustomData
 				{
 					type="Sync";

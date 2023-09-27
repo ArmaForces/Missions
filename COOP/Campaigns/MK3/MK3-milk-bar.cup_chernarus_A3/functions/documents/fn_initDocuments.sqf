@@ -195,15 +195,15 @@ GVAR(allDocuments) set [
 
 // Task #2 - kradziona Łada
 GVAR(allDocuments) set [
-    "Ctirad Cerny", [
-        ["ID", ["Ctirad Cerny", 1973] call _idFunc],
+    "Michal Korolenko", [
+        ["ID", ["Michal Korolenko", 1973] call _idFunc],
         ["Prawo jazdy", "Samochód"]
 ]];
 
 // Task #3 -
 GVAR(allDocuments) set [
-    "Matous Hruby", [
-        ["ID", ["Ctirad Cerny", 1973] call _idFunc],
+    "Boris Grygar", [
+        ["ID", ["Boris Grygar", 1973] call _idFunc],
         ["Prawo jazdy", "Samochód"]
 ]];
 
@@ -236,7 +236,7 @@ GVAR(allDocuments) set [
     "Oleg Kropacek", [
         ["ID", ["Oleg Kropacek", 1987] call _idFunc],
         ["Prawo jazdy", "Samochód"],
-        ["Dowód rejestracyjny", "Praga V3S, Żółty, numery TODO TBD"]
+        ["Dowód rejestracyjny", "Praga V3S, Żółty, CH-NS2312"]
 ]];
 
 // Task #8 - Pomocnik z krzesłami
