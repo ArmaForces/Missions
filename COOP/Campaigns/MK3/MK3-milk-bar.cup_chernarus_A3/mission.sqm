@@ -1235,8 +1235,9 @@ class Mission
 		windForced=1;
 		year=2022;
 		month=3;
-		day=20;
-		minute=16;
+		day=24;
+		hour=6;
+		minute=-20;
 		startFogBase=250;
 		forecastFogBase=250;
 		startFogDecay=0.0099999998;
