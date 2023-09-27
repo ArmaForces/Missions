@@ -57,8 +57,13 @@ CUP_stopLampCheck = true;
                     player addItem "ACE_key_east";
                 }
             };
-            case EAST: { player addItem "ACE_key_east"; };
-            case INDEPENDENT: { player addItem "ACE_key_indp"; };
+            case EAST: {
+                player addItem "ACE_key_east";
+            };
+            case INDEPENDENT: {
+                player addItem "ACE_key_indp";
+                player addItem "ACE_key_lockpick";
+            };
             default {
                 if (player call FUNC(isMedicalService)) then {
                     // Nothing for medics
