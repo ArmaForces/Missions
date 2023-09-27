@@ -816,7 +816,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=8;
+									items=9;
 									class Item0
 									{
 										class data
@@ -881,6 +881,14 @@ class CustomAttributes
 											value="ace_nametags_showcursortagforvehicles";
 										};
 									};
+									class Item8
+									{
+										class data
+										{
+											singleType="STRING";
+											value="afft_friendly_tracker_enabled";
+										};
+									};
 								};
 							};
 						};
@@ -891,7 +899,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=8;
+									items=9;
 									class Item0
 									{
 										class data
@@ -1082,6 +1090,33 @@ class CustomAttributes
 										};
 									};
 									class Item7
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item8
 									{
 										class data
 										{
