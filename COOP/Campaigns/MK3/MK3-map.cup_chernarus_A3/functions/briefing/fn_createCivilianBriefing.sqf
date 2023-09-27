@@ -25,7 +25,8 @@ private _generalRulesList = [
     BCLLSTRING(Rules_2),
     BCLLSTRING(Rules_3),
     BCLLSTRING(Rules_4),
-    BCLLSTRING(Rules_5)
+    BCLLSTRING(Rules_5),
+    BCLLSTRING(Rules_6)
 ] joinString _listSeparator;
 private _generalRulesText = format ["%1%2%3", BCLLSTRING(Rules), _listSeparator, _generalRulesList];
 

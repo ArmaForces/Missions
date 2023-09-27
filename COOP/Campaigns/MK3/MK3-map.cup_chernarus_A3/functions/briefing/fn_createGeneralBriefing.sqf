@@ -21,10 +21,10 @@ params [["_unit", player]];
 
 _unit createDiarySubject [DIARY_NAME, LLSTRING(DisplayName)];
 _unit createDiaryRecord [DIARY_NAME, [BLLSTRING(OtherChanges_Title), BLLSTRING(OtherChanges)]];
-_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(MedicalSystem), BLLSTRING(MedicalStuff)]];
-_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(EmergencyNumber), BLLSTRING(EmergencyStuff)]];
-_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(Documents), BLLSTRING(DocumentsStuff)]];
 _unit createDiaryRecord [DIARY_NAME, [BLLSTRING(Skills), BLLSTRING(SkillsStuff)]];
+_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(MedicalSystem), BLLSTRING(MedicalStuff)]];
+_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(Documents), BLLSTRING(DocumentsStuff)]];
+_unit createDiaryRecord [DIARY_NAME, [BLLSTRING(EmergencyNumber), BLLSTRING(EmergencyStuff)]];
 _unit createDiaryRecord [DIARY_NAME, [BLLSTRING(TrafficRules_Title), BLLSTRING(TrafficRules)]];
 
 private _listSeparator = "<br/>- ";

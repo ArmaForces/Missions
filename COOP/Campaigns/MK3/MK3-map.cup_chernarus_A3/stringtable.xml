@@ -253,6 +253,10 @@
             <English>Keep your assigned vehicle. Don't steal random vehicles.</English>
             <Polish>Trzymaj się przypisanego środka transportu. Nie kradnij losowych pojazdów.</Polish>
         </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_6">
+            <English>Generally, you don't like Chedaks and collaborants.</English>
+            <Polish>Ogólnie nie lubisz Czedaków i kolaborantów.</Polish>
+        </Key>
         <Key ID="STR_MKR_Briefing_Civilian_RoE">
             <English>When you hear shots - you run. If they threaten you with a gun, you do what they say. If you have your own gun, don't use it unless it's safe to.</English>
             <Polish>Gdy słyszysz strzały - uciekasz. Jeżeli grożą Ci bronią, robisz co mówią. Jeżeli masz własną broń, nie używasz jej jeśli to dla Ciebie niebezpieczne.</Polish>
