@@ -16,3 +16,6 @@ player addAction [format ["<t color='#c8c8ff'>%1</t>", localize "STR_ArmaForces_
 if (rank player == "COLONEL") then {
 	player addAction [format ["<t color='#c8c8ff'>%1</t>", localize "$STR_ArmaForces_Preset_Dialog_GroupRename_Action"], {call FUNC(groupRenameGUI)}, nil, -10, false, true, "", "", 50];
 };
+
+minviewdistance = 250;
+maxviewdistance = 10000;

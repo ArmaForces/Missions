@@ -135,5 +135,6 @@ class CfgFunctions
     };
 };
 
+#include "gui\gui_init.hpp"
 #include "CfgInfoText.hpp"
 #include "CfgTasks.hpp"
