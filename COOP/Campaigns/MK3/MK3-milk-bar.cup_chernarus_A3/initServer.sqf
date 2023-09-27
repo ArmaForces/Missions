@@ -47,8 +47,8 @@ publicVariable QGVAR(zeusNetId);
 
     private _isMilitiaVehicle = typeOf _x in ["CUP_LADA_LM_CIV", "CUP_C_S1203_Militia_CIV"];
     if (_isMilitiaVehicle) then {
-        [_x, WEST] call FUNC(initCbRadio);
         _x setVariable ["ace_vehiclelock_lockSide", WEST, true];
+        [_x, WEST] call FUNC(initCbRadio);
     } else {
         private _vehicleSide = [_x] call BIS_fnc_objectSide;
         [_x, _vehicleSide] call FUNC(initCbRadio);

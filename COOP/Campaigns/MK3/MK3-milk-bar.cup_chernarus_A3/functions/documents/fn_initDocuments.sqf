@@ -65,6 +65,13 @@ GVAR(allDocuments) set [
         ["ID", ["Jan Honza Mikes", 1987, "Česká republika"] call _idFunc]
 ]];
 
+// Godziak (OPFOR)
+GVAR(allDocuments) set [
+    "Yewgenij Fisenko", [
+        ["ID", ["Yewgenij Fisenko", nil, "Republika Czedacka"] call _idFunc],
+        ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"]
+]];
+
 // Haverex
 GVAR(allDocuments) set [
     "TBD_Haverex_UID", [
@@ -132,11 +139,19 @@ GVAR(allDocuments) set [
 
 // Piesa
 GVAR(allDocuments) set [
-    "TBD_Piesa_UID", [
+    "Toivo Iwanowicz", [
         ["ID", ["Toivo Iwanowicz", 1980] call _idFunc],
         ["Prawo jazdy", "Samochód; Motocykl"],
         ["Pozwolenie na broń", "Myśliwski sztucer po pradziadzie"],
         ["Dowód Rejestracyjny", "TT650, Zardzewiały, Bez numerów"]
+]];
+
+// Piesa nie Piesa
+GVAR(allDocuments) set [
+    "Fiodor Chwalewagner", [
+        ["ID", ["Fiodor Piotrowicz Chwalewagner", 1967] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "Wołga, Zielona, TODO"]
 ]];
 
 // Renchon

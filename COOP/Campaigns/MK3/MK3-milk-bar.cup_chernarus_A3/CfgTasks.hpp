@@ -133,6 +133,7 @@ class CfgTasks
         title = "Cywile";
         description = "Jesteście cywilami. Nie lubicie Czedaków oraz kolaborantów.";
         icon = "meet";
+        parentTask = "TBD_MISSION_TITLE";
 
         owners[] = { "zeus", "CIVILIAN" };
     };
