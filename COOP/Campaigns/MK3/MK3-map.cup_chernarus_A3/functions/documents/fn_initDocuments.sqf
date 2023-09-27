@@ -146,6 +146,14 @@ GVAR(allDocuments) set [
         ["Dowód Rejestracyjny", "TT650, Zardzewiały, Bez numerów"]
 ]];
 
+// Piesa nie Piesa
+GVAR(allDocuments) set [
+    "TBD_Piesa2_UID", [
+        ["ID", ["Fiodor Piotrowicz Chwalewagner", 1967] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "Wołga, Zielona, TODO"]
+]];
+
 // Renchon
 GVAR(allDocuments) set [
     "TBD_Renchon_UID", [

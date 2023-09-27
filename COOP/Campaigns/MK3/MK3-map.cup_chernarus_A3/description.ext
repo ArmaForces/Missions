@@ -81,8 +81,10 @@ class CfgFunctions
         class Documents
         {
             class addDocument {};
+            class assignDocumentsToPlayer {};
             class getDocuments {};
             class hasAnyDocument {};
+            class initDocuments {};
             class initDocumentsActions {};
             class showDocumentStatement {};
         };
@@ -105,7 +107,6 @@ class CfgFunctions
             class initCbRadio {};
             class initCbRadioPresets { postInit = 1; };
             class initCustomLocations {};
-            class initDocuments {};
             class initPlayerPersonalVehicles {};
 			class removeMapObjects { preInit = 1; };
 		};

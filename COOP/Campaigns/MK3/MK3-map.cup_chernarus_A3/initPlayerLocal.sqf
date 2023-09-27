@@ -111,7 +111,7 @@ if (!_isMedic) then {
 
 [QGVAR(carAlarm), FUNC(carAlarm)] call CBA_fnc_addEventHandler;
 
-
+[QGVAR(assignDocumentsToPlayer), FUNC(assignDocumentsToPlayer)] call CBA_fnc_addEventHandler;
 
 
 

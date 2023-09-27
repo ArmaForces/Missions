@@ -1,6 +1,8 @@
 #include "script_component.hpp"
 
 GVAR(allDocuments) = createHashMap;
+call FUNC(initDocuments);
+
 GVAR(cbRadioPresetInitialized) = false;
 GVAR(customLocations) = call FUNC(initCustomLocations);
 publicVariable QGVAR(customLocations);
@@ -53,8 +55,6 @@ publicVariable QGVAR(zeusNetId);
     };
 } forEach vehicles;
 
-call FUNC(initDocuments);
-
 /*
     Register Event Handlers
 */
@@ -64,6 +64,8 @@ call FUNC(initDocuments);
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(carAlarm), FUNC(carAlarm)] call CBA_fnc_addEventHandler;
+
+[QGVAR(assignDocumentsToPlayer), FUNC(assignDocumentsToPlayer)] call CBA_fnc_addEventHandler;
 
 // 0 setFog 0.2;
 // 0 setOvercast 1;
