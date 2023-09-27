@@ -49,6 +49,7 @@ private _dddFnc = {
         TRACE_1("Updated timetable: %1", _timetable);
 
         _arrow setVariable [QGVAR(busTimetable), _timetable];
+        hideObjectGlobal _arrow;
     } forEach _line;
 
     INFO_4("Initialized line %1: %2 - %3 | Total length (min): %4", _lineNumber, _origin, _destination, _timeToArriveTotal);
