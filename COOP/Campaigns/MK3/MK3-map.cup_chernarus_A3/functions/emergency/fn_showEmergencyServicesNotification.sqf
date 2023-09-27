@@ -32,6 +32,6 @@ if (player call FUNC(isEmergencyService) || {!isNull getAssignedCuratorLogic pla
 
     _unit customChat [GVAR(emergencyNetId), _emergencyMessage];
 
-    private _markerText = format [LLSTRING(EmergencyMarker), _localizedEmergencyTypeName, _time];
+    private _markerText = format [LLSTRING(EmergencyMarker), name _unit, _localizedEmergencyTypeName, _time];
     [_position, _markerText] call FUNC(createEmergencyMarker);
 };
