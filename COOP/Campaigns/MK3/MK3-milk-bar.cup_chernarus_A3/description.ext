@@ -1,0 +1,143 @@
+#include "script_component.hpp"
+
+/* Respawn stuff */
+respawn = 3;
+respawnDelay = 1e10;
+respawnTemplates[] = {"afm_respawn_default"};
+// Jeśli misja nie przewiduje standardowego respawnu na czas to można usunąć "Counter".
+// Tj. dla misji permadeath i z własnym respawnem np. po wykonaniu zadania.
+// Dla kompatybilności z modułem obserwatora:
+respawnTemplatesVirtual[] = {"Spectator"};
+
+disableChannels[] = {1, 2, 3, 4, 5};
+
+/* Mission description and stuff */
+author = "3Mydlo3";
+onLoadIntro = CSTRING(Mission_ShortDescription);
+briefingName = CSTRING(DisplayName);
+onLoadMission = CSTRING(Mission_ShortDescription);
+onLoadName = CSTRING(Mission_Title);
+
+class Header {
+    gameType = Coop;
+    minPlayers = 20;
+    maxPlayers = 51;
+};
+
+/* Other stuff */
+disabledAI = true;
+
+class CfgFunctions
+{
+	class ADDON
+	{
+        tag = QUOTE(ADDON);
+        class functions {
+            file = "functions";
+
+            // For ViewDistance and GroupRename GUIs
+            class groupRenameGUI {};
+            class groupRenameList {};
+            class setViewDistance {};
+            class viewDistanceGUI {};
+            class playerActions {};
+
+            // Mission custom
+            class infoText {};
+        };
+	};
+
+    class MKR
+    {
+        tag = QUOTE(ADDON);
+        class Acre
+        {
+            class addCbRadio {};
+            class initCbRadioPreset { postInit = 1; };
+        };
+        class Briefing
+        {
+            class createCivilianBriefing {};
+            class createGeneralBriefing {};
+            class createMilitiaBriefing {};
+            class createMilitiaRecord {};
+            class createOpforBriefing {};
+            class createResistanceBriefing {};
+            class createVehiclesRecord {};
+        };
+        class Bus
+        {
+            class initBusStops { postInit = 1; };
+        };
+        class Common
+        {
+            class createChildActions {};
+            class hasPhone {};
+            class isCop {};
+            class isMedicalService {};
+            class isMilitia {};
+            class isResistance {};
+        };
+        class Documents
+        {
+            class addDocument {};
+            class assignDocumentsToPlayer {};
+            class getDocuments {};
+            class hasAnyDocument {};
+            class initDocuments {};
+            class initDocumentsActions {};
+            class showDocumentStatement {};
+        };
+        class Emergency
+        {
+            class callEmergency {};
+            class createEmergencyMarker {};
+            class isEmergencyService {};
+            class showEmergencyServicesNotification {};
+        };
+        class InfoText
+        {
+            class initIntroText {};
+        };
+        class Init
+		{
+            class addPlayerToCustomChannels { postInit = 1; };
+            class checkLicensePlates { postInit = 1; };
+            class initBriefing {};
+            class initCbRadio {};
+            class initCbRadioPresets { postInit = 1; };
+            class initCustomLocations {};
+            class initPlayerPersonalVehicles {};
+			class removeMapObjects { preInit = 1; };
+		};
+        class Phone
+        {
+            class initPhoneActions {};
+        };
+        class SerialKillers
+        {
+            class getAllMapCities {};
+            class getLocationName {};
+            class getNearestLocationWithAvailableName {};
+            class initSerialKillersFunctions { preInit = 1; }
+            class markerDecay {};
+            class markerDecayLoop {};
+        };
+        class Skills
+        {
+            class getSkills {};
+            class initSkillsActions {};
+            class rollSkill {};
+            class showZeusRollMessage {};
+        };
+        class VehicleLock
+        {
+            class carAlarm {};
+            class carAlarmLoop {};
+        };
+    };
+};
+
+#include "gui\gui_init.hpp"
+#include "CfgInfoText.hpp"
+#include "CfgTasks.hpp"
