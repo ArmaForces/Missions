@@ -219,8 +219,8 @@
             <Polish>Przepisy ruchu drogowego</Polish>
         </Key>
         <Key ID="STR_MKR_Briefing_TrafficRules">
-            <English>Don't ram other vehicles! Adhere to signs. Speed limit in urban areas: 50 km/h. Speed limit outside of urban areas: 90 km/h. Speed limit outside of urban areas on a road with divided lanes and a line marked shoulder: 120 km/h. All vehicles should have on-board spare wheel and first aid kit consisting of 5 bandages and 2 tourniquets CATs.</English>
-            <Polish>Nie taranuj innych pojazdów! Stosuj się do znaków. Limit prędkości w obszarze zabudowanym: 50 km/h. Limit prędkości poza obszarem zabudowanym: 90 km/h. Limit prędkości poza obszarem zabudowanym na drodze z wyznaczonymi pasami ruchu oraz wyznaczonym liniami poboczem: 120 km/h. Wszystkie pojazdy powinny mieć koło zapasowe i apteczkę pierwszej pomocy zawierającą 5 bandaży i 2 stazy CAT.</Polish>
+            <English>Don't ram other vehicles! Adhere to signs. Drunk driving is prohibited. Speed limit in urban areas: 50 km/h. Speed limit outside of urban areas: 90 km/h. Speed limit outside of urban areas on a road with divided lanes and a line marked shoulder: 120 km/h. All vehicles should have on-board spare wheel and first aid kit consisting of 5 bandages and 2 tourniquets CATs.</English>
+            <Polish>Nie taranuj innych pojazdów! Stosuj się do znaków. Jazda po pijaku jest zabroniona. Limit prędkości w obszarze zabudowanym: 50 km/h. Limit prędkości poza obszarem zabudowanym: 90 km/h. Limit prędkości poza obszarem zabudowanym na drodze z wyznaczonymi pasami ruchu oraz wyznaczonym liniami poboczem: 120 km/h. Wszystkie pojazdy powinny mieć koło zapasowe i apteczkę pierwszej pomocy zawierającą 5 bandaży i 2 stazy CAT.</Polish>
         </Key>
     </Package>
 
@@ -291,6 +291,14 @@
         <Key ID="STR_MKR_Briefing_Militia_Rules_6">
             <English>When a person is fleeing, pursue him instead of shooting.</English>
             <Polish>Gdy ktoś ucieka, goń go zamiast strzelać.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_7">
+            <English>Inspect and respect documents.</English>
+            <Polish>Sprawdzaj i honoruj dokumenty.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_8">
+            <English>As for possible punishments, you can remind, fine and take into custody (but only for shooting and serious crimes). Fines and arrests should be noted for the use in next missions.</English>
+            <Polish>W kwestii możliwych kar, możecie upomnieć, nałożyć mandat i zabrać do aresztu (ale tylko za strzelanie i poważne przestępstwa). Mandaty i aresztowania odnotować na potrzeby kolejnych misji.</Polish>
         </Key>
     </Package>
 
