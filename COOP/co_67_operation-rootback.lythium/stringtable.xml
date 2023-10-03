@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <!-- 
+            DIALOGS
+        -->
+        <!-- 3den Loadout Saver -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_copiedToClipboard">
+            <Original>Copied preset to clipboard</Original>
+            <English>Copied preset to clipboard</English>
+            <Polish>Zapisano preset do schowka</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_copyToClipboardAndSave">
+            <Original>Copy loadout to clipboard and close</Original>
+            <English>Copy loadout to clipboard and close</English>
+            <Polish>Kopiuj loadout do schowka i zamknij</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_loadoutGroupName">
+            <Original>Loadout group name (eg. Desert)</Original>
+            <English>Loadout group name (eg. Desert)</English>
+            <Polish>Nazwa grupy loadoutu (np. Desert)</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_loadoutName">
+            <Original>Loadout name (eg. MARPAT-WD)</Original>
+            <English>Loadout name (eg. MARPAT-WD)</English>
+            <Polish>Nazwa loadoutu (np. MARPAT-WD)</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_title">
+            <Original>ARMAFORCES LOADOUT SAVER</Original>
+            <English>ARMAFORCES LOADOUT SAVER</English>
+            <Polish>ARMAFORCES ZAPISYWACZ LOADOUTÓW</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <Original>Close</Original>
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- CRASH TELEPORT -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_Ask">
+            <Original>Looks like you were disconnected from the server. Teleport back to action?</Original>
+            <English>Looks like you were disconnected from the server. Teleport back to action?</English>
+            <Polish>Chyba wyrzuciło Cię z serwera. Teleport z powrotem?</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_Agree">
+            <Original>YES, teleport pls!</Original>
+            <English>YES, teleport pls!</English>
+            <Polish>TAK, teleport pls!</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_AgreeConfirmation">
+            <Original>Teleport then</Original>
+            <English>Teleport then</English>
+            <Polish>No to teleport</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_Reject">
+            <Original>NO, WTF</Original>
+            <English>NO, WTF</English>
+            <Polish>NIE, WTF</Polish>
+        </Key>
+        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_RejectConfirmation">
+            <Original>No teleport. You stay in base.</Original>
+            <English>No teleport. You stay in base.</English>
+            <Polish>Nie teleport. Zostajesz w bazie.</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <Original>Rename</Original>
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <Original>Custom</Original>
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>

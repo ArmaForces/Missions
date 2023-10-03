@@ -1,0 +1,142 @@
+AF_loadout_redfor = [
+["Desert","Afgan '86","Ajvar",[
+		["O_Soldier_F","rhs_uniform_m88_patchless","rhs_6b5_rifleman_khaki_fix","","rhs_ssh68","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_green"],"rhs_weap_rsp30_red",["","","",""],["rhs_mag_rsp30_red"]],
+		["O_crew_F","rhs_uniform_m88_patchless","rhsgref_6b23_khaki_nco","","rhs_tsh4","rhs_weap_aks74u",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N6M_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_m88_patchless","rhs_6b5_medic_khaki_fix","rhs_sidor","rhs_ssh68","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"",["","","",""],[]],
+		["O_Soldier_TL_F","rhs_uniform_m88_patchless","rhs_6b5_rifleman_khaki_fix","rhs_sidor","rhs_ssh68","rhs_weap_aks74_gp25",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N10_2mag_camo_AK","rhs_VOG25"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_AR_F","rhs_uniform_m88_patchless","rhs_6b5_rifleman_khaki_fix","rhs_sidor","rhs_ssh68","rhs_weap_pkm",["","","",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_medic_F","rhs_uniform_m88_patchless","rhs_6b5_medic_khaki_fix","rhs_medic_bag","rhs_ssh68","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_SL_F","rhs_uniform_m88_patchless","rhs_6b5_rifleman_khaki_fix","rhs_sidor","rhs_ssh68","rhs_weap_aks74_gp25",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK","rhs_VOG25"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_officer_F","rhs_uniform_m88_patchless","rhs_vest_commander","rhs_sidor","rhs_fieldcap_khk","",["","","",""],[],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]]]
+	],
+["Mountain","KGB Pogranicznicy '86","Ajvar",[
+		["O_Soldier_F","rhs_uniform_m88_patchless","LOP_6sh46","","rds_Woodlander_cap2","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_rsp30_red",["","","",""],["rhs_mag_rsp30_red"]],
+		["O_crew_F","rhs_uniform_m88_patchless","rhs_6sh46","","rhs_tsh4","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_m88_patchless","rhs_6sh46","rhs_medic_bag","rds_Woodlander_cap2","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"",["","","",""],[]],
+		["O_Soldier_TL_F","rhs_uniform_m88_patchless","rhs_6sh46","rhs_sidor","rds_Woodlander_cap2","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_AR_F","rhs_uniform_m88_patchless","LOP_6sh46","rhs_sidor","rds_Woodlander_cap2","rhs_weap_svdp",["","","rhs_acc_pso1m21",""],["rhs_10Rnd_762x54mmR_7N14"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_medic_F","rhs_uniform_m88_patchless","LOP_6sh46","rhs_medic_bag","rds_Woodlander_cap2","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_SL_F","rhs_uniform_m88_patchless","rhs_6sh46","rhs_sidor","rds_Woodlander_cap2","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_officer_F","rhs_uniform_m88_patchless","rhs_vest_commander","rhs_sidor","LOP_H_Policeman_cap","",["","","",""],[],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]]]
+	],
+["Mountain","Mountain Flora","Madin",[
+		["O_Soldier_F","rhs_uniform_mflora_patchless","rhs_6b23_ML_6sh92_fix","","rhs_6b27m_ml","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_crew_F","rhs_uniform_mflora_patchless","rhs_6b23_ML_6sh92_fix","","rhs_tsh4","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_mflora_patchless","rhs_6b23_ML_6sh92_fix","B_Carryall_khk","rhs_6b27m_ml","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","rhs_uniform_mflora_patchless","rhs_6b23_ML_6sh92_fix","","rhs_6b27m_ml","rhs_weap_ak74mr_gp25",["rhs_acc_uuk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","rhs_uniform_mflora_patchless","rhs_6b23_ML_6sh92_fix","B_Kitbag_rgr","rhs_6b27m_ml","rhs_weap_pkp",["","","rhs_acc_1p78",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_medic_F","rhs_uniform_mflora_patchless","rhs_6b23_ML_6sh92_fix","B_FieldPack_khk","rhs_6b27m_ml","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_SL_F","rhs_uniform_mflora_patchless","rhs_6b23_ML_6sh92_fix","rhs_assault_umbts","rhs_6b27m_ml","rhs_weap_ak74mr_gp25",["rhs_acc_uuk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_msv_emr","rhs_6b23_digi_crewofficer","rhssaf_kitbag_smb","rhs_fieldcap_digi","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Urban ","Rosja FSKN '15","Ajvar",[
+		["O_Soldier_F","LOP_U_IRA_Fatigue_GRK_BLK","V_PlateCarrier1_blk","","LOP_H_6B27M_ess_BLK","KA_Vityaz",["","KA_Vityaz_Flashlight_normal","rhsusf_acc_eotech_552",""],["KA_30Rnd_9x19_7N31_AP_Mag"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_crew_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","","rhs_tsh4","rhs_weap_aks74u",["rhs_acc_pgs64_74u","","",""],["rhs_30Rnd_545x39_7N6M_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","B_TacticalPack_blk","LOP_H_6B27M_ess_BLK","rhs_weap_pp2000",["","","optic_Yorris",""],["rhs_mag_9x19mm_7n31_44"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","LOP_U_IRA_Fatigue_GRK_BLK","LOP_V_CarrierRig_BLK","","LOP_H_6B27M_ess_BLK","rhs_weap_ak74mr",["rhs_acc_dtk2","rhs_acc_perst3","rhsusf_acc_eotech_552","rhsusf_acc_grip2"],["rhs_30Rnd_545x39_7U1_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","B_AssaultPack_blk","LOP_H_6B27M_ess_BLK","AA12",["","","",""],["20Rnd_AA12_Pellets"],"rhs_weap_pp2000_folded",["","","",""],["rhs_mag_9x19mm_7n21_20"]],
+		["O_medic_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","B_AssaultPack_blk","LOP_H_6B27M_ess_BLK","rhs_weap_pp2000",["","","rhsusf_acc_T1_low",""],["rhs_mag_9x19mm_7n31_44"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_SL_F","LOP_U_IRA_Fatigue_GRK_BLK","VSM_LBT1961_Black","B_AssaultPack_blk","LOP_H_6B27M_ess_BLK","rhs_weap_ak74mr",["rhs_acc_dtk1","rhs_acc_perst3","rhsusf_acc_ACOG","rhsusf_acc_grip2"],["rhs_30Rnd_545x39_7U1_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_g3_blk","V_TacVestIR_blk","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_beanie_green","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Urban","Rosja FSB Alfa","Ajvar",[
+		["O_Soldier_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","","rhs_altyn_novisor_ess","rhs_weap_ak105_zenitco01_b33",["rhs_acc_pgs64","rhsusf_acc_M952V","SMA_eotech552","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_7U1_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_crew_F","LOP_U_US_Fatigue_14","rhs_6b23_digi_fix","","rhs_tsh4_ess_bala","rhs_weap_aks74un",["rhs_acc_pgs64_74u","","rhs_acc_ekp1",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","B_TacticalPack_blk","rhs_altyn_novisor_ess","rhs_weap_asval_npz",["","","SMA_eotech552",""],["rhs_20rnd_9x39mm_SP5"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","","rhs_altyn_novisor_ess","rhs_weap_ak105_zenitco01_b33",["rhs_acc_pgs64","rhsusf_acc_M952V","SMA_eotech552",""],["rhs_30Rnd_545x39_7U1_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","B_AssaultPack_blk","rhs_altyn_novisor_ess","rhs_weap_pkp",["","","",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_medic_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","B_AssaultPack_blk","rhs_altyn_novisor_ess","rhs_weap_asval_grip_npz",["","","SMA_eotech552",""],["rhs_20rnd_9x39mm_SP5"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_SL_F","LOP_U_IRA_Fatigue_GRK_BLK","V_TacVestIR_blk","B_AssaultPack_blk","rhs_altyn_novisor_ess","rhs_weap_ak105_zenitco01_b33",["rhs_acc_pgs64","SMA_SFFL_BLK","SMA_eotech552",""],["rhs_30Rnd_545x39_7U1_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_gorka_r_y","rhs_6b23_digi_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_fieldcap_helm_digi","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Woodland","EMR-Summer","Madin",[
+		["O_Soldier_F","rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_fix","","rhs_6b27m_digi","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_crew_F","rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_fix","","rhs_tsh4","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_emr_patchless","rhs_6b23_digi_medic_fix","B_TacticalPack_oli","rhs_6b27m_digi","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_vog_headset_fix","","rhs_6b27m_digi","rhs_weap_ak74mr_gp25",["rhs_acc_uuk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_fix","rhssaf_kitbag_digital","rhs_6b27m_digi","rhs_weap_pkp",["","","rhs_acc_1p78",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_medic_F","rhs_uniform_emr_patchless","rhs_6b23_digi_medic_fix","rhs_sidor","rhs_6b27m_digi","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_SL_F","rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_vog_headset_fix","rhs_assault_umbts","rhs_6b27m_digi","rhs_weap_ak74mr_gp25",["rhs_acc_uuk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_msv_emr","rhs_6b23_digi_crewofficer","rhssaf_kitbag_smb","rhs_fieldcap_digi","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Woodland","Flora","Madin",[
+		["O_Soldier_F","rhs_uniform_flora_patchless","rhs_6b23_6sh92_fix","","rhs_6b26","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_crew_F","rhs_uniform_flora_patchless","rhs_6b23_6sh92_fix","","rhs_tsh4","rhs_weap_aks74",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_flora_patchless","rhsgref_6b23_khaki_medic_fix","B_TacticalPack_oli","rhs_6b26","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","rhs_uniform_flora_patchless","rhs_6b23_6sh92_vog_headset_fix","","rhs_6b26","rhs_weap_ak74mr_gp25",["rhs_acc_uuk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","rhs_uniform_flora_patchless","rhs_6b23_6sh92_fix","rhssaf_kitbag_digital","rhs_6b26","rhs_weap_pkp",["","","rhs_acc_1p78",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_medic_F","rhs_uniform_flora_patchless","rhsgref_6b23_khaki_medic_fix","rhs_sidor","rhs_6b26","rhs_weap_ak74mr",["rhs_acc_uuk","","rhs_acc_1p87","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_SL_F","rhs_uniform_flora_patchless","rhs_6b23_6sh92_vog_headset_fix","rhs_assault_umbts","rhs_6b26","rhs_weap_ak74mr_gp25",["rhs_acc_uuk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_msv_emr","rhs_6b23_digi_crewofficer","rhssaf_kitbag_smb","rhs_fieldcap_digi","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Woodland","Rosja  Specnaz '04(BiesĹ‚an)","Ajvar",[
+		["O_Soldier_F","LOP_U_US_Fatigue_14","rhs_6b23_6sh92_fix","","rhs_altyn","rhs_weap_ak74m_fullplum",["rhs_acc_dtk","","",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_crew_F","rhs_uniform_flora_patchless","rhs_6b23_fix","","rhs_tsh4","rhs_weap_aks74u",["rhs_acc_pgs64_74u","","",""],["rhs_30Rnd_545x39_7N6M_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","LOP_U_US_Fatigue_14","rhsgref_6b23_khaki_medic_fix","B_TacticalPack_oli","rhs_altyn_novisor","rhs_weap_asval_grip",["","","rhs_acc_pkas",""],["rhs_20rnd_9x39mm_SP5"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_TL_F","LOP_U_US_Fatigue_13","rhs_6b23_6sh92_vog_headset_fix","","rhs_altyn","rhs_weap_aks74n_gp25",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK","rhs_VOG25"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_AR_F","LOP_U_IRA_Fatigue_GRK_DPM","rhs_6b23_fix","rhs_sidor","rhs_altyn_visordown","rhs_weap_pkm",["","","",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_medic_F","rhs_uniform_gorka_r_g","rhs_6b23_medic_fix","rhs_sidor","rhs_altyn_novisor","rhs_weap_asval",["","","rhs_acc_pkas",""],["rhs_20rnd_9x39mm_SP5"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_SL_F","LOP_U_US_Fatigue_13","rhs_6b23_6sh92_vog_headset_fix","B_FieldPack_oli","rhs_altyn","rhs_weap_aks74n_gp25",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N6M_AK"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_officer_F","rhs_uniform_mvd_izlom","rhs_6b23_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_beret_milp","",["","","",""],[],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]]]
+	],
+["Woodland","Rosja - Gruzja '08","Ajvar",[
+		["O_Soldier_F","rhs_uniform_flora","rhs_6b23_6sh92_fix","","rhs_6b26_green","rhs_weap_ak74m_fullplum",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N22_AK"],"rhs_weap_rsp30_red",["","","",""],["rhs_mag_rsp30_red"]],
+		["O_crew_F","rhs_uniform_flora","rhs_6b23_fix","","rhs_tsh4","rhs_weap_aks74u",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N6M_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_flora","rhsgref_6b23_khaki_rifleman_fix","B_TacticalPack_oli","rhs_6b26_green","rhs_weap_ak74m",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"",["","","",""],[]],
+		["O_Soldier_TL_F","rhs_uniform_flora","rhs_6b23_6sh92_vog_headset_fix","rhs_sidor","rhs_6b27m_green","rhs_weap_ak74m_gp25",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK","rhs_VOG25"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_AR_F","rhs_uniform_flora","rhsgref_6b23_khaki_fix","rhs_sidor","rhs_6b27m","rhs_weap_pkm",["","","",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_medic_F","rhs_uniform_flora","rhs_6b23_6sh92_fix","rhs_medic_bag","rhs_6b27m_green","rhs_weap_ak74m_fullplum",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_SL_F","rhs_uniform_flora","rhs_6b23_6sh92_vog_headset_fix","rhs_sidor","rhs_6b7_1m_ess","rhs_weap_ak74m_gp25",["rhs_acc_dtk1983","","rhs_acc_1p29",""],["rhs_30Rnd_545x39_7N22_AK","rhs_VOG25"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_officer_F","rhs_uniform_flora","rhsgref_6b23_khaki_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_fieldcap_helm","",["","","",""],[],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]]]
+	],
+["Woodland","Rosja FSB Alfa - Multi","Ajvar",[
+		["O_Soldier_F","VSM_Multicam_Crye_Camo","VSM_RAV_operator_Multicam","","rhsusf_opscore_mc_cover_pelt_cam","rhs_weap_ak74m_zenitco01_b33",["rhs_acc_dtk","rhsusf_acc_M952V","SMA_eotech552","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_7N22_AK"],"rhsusf_weap_glock17g4",["","","",""],["rhsusf_mag_17Rnd_9x19_JHP"]],
+		["O_crew_F","LOP_U_US_Fatigue_14","rhs_6b23_digi_fix","","rhs_tsh4_ess_bala","rhs_weap_aks74un",["rhs_acc_pgs64_74u","","rhs_acc_ekp1",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","VSM_Multicam_Crye_Camo","VSM_RAV_Breacher_Multicam","VSM_Multicam_carryall","rhsusf_opscore_mc_cover_pelt_cam","rhs_weap_ak105_zenitco01_b33",["rhs_acc_pgs64","rhs_acc_perst3_2dp_light_h","rhs_acc_1p87","rhsusf_acc_grip2_wd"],["rhs_30Rnd_545x39_7N22_camo_AK"],"rhsusf_weap_glock17g4",["","","",""],["rhsusf_mag_17Rnd_9x19_JHP"]],
+		["O_Soldier_TL_F","VSM_Multicam_Crye_Camo","VSM_RAV_operator_Multicam","","rhsusf_opscore_mc_cover_pelt_cam","rhs_weap_ak74m_zenitco01_b33",["rhs_acc_dtk4short","rhs_acc_perst3_top","SMA_eotechG33_3XDOWN","rhsusf_acc_grip2"],["rhs_30Rnd_545x39_7U1_AK"],"rhsusf_weap_glock17g4",["","","",""],["rhsusf_mag_17Rnd_9x19_JHP"]],
+		["O_Soldier_AR_F","VSM_Multicam_Crye_Camo","VSM_RAV_operator_Multicam","","rhsusf_opscore_mc_cover_pelt_cam","",["","","",""],[],"KA_SR2M",["","KA_VANT_VM_Laser_Brown_Glare","",""],["KA_30Rnd_9x21_SP13_Tracer_Mag"]],
+		["O_medic_F","VSM_Multicam_Crye_Camo","VSM_RAV_Breacher_Multicam","VSM_Multicam_Backpack_Kitbag","rhsusf_opscore_mc_cover_pelt_cam","rhs_weap_ak105_zenitco01_b33",["rhs_acc_pgs64","rhsusf_acc_M952V","SMA_eotech","rhs_acc_grip_ffg2"],["rhs_30Rnd_545x39_7U1_AK"],"rhsusf_weap_glock17g4",["","","",""],["rhsusf_mag_17Rnd_9x19_JHP"]],
+		["O_Soldier_SL_F","VSM_Multicam_Crye_Camo","VSM_LBT6094_operator_Multicam","VSM_Multicam_Backpack_Compact","rhsusf_opscore_mc_cover_pelt_cam","rhs_weap_ak74m_zenitco01_b33",["rhs_acc_dtk","SMA_SFFL_BLK","SMA_eotechG33_3XDOWN","rhsusf_acc_grip2_tan"],["rhs_30Rnd_545x39_7N22_AK"],"rhsusf_weap_glock17g4",["","","",""],["rhsusf_mag_17Rnd_9x19_JHP"]],
+		["O_officer_F","VSM_Multicam_Crye_Camo","V_Rangemaster_belt","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_beanie_green","",["","","",""],[],"rhsusf_weap_glock17g4",["","","",""],["rhsusf_mag_17Rnd_9x19_JHP"]]]
+	],
+["Woodland","Rosja FSB Wympieł‚ '17","Ajvar",[
+		["O_Soldier_F","rhs_uniform_gorka_r_y","rhs_6sh92_digi_fix","UK3CB_BAF_B_Bergen_OLI_Rifleman_B","rhs_Booniehat_digi","rhs_weap_ak74mr",["rhs_acc_dtk4short","","rhs_acc_1p87","rhs_acc_grip_rk6"],["rhs_30Rnd_545x39_7N22_camo_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_crew_F","rhs_uniform_gorka_r_g","rhs_6b23_digi_fix","","rhs_tsh4","rhs_weap_aks74un",["rhs_acc_pgs64_74u","","rhs_acc_ekp8_02",""],["rhs_30Rnd_545x39_7N22_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_gorka_r_g","rhs_6sh92_digi_fix","B_Carryall_oli","rhs_Booniehat_digi","rhs_weap_ak74mr",["rhs_acc_dtk4short","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_7N10_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","rhs_uniform_gorka_r_g","rhs_6sh92_digi_vog_headset_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_Booniehat_digi","rhs_weap_ak74mr_gp25",["rhs_acc_dtk4short","rhs_acc_perst3","rhs_acc_1p87",""],["rhs_30Rnd_545x39_7N10_AK","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","LOP_U_IRA_Fatigue_GRK_OLV","rhs_6sh92_digi_fix","B_TacticalPack_oli","rhs_Booniehat_digi","rhs_weap_pkp",["","","rhs_acc_ekp8_02",""],["rhs_100Rnd_762x54mmR_7N26"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_medic_F","rhs_uniform_gorka_r_g","rhs_vydra_3m","rhs_assault_umbts","rhs_Booniehat_digi","rhs_weap_ak74mr",["rhs_acc_dtk4short","","rhsusf_acc_T1_low","rhsusf_acc_grip2"],["rhs_30Rnd_545x39_7N10_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_SL_F","rhs_uniform_gorka_r_g","rhs_6sh92_digi_vog_headset_fix","UK3CB_BAF_B_Bergen_OLI_JTAC_H_A","rhs_Booniehat_digi","rhs_weap_ak74mr_gp25",["rhs_acc_dtk4short","rhs_acc_perst3","rhsusf_acc_ACOG",""],["rhs_30Rnd_545x39_7N10_AK","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_gorka_r_y","rhs_vydra_3m","UK3CB_BAF_B_Bergen_OLI_JTAC_H_A","rhs_Booniehat_digi","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Woodland","Rosja Krym '14","Ajvar",[
+		["O_Soldier_F","rhs_uniform_msv_emr","rhs_6b23_digi_6sh92_fix","","rhs_6b7_1m_bala2_emr","rhs_weap_ak74m",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_crew_F","rhs_uniform_msv_emr","rhs_6b23_digi_fix","","rhs_tsh4_ess_bala","rhs_weap_aks74un",["rhs_acc_pgs64_74u","","rhs_acc_ekp1",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_msv_emr","rhs_6b23_digi_6sh92_fix","B_Carryall_oli","rhs_6b7_1m_bala2_emr","rhs_weap_ak74m_fullplum",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_7N22_camo_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","rhs_uniform_msv_emr","rhs_6b23_digi_6sh92_vog_headset_fix","rhs_assault_umbts_engineer_empty","rhs_6b7_1m_emr_ess_bala","rhs_weap_ak74m_gp25",["rhs_acc_dtk1983","","rhs_acc_ekp8_02",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","rhs_uniform_msv_emr","rhs_6b23_digi_6sh92_fix","rhs_assault_umbts","rhs_6b7_1m_emr_ess_bala","rhs_weap_pkp",["","","",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_medic_F","rhs_uniform_msv_emr","rhs_6b23_digi_6sh92_fix","rhs_assault_umbts","rhs_6b7_1m_bala1_emr","rhs_weap_ak74m",["rhs_acc_dtk1983","","",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_SL_F","rhs_uniform_msv_emr","rhs_6b23_digi_6sh92_vog_headset_fix","rhs_assault_umbts","rhs_6b7_1m_emr_ess_bala","rhs_weap_ak74m_gp25_npz",["rhs_acc_dtk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_AK_plum_green","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_msv_emr","rhs_6b23_digi_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_fieldcap_helm_digi","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Woodland","Rosja VDV '18","Ajvar",[
+		["O_Soldier_F","rhs_uniform_vdv_emr","rhs_6b23_digi_6sh92_fix","","rhs_6b47","rhs_weap_ak74m_camo",["rhs_acc_dtk1983","","rhs_acc_ekp8_02",""],["rhs_30Rnd_545x39_7N22_camo_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_crew_F","rhs_uniform_vdv_emr","rhs_6b23_digi_fix","","rhs_tsh4_ess","rhs_weap_aks74un",["rhs_acc_pgs64_74u","","rhs_acc_ekp1",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","rhs_uniform_vdv_emr","rhs_6b23_digi_6sh92_fix","B_Carryall_oli","rhs_6b47","rhs_weap_ak74m_fullplum",["rhs_acc_dtk1983","","rhs_acc_ekp8_02",""],["rhs_30Rnd_545x39_7N22_camo_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","rhs_uniform_vdv_emr","rhs_6b23_digi_6sh92_vog_headset_fix","rhs_assault_umbts_engineer_empty","rhs_6b47_ess","rhs_weap_ak74m_gp25_npz",["rhs_acc_dtk1983","","rhs_acc_rakursPM",""],["rhs_30Rnd_545x39_7N10_2mag_camo_AK","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_AR_F","rhs_uniform_vdv_emr","rhs_6b23_digi_6sh92_fix","rhs_assault_umbts","rhs_6b47_ess","rhs_weap_pkp",["","","rhs_acc_ekp8_02",""],["rhs_100Rnd_762x54mmR_green"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_medic_F","rhs_uniform_vdv_emr","rhs_6b23_digi_6sh92_fix","rhs_assault_umbts","rhs_6b47_ess","rhs_weap_ak74m_fullplum",["rhs_acc_dtk1983","","rhs_acc_ekp1",""],["rhs_30Rnd_545x39_AK_plum_green"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_SL_F","rhs_uniform_vdv_emr","rhs_6b23_digi_6sh92_vog_headset_fix","rhs_assault_umbts","rhs_6b47_ess","rhs_weap_ak74m_fullplum_gp25_npz",["rhs_acc_dtk","","rhs_acc_1p87",""],["rhs_30Rnd_545x39_7N10_2mag_plum_AK","rhs_VOG25"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_officer_F","rhs_uniform_vdv_emr","rhs_6b23_digi_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_fieldcap_helm_digi","",["","","",""],[],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]]]
+	],
+["Woodland","Rosja Wympieł‚ '04","Ajvar",[
+		["O_Soldier_F","LOP_U_US_Fatigue_13","rhs_6sh92_fix","rhs_sidor","rhs_beanie_green","rhs_weap_akms",["rhs_acc_pbs1","","",""],["rhs_30Rnd_762x39mm_polymer_89"],"rhs_weap_6p53",["","","",""],["rhs_18rnd_9x21mm_7N28"]],
+		["O_crew_F","LOP_U_IRA_Fatigue_GRK_BLK","rhs_6b23_fix","","rhs_tsh4","rhs_weap_aks74u",["rhs_acc_pgs64_74u","","",""],["rhs_30Rnd_545x39_7N6M_AK"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_soldierU_medic_F","LOP_U_US_Fatigue_14","rhs_6sh92_fix","B_Carryall_cbr","H_Bandanna_sgg","rhs_weap_akms",["rhs_acc_pbs1","","",""],["rhs_30Rnd_762x39mm_polymer_89"],"rhs_weap_pya",["","","",""],["rhs_mag_9x19_17"]],
+		["O_Soldier_TL_F","LOP_U_US_Fatigue_14","rhs_6sh92_vog_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_fieldcap","rhs_weap_akms_gp25",["rhs_acc_pbs1","","",""],["rhs_30Rnd_762x39mm_polymer_89","rhs_VG40TB"],"rhs_weap_pb_6p9",["rhs_acc_6p9_suppressor","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_AR_F","LOP_U_US_Fatigue_14","rhs_6sh92_fix","rhs_sidor","H_Bandanna_sgg","rhs_weap_pkm",["","","",""],["rhs_100Rnd_762x54mmR"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_medic_F","rhs_uniform_gorka_r_g","rhs_6sh92_fix","B_TacticalPack_oli","H_Bandanna_khk","rhs_weap_akms",["rhs_acc_pbs1","","",""],["rhs_30Rnd_762x39mm_polymer_89"],"rhs_weap_makarov_pm",["","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_Soldier_SL_F","LOP_U_US_Fatigue_14","rhs_6sh92_vog_fix","UK3CB_BAF_B_Bergen_OLI_JTAC_H_A","rhs_fieldcap_vsr","rhs_weap_akms_gp25",["rhs_acc_pbs1","","",""],["rhs_30Rnd_762x39mm_polymer_89","rhs_VG40TB"],"rhs_weap_pb_6p9",["rhs_acc_6p9_suppressor","","",""],["rhs_mag_9x18_8_57N181S"]],
+		["O_officer_F","LOP_U_US_Fatigue_14","rhs_6sh92_fix","UK3CB_BAF_B_Bergen_OLI_SL_A","rhs_fieldcap_vsr","",["","","",""],[],"rhs_weap_pb_6p9",["rhs_acc_6p9_suppressor","","",""],["rhs_mag_9x18_8_57N181S"]]]
+	]
+];

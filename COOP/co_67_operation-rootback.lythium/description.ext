@@ -1,0 +1,73 @@
+#include "gui\gui_init.hpp"
+
+enableDebugConsole[] = {"76561197995010613","76561197993041837"};
+
+disabledAI = true;
+respawn=3;
+respawnButton = 1;
+respawnOnStart = -1;
+respawnDelay = 1e10;
+respawnTemplates[] = {"Counter","Tickets"};
+respawnDialog = 0;
+disableChannels[]={0,1,4,5};
+
+// Bibloteka funkcji
+class CfgFunctions
+{
+	#include "AF_functions.hpp"
+	#include "Mydlo\functions.hpp"
+};
+
+// Ustawienia CBA muszą być dodane poprzez CBA XEH PreInit, w przeciwnym wypadku nie będą dostępne w edytorze
+class Extended_PreInit_EventHandlers
+{
+	AF_settingsInit = "call compile preprocessFileLineNumbers 'functions\xeh\settingsInit.sqf'";
+	MF_init3den = "call compile preprocessFileLineNumbers 'functions\3den\init3den.sqf'";
+};
+
+class CfgSounds {
+	sounds[] = {
+		Rocket_Away,
+		Explo_Nuke,
+		incoming_Nuke,
+		radzoneb,
+		nblast,
+		nsound
+	};
+	class Rocket_Away
+	{
+		name = "Rocket_Away";
+		sound[] = {"Sounds\Rocket_Away.ogg",1,1};
+		titles[] = {0,""};
+	};
+	class Explo_Nuke
+	{
+		name = "Explo_Nuke";
+		sound[] = {"Sounds\Explo_Large.ogg",1,1};
+		titles[] = {0,""};
+	};
+	class incoming_Nuke
+	{
+		name = "incoming_Nuke";
+		sound[] = {"Sounds\incoming.ogg",1,1};
+		titles[] = {0,""};
+	};
+	class radzoneb
+	{
+		name = "radzoneb";
+		sound[] = {"Sounds\radiation.ogg",1,1};
+		titles[] = {0,""};
+	};
+	class nblast
+	{
+		name = "nblast";
+		sound[] = {"Sounds\nuke.ogg",1,1};
+		titles[] = {0,""};
+	};
+	class nsound
+	{
+		name = "nsound";
+		sound[] = {"Sounds\nsound.ogg",1,1};
+		titles[] = {0,""};
+	};
+};
