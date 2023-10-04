@@ -7,26 +7,6 @@ class AF {
 	class ai {
 
 	};
-	/*
-		Ares Modules
-
-		Moduły zeusowe do różnych rzeczy
-	*/
-	class aresModules {
-		class aresModulesEnvironmentLightsBlackout {
-			postInit = 1;
-		};
-		class aresModulesFaggots {};
-		class aresModulesSoundSelectAndSpawn {
-			postInit = 1;
-		};
-		class aresModulesZeusMoveAfterCamera {
-			postInit = 1;
-		};
-		class respawnAllDead {
-			postInit = 1;
-		};
-	};
 
 	/*
 		Cache
@@ -63,28 +43,6 @@ class AF {
 		class groupRenameList {};
 		class setViewDistance {};
 		class viewDistanceGUI {};
-	};
-
-	/*
-		Faggots
-
-		Loguje informacje o incydentach (strzelanie, granaty itd.)
-	*/
-	class faggots {
-		class faggotsInfo {};
-		class faggotsLog {};
-		class faggotsPunish {};
-	};
-
-	/*
-		friendlyTracker
-
-		Markery wskazujące sojusznicze jednostki
-	*/
-	class friendlyTracker {
-		class friendlyTrackerInit {};
-		class friendlyTrackerLoop {};
-		class friendlyTrackerStop {};
 	};
 
 	/*
@@ -132,22 +90,6 @@ class AF {
 	*/
 	class server {
 		class addToZeus {
-			postInit = 1;
-		};
-	};
-
-	/*
-		Crash Teleport
-
-		Teleportacja po wyrzuceniu z serwera
-	*/
-	class crashTeleport {
-		class crashTeleportCheck {};
-		class crashTeleportCountdown {};
-		class crashTeleportDialog {};
-		class crashTeleportPlayer {};
-		class crashTeleportServer {};
-		class crashTeleportServerHandler {
 			postInit = 1;
 		};
 	};

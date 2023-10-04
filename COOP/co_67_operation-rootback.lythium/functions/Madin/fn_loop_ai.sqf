@@ -42,7 +42,7 @@ if (!isNull _danger && (_group getVariable ["AF_canDeleteWaypoint",true]))then
 		//szukanie pojazdów / dział do obsadzenia
 		_list = _leader nearEntities ["LandVehicle", 100];
 		{
-			_allow = _x getVariable ["timetaken",[0,objNull]];
+			private _allow = _x getVariable ["timetaken",[0,objNull]];
 			//systemChat str _allow;
 			if (!((allTurrets _x) isEqualTo []) && {((crew _x) findIf {alive _x}) == -1} && {(((_allow select 0) +90) < time)})exitWith
 			{

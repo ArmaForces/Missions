@@ -8,4 +8,6 @@ if (NukeTimeRemaining == 0) exitWith {
 	[MDL_fnc_nukeDetonate, [], 1] call CBA_fnc_waitAndExecute;
 };
 
+if (NukeTimeRemaining < 0) exitWith {};
+
 [MDL_fnc_nukeCountdown, [], 1] call CBA_fnc_waitAndExecute;

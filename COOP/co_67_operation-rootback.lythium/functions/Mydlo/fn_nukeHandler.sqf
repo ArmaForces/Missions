@@ -4,7 +4,7 @@ private _nuke_town_area = createMarkerLocal ["sys_marker_nukeInitial", getPos nu
 _nuke_town_area setMarkerShapeLocal "ELLIPSE";
 _nuke_town_area setMarkerSizeLocal [1000, 1000];
 
-[{daytime > 16 || !isNil 'start_countdown'}, {
+[{!isNil "NukeTimeRemaining" && {daytime > 16.75 || {!isNil 'start_countdown'}}}, {
 	NukeTimeRemaining = 900;
 	[MDL_fnc_nukeCountdown, [], 0] call CBA_fnc_waitAndExecute;
 }, [], -1] call CBA_fnc_waitUntilAndExecute;
@@ -14,7 +14,7 @@ _nuke_town_area setMarkerSizeLocal [1000, 1000];
 	titleText ["Upewnij się, że jesteś inżynierem i masz odpowiednie narzędzia!", "PLAIN", 1];
 }, {}, {
 	// On complete
-	if (-1 == (items (_this select 1) findIf {_x == "ACE_DefusalKit"})) exitWith {
+	if (-1 == (items (_this select 1) findIf {_x == "ACE_DefusalKit"})) then {
 		titleText [": )", "PLAIN", 1];
 		[MDL_fnc_nukeDetonate, [], 3] call CBA_fnc_waitAndExecute;
 	};
