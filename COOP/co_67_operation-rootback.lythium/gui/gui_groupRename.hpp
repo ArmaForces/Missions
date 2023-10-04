@@ -1,7 +1,7 @@
-class AF_dlg_groupRename {
+class GVAR(dlg_groupRename) {
 	idd = 9991;
 	movingenable = false;
-	
+
 	class controls {
 		////////////////////////////////////////////////////////
 		// GUI EDITOR OUTPUT START (by Martin, v1.063, #Nodywu)
@@ -28,7 +28,7 @@ class AF_dlg_groupRename {
 			y = 0.247 * safezoneH + safezoneY;
 			w = 0.190781 * safezoneW;
 			h = 0.33 * safezoneH;
-			onLBSelChanged = "[lbCurSel 123] call AF_fnc_groupRenameList";
+			onLBSelChanged = QUOTE([lbCurSel 123] call FUNC(groupRenameList));
 		};
 		class b_tyegrouptext1: RscEdit {
 			idc = 124;
@@ -44,7 +44,7 @@ class AF_dlg_groupRename {
 			y = 0.668037 * safezoneH + safezoneY;
 			w = 0.144324 * safezoneW;
 			h = 0.0840187 * safezoneH;
-			action = "(wgroups select (lbCurSel 123)) setGroupIdGlobal [ctrlText 124];[lbCurSel 123] call AF_fnc_groupRenameList;";
+			action = QUOTE((wgroups select (lbCurSel 123)) setGroupIdGlobal [ctrlText 124];[lbCurSel 123] call FUNC(groupRenameList););
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect", 0.09, 1};
 		};
 		class listplayername: RscListbox {

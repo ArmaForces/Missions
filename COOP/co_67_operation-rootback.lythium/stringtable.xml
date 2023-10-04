@@ -1,76 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Strefa Ruhańska</Polish>
+            <English>Ruhan Zone</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Strefa Ruhańska</Polish>
+            <English>Ruhan Zone</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English>Ruha, 2010
+
+The ongoing hybrid war is devastating. Unknown forces captured the area west of the river. They recently managed to cross it over the northern bridge, pushing Ruhan Defense Forces south. They appear quite well armed and trained, which is why we suppose this might be a destabilization attempt orchestrated by a foreign intelligence.
+
+Our intel shows they are particularly interested in factories. We suppose it's a Russian effort to take control of Ruhan industry, known for high quality toys. They started gathering all the toys from the area at the Karanmanikko village stadium.
+
+Ruhan Defense Force, resupplied by NATO, began their counteroffensive this morning.</English>
+            <Polish>Ruha, 2010
+
+Trwająca wojna hybrydowa rujnuje okolicę. Nieznane siły przejęły obszar na zachód od rzeki. Niedawno dali radę przekroczyć rzekę pólnocnym mostem, wypychając Ruhańskie Siły Obronne na południe. Przeciwnicy są dobrze uzbrojeni i wyszkoleni, dlatego podejrzewany, że to może być próba destabilizacji sterowanej przez obcy wywiad.
+
+Nasze dane wywiadowcze wskazują, że przeciwnik jest szczególnie zainteresowany fabrykami. Podejrzewamy, że to rosyjska próba przejęcia kontroli na Ruhańskim przemysłem, znanym z zabawek wysokiej jakości. Zaczęli zbierać wszystkie zabawki z okolicy na stadionie w wiosce Karanmanikko.
+
+Ruhańskie Siły Obronne, zaopatrzone przez NATO, rozpoczęł kontrofensywę tego poranka.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <English>Ruhan special forces are tasked with securing toys transport.</English>
+            <Polish>Ruhańskie siły specjalne wyruszają odbić transport zabawek.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <English>You will land on LZ Monke, support the ongoing assault on Ruhanpera and advance further north to secure Karasomething village and it's stadium, where all toys are stored. Friendly convoy will transport the toys out of the village.</English>
+            <Polish>Wylądujecie na LZ Monke, wesprzecie trwający atak na Ruhanperę a następnie zaatakujecie na północ w kierunku wioski Karacostam i stadionu, na którym przechowywane są wszystkie zabawki. Sojuszniczy konwój przetransportuje zabawki z wioski.</Polish>
+        </Key>
+
+        <!-- TASKS -->
+
+        <!-- LAND -->
+        <Key ID="STR_AFP_Scripts_Task_Land_Title">
+            <English>Land on LZ Monke</English>
+            <Polish>Wyląduj na LZ Monke</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Land_Description">
+            <English>LZ is going to be hot, be prepared for that!</English>
+            <Polish>LZ będzie gorące, bądźcie przygotowani!</Polish>
+        </Key>
+
+        <!-- ATTACK -->
+        <Key ID="STR_AFP_Scripts_Task_Karacostam_Title">
+            <English>Capture Karasomething</English>
+            <Polish>Zajmij Karacostam</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Karacostam_Description">
+            <English>We need to capture the village and the stadium where the toys are stored.</English>
+            <Polish>Musimy zająć wioskę i stadion, gdzie przechowywane są zabawki.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Ruhanpera_Title">
+            <English>Capture Ruhanpera</English>
+            <Polish>Zajmij Ruhanperę</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Ruhanpera_Description">
+            <English>Our armed forces began attack on Ruhanpera. After landing we need to help them conquer the village. Only then we may advance north.</English>
+            <Polish>Sojusznicze jednostki rozpoczęły atak na Ruhanperę. Po wylądowaniu musimy pomóc im w zajęciu wioski zanim ruszymy na północ.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Hietala_Title">
+            <English>Capture Hietala</English>
+            <Polish>Zajmij Hietalę</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Hietala_Description">
+            <English>The village stands in our way to the target, we need to capture it so our forces can fortify it and cover our back.</English>
+            <Polish>Wioska znajduje się po drodze do celu, musimy ją zając by wojska sojusznicze mogły się tam umocnić i osłaniać nasze tyły.</Polish>
+        </Key>
+
+        <!-- DEFENSE -->
+        <Key ID="STR_AFP_Scripts_Task_HoldKaracostam_Title">
+            <English>Hold Karasomething</English>
+            <Polish>Utrzymaj Karacostam</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_HoldKaracostam_Description">
+            <English>After securing the village, we need to secure and hold it in case of a counterattack.</English>
+            <Polish>Po zajęciu wioski musimy ją zabezpieczyć i utrzymać w razie kontrataku.</Polish>
+        </Key>
+
+        <!-- CONVOY -->
+        <Key ID="STR_AFP_Scripts_Task_Convoy_Title">
+            <English>Protect the convoy route until all toys are transported</English>
+            <Polish>Zabezpieczaj trasę konwoju dopóki wszystkie zabawki nie zostaną wywiezione</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Convoy_Description">
+            <English>Our task is to protect the convoy and the stadium during the loading and transporting the toys. This might take a bit so make yourself comfortable.</English>
+            <Polish>Naszym zadaniem jest zabezpieczanie konwoju i stadionu w trakcie wywożenia zabawek. To może trochę zająć, więc czas na walenie konia.</Polish>
+        </Key>
+
+
+        <!-- FORTIFICATIONS -->
+        <Key ID="STR_AFP_Scripts_Task_PrepareDefenses_Title">
+            <English>Prepare fortifications</English>
+            <Polish>Przygotuj umocnienia</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_PrepareDefenses_Description">
+            <English>We need to be prepared for counterattack. Preparing some defensive positions around stadium will make it easier to defend the stadium and convoy.</English>
+            <Polish>Musimy się przygotować na wypadek kontrakatu. Przygotowanie kilku pozycji obronnych znacznie ułatwi obronę stadionu i konwoju.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_PrepareDefenses_Bunkers_Description">
+            <English>Our engineers should use supplies to build fortifications at this position.</English>
+            <Polish>Nasi inżynierowie powinni dostarczyć zaopatrzenie do budowy fortyfikacji w tym miejscu.</Polish>
+        </Key>
+
+        <!-- RETREAT -->
+        <Key ID="STR_AFP_Scripts_Task_Counterattack_Title">
+            <English>Counterattack</English>
+            <Polish>Kontratak</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Counterattack_Description">
+            <English>Enemy has launcher a counterattack.</English>
+            <Polish>Przeciwnik rozpoczął kontratak.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RetreatToKaracostam_Title">
+            <English>Abandon Northeast fortifications</English>
+            <Polish>Porzuć północnowschodnie fortyfikacje</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RetreatToKaracostam_Description">
+            <English>Our forces on the east report that Russian armed forces are pushing them south and convoy route is in danger. We need to focus on defending the village.</English>
+            <Polish>Nasze jednostki donoszą, że rosyjskie siły wypychają ich na południe i trasa konwoju jest zagrożona. Musimy skupić się na obronie wioski.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AbandonStadium_Title">
+            <English>Abandon Stadium</English>
+            <Polish>Olej stadion</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_AbandonStadium_Description">
+            <English>We cannot hold the stadium, we need to fall back a bit to next fortifications, in southern part of the village.</English>
+            <Polish>Nie damy rady utrzymać stadionu, musimy się wycofać do umocnień w południowej części wioski.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RetreatToHietala_Title">
+            <English>Retreat to Hietala</English>
+            <Polish>Wycofaj się do Hietali</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RetreatToHietala_Description">
+            <English>They are overwhelming us, we need to fall back further. Friendly forces prepared defensive positions near Hietala, we need to reach them ASAP.</English>
+            <Polish>Jest ich zbyt wielu, przygważdżają nas, musimy się wycofać jeszcze dalej. Sojusznicze siły przygotowały pozycje obronne w pobliżu Hietali, musimy się tam dostać jak najszybciej.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_WaitForReinforcements_Title">
+            <English>Wait for reinforcements</English>
+            <Polish>Czekaj na posiłki</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_WaitForReinforcements_Description">
+            <English>Friendly reinforcements should arrive here soon.</English>
+            <Polish>Posiłki powinny dotrzeć tu lada moment.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Survive_Title">
+            <English>Survive</English>
+            <Polish>Przeżyj</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Survive_Description">
+            <English>We've lost control of LZ Monke, you are surrounded. Not much more to say, YOYO.</English>
+            <Polish>Utraciliśmy kontrolę nad LZ Monke, jesteście otoczeni. Co tu więcej mówić, YOYO.</Polish>
+        </Key>
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evac</English>
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
 <Project name="ArmaForces">
     <Package name="Preset">
-        <!-- 
-            DIALOGS
-        -->
-        <!-- 3den Loadout Saver -->
-        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_copiedToClipboard">
-            <Original>Copied preset to clipboard</Original>
-            <English>Copied preset to clipboard</English>
-            <Polish>Zapisano preset do schowka</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_copyToClipboardAndSave">
-            <Original>Copy loadout to clipboard and close</Original>
-            <English>Copy loadout to clipboard and close</English>
-            <Polish>Kopiuj loadout do schowka i zamknij</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_loadoutGroupName">
-            <Original>Loadout group name (eg. Desert)</Original>
-            <English>Loadout group name (eg. Desert)</English>
-            <Polish>Nazwa grupy loadoutu (np. Desert)</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_loadoutName">
-            <Original>Loadout name (eg. MARPAT-WD)</Original>
-            <English>Loadout name (eg. MARPAT-WD)</English>
-            <Polish>Nazwa loadoutu (np. MARPAT-WD)</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_3den_loadoutSave_title">
-            <Original>ARMAFORCES LOADOUT SAVER</Original>
-            <English>ARMAFORCES LOADOUT SAVER</English>
-            <Polish>ARMAFORCES ZAPISYWACZ LOADOUTÓW</Polish>
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
         </Key>
         <!-- COMMON -->
         <Key ID="STR_ArmaForces_Preset_Dialog_Close">
-            <Original>Close</Original>
             <English>Close</English>
             <Polish>Zamknij</Polish>
         </Key>
-        <!-- CRASH TELEPORT -->
-        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_Ask">
-            <Original>Looks like you were disconnected from the server. Teleport back to action?</Original>
-            <English>Looks like you were disconnected from the server. Teleport back to action?</English>
-            <Polish>Chyba wyrzuciło Cię z serwera. Teleport z powrotem?</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_Agree">
-            <Original>YES, teleport pls!</Original>
-            <English>YES, teleport pls!</English>
-            <Polish>TAK, teleport pls!</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_AgreeConfirmation">
-            <Original>Teleport then</Original>
-            <English>Teleport then</English>
-            <Polish>No to teleport</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_Reject">
-            <Original>NO, WTF</Original>
-            <English>NO, WTF</English>
-            <Polish>NIE, WTF</Polish>
-        </Key>
-        <Key ID="STR_ArmaForces_Preset_Dialog_crashTeleport_RejectConfirmation">
-            <Original>No teleport. You stay in base.</Original>
-            <English>No teleport. You stay in base.</English>
-            <Polish>Nie teleport. Zostajesz w bazie.</Polish>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
         </Key>
         <!-- GROUP RENAME -->
         <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
-            <Original>Rename</Original>
             <English>Rename</English>
             <Polish>Zmień nazwę</Polish>
         </Key>
         <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
         <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
-            <Original>Custom</Original>
             <English>Custom</English>
             <Polish>Ustaw własną</Polish>
         </Key>

@@ -1,4 +1,4 @@
-class AF_dlg_viewDistance {
+class GVAR(dlg_viewDistance) {
 	idd = 10;
 	movingenable = false;
 
@@ -20,7 +20,7 @@ class AF_dlg_viewDistance {
 			y = 0.335 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[500] call AF_fnc_setViewDistance";
+			action = QUOTE([500] call FUNC(setViewDistance));
 		};
 		class 750m: RscButton {
 			idc = 302;
@@ -29,7 +29,7 @@ class AF_dlg_viewDistance {
 			y = 0.335 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[750] call AF_fnc_setViewDistance";
+			action = QUOTE([750] call FUNC(setViewDistance));
 		};
 		class 1000m: RscButton {
 			idc = 303;
@@ -38,7 +38,7 @@ class AF_dlg_viewDistance {
 			y = 0.335 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[1000] call AF_fnc_setViewDistance";
+			action = QUOTE([1000] call FUNC(setViewDistance));
 		};
 		class 1250m: RscButton {
 			idc = 304;
@@ -47,7 +47,7 @@ class AF_dlg_viewDistance {
 			y = 0.335 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[1250] call AF_fnc_setViewDistance";
+			action = QUOTE([1250] call FUNC(setViewDistance));
 		};
 		class 1500m: RscButton {
 			idc = 305;
@@ -56,7 +56,7 @@ class AF_dlg_viewDistance {
 			y = 0.335 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[1500] call AF_fnc_setViewDistance";
+			action = QUOTE([1500] call FUNC(setViewDistance));
 		};
 		class 2000m: RscButton {
 			idc = 306;
@@ -65,7 +65,7 @@ class AF_dlg_viewDistance {
 			y = 0.423 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[2000] call AF_fnc_setViewDistance";
+			action = QUOTE([2000] call FUNC(setViewDistance));
 		};
 		class 3000m: RscButton {
 			idc = 307;
@@ -74,7 +74,7 @@ class AF_dlg_viewDistance {
 			y = 0.423 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[3000] call AF_fnc_setViewDistance";
+			action = QUOTE([3000] call FUNC(setViewDistance));
 		};
 		class 5000m: RscButton {
 			idc = 308;
@@ -83,7 +83,7 @@ class AF_dlg_viewDistance {
 			y = 0.423 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[5000] call AF_fnc_setViewDistance";
+			action = QUOTE([5000] call FUNC(setViewDistance));
 		};
 		class 7500m: RscButton {
 			idc = 309;
@@ -92,7 +92,7 @@ class AF_dlg_viewDistance {
 			y = 0.423 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[7500] call AF_fnc_setViewDistance";
+			action = QUOTE([7500] call FUNC(setViewDistance));
 		};
 		class 10000m: RscButton {
 			idc = 310;
@@ -101,7 +101,7 @@ class AF_dlg_viewDistance {
 			y = 0.423 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.066 * safezoneH;
-			action = "[10000] call AF_fnc_setViewDistance";
+			action = QUOTE([10000] call FUNC(setViewDistance));
 		};
 		class RscEdit_1400: RscEdit {
 			idc = 311;
@@ -117,7 +117,7 @@ class AF_dlg_viewDistance {
 			y = 0.577 * safezoneH + safezoneY;
 			w = 0.0825 * safezoneW;
 			h = 0.044 * safezoneH;
-			action = "[parseNumber (ctrlText 311)] call AF_fnc_setViewDistance";
+			action = QUOTE([parseNumber (ctrlText 311)] call FUNC(setViewDistance));
 		};
 		class close_settings: RscButton {
 			idc = 313;
@@ -130,6 +130,6 @@ class AF_dlg_viewDistance {
 		};
 		////////////////////////////////////////////////////////
 		// GUI EDITOR OUTPUT END
-		////////////////////////////////////////////////////////	
+		////////////////////////////////////////////////////////
 	};
 };
