@@ -1,15 +1,30 @@
 #include "gui\gui_init.hpp"
 
-enableDebugConsole[] = {"76561197995010613","76561197993041837"};
+/* Respawn stuff */
+respawn = 3;
+respawnDelay = 1e10;
+respawnTemplates[] = {"afm_respawn_default"};
+// Jeśli misja nie przewiduje standardowego respawnu na czas to można usunąć "Counter".
+// Tj. dla misji permadeath i z własnym respawnem np. po wykonaniu zadania.
+// Dla kompatybilności z modułem obserwatora:
+respawnTemplatesVirtual[] = {"Spectator"};
+
+disableChannels[] = {1, 2, 3, 4, 5};
+
+/* Mission description and stuff */
+author = "3Mydlo3";
+onLoadIntro = "Siły powietrznodesantowe US Army muszą udareminć użycie broni nuklearnej w prowincji Lythium";
+briefingName = "Operacja Rootback";
+onLoadMission = "Siły powietrznodesantowe US Army muszą udareminć użycie broni nuklearnej w prowincji Lythium";
+onLoadName = "Operacja Rootback";
+
+class Header {
+    gameType = Coop;
+    minPlayers = 20;
+    maxPlayers = 56;
+};
 
 disabledAI = true;
-respawn=3;
-respawnButton = 1;
-respawnOnStart = -1;
-respawnDelay = 1e10;
-respawnTemplates[] = {"Counter","Tickets"};
-respawnDialog = 0;
-disableChannels[]={0,1,4,5};
 
 // Bibloteka funkcji
 class CfgFunctions
