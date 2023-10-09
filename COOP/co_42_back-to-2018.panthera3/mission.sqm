@@ -24553,7 +24553,7 @@ class Mission
 						name="officer";
 					};
 					id=443;
-					type="RDS_Doctor";
+					type="CUP_C_C_Doctor_01";
 					atlOffset=3.9067993;
 					class CustomAttributes
 					{
