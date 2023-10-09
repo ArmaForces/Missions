@@ -25119,7 +25119,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{this addEventHandler [""Hitpart"",{ " \n "deleteVehicle (_this select 0 select 0);" \n "}];" \n "" \n "" \n "[this,""Zainstaluj zagłuszacz"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "[task_islandJammer_1, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "titleText [""Zagłuszanie włączone"",""PLAIN"",2];" \n "},{},[],15,nil,false,false] call BISBIS_fnc_taskSetStatec_holdActionAdd;}";
+				init="this addEventHandler [""Hitpart"",{ " \n "deleteVehicle (_this select 0 select 0);" \n "[task_islandJammer_1, ""FAILED""] call BIS_fnc_taskSetState;" \n "}];" \n "" \n "" \n "[this,""Zainstaluj zagłuszacz"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "[task_islandJammer_1, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "titleText [""Zagłuszanie włączone"",""PLAIN"",2];" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
 			};
 			id=526;
 			type="Computer";
@@ -25153,7 +25153,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{this addEventHandler [""Hitpart"",{ " \n "deleteVehicle (_this select 0 select 0);" \n "}];" \n "" \n "" \n "[this,""Zainstaluj zagłuszacz"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "[task_islandJammer_2, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "titleText [""Zagłuszanie włączone"",""PLAIN"",2];" \n "},{},[],15,nil,false,false] call BISBIS_fnc_taskSetStatec_holdActionAdd;}";
+				init="this addEventHandler [""Hitpart"",{ " \n "deleteVehicle (_this select 0 select 0);" \n "[task_islandJammer_2, ""FAILED""] call BIS_fnc_taskSetState;" \n "}];" \n "" \n "" \n "[this,""Zainstaluj zagłuszacz"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "[task_islandJammer_2, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "titleText [""Zagłuszanie włączone"",""PLAIN"",2];" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
 			};
 			id=528;
 			type="Computer";
