@@ -15258,7 +15258,7 @@ class Mission
 																		class data
 																		{
 																			singleType="STRING";
-																			value="Rainman_Kitbag_Splinter_Desert";
+																			value="B_Kitbag_cbr";
 																		};
 																	};
 																	class Item122
@@ -20218,7 +20218,7 @@ class Mission
 													};
 													class backpack
 													{
-														typeName="Rainman_Kitbag_Splinter";
+														typeName="B_Kitbag_cbr";
 														isBackpack=1;
 														class ItemCargo
 														{
@@ -20401,7 +20401,7 @@ class Mission
 													};
 													class backpack
 													{
-														typeName="Rainman_Kitbag_Splinter";
+														typeName="B_Kitbag_cbr";
 														isBackpack=1;
 														class ItemCargo
 														{
