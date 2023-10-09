@@ -12,6 +12,8 @@ If using custom profile:
 If using Linux:
 `TODO someone`
 
+## Available compositions
+
 ### AF-Mission-Template
 
 Contains respawn helper (named `respawn`), zeus module and HC slots.
