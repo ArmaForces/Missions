@@ -29,6 +29,33 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
     </Package>
 
+    <Package name="Tasks">
+        <Key ID="STR_AFP_Tasks_Task_AirportIntel_Title">
+            <English>Find and secure intel at the airport</English>
+            <Polish>Znajdź i zabezpiecz dane wywiadowcze na lotnisku</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_AirportIntel_Description">
+            <English>TODO:</English>
+            <Polish>TODO:</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Title">
+            <English>Secure Drulovka Army Depot</English>
+            <Polish>Zabezpiecz Drulovka Army Depot</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Description">
+            <English>TODO:</English>
+            <Polish>TODO:</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_TownTrucks_Title">
+            <English>Locate and secure the cargo</English>
+            <Polish>Zlokalizuj i zabezpiecz transport</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_TownTrucks_Description">
+            <English>TODO:</English>
+            <Polish>TODO:</Polish>
+        </Key>
+    </Package>
+
     <Package name="GUI">
         <!-- COMMON -->
         <Key ID="STR_AFP_GUI_Dialog_Close">
