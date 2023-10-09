@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=60;
+		nextID=72;
 	};
 	class Camera
 	{
@@ -578,7 +578,7 @@ dlcs[]=
 	"ORANGE",
 	"RHS_SAF",
 	"Jets",
-	"RDS_CIV_PACK"
+	"CUP_Units"
 };
 randomSeed=15361821;
 class ScenarioData
@@ -13237,8 +13237,8 @@ class Mission
 			{
 				name="retrieval_zone";
 				text="ammo_retrieved";
-				condition="call{ammo_1 in thisList AND ammo_2 in thisList AND ammo_3 in thisList}";
-				onActivation="call{[task_townTrucks, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "deleteMarker ""transport_town"";" \n "deleteMarker ""transport_town_empty"";}";
+				condition="ammo_1 in thisList AND ammo_2 in thisList AND ammo_3 in thisList";
+				onActivation="[task_townTrucks, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "deleteMarker ""transport_town"";" \n "deleteMarker ""transport_town_empty"";";
 				sizeA=15.22;
 				sizeB=17.106001;
 				sizeC=7.0120001;
@@ -22788,7 +22788,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{this addEventHandler [""Hitpart"",{ " \n "deleteVehicle (_this select 0 select 0);" \n "[""task_airportIntel"",""FAILED""] call BIS_fnc_taskSetState;" \n "}];" \n "" \n "" \n "[this,""Zabezpiecz komputer"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "[""task_airportIntel"",""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "[""task_islandTrucks_2"",""CANCELED""] call BIS_fnc_taskSetState;" \n """transport_town"" setMarkerPos (getMarkerPos ""transport_town_empty"");" \n """transport_island"" setMarkerPos (getMarkerPos ""transport_island_empty"");" \n "[_this select 0, _this select 2] remoteExec [""BIS_fnc_holdActionRemove"",0];" \n "deleteVehicle (_this select 0 select 0);" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;}";
+				init="this addEventHandler [""Hitpart"",{ " \n "deleteVehicle (_this select 0 select 0);" \n "[""task_airportIntel"",""FAILED""] call BIS_fnc_taskSetState;" \n "}];" \n "" \n "" \n "[this,""Zabezpiecz komputer"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "[""task_airportIntel"",""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "[""task_islandTrucks_2"",""CANCELED""] call BIS_fnc_taskSetState;" \n """transport_town"" setMarkerPos (getMarkerPos ""transport_town_empty"");" \n """transport_island"" setMarkerPos (getMarkerPos ""transport_island_empty"");" \n "[_this select 0, _this select 2] remoteExec [""BIS_fnc_holdActionRemove"",0];" \n "deleteVehicle (_this select 0 select 0);" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
 			};
 			id=416;
 			type="Computer";
@@ -23069,9 +23069,10 @@ class Mission
 			{
 				text="islandPower_destroyed";
 				condition="!alive transformator_1 OR !alive transformator_2 OR !alive transformator_3 OR !alive transformator_4 OR !alive transformator_5";
-				onActivation="[task_islandPower_destroyed, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "[task_islandPower_hack, ""CANCELED""] call BIS_fnc_taskSetState;" \n "[task_islandPower, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "blackout = true;" \n "";
+				onActivation="[task_islandPower_destroyed, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "[task_islandPower_hack, ""CANCELED""] call BIS_fnc_taskSetState;" \n "[task_islandPower, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "[true] call AFP_Scripts_fnc_blackout;";
 				sizeA=0;
 				sizeB=0;
+				isServerOnly=1;
 			};
 			id=432;
 			type="EmptyDetector";
@@ -23171,8 +23172,8 @@ class Mission
 			class Attributes
 			{
 				text="officer_retrieved";
-				condition="call{officer in list retrieval_zone}";
-				onActivation="call{[task_islandOfficer, ""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "}";
+				condition="officer in list retrieval_zone";
+				onActivation="[task_islandOfficer, ""SUCCEEDED""] call BIS_fnc_taskSetState;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -23186,8 +23187,8 @@ class Mission
 			class Attributes
 			{
 				text="officer_killed";
-				condition="call{!alive officer}";
-				onActivation="call{[task_islandOfficer, ""FAILED""] call BIS_fnc_taskSetState;}";
+				condition="!alive officer";
+				onActivation="[task_islandOfficer, ""FAILED""] call BIS_fnc_taskSetState;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -23499,8 +23500,8 @@ class Mission
 			class Attributes
 			{
 				text="container_retrieved";
-				condition="call{container in list retrieval_zone}";
-				onActivation="call{[task_islandTrucks_1, ""SUCCEEDED""] call BIS_fnc_taskSetState;}";
+				condition="container in list retrieval_zone";
+				onActivation="[task_islandTrucks_1, ""SUCCEEDED""] call BIS_fnc_taskSetState;";
 				sizeA=0;
 				sizeB=0;
 			};
