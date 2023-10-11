@@ -28,7 +28,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
 
     <Package name="Tasks">
         <Key ID="STR_AFP_Tasks_Task_AirportIntel_Title">
-            <English>Find and secure intel at the airport</English>
+            <!-- <English>Find and secure intel at the airport</English> -->
             <Polish>Znajdź i zabezpiecz dane wywiadowcze na lotnisku</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_AirportIntel_Description">
@@ -37,7 +37,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_OptionalTasks_Title">
-            <English>Optional tasks</English>
+            <!-- <English>Optional tasks</English> -->
             <Polish>Zadania opcjonalne</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_OptionalTasks_Description">
@@ -46,7 +46,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Title">
-            <English>Secure Drulovka Army Depot</English>
+            <!-- <English>Secure Drulovka Army Depot</English> -->
             <Polish>Zabezpiecz Drulovka Army Depot</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Description">
@@ -55,7 +55,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Title">
-            <English>Find and capture main commander of the research center</English>
+            <!-- <English>Find and capture main commander of the research center</English> -->
             <Polish>Znajdź i pojmij głównego dowódcę centrum badań</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Description">
@@ -64,7 +64,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_JammComms_Title">
-            <English>Cut the comms</English>
+            <!-- <English>Cut the comms</English> -->
             <Polish>Odetnij łączność</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_JammComms_Description">
@@ -72,7 +72,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
             <Polish>Całkowite odcięcie łączności uniemożliwi jednostkom wroga wezwanie wsparcia. Odcięcie wież komunikacyjnych na wyspie odetnie jedynie wyspę od reszty.</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_CommsCenter_Title">
-            <English>Neutralize communications center</English>
+            <!-- <English>Neutralize communications center</English> -->
             <Polish>Zneutralizuj centrum komunikacji</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_CommsCenter_Description">
@@ -80,7 +80,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
             <Polish>Niewielki garnizon pilnuje stacji przekaźnikowej w tym miejscu. Powinniśmy łatwo ich pokonać i uniemożliwić przeciwnikowi wezwanie wsparcia (o ile już tego nie zrobił).</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Title">
-            <English>Install jammer</English>
+            <!-- <English>Install jammer</English> -->
             <Polish>Zainstaluj zagłuszacz</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Description">
@@ -89,7 +89,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_IslandPower_Title">
-            <English>Shut down electricity on the island</English>
+            <!-- <English>Shut down electricity on the island</English> -->
             <Polish>Wyłącz prąd na wyspie</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPower_Description">
@@ -97,7 +97,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
             <Polish>Aby wyłączyć prąd na wyspie musimy albo zniszczyć transformatory w elektrowni, albo shackować podstację sterującą.</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPowerHack_Title">
-            <English>Hack the substation</English>
+            <!-- <English>Hack the substation</English> -->
             <Polish>Shackuj podstację</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPowerHack_Description">
@@ -105,7 +105,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
             <Polish>Gdzieś tutaj powinna być jakaś konsola sterowania, której możemy użyć. Uważajcie by jej nie zniszczyć!</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Title">
-            <English>Destroy transformers</English>
+            <!-- <English>Destroy transformers</English> -->
             <Polish>Zniszcz transformatory</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Description">
@@ -114,7 +114,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_SecureCargo_Title">
-            <English>Locate and secure the cargo</English>
+            <!-- <English>Locate and secure the cargo</English> -->
             <Polish>Zlokalizuj i zabezpiecz transport</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_SecureCargo_Description">
@@ -122,7 +122,7 @@ W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze prz
             <Polish>Zabezpieczony transport musi zostać dostarczony bezpiecznie do wyznaczonej strefy w bazie.</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_TownTrucks_Title">
-            <English>Locate and secure the cargo</English>
+            <!-- <English>Locate and secure the cargo</English> -->
             <Polish>Zlokalizuj i zabezpiecz transport</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_TownTrucks_Description">
