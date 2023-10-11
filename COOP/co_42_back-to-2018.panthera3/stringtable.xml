@@ -2,30 +2,27 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <Polish>ArmaForces - Preset</Polish>
-            <English>ArmaForces - Mission Template</English>
+            <Polish>Operacja Zielona Pantera</Polish>
+            <English>Operation Green Panther</English>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <Polish>ArmaForces - Preset</Polish>
-            <English>ArmaForces - Mission Template</English>
+            <Polish>Operacja Zielona Pantera</Polish>
+            <English>Operation Green Panther</English>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>Long mission description
+            <Polish>Panthera, 2018
 
-Visible when selecting mission and can be useful as description of the main mission task as well.</English>
-            <Polish>Długi opis misji
+Siły US Army zostały postawione w stan gotowości po doniesieniach o transporcie tak zwanego CWC, bardzo niebezpiecznego i nielegalnego materiału na terytorium Panthery. Transport przybył statkiem wczesnym porankiem i nie ma informacji o jego przeznaczeniu.
 
-Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadania.</Polish>
+W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze przy użyciu najbliższej dostępnej jednostki.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>Short description which will be visible when loading the mission.</English>
-            <Polish>Krótki opis, który będzie widoczny podczas ładowania misji.</Polish>
+            <Polish>Siły US Army zostały postawione w stan gotowości po doniesieniach o transporcie tak zwanego CWC.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <English>Briefing visible when selecting mission.</English>
-            <Polish>Briefing widoczny podczas wyboru misji.</Polish>
+            <Polish>Siły US Army zostały postawione w stan gotowości po doniesieniach o transporcie tak zwanego CWC.</Polish>
         </Key>
     </Package>
 
@@ -36,7 +33,16 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
         <Key ID="STR_AFP_Tasks_Task_AirportIntel_Description">
             <!-- <English>TODO:</English> -->
-            <Polish>TODO:</Polish>
+            <Polish>Na lotnisku możemy znaleźć jakieś informacje na temat transportu. Może być warto się tam udać.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_OptionalTasks_Title">
+            <English>Optional tasks</English>
+            <Polish>Zadania opcjonalne</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_OptionalTasks_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Zadania które mogą Wam pomóc w wykonaniu głównego celu.</Polish>
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Title">
@@ -45,7 +51,7 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
         <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Description">
             <!-- <English>TODO:</English> -->
-            <Polish>TODO:</Polish>
+            <Polish>Wrogi pluton zmechanizowany stacjonuje w tej okolicy. Sensownym byłoby zniszczenie go zawczasu, ale nie jest to wymagane.</Polish>
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Title">
@@ -54,7 +60,7 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
         <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Description">
             <!-- <English>TODO:</English> -->
-            <Polish>TODO:</Polish>
+            <Polish>Dowódca na pewno będzie wiedział gdzie znajduje się transport. Musimy jednak się spieszyć, żeby nam nie uciekł. Jest też odpowiedzialny za ściągnięcie transportu tutaj, więc koniecznie musi zostać pojmany.</Polish>
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_JammComms_Title">
@@ -63,7 +69,7 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
         <Key ID="STR_AFP_Tasks_Task_JammComms_Description">
             <!-- <English>TODO:</English> -->
-            <Polish>TODO:</Polish>
+            <Polish>Całkowite odcięcie łączności uniemożliwi jednostkom wroga wezwanie wsparcia. Odcięcie wież komunikacyjnych na wyspie odetnie jedynie wyspę od reszty.</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_CommsCenter_Title">
             <English>Neutralize communications center</English>
@@ -71,7 +77,7 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
         <Key ID="STR_AFP_Tasks_Task_CommsCenter_Description">
             <!-- <English>TODO:</English> -->
-            <Polish>TODO:</Polish>
+            <Polish>Niewielki garnizon pilnuje stacji przekaźnikowej w tym miejscu. Powinniśmy łatwo ich pokonać i uniemożliwić przeciwnikowi wezwanie wsparcia (o ile już tego nie zrobił).</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Title">
             <English>Install jammer</English>
@@ -79,12 +85,12 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
         <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Description">
             <!-- <English>TODO:</English> -->
-            <Polish>TODO:</Polish>
+            <Polish>Zainstalowanie zagłuszaczy na wyspie uniemożliwi wyspie zaalarmowanie pozostałych sił o ataku. Nie dowiedzą się też oni, że działamy w rejonie lotniska (chyba że zostaniemy dostrzeżeni przed włączeniem zagłuszania).</Polish>
         </Key>
 
         <Key ID="STR_AFP_Tasks_Task_IslandPower_Title">
-            <English>Shut down electricity on the island (OPTIONAL)</English>
-            <Polish>Wyłącz prąd na wyspie (OPCJONALNE)</Polish>
+            <English>Shut down electricity on the island</English>
+            <Polish>Wyłącz prąd na wyspie</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPower_Description">
             <!-- <English>TODO</English> -->
@@ -99,8 +105,8 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
             <Polish>Gdzieś tutaj powinna być jakaś konsola sterowania, której możemy użyć. Uważajcie by jej nie zniszczyć!</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Title">
-            <English>Install jammer</English>
-            <Polish>Zainstaluj zagłuszacz</Polish>
+            <English>Destroy transformers</English>
+            <Polish>Zniszcz transformatory</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Description">
             <!-- <English>TODO:</English> -->
@@ -121,7 +127,7 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
         </Key>
         <Key ID="STR_AFP_Tasks_Task_TownTrucks_Description">
             <!-- <English>TODO:</English> -->
-            <Polish>TODO:</Polish>
+            <Polish>Gdzieś tutaj powinien znajdować się transport. Uważajcie gdzie strzelacie, nie chcecie go zniszczyć!</Polish>
         </Key>
     </Package>
 

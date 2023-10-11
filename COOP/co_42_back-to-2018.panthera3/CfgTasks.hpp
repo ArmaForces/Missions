@@ -5,14 +5,73 @@ class CfgTasks
     // Put your tasks here
     class GreenPanther
     {
-        title = CSTING(Mission_Title);
+        title = CSTRING(Mission_Title);
         description = CSTRING(Mission_Description);
         icon = "whiteboard";
+
+        conditionEventsSuccess[] = { "CargoRetrieved" };
+        conditionEventsFailed[] = { "NukeDetonated" };
     };
     
-    class ArmyDepot
+    /*
+        Cargo
+    */
+    class SecureCargo
     {
         parentTask = "GreenPanther";
+        icon = "container";
+
+        conditionEventsSuccess[] = { "AmmoRetrieved", "ContainerRetrieved" };
+        conditionEventsSuccessRequired = 2;
+
+        onSuccessEvents[] = { "CargoRetrieved" };
+    };
+
+    class TownTrucks
+    {
+        parentTask = "SecureCargo";
+        icon = "truck";
+        marker = "sys_marker_town_trucks";
+
+        conditionEventsFailed[] = { "TownCargoDestroyed" };
+        conditionEventsSuccess[] = { "AmmoRetrieved" };
+    };
+
+    class IslandTrucks1 : TownTrucks
+    {
+        title = ECSTRING(Tasks,Task_SecureCargo_Title);
+        description = ECSTRING(Tasks,Task_SecureCargo_Description);
+        marker = "transport_island_empty";
+
+        conditionEventsFailed[] = { "ContainerDestroyed" };
+        conditionEventsSuccess[] = { "ContainerRetrieved" };
+    };
+
+    class IslandTrucks2 : TownTrucks
+    {
+        title = ECSTRING(Tasks,Task_SecureCargo_Title);
+        description = ECSTRING(Tasks,Task_SecureCargo_Description);
+        marker = "sys_marker_island_trucks_2";
+
+        conditionEventsCanceled[] = { "AirportIntelFound" };
+        conditionEventsSuccess[] = {};
+    };
+
+    /*
+        OPTIONAL TASKS
+    */
+
+    class OptionalTasks
+    {
+        parentTask = "GreenPanther";
+        icon = "unknown";
+        conditionEventsSuccess[] = { "ArmyDepotSecured", "AirportIntelFound", "OfficerCaptured", "CommsJammed", "IslandShutdownPower" };
+        conditionEventsSuccessRequired = 5;
+    };
+
+    class ArmyDepot
+    {
+        parentTask = "OptionalTasks";
         icon = "attack";
         marker = "sys_marker_army_depot";
 
@@ -21,7 +80,7 @@ class CfgTasks
 
     class AirportIntel
     {
-        parentTask = "GreenPanther";
+        parentTask = "OptionalTasks";
         icon = "documents";
         marker = "sys_marker_airport";
 
@@ -31,7 +90,7 @@ class CfgTasks
 
     class CaptureOfficer
     {
-        parentTask = "GreenPanther";
+        parentTask = "OptionalTasks";
         icon = "target";
         marker = "sys_marker_research_center";
 
@@ -43,11 +102,13 @@ class CfgTasks
     */
     class JammComms
     {
-        parentTask = "GreenPanther";
+        parentTask = "OptionalTasks";
         icon = "interact";
 
         conditionEventsSuccess[] = { "CommsCenterCaptured", "NorthTowerJammerInstalled", "SouthTowerJammerInstalled" };
         conditionEventsSuccessRequired = 3;
+
+        onSuccessEvents[] = { "CommsJammed" };
     };
 
     class CommsCenter
@@ -64,6 +125,7 @@ class CfgTasks
     {
         parentTask = "JammComms";
         icon = "use";
+        marker = "sys_marker_comms_north";
         
         conditionEventsFailed[] = { "NorthTowerJammerBroken" };
         conditionEventsSuccess[] = { "NorthTowerJammerInstalled" };
@@ -71,6 +133,10 @@ class CfgTasks
 
     class InstallJammerOnSouthTower : InstallJammerOnNorthTower
     {
+        title = ECSTRING(Tasks,Task_InstallJammerOnNorthTower_Title);
+        description = ECSTRING(Tasks,Task_InstallJammerOnNorthTower_Description);
+        marker = "sys_marker_comms_south";
+
         conditionEventsFailed[] = { "SouthTowerJammerBroken" };
         conditionEventsSuccess[] = { "SouthTowerJammerInstalled" };
     };
@@ -81,7 +147,7 @@ class CfgTasks
 
     class IslandPower
     {
-        parentTask = "GreenPanther";
+        parentTask = "OptionalTasks";
         icon = "interact";
 
         conditionEventsFailed[] = { "PowerRelayComputerDestroyed", "" };
@@ -111,40 +177,5 @@ class CfgTasks
 
         conditionEventsCanceled[] = { "PowerRelayHacked" };
         conditionEventsSuccess[] = { "PowerplantDestroyed" };
-    };
-
-    /*
-        Cargo
-    */
-    class SecureCargo
-    {
-        parentTask = "GreenPanther";
-        icon = "container";
-
-        conditionEventsSuccess[] = { "AmmoRetrieved", "ContainerRetrieved" };
-        conditionEventsSuccessRequired = 2;
-    };
-
-    class TownTrucks
-    {
-        parentTask = "SecureCargo";
-        icon = "truck";
-        marker = "sys_marker_town_trucks";
-
-        conditionEventsSuccess[] = { "AmmoRetrieved" };
-    };
-
-    class IslandTrucks1 : TownTrucks
-    {
-        marker = "transport_island_empty";
-        conditionEventsSuccess[] = { "ContainerRetrieved" };
-    };
-
-    class IslandTrucks2 : TownTrucks
-    {
-        marker = "sys_marker_island_trucks_2";
-
-        conditionEventsCanceled[] = { "AirportIntelFound" };
-        conditionEventsSuccess[] = {};
     };
 };

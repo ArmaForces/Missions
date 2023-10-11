@@ -12,26 +12,26 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=741;
+		nextID=743;
 	};
 	class MarkerIDProvider
 	{
-		nextID=21;
+		nextID=23;
 	};
 	class LayerIndexProvider
 	{
-		nextID=108;
+		nextID=116;
 	};
 	class Camera
 	{
-		pos[]={8423.7051,31.519867,8736.209};
-		dir[]={-0.37562391,-0.4440847,0.81344992};
-		up[]={-0.18617357,0.89598423,0.40317678};
-		aside[]={0.90788281,9.0803951e-009,0.41923004};
+		pos[]={9145.6367,29.884993,9921.7822};
+		dir[]={0.71245962,-0.63747394,-0.29330599};
+		up[]={0.58947569,0.77047187,-0.24267584};
+		aside[]={-0.38068354,1.4901161e-008,-0.92470551};
 	};
 };
 binarizationWanted=0;
-sourceName="MM_Back-To-2018";
+sourceName="co_42_back-to-2018";
 addons[]=
 {
 	"A3_Ui_F",
@@ -8239,7 +8239,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=172;
+		items=174;
 		class Item0
 		{
 			dataType="Marker";
@@ -8416,7 +8416,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3594.8799,17.459999,8246.4912};
-			angle=0.45259866;
+			angle=0.45259851;
 			class Attributes
 			{
 				text="armyDepot_secured";
@@ -31539,7 +31539,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this addEventHandler [""Hitpart"",{ " \n "  deleteVehicle (_this select 0 select 0);" \n "  [""AirportIntelDestroyed""] call CBA_fnc_serverEvent;" \n "}];" \n "" \n "" \n "[this,""Zabezpiecz komputer"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "  [""AirportIntelFound""] call CBA_fnc_serverEvent;" \n "  [_this select 0, _this select 2] remoteExec [""BIS_fnc_holdActionRemove"",0];" \n "  deleteVehicle (_this select 0 select 0);" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
+				init="this addEventHandler [""Hitpart"",{ " \n "  deleteVehicle (_this select 0 select 0);" \n "  [""AirportIntelDestroyed""] call CBA_fnc_serverEvent;" \n "}];" \n "" \n "" \n "[this,""Zabezpiecz komputer"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "  [""AirportIntelFound""] call CBA_fnc_serverEvent;" \n "  [_this select 0, _this select 2] remoteExec [""BIS_fnc_holdActionRemove"",0];" \n "  deleteVehicle (_this select 0);" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
 			};
 			id=416;
 			type="Computer";
@@ -31593,7 +31593,7 @@ class Mission
 			class Attributes
 			{
 				text="commsCenter_clear";
-				onActivation="[""CommsCenterSecured""] call CBA_fnc_serverEvent;";
+				onActivation="[""CommsCenterCaptured""] call CBA_fnc_serverEvent;";
 				sizeA=215.75301;
 				sizeB=422.50601;
 				sizeC=0;
@@ -31961,7 +31961,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=446;
 			type="UMI_Nuke_WarHead";
@@ -32014,7 +32014,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=448;
 			type="UMI_Nuke_WarHead";
@@ -32049,7 +32049,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=449;
 			type="UMI_Nuke_WarHead";
@@ -32084,7 +32084,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=450;
 			type="UMI_Nuke_WarHead";
@@ -32119,7 +32119,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=451;
 			type="UMI_Nuke_WarHead";
@@ -32154,7 +32154,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=452;
 			type="UMI_Nuke_WarHead";
@@ -32189,7 +32189,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=453;
 			type="UMI_Nuke_WarHead";
@@ -32224,7 +32224,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this attachTo [container];}";
+				init="this attachTo [container];";
 			};
 			id=454;
 			type="UMI_Nuke_WarHead";
@@ -34249,6 +34249,24 @@ class Mission
 			type="Empty";
 			id=740;
 			atlOffset=0.37078661;
+		};
+		class Item172
+		{
+			dataType="Marker";
+			position[]={8455.0732,163.317,9345.2822};
+			name="sys_marker_comms_north";
+			type="Empty";
+			id=741;
+			atlOffset=-0.00010681152;
+		};
+		class Item173
+		{
+			dataType="Marker";
+			position[]={8697.1885,76.488998,8514.2598};
+			name="sys_marker_comms_south";
+			type="Empty";
+			id=742;
+			atlOffset=-3.8146973e-005;
 		};
 	};
 	class Connections
