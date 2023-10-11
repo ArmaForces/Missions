@@ -26877,6 +26877,7 @@ class Mission
 												init="this removeAllEventHandlers ""HandleDamage""; " \n "this addEventHandler [""HandleDamage"", {0}];";
 												name="zeus";
 												description="Zeus@Zeus";
+												isPlayer=1;
 												isPlayable=1;
 												class Inventory
 												{
