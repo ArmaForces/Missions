@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=132;
+		nextID=140;
 	};
 	class Camera
 	{
-		pos[]={4977.001,18.347851,8259.1309};
-		dir[]={0.033529308,-0.43852878,0.8980915};
-		up[]={0.016360616,0.89871716,0.43822348};
-		aside[]={0.99930382,0,-0.037307967};
+		pos[]={4310.3076,31.089983,7424.7959};
+		dir[]={-0.17930895,-0.34473187,0.92141777};
+		up[]={-0.065850049,0.93870139,0.33838478};
+		aside[]={0.98158777,4.9931259e-009,0.19101827};
 	};
 };
 binarizationWanted=0;
@@ -31216,17 +31216,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8282.7813,62.568932,8474.0098};
-				angles[]={-0,1.331372,6.2826972};
+				position[]={8282.7813,62.568459,8474.0098};
+				angles[]={0,1.331372,6.2826962};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init="this addEventHandler [""Hitpart"",{ " \n "  deleteVehicle (_this select 0 select 0);" \n "  [""PowerRelayComputerDestroyed""] call CBA_fnc_serverEvent;" \n "}];" \n "" \n "" \n "[this,""Wyłącz prąd na wyspie"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "  if (!afp_scripts_blackout) then {" \n "    [""PowerRelayHacked""] call CBA_fnc_serverEvent;" \n "  } else {" \n "    titleText [""Brak prądu"",""PLAIN"",2];" \n "  };" \n "},{},[],15,nil,false,false] call BISBIS_fnc_taskSetStatec_holdActionAdd;";
+				init="this addEventHandler [""Hitpart"",{ " \n "  deleteVehicle (_this select 0 select 0);" \n "  [""PowerRelayComputerDestroyed""] call CBA_fnc_serverEvent;" \n "}];" \n "" \n "" \n "[this,""Wyłącz prąd na wyspie"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "  if (!afp_scripts_blackout) then {" \n "    [""PowerRelayHacked""] call CBA_fnc_serverEvent;" \n "    [_this select 0, _this select 2] remoteExec [""BIS_fnc_holdActionRemove"",0];" \n "  } else {" \n "    titleText [""Brak prądu"",""PLAIN"",2];" \n "  };" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
 			};
 			id=434;
 			type="Computer";
+			atlOffset=0.84433746;
 		};
 		class Item115
 		{
@@ -31234,7 +31234,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8282.6709,61.966133,8474.0791};
-				angles[]={-0,2.8887022,6.2826972};
+				angles[]={0,2.8887022,6.2826972};
 			};
 			side="Empty";
 			flags=4;
@@ -33232,17 +33232,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8695.9238,77.416313,8515.5723};
-				angles[]={0.0060001095,4.690712,6.2771854};
+				position[]={8695.9238,77.416481,8515.5723};
+				angles[]={0.0060039326,4.690712,6.2771816};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addEventHandler [""Hitpart"",{ " \n "  deleteVehicle (_this select 0 select 0);" \n "  [""SouthTowerJammerBroken""] call CBA_fnc_serverEvent;" \n "}];" \n "" \n "" \n "[this,""Zainstaluj zagłuszacz"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "  [""SouthTowerJammerInstalled""] call CCBA_fnc_serverEvent;" \n "  [_this select 0, _this select 2] remoteExec [""BIS_fnc_holdActionRemove"",0];" \n "  titleText [""Zagłuszanie włączone"",""PLAIN"",2];" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
+				init="this addEventHandler [""Hitpart"",{ " \n "  deleteVehicle (_this select 0 select 0);" \n "  [""SouthTowerJammerBroken""] call CBA_fnc_serverEvent;" \n "}];" \n "" \n "" \n "[this,""Zainstaluj zagłuszacz"",""\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa"","""",""true"",""true"",{},{},{" \n "  [""SouthTowerJammerInstalled""] call CBA_fnc_serverEvent;" \n "  [_this select 0, _this select 2] remoteExec [""BIS_fnc_holdActionRemove"",0];" \n "  titleText [""Zagłuszanie włączone"",""PLAIN"",2];" \n "},{},[],15,nil,false,false] call BIS_fnc_holdActionAdd;";
 			};
 			id=528;
 			type="Computer";
+			atlOffset=0.00016784668;
 		};
 		class Item152
 		{
@@ -33740,7 +33741,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6734.8081,58.123859,7290.2856};
-						angles[]={-0,4.7324553,0};
+						angles[]={0,4.7324553,0};
 					};
 					side="East";
 					class Attributes
@@ -33756,7 +33757,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6734.8081,58.123859,7290.2856};
-						angles[]={-0,4.7324553,0};
+						angles[]={0,4.7324553,0};
 					};
 					side="East";
 					flags=2;
@@ -33812,7 +33813,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6734.8081,58.122421,7290.2358};
-				angles[]={-0,4.7324553,0};
+				angles[]={0,4.7324553,0};
 			};
 			side="East";
 			flags=6;
@@ -33929,7 +33930,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8412.3184,23.656006,8712.0723};
-						angles[]={0,4.2797728,-0};
+						angles[]={0,4.2797728,0};
 					};
 					side="East";
 					class Attributes
@@ -33945,7 +33946,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8412.3184,23.656006,8712.0723};
-						angles[]={0,4.2797728,-0};
+						angles[]={0,4.2797728,0};
 					};
 					side="East";
 					flags=2;
@@ -34002,7 +34003,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8412.3184,23.654568,8712.0225};
-				angles[]={0,4.2797728,-0};
+				angles[]={0,4.2797728,0};
 			};
 			side="East";
 			flags=2;
@@ -34220,7 +34221,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9189.1201,15.657208,9882.7881};
-						angles[]={0,4.5755072,-0};
+						angles[]={0,4.5755072,0};
 					};
 					side="East";
 					flags=7;
@@ -34251,7 +34252,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4717.875,18.964359,8038.3599};
-						angles[]={-0,0.90356541,0};
+						angles[]={0,0.90356541,0};
 					};
 					side="East";
 					class Attributes
@@ -34267,7 +34268,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4717.875,18.964359,8038.3599};
-						angles[]={-0,0.90356541,0};
+						angles[]={0,0.90356541,0};
 					};
 					side="East";
 					flags=2;
@@ -34324,7 +34325,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4717.875,18.962921,8038.3101};
-				angles[]={-0,0.90356541,0};
+				angles[]={0,0.90356541,0};
 			};
 			side="East";
 			flags=6;
@@ -34348,7 +34349,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4367.9077,20.736013,7817.1143};
-						angles[]={0,3.0374928,-0};
+						angles[]={0,3.0374928,0};
 					};
 					side="East";
 					class Attributes
@@ -34364,7 +34365,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4367.9077,20.736013,7817.1143};
-						angles[]={0,3.0374928,-0};
+						angles[]={0,3.0374928,0};
 					};
 					side="East";
 					flags=2;
@@ -34421,7 +34422,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4367.9077,20.734575,7817.0645};
-				angles[]={0,3.0374928,-0};
+				angles[]={0,3.0374928,0};
 			};
 			side="East";
 			flags=2;
@@ -34445,7 +34446,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4974.957,8.6836109,8108.9595};
-						angles[]={0,0.96826541,-0};
+						angles[]={0,0.96826541,0};
 					};
 					side="East";
 					flags=2;
@@ -34491,7 +34492,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4974.957,8.6821718,8108.9097};
-				angles[]={0,0.96826541,-0};
+				angles[]={0,0.96826541,0};
 			};
 			side="East";
 			flags=2;
