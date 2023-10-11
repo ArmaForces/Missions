@@ -17,3 +17,9 @@ if (!isNil QUOTE(RESPAWN_HELPER_VR)) then {
 ["CommsCenterSecured", {
     deleteMarker "marker_3";
 }] call CBA_fnc_addEventHandler;
+
+["IslandShutdownPower", {
+    GVAR(blackout) = true;
+    publicVariable QGVAR(blackout);
+    [true] call FUNC(blackout);
+}] call CBA_fnc_addEventHandler;

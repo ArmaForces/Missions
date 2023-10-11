@@ -35,23 +35,92 @@ Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadan
             <Polish>Znajdź i zabezpiecz dane wywiadowcze na lotnisku</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_AirportIntel_Description">
-            <English>TODO:</English>
+            <!-- <English>TODO:</English> -->
             <Polish>TODO:</Polish>
         </Key>
+
         <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Title">
             <English>Secure Drulovka Army Depot</English>
             <Polish>Zabezpiecz Drulovka Army Depot</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Description">
-            <English>TODO:</English>
+            <!-- <English>TODO:</English> -->
             <Polish>TODO:</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Title">
+            <English>Find and capture main commander of the research center</English>
+            <Polish>Znajdź i pojmij głównego dowódcę centrum badań</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>TODO:</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_JammComms_Title">
+            <English>Cut the comms</English>
+            <Polish>Odetnij łączność</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_JammComms_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>TODO:</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CommsCenter_Title">
+            <English>Neutralize communications center</English>
+            <Polish>Zneutralizuj centrum komunikacji</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CommsCenter_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>TODO:</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Title">
+            <English>Install jammer</English>
+            <Polish>Zainstaluj zagłuszacz</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>TODO:</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_IslandPower_Title">
+            <English>Shut down electricity on the island (OPTIONAL)</English>
+            <Polish>Wyłącz prąd na wyspie (OPCJONALNE)</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPower_Description">
+            <!-- <English>TODO</English> -->
+            <Polish>Aby wyłączyć prąd na wyspie musimy albo zniszczyć transformatory w elektrowni, albo shackować podstację sterującą.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerHack_Title">
+            <English>Hack the substation</English>
+            <Polish>Shackuj podstację</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerHack_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Gdzieś tutaj powinna być jakaś konsola sterowania, której możemy użyć. Uważajcie by jej nie zniszczyć!</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Title">
+            <English>Install jammer</English>
+            <Polish>Zainstaluj zagłuszacz</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Możemy po prostu zniszczyć transformatory gdzieś tutaj, to na pewno wyłączy prąd.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_SecureCargo_Title">
+            <English>Locate and secure the cargo</English>
+            <Polish>Zlokalizuj i zabezpiecz transport</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_SecureCargo_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Zabezpieczony transport musi zostać dostarczony bezpiecznie do wyznaczonej strefy w bazie.</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_TownTrucks_Title">
             <English>Locate and secure the cargo</English>
             <Polish>Zlokalizuj i zabezpiecz transport</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_TownTrucks_Description">
-            <English>TODO:</English>
+            <!-- <English>TODO:</English> -->
             <Polish>TODO:</Polish>
         </Key>
     </Package>

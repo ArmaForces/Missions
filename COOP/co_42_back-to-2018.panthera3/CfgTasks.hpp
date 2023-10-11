@@ -16,7 +16,7 @@ class CfgTasks
         icon = "attack";
         marker = "sys_marker_army_depot";
 
-        conitionEventsSuccess[] = { "ArmyDepotSecured" };
+        conditionEventsSuccess[] = { "ArmyDepotSecured" };
     };
 
     class AirportIntel
@@ -33,17 +33,84 @@ class CfgTasks
     {
         parentTask = "GreenPanther";
         icon = "target";
+        marker = "sys_marker_research_center";
+
         conditionEventsSuccess[] = { "OfficerCaptured" };
+    };
+
+    /*
+        Comms Jamming
+    */
+    class JammComms
+    {
+        parentTask = "GreenPanther";
+        icon = "interact";
+
+        conditionEventsSuccess[] = { "CommsCenterCaptured", "NorthTowerJammerInstalled", "SouthTowerJammerInstalled" };
+        conditionEventsSuccessRequired = 3;
     };
 
     class CommsCenter
     {
-        parentTask = "GreenPanther";
+        parentTask = "JammComms";
         icon = "attack";
         marker = "sys_marker_commsCenter";
         
         // TODO: Handle destruction
         conditionEventsSuccess[] = { "CommsCenterCaptured", "CommsCenterDestroyed" };
+    };
+
+    class InstallJammerOnNorthTower
+    {
+        parentTask = "JammComms";
+        icon = "use";
+        
+        conditionEventsFailed[] = { "NorthTowerJammerBroken" };
+        conditionEventsSuccess[] = { "NorthTowerJammerInstalled" };
+    };
+
+    class InstallJammerOnSouthTower : InstallJammerOnNorthTower
+    {
+        conditionEventsFailed[] = { "SouthTowerJammerBroken" };
+        conditionEventsSuccess[] = { "SouthTowerJammerInstalled" };
+    };
+
+    /*
+        Island Power
+    */
+
+    class IslandPower
+    {
+        parentTask = "GreenPanther";
+        icon = "interact";
+
+        conditionEventsFailed[] = { "PowerRelayComputerDestroyed", "" };
+        conditionEventsFailedRequired = 2;
+
+        conditionEventsSuccess[] = { "PowerRelayHacked", "PowerplantDestroyed" };
+
+        onSuccessEvents[] = { "IslandShutdownPower" };
+    };
+
+    class IslandPowerHack
+    {
+        parentTask = "IslandPower";
+        icon = "use";
+        marker = "sys_marker_island_powerRelay";
+
+        conditionEventsCanceled[] = { "PowerplantDestroyed" };
+        conditionEventsFailed[] = { "PowerRelayComputerDestroyed" };
+        conditionEventsSuccess[] = { "PowerRelayHacked" };
+    };
+
+    class IslandPowerDestroy
+    {
+        parentTask = "IslandPower";
+        icon = "destroy";
+        marker = "sys_marker_island_powerplant";
+
+        conditionEventsCanceled[] = { "PowerRelayHacked" };
+        conditionEventsSuccess[] = { "PowerplantDestroyed" };
     };
 
     /*
