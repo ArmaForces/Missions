@@ -8,8 +8,6 @@ respawnTemplates[] = {"afm_respawn_default", "Counter"};
 // If mission doesn't feature standard respawn timer, "Counter" option should be removed.
 // This applies to permadeath missions and when using custom respawn based on events or whatever.
 
-disableChannels[] = {1, 2, 3, 4, 5};
-
 /* Mission description and stuff */
 author = "3Mydlo3, ArmaForces";
 onLoadIntro = CSTRING(Mission_ShortDescription);
@@ -25,6 +23,7 @@ class Header {
 };
 
 /* Other stuff */
+disableChannels[] = {1, 2, 3, 4, 5};
 disabledAI = true;
 
 // Mission CBA settings must be added through CBA XEH PreInit, otherwise they won't be visible in 3den
