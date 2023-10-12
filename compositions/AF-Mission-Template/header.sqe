@@ -1,0 +1,11 @@
+version=1;
+name="AF-Mission-Template";
+author="3Mydlo3";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Structures_F_Bootcamp_VR_Helpers",
+	"A3_Characters_F",
+	"ace_headless",
+	"A3_Modules_F_Curator_Curator"
+};

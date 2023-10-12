@@ -1,0 +1,224 @@
+version=1;
+center[]={2696.9934,5,7575.2202};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="ArmaForces";
+		class Entities
+		{
+			items=7;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.8867188,1.0489998,0.016601563};
+					angles[]={0,3.1415927,0};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					name="respawn";
+				};
+				id=2;
+				type="VR_3DSelector_01_default_F";
+			};
+			class Item1
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-2.3146973,0,0.99658203};
+					angles[]={0,3.1415927,0};
+				};
+				name="HC1";
+				isPlayable=1;
+				description="HC1";
+				id=6;
+				type="HeadlessClient_F";
+			};
+			class Item2
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-2.3146973,0,-1.003418};
+					angles[]={0,3.1415927,0};
+				};
+				name="HC2";
+				isPlayable=1;
+				description="HC2";
+				id=7;
+				type="HeadlessClient_F";
+			};
+			class Item3
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-0.31469727,0,0.99658203};
+					angles[]={0,3.1415927,0};
+				};
+				name="HC3";
+				isPlayable=1;
+				description="HC3";
+				id=8;
+				type="HeadlessClient_F";
+			};
+			class Item4
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-0.31469727,0,-1.003418};
+					angles[]={0,3.1415927,0};
+				};
+				name="HC4";
+				isPlayable=1;
+				description="HC4";
+				id=9;
+				type="HeadlessClient_F";
+			};
+			class Item5
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-1.3146973,0,-0.0034179688};
+					angles[]={0,3.1415927,0};
+				};
+				id=5;
+				type="acex_headless_module";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="acex_headless_module_delay";
+						expression="_this setVariable ['delay',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=15;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="acex_headless_module_log";
+						expression="_this setVariable ['log',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="acex_headless_module_enabled";
+						expression="_this setVariable ['enabled',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="acex_headless_module_endMission";
+						expression="_this setVariable ['endMission',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item6
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={4.6853027,0,-0.0034179688};
+					angles[]={0,3.1415927,0};
+				};
+				name="adminzeus";
+				id=4;
+				type="ModuleCurator_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ModuleCurator_F_Owner";
+						expression="_this setVariable ['Owner',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="#adminLogged";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ModuleCurator_F_Forced";
+						expression="_this setVariable ['Forced',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="ModuleCurator_F_Name";
+						expression="_this setVariable ['Name',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="ModuleCurator_F_Addons";
+						expression="_this setVariable ['Addons',_value,true];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=3;
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+		};
+		id=13;
+	};
+};
