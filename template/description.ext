@@ -7,8 +7,6 @@ respawnDelay = 1e10;
 respawnTemplates[] = {"afm_respawn_default", "Counter"};
 // If mission doesn't feature standard respawn timer, "Counter" option should be removed.
 // This applies to permadeath missions and when using custom respawn based on events or whatever.
-// For compatibility with spectator module:
-respawnTemplatesVirtual[] = {"Spectator"};
 
 disableChannels[] = {1, 2, 3, 4, 5};
 
