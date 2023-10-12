@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Operacja Zielona Pantera</Polish>
+            <English>Operation Green Panther</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Operacja Zielona Pantera</Polish>
+            <English>Operation Green Panther</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <Polish>Panthera, 2018
+
+Siły US Army zostały postawione w stan gotowości po doniesieniach o transporcie tak zwanego CWC, bardzo niebezpiecznego i nielegalnego materiału na terytorium Panthery. Transport przybył statkiem wczesnym porankiem i nie ma informacji o jego przeznaczeniu.
+
+W związku z tym podjęto decyzję o zniszczeniu sił przeciwnika w obszarze przy użyciu najbliższej dostępnej jednostki.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <Polish>Siły US Army zostały postawione w stan gotowości po doniesieniach o transporcie tak zwanego CWC.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <Polish>Siły US Army zostały postawione w stan gotowości po doniesieniach o transporcie tak zwanego CWC.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Tasks">
+        <Key ID="STR_AFP_Tasks_Task_AirportIntel_Title">
+            <!-- <English>Find and secure intel at the airport</English> -->
+            <Polish>Znajdź i zabezpiecz dane wywiadowcze na lotnisku</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_AirportIntel_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Na lotnisku możemy znaleźć jakieś informacje na temat transportu. Może być warto się tam udać.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_OptionalTasks_Title">
+            <!-- <English>Optional tasks</English> -->
+            <Polish>Zadania opcjonalne</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_OptionalTasks_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Zadania które mogą Wam pomóc w wykonaniu głównego celu.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Title">
+            <!-- <English>Secure Drulovka Army Depot</English> -->
+            <Polish>Zabezpiecz Drulovka Army Depot</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_ArmyDepot_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Wrogi pluton zmechanizowany stacjonuje w tej okolicy. Sensownym byłoby zniszczenie go zawczasu, ale nie jest to wymagane.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Title">
+            <!-- <English>Find and capture main commander of the research center</English> -->
+            <Polish>Znajdź i pojmij głównego dowódcę centrum badań</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CaptureOfficer_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Dowódca na pewno będzie wiedział gdzie znajduje się transport. Musimy jednak się spieszyć, żeby nam nie uciekł. Jest też odpowiedzialny za ściągnięcie transportu tutaj, więc koniecznie musi zostać pojmany.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_JammComms_Title">
+            <!-- <English>Cut the comms</English> -->
+            <Polish>Odetnij łączność</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_JammComms_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Całkowite odcięcie łączności uniemożliwi jednostkom wroga wezwanie wsparcia. Odcięcie wież komunikacyjnych na wyspie odetnie jedynie wyspę od reszty.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CommsCenter_Title">
+            <!-- <English>Neutralize communications center</English> -->
+            <Polish>Zneutralizuj centrum komunikacji</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CommsCenter_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Niewielki garnizon pilnuje stacji przekaźnikowej w tym miejscu. Powinniśmy łatwo ich pokonać i uniemożliwić przeciwnikowi wezwanie wsparcia (o ile już tego nie zrobił).</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Title">
+            <!-- <English>Install jammer</English> -->
+            <Polish>Zainstaluj zagłuszacz</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_InstallJammerOnNorthTower_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Zainstalowanie zagłuszaczy na wyspie uniemożliwi wyspie zaalarmowanie pozostałych sił o ataku. Nie dowiedzą się też oni, że działamy w rejonie lotniska (chyba że zostaniemy dostrzeżeni przed włączeniem zagłuszania).</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_IslandPower_Title">
+            <!-- <English>Shut down electricity on the island</English> -->
+            <Polish>Wyłącz prąd na wyspie</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPower_Description">
+            <!-- <English>TODO</English> -->
+            <Polish>Aby wyłączyć prąd na wyspie musimy albo zniszczyć transformatory w elektrowni, albo shackować podstację sterującą.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerHack_Title">
+            <!-- <English>Hack the substation</English> -->
+            <Polish>Shackuj podstację</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerHack_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Gdzieś tutaj powinna być jakaś konsola sterowania, której możemy użyć. Uważajcie by jej nie zniszczyć!</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Title">
+            <!-- <English>Destroy transformers</English> -->
+            <Polish>Zniszcz transformatory</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_IslandPowerDestroy_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Możemy po prostu zniszczyć transformatory gdzieś tutaj, to na pewno wyłączy prąd.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Tasks_Task_SecureCargo_Title">
+            <!-- <English>Locate and secure the cargo</English> -->
+            <Polish>Zlokalizuj i zabezpiecz transport</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_SecureCargo_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Zabezpieczony transport musi zostać dostarczony bezpiecznie do wyznaczonej strefy w bazie.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_TownTrucks_Title">
+            <!-- <English>Locate and secure the cargo</English> -->
+            <Polish>Zlokalizuj i zabezpiecz transport</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_TownTrucks_Description">
+            <!-- <English>TODO:</English> -->
+            <Polish>Gdzieś tutaj powinien znajdować się transport. Uważajcie gdzie strzelacie, nie chcecie go zniszczyć!</Polish>
+        </Key>
+    </Package>
+
+    <Package name="GUI">
+        <!-- COMMON -->
+        <Key ID="STR_AFP_GUI_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_AFP_GUI_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_AFP_GUI_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_AFP_GUI_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_AFP_GUI_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
