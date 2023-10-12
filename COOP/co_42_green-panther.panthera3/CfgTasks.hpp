@@ -35,7 +35,7 @@ class CfgTasks
 
         conditionEventsFailed[] = { "TownCargoDestroyed" };
         conditionEventsSuccess[] = { "AmmoRetrieved" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     class IslandTrucks1 : TownTrucks
@@ -46,7 +46,7 @@ class CfgTasks
 
         conditionEventsFailed[] = { "ContainerDestroyed" };
         conditionEventsSuccess[] = { "ContainerRetrieved" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     class IslandTrucks2 : TownTrucks
@@ -78,7 +78,7 @@ class CfgTasks
         marker = "sys_marker_army_depot";
 
         conditionEventsSuccess[] = { "ArmyDepotSecured" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     class AirportIntel
@@ -89,7 +89,7 @@ class CfgTasks
 
         conditionEventsSuccess[] = { "AirportIntelFound" };
         conditionEventsFailed[] = { "AirportIntelDestroyed" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     class CaptureOfficer
@@ -99,7 +99,7 @@ class CfgTasks
         marker = "sys_marker_research_center";
 
         conditionEventsSuccess[] = { "OfficerCaptured" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     /*
@@ -124,7 +124,7 @@ class CfgTasks
         
         // TODO: Handle destruction
         conditionEventsSuccess[] = { "CommsCenterCaptured", "CommsCenterDestroyed" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     class InstallJammerOnNorthTower
@@ -135,7 +135,7 @@ class CfgTasks
         
         conditionEventsFailed[] = { "NorthTowerJammerBroken" };
         conditionEventsSuccess[] = { "NorthTowerJammerInstalled" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     class InstallJammerOnSouthTower : InstallJammerOnNorthTower
@@ -146,7 +146,7 @@ class CfgTasks
 
         conditionEventsFailed[] = { "SouthTowerJammerBroken" };
         conditionEventsSuccess[] = { "SouthTowerJammerInstalled" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     /*
@@ -175,7 +175,7 @@ class CfgTasks
         conditionEventsCanceled[] = { "PowerplantDestroyed" };
         conditionEventsFailed[] = { "PowerRelayComputerDestroyed" };
         conditionEventsSuccess[] = { "PowerRelayHacked" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 
     class IslandPowerDestroy
@@ -186,6 +186,6 @@ class CfgTasks
 
         conditionEventsCanceled[] = { "PowerRelayHacked" };
         conditionEventsSuccess[] = { "PowerplantDestroyed" };
-        onSuccessEvents[] = { "afm_respawn_force" };
+        onSuccessEvents[] = { "RespawnAfterTaskCompleted" };
     };
 };

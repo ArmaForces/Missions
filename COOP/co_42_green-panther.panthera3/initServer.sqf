@@ -1,8 +1,17 @@
 #include "script_component.hpp"
 
+GVAR(respawnAvailableTimeInMinutes) = 100;
+
 if (!isNil QUOTE(RESPAWN_HELPER_VR)) then {
     createMarker ["respawn", position RESPAWN_HELPER_VR];
 };
+
+["RespawnAfterTaskCompleted", {
+    // Check if respawn is still enabled
+    if (CBA_missionTime > GVAR(respawnAvailableTimeInMinutes) * 60) exitWith {};
+
+    ["afm_respawn_force"] call CBA_fnc_serverEvent;
+}] call CBA_fnc_addEventHandler;
 
 ["AirportIntelFound", {
     "transport_town" setMarkerPos (getMarkerPos "transport_town_empty");
