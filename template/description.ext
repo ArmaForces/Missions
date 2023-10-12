@@ -4,6 +4,7 @@
 /* Respawn stuff */
 respawn = 3;
 respawnDelay = 1e10;
+respawnOnStart = -1; // Dont respawn on start. Don't run OnPlayerRespawn.sqf on start.
 respawnTemplates[] = {"afm_respawn_default", "Counter"};
 // If mission doesn't feature standard respawn timer, "Counter" option should be removed.
 // This applies to permadeath missions and when using custom respawn based on events or whatever.
