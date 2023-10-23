@@ -62,7 +62,8 @@ GVAR(allDocuments) set [
 // Czesiek
 GVAR(allDocuments) set [
     "TBD_Czesiek_UID", [
-        ["ID", ["Jan Honza Mikes", 1987, "Česká republika"] call _idFunc]
+        ["ID", ["Jan Honza Mikes", 1987, "Česká republika"] call _idFunc],
+        ["Legitymacja Milicjanta", "Krawężnik Jan Honza Mikes<br/>Rejon Zelenogorsk"]
 ]];
 
 // Godziak (OPFOR)
@@ -165,7 +166,8 @@ GVAR(allDocuments) set [
 // Saper
 GVAR(allDocuments) set [
     "76561198022680504", [
-        ["ID", "Janusz Сгам" call _idFunc]
+        ["ID", "Janusz Сгам" call _idFunc],
+        ["Legitymacja Milicjanta", "Krawężnik Janusz Сгам<br/>Rejon Zelenogorsk"]
 ]];
 
 // Seweryn
