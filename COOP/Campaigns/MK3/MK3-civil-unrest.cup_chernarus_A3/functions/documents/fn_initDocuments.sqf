@@ -102,7 +102,8 @@ GVAR(allDocuments) set [
         ["ID", "Ivanion Hypev" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Pozwolenie na broń", "Brak własnej broni"],
-        ["Dowód Rejestracyjny", "UAZ 8014 MA"]
+        ["Dowód Rejestracyjny", "UAZ 8014 MA"],
+        ["Pozwolenie na budowę", "Na mocy przetargu z dnia 23 marca firma budowlex została wyznaczona do remontu dróg na terenie Zelenogorska. Prace mają rozpocząć się nie później niż 28 marca."]
 ]];
 
 // Jabar
@@ -215,7 +216,8 @@ GVAR(allDocuments) set [
 GVAR(allDocuments) set [
     "76561198060965315", [
         ["Dowód Osobisty", ["Wojciech Kazubowski", 1992, "Rzeczpospolita Polska"] call _idFunc],
-        ["Prawo jazdy", "Kategoria B<br/>Rzeczpospolita Polska"]
+        ["Prawo jazdy", "Kategoria B<br/>Rzeczpospolita Polska"],
+        ["Rozkaz transportu więźniów", "Ze względu na trwające w Zelenogorsku rozruchy,<br/> więźniowe lokalnej komendy mają zostać w trybie natychmiastowym przetransportowani do więzienia w Czarnogorsku.<br/> Za transport więźniów odpowiedzialna jest 23 brygada zmechanizowana zakwaterowana w Tisach."]
 ]];
 
 // Wantussik
