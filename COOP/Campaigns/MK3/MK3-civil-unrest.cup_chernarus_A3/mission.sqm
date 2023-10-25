@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2680;
+		nextID=2693;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3847;
+		nextID=3848;
 	};
 	class Camera
 	{
-		pos[]={2711.7188,249.16058,5276.4595};
-		dir[]={0.59233826,-0.4557226,0.66449654};
-		up[]={0.30325642,0.89010954,0.34019983};
-		aside[]={0.74651545,-6.0687307e-007,-0.66544837};
+		pos[]={2730.9407,221.44337,5418.0557};
+		dir[]={-0.25159684,-0.39234188,-0.88482857};
+		up[]={-0.10731644,0.91979682,-0.37741894};
+		aside[]={-0.96193838,2.1862797e-007,0.27352744};
 	};
 };
 binarizationWanted=0;
@@ -157,10 +157,10 @@ addons[]=
 	"A3_Structures_F_Exp_Commercial_Market",
 	"A3_Structures_F_EPB_Civ_Garbage",
 	"ace_field_rations",
+	"A3_Structures_F_EPB_Items_Documents",
 	"afmf_buildables",
 	"A3_Structures_F_Items_Luggage",
-	"CUP_Wheeled_SUV",
-	"A3_Structures_F_EPB_Items_Documents"
+	"CUP_Wheeled_SUV"
 };
 class AddonsMetaData
 {
@@ -820,7 +820,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -1870,6 +1870,7 @@ class Mission
 									};
 									id=1566;
 									type="aftm_CUP_C_S1203_CIV_CR_Gyros";
+									atlOffset=-0.00036621094;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7077,7 +7078,7 @@ class Mission
 							};
 							id=581;
 							type="Box_Syndicate_Ammo_F";
-							atlOffset=1.1535797;
+							atlOffset=1.1536255;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -10298,7 +10299,6 @@ class Mission
 							};
 							id=187;
 							type="rhsgref_ins_zil131_open";
-							atlOffset=1.5258789e-005;
 						};
 						class Item16
 						{
@@ -15427,7 +15427,7 @@ class Mission
 							};
 							id=1455;
 							type="CUP_C_S1203_CIV_CR";
-							atlOffset=0.016937256;
+							atlOffset=-9.1552734e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36642,7 +36642,6 @@ class Mission
 							};
 							id=2187;
 							type="Land_ChairPlastic_F";
-							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36740,7 +36739,6 @@ class Mission
 							};
 							id=2190;
 							type="Land_ChairPlastic_F";
-							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36773,7 +36771,6 @@ class Mission
 							};
 							id=2203;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.069961548;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37039,7 +37036,7 @@ class Mission
 							};
 							id=2211;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.0028381348;
+							atlOffset=0.0027618408;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37724,7 +37721,7 @@ class Mission
 			name="Props for protest";
 			class Entities
 			{
-				items=7;
+				items=8;
 				class Item0
 				{
 					dataType="Layer";
@@ -40717,9 +40714,74 @@ class Mission
 					id=2325;
 					atlOffset=-0.27682495;
 				};
+				class Item7
+				{
+					dataType="Layer";
+					name="Protest posters";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={2722.4189,207.34943,5377.396};
+								angles[]={5.3773241,5.695673,4.7835283};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="if (!hasInterface) exitWith {};" \n "" \n "[{" \n "_this setObjectTexture [0, ""img\equalityofman.paa""];" \n "}, this, 2] call CBA_fnc_waitAndExecute;";
+								disableSimulation=1;
+							};
+							id=2686;
+							type="Land_Poster_04_F";
+							atlOffset=0.77000427;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={2721.7319,207.39442,5369.772};
+								angles[]={1.3163273,3.5226853,5.2975283};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="if (!hasInterface) exitWith {};" \n "" \n "[{" \n "  _this setObjectTexture [0, ""img\milicejni-zlocinci.paa""];" \n "}, this, 2] call CBA_fnc_waitAndExecute;";
+								disableSimulation=1;
+							};
+							id=2687;
+							type="Land_Poster_04_F";
+							atlOffset=0.81500244;
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={2713.6841,207.481,5375.8101};
+								angles[]={0,4.9005179,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="if (!hasInterface) exitWith {};" \n "" \n "[{" \n "  _this setObjectTexture [0, ""img\milicejni-devki.paa""];" \n "}, this, 2] call CBA_fnc_waitAndExecute;";
+								disableSimulation=1;
+							};
+							id=2690;
+							type="Land_Poster_01_F";
+							atlOffset=0.94599915;
+						};
+					};
+					id=2692;
+					atlOffset=0.8692627;
+				};
 			};
 			id=2248;
-			atlOffset=-0.21444702;
+			atlOffset=1.2229767;
 		};
 		class Item37
 		{
@@ -41884,19 +41946,98 @@ class Mission
 		};
 		class Item47
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2720.0588,206.92807,5371.7251};
-				angles[]={0,3.141608,0};
+				position[]={2711.3394,206.64565,5377.686};
+				angles[]={6.2781582,0,6.26968};
 			};
-			side="Empty";
-			class Attributes
+			name="mkr_buildable_protestPosters";
+			flags=1;
+			id=2691;
+			type="afmf_buildables_areaModule";
+			class CustomAttributes
 			{
+				class Attribute0
+				{
+					property="afmf_buildables_buildTime";
+					expression="_this setVariable ['afmf_buildables_buildTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="afmf_buildables_supplyCrates";
+					expression="_this setVariable ['afmf_buildables_supplyCrates', parseSimpleArray _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[""B_supplyCrate_F""]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="afmf_buildables_onBuilt";
+					expression="_this setVariable ['afmf_buildables_onBuilt',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="afmf_buildables_requiredSupplies";
+					expression="_this setVariable ['afmf_buildables_requiredSupplies',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="afmf_buildables_hideObjects";
+					expression="_this setVariable ['afmf_buildables_hideObjects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="afmf_buildables_layer";
+					expression="_this setVariable ['afmf_buildables_layer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Protest posters";
+						};
+					};
+				};
+				nAttributes=6;
 			};
-			id=2674;
-			type="Land_Poster_04_F";
-			atlOffset=0.34864807;
 		};
 	};
 	class Connections

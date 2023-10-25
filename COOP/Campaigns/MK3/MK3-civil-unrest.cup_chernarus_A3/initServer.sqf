@@ -72,6 +72,12 @@ publicVariable QGVAR(zeusNetId);
 [{dayTime > 7 - (7/60)},{
     ["ProtestStarts"] call CBA_fnc_serverEvent;
     [{
+        private _areaId = mkr_buildable_protestPosters getVariable ["afmf_buildables_area", ""];
+        ["afmf_buildables_deliverSupply", [_areaId]] call CBA_fnc_serverEvent;
+
         ["ProtestStarted"] call CBA_fnc_serverEvent;
+
+        private _areaId = mkr_buildable_protestGarbage getVariable ["afmf_buildables_area", ""];
+        ["afmf_buildables_deliverSupply", [_areaId]] call CBA_fnc_serverEvent;
     }] call CBA_fnc_waitAndExecute;
 }, []] call CBA_fnc_waitUntilAndExecute;
