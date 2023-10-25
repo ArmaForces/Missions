@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2673;
+		nextID=2678;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3691;
+		nextID=3847;
 	};
 	class Camera
 	{
-		pos[]={2674.0928,314.44736,5221.3999};
-		dir[]={0.19996785,-0.71620852,0.66864264};
-		up[]={0.20521368,0.69788551,0.68618292};
-		aside[]={0.95808649,2.6193447e-008,-0.28653088};
+		pos[]={2724.5088,249.20404,5238.8491};
+		dir[]={0.27760383,-0.40412638,0.8715905};
+		up[]={0.1226482,0.91469824,0.38507825};
+		aside[]={0.95286566,-4.4307671e-007,-0.3034912};
 	};
 };
 binarizationWanted=0;
@@ -46,6 +46,7 @@ addons[]=
 	"rhsgref_c_vehicles_ret",
 	"rds_A2_Civilians",
 	"CUP_WheeledVehicles_Volha",
+	"CUP_Wheeledvehicles_VWGolf",
 	"A3_Weapons_F_Explosives",
 	"A3_Modules_F_Curator_Mines",
 	"rhs_c_weapons",
@@ -68,7 +69,6 @@ addons[]=
 	"ace_captives",
 	"CUP_Weapons_CZ75",
 	"CUP_Weapons_Ammunition",
-	"rhsgref_c_troops",
 	"A3_Characters_F_AoW",
 	"A3_Ui_F",
 	"CUP_CAStructures_Rail",
@@ -78,6 +78,7 @@ addons[]=
 	"CUP_WheeledVehicles_Hilux",
 	"CUP_WheeledVehicles_UAZ",
 	"CUP_WheeledVehicles_Datsun",
+	"rhsgref_c_troops",
 	"rhs_sounds",
 	"ace_compat_rhs_afrf3",
 	"armaforces_rhs_cba_mag_compat_afrf",
@@ -88,7 +89,6 @@ addons[]=
 	"ace_goggles",
 	"A3_Characters_F_Orange_Facewear",
 	"CUP_WheeledVehicles_Ural",
-	"CUP_Wheeledvehicles_VWGolf",
 	"CUP_WheeledVehicles_S1203",
 	"CUP_WheeledVehicles_V3S",
 	"CUP_WheeledVehicles_Pickup",
@@ -159,7 +159,8 @@ addons[]=
 	"ace_field_rations",
 	"afmf_buildables",
 	"A3_Structures_F_Items_Luggage",
-	"CUP_Wheeled_SUV"
+	"CUP_Wheeled_SUV",
+	"A3_Structures_F_EPB_Items_Documents"
 };
 class AddonsMetaData
 {
@@ -239,140 +240,138 @@ class AddonsMetaData
 		};
 		class Item12
 		{
+			className="CUP_Wheeledvehicles_VWGolf";
+			name="CUP_Wheeledvehicles_VWGolf";
+		};
+		class Item13
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item15
+		class Item16
 		{
 			className="CUP_Creatures_People_Civil_Chernarus";
 			name="CUP_Creatures_People_Civil_Chernarus";
 		};
-		class Item16
+		class Item17
 		{
 			className="CUP_Creatures_People_Civil_Takistan";
 			name="CUP_Creatures_People_Civil_Takistan";
 		};
-		class Item17
+		class Item18
 		{
 			className="CUP_Creatures_Military_USArmy";
 			name="CUP_Creatures_Military_USArmy";
 		};
-		class Item18
+		class Item19
 		{
 			className="CUP_Creatures_Military_TakiInsurgents";
 			name="CUP_Creatures_Military_TakiInsurgents";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item24
 		{
 			className="acre_sys_prc152";
 			name="ACRE2 - AN/PRC-152";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Characters_F_Enoch";
 			name="Arma 3 Contact Platform - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_Creatures_Military_NAPA";
 			name="CUP_Creatures_Military_NAPA";
 		};
-		class Item26
+		class Item27
 		{
 			className="murshun_cigs";
 			name="murshun_cigs";
 		};
-		class Item27
+		class Item28
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item28
+		class Item29
 		{
 			className="afmed_medical_treatment";
 			name="AFMED - medical_treatment";
 			author="ArmaForces";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item31
+		class Item32
 		{
 			className="CUP_Weapons_CZ75";
 			name="CUP_Weapons_CZ75";
 		};
-		class Item32
+		class Item33
 		{
 			className="CUP_Weapons_Ammunition";
 			name="CUP_Weapons_Ammunition";
-		};
-		class Item33
-		{
-			className="rhsgref_c_troops";
-			name="GREF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
 		};
 		class Item34
 		{
@@ -431,68 +430,70 @@ class AddonsMetaData
 		};
 		class Item43
 		{
+			className="rhsgref_c_troops";
+			name="GREF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item44
+		{
 			className="rhs_sounds";
 			name="AFRF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_compat_rhs_afrf3";
 			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item46
 		{
 			className="armaforces_rhs_cba_mag_compat_afrf";
 			name="ArmaForces - RHS CBA Mag Compat - AFRF";
 			author="3Mydlo3, veteran29";
 		};
-		class Item46
+		class Item47
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item47
+		class Item48
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item49
+		class Item50
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item50
+		class Item51
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item52
 		{
 			className="CUP_WheeledVehicles_Ural";
 			name="CUP_WheeledVehicles_Ural";
-		};
-		class Item52
-		{
-			className="CUP_Wheeledvehicles_VWGolf";
-			name="CUP_Wheeledvehicles_VWGolf";
 		};
 		class Item53
 		{
@@ -1278,7 +1279,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=47;
+		items=48;
 		class Item0
 		{
 			dataType="Layer";
@@ -1369,7 +1370,7 @@ class Mission
 							name="Pojazdy";
 							class Entities
 							{
-								items=14;
+								items=15;
 								class Item0
 								{
 									dataType="Object";
@@ -1736,8 +1737,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={12215.985,179.05212,7322.0972};
-										angles[]={0.0010918301,1.6020726,6.2821498};
+										position[]={4786.8501,269.68658,6793.4565};
+										angles[]={6.2405434,4.0808663,0.021326056};
 									};
 									side="Empty";
 									flags=4;
@@ -1747,7 +1748,7 @@ class Mission
 									};
 									id=115;
 									type="CUP_C_Tractor_CIV";
-									atlOffset=1.5258789e-005;
+									atlOffset=-0.0021057129;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1856,8 +1857,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={8423.4258,119.96911,12904.506};
-										angles[]={6.2698507,1.8160675,6.2805324};
+										position[]={3645.2729,312.2619,8966.502};
+										angles[]={0.0053265258,2.268332,0.0080009829};
 									};
 									side="Empty";
 									flags=4;
@@ -2586,6 +2587,7 @@ class Mission
 									};
 									id=2670;
 									type="CUP_C_Skoda_CR_CIV";
+									atlOffset=-0.00076007843;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -2740,9 +2742,95 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item14
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={10369.676,251.30472,5508.4194};
+										angles[]={6.2272477,4.535151,0.202528};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="this setPlateNumber ""CH-TL0KN4"";";
+										name="windows_veh";
+										textures="MostWanted";
+									};
+									id=2675;
+									type="CUP_C_Golf4_CR_Civ";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ammoBox";
+											expression="[_this,_value] call bis_fnc_initAmmoBox;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[2,2,2]],[[""ToolKit""],[1]],[[],[]]],false]";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="VehicleCustomization";
+											expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+											class Value
+											{
+												class data
+												{
+													singleType="ARRAY";
+													class value
+													{
+														items=2;
+														class Item0
+														{
+															class data
+															{
+																singleType="ARRAY";
+																class value
+																{
+																	items=2;
+																	class Item0
+																	{
+																		class data
+																		{
+																			singleType="STRING";
+																			value="MostWanted";
+																		};
+																	};
+																	class Item1
+																	{
+																		class data
+																		{
+																			singleType="SCALAR";
+																			value=1;
+																		};
+																	};
+																};
+															};
+														};
+														class Item1
+														{
+															class data
+															{
+																singleType="ARRAY";
+															};
+														};
+													};
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=58;
-							atlOffset=-25.455177;
+							atlOffset=-15.761215;
 						};
 						class Item2
 						{
@@ -3220,11 +3308,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8421.918,132.78848,12881.336};
-								angles[]={0,3.5117943,0};
+								position[]={3647.0522,310.76523,8966.7891};
+								angles[]={0,2.7279122,-0};
 							};
 							side="Civilian";
-							flags=3;
+							flags=7;
 							class Attributes
 							{
 								description="Papalugos Inos@Ajvar";
@@ -3243,7 +3331,6 @@ class Mission
 							};
 							id=1703;
 							type="CUP_C_C_Doctor_01";
-							atlOffset=2.7996826;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3280,7 +3367,6 @@ class Mission
 					{
 					};
 					id=1702;
-					atlOffset=2.7996826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3585,8 +3671,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={10831.21,6.5513635,2498.5701};
-								angles[]={0,2.0785825,0};
+								position[]={5568.5771,135.10406,3413.6118};
+								angles[]={0,5.7407818,-0};
 							};
 							side="Civilian";
 							flags=7;
@@ -3614,7 +3700,6 @@ class Mission
 							};
 							id=1695;
 							type="CUP_C_TK_Man_06_Waist";
-							atlOffset=0.00026845932;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3651,7 +3736,6 @@ class Mission
 					{
 					};
 					id=1694;
-					atlOffset=0.00026845932;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3957,8 +4041,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={12216.208,177.21173,7302.585};
-								angles[]={0,3.0992858,0};
+								position[]={4786.7148,267.83987,6791.5767};
+								angles[]={0,3.7235656,0};
 							};
 							side="Civilian";
 							flags=7;
@@ -3981,7 +4065,6 @@ class Mission
 							};
 							id=1697;
 							type="CUP_C_C_Villager_03";
-							atlOffset=0.0004119873;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4018,7 +4101,6 @@ class Mission
 					{
 					};
 					id=1696;
-					atlOffset=0.0004119873;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4179,7 +4261,7 @@ class Mission
 				class Item11
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -4190,7 +4272,7 @@ class Mission
 							{
 								position[]={286.297,186.89444,6588.626};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -4267,10 +4349,10 @@ class Mission
 				class Item12
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
-						items=1;
+						items=2;
 						class Item0
 						{
 							dataType="Object";
@@ -4278,7 +4360,7 @@ class Mission
 							{
 								position[]={2742.645,200.87222,5176.772};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -4362,6 +4444,68 @@ class Mission
 								nAttributes=2;
 							};
 						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4759.9492,268.37747,6779.8398};
+								angles[]={0,1.6948195,0};
+							};
+							side="Civilian";
+							flags=5;
+							class Attributes
+							{
+								description="Fiodor Piotrowicz Chwalewagner@Piesa";
+								isPlayable=1;
+							};
+							id=2659;
+							type="CUP_C_C_Citizen_03";
+							atlOffset=-3.0517578e-005;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="CUP_D_Male01_CZ";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.04;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitName";
+									expression="_this setname _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Fiodor Piotrowicz Chwalewagner ";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
 					};
 					class Attributes
 					{
@@ -4379,7 +4523,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Piesa 1";
+									value="Piesa";
 								};
 							};
 						};
@@ -4389,7 +4533,7 @@ class Mission
 				class Item13
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -4401,7 +4545,7 @@ class Mission
 								position[]={281.45401,187.42038,6576.769};
 								angles[]={0,3.3219726,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -4511,7 +4655,7 @@ class Mission
 				class Item14
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -4523,7 +4667,7 @@ class Mission
 								position[]={284.07901,187.41995,6574.4116};
 								angles[]={0,3.4270587,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -4592,7 +4736,7 @@ class Mission
 				class Item15
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -4604,7 +4748,7 @@ class Mission
 								position[]={285.84399,186.89197,6588.1577};
 								angles[]={0,3.3259342,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -4717,7 +4861,7 @@ class Mission
 				class Item16
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -4728,7 +4872,7 @@ class Mission
 							{
 								position[]={284.569,186.88852,6588.5806};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -4859,7 +5003,7 @@ class Mission
 				class Item17
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -4868,10 +5012,10 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={292.35101,186.91322,6597.1157};
-								angles[]={0,3.3259342,0};
+								position[]={2535.5156,194.43428,5027.8608};
+								angles[]={0,0.97177589,-0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -4883,7 +5027,7 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="rhsgref_uniform_specter";
+										typeName="CUP_U_C_Villager_01";
 										isBackpack=0;
 										class MagazineCargo
 										{
@@ -4985,7 +5129,7 @@ class Mission
 				class Item18
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -4997,7 +5141,7 @@ class Mission
 								position[]={284.11301,186.87938,6587.5898};
 								angles[]={0,3.3259342,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -5128,7 +5272,7 @@ class Mission
 				class Item19
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -5140,7 +5284,7 @@ class Mission
 								position[]={282.84698,187.41946,6575.2969};
 								angles[]={0,3.4221718,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=3;
 							class Attributes
 							{
@@ -5265,7 +5409,7 @@ class Mission
 				class Item20
 				{
 					dataType="Group";
-					side="Independent";
+					side="Civilian";
 					class Entities
 					{
 						items=1;
@@ -5277,7 +5421,7 @@ class Mission
 								position[]={2742.1331,200.86005,5175.7666};
 								angles[]={0,3.4394853,0};
 							};
-							side="Independent";
+							side="Civilian";
 							flags=7;
 							class Attributes
 							{
@@ -5476,104 +5620,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={4759.9492,268.37747,6779.8398};
-								angles[]={0,1.6948195,0};
-							};
-							side="Civilian";
-							flags=7;
-							class Attributes
-							{
-								description="Fiodor Piotrowicz Chwalewagner@Piesa";
-								isPlayable=1;
-							};
-							id=2659;
-							type="CUP_C_C_Citizen_03";
-							atlOffset=-3.0517578e-005;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="CUP_D_Male01_CZ";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1.04;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="unitName";
-									expression="_this setname _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Fiodor Piotrowicz Chwalewagner ";
-										};
-									};
-								};
-								nAttributes=3;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=2658;
-					atlOffset=-3.0517578e-005;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="groupID";
-							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Piesa 2";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item23
-				{
-					dataType="Group";
-					side="Civilian";
-					class Entities
-					{
-						items=1;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={6381.7383,8.338356,2784.9165};
-								angles[]={0,3.6247184,-0};
+								angles[]={0,3.6247184,0};
 							};
 							side="Civilian";
-							flags=7;
+							flags=3;
 							class Attributes
 							{
 								description="Djohar 'Jay' Bobrav@Jay";
@@ -5591,6 +5642,7 @@ class Mission
 							};
 							id=2669;
 							type="CUP_C_C_Profiteer_03";
+							atlOffset=2.1337028;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -5627,6 +5679,7 @@ class Mission
 					{
 					};
 					id=2668;
+					atlOffset=2.1337028;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5645,9 +5698,87 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item23
+				{
+					dataType="Group";
+					side="Civilian";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={10369.95,249.81465,5506.6797};
+								angles[]={0,4.7266312,0};
+							};
+							side="Civilian";
+							flags=7;
+							class Attributes
+							{
+								description="Tomasz Müller@Windows";
+								isPlayable=1;
+							};
+							id=2677;
+							type="CUP_C_C_Racketeer_02";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="CUP_D_Male04_CZ";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.03;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+					};
+					class Attributes
+					{
+					};
+					id=2676;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Windows";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=1;
-			atlOffset=-143.89487;
+			atlOffset=-51.094849;
 		};
 		class Item1
 		{
@@ -6867,7 +6998,7 @@ class Mission
 							};
 							id=581;
 							type="Box_Syndicate_Ammo_F";
-							atlOffset=1.1536255;
+							atlOffset=1.1535797;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -10088,6 +10219,7 @@ class Mission
 							};
 							id=187;
 							type="rhsgref_ins_zil131_open";
+							atlOffset=1.5258789e-005;
 						};
 						class Item16
 						{
@@ -15216,7 +15348,7 @@ class Mission
 							};
 							id=1455;
 							type="CUP_C_S1203_CIV_CR";
-							atlOffset=-9.1552734e-005;
+							atlOffset=0.016937256;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35758,7 +35890,7 @@ class Mission
 			name="CustomLocations";
 			class Entities
 			{
-				items=9;
+				items=10;
 				class Item0
 				{
 					dataType="Trigger";
@@ -35904,9 +36036,26 @@ class Mission
 					id=2247;
 					type="EmptyDetectorArea10x10";
 				};
+				class Item9
+				{
+					dataType="Trigger";
+					position[]={6380.646,6.2600274,2791.8799};
+					angle=2.2306705;
+					class Attributes
+					{
+						text="@STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodE";
+						sizeA=6.8559999;
+						sizeB=8.2679996;
+						sizeC=9.7436008;
+						isRectangle=1;
+					};
+					id=2673;
+					type="EmptyDetectorArea10x10";
+					atlOffset=4.7683716e-007;
+				};
 			};
 			id=2126;
-			atlOffset=-117.63541;
+			atlOffset=-150.06464;
 		};
 		class Item33
 		{
@@ -36414,6 +36563,7 @@ class Mission
 							};
 							id=2187;
 							type="Land_ChairPlastic_F";
+							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36511,6 +36661,7 @@ class Mission
 							};
 							id=2190;
 							type="Land_ChairPlastic_F";
+							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36543,6 +36694,7 @@ class Mission
 							};
 							id=2203;
 							type="Land_ChairPlastic_F";
+							atlOffset=0.069961548;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36808,7 +36960,7 @@ class Mission
 							};
 							id=2211;
 							type="Land_ChairPlastic_F";
-							atlOffset=0.0027618408;
+							atlOffset=0.0028381348;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41461,7 +41613,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6587.2563,6.0014391,2411.0327};
-						angles[]={0,0.054758161,-0};
+						angles[]={0,0.054758161,0};
 					};
 					side="West";
 					flags=7;
@@ -41650,6 +41802,22 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2720.0588,206.92807,5371.7251};
+				angles[]={0,3.141608,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2674;
+			type="Land_Poster_04_F";
+			atlOffset=0.34864807;
 		};
 	};
 	class Connections

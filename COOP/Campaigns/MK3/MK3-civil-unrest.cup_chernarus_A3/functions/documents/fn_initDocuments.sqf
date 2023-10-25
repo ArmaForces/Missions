@@ -213,8 +213,10 @@ GVAR(allDocuments) set [
 // Windows
 GVAR(allDocuments) set [
     "76561198018567644", [
-        ["ID", "TBD_Windows" call _idFunc],
-        ["Prawo jazdy", "Samochód"]
+        ["Paszport DE", ["Tomasz Müller", nil, "Bundesrepublik Deutschland"] call _idFunc],
+        ["Paszport GR", ["Tomasz Müller", nil, "Ελληνική Δημοκρατία Ellinikí Dimokratía"] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "Golf IV, Niebisko-biały ,CH-TL0KN4"]
 ]];
 
 // TODO: Assignable documents
