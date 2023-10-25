@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="MKR">
+    <Package name="Scripts">
+        <Key ID="STR_MKR_Scripts_DisplayName">
+            <English>Soapy Campaign: Resistance</English>
+            <Polish>Mydlana Kampania: Partyzanci</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_DisplayNameShort">
+            <English>SC: Resistance</English>
+            <Polish>MK: Partyzanci</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_Title">
+            <English>SC:R: Civil Unrest</English>
+            <Polish>MK:R: Społeczne niepokoje</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_ShortDescription">
+            <Polish>Milicja musi stawić czoła wzmożonej aktywności ludności cywilnej w Zelenogorsku i okolicach po brutalnym stłumieniu protestu.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Mission_Briefing">
+            <Polish>Wczoraj Milicja stłumiła brutalnie protest w Wiborze przeciwko czedackiej okupacji. Dziś będą musieli stawić czoła wzmożonej aktywności ludności cywilnej w Zelenogorsku i okolicach.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Date">
+            <English>25th March 2022</English>
+            <Polish>25 marca 2022</Polish>
+        </Key>
+
+        <Key ID="STR_MKR_Scripts_Sides_Militia">
+            <English>Militia</English>
+            <Polish>Milicja</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Sides_Chedaki">
+            <English>Chedaki</English>
+            <Polish>Czedacy</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Sides_Resistance">
+            <English>Chernarus Resistance</English>
+            <Polish>Czarnoruski Ruch Oporu</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Sides_Civilian">
+            <English>Chernarus Citizen</English>
+            <Polish>Mieszkaniec Czarnorusi</Polish>
+        </Key>
+
+        <Key ID="STR_MKR_Scripts_ShowDocuments">
+            <English>Show documents</English>
+            <Polish>Pokaż dokumenty</Polish>
+        </Key>
+
+        <Key ID="STR_MKR_Scripts_Skills">
+            <English>Skills</English>
+            <Polish>Umiejętności</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Deception">
+            <English>Deception</English>
+            <Polish>Ściemnianie</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_History">
+            <English>History</English>
+            <Polish>Historia</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Insight">
+            <English>Insight</English>
+            <Polish>Intuicja</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Intimidation">
+            <English>Intimidation</English>
+            <Polish>Zastraszenie</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Investigation">
+            <English>Investigation</English>
+            <Polish>Dochodzenie</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_Persuasion">
+            <English>Persuasion</English>
+            <Polish>Perswazja</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_RolledMessage">
+            <English>Rolled %1 (%2): %3</English>
+            <Polish>Rzucił %1 (%2): %3</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Skills_RollConfirmation">
+            <English>Sent roll %1 (%2) to Zeus</English>
+            <Polish>Wysłano rzut %1 (%2) do Zeusa</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Zeus_Channel">
+            <English>Zeus</English>
+            <Polish>Zeus</Polish>
+        </Key>
+
+        <Key ID="STR_MKR_Scripts_OwnedVehicle">
+            <English>You own %1 with registration number %2</English>
+            <Polish>Jesteś właścicielem %1 z numerem rejestracyjnym %2</Polish>
+        </Key>
+
+        <Key ID="STR_MKR_Scripts_Emergency_MilitiaCalled">
+            <English>Reported %1 and called emergency services. Militia is on its way.</English>
+            <Polish>Zgłoszono %1 i wezwano służby ratownicze. Milicja jest w drodze.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_MilitiaAndAmbulanceCalled">
+            <English>Reported %1 and called emergency services. Militia and ambulance are on their way.</English>
+            <Polish>Zgłoszono %1 i wezwano służby ratownicze. Milicja i karetka są w drodze.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_EmergencyMessage">
+            <English>Reported %1 near %2 at %3.</English>
+            <Polish>Zgłoszono %1 w pobliżu %2 o godzinie %3.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_AmbulanceNeeded">
+            <English>Ambulance needed.</English>
+            <Polish>Potrzebna karetka.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_EmergencyMarker">
+            <English>%1: %2 at %3</English>
+            <Polish>%1: %2 o %3</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Accident">
+            <English>Accident</English>
+            <Polish>Wypadek</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Violence">
+            <English>Violence</English>
+            <Polish>Przemoc</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Tip">
+            <English>Tip</English>
+            <Polish>Donos</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Other">
+            <English>Other</English>
+            <Polish>Inne</Polish>
+        </Key>
+        <Key ID="STR_MKR_Scripts_Emergency_Channel">
+            <English>Emergency Services</English>
+            <Polish>Numer Alarmowy</Polish>
+        </Key>
+
+        <Key ID="STR_Task_Protest_Description">
+            <Polish>O godzinie 6:55 ma się rozpocząć protest pod komisariatem Milicji w Zelenogorsku. Aby utrudnić Milicji powstrzymanie zgromadzenia, nie informuj ich o prawdziwym celu przybycia do miasta. Przyjechałeś do sklepu, na kebsa, do lekarza, wymyśl coś. Uważaj na potencjalne czedackie/milicyjne wtyki. Jeżeli poznałeś kogoś na proteście w Wiborze, najprawdopodobniej możesz mu zaufać, gdyż to Wy to organizujecie.
+
+Najważniejsze, pod żadnym pozorem NIE GROMADŹ SIĘ NA MIEJSCU PRZED CZASEM. Postaraj się dotrzeć idealnie na czas. Zaparkuj samochód w bezpiecznej odległości, tak by nie utrudniać przejazdu. Próba wcześniejszego gromadzenia w mniejszą liczbę osób może ułatwić Milicji rozpędzenie protestu.
+
+Protestujecie przeciwko brutalności Milicji i wszechobecnej korupcji. Żądacie wypuszczenia aresztowanego podczas wczorajszego protestu w Wiborze - Beniamina Castello. Własna inwencja mile widziana. I pamiętajcie co i gdzie milicyjnym wiadomo co.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing">
+        <Key ID="STR_MKR_Briefing_GeneralRules_Title">
+            <English>General rules</English>
+            <Polish>Zasady ogólne</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules">
+            <English>General rules apply to all players, unless specified different:</English>
+            <Polish>Zasady ogólne dotyczące wszystkich grających, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_2">
+            <English>Try to feel your character and its tasks.</English>
+            <Polish>Postaraj się wczuć w postać i jej zadania.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_3">
+            <English>Respect Rules of Engagement. Avoid unnecessary escalation which may lead to your or others death.</English>
+            <Polish>Respektuj RoE (Rules of Engagement). Unikaj niepotrzebnej eskalacji mogącej doprowadzić do śmierci Twojej lub innych.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_4">
+            <English>When in doubt, call backup and patiently wait.</English>
+            <Polish>W razie wątpliwości wezwij wsparcie i czekaj cierpliwie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_5">
+            <English>Don't spoil other player's gameplay. Mind your actions.</English>
+            <Polish>Nie psuj rozgrywki innym. Uważaj na swoje działania.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_6">
+            <English>Due to possible desync: Don't ram vehicles. Be extremely careful when overtaking or following other vehicles. Make sure there is enough space for overtake. If someone is overtaking you with high speed, leave him some space instead of blocking him.</English>
+            <Polish>Z powodu możliwych desynców: Nie taranuj pojazdów. Bądź ekstremalnie ostrożny podczas wyprzedzania lub jechania za innymi pojazdami. Upewnij się, że jest wystarczająco miejsca na wyprzedzenie. Jeżeli ktoś Cię wyprzedza jadąc dużo szybciej, zrób mu miejsce zamiast blokować.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_GeneralRules_7">
+            <English>Drive on road unless driving offroad vehicle. If offroad is necessary, keep speed limited to 20 km/h.</English>
+            <Polish>Jeździj po drodze, chyba że jedziesz pojazdem offroadowym. Jeżeli zjechanie z drogi jest konieczne, utrzymuj prędkość do 20 km/h.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_MedicalSystem">
+            <English>Medical system</English>
+            <Polish>System medyczny</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_MedicalStuff">
+            <English>Medical menu is available only for medics or in hospital/medical vehicle. Please don't enable it manually.</English>
+            <Polish>Menu medyczne dostępne tylko dla medyków lub w szpitalu/pojeździe medycznym. Proszę o nie kombinowanie i nie włączanie go ręcznie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_EmergencyNumber">
+            <English>Emergency number (112)</English>
+            <Polish>Numer alarmowy (112)</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_EmergencyStuff">
+            <English>If you have a cellphone in inventory, you can access emergency services menu via ACE Self Action -> Equipment -> Cellphone -> 112. When you use one of actions listed there, emergency services will be notified with your current position and type of emergency you choose. You'll probably need to wait a few minutes before they arrive. If they don't arrive in e.g., 4-5 minutes, retry the call freely. Don't abuse this as it's sent to Zeus too and you might get banned!</English>
+            <Polish>Jeżeli masz w ekwipunku telefon komórkowy, możesz zadzwonić pod numer alarmowy poprzez ACE Self Action -> Ekwipunek -> Telefon komórkowy -> 112. Gdy użyjesz jednej z wylistowanych akcji, odpowiednie służby zostaną powiadomione o Twojej pozycji i wybranym typie problemu. Prawdopodobnie będziesz musiał poczekać kilka minut nim przyjadą. Jeżeli nie przyjadą w ciągu 4-5 minut, spokojnie wezwij jeszcze raz. Nie nadużywaj tych opcji, Zeus również dostaje notyfikacje i możesz zostać zbanowany!</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Documents">
+            <English>Documents</English>
+            <Polish>Dokumenty</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_DocumentsStuff">
+            <English>If your character has documents assigned, they'll be available via ACE Self Action -> Documents. Using action will show you the document on the right handside of the screen. Action is also available on other players, which makes it possible to show the document to other player. Document will also be shown to you, just so you know what you're showing. Among the documents there could be various ID cards, passports, driver licenses, proofs of registration, various cards and others.</English>
+            <Polish>Jeżeli Twoja postać posiada przypisane dokumenty, będą one dostępne pod ACE Self Action -> Dokumenty. Użycie akcji pokaże Ci dokument w okienku po prawej stronie ekranu. Akcja jest również dostępna na innych osobach, dzięki czemu można pokazać komuś dokument. Dokument pokaże się również Tobie, żebyś wiedział co pokazujesz. Pośród dokumentów mogą się znaleźć różnego rodzaju karty identyfikacyjne, paszporty, prawa jazdy, dowody rejestracyjne, legitymacje wszelkiego rodzaju i inne.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Skills">
+            <English>Skills</English>
+            <Polish>Umiejętności</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_SkillsStuff">
+            <English>There's a test version of skills system in this mission. You should not use this on your own, only if asked by Zeus! This sends a message to Zeus, so be sure he asked you before even opening the menu, to avoid accidental messaging. Skills are accessible via ACE Self Action -> Skills -> Particular skill. Using the action results in a d20 roll + bonus listed in parenthesis by a skill name. The result is sent to Zeus and not revealed to you! This might be useful in cases where you're trying to convince someone of something, but they don't want to be convinced, to resolve the stalemate when Zeus notices that it could speed up the game.</English>
+            <Polish>W misji jest testowa wersja systemu umiejętności. Nie używaj tego, jeżeli Zeus Cię nie poprosił! Akcje wysyłają wiadomość do Zeusa, więc upewnij się, że prosił Cię o to zanim w ogóle otworzysz menu, aby przypadkiem nic mu nie wysłać. Umiejętności są dostępne pod ACE Self Action -> Umiejętności -> Konkretna umiejętność. Użycie akcji spowoduje rzut d20 + bonus wylistowany w nawiasie przy nazwie umiejętności. Wynik zostanie wyslany do Zeusa i nie będzie Ci ujawniony! To może być przydatne w sytuacji gdy próbujesz kogoś przekonać o czymś, ale on się uparcie nie chce dać przekonać, by rozwiązać patową sytuację jeżeli Zeus uzna, że może to przyspieszyć grę.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_OtherChanges_Title">
+            <English>Other changes</English>
+            <Polish>Inne zmiany</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_OtherChanges">
+            <English>Militia Lada's power has been boosted to allow pursuits. Personal vehicles can be locked using unique keys. Militia and Chedaki vehicles are lockable using side key WEST and EAST respectively. Lockpicks allow opening closed vehicles. Two custom chat channels created for scripts use, don't use them.</English>
+            <Polish>Milicyjne Łady zostały dopakowane mocą, żeby umożliwić prowadzenie pościgu. Pojazdy osobiste są blokowane kluczami unikalnymi. Pojazdy Milicji i Czedaków kluczami stron odpowiedni WEST i EAST. Wytrychy pozwalają otworzyć zamknięte pojazdy. Dwa nowe kanały czatu na potrzeby skryptów, nie używać ich.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Rationale">
+            <Polish>Cała kampania nastawiona jest na maksymalny możliwy realizm oraz podejście, że życie jest najważniejsze i nie warto go ryzykować jak nie trzeba. Liczebność przeciwnika będzie realistyczna a co za tym idzie, będzie on musiał być dużo bardziej skuteczny. Taktyka kryj ryj będzie Waszym chlebem powszednim a dobre manewrowanie i flankowanie główną bronią. Koniec fal bezmyślnych botów, nadchodzi czas myślenia głowom a nie dupom.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_RoE_Title">
+            <English>Rules of Engagement</English>
+            <Polish>RoE (Zasady zaangażowania)</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_RoE">
+            <English>Don't shoot unless fired upon. Don't shoot if that could put someone at risk. Shoot only if clear sight.</English>
+            <Polish>Nie strzelać jeżeli nie strzelają do Was. Nie strzelaj jeżeli mogłoby to narazić kogoś na niebezpieczeństwo. Strzelaj tylko jeżeli widzisz cel.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_TrafficRules_Title">
+            <English>Traffic rules</English>
+            <Polish>Przepisy ruchu drogowego</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_TrafficRules">
+            <English>Don't ram other vehicles! Adhere to signs. Drunk driving is prohibited. Speed limit in urban areas: 50 km/h. Speed limit outside of urban areas: 90 km/h. Speed limit outside of urban areas on a road with divided lanes and a line marked shoulder: 120 km/h. All vehicles should have on-board spare wheel and first aid kit consisting of 5 bandages and 2 tourniquets CATs.</English>
+            <Polish>Nie taranuj innych pojazdów! Stosuj się do znaków. Jazda po pijaku jest zabroniona. Limit prędkości w obszarze zabudowanym: 50 km/h. Limit prędkości poza obszarem zabudowanym: 90 km/h. Limit prędkości poza obszarem zabudowanym na drodze z wyznaczonymi pasami ruchu oraz wyznaczonym liniami poboczem: 120 km/h. Wszystkie pojazdy powinny mieć koło zapasowe i apteczkę pierwszej pomocy zawierającą 5 bandaży i 2 stazy CAT.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Civilian">
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_Title">
+            <English>Civilian rules</English>
+            <Polish>Zasady cywilów</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules">
+            <English>Rules apply to all civilian players, unless specified different:</English>
+            <Polish>Zasady dotyczące wszystkich cywilów, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_2">
+            <English>Your task is to create background for a mission, not to become a main character.</English>
+            <Polish>Twoim głównym zadaniem jest stworzenie tła dla misji a nie zostanie główną gwiazdą.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_3">
+            <English>Obey the rules unless allowed not to by your task.</English>
+            <Polish>Przestrzegaj przepisów jeżeli nie koliduje to z Twoim zadaniem.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_4">
+            <English>If you have no tasks assigned, play with your character and think of something to do.</English>
+            <Polish>Jeżeli nie masz przydzielonego żadnego zadania, wczuj się w postać i wymyśl coś sensownego.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_5">
+            <English>Keep your assigned vehicle. Don't steal random vehicles.</English>
+            <Polish>Trzymaj się przypisanego środka transportu. Nie kradnij losowych pojazdów.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_Rules_6">
+            <English>Generally, you don't like Chedaks and collaborants.</English>
+            <Polish>Ogólnie nie lubisz Czedaków i kolaborantów.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Civilian_RoE">
+            <English>When you hear shots - you run. If they threaten you with a gun, you do what they say. If you have your own gun, don't use it unless it's safe to.</English>
+            <Polish>Gdy słyszysz strzały - uciekasz. Jeżeli grożą Ci bronią, robisz co mówią. Jeżeli masz własną broń, nie używasz jej jeśli to dla Ciebie niebezpieczne.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Militia">
+        <Key ID="STR_MKR_Briefing_Militia_Rules_Title">
+            <English>Militia rules</English>
+            <Polish>Zasady milicji</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules">
+            <English>Rules apply to all militia players, unless specified different:</English>
+            <Polish>Zasady dotyczące wszystkich milicjantów, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_2">
+            <English>Firearms use is a last resort! Militia doesn't shoot everyone on sight. Your task is to arrest criminals if possible.</English>
+            <Polish>Użycie broni to ostateczność! Milicja nie strzela do wszystkich jak leci. Twoim zadaniem jest aresztowanie jeżeli możliwe.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_3">
+            <English>Respect Rules of Engagement. First ask. Seek peaceful resolutions. Shoot only if your or others life is endangered.</English>
+            <Polish>Respektuj RoE (Rules of Engagement). Najpierw pytaj. Szukaj pokojowych rozwiązań. Strzelaj tylko jeżeli życie Twoje lub innych jest zagrożone.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_4">
+            <English>Call backup immediately in case of any issues.</English>
+            <Polish>W przypadku jakichkolwiek problemów od razu wezwać wsparcie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_5">
+            <English>Don't stop civilians without suspicions.</English>
+            <Polish>Nie zatrzymuj cywili nie mając podejrzeń.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_6">
+            <English>When a person is fleeing, pursue him instead of shooting.</English>
+            <Polish>Gdy ktoś ucieka, goń go zamiast strzelać.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_7">
+            <English>Inspect and respect documents.</English>
+            <Polish>Sprawdzaj i honoruj dokumenty.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Militia_Rules_8">
+            <English>As for possible punishments, you can remind, fine and take into custody (but only for shooting and serious crimes). Fines and arrests should be noted for the use in next missions.</English>
+            <Polish>W kwestii możliwych kar, możecie upomnieć, nałożyć mandat i zabrać do aresztu (ale tylko za strzelanie i poważne przestępstwa). Mandaty i aresztowania odnotować na potrzeby kolejnych misji.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Opfor">
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_Title">
+            <English>OPFOR rules</English>
+            <Polish>Zasady OPFOR</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules">
+            <English>Rules apply to all OPFOR players, unless specified different:</English>
+            <Polish>Zasady dotyczące wszystkich graczy OPFORu, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_2">
+            <English>Firearms use out of military area must have good reasoning.</English>
+            <Polish>Użycie broni poza terenem wojskowym musi być dobrze uzasadnione.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_3">
+            <English>When working with Militia, cooperate but as equal sides. Don't execute their orders without thought.</English>
+            <Polish>W trakcie wspólnego działania z Milicją kooperuj, ale na równych zasadach. Nie wykonuj ich rozkazów bezmyślnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_4">
+            <English>Stealing vehicles in unacceptable offense.</English>
+            <Polish>Zabór pojazdów jest niedopuszczalny.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Opfor_Rules_5">
+            <English>You can't be recruited to Resistance.</English>
+            <Polish>Nie możesz zostać zrekrutowany do Ruchu Oporu.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Briefing_Resistance">
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_Title">
+            <English>Resistance rules</English>
+            <Polish>Zasady Ruchu Oporu</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules">
+            <English>Rules apply to all Resistance players, unless specified different:</English>
+            <Polish>Zasady dotyczące całego Ruchu Oporu, chyba że napisano inaczej:</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_1">
+            <English>Value yours and others life. Don't take unnecessary risk.</English>
+            <Polish>Szanuj życie swoje i innych. Nie ryzykuj niepotrzebnie.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_2">
+            <English>Don't kill.</English>
+            <Polish>Nie zabijaj.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_3">
+            <English>Civilians are considered friendly. Don't take any actions against them.</English>
+            <Polish>Cywile są uznawani za przyjaznych. Nie podejmuj żadnych akcji przeciwko nim.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_4">
+            <English>Don't steal civilian vehicles. If you have to, do it so that Resistance can't be credited for it.</English>
+            <Polish>Nie kradnij pojazdów cywilnych. A jak już musisz to tak, żeby nie było to do powiązania z Ruchem Oporu.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_Rules_5">
+            <English>If you see an opportunity, consider recruiting to Resistance. Doesn't hurt to ask at least.</English>
+            <Polish>Jeżeli widzisz okazję, staraj się zrekrutować do Ruchu Oporu. Samo zapytanie nie zaszkodzi.</Polish>
+        </Key>
+        <Key ID="STR_MKR_Briefing_Resistance_RoE">
+            <English>Don't point the gun at people unless they threaten you or point at you. Always try to deescalate. Don't shoot first unless your task requires you to.</English>
+            <Polish>Nie celuj bronią w ludzi dopóki Ci nie grożą lub nie celują w Ciebie. Zawsze staraj się deeskalować. Nie strzelaj pierwszy, chyba że zadanie wymaga inaczej.</Polish>
+        </Key>
+    </Package>
+
+    <!-- BUS STOPS -->
+    <Package name="BusStops">
+        <Key ID="STR_MKR_BusStops_LineX">
+            <English>Line %1: %2 - %3</English>
+            <Polish>Linia %1: %2 - %3</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line1_ZelenogorskViaPustoshka">
+            <English>Zelenogorsk via Pustoshka</English>
+            <Polish>Zelenogorsk p. Pustoszka</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line1_LopatinoViaPustoshka">
+            <English>Lopatino via Pustoshka</English>
+            <Polish>Lopatino p. Pustoszka</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line2_ZelenogorskViaStarySobor">
+            <English>Zelenogorsk via Stary Sobor</English>
+            <Polish>Zelenogorsk p. Stary Sobor</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_Line2_LopatinoViaStarySobor">
+            <English>Lopatino via Stary Sobor</English>
+            <Polish>Lopatino p. Stary Sobor</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_LopatinoLoop">
+            <English>Lopatino (Loop)</English>
+            <Polish>Lopatino (Pętla)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_PustoshkaChurch">
+            <English>Pustoshka (Church)</English>
+            <Polish>Pustoszka (Cerkiew)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_StarySoborShop">
+            <English>Stary Sobor (Shop)</English>
+            <Polish>Stary Sobor (Sklep)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_ZelenogorskChurch">
+            <English>Zelenogorsk (Church)</English>
+            <Polish>Zelenogorsk (Cerkiew)</Polish>
+        </Key>
+        <Key ID="STR_MKR_BusStops_ZelenogorskLoop">
+            <English>Zelenogorsk (Loop)</English>
+            <Polish>Zelenogorsk (Pętla)</Polish>
+        </Key>
+    </Package>
+
+    <!-- MARKERS -->
+    <Package name="Markers">
+        <Key ID="STR_MKR_Markers_Checkpoint">
+            <English>Checkpoint</English>
+            <Polish>Punkt kontrolny</Polish>
+        </Key>
+        <Key ID="STR_MKR_Markers_MilitaryBase">
+            <English>Military base</English>
+            <Polish>Baza wojskowa</Polish>
+        </Key>
+        <Key ID="STR_MKR_Markers_MilitaryCamp">
+            <English>Military camp</English>
+            <Polish>Obóz wojskowy</Polish>
+        </Key>
+        <Key ID="STR_MKR_Markers_ResistanceCamp">
+            <English>Resistance camp</English>
+            <Polish>Obóz partyzantów</Polish>
+        </Key>
+    </Package>
+
+    <!-- Locations -->
+    <Package name="Locations">
+        <Key ID="STR_MKR_Locations_ZelenogorskMilitiaStation">
+            <English>Militia Station in Zelenogorsk</English>
+            <Polish>Posterunek Milicji w Zelenogorsku</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_CampResistance">
+            <English>Chernarus Resistance Camp</English>
+            <Polish>Obóz Ruchu Oporu</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_CampTishina">
+            <English>Tishina Chedaki Camp</English>
+            <Polish>Obóz Czedacki Tishina</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_CampTishinaEastOf">
+            <English>East of Tishina Camp</English>
+            <Polish>Na wschód od Obozu Tishina</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_CampTishinaWestOf">
+            <English>West of Tishina Camp</English>
+            <Polish>Na zachód od Obozu Tishina</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_TishinaDamRecreationComplex">
+            <English>Recreation complex near Tishina Dam</English>
+            <Polish>Kompleks rekreacyjny przy tamie Tishina</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhood">
+            <English>Chernogorsk Freedom Neighborhood</English>
+            <Polish>Czernogórsk Osiedle Wolności</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodA">
+            <English>Chernogorsk Freedom Neighborhood bldg. A</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. A</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodB">
+            <English>Chernogorsk Freedom Neighborhood bldg. B</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. B</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodC">
+            <English>Chernogorsk Freedom Neighborhood bldg. C</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. C</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodD">
+            <English>Chernogorsk Freedom Neighborhood bldg. D</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. D</Polish>
+        </Key>
+        <Key ID="STR_MKR_Locations_Chernogorsk_FreedomNeighborhoodE">
+            <English>Chernogorsk Freedom Neighborhood bldg. E</English>
+            <Polish>Czernogórsk Osiedle Wolności bud. E</Polish>
+        </Key>
+    </Package>
+</Project>
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
