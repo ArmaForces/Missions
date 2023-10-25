@@ -66,6 +66,14 @@ GVAR(allDocuments) set [
         ["Legitymacja Milicjanta", "Krawężnik Jan Honza Mikes<br/>Rejon Zelenogorsk"]
 ]];
 
+// devPie
+GVAR(allDocuments) set [
+    "76561198141124260", [
+        ["ID", ["Jurij Żelazkow", 1983] call _idFunc],
+        ["Prawo Jazdy", "Samochód"],
+        ["Legitymacja Ratownika Medycznego", "Jurij Żelazkow jest ratownikiem medycznym Zelenogorskiej Kliniki"]
+]];
+
 // Godziak (OPFOR)
 GVAR(allDocuments) set [
     "76561198253276369", [
