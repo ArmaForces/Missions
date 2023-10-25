@@ -55,13 +55,13 @@ GVAR(allDocuments) set [
 
 // Command DDOS
 GVAR(allDocuments) set [
-    "TBD_CommandDDOS_UID", [
+    "76561198012723441", [
         ["Dowód Osobisty", ["Karol Wrobel", nil, "Rzeczpospolita Polska"] call _idFunc]
 ]];
 
 // Czesiek
 GVAR(allDocuments) set [
-    "TBD_Czesiek_UID", [
+    "76561198020411074", [
         ["ID", ["Jan Honza Mikes", 1987, "Česká republika"] call _idFunc],
         ["Legitymacja Milicjanta", "Krawężnik Jan Honza Mikes<br/>Rejon Zelenogorsk"]
 ]];
@@ -69,13 +69,15 @@ GVAR(allDocuments) set [
 // Godziak (OPFOR)
 GVAR(allDocuments) set [
     "76561198253276369", [
-        ["ID", ["Yewgenij Fisenko", nil, "Republika Czedacka"] call _idFunc],
-        ["Legitymacja wojskowa", "Porucznik Armii Republiki Czedackiej<br/>Dowódca jednostki<br/>Miejsce służby: Obóz Wojskowy Tishina"]
+        ["ID", ["Boris Zykov", nil, "Republika Czedacka"] call _idFunc],
+        ["Legitymacja Milicjanta", "Komendant Główny Milicji Boris Zykov<br/>Rejon Czernogórsk"],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód Rejestracyjny", "SUV, Niebiesko-biały, Brak numerów"]
 ]];
 
 // Haverex
 GVAR(allDocuments) set [
-    "TBD_Haverex_UID", [
+    "76561198042514212", [
         ["Dowód Osobisty", ["Waldemar Biały", nil, "Rzeczpospolita Polska"] call _idFunc]
 ]];
 
@@ -95,12 +97,21 @@ GVAR(allDocuments) set [
         ["Dowód Rejestracyjny", "UAZ 8014 MA"]
 ]];
 
+// Jabar
+GVAR(allDocuments) set [
+    "76561198055137986", [
+        ["ID", ["František Jabarećek", 1991] call _idFunc],
+        ["Prawo jazdy", "Samochód"],
+        ["Dowód rejestracyjny", "Łada, Zielona, CH-SS1243"]
+]];
+
 // Jay
 GVAR(allDocuments) set [
     "76561198048944238", [
-        ["ID", "TBD_Jay" call _idFunc],
+        ["ID", "Djohar Bobrav" call _idFunc],
         ["Prawo jazdy", "Samochód"],
-        ["Paszport Polsatu", "TBD_Jay jest dziennikarzem<br/>Wystawca: AAN News"]
+        ["Dowód Rejestracyjny", "Skoda 105L, Żółta, CH-CHJ4Y3V"],
+        ["Paszport Polsatu", "Djohar 'Jay' Bobrav jest dziennikarzem<br/>Wystawca: AAN News"]
 ]];
 
 // Krystol
@@ -109,7 +120,7 @@ GVAR(allDocuments) set [
         ["ID", "Bedřich Pavlaček" call _idFunc],
         ["Prawo jazdy", "Samochód; Autobus; Motocykl"],
         ["Legitymacja CKS", "Kierowca Czarnoruskich Kolei Samochodowych<br/>Bedřich Pavlaček<br/>Autobus CH-CKS003"],
-        ["Dowód Rejestracyjny", "TT650, Czerwono-biały, Bez numerów"]
+        ["Dowód Rejestracyjny", "Jawa 353, Biały, Bez numerów"]
 ]];
 
 // Mikkeboss
@@ -136,6 +147,13 @@ GVAR(allDocuments) set [
         ["ID", "Janek Jemniołek" call _idFunc],
         ["Prawo jazdy", "Samochód"],
         ["Dowód Rejestracyjny", "Łada, Czarna, CH-CHN137U"]
+]];
+
+// Niochacz
+GVAR(allDocuments) set [
+    "76561198150660937", [
+        ["ID", "Boris Grygar" call _idFunc],
+        ["Prawo jazdy", "Samochód"]
 ]];
 
 // Piesa

@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2671;
+		nextID=2673;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2710.6792,222.76994,5346.7617};
-		dir[]={0.17545982,-0.62426168,0.76129776};
-		up[]={0.14020063,0.781214,0.60831177};
-		aside[]={0.97448051,-1.3358658e-007,-0.22459266};
+		pos[]={2674.0928,314.44736,5221.3999};
+		dir[]={0.19996785,-0.71620852,0.66864264};
+		up[]={0.20521368,0.69788551,0.68618292};
+		aside[]={0.95808649,2.6193447e-008,-0.28653088};
 	};
 };
 binarizationWanted=0;
@@ -1856,92 +1856,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6381.2324,7.7267466,2721.519};
-										angles[]={0,3.8276353,0};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										name="krystol_veh";
-										textures="WhiteRed";
-									};
-									id=872;
-									type="CUP_C_TT650_CIV";
-									atlOffset=0.044199467;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-											class Value
-											{
-												class data
-												{
-													singleType="ARRAY";
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																singleType="ARRAY";
-																class value
-																{
-																	items=2;
-																	class Item0
-																	{
-																		class data
-																		{
-																			singleType="STRING";
-																			value="WhiteRed";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			singleType="SCALAR";
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																singleType="ARRAY";
-															};
-														};
-													};
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item7
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={8423.4258,119.96911,12904.506};
 										angles[]={6.2698507,1.8160675,6.2805324};
 									};
@@ -2059,7 +1973,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item8
+								class Item7
 								{
 									dataType="Object";
 									class PositionInfo
@@ -2290,7 +2204,7 @@ class Mission
 										nAttributes=8;
 									};
 								};
-								class Item9
+								class Item8
 								{
 									dataType="Object";
 									class PositionInfo
@@ -2326,7 +2240,7 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item10
+								class Item9
 								{
 									dataType="Object";
 									class PositionInfo
@@ -2412,7 +2326,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item11
+								class Item10
 								{
 									dataType="Object";
 									class PositionInfo
@@ -2568,7 +2482,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item12
+								class Item11
 								{
 									dataType="Object";
 									class PositionInfo
@@ -2654,7 +2568,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item13
+								class Item12
 								{
 									dataType="Object";
 									class PositionInfo
@@ -2740,9 +2654,95 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item13
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6381.2324,7.7504458,2721.4961};
+										angles[]={0,3.8276293,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="krystol_veh";
+										textures="WhiteRed";
+									};
+									id=2672;
+									type="RDS_JAWA353_Civ_01";
+									atlOffset=0.044000149;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ammoBox";
+											expression="[_this,_value] call bis_fnc_initAmmoBox;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="VehicleCustomization";
+											expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+											class Value
+											{
+												class data
+												{
+													singleType="ARRAY";
+													class value
+													{
+														items=2;
+														class Item0
+														{
+															class data
+															{
+																singleType="ARRAY";
+																class value
+																{
+																	items=2;
+																	class Item0
+																	{
+																		class data
+																		{
+																			singleType="STRING";
+																			value="WhiteRed";
+																		};
+																	};
+																	class Item1
+																	{
+																		class data
+																		{
+																			singleType="SCALAR";
+																			value=1;
+																		};
+																	};
+																};
+															};
+														};
+														class Item1
+														{
+															class data
+															{
+																singleType="ARRAY";
+															};
+														};
+													};
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							id=58;
-							atlOffset=-162.19577;
+							atlOffset=-25.455177;
 						};
 						class Item2
 						{
@@ -3206,7 +3206,7 @@ class Mission
 						};
 					};
 					id=1707;
-					atlOffset=1.0775452;
+					atlOffset=1.0775146;
 				};
 				class Item1
 				{
@@ -41895,7 +41895,7 @@ class Mission
 			{
 				linkID=23;
 				item0=1630;
-				item1=872;
+				item1=2672;
 				class CustomData
 				{
 					type="Sync";
