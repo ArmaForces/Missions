@@ -31,8 +31,8 @@ publicVariable QGVAR(zeusNetId);
     };
 
     if (random 1 > (1 - VEHICLE_LOCKED_CHANCE)) then {
-        _x lock true;
-        [QACEGVAR(vehiclelock,setVehicleLock), [_x, true], [_x]] call CBA_fnc_targetEvent;
+        [_x, 2] remoteExec ["lock", _x];
+        // [QACEGVAR(vehiclelock,setVehicleLock), [_x, true], [_x]] call CBA_fnc_targetEvent;
     };
 
     if (!(_x isKindOf "LandVehicle")) exitWith {};
