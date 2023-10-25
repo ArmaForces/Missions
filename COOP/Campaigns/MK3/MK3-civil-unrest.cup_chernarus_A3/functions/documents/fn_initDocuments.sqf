@@ -157,13 +157,13 @@ GVAR(allDocuments) set [
 ]];
 
 // Piesa
-GVAR(allDocuments) set [
-    "76561198221934828", [
-        ["ID", ["Toivo Iwanowicz", 1980] call _idFunc],
-        ["Prawo jazdy", "Samochód; Motocykl"],
-        ["Pozwolenie na broń", "Myśliwski sztucer po pradziadzie"],
-        ["Dowód Rejestracyjny", "TT650, Zardzewiały, Bez numerów"]
-]];
+// GVAR(allDocuments) set [
+//     "76561198221934828", [
+//         ["ID", ["Toivo Iwanowicz", 1980] call _idFunc],
+//         ["Prawo jazdy", "Samochód; Motocykl"],
+//         ["Pozwolenie na broń", "Myśliwski sztucer po pradziadzie"],
+//         ["Dowód Rejestracyjny", "TT650, Zardzewiały, Bez numerów"]
+// ]];
 
 // Piesa nie Piesa
 GVAR(allDocuments) set [
@@ -208,6 +208,12 @@ GVAR(allDocuments) set [
     "76561198060965315", [
         ["Dowód Osobisty", ["Wojciech Kazubowski", 1992, "Rzeczpospolita Polska"] call _idFunc],
         ["Prawo jazdy", "Kategoria B<br/>Rzeczpospolita Polska"]
+]];
+
+// Wantussik
+GVAR(allDocuments) set [
+    "76561198045140645", [
+        ["Dowód Osobisty", ["Dymitr Piotrowicz Chwalewagner ", 1997] call _idFunc]
 ]];
 
 // Windows

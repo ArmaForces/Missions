@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2678;
+		nextID=2680;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2724.5088,249.20404,5238.8491};
-		dir[]={0.27760383,-0.40412638,0.8715905};
-		up[]={0.1226482,0.91469824,0.38507825};
-		aside[]={0.95286566,-4.4307671e-007,-0.3034912};
+		pos[]={2711.7188,249.16058,5276.4595};
+		dir[]={0.59233826,-0.4557226,0.66449654};
+		up[]={0.30325642,0.89010954,0.34019983};
+		aside[]={0.74651545,-6.0687307e-007,-0.66544837};
 	};
 };
 binarizationWanted=0;
@@ -1286,7 +1286,7 @@ class Mission
 			name="Players";
 			class Entities
 			{
-				items=24;
+				items=25;
 				class Item0
 				{
 					dataType="Layer";
@@ -5776,9 +5776,88 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item24
+				{
+					dataType="Group";
+					side="Civilian";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={2688.2251,204.53796,5162.6719};
+							};
+							side="Civilian";
+							flags=3;
+							class Attributes
+							{
+								description="DPC@Wantussik";
+								isPlayable=1;
+							};
+							id=2679;
+							type="CUP_C_C_Worker_04";
+							atlOffset=5.2579956;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="CUP_D_Male01_CZ";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.04;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+					};
+					class Attributes
+					{
+					};
+					id=2678;
+					atlOffset=5.2579956;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Wantussik";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=1;
-			atlOffset=-51.094849;
+			atlOffset=-165.75009;
 		};
 		class Item1
 		{
