@@ -20,9 +20,28 @@ _plane addEventHandler ["GetOut", {call MDL_PvPJets_fnc_onPlaneGetOut}];
 
 if (_preset getOrDefault ["loadout", []] isNotEqualTo []) then {
     diag_log text "[PVP] DEBUG: spawnPlane - adjusting pylon loadout";
+
+    private _turret = [-1];
+    private _previousTurretPylonsMagazines = getAllPylonsInfo _plane select {(_x select 2) isEqualTo _turret} apply {_x select 3};
+    _previousTurretPylonsMagazines = (_previousTurretPylonsMagazines arrayIntersect _previousTurretPylonsMagazines);
+
     {
-        _plane setPylonLoadout (_x + [true]);
+        [_plane, (_x + [true])] remoteExec ["setPylonLoadout", 0];
     } forEach (_preset get "loadout");
+    
+    private _currentTurretPylonsMagazines = getAllPylonsInfo _plane select {(_x select 2) isEqualTo _turret} apply {_x select 3};
+    _currentTurretPylonsMagazines = (_currentTurretPylonsMagazines arrayIntersect _currentTurretPylonsMagazines);
+    
+    //---- remove pylon weapons without magazines
+    private _pylonsWeapons = _currentTurretPylonsMagazines apply {getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon")};
+    {
+        private _magazine = _x;
+        private _magazineWeapon = getText (configFile >> "CfgMagazines" >> _magazine >> "pylonWeapon");
+        // remove weapon if none of the loaded pylons use it
+        // do not optimize with `in` or `find` as these are case sensitive
+        if (_pylonsWeapons findIf {_magazineWeapon == _x} > -1) then {continue};
+        [_plane, [_magazineWeapon, _turret]] remoteExec ["removeWeaponTurret", 0];
+    } forEach _previousTurretPylonsMagazines;
 };
 
 if (_preset getOrDefault ["textures", []] isNotEqualTo []) then {
