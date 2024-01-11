@@ -29,7 +29,7 @@ if (count _queue == 1) then {
 
         //--- check if last spawned plane has pilot / moved from spawn
         private _lastPlane = _spawner getVariable ["MDL_PVP_spawnerLastPlane", objNull];
-        if (crew _lastPlane isEqualTo []) then {
+        if (!isNull _lastPlane && (crew _lastPlane isEqualTo [])) then {
             diag_log text format ["[PVP] ERROR: onStartRequest - last spawned plane is empty %1", _spawner];
             deleteVehicle _lastPlane;
         };

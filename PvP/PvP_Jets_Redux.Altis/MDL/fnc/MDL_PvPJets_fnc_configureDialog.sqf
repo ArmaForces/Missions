@@ -1,5 +1,6 @@
 #include "\a3\ui_f\hpp\definecommoncolors.inc"
 
+if (!hasInterface) exitWith {};
 if (missionNamespace getVariable ["MDL_PVP_configured", false]) exitWith {
     diag_log text "[PVP] INFO: gamemode already configured";
 };

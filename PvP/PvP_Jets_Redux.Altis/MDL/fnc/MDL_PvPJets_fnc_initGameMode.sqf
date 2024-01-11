@@ -52,4 +52,13 @@ if (hasInterface) then {
         ] call CBA_fnc_notify;
 
     }] call CBA_fnc_addEventHandler;
+
+    ["MDL_PVP_catapultPlane", {
+        _this spawn {
+            params ["_plane", "_player"];
+            waitUntil {_player in _plane};
+            sleep 1;
+            [_plane] call BIS_fnc_aircraftCatapultLaunch;
+        };
+    }] call CBA_fnc_addEventHandler;
 };
