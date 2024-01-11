@@ -1,7 +1,14 @@
 #include "\a3\ui_f\hpp\definecommoncolors.inc"
 
+if (missionNamespace getVariable ["MDL_PVP_configured", false]) exitWith {
+    diag_log text "[PVP] INFO: gamemode already configured";
+};
+
+diag_log text "[PVP] INFO: configure dialog";
+
 private _display = uiNamespace getVariable "RscDisplayMission";
 _display = _display createDisplay "RscDisplayEmpty";
+(uiNamespace setVariable ["MDL_PVP_ConfigureDialog", _display]);
 
 _display displayAddEventHandler ["KeyDown", {
     params ["_display", "_dik"];
@@ -19,6 +26,9 @@ _display displayAddEventHandler ["KeyDown", {
 if (player != [] call MDL_PVPJets_fnc_getAdmin) exitWith {
     "MDL_PVP_Wait" cutText [localize "STR_LOAD_GAME", "BLACK FADED", 1e10];
 };
+
+"MDL_PVP_Wait" cutText ["", "BLACK IN"];
+player setVariable ["MDL_PVP_Admin", true];
 
 private _dlgW = safeZoneW / 4;
 private _dlgH = safeZoneH / 2;

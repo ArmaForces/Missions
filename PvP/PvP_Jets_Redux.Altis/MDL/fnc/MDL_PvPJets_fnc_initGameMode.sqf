@@ -1,7 +1,9 @@
 waitUntil {
-    (getClientState == "BRIEFING READ" || !isMultiplayer) &&
-    {!isNull findDisplay 46} &&
-    {!visibleMap || !hasInterface}
+    !hasInterface || (
+        (getClientState == "BRIEFING READ" || !isMultiplayer) &&
+        {!isNull findDisplay 46} &&
+        {!visibleMap}
+    )
 };
 
 diag_log text "[PVP] INFO: initGameMode";
@@ -11,6 +13,7 @@ diag_log text "[PVP] INFO: initGameMode";
 waitUntil {MDL_PVP_configured};
 
 "MDL_PVP_Wait" cutText ["", "BLACK IN"];
+(uiNamespace getVariable ["MDL_PVP_ConfigureDialog", displayNull]) closeDisplay 0;
 
 diag_log text format ["[PVP] INFO: initGameMode - preset %1", MDL_PVP_preset get "displayName"];
 diag_log text format ["[PVP] INFO: initGameMode - tickets %1", MDL_PVP_tickets];
