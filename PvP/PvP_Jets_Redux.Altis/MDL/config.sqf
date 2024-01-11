@@ -1,5 +1,5 @@
 
-MDL_PVP_Radio_Presets_Hash = [
+MDL_PVP_Radio_Presets_Hash = createHashmapFromArray [
     [WEST, "blufor"],
     [EAST, "redfor"]
 ];
