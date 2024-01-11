@@ -5,7 +5,7 @@ if (!isNull (_player getVariable ["MDL_PVP_handlingSpawner", objNull]) && {!is3D
     diag_log text format ["[PVP] ERROR: onStartRequest - player %1 already in queue", name _player];
 };
 
-private _spawner = missionNamespace getVariable format ["MDL_PVP_catapult%1", playerSide];
+private _spawner = missionNamespace getVariable format ["MDL_PVP_catapult%1", side group _player];
 _player setVariable ["MDL_PVP_handlingSpawner", _spawner, true];
 
 diag_log text format ["[PVP] INFO: onStartRequest - adding player %1 to queue for %2", name _player, _spawner];
