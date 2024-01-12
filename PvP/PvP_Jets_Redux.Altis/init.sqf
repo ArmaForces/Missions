@@ -17,6 +17,10 @@ if (ACRE_Loaded) then {
 		[_x, "redfor", 1, "frequencyRX", 60.0] call acre_api_fnc_setPresetChannelField;
 		[_x, "redfor", 1, "label", "REDFOR"] call acre_api_fnc_setPresetChannelField;
 		[_x, "redfor", 2, "label", "Shared"] call acre_api_fnc_setPresetChannelField;
+
+		if (hasInterface) then {
+			[_x, MDL_PVP_Radio_Presets_Hash get playerSide] call acre_api_fnc_setPreset;
+		};
 	} forEach ["ACRE_VRC103", "ACRE_PRC117F"];
 } else {
 	player linkItem "ItemRadio";
