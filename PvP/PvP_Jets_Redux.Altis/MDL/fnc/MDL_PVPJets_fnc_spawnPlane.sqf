@@ -49,7 +49,7 @@ if (_preset getOrDefault ["loadout", []] isNotEqualTo []) then {
             [_plane, [_magazineWeapon, _turret]] remoteExec ["removeWeaponTurret", 0];
         } forEach _previousTurretPylonsMagazines;
 
-        _plane setVariable ["MDL_PVPJets_Ready", true];
+        [{_this setVariable ["MDL_PVPJets_Ready", true]}, _plane, 1] call CBA_fnc_waitAndExecute;
     }, [_plane, _turret, _previousTurretPylonsMagazines], 1] call CBA_fnc_waitAndExecute;
     
 };

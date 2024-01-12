@@ -41,11 +41,15 @@ if (count _queue == 1) then {
         private _plane = [_spawner, _player] call MDL_PvPJets_fnc_launchPlane;
 
         _spawner setVariable ["MDL_PVP_spawnerLastPlane", _plane];
+        _spawner setVariable ["MDL_PVP_spawnerLastSpawnTime", CBA_missionTime];
         _player setVariable ["MDL_PVP_handlingSpawner", nil, true];
 
         // handle next queue element
         [_fnc_queue, _this, 5] call CBA_fnc_waitAndExecute;
     };
 
-    [_fnc_queue, [_fnc_queue, _spawner, _queue], 1] call CBA_fnc_waitAndExecute;
+    private _lastSpawn = _spawner getVariable ["MDL_PVP_spawnerLastSpawnTime", 0];
+    private _delay = [5, 1] select ((CBA_missionTime - _lastSpawn) > 5);
+
+    [_fnc_queue, [_fnc_queue, _spawner, _queue], _delay] call CBA_fnc_waitAndExecute;
 };
