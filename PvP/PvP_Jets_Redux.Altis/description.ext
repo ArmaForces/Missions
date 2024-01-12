@@ -1,6 +1,8 @@
 #include "defines.hpp"
 #include "gui\gui_settings.hpp"
 
+cba_settings_hasSettingsFile = 1;
+
 /* Respawn stuff */
 respawn = 3;
 respawnButton = 1;
