@@ -21,7 +21,7 @@ if (ACRE_Loaded) then {
 		if (hasInterface) then {
 			[_x, MDL_PVP_Radio_Presets_Hash get playerSide] call acre_api_fnc_setPreset;
 		};
-	} forEach ["ACRE_VRC103", "ACRE_PRC117F"];
+	} forEach ["ACRE_PRC117F"];
 } else {
 	player linkItem "ItemRadio";
 };
