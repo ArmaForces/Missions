@@ -1,7 +1,7 @@
 ACRE_Loaded = !isNil "acre_main";
 
 #include "MDL\initFunctions.sqf";
-// [] execVM "MDN\initFunctions.sqf";
+[] execVM "MDN\initFunctions.sqf";
 
 if (ACRE_Loaded) then {
 	{
