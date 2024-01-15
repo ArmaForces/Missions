@@ -27,3 +27,12 @@ fnc_setdistance = {
 	};
 	ctrlSetText [311, str viewdistance];
 };
+
+[[
+	"<t color='#c8c8ff'>Ustaw odległość widzenia</t>",
+	{call fnc_setviewgui},
+	nil,
+	-10,
+	false,
+	true
+]] call CBA_fnc_addPlayerAction;

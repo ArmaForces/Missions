@@ -1,9 +1,9 @@
 isNil {
 	ACRE_Loaded = !isNil "acre_main";
 
-	#include "MDL\initFunctions.sqf";
-	#include "MDL\initRadios.sqf";
-	[] execVM "MDN\initFunctions.sqf";
+	call compileScript ["MDL\initFunctions.sqf"];
+	call compileScript ["MDL\initRadios.sqf"];
+	call compileScript ["MDN\initFunctions.sqf"];
 
 	[] spawn MDL_PvPJets_fnc_initGameMode;
 };
