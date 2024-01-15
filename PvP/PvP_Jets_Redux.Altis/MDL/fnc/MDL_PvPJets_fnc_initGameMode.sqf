@@ -53,6 +53,13 @@ if (hasInterface) then {
 
     }] call CBA_fnc_addEventHandler;
 
+    /*
+    // this is handled by BI module... for now
+    [true, "respawnTicketsExhausted", {
+        "SideTickets" call bis_fnc_endMissionServer;
+    }] call BIS_fnc_addScriptedEventHandler;
+    */
+
     ["MDL_PVP_catapultPlane", {
         _this spawn {
             params ["_plane", "_player"];
