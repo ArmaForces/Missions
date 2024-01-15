@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=517;
 	class ItemIDProvider
 	{
 		nextID=642;
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=70;
+		nextID=78;
 	};
 	class Camera
 	{
-		pos[]={26857.623,50.013607,24565.367};
+		pos[]={26862.234,50.013607,24561.283};
 		dir[]={-0.53046018,-0.60005105,-0.59879678};
 		up[]={-0.39789781,0.79995829,-0.4491578};
 		aside[]={-0.74853009,5.7858415e-008,0.66310471};
 	};
 };
 binarizationWanted=0;
-sourceName="PvP_Jets_L159";
+sourceName="pvp_jets_redux";
 addons[]=
 {
 	"A3_Ui_F",
@@ -134,7 +134,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -401,13 +401,28 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		class Attribute1
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		nAttributes=2;
 	};
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
+		resistanceWest=0;
 		timeOfChanges=28800;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -416,6 +431,8 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
 		year=2018;
 		month=6;
 		day=29;
@@ -901,7 +918,7 @@ class Mission
 				};
 			};
 			id=361;
-			atlOffset=30.210922;
+			atlOffset=0.13976669;
 		};
 		class Item10
 		{
@@ -1180,7 +1197,7 @@ class Mission
 				};
 			};
 			id=377;
-			atlOffset=0.17028809;
+			atlOffset=-0.29784775;
 		};
 		class Item11
 		{
@@ -2151,36 +2168,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2188,8 +2197,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2260,36 +2267,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2297,8 +2296,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2337,36 +2334,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2374,8 +2363,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2414,36 +2401,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2451,8 +2430,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2491,36 +2468,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2528,8 +2497,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2570,36 +2537,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2607,8 +2566,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2647,36 +2604,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2684,8 +2633,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2726,36 +2673,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2763,8 +2702,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2803,36 +2740,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2840,8 +2769,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2880,36 +2807,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2917,8 +2836,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -2959,36 +2876,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -2996,8 +2905,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -3036,36 +2943,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3073,8 +2972,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -3110,38 +3007,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3186,38 +3075,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3262,38 +3143,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3338,38 +3211,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3414,38 +3279,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3490,38 +3347,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3566,38 +3415,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3642,38 +3483,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3718,38 +3551,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3794,38 +3619,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3870,38 +3687,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -3946,38 +3755,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4427,36 +4228,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4464,8 +4257,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -4504,36 +4295,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4541,8 +4324,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -4583,36 +4364,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4620,8 +4393,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -4662,36 +4433,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4699,8 +4462,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -4741,36 +4502,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4778,8 +4531,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -4820,36 +4571,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4857,8 +4600,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -4897,36 +4638,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -4934,8 +4667,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -4976,36 +4707,28 @@ class Mission
 							{
 								typeName="U_B_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_epinephrine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_blk";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5013,8 +4736,6 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
-							goggles="rhs_googles_clear";
 							headgear="H_PilotHelmetFighter_B";
 						};
 					};
@@ -5052,38 +4773,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5128,38 +4841,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5204,38 +4909,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5280,38 +4977,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5356,38 +5045,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5432,38 +5113,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5508,38 +5181,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5584,38 +5249,30 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_pilotCoveralls";
+								typeName="U_O_PilotCoveralls";
 								isBackpack=0;
-								class ItemCargo
+								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="SmokeShellOrange";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="ACE_epinephrine";
-										count=5;
-									};
-									class Item2
-									{
-										name="ACE_quikclot";
-										count=10;
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
 									};
 								};
-							};
-							class backpack
-							{
-								typeName="B_FieldPack_oli";
-								isBackpack=1;
 								class ItemCargo
 								{
 									items=1;
 									class Item0
 									{
-										name="ACRE_PRC117F";
+										name="FirstAidKit";
 										count=1;
 									};
 								};
@@ -5750,7 +5407,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6653.7998,42.211018,15836.769};
-					angle=1.4959391;
+					angle=1.495939;
 					class Attributes
 					{
 						text="killzone";
@@ -5773,7 +5430,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={10875.376,96.861359,8286.6396};
-					angle=0.66647142;
+					angle=0.6664713;
 					class Attributes
 					{
 						text="killzone";
