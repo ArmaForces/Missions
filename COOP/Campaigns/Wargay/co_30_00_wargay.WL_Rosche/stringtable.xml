@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Żelazna Kurtyna</Polish>
+            <English>Iron Curtain</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Żelazna Kurtyna</Polish>
+            <English>Iron Curtain</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English>Rosche, 21 June 1985
+
+The tensions between two Germanies is at a peak.
+
+Border Guards report a skirmish in the area of Bergen. West German Intelligence has detected Panzerausbildungsregiment 19 movement not far from the border.
+
+Panzerbrigade 2 near Uelzen is put on alert. Border Guards confirm a violation of the territory of the Federal Republic by the East Germans. The Chancellery in Bonn declares a state of war.
+
+East German forces are approaching from the east. Their last reported position was on 493 in Waddeweitz, just 12 km from Rosche and around 25 km from Uelzen Flughafen. They have also breached the border in Bergen and are coming for Ellenberg down the road 71.
+
+Enemy will reach the Elbe Lateral Canal within half an hour. Your task is to prevent them from crossing the canal.
+</English>
+            <Polish>Rosche, 21 Lipca 1985
+
+Napięcie pomiędzy podzielonymi Niemcami sięga zenitu.
+
+Straż Graniczna zgłasza potyczkę w obszarze Bergen. Zachodnioniemiecki wywiad zauważył wzmożoną aktywność Panzerausbildungsregiment 19 niedaleko granicy.
+
+Panzerbrigade 2 w pobliżu Ulzen zostaje postawiona w stan gotowości. Straż Graniczna potwierdza naruszenie terytorium Republiki Federalnej przez Republikę Demokratyczną. Kanclerz w Bonn ogłasza stan wojny.
+
+Siły wschodnioniemieckie zbliżają się od wschodu. Ich ostatnia znana pozycja była na drodze 493 w pobliżu Waddeweitz, jedynie 12 km od Rosche i około 25 km od Lotniska w Uelzen. Przekroczyli także granicę w Bergen i jadą w stronę Ellenberg drogą 71.
+
+Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobiec przekroczeniu kanału przez wroga.
+</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <English>East German forces breached the Iron Curtain and took Rosche. Panzerbrigade 2 reaches the action.</English>
+            <Polish>Siły Niemiec Wschodnich przełamały Żelazną Kurtynę i zajęły Rosche. Panzerbrigade 2 dociera na miejsce.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <English>You need to hold East Germans on the other side of the canal until more reinforcements are available. In case they break through, make sure to push them back as quickly as possible.</English>
+            <Polish>Musicie utrzymać Niemców Wschodnich po drugiej stronie kanału dopóki nie dotrą posiłki. Jeżeli uda im się przekroczyć kanał, wypchnijcie ich z powrotem tak szybko jak to możliwe.</Polish>
+        </Key>
+
+        <!-- TASKS -->
+
+        <!-- LAND -->
+        
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evac</English>
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
