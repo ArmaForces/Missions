@@ -54,9 +54,9 @@ PositionHits = [];
             "SIDE"
         };
 
-        private _msg = format ["Hit %1, Velocity: %5 km/h RelativeDir: %6, TargetDir: %2, SurfaceDir: [%3, %4]", _hitDir, _targetDir, _xyHitDir, _topHitDir, vectorMagnitude _velocity, _relativeDir];
-        diag_log _msg;
-        systemChat _msg;
+        // private _msg = format ["Hit %1, Velocity: %5 km/h RelativeDir: %6, TargetDir: %2, SurfaceDir: [%3, %4]", _hitDir, _targetDir, _xyHitDir, _topHitDir, vectorMagnitude _velocity, _relativeDir];
+        // diag_log _msg;
+        // systemChat _msg;
 
         PositionHits pushBack (_position);
 
@@ -189,16 +189,23 @@ fnc_handleDamage = {
 
     private _ammoType = getText (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "type");
     private _ammoDamage = getNumber (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "damage");
-    systemChat format ["Used ammo type '%1', damage '%2'", _ammoType, _ammoDamage];
+    private _isUnknownAmmo = false;
     private _damage = switch (_ammoType) do {
         case "AP": { [_armor, _ammoDamage, _velocity] call fnc_keDamage };
         case "HEAT": { [_armor, _ammoDamage] call fnc_heatDamage };
         case "HE" : { [_armor, _ammoDamage] call fnc_heDamage };
-        default { 0 };
+        default { _isUnknownAmmo = true; 0 };
     };
 
-    private _infoMsg = format ["Potential damage: %1, Hit armor: %2, Actual damage: %3", _ammoDamage, _armor, _damage];
+    if (_isUnknownAmmo) exitWith {
+        private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
+        systemChat _infoMsg;
+        diag_log _infoMsg;
+    };
+
+    private _infoMsg = format ["Potential damage: %1 %2, Hit armor: %3 %4, Actual damage: %5", _ammoDamage, _ammoType, _hitDir, _armor, _damage];
     systemChat _infoMsg;
+    diag_log _infoMsg;
 
     if (_damage isEqualTo 0) exitWith {
         systemChat format ["No damage applied for ammo '%1'", _ammoClassName];
