@@ -168,6 +168,8 @@ TankArmor set ["gm_ge_army_Leopard1a1", Leopard1A1Armor];
 ["AFMC_M163", [1, 1, 1, 1]];
 ["AFMC_M270", [1, 0, 0, 0]];
 
+#define BASE_AP_SPEED 1300
+#define VELOCITY_STEP 150
 #define FRONT_ARMOR 6
 #define SIDE_ARMOR 2
 #define REAR_ARMOR 2
@@ -180,7 +182,7 @@ fnc_handleDamage = {
     private _isApRound = ["ap", _ammoClassName] call BIS_fnc_inString;
 
     private _damageNoArmor = if (_isApRound) then {
-        DAMAGE_AMOUNT - ((1300 - vectorMagnitude _velocity) / 150);
+        DAMAGE_AMOUNT - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
     } else {
         DAMAGE_AMOUNT * 0.75
     };
@@ -192,6 +194,8 @@ fnc_handleDamage = {
         case "REAR": { REAR_ARMOR };
         default { 0 };
     };
+
+    // TODO: HE & HEAT damage formulas
 
     // Wargame Red Dragon KE formula reverse engineered
     private _damagePart1 = (_damageNoArmor * (2 - _armor)) max 0; // Twice for 0 armor, standard for 1 armor, 0 for 2 armor
