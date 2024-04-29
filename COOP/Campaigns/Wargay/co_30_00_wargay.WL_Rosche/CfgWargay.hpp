@@ -11,6 +11,8 @@ class CfgWargay
 {
     class Ammo
     {
+        // TODO: Get values for infantry launchers
+
         /* Base */
         class AA_HE
         {

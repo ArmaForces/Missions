@@ -31,6 +31,7 @@ PositionHits = [];
         (_this select 0) params ["_target", "_shooter", "_projectile", "_position", "_velocity", "_selection", "_ammo", "_vector", "_radius", "_surfaceType", "_isDirect", "_instigator"];
 
         // if (_selection isEqualTo []) exitWith {};
+        if (!alive _target) exitWith {};
 
         private _isHandledForTarget = _projectile getVariable [str _target, false];
 
@@ -44,6 +45,7 @@ PositionHits = [];
 
         private _relativeDir = _targetDir - _xyHitDir;
 
+        // BUG: REAR is often reported in FRONT
         private _hitDir = if (_topHitDir > 70) then {
             "TOP"
         } else {
@@ -75,23 +77,23 @@ addMissionEventHandler ["Draw3D", {
     } forEach PositionHits;
 }];
 
-addMissionEventHandler ["Draw3D", {
-    private _veh = cursorObject;
+// addMissionEventHandler ["Draw3D", {
+//     private _veh = cursorObject;
 
-    private _selectionNames = selectionNames _veh;
+//     private _selectionNames = selectionNames _veh;
 
-    private _selectionNamesAndPos = _selectionNames apply {
-        [_x, _veh selectionPosition _x]
-    } select { _x select 1 isNotEqualTo [0, 0, 0]};
+//     private _selectionNamesAndPos = _selectionNames apply {
+//         [_x, _veh selectionPosition _x]
+//     } select { _x select 1 isNotEqualTo [0, 0, 0]};
 
-    {
-        _x params ["_selectionName", "_selectionRelPos"];
+//     {
+//         _x params ["_selectionName", "_selectionRelPos"];
 
-        private _worldPos = _veh modelToWorld _selectionRelPos;
-        drawIcon3D ["#(argb,8,8,3)color(1,1,1,1)", [1,1,1,1], _worldPos, 0.25, 0.25, 0, _selectionName, 0, 0.03];
+//         private _worldPos = _veh modelToWorld _selectionRelPos;
+//         drawIcon3D ["#(argb,8,8,3)color(1,1,1,1)", [1,1,1,1], _worldPos, 0.25, 0.25, 0, _selectionName, 0, 0.03];
 
-    } forEach _selectionNamesAndPos;
-}];
+//     } forEach _selectionNamesAndPos;
+// }];
 
 TankArmor = createHashMap;
 Leopard1A1Armor = createHashMap;
@@ -170,42 +172,37 @@ TankArmor set ["gm_ge_army_Leopard1a1", Leopard1A1Armor];
 
 #define BASE_AP_SPEED 1300
 #define VELOCITY_STEP 150
-#define FRONT_ARMOR 6
-#define SIDE_ARMOR 2
-#define REAR_ARMOR 2
-#define TOP_ARMOR 1
-#define DAMAGE_AMOUNT 11
+
 fnc_handleDamage = {
     params ["_unit", "_hitDir", "_velocity", "_ammo"];
     _ammo params ["_hitValue", "_indirectHitValue", "_indirectHitRange", "_explosiveDamage", "_ammoClassName"];
 
-    private _isApRound = ["ap", _ammoClassName] call BIS_fnc_inString;
-
-    private _damageNoArmor = if (_isApRound) then {
-        DAMAGE_AMOUNT - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
-    } else {
-        DAMAGE_AMOUNT * 0.75
-    };
+    private _unitArmor = getArray (missionConfigFile >> "CfgWargay" >> "Vehicles" >> typeof _unit >> "armor");
 
     private _armor = switch (_hitDir) do {
-        case "TOP": { TOP_ARMOR };
-        case "FRONT": { FRONT_ARMOR };
-        case "SIDE": { SIDE_ARMOR };
-        case "REAR": { REAR_ARMOR };
+        case "TOP": { _unitArmor select 0 };
+        case "FRONT": { _unitArmor select 1 };
+        case "SIDE": { _unitArmor select 2 };
+        case "REAR": { _unitArmor select 3 };
         default { 0 };
     };
 
-    // TODO: HE & HEAT damage formulas
+    private _ammoType = getText (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "type");
+    private _ammoDamage = getNumber (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "damage");
+    systemChat format ["Used ammo type '%1', damage '%2'", _ammoType, _ammoDamage];
+    private _damage = switch (_ammoType) do {
+        case "AP": { [_armor, _ammoDamage, _velocity] call fnc_keDamage };
+        case "HEAT": { [_armor, _ammoDamage] call fnc_heatDamage };
+        case "HE" : { [_armor, _ammoDamage] call fnc_heDamage };
+        default { 0 };
+    };
 
-    // Wargame Red Dragon KE formula reverse engineered
-    private _damagePart1 = (_damageNoArmor * (2 - _armor)) max 0; // Twice for 0 armor, standard for 1 armor, 0 for 2 armor
-    private _damagePart2 = _damageNoArmor - (_damageNoArmor/2) - (_armor - 2) * 0.5; // Half for 2 armor, decreasing .5 for every additional armor point
-    private _damage = _damagePart1 max _damagePart2;
-
-    private _infoMsg = format ["Potential damage: %1, Actual damage: %2", _damageNoArmor, _damage];
+    private _infoMsg = format ["Potential damage: %1, Hit armor: %2, Actual damage: %3", _ammoDamage, _armor, _damage];
     systemChat _infoMsg;
 
-    if (_damage < 1) exitWith {};
+    if (_damage isEqualTo 0) exitWith {
+        systemChat format ["No damage applied for ammo '%1'", _ammoClassName];
+    };
 
     private _currentHp = _unit getVariable ["MDL_currentHp", 10];
     private _newHp = _currentHp - _damage;
@@ -220,4 +217,47 @@ fnc_handleDamage = {
     systemChat format ["Remaining HP: %1/10", _newHp];
 
     _unit setVariable ["MDL_currentHp", _newHp];
+};
+
+fnc_heatDamage = {
+    params ["_armor", "_ammoBaseDamage"];
+    
+    if (_armor isEqualTo 0) exitWith { _ammoBaseDamage * 2 };
+    private _standardDamage = ((_ammoBaseDamage - _armor)/2) + 1;
+    
+    // 1 dmg for each 1 AP above 10 difference from armor value (e.g., 13 AP vs 2 AV = 1 dmg)
+    private _extraDamage = 0 max (_ammoBaseDamage - _armor - 10);
+    
+    // HEAT always does at least 1 dmg
+    1 max (_standardDamage + _extraDamage)
+};
+
+// Wargame Red Dragon KE formula reverse engineered
+// Not using distance as velocity seems to fit better
+fnc_keDamage = {
+    params ["_armor", "_ammoBaseDamage", "_velocity"];
+    private _damageNoArmor = _ammoBaseDamage - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
+    private _damagePart1 = (_damageNoArmor * (2 - _armor)) max 0; // Twice for 0 armor, standard for 1 armor, 0 for 2 armor
+    private _damagePart2 = _damageNoArmor - (_damageNoArmor/2) - (_armor - 2) * 0.5; // Half for 2 armor, decreasing .5 for every additional armor point
+    
+    _damagePart1 max _damagePart2
+};
+
+fnc_heDamage = {
+    params ["_armor", "_ammoBaseDamage"];
+
+    fnc_damagePerHe = {
+        params ["_armor"];
+
+        if (_armor < 2) exitWith {1};
+        if (_armor isEqualTo 2) exitWith {0.4};
+        if (_armor isEqualTo 3) exitWith {0.3};
+        if (_armor isEqualTo 4) exitWith {0.2};
+        if (_armor isEqualTo 5) exitWith {0.15};
+        if (_armor < 8) exitWith {0.1};
+        if (_armor < 14) exitWith {0.05};
+        0.01
+    };
+
+    _ammoBaseDamage * ([_armor] call fnc_damagePerHe);
 };
