@@ -187,11 +187,11 @@ fnc_handleDamage = {
         default { 0 };
     };
 
-    private _ammoType = getText (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "type");
     private _ammoDamage = getNumber (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "damage");
     if (_ammoDamage isEqualTo 0) exitWith {};
 
     private _isUnknownAmmo = false;
+    private _ammoType = getText (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "type");
     private _damage = switch (_ammoType) do {
         case "AP": { [_armor, _ammoDamage, _velocity] call fnc_keDamage };
         case "HEAT": { [_armor, _ammoDamage] call fnc_heatDamage };
@@ -217,6 +217,7 @@ fnc_handleDamage = {
     private _newHp = _currentHp - _damage;
 
     if (_newHp <= 0) then {
+        _unit setVariable ["MDL_currentHp", 0, true];
         _unit setDamage 1;
 
         private _ehId = _unit getVariable ["MDL_HitPartEHID", -1];
@@ -225,8 +226,28 @@ fnc_handleDamage = {
 
     systemChat format ["Remaining HP: %1/10", _newHp];
 
-    _unit setVariable ["MDL_currentHp", _newHp];
+    _unit setVariable ["MDL_currentHp", _newHp, true];
+    ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
 };
+
+["MDL_showCurrentHp", {
+    params ["_vehicle"];
+    if (vehicle player isNotEqualTo _vehicle) exitWith {};
+
+    private _currentHp = _vehicle getVariable ["MDL_currentHp", 0];
+    private _missingHp = 10 - _currentHp;
+
+    private _string = "";
+    for "_a" from 1 to round _currentHp do {
+        _string = _string + "[_]";
+    };
+    for "_a" from 1 to round _missingHp do {
+        _string = _string + "[X]";
+    };
+    
+    private _text = composeText [_string];
+    [_text] call ACE_common_fnc_displayTextStructured;
+}] call CBA_fnc_addEventHandler;
 
 fnc_heatDamage = {
     params ["_armor", "_ammoBaseDamage"];

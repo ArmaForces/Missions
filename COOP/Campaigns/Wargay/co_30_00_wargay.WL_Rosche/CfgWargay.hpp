@@ -1,5 +1,3 @@
-// #define NO_ARMOR armor[] = { 0, 0, 0, 0 }
-// #define ONE_ARMOR armor[] = { 1, 1, 1, 1 };
 #define ARMOR(FRONT,SIDES,BACK,TOP) armor[] = { FRONT, SIDES, BACK, TOP }
 #define VEHICLE(vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
         { \
@@ -15,6 +13,7 @@ class CfgWargay
         class NO_DAMAGE
         {
             damage = 0;
+            type = "NONE";
         };
 
         /* Base */
