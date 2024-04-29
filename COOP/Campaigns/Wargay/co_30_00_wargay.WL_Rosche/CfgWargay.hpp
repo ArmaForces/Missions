@@ -12,6 +12,10 @@ class CfgWargay
     class Ammo
     {
         // TODO: Get values for infantry launchers
+        class NO_DAMAGE
+        {
+            damage = 0;
+        };
 
         /* Base */
         class AA_HE
@@ -75,8 +79,7 @@ class CfgWargay
             damage = 11;
             type = "HEAT";
         };
-        // TODO: Possibly other rounds will be broken/named differently too
-        // class gm_penetrator_105x617mm_heat_dm12 : gm_shell_105x617mm_heat_mp_t_dm12 {};
+        class gm_penetrator_105x617mm_heat_dm12 : NO_DAMAGE {};
 
         class gm_shell_105x617mm_apfsds_t_dm23 : gm_shell_105x617mm_apds_t_dm13 {};
         
@@ -100,16 +103,13 @@ class CfgWargay
             damage = 17;
             type = "HEAT";
         };
-        // class gm_penetrator_milan_HEAT_dm82 : gm_missile_milan_heat_dm92 {};
-        // class gm_penetrator_milan_HEAT_dm92 : gm_missile_milan_heat_dm92 {};
+        class gm_penetrator_milan_HEAT_dm82 : NO_DAMAGE {};
+        class gm_penetrator_milan_HEAT_dm92 : NO_DAMAGE {};
 
         // Hot
-        // class gm_penetrator_hot_HEAT_dm102
-        // {
-        //     damage = 22;
-        //     type = "HEAT";
-        // };
-        // class gm_penetrator_hot_HEAT_dm72 : gm_penetrator_hot_HEAT_dm102 {};
+        // TODO: Find proper class for it
+        class gm_penetrator_hot_HEAT_dm102 : NO_DAMAGE {};
+        class gm_penetrator_hot_HEAT_dm72 : NO_DAMAGE {};
 
         /*
             Eastern Germany
@@ -143,7 +143,7 @@ class CfgWargay
             damage = 11;
             type = "HEAT";
         };
-        // class gm_penetrator_100x695mm_HEAT_T_bk5m : gm_shell_100x695mm_heat_t_bk5m {};
+        class gm_penetrator_100x695mm_HEAT_T_bk5m : NO_DAMAGE {};
         
         class gm_shell_100x695mm_apfsds_t_bm20
         {
@@ -173,8 +173,8 @@ class CfgWargay
             damage = 9;
             type = "HEAT";
         };
-        // class gm_penetrator_122x447mm_heat_bk6m : gm_shell_122x447mm_heat_t_bk13 {};
-        // class gm_penetrator_122x447mm_heat_t_bk13 : gm_shell_122x447mm_heat_t_bk13 {};
+        class gm_penetrator_122x447mm_heat_bk6m : NO_DAMAGE {};
+        class gm_penetrator_122x447mm_heat_t_bk13 : NO_DAMAGE {};
 
         // BM-21
         class gm_rocket_mlrs_122mm_he_9m22u
@@ -202,8 +202,8 @@ class CfgWargay
             damage = 15;
             type = "HEAT";
         };
-        // class gm_penetrator_maljutka_HEAT_9m14 : gm_missile_maljutka_heat_9m14m {};
-        // class gm_penetrator_maljutka_HEAT_9m14m : gm_missile_maljutka_heat_9m14m {};
+        class gm_penetrator_maljutka_HEAT_9m14 : NO_DAMAGE {};
+        class gm_penetrator_maljutka_HEAT_9m14m : NO_DAMAGE {};
 
         // SPW-60PB
         class gm_bullet_145x114mm_AP_B32 : HMG_AP {};
@@ -215,7 +215,7 @@ class CfgWargay
             damage = 16;
             type = "HEAT";
         };
-        // class gm_penetrator_fagot_HEAT_9m111 : gm_missile_fagot_heat_9m111 {};
+        class gm_penetrator_fagot_HEAT_9m111 : NO_DAMAGE {};
     };
 
     class Vehicles

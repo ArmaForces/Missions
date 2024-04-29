@@ -189,6 +189,8 @@ fnc_handleDamage = {
 
     private _ammoType = getText (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "type");
     private _ammoDamage = getNumber (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "damage");
+    if (_ammoDamage isEqualTo 0) exitWith {};
+
     private _isUnknownAmmo = false;
     private _damage = switch (_ammoType) do {
         case "AP": { [_armor, _ammoDamage, _velocity] call fnc_keDamage };
