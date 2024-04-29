@@ -180,10 +180,10 @@ fnc_handleDamage = {
     private _unitArmor = getArray (missionConfigFile >> "CfgWargay" >> "Vehicles" >> typeof _unit >> "armor");
 
     private _armor = switch (_hitDir) do {
-        case "TOP": { _unitArmor select 0 };
-        case "FRONT": { _unitArmor select 1 };
-        case "SIDE": { _unitArmor select 2 };
-        case "REAR": { _unitArmor select 3 };
+        case "FRONT": { _unitArmor select 0 };
+        case "SIDE": { _unitArmor select 1 };
+        case "REAR": { _unitArmor select 2 };
+        case "TOP": { _unitArmor select 3 };
         default { 0 };
     };
 
