@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=50;
+		nextID=78;
 	};
 	class Camera
 	{
-		pos[]={1463.442,273.37894,4615.0215};
-		dir[]={-0.075172268,-0.43266353,0.89852786};
-		up[]={-0.03607589,0.90152693,0.43120086};
-		aside[]={0.99661911,-8.8314118e-007,0.083382234};
+		pos[]={762.23065,18.633644,4619.8774};
+		dir[]={0.8013432,-0.23618282,0.54968029};
+		up[]={0.19477893,0.97170156,0.13360903};
+		aside[]={0.56568289,-5.0858944e-009,-0.82467449};
 	};
 };
 binarizationWanted=0;
@@ -27,13 +27,21 @@ sourceName="00-Wargay";
 addons[]=
 {
 	"gm_characters_ge_characters",
-	"gm_vehicles_land_tracked_leopard1_ge_army_leopard1"
+	"gm_vehicles_land_tracked_leopard1_ge_army_leopard1",
+	"gm_vehicles_land_tracked_gepard_ge_army_gepard",
+	"gm_vehicles_air_helicopters_bo105_ge_army_bo105",
+	"gm_vehicles_land_wheeled_kat1_ge_army_kat1",
+	"gm_vehicles_land_tracked_m109_ge_army_m109",
+	"gm_vehicles_land_tracked_m113_ge_army_m113",
+	"gm_vehicles_land_wheeled_luchs_ge_army_luchs",
+	"gm_vehicles_land_tracked_bpz2_ge_army_bpz2",
+	"gm_vehicles_land_wheeled_fuchs_ge_army_fuchs"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=10;
 		class Item0
 		{
 			className="gm_characters_ge_characters";
@@ -45,6 +53,62 @@ class AddonsMetaData
 		{
 			className="gm_vehicles_land_tracked_leopard1_ge_army_leopard1";
 			name="gm_vehicles_land_tracked_leopard1_ge_army_leopard1";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item2
+		{
+			className="gm_vehicles_land_tracked_gepard_ge_army_gepard";
+			name="gm_vehicles_land_tracked_gepard_ge_army_gepard";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item3
+		{
+			className="gm_vehicles_air_helicopters_bo105_ge_army_bo105";
+			name="gm_vehicles_air_helicopters_bo105_ge_army_bo105";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item4
+		{
+			className="gm_vehicles_land_wheeled_kat1_ge_army_kat1";
+			name="gm_vehicles_land_wheeled_kat1_ge_army_kat1";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item5
+		{
+			className="gm_vehicles_land_tracked_m109_ge_army_m109";
+			name="gm_vehicles_land_tracked_m109_ge_army_m109";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item6
+		{
+			className="gm_vehicles_land_tracked_m113_ge_army_m113";
+			name="gm_vehicles_land_tracked_m113_ge_army_m113";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item7
+		{
+			className="gm_vehicles_land_wheeled_luchs_ge_army_luchs";
+			name="gm_vehicles_land_wheeled_luchs_ge_army_luchs";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item8
+		{
+			className="gm_vehicles_land_tracked_bpz2_ge_army_bpz2";
+			name="gm_vehicles_land_tracked_bpz2_ge_army_bpz2";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item9
+		{
+			className="gm_vehicles_land_wheeled_fuchs_ge_army_fuchs";
+			name="gm_vehicles_land_wheeled_fuchs_ge_army_fuchs";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
@@ -85,7 +149,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2;
+		items=19;
 		class Item0
 		{
 			dataType="Group";
@@ -99,7 +163,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1095.548,15.232676,4526.3604};
-						angles[]={0.00059801998,1.1197013,6.2788181};
+						angles[]={0.014664836,1.1197013,6.247201};
 					};
 					side="West";
 					flags=4;
@@ -108,6 +172,7 @@ class Mission
 					};
 					id=2;
 					type="gm_ge_army_crew_mp2a1_80_oli";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item1
 				{
@@ -115,15 +180,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1095.5753,18.088444,4526.3379};
-						angles[]={0.00059801998,1.1197013,6.2788181};
+						angles[]={0.014664836,1.1197013,6.247201};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=3;
 					type="gm_ge_army_crew_mp2a1_80_oli";
+					atlOffset=2.856204;
 				};
 				class Item2
 				{
@@ -131,16 +196,17 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1095.5753,18.088444,4526.3379};
-						angles[]={0.00059801998,1.1197013,6.2788181};
+						angles[]={0.014664836,1.1197013,6.247201};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						isPlayer=1;
 					};
 					id=4;
 					type="gm_ge_army_crew_mp2a1_80_oli";
+					atlOffset=2.856204;
 				};
 			};
 			class Attributes
@@ -190,14 +256,15 @@ class Mission
 				};
 			};
 			id=0;
+			atlOffset=-0.0017127991;
 		};
 		class Item1
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={622.80603,16.989782,4934.4478};
-				angles[]={0.00059801998,1.1197013,6.2788181};
+				position[]={421.84509,19.302013,4462.3633};
+				angles[]={0.014664836,1.1197013,6.247201};
 			};
 			side="West";
 			flags=6;
@@ -206,6 +273,294 @@ class Mission
 			};
 			id=1;
 			type="gm_ge_army_Leopard1a1";
+			atlOffset=-0.0017127991;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={413.1315,19.794994,4393.7651};
+				angles[]={6.2693663,0,6.2687664};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+			};
+			id=50;
+			type="gm_ge_army_gepard1a1";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={424.4122,19.779057,4412.9204};
+				angles[]={6.2707081,0,6.2705231};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=51;
+			type="gm_ge_army_Leopard1a3";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={420.46527,19.792738,4412.9702};
+				angles[]={6.2707081,0,6.2705231};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=52;
+			type="gm_ge_army_Leopard1a1";
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={429.62088,19.676126,4413.0166};
+				angles[]={6.2708087,0,6.2700744};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=53;
+			type="gm_ge_army_Leopard1a5";
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={406.87415,19.443411,4435.2798};
+				angles[]={6.2722836,0,6.2732682};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=54;
+			type="gm_ge_army_bo105m_vbh";
+			atlOffset=3.8146973e-006;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={404.46628,19.515364,4447.1401};
+				angles[]={6.2828403,0,6.266448};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=55;
+			type="gm_ge_army_bo105p1m_vbh";
+			atlOffset=-0.00018310547;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={412.96191,19.194124,4445.2505};
+				angles[]={0.025055718,0,6.2345362};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=56;
+			type="gm_ge_army_bo105p1m_vbh_swooper";
+			atlOffset=-5.1498413e-005;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={426.10788,18.635408,4446.3145};
+				angles[]={0.014664836,0,6.247201};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=57;
+			type="gm_ge_army_bo105p_pah1";
+			atlOffset=7.6293945e-006;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={434.83127,18.384211,4439.5547};
+				angles[]={0.014664836,0,6.2458706};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=58;
+			type="gm_ge_army_bo105p_pah1a1";
+			atlOffset=1.9073486e-006;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={394.26212,20.198242,4393.3564};
+				angles[]={6.2591896,0,6.2645216};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=59;
+			type="gm_ge_army_kat1_463_mlrs";
+			atlOffset=-0.036396027;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={388.46701,20.318676,4393.8198};
+				angles[]={6.256525,0,0.017329043};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=60;
+			type="gm_ge_army_m109g";
+			atlOffset=1.9073486e-006;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={419.38461,19.611225,4438.3301};
+				angles[]={0.025027152,0,6.2345362};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=61;
+			type="gm_ge_army_m113a1g_apc_milan";
+			atlOffset=-0.0035438538;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={418.65411,19.827555,4429.7241};
+				angles[]={0.00069053395,0,6.2591596};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=63;
+			type="gm_ge_army_luchsa1";
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={410.65314,19.806189,4416.5146};
+				angles[]={6.2710862,0,6.2716665};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=64;
+			type="gm_ge_army_bpz2a0";
+			atlOffset=5.7220459e-006;
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={423.39569,19.600519,4430.5977};
+				angles[]={0.018567799,0,6.2312894};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=67;
+			type="gm_ge_army_fuchsa0_reconnaissance";
+			atlOffset=-0.00029754639;
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={430.41461,19.293941,4428.3804};
+				angles[]={0.018564589,0,6.2372131};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=69;
+			type="gm_ge_army_fuchsa0_command";
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={427.48312,19.268852,4436.7612};
+				angles[]={0.016900659,0,6.2393999};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=72;
+			type="gm_ge_army_m113a1g_apc_milan";
+			atlOffset=2.6702881e-005;
 		};
 	};
 };
