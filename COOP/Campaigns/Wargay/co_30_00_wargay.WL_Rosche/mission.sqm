@@ -165,7 +165,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=26;
+		items=23;
 		class Item0
 		{
 			dataType="Object";
@@ -457,16 +457,6 @@ class Mission
 		{
 			dataType="Group";
 			side="East";
-			class Attributes
-			{
-			};
-			id=111;
-			atlOffset=-6.6900001;
-		};
-		class Item18
-		{
-			dataType="Group";
-			side="East";
 			class Entities
 			{
 				items=4;
@@ -496,13 +486,12 @@ class Mission
 						angles[]={0.0066682254,0,6.2578578};
 					};
 					side="East";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=183;
 					type="gm_gc_airforce_pilot_pm_80_blu";
-					atlOffset=1.335144e-005;
+					atlOffset=2.1632442;
 				};
 				class Item2
 				{
@@ -519,6 +508,7 @@ class Mission
 					};
 					id=185;
 					type="gm_gc_airforce_pilot_pm_80_blu";
+					atlOffset=1.9073486e-006;
 				};
 				class Item3
 				{
@@ -529,12 +519,12 @@ class Mission
 						angles[]={0.0080009829,0,6.2551947};
 					};
 					side="East";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=186;
 					type="gm_gc_airforce_pilot_pm_80_blu";
+					atlOffset=2.1633549;
 				};
 			};
 			class Attributes
@@ -594,9 +584,9 @@ class Mission
 				};
 			};
 			id=180;
-			atlOffset=1.335144e-005;
+			atlOffset=-3.2424927e-005;
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Object";
 			class PositionInfo
@@ -611,9 +601,9 @@ class Mission
 			};
 			id=181;
 			type="gm_gc_airforce_mi2urn";
-			atlOffset=1.335144e-005;
+			atlOffset=-3.2424927e-005;
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Object";
 			class PositionInfo
@@ -628,18 +618,9 @@ class Mission
 			};
 			id=184;
 			type="gm_gc_airforce_mi2us";
+			atlOffset=-2.8610229e-005;
 		};
-		class Item21
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=192;
-			atlOffset=-6.6966667;
-		};
-		class Item22
+		class Item20
 		{
 			dataType="Group";
 			side="West";
@@ -773,17 +754,7 @@ class Mission
 			id=201;
 			atlOffset=-3.8146973e-006;
 		};
-		class Item23
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=205;
-			atlOffset=-6.6966667;
-		};
-		class Item24
+		class Item21
 		{
 			dataType="Object";
 			class PositionInfo
@@ -800,7 +771,7 @@ class Mission
 			type="gm_ge_army_bo105p_pah1a1";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item25
+		class Item22
 		{
 			dataType="Object";
 			class PositionInfo
