@@ -230,6 +230,7 @@ class CfgWargay
         class gm_penetrator_fagot_HEAT_9m111 : NO_DAMAGE {};
     };
 
+    // TODO: Consider adding vehicle cost for veterancy
     class Vehicles
     {
         // West Germany

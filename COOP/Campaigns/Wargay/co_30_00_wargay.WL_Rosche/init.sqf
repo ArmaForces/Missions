@@ -4,6 +4,7 @@ minviewdistance = 500;
 maxviewdistance = 10000;
 
 #define MAX_HP 10
+#define NO_ARMOR [0, 0, 0, 0]
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
 EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
 IconMode = 0;
@@ -18,6 +19,13 @@ AmmoTypes = createHashMapFromArray
         private _hashMap = createHashMap;
         _hashMap set ["damage", getNumber (_x >> "damage")];
         _hashMap set ["type", getText (_x >> "type")];
+        [toUpper configName _x, _hashMap]
+    });
+VehicleTypes = createHashMapFromArray
+    ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Vehicles")
+    apply {
+        private _hashMap = createHashMap;
+        _hashMap set ["armor", getArray (_x >> "armor")];
         [toUpper configName _x, _hashMap]
     });
 
@@ -237,7 +245,10 @@ fnc_handleDamage = {
     params ["_unit", "_hitDir", "_velocity", "_ammo"];
     _ammo params ["_hitValue", "_indirectHitValue", "_indirectHitRange", "_explosiveDamage", "_ammoClassName"];
 
-    private _unitArmor = getArray (missionConfigFile >> "CfgWargay" >> "Vehicles" >> typeof _unit >> "armor");
+    private _unitType = VehicleTypes getOrDefault [toUpper typeOf _unit, []];
+    private _unitArmor = if (_unitType isEqualTo []) then { NO_ARMOR } else {
+        _unitType getOrDefault ["armor", NO_ARMOR]
+    };
 
     private _armor = switch (_hitDir) do {
         case "FRONT": { _unitArmor select 0 };
@@ -248,7 +259,7 @@ fnc_handleDamage = {
     };
 
     private _ammoInfo = AmmoTypes getOrDefault [toUpper _ammoClassName, []];
-    if (_ammoInfo isEqualTo []) exitWith { systemChat format ["NoAmmoInfo '%1'", _ammoClassName] };
+    if (_ammoInfo isEqualTo []) exitWith { /*systemChat format ["NoAmmoInfo '%1'", _ammoClassName]*/ };
 
     private _ammoDamage = _ammoInfo getOrDefault ["damage", 0];
     if (_ammoDamage isEqualTo 0) exitWith {};
