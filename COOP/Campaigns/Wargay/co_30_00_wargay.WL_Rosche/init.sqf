@@ -12,6 +12,14 @@ IconMode = 0;
 
 HitpointHits = [];
 PositionHits = [];
+AmmoTypes = createHashMapFromArray
+    ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Ammo")
+    apply {
+        private _hashMap = createHashMap;
+        _hashMap set ["damage", getNumber (_x >> "damage")];
+        _hashMap set ["type", getText (_x >> "type")];
+        [toUpper configName _x, _hashMap]
+    });
 
 {
     _x addEventHandler ["HandleDamage", {
@@ -239,11 +247,14 @@ fnc_handleDamage = {
         default { 0 };
     };
 
-    private _ammoDamage = getNumber (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "damage");
+    private _ammoInfo = AmmoTypes getOrDefault [toUpper _ammoClassName, []];
+    if (_ammoInfo isEqualTo []) exitWith { systemChat format ["NoAmmoInfo '%1'", _ammoClassName] };
+
+    private _ammoDamage = _ammoInfo getOrDefault ["damage", 0];
     if (_ammoDamage isEqualTo 0) exitWith {};
 
     private _isUnknownAmmo = false;
-    private _ammoType = getText (missionConfigFile >> "CfgWargay" >> "Ammo" >> _ammoClassName >> "type");
+    private _ammoType = _ammoInfo getOrDefault ["type", "NONE"];
     private _damage = switch (_ammoType) do {
         case "AP": { [_armor, _ammoDamage, _velocity] call fnc_keDamage };
         case "HEAT": { [_armor, _ammoDamage] call fnc_heatDamage };
