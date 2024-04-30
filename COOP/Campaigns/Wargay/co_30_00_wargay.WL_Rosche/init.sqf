@@ -80,6 +80,10 @@ VehicleTypes = createHashMapFromArray
         diag_log format ["WARGAY DEBUG HIT PART [%1]: Selection: %2 Vector: %3, Velocity: %4", diag_tickTime, str _selection, str _vector, str _velocity];
         #endif
 
+        // Do not handle projectiles coming at a surface at extreme angles
+        private _velocityAndSurfaceProduct = vectorNormalized _velocity vectorDotProduct _vector;
+        if (_velocityAndSurfaceProduct < 0.15 && {_velocityAndSurfaceProduct > -0.15}) exitWith {};
+
         private _hitDir = [_target, _vector, _velocity, _position] call fnc_getHitDir;
 
         #ifdef DEV_DEBUG
