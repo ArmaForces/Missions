@@ -211,9 +211,15 @@ fnc_drawIcon = {
     if (!alive _target || {_target getVariable ["MDL_currentHp", 0] isEqualTo 0}) exitWith {};
     
     private _worldPos = _target modelToWorldVisual [0, 0, 1.5];
-    // TODO: Get short name instead of classname
     private _iconDescription = if (_includeText) then {
-        format ["%1 - %2", typeOf _target, [_target, " "] call fnc_currentHpString]
+        private _vehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _target, []];
+        private _vehicleDisplayNameShort = if (_vehicleInfo isEqualTo []) then {
+            private _hashMap = createHashMapFromArray [["displayNameShort", getText (configOf _target >> "displayNameShort")]];
+            VehicleTypes set [toUpper typeOf _target, _hashMap];
+        } else {
+            _vehicleInfo getOrDefault ["displayNameShort", getText (configOf _target >> "displayNameShort"), true]
+        };
+        format ["%1 - %2", _vehicleDisplayNameShort, [_target, " "] call fnc_currentHpString]
     } else { "" };
 
     private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
