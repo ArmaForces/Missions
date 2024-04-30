@@ -56,16 +56,30 @@ class CfgWargay
             Western Germany
         */
         // LARS-2
-        class gm_rocket_mlrs_110mm_he_dm21
+        class gm_rocket_mlrs_110mm_he_dm21 : NO_DAMAGE {};
+        class gm_warhead_mlrs_110mm_he_dm21
         {
             damage = 7;
             type = "HE";
         };
+        class gm_rocket_mlrs_110mm_icm_dm602 : NO_DAMAGE {};
+        class gm_penetrator_m77
+        {
+            damage = 6;
+            type = "HEAT";
+        };
         // M-109G
-        class gm_shell_155mm_he_dm21
+        class gm_shell_155mm_he_dm21 : NO_DAMAGE {};
+        class gm_warhead_155mm_he_dm21
         {
             damage = 7;
             type = "HE";
+        };
+        class gm_shell_155mm_icm_602 : NO_DAMAGE {};
+        class gm_warhead_155mm_icm_602
+        {
+            damage = 6;
+            type = "HEAT";
         };
 
         // Flakpanzer Gepard 1A1
@@ -122,6 +136,64 @@ class CfgWargay
         // TODO: Find proper class for it
         class gm_penetrator_hot_HEAT_dm102 : NO_DAMAGE {};
         class gm_penetrator_hot_HEAT_dm72 : NO_DAMAGE {};
+
+        // PzF 44
+        class gm_rocket_44x537mm_HEAT_dm32
+        {
+            damage = 16;
+            type = "HEAT";
+        };
+        class gm_penetrator_44x537mm_HEAT_dm32 : NO_DAMAGE {};
+        // PzF 3
+        class gm_rocket_60mm_HEAT_dm12
+        {
+            damage = 24;
+            type = "HEAT";
+        };
+        class gm_rocket_60mm_HEAT_dm22 : gm_rocket_60mm_HEAT_dm12
+        {
+            damage = 26;
+        };
+        class gm_rocket_60mm_HEAT_dm32 : gm_rocket_60mm_HEAT_dm12
+        {
+            damage = 28;
+        };
+        class gm_penetrator_60mm_HEAT_dm12 : NO_DAMAGE {};
+        class gm_penetrator_60mm_HEAT_dm22 : NO_DAMAGE {};
+        class gm_penetrator_60mm_HEAT_dm32 : NO_DAMAGE {};
+        // PzF 84 (Carl Gustav M2)
+        class gm_rocket_84x245mm_HEAT_T_DM12
+        {
+            damage = 18;
+            type = "HEAT";
+        };
+        class gm_rocket_84x245mm_HEAT_T_DM12A1 : gm_rocket_84x245mm_HEAT_T_DM12 {};
+        class gm_rocket_84x245mm_HEAT_T_DM22 : gm_rocket_84x245mm_HEAT_T_DM12
+        {
+            damage = 20;
+        };
+        class gm_rocket_84x245mm_HEAT_T_DM32 : gm_rocket_84x245mm_HEAT_T_DM12
+        {
+            damage = 22;
+        };
+        class gm_penetrator_84x245mm_HEAT_DM12 : NO_DAMAGE {};
+        class gm_penetrator_84x245mm_HEAT_DM12A1 : NO_DAMAGE {};
+        class gm_penetrator_84x245mm_HEAT_DM22 : NO_DAMAGE {};
+        class gm_penetrator_84x245mm_HEAT_DM32 : NO_DAMAGE {};
+        // M72A3 LAW
+        class gm_rocket_66mm_HEAT_m72a3
+        {
+            damage = 13;
+            type = "HEAT";
+        };
+        class gm_penetrator_66mm_HEAT_m72a3 : NO_DAMAGE {};
+
+        // FIM-43 (Redeye)
+        class gm_rocket_70mm_HE_m585
+        {
+            damage = 3;
+            type = "HE";
+        };
 
         /*
             Eastern Germany
@@ -189,10 +261,17 @@ class CfgWargay
         class gm_penetrator_122x447mm_heat_t_bk13 : NO_DAMAGE {};
 
         // BM-21
-        class gm_rocket_mlrs_122mm_he_9m22u
+        class gm_rocket_mlrs_122mm_he_9m22u : NO_DAMAGE {};
+        class gm_warhead_122mm_he_9m22u
         {
             damage = 7;
             type = "HE";
+        };
+        class gm_rocket_mlrs_122mm_icm_9m218 : NO_DAMAGE {};
+        class gm_penetrator_3b30
+        {
+            damage = 5;
+            type = "HEAT";
         };
 
         // 2P16
@@ -228,6 +307,40 @@ class CfgWargay
             type = "HEAT";
         };
         class gm_penetrator_fagot_HEAT_9m111 : NO_DAMAGE {};
+
+        
+        class gm_rocket_40mm_HEAT_pg7v
+        {
+            damage = 14;
+            type = "HEAT";
+        };
+        class gm_penetrator_40mm_HEAT_pg7v : NO_DAMAGE {};
+        class gm_rocket_40mm_HEAT_pg7v1
+        {
+            damage = 17;
+            type = "HEAT";
+        };
+        class gm_penetrator_40mm_HEAT_pg7v1 : NO_DAMAGE {};
+        class gm_rocket_55mm_HE_s5
+        {
+            damage = 1;
+            type = "HE";
+        };
+        class gm_rocket_55mm_heat_s5k
+        {
+            damage = 2;
+            type = "HEAT";
+        };
+        class gm_penetrator_55mm_heat_s5k : NO_DAMAGE {};
+        class gm_rocket_64mm_HEAT_pg18
+        {
+            damage = 15;
+            type = "HEAT";
+        };
+        class gm_penetrator_64mm_HEAT_pg18 : NO_DAMAGE {};
+
+        // Strela-2
+        class gm_rocket_72mm_HE_9m32m : gm_rocket_70mm_HE_m585 {};
     };
 
     // TODO: Consider adding vehicle cost for veterancy
