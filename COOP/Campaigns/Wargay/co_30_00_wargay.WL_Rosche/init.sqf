@@ -86,7 +86,7 @@ VehicleTypes = createHashMapFromArray
 
         // Do not handle projectiles coming at a surface at extreme angles
         private _velocityAndSurfaceProduct = vectorNormalized _velocity vectorDotProduct _vector;
-        if (_velocityAndSurfaceProduct < 0.15 && {_velocityAndSurfaceProduct > -0.15}) exitWith {};
+        if (_velocity isNotEqualTo [0, 0, 0] && {_velocityAndSurfaceProduct < 0.15 && {_velocityAndSurfaceProduct > -0.15}}) exitWith {};
 
         private _hitDir = [_target, _vector, _velocity, _position] call fnc_getHitDir;
 
@@ -98,7 +98,9 @@ VehicleTypes = createHashMapFromArray
 
         _projectile setVariable [str _target, true];
 
-        [_target, _hitDir, _velocity, _ammo] call fnc_handleDamage;
+        private _hitPosition = if (_isDirect) then { [] } else { ASLToAGL _position };
+
+        [_target, _hitDir, _hitPosition, _velocity, _ammo] call fnc_handleDamage;
     }];
 
     _x setVariable ["MDL_HitPartEHID", _ehId];
@@ -272,7 +274,7 @@ fnc_drawIcon = {
 #define VELOCITY_STEP 150
 
 fnc_handleDamage = {
-    params ["_unit", "_hitDir", "_velocity", "_ammo"];
+    params ["_unit", "_hitDir", "_hitPositionAGL", "_velocity", "_ammo"];
     _ammo params ["_hitValue", "_indirectHitValue", "_indirectHitRange", "_explosiveDamage", "_ammoClassName"];
 
     private _unitType = VehicleTypes getOrDefault [toUpper typeOf _unit, []];
@@ -307,7 +309,10 @@ fnc_handleDamage = {
     private _damage = switch (_ammoType) do {
         case "AP": { [_armor, _ammoDamage, _velocity] call fnc_keDamage };
         case "HEAT": { [_armor, _ammoDamage] call fnc_heatDamage };
-        case "HE" : { [_armor, _ammoDamage] call fnc_heDamage };
+        case "HE" : {
+            private _distanceToTarget = if (_hitPositionAGL isEqualTo []) then { 0 } else { getPosATL _unit distance _hitPositionAGL };
+            [_armor, _ammoDamage, _distanceToTarget] call fnc_heDamage
+        };
         default { _isUnknownAmmo = true; 0 };
     };
 
@@ -401,7 +406,11 @@ fnc_keDamage = {
 
 // TODO: Consider distance from projectile
 fnc_heDamage = {
-    params ["_armor", "_ammoBaseDamage"];
+    params ["_armor", "_ammoBaseDamage", "_distanceToTarget"];
+
+    #ifdef DEV_DEBUG
+    diag_log format ["WARGAY DEBUG HE DAMAGE [%1]: %2 AV, %3 HE, %4 m to target", diag_tickTime, _armor, _ammoBaseDamage, _distanceToTarget];
+    #endif
 
     fnc_damagePerHe = {
         params ["_armor"];
@@ -416,5 +425,8 @@ fnc_heDamage = {
         0.01
     };
 
-    _ammoBaseDamage * ([_armor] call fnc_damagePerHe);
+    private _damage = _ammoBaseDamage * ([_armor] call fnc_damagePerHe);
+    private _maxDistanceToTarget = _damage^2 + 1;
+    private _calculatedDamage = _damage * ((_maxDistanceToTarget - _distanceToTarget)/_maxDistanceToTarget);
+    0 max _calculatedDamage
 };
