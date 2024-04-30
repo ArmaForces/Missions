@@ -43,22 +43,22 @@ VehicleTypes = createHashMapFromArray
             // Exclude total damage info (_context == 0), FakeHeadHit (3) and TotalDamageBeforeBleeding (4)
             if (_context isEqualTo 0 || {_context > 2}) exitWith { damage _unit };
 
-#ifdef DEV_DEBUG
+            #ifdef DEV_DEBUG
             diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: %2", diag_tickTime, str _this];
-#endif
+            #endif
 
             private _selectionHitpointName = getText (configOf _unit >> "Hitpoints" >> _hitPoint >> "name");
             private _modelHitpointPosition = _unit selectionPosition _selectionHitpointName;
 
-#ifdef DEV_DEBUG
+            #ifdef DEV_DEBUG
             diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: Model hitpoint name '%2' and position %3", diag_tickTime, _selectionHitpointName, str _modelHitpointPosition];
-#endif
+            #endif
 
             if (_modelHitpointPosition isEqualTo [0, 0, 0]) exitWith { damage _unit };
 
-#ifdef DEV_DEBUG
+            #ifdef DEV_DEBUG
             HitpointHits pushBackUnique (_unit modelToWorld _modelHitpointPosition);
-#endif
+            #endif
 
             0
         }
@@ -74,9 +74,9 @@ VehicleTypes = createHashMapFromArray
 
         if (_isHandledForTarget) exitWith {};
 
-#ifdef DEV_DEBUG
+        #ifdef DEV_DEBUG
         diag_log format ["WARGAY DEBUG HIT PART [%1]: Selection: %2 Vector: %3, Velocity: %4", diag_tickTime, str _selection, str _vector, str _velocity];
-#endif
+        #endif
 
         private _targetDir = getDir _target;
         private _xyHitDir = _vector#0 atan2 _vector#1;
@@ -93,9 +93,9 @@ VehicleTypes = createHashMapFromArray
             "SIDE"
         };
 
-#ifdef DEV_DEBUG
+        #ifdef DEV_DEBUG
         PositionHits pushBack (_position);
-#endif
+        #endif
 
         _projectile setVariable [str _target, true];
 
@@ -107,14 +107,14 @@ VehicleTypes = createHashMapFromArray
 } forEach vehicles;
 
 addMissionEventHandler ["Draw3D", {
-#ifdef DEV_DEBUG
+    #ifdef DEV_DEBUG
     {
         drawIcon3D ["#(argb,8,8,3)color(1,0,0,1)", [1,1,1,1], _x, 0.25, 0.25, 0, "Hit", 0, 0.03];
     } forEach HitpointHits;
     {
         drawIcon3D ["#(argb,8,8,3)color(0,0,1,1)", [1,1,1,1], ASLToAGL _x, 0.25, 0.25, 0, "Hit", 0, 0.03];
     } forEach PositionHits;
-#endif
+    #endif
 
     fnc_getGroupVehicles = {
         params ["_group"];
@@ -260,18 +260,18 @@ fnc_handleDamage = {
     };
 
     if (_isUnknownAmmo) exitWith {
-#ifdef DEV_DEBUG
+        #ifdef DEV_DEBUG
         private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
         systemChat _infoMsg;
         diag_log _infoMsg;
-#endif
+        #endif
     };
 
-#ifdef DEV_DEBUG
+    #ifdef DEV_DEBUG
     private _infoMsg = format ["Potential damage: %1 %2, Hit armor: %3 %4, Actual damage: %5", _ammoDamage, _ammoType, _hitDir, _armor, _damage];
     systemChat _infoMsg;
     diag_log _infoMsg;
-#endif
+    #endif
 
     if (_damage isEqualTo 0) exitWith {};
 
@@ -287,9 +287,9 @@ fnc_handleDamage = {
         _unit removeEventHandler ["HitPart", _ehId];
     };
 
-#ifdef DEV_DEBUG
+    #ifdef DEV_DEBUG
     systemChat format ["Remaining HP: %1/10", _newHp];
-#endif
+    #endif
 
     _unit setVariable ["MDL_currentHp", _newHp, true];
     ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
