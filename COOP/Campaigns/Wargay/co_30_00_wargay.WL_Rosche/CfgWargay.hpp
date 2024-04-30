@@ -56,6 +56,39 @@ class CfgWargay
             type = "HE";
         };
 
+        /* ACE Fragmentation */
+        class ace_frag_tiny
+        {
+            damage = 0.1;
+            type = "HE";
+        };
+        class ace_frag_tiny_HD : ace_frag_tiny {};
+        class ace_frag_small
+        {
+            damage = 0.2;
+            type = "HE";
+        };
+        class ace_frag_small_HD : ace_frag_small {};
+        class ace_frag_medium
+        {
+            damage = 0.5;
+            type = "HE";
+        };
+        class ace_frag_medium_HD : ace_frag_medium {};
+        class ace_frag_large
+        {
+            damage = 1;
+            type = "HE";
+        };
+        class ace_frag_large_HD : ace_frag_large {};
+        class ace_frag_huge
+        {
+            damage = 2;
+            type = "HE";
+        };
+        class ace_frag_huge_HD : ace_frag_huge {};
+
+
         /*
             Western Germany
         */
