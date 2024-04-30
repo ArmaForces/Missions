@@ -41,14 +41,13 @@ VehicleTypes = createHashMapFromArray
     _x addEventHandler ["HandleDamage", {
         params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint", "_directHit", "_context"];
 
-        // BUG: Can crash with a helicopter into things without consequences (except for when crashing rotor)
         call {
             // Exclude total damage info (_context == 0), FakeHeadHit (3) and TotalDamageBeforeBleeding (4)
             if (_context isEqualTo 0 || {_context > 2}) exitWith { damage _unit };
             
             // Most likely a collision so let the engine handle it
             if (_projectile isEqualTo "" && {isNull _instigator}) exitWith {};
-            // TODO: Consider changing unit damage to reflect HP
+            // TODO: Consider changing HP afterwards somehow
 
             #ifdef DEV_DEBUG
             diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: %2", diag_tickTime, str _this];
@@ -331,7 +330,7 @@ fnc_handleDamage = {
     private _currentHp = _unit getVariable ["MDL_currentHp", 10];
     private _newHp = _currentHp - _damage;
 
-    if (_newHp <= 0) then {
+    if (_newHp <= 0) exitWith {
         _unit setVariable ["MDL_currentHp", 0, true];
         {_x setDamage 1} forEach crew _unit;
         _unit setDamage 1;
@@ -345,6 +344,8 @@ fnc_handleDamage = {
     #endif
 
     _unit setVariable ["MDL_currentHp", _newHp, true];
+    // Limit to 0.8 to avoid explosions when hull or fuel are almost destroyed
+    _unit setDamage ((_newHp/MAX_HP) min 0.8);
     ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
 };
 
