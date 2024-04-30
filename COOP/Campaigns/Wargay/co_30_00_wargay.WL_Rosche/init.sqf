@@ -3,7 +3,7 @@
 minviewdistance = 500;
 maxviewdistance = 10000;
 
-// #define DEV_DEBUG
+#define DEV_DEBUG
 #define MAX_HP 10
 #define NO_ARMOR [0, 0, 0, 0]
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
@@ -116,36 +116,54 @@ addMissionEventHandler ["Draw3D", {
     } forEach PositionHits;
 #endif
 
+    fnc_getGroupVehicles = {
+        params ["_group"];
+        private _groupVehicles = units _group apply { vehicle _x } select {_x isKindOf "AllVehicles"};
+        _groupVehicles arrayIntersect _groupVehicles
+    };
+
     // Always draw icon for cursor object;
-    [cursorObject, true] call fnc_drawIcon;
+    private _vehiclesWithIcons = [[cursorObject, true]];
     curatorMouseOver params ["_type", "_entity", "_index"];
     if (_type isEqualTo "OBJECT") then {
-        [_entity, true] call fnc_drawIcon;
+        _vehiclesWithIcons pushBackUnique [_entity, true];
     };
     if (_type isEqualTo "GROUP") then {
-        private _groupVehicles = units _entity apply { vehicle _x } select {_x isKindOf "AllVehicles"};
         {
-            [_x, true] call fnc_drawIcon;
-        } forEach (_groupVehicles arrayIntersect _groupVehicles);
+            _vehiclesWithIcons pushBackUnique [_x, true];
+        } forEach ([_entity] call fnc_getGroupVehicles);
     };
+    
+    curatorSelected params ["_objects", "_groups"];
+    {
+        _vehiclesWithIcons pushBackUnique [_x, true];
+    } forEach _objects;
+    {
+        {
+            _vehiclesWithIcons pushBackUnique [_x, true];
+        } forEach ([_x] call fnc_getGroupVehicles);
+    } forEach _groups;
 
     switch (IconMode) do {
         // Friendly and enemy
         case 0: {
             {
-                [_x] call fnc_drawIcon;
+                _vehiclesWithIcons pushBackUnique [_x, false];
             } forEach (vehicles select {side effectiveCommander _x isNotEqualTo SideUNKNOWN});
         };
         // Enemy only
         case 1: {
             {
-                [_x] call fnc_drawIcon;
+                _vehiclesWithIcons pushBackUnique [_x, false];
             } forEach (vehicles select {side effectiveCommander _x isNotEqualTo SideUNKNOWN && {side effectiveCommander _x isEqualTo EAST}});
         };
         default {};
     };
-    private _vehicle = cursorObject;
-    [_vehicle] call fnc_drawIcon;
+
+    // Draws icons. Might draw an icon twice for one object if it's targeted/highlighted.
+    {
+        _x call fnc_drawIcon;
+    } forEach _vehiclesWithIcons;
 }];
 
 fnc_drawIcon = {
@@ -262,6 +280,7 @@ fnc_handleDamage = {
 
     if (_newHp <= 0) then {
         _unit setVariable ["MDL_currentHp", 0, true];
+        {_x setDamage 1} forEach crew _unit;
         _unit setDamage 1;
 
         private _ehId = _unit getVariable ["MDL_HitPartEHID", -1];
@@ -317,8 +336,10 @@ fnc_heatDamage = {
 // Not using distance as velocity seems to fit better
 fnc_keDamage = {
     params ["_armor", "_ammoBaseDamage", "_velocity"];
+    if (_armor isEqualTo 0) exitWith { 2 * _ammoBaseDamage };
+
     private _damageNoArmor = _ammoBaseDamage - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
-    private _damagePart1 = (_damageNoArmor * (2 - _armor)) max 0; // Twice for 0 armor, standard for 1 armor, 0 for 2 armor
+    private _damagePart1 = (_damageNoArmor * (2 - _armor)) max 0; // Standard for 1 armor, 0 for 2 armor
     private _damagePart2 = _damageNoArmor - (_damageNoArmor/2) - (_armor - 2) * 0.5; // Half for 2 armor, decreasing .5 for every additional armor point
     
     _damagePart1 max _damagePart2

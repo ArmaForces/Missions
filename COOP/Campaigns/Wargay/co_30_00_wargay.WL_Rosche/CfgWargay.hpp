@@ -132,8 +132,17 @@ class CfgWargay
         class gm_penetrator_milan_HEAT_dm82 : NO_DAMAGE {};
         class gm_penetrator_milan_HEAT_dm92 : NO_DAMAGE {};
 
-        // Hot
-        // TODO: Find proper class for it
+        // Hot 1 & 2
+        class gm_missile_hot_heat_dm72
+        {
+            damage = 22;
+            type = "HEAT";
+        };
+        class gm_missile_hot_heat_dm102
+        {
+            damage = 25;
+            type = "HEAT";
+        };
         class gm_penetrator_hot_HEAT_dm102 : NO_DAMAGE {};
         class gm_penetrator_hot_HEAT_dm72 : NO_DAMAGE {};
 
@@ -341,6 +350,12 @@ class CfgWargay
 
         // Strela-2
         class gm_rocket_72mm_HE_9m32m : gm_rocket_70mm_HE_m585 {};
+
+        class gm_bullet_762x54mmR_B_T_7t2
+        {
+            damage = 0.1;
+            type = "AP";
+        };
     };
 
     // TODO: Consider adding vehicle cost for veterancy
