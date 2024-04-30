@@ -22,7 +22,6 @@ class CfgWargay
 
     class Ammo
     {
-        // TODO: Get values for infantry launchers
         class NO_DAMAGE
         {
             damage = 0;
@@ -34,6 +33,11 @@ class CfgWargay
         {
             damage = 1;
             type = "HE";
+        };
+        class SMALL_ARMS
+        {
+            damage = 0.1;
+            type = "AP";
         };
         class HMG_HE : AA_HE {};
         class HMG_AP
@@ -350,12 +354,6 @@ class CfgWargay
 
         // Strela-2
         class gm_rocket_72mm_HE_9m32m : gm_rocket_70mm_HE_m585 {};
-
-        class gm_bullet_762x54mmR_B_T_7t2
-        {
-            damage = 0.1;
-            type = "AP";
-        };
     };
 
     // TODO: Consider adding vehicle cost for veterancy

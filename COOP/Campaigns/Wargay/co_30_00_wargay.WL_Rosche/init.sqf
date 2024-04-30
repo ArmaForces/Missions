@@ -41,9 +41,14 @@ VehicleTypes = createHashMapFromArray
     _x addEventHandler ["HandleDamage", {
         params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint", "_directHit", "_context"];
 
+        // BUG: Can crash with a helicopter into things without consequences (except for when crashing rotor)
         call {
             // Exclude total damage info (_context == 0), FakeHeadHit (3) and TotalDamageBeforeBleeding (4)
             if (_context isEqualTo 0 || {_context > 2}) exitWith { damage _unit };
+            
+            // Most likely a collision so let the engine handle it
+            if (_projectile isEqualTo "" && {isNull _instigator}) exitWith {};
+            // TODO: Consider changing unit damage to reflect HP
 
             #ifdef DEV_DEBUG
             diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: %2", diag_tickTime, str _this];
@@ -279,7 +284,15 @@ fnc_handleDamage = {
     };
 
     private _ammoInfo = AmmoTypes getOrDefault [toUpper _ammoClassName, []];
-    if (_ammoInfo isEqualTo []) exitWith { diag_log format ["NoAmmoInfo '%1'", _ammoClassName] };
+    if (_ammoInfo isEqualTo []) then {
+        // Try to recover for small arms as I was lazy and didn't want to copy all the ammo classes
+        private _isSmallArms = getNumber (configFile >> "CfgAmmo" >> _ammoClassName >> "caliber") < 1;
+        if (_isSmallArms) then {
+            private _hashMap = AmmoTypes get "SMALL_ARMS";
+            AmmoTypes set [toUpper _ammoClassName, _hashMap];
+        };
+    };
+    if (_ammoInfo isEqualTo []) exitWith {};
 
     private _ammoDamage = _ammoInfo getOrDefault ["damage", 0];
     if (_ammoDamage isEqualTo 0) exitWith {};
