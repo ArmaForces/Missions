@@ -4,6 +4,8 @@ minviewdistance = 500;
 maxviewdistance = 10000;
 
 #define MAX_HP 10
+WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
+EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
 
 /* Custom test things */
 
@@ -80,14 +82,23 @@ addMissionEventHandler ["Draw3D", {
     } forEach PositionHits;
 
     private _vehicle = cursorObject;
-    if (_vehicle getVariable ["MDL_currentHp", 0] isEqualTo 0) exitWith {};
+    if (!alive _vehicle || {_vehicle getVariable ["MDL_currentHp", 0] isEqualTo 0}) exitWith {};
     
     private _worldPos = _vehicle modelToWorldVisual [0, 0, 3];
     // TODO: Get short name instead of classname
     private _iconDescription = format ["%1 - %2", typeOf _vehicle, [_vehicle, " "] call fnc_currentHpString];
 
     // TODO: NATO icons?
-    drawIcon3D ["#(argb,8,8,3)color(0.8,0,0,1)", [1,1,1,1], _worldPos, 0.25, 0.25, 0, _iconDescription, 0, 0.025, "EtelkaMonospacePro"];
+    private _icon = [_vehicle] call afft_friendly_tracker_fnc_getVehicleMarkerType;
+    private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
+    private _aspectRatio = safeZoneW/safeZoneH;
+    private _iconWidth = (0.025 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
+    private _iconHeight = _iconWidth;
+    // private _iconHeight = _iconWidth * _aspectRatio;
+    // private _iconHeight = (0.05 * safeZoneH) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeHeight");
+    private _sideColor = if (side effectiveCommander _vehicle isEqualTo WEST) then { WestIconColor } else { EastIconColor };
+    drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.025, "EtelkaMonospacePro"];
+    // drawIcon3D ["#(argb,8,8,3)color(0.8,0,0,1)", [1,1,1,1], _worldPos, 0.25, 0.25, 0, _iconDescription, 0, 0.025, "EtelkaMonospacePro"];
 }];
 
 // addMissionEventHandler ["Draw3D", {

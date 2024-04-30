@@ -7,6 +7,19 @@
 
 class CfgWargay
 {
+    westMarkerColor[] = {
+        __EVAL(96/256),
+        __EVAL(159/256),
+        __EVAL(197/256),
+        0.85
+    };
+    eastMarkerColor[] = {
+        __EVAL(192/256),
+        __EVAL(29/256),
+        __EVAL(46/256),
+        0.85
+    };
+
     class Ammo
     {
         // TODO: Get values for infantry launchers
