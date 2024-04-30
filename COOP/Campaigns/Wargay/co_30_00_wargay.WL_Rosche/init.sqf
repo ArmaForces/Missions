@@ -115,13 +115,8 @@ fnc_getHitDir = {
     private _targetDir = vectorDir _target;
     
     private _dotProduct = _targetDir vectorDotProduct _surfaceVectorNormalized;
-    // private _xyHitDir = _surfaceVector#0 atan2 _surfaceVector#1;
     private _topHitDir = _surfaceVector#2 atan2 sqrt (_surfaceVector#0^2 + _surfaceVector#1^2);
     
-    // private _relativeDir = _targetDir - _xyHitDir;
-
-    // BUG: REAR is often reported in FRONT
-    // TODO: Require velocity to be somewhat downwards relative to hit surface to score TOP hit rather than other ones
     private _hitDir = if (_topHitDir > 70) then {
         "TOP"
     } else {
