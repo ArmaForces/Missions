@@ -15,6 +15,8 @@ IconMode = 0;
 #ifdef DEV_DEBUG
 HitpointHits = [];
 PositionHits = [];
+SurfaceVectors = [];
+VelocityVectors = [];
 #endif
 
 AmmoTypes = createHashMapFromArray
@@ -78,23 +80,12 @@ VehicleTypes = createHashMapFromArray
         diag_log format ["WARGAY DEBUG HIT PART [%1]: Selection: %2 Vector: %3, Velocity: %4", diag_tickTime, str _selection, str _vector, str _velocity];
         #endif
 
-        private _targetDir = getDir _target;
-        private _xyHitDir = _vector#0 atan2 _vector#1;
-        private _topHitDir = _vector#2 atan2 sqrt (_vector#0^2 + _vector#1^2);
-
-        private _relativeDir = _targetDir - _xyHitDir;
-
-        // BUG: REAR is often reported in FRONT
-        private _hitDir = if (_topHitDir > 70) then {
-            "TOP"
-        } else {
-            if (_relativeDir > -50 && {_relativeDir < 50}) exitWith { "FRONT" };
-            if (_relativeDir < -120 || {_relativeDir > 120}) exitWith { "REAR" };
-            "SIDE"
-        };
+        private _hitDir = [_target, _vector, _velocity, _position] call fnc_getHitDir;
 
         #ifdef DEV_DEBUG
         PositionHits pushBack (_position);
+        SurfaceVectors pushBack ([_position, _vector]);
+        VelocityVectors pushBack ([_position, _velocity]);
         #endif
 
         _projectile setVariable [str _target, true];
@@ -106,6 +97,42 @@ VehicleTypes = createHashMapFromArray
     _x setVariable ["MDL_currentHp", MAX_HP];
 } forEach vehicles;
 
+fnc_getHitDir = {
+    params ["_target", "_surfaceVector", "_velocity", "_hitWorldPosition"];
+
+    private _hitModelPosition = _target worldToModel _hitWorldPosition;
+    private _surfaceVectorNormalized = vectorNormalized _surfaceVector;
+    private _velocityVectorNormalized = vectorNormalized _velocity;
+
+    #ifdef DEV_DEBUG
+    diag_log format ["WARGAY DEBUG GET HIT DIR [%1]: Target: %2, Vector: %3, Velocity: %4, HitPosition: %5", diag_tickTime, _target, _surfaceVector, _velocity, _hitModelPosition];
+    #endif
+    
+    private _targetDir = vectorDir _target;
+    
+    private _dotProduct = _targetDir vectorDotProduct _surfaceVectorNormalized;
+    // private _xyHitDir = _surfaceVector#0 atan2 _surfaceVector#1;
+    private _topHitDir = _surfaceVector#2 atan2 sqrt (_surfaceVector#0^2 + _surfaceVector#1^2);
+    
+    // private _relativeDir = _targetDir - _xyHitDir;
+
+    // BUG: REAR is often reported in FRONT
+    // TODO: Require velocity to be somewhat downwards relative to hit surface to score TOP hit rather than other ones
+    private _hitDir = if (_topHitDir > 70) then {
+        "TOP"
+    } else {
+        if (_dotProduct > 0.5) exitWith { "FRONT" };
+        if (_dotProduct < -0.5) exitWith { "REAR" };
+        "SIDE"
+    };
+
+    #ifdef DEV_DEBUG
+    diag_log format ["WARGAY DEBUG GET HIT DIR [%1]: Target Dir: %2, Dot product: %3, Top='%4'", diag_tickTime, _targetDir, _dotProduct, _topHitDir];
+    #endif
+
+    _hitDir
+};
+
 addMissionEventHandler ["Draw3D", {
     #ifdef DEV_DEBUG
     {
@@ -114,6 +141,14 @@ addMissionEventHandler ["Draw3D", {
     {
         drawIcon3D ["#(argb,8,8,3)color(0,0,1,1)", [1,1,1,1], ASLToAGL _x, 0.25, 0.25, 0, "Hit", 0, 0.03];
     } forEach PositionHits;
+    {
+        _x params ["_position", "_vector"];
+        drawLine3D [ASLToAGL _position, ASLToAGL _position vectorAdd vectorNormalized _vector, [0,1,0,1]];
+    } forEach SurfaceVectors;
+    {
+        _x params ["_position", "_vector"];
+        drawLine3D [ASLToAGL _position, ASLToAGL _position vectorAdd vectorNormalized _vector, [0,0,1,1]];
+    } forEach VelocityVectors;
     #endif
 
     fnc_getGroupVehicles = {
