@@ -279,11 +279,12 @@ fnc_handleDamage = {
 
 ["MDL_showCurrentHp", {
     params ["_vehicle"];
-    // if (vehicle player isNotEqualTo _vehicle) exitWith {};
+    if (vehicle player isNotEqualTo _vehicle) exitWith {};
 
     private _string = [_vehicle, "_"] call fnc_currentHpString;
-    private _text = composeText [_string];
-    [_text] call ACE_common_fnc_displayTextStructured;
+    titleText ["\n\n\n\n\n" + _string, "PLAIN", 0.3, true];
+    // private _text = composeText [_string];
+    // [_text] call ACE_common_fnc_displayTextStructured;
 }] call CBA_fnc_addEventHandler;
 
 fnc_currentHpString = {
