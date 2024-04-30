@@ -6,6 +6,7 @@ maxviewdistance = 10000;
 #define MAX_HP 10
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
 EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
+IconMode = 0;
 
 /* Custom test things */
 
@@ -81,25 +82,49 @@ addMissionEventHandler ["Draw3D", {
         drawIcon3D ["#(argb,8,8,3)color(0,0,1,1)", [1,1,1,1], ASLToAGL _x, 0.25, 0.25, 0, "Hit", 0, 0.03];
     } forEach PositionHits;
 
-    private _vehicle = cursorObject;
-    if (!alive _vehicle || {_vehicle getVariable ["MDL_currentHp", 0] isEqualTo 0}) exitWith {};
-    
-    private _worldPos = _vehicle modelToWorldVisual [0, 0, 3];
-    // TODO: Get short name instead of classname
-    private _iconDescription = format ["%1 - %2", typeOf _vehicle, [_vehicle, " "] call fnc_currentHpString];
+    // Always draw icon for cursor object;
+    [cursorObject, true] call fnc_drawIcon;
 
-    // TODO: NATO icons?
-    private _icon = [_vehicle] call afft_friendly_tracker_fnc_getVehicleMarkerType;
+    switch (IconMode) do {
+        // Friendly and enemy
+        case 0: {
+            {
+                [_x] call fnc_drawIcon;
+            } forEach (vehicles select {side effectiveCommander _x isNotEqualTo SideUNKNOWN});
+        };
+        // Enemy only
+        case 1: {
+            {
+                [_x] call fnc_drawIcon;
+            } forEach (vehicles select {side effectiveCommander _x isNotEqualTo SideUNKNOWN && {side effectiveCommander _x isEqualTo EAST}});
+        };
+        default {};
+    };
+    private _vehicle = cursorObject;
+    [_vehicle] call fnc_drawIcon;
+}];
+
+fnc_drawIcon = {
+    params ["_target", ["_includeText", false]];
+
+    if (!alive _target || {_target getVariable ["MDL_currentHp", 0] isEqualTo 0}) exitWith {};
+    
+    private _worldPos = _target modelToWorldVisual [0, 0, 1.5];
+    // TODO: Get short name instead of classname
+    private _iconDescription = if (_includeText) then {
+        format ["%1 - %2", typeOf _target, [_target, " "] call fnc_currentHpString]
+    } else { "" };
+
+    private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
     private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
     private _aspectRatio = safeZoneW/safeZoneH;
-    private _iconWidth = (0.025 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
+    private _iconWidth = (0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
     private _iconHeight = _iconWidth;
     // private _iconHeight = _iconWidth * _aspectRatio;
     // private _iconHeight = (0.05 * safeZoneH) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeHeight");
-    private _sideColor = if (side effectiveCommander _vehicle isEqualTo WEST) then { WestIconColor } else { EastIconColor };
-    drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.025, "EtelkaMonospacePro"];
-    // drawIcon3D ["#(argb,8,8,3)color(0.8,0,0,1)", [1,1,1,1], _worldPos, 0.25, 0.25, 0, _iconDescription, 0, 0.025, "EtelkaMonospacePro"];
-}];
+    private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { WestIconColor } else { EastIconColor };
+    drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
+};
 
 // addMissionEventHandler ["Draw3D", {
 //     private _veh = cursorObject;
