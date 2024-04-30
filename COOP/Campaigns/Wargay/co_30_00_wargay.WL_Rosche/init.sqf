@@ -3,6 +3,8 @@
 minviewdistance = 500;
 maxviewdistance = 10000;
 
+#define MAX_HP 10
+
 /* Custom test things */
 
 HitpointHits = [];
@@ -12,7 +14,7 @@ PositionHits = [];
     _x addEventHandler ["HandleDamage", {
         params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint", "_directHit", "_context"];
 
-        if (_context isEqualTo 0 || {_context > 2}) exitWith { damage _unit };
+        if (_context isEqualTo 0 || {_context > 2}) exitWith { 0 };
 
         diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: %2", diag_tickTime, str _this];
 
@@ -20,7 +22,7 @@ PositionHits = [];
         private _modelHitpointPosition = _unit selectionPosition _selectionHitpointName;
         diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: Model hitpoint name '%2' and position %3", diag_tickTime, _selectionHitpointName, str _modelHitpointPosition];
 
-        if (_modelHitpointPosition isEqualTo [0, 0, 0]) exitWith { damage _unit };
+        if (_modelHitpointPosition isEqualTo [0, 0, 0]) exitWith { 0 };
 
         HitpointHits pushBackUnique (_unit modelToWorld _modelHitpointPosition);
 
@@ -66,6 +68,7 @@ PositionHits = [];
     }];
 
     _x setVariable ["MDL_HitPartEHID", _ehId];
+    _x setVariable ["MDL_currentHp", MAX_HP];
 } forEach vehicles;
 
 addMissionEventHandler ["Draw3D", {
@@ -75,6 +78,16 @@ addMissionEventHandler ["Draw3D", {
     {
         drawIcon3D ["#(argb,8,8,3)color(0,0,1,1)", [1,1,1,1], ASLToAGL _x, 0.25, 0.25, 0, "Hit", 0, 0.03];
     } forEach PositionHits;
+
+    private _vehicle = cursorObject;
+    if (_vehicle getVariable ["MDL_currentHp", 0] isEqualTo 0) exitWith {};
+    
+    private _worldPos = _vehicle modelToWorldVisual [0, 0, 3];
+    // TODO: Get short name instead of classname
+    private _iconDescription = format ["%1 - %2", typeOf _vehicle, [_vehicle, " "] call fnc_currentHpString];
+
+    // TODO: NATO icons?
+    drawIcon3D ["#(argb,8,8,3)color(0.8,0,0,1)", [1,1,1,1], _worldPos, 0.25, 0.25, 0, _iconDescription, 0, 0.025, "EtelkaMonospacePro"];
 }];
 
 // addMissionEventHandler ["Draw3D", {
@@ -209,9 +222,7 @@ fnc_handleDamage = {
     systemChat _infoMsg;
     diag_log _infoMsg;
 
-    if (_damage isEqualTo 0) exitWith {
-        systemChat format ["No damage applied for ammo '%1'", _ammoClassName];
-    };
+    if (_damage isEqualTo 0) exitWith {};
 
     private _currentHp = _unit getVariable ["MDL_currentHp", 10];
     private _newHp = _currentHp - _damage;
@@ -232,22 +243,28 @@ fnc_handleDamage = {
 
 ["MDL_showCurrentHp", {
     params ["_vehicle"];
-    if (vehicle player isNotEqualTo _vehicle) exitWith {};
+    // if (vehicle player isNotEqualTo _vehicle) exitWith {};
 
-    private _currentHp = _vehicle getVariable ["MDL_currentHp", 0];
+    private _string = [_vehicle, "_"] call fnc_currentHpString;
+    private _text = composeText [_string];
+    [_text] call ACE_common_fnc_displayTextStructured;
+}] call CBA_fnc_addEventHandler;
+
+fnc_currentHpString = {
+    params ["_unit", ["_nonDamagedMark", "_"]];
+    private _currentHp = _unit getVariable ["MDL_currentHp", 0];
     private _missingHp = 10 - _currentHp;
 
     private _string = "";
     for "_a" from 1 to round _currentHp do {
-        _string = _string + "[_]";
+        _string = _string + "[" + _nonDamagedMark + "]";
     };
     for "_a" from 1 to round _missingHp do {
         _string = _string + "[X]";
     };
     
-    private _text = composeText [_string];
-    [_text] call ACE_common_fnc_displayTextStructured;
-}] call CBA_fnc_addEventHandler;
+    _string
+};
 
 fnc_heatDamage = {
     params ["_armor", "_ammoBaseDamage"];
