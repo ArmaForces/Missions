@@ -17,19 +17,22 @@ PositionHits = [];
     _x addEventHandler ["HandleDamage", {
         params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint", "_directHit", "_context"];
 
-        if (_context isEqualTo 0 || {_context > 2}) exitWith { 0 };
+        call {
+            // Exclude total damage info (_context == 0), FakeHeadHit (3) and TotalDamageBeforeBleeding (4)
+            if (_context isEqualTo 0 || {_context > 2}) exitWith { damage _unit };
 
-        diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: %2", diag_tickTime, str _this];
+            diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: %2", diag_tickTime, str _this];
 
-        private _selectionHitpointName = getText (configfile >> "CfgVehicles" >> typeOf _unit >> "Hitpoints" >> _hitPoint >> "name");
-        private _modelHitpointPosition = _unit selectionPosition _selectionHitpointName;
-        diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: Model hitpoint name '%2' and position %3", diag_tickTime, _selectionHitpointName, str _modelHitpointPosition];
+            private _selectionHitpointName = getText (configOf _unit >> "Hitpoints" >> _hitPoint >> "name");
+            private _modelHitpointPosition = _unit selectionPosition _selectionHitpointName;
+            diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: Model hitpoint name '%2' and position %3", diag_tickTime, _selectionHitpointName, str _modelHitpointPosition];
 
-        if (_modelHitpointPosition isEqualTo [0, 0, 0]) exitWith { 0 };
+            if (_modelHitpointPosition isEqualTo [0, 0, 0]) exitWith { damage _unit };
 
-        HitpointHits pushBackUnique (_unit modelToWorld _modelHitpointPosition);
+            HitpointHits pushBackUnique (_unit modelToWorld _modelHitpointPosition);
 
-        0
+            0
+        }
     }];
 
     private _ehId = _x addEventHandler ["HitPart", {
