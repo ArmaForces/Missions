@@ -3,6 +3,7 @@
 minviewdistance = 500;
 maxviewdistance = 10000;
 
+// #define DEV_DEBUG
 #define MAX_HP 10
 #define NO_ARMOR [0, 0, 0, 0]
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
@@ -11,8 +12,11 @@ IconMode = 0;
 
 /* Custom test things */
 
+#ifdef DEV_DEBUG
 HitpointHits = [];
 PositionHits = [];
+#endif
+
 AmmoTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Ammo")
     apply {
@@ -29,6 +33,8 @@ VehicleTypes = createHashMapFromArray
         [toUpper configName _x, _hashMap]
     });
 
+// ["AllVehicles", "HandleDamage", ] call CBA_fnc_addClassEventHandler;
+
 {
     _x addEventHandler ["HandleDamage", {
         params ["_unit", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint", "_directHit", "_context"];
@@ -37,15 +43,22 @@ VehicleTypes = createHashMapFromArray
             // Exclude total damage info (_context == 0), FakeHeadHit (3) and TotalDamageBeforeBleeding (4)
             if (_context isEqualTo 0 || {_context > 2}) exitWith { damage _unit };
 
+#ifdef DEV_DEBUG
             diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: %2", diag_tickTime, str _this];
+#endif
 
             private _selectionHitpointName = getText (configOf _unit >> "Hitpoints" >> _hitPoint >> "name");
             private _modelHitpointPosition = _unit selectionPosition _selectionHitpointName;
+
+#ifdef DEV_DEBUG
             diag_log format ["WARGAY DEBUG HANDLE DAMAGE [%1]: Model hitpoint name '%2' and position %3", diag_tickTime, _selectionHitpointName, str _modelHitpointPosition];
+#endif
 
             if (_modelHitpointPosition isEqualTo [0, 0, 0]) exitWith { damage _unit };
 
+#ifdef DEV_DEBUG
             HitpointHits pushBackUnique (_unit modelToWorld _modelHitpointPosition);
+#endif
 
             0
         }
@@ -61,7 +74,9 @@ VehicleTypes = createHashMapFromArray
 
         if (_isHandledForTarget) exitWith {};
 
+#ifdef DEV_DEBUG
         diag_log format ["WARGAY DEBUG HIT PART [%1]: Selection: %2 Vector: %3, Velocity: %4", diag_tickTime, str _selection, str _vector, str _velocity];
+#endif
 
         private _targetDir = getDir _target;
         private _xyHitDir = _vector#0 atan2 _vector#1;
@@ -78,11 +93,9 @@ VehicleTypes = createHashMapFromArray
             "SIDE"
         };
 
-        // private _msg = format ["Hit %1, Velocity: %5 km/h RelativeDir: %6, TargetDir: %2, SurfaceDir: [%3, %4]", _hitDir, _targetDir, _xyHitDir, _topHitDir, vectorMagnitude _velocity, _relativeDir];
-        // diag_log _msg;
-        // systemChat _msg;
-
+#ifdef DEV_DEBUG
         PositionHits pushBack (_position);
+#endif
 
         _projectile setVariable [str _target, true];
 
@@ -94,15 +107,27 @@ VehicleTypes = createHashMapFromArray
 } forEach vehicles;
 
 addMissionEventHandler ["Draw3D", {
+#ifdef DEV_DEBUG
     {
         drawIcon3D ["#(argb,8,8,3)color(1,0,0,1)", [1,1,1,1], _x, 0.25, 0.25, 0, "Hit", 0, 0.03];
     } forEach HitpointHits;
     {
         drawIcon3D ["#(argb,8,8,3)color(0,0,1,1)", [1,1,1,1], ASLToAGL _x, 0.25, 0.25, 0, "Hit", 0, 0.03];
     } forEach PositionHits;
+#endif
 
     // Always draw icon for cursor object;
     [cursorObject, true] call fnc_drawIcon;
+    curatorMouseOver params ["_type", "_entity", "_index"];
+    if (_type isEqualTo "OBJECT") then {
+        [_entity, true] call fnc_drawIcon;
+    };
+    if (_type isEqualTo "GROUP") then {
+        private _groupVehicles = units _entity apply { vehicle _x } select {_x isKindOf "AllVehicles"};
+        {
+            [_x, true] call fnc_drawIcon;
+        } forEach (_groupVehicles arrayIntersect _groupVehicles);
+    };
 
     switch (IconMode) do {
         // Friendly and enemy
@@ -136,11 +161,8 @@ fnc_drawIcon = {
 
     private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
     private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
-    private _aspectRatio = safeZoneW/safeZoneH;
     private _iconWidth = (0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
     private _iconHeight = _iconWidth;
-    // private _iconHeight = _iconWidth * _aspectRatio;
-    // private _iconHeight = (0.05 * safeZoneH) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeHeight");
     private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { WestIconColor } else { EastIconColor };
     drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
 };
@@ -163,39 +185,6 @@ fnc_drawIcon = {
 //     } forEach _selectionNamesAndPos;
 // }];
 
-TankArmor = createHashMap;
-Leopard1A1Armor = createHashMap;
-Leopard1A1Armor set ["FRONT", 6];
-Leopard1A1Armor set ["SIDE", 2];
-Leopard1A1Armor set ["REAR", 2];
-Leopard1A1Armor set ["TOP", 1];
-
-T55AArmor = createHashMap;
-T55AArmor set ["FRONT", 7];
-T55AArmor set ["SIDE", 3];
-T55AArmor set ["REAR", 2];
-T55AArmor set ["TOP", 1];
-
-TankArmor set ["gm_gc_army_t55a", T55AArmor];
-TankArmor set ["gm_ge_army_Leopard1a1", Leopard1A1Armor];
-
-["gm_gc_army_pt76b", [2, 1, 1, 1]];
-["gm_gc_army_t55", [7, 3, 2, 1]];
-["gm_gc_army_t55a", [7, 3, 2, 1]];
-["gm_gc_army_t55ak", [7, 3, 2, 1]];
-["gm_gc_army_t55am2", [10, 5, 2, 2]];
-["gm_gc_army_t55am2b", [10, 5, 2, 2]];
-["gm_gc_army_zsu234v1", [1, 1, 1, 1]];
-["gm_gc_army_2s1", [1, 1, 1, 1]];
-["gm_gc_army_2p16", [1, 1, 1, 1]];
-["gm_gc_army_bmp1sp2", [3, 1, 1, 1]];
-["gm_gc_army_brdm2", [1, 1, 1, 1]];
-["gm_gc_army_brdm2rkh", [1, 1, 1, 1]];
-["gm_gc_army_brdm2um", [1, 1, 1, 1]];
-["gm_gc_army_btr60pa", [1, 1, 1, 1]];
-["gm_gc_army_btr60pa_dshkm", [1, 1, 1, 1]];
-["gm_gc_army_btr60pb", [1, 1, 1, 1]];
-["gm_gc_army_btr60pu12", [1, 1, 1, 1]];
 ["CSLA_T72", [11, 6, 3, 2]];
 ["CSLA_T72M", [12, 7, 3, 2]];
 ["CSLA_T72M1", [14, 7, 3, 2]];
@@ -208,27 +197,6 @@ TankArmor set ["gm_ge_army_Leopard1a1", Leopard1A1Armor];
 ["CSLA_OT64C", [1, 1, 1, 1]];
 ["CSLA_OT64C_VB", [1, 1, 1, 1]];
 ["CSLA_OT65A", [1, 1, 1, 1]];
-["gm_ge_army_Leopard1a1", [6, 2, 2, 1]];
-["gm_ge_army_Leopard1a1a2", [6, 2, 2, 1]];
-["gm_ge_army_Leopard1a3", [8, 3, 2, 2]];
-["gm_ge_army_Leopard1a3a1", [8, 3, 2, 2]];
-["gm_ge_army_Leopard1a5", [10, 3, 2, 2]];
-["gm_ge_army_gepard1a1", [3, 2, 2, 1]];
-["gm_ge_army_m109g", [2, 1, 1, 1]];
-["gm_ge_army_marder1a1plus", [4, 2, 1, 1]];
-["gm_ge_army_marder1a1", [4, 2, 1, 1]];
-["gm_ge_army_marder1a2", [4, 2, 1, 1]];
-["gm_ge_army_luchsa1", [2, 1, 1, 1]];
-["gm_ge_army_luchsa2", [2, 2, 1, 1]];
-["gm_ge_army_m113a1g_apc", [1, 1, 1, 1]];
-["gm_ge_army_m113a1g_apc_milan", [1, 1, 1, 1]];
-["gm_ge_army_m113a1g_command", [1, 1, 1, 1]];
-["gm_ge_army_m113a1g_medic", [1, 1, 1, 1]];
-["gm_ge_army_fuchsa0_command", [1, 1, 1, 1]];
-["gm_ge_army_fuchsa0_engineer", [1, 1, 1, 1]];
-["gm_ge_army_fuchsa0_reconnaissance", [1, 1, 1, 1]];
-["gm_ge_army_bibera0", [1, 1, 1, 1]];
-["gm_ge_army_bpz2a0", [6, 2, 2, 1]];
 ["AFMC_M1IP", [17, 7, 3, 3]];
 ["AFMC_M1A1", [17, 7, 4, 3]];
 ["AFMC_LAV25", [1, 1, 1, 1]];
@@ -259,7 +227,7 @@ fnc_handleDamage = {
     };
 
     private _ammoInfo = AmmoTypes getOrDefault [toUpper _ammoClassName, []];
-    if (_ammoInfo isEqualTo []) exitWith { /*systemChat format ["NoAmmoInfo '%1'", _ammoClassName]*/ };
+    if (_ammoInfo isEqualTo []) exitWith { diag_log format ["NoAmmoInfo '%1'", _ammoClassName] };
 
     private _ammoDamage = _ammoInfo getOrDefault ["damage", 0];
     if (_ammoDamage isEqualTo 0) exitWith {};
@@ -274,14 +242,18 @@ fnc_handleDamage = {
     };
 
     if (_isUnknownAmmo) exitWith {
+#ifdef DEV_DEBUG
         private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
         systemChat _infoMsg;
         diag_log _infoMsg;
+#endif
     };
 
+#ifdef DEV_DEBUG
     private _infoMsg = format ["Potential damage: %1 %2, Hit armor: %3 %4, Actual damage: %5", _ammoDamage, _ammoType, _hitDir, _armor, _damage];
     systemChat _infoMsg;
     diag_log _infoMsg;
+#endif
 
     if (_damage isEqualTo 0) exitWith {};
 
@@ -296,7 +268,9 @@ fnc_handleDamage = {
         _unit removeEventHandler ["HitPart", _ehId];
     };
 
+#ifdef DEV_DEBUG
     systemChat format ["Remaining HP: %1/10", _newHp];
+#endif
 
     _unit setVariable ["MDL_currentHp", _newHp, true];
     ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
@@ -308,8 +282,6 @@ fnc_handleDamage = {
 
     private _string = [_vehicle, "_"] call fnc_currentHpString;
     titleText ["\n\n\n\n\n" + _string, "PLAIN", 0.3, true];
-    // private _text = composeText [_string];
-    // [_text] call ACE_common_fnc_displayTextStructured;
 }] call CBA_fnc_addEventHandler;
 
 fnc_currentHpString = {
@@ -352,6 +324,7 @@ fnc_keDamage = {
     _damagePart1 max _damagePart2
 };
 
+// TODO: Consider distance from projectile
 fnc_heDamage = {
     params ["_armor", "_ammoBaseDamage"];
 
