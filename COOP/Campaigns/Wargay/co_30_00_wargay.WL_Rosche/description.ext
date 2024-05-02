@@ -34,9 +34,29 @@ class CfgFunctions {
     class MWG
     {
         tag = QUOTE(ADDON);
+        class Common
+        {
+            class getGroupVehicles {};
+        };
+        class Damage
+        {
+            class getHitDir {};
+            class handleDamage {};
+            class heatDamage {};
+            class heDamage {};
+            class keDamage {};
+        };
         class Icons
         {
+            class createVehicleInfoForNonConfiguredVehicle {};
+            class currentHpString {};
+            class drawIcon {};
+            class getVehicleDisplayName {};
+            class getVehicleInfo {};
+            class isReconVehicle {};
+            class shouldStillBeVisible {};
             class showUnitInfo {};
+            class visibilityCheckLoop {};
         };
     };
 };

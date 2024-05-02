@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+call FUNC(visibilityCheckLoop);
+
 // {
 //     [_x] call FUNC(hideAllMarkersInLayer);
 // } forEach [

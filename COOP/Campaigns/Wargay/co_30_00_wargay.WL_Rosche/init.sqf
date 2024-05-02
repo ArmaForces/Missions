@@ -4,8 +4,6 @@ minviewdistance = 500;
 maxviewdistance = 10000;
 
 #define DEV_DEBUG
-#define MAX_HP 10
-#define DISPLAY_NAME_PROPERTY "displayNameShort"
 #define KEY_TAB 15 // 0x0F
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
 EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
@@ -33,100 +31,7 @@ findDisplay 46 displayAddEventHandler ["KeyDown", {
     [_cursorTarget] call FUNC(showUnitInfo);
 }];
 
-fnc_getVehicleDisplayName = {
-    params ["_vehicleOrInfo"];
-
-    if (_vehicleOrInfo isEqualType objNull && {!(_vehicleOrInfo isKindOf "AllVehicles")}) exitWith { "" };
-
-    private _vehicleInfo = if (_vehicleOrInfo isEqualType objNull) then {
-        private _retrievedVehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _vehicleOrInfo, objNull];
-
-        if (_retrievedVehicleInfo isEqualTo objNull) then {
-            _retrievedVehicleInfo = [_vehicleOrInfo] call fnc_createVehicleInfoForNonConfiguredVehicle;
-        };
-
-        _retrievedVehicleInfo
-    } else {
-        _vehicleOrInfo
-    };
-    
-    _vehicleInfo getOrDefault [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgVehicles" >> (_vehicleInfo get "className") >> DISPLAY_NAME_PROPERTY), true]
-};
-
-fnc_createVehicleInfoForNonConfiguredVehicle = {
-    params ["_vehicle"];
-
-    private _newVehicleInfo = createHashMapFromArray [
-        ["className", toUpper typeOf _vehicle],
-        [DISPLAY_NAME_PROPERTY, getText (configOf _vehicle >> DISPLAY_NAME_PROPERTY)]
-    ];
-    
-    VehicleTypes set [toUpper typeOf _vehicle, _newVehicleInfo];
-
-    _newVehicleInfo
-};
-
 // TODO: Consider adding initial projectile position/velocity in Fired EH and base damage on that
-
-fnc_shouldStillBeVisible = {
-    params ["_target"];
-
-    private _anyoneKnowsAbout = groups WEST findIf {leader _x targetKnowledge _target select 0} != -1;
-
-    _anyoneKnowsAbout
-};
-
-fnc_visibilityCheckLoop = {
-    params [["_targetsToCheck", []]];
-
-    if (_targetsToCheck isEqualTo []) then {
-        _targetsToCheck = vehicles select {side effectiveCommander _x isEqualTo EAST};
-    };
-    if (_targetsToCheck isEqualTo []) exitWith {
-        [fnc_visibilityCheckLoop, [], 5] call CBA_fnc_waitAndExecute;
-    };
-
-    private _target = _targetsToCheck deleteAt (count _targetsToCheck - 1);
-
-    #ifdef DEV_DEBUG
-    diag_log format ["WARGAY DEBUG VISIBILITY CHECK [%1]: Checking Target %2", diag_tickTime, _target];
-    #endif
-
-    private _shouldBeVisible = [_target] call fnc_shouldStillBeVisible;
-    private _isVisible = _target getVariable ["MDL_IsVisible", false];
-    if (_isVisible && {!_shouldBeVisible}) then {
-        #ifdef DEV_DEBUG
-        diag_log format ["WARGAY DEBUG VISIBILITY CHECK [%1]: Making Target %2 not visible", diag_tickTime, _target];
-        #endif
-        _target setVariable ["MDL_IsVisible", false, false];
-    };
-
-    [fnc_visibilityCheckLoop, [_targetsToCheck], 1] call CBA_fnc_waitAndExecute;
-};
-
-call fnc_visibilityCheckLoop;
-
-fnc_getVehicleInfo = {
-    params ["_unitOrGroup", ["_key", ""], ["_defaultValue", objNull]];
-
-    private _unit = if (_unitOrGroup isEqualType objNull) then {
-        vehicle _unitOrGroup
-    } else {
-        vehicle leader _unitOrGroup
-    };
-
-    private _vehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _unit, objNull];
-    if (_vehicleInfo isEqualTo objNull) exitWith { _defaultValue };
-
-    if (_key isEqualTo "") exitWith { _vehicleInfo };
-
-    _vehicleInfo getOrDefault [_key, _defaultValue]
-};
-
-fnc_isReconVehicle = {
-    params ["_unitOrGroup"];
-    [_unitOrGroup, "isRecon", false] call fnc_getVehicleInfo isEqualTo 1
-};
 
 {
     _x addEventHandler ["KnowsAboutChanged", {
@@ -134,7 +39,7 @@ fnc_isReconVehicle = {
 
         if (side _targetUnit isNotEqualTo EAST) exitWith {};
 
-        if (OnlyReconCanSpot && {!([_group] call fnc_isReconVehicle)}) exitWith {};
+        if (OnlyReconCanSpot && {!([_group] call FUNC(isReconVehicle))}) exitWith {};
 
         #ifdef DEV_DEBUG
         diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Group: %2, Target: %3, KnowsAbout: %4 -> %5", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
@@ -233,7 +138,7 @@ VehicleTypes = createHashMapFromArray
         private _velocityAndSurfaceProduct = vectorNormalized _velocity vectorDotProduct _vector;
         if (_velocity isNotEqualTo [0, 0, 0] && {_velocityAndSurfaceProduct < 0.15 && {_velocityAndSurfaceProduct > -0.15}}) exitWith {};
 
-        private _hitDir = [_target, _vector, _velocity, _position] call fnc_getHitDir;
+        private _hitDir = [_target, _vector, _velocity, _position] call FUNC(getHitDir);
 
         #ifdef DEV_DEBUG
         PositionHits pushBack (_position);
@@ -245,11 +150,11 @@ VehicleTypes = createHashMapFromArray
 
         private _hitPosition = if (_isDirect) then { [] } else { ASLToAGL _position };
 
-        [_target, _hitDir, _hitPosition, _velocity, _ammo] call fnc_handleDamage;
+        [_target, _hitDir, _hitPosition, _velocity, _ammo] call FUNC(handleDamage);
     }];
 
     _x setVariable ["MDL_HitPartEHID", _ehId];
-    private _vehicleHitpoints = [_x, "hitpoints"] call fnc_getVehicleInfo;
+    private _vehicleHitpoints = [_x, "hitpoints"] call FUNC(getVehicleInfo);
     if (_vehicleHitpoints isEqualTo objNull) then {
         private _defaultHitpoints = 10;
         _vehicleHitpoints = _defaultHitpoints;
@@ -264,37 +169,6 @@ VehicleTypes = createHashMapFromArray
     // 
     _x setFuelConsumptionCoef 10;
 } forEach vehicles;
-
-fnc_getHitDir = {
-    params ["_target", "_surfaceVector", "_velocity", "_hitWorldPosition"];
-
-    private _hitModelPosition = _target worldToModel _hitWorldPosition;
-    private _surfaceVectorNormalized = vectorNormalized _surfaceVector;
-    private _velocityVectorNormalized = vectorNormalized _velocity;
-
-    #ifdef DEV_DEBUG
-    diag_log format ["WARGAY DEBUG GET HIT DIR [%1]: Target: %2, Vector: %3, Velocity: %4, HitPosition: %5", diag_tickTime, _target, _surfaceVector, _velocity, _hitModelPosition];
-    #endif
-    
-    private _targetDir = vectorDir _target;
-    
-    private _dotProduct = _targetDir vectorDotProduct _surfaceVectorNormalized;
-    private _topHitDir = _surfaceVector#2 atan2 sqrt (_surfaceVector#0^2 + _surfaceVector#1^2);
-    
-    private _hitDir = if (_topHitDir > 70) then {
-        "TOP"
-    } else {
-        if (_dotProduct > 0.5) exitWith { "FRONT" };
-        if (_dotProduct < -0.5) exitWith { "REAR" };
-        "SIDE"
-    };
-
-    #ifdef DEV_DEBUG
-    diag_log format ["WARGAY DEBUG GET HIT DIR [%1]: Target Dir: %2, Dot product: %3, Top='%4'", diag_tickTime, _targetDir, _dotProduct, _topHitDir];
-    #endif
-
-    _hitDir
-};
 
 addMissionEventHandler ["Draw3D", {
     #ifdef DEV_DEBUG
@@ -314,12 +188,6 @@ addMissionEventHandler ["Draw3D", {
     } forEach VelocityVectors;
     #endif
 
-    fnc_getGroupVehicles = {
-        params ["_group"];
-        private _groupVehicles = units _group apply { vehicle _x } select {_x isKindOf "AllVehicles"};
-        _groupVehicles arrayIntersect _groupVehicles
-    };
-
     // Always draw icon for cursor object;
     // TODO: Consider cursorTarget
     private _cursorObject = cursorObject;
@@ -333,7 +201,7 @@ addMissionEventHandler ["Draw3D", {
     if (_type isEqualTo "GROUP") then {
         {
             _vehiclesWithIcons pushBackUnique [_x, true];
-        } forEach ([_entity] call fnc_getGroupVehicles);
+        } forEach ([_entity] call FUNC(getGroupVehicles));
     };
     
     curatorSelected params ["_objects", "_groups"];
@@ -343,7 +211,7 @@ addMissionEventHandler ["Draw3D", {
     {
         {
             _vehiclesWithIcons pushBackUnique [_x, true];
-        } forEach ([_x] call fnc_getGroupVehicles);
+        } forEach ([_x] call FUNC(getGroupVehicles));
     } forEach _groups;
 
     switch (IconMode) do {
@@ -368,32 +236,11 @@ addMissionEventHandler ["Draw3D", {
     };
 
     // Draws icons. Might draw an icon twice for one object if it's targeted/highlighted.
+    // TODO: Don't draw icons off-screen
     {
-        _x call fnc_drawIcon;
+        _x call FUNC(drawIcon);
     } forEach _vehiclesWithIcons;
 }];
-
-fnc_drawIcon = {
-    params ["_target", ["_includeText", false]];
-
-    if (!alive _target || {_target getVariable ["MDL_currentHp", 0] isEqualTo 0}) exitWith {};
-    
-    private _worldPos = _target modelToWorldVisual [0, 0, 1.5];
-    private _iconDescription = if (_includeText) then {
-        format ["%1 - %2", [_target] call fnc_getVehicleDisplayName, [_target, " "] call fnc_currentHpString]
-    } else { "" };
-
-    private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
-    private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
-    private _iconWidth = (0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
-    private _iconHeight = _iconWidth;
-    private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { WestIconColor } else { EastIconColor };
-    // #ifdef DEV_DEBUG
-    // private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
-    // diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
-    // #endif
-    drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
-};
 
 // addMissionEventHandler ["Draw3D", {
 //     private _veh = cursorObject;
@@ -434,164 +281,10 @@ fnc_drawIcon = {
 ["AFMC_M163", [1, 1, 1, 1]];
 ["AFMC_M270", [1, 0, 0, 0]];
 
-#define BASE_AP_SPEED 1300
-#define VELOCITY_STEP 150
-
-fnc_handleDamage = {
-    params ["_unit", "_hitDir", "_hitPositionAGL", "_velocity", "_ammo"];
-    _ammo params ["_hitValue", "_indirectHitValue", "_indirectHitRange", "_explosiveDamage", "_ammoClassName"];
-
-    private _unitType = VehicleTypes getOrDefault [toUpper typeOf _unit, []];
-    private _unitArmor = if (_unitType isEqualTo []) then { NO_ARMOR } else {
-        _unitType getOrDefault ["armor", NO_ARMOR]
-    };
-
-    private _armor = switch (_hitDir) do {
-        case "FRONT": { _unitArmor select 0 };
-        case "SIDE": { _unitArmor select 1 };
-        case "REAR": { _unitArmor select 2 };
-        case "TOP": { _unitArmor select 3 };
-        default { 0 };
-    };
-
-    private _ammoInfo = AmmoTypes getOrDefault [toUpper _ammoClassName, []];
-    if (_ammoInfo isEqualTo []) then {
-        // Try to recover for small arms as I was lazy and didn't want to copy all the ammo classes
-        private _isSmallArms = getNumber (configFile >> "CfgAmmo" >> _ammoClassName >> "caliber") < 1;
-        if (_isSmallArms) then {
-            private _hashMap = AmmoTypes get "SMALL_ARMS";
-            AmmoTypes set [toUpper _ammoClassName, _hashMap];
-        };
-    };
-    if (_ammoInfo isEqualTo []) exitWith {};
-
-    private _ammoDamage = _ammoInfo getOrDefault ["damage", 0];
-    if (_ammoDamage isEqualTo 0) exitWith {};
-
-    private _isUnknownAmmo = false;
-    private _ammoType = _ammoInfo getOrDefault ["type", "NONE"];
-    private _damage = switch (_ammoType) do {
-        case "AP": { [_armor, _ammoDamage, _velocity] call fnc_keDamage };
-        case "HEAT": { [_armor, _ammoDamage] call fnc_heatDamage };
-        case "HE" : {
-            private _distanceToTarget = if (_hitPositionAGL isEqualTo []) then { 0 } else { getPosATL _unit distance _hitPositionAGL };
-            [_armor, _ammoDamage, _distanceToTarget] call fnc_heDamage
-        };
-        default { _isUnknownAmmo = true; 0 };
-    };
-
-    if (_isUnknownAmmo) exitWith {
-        #ifdef DEV_DEBUG
-        private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
-        systemChat _infoMsg;
-        diag_log _infoMsg;
-        #endif
-    };
-
-    #ifdef DEV_DEBUG
-    private _infoMsg = format ["Potential damage: %1 %2, Hit armor: %3 %4, Actual damage: %5", _ammoDamage, _ammoType, _hitDir, _armor, _damage];
-    systemChat _infoMsg;
-    diag_log _infoMsg;
-    #endif
-
-    if (_damage isEqualTo 0) exitWith {};
-
-    private _currentHp = _unit getVariable ["MDL_currentHp", 10];
-    private _newHp = _currentHp - _damage;
-
-    if (_newHp <= 0) exitWith {
-        _unit setVariable ["MDL_currentHp", 0, true];
-        {_x setDamage 1} forEach crew _unit;
-        _unit setDamage 1;
-
-        private _ehId = _unit getVariable ["MDL_HitPartEHID", -1];
-        _unit removeEventHandler ["HitPart", _ehId];
-    };
-
-    #ifdef DEV_DEBUG
-    systemChat format ["Remaining HP: %1/10", _newHp];
-    #endif
-
-    _unit setVariable ["MDL_currentHp", _newHp, true];
-    // Limit to 0.8 to avoid explosions when hull or fuel are almost destroyed
-    _unit setDamage ((_newHp/MAX_HP) min 0.8);
-    ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
-};
-
 ["MDL_showCurrentHp", {
     params ["_vehicle"];
     if (vehicle player isNotEqualTo _vehicle) exitWith {};
 
-    private _string = [_vehicle, "_"] call fnc_currentHpString;
+    private _string = [_vehicle, "_"] call FUNC(currentHpString);
     titleText ["\n\n\n\n\n" + _string, "PLAIN", 0.3, true];
 }] call CBA_fnc_addEventHandler;
-
-fnc_currentHpString = {
-    params ["_unit", ["_nonDamagedMark", "_"]];
-    private _currentHp = _unit getVariable ["MDL_currentHp", 0];
-    private _missingHp = 10 - _currentHp;
-
-    private _string = "";
-    for "_a" from 1 to round _currentHp do {
-        _string = _string + "[" + _nonDamagedMark + "]";
-    };
-    for "_a" from 1 to round _missingHp do {
-        _string = _string + "[X]";
-    };
-    
-    _string
-};
-
-fnc_heatDamage = {
-    params ["_armor", "_ammoBaseDamage"];
-    
-    if (_armor isEqualTo 0) exitWith { _ammoBaseDamage * 2 };
-    private _standardDamage = ((_ammoBaseDamage - _armor)/2) + 1;
-    
-    // 1 dmg for each 1 AP above 10 difference from armor value (e.g., 13 AP vs 2 AV = 1 dmg)
-    private _extraDamage = 0 max (_ammoBaseDamage - _armor - 10);
-    
-    // HEAT always does at least 1 dmg
-    1 max (_standardDamage + _extraDamage)
-};
-
-// Wargame Red Dragon KE formula reverse engineered
-// Not using distance as velocity seems to fit better
-fnc_keDamage = {
-    params ["_armor", "_ammoBaseDamage", "_velocity"];
-    private _damageFromVelocity = _ammoBaseDamage - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
-
-    if (_armor isEqualTo 0) exitWith { 2 * (_ammoBaseDamage max _damageFromVelocity) };
-    if (_armor isEqualTo 1) exitWith { (_ammoBaseDamage max _damageFromVelocity) };
-    if (_damageFromVelocity < 0) exitWith { 0 };
-
-    // Half for 2 armor, decreasing .5 for every additional armor point
-    _damageFromVelocity - (_damageFromVelocity/2) - (_armor - 2) * 0.5
-};
-
-// TODO: Consider distance from projectile
-fnc_heDamage = {
-    params ["_armor", "_ammoBaseDamage", "_distanceToTarget"];
-
-    #ifdef DEV_DEBUG
-    diag_log format ["WARGAY DEBUG HE DAMAGE [%1]: %2 AV, %3 HE, %4 m to target", diag_tickTime, _armor, _ammoBaseDamage, _distanceToTarget];
-    #endif
-
-    fnc_damagePerHe = {
-        params ["_armor"];
-
-        if (_armor < 2) exitWith {1};
-        if (_armor isEqualTo 2) exitWith {0.4};
-        if (_armor isEqualTo 3) exitWith {0.3};
-        if (_armor isEqualTo 4) exitWith {0.2};
-        if (_armor isEqualTo 5) exitWith {0.15};
-        if (_armor < 8) exitWith {0.1};
-        if (_armor < 14) exitWith {0.05};
-        0.01
-    };
-
-    private _damage = _ammoBaseDamage * ([_armor] call fnc_damagePerHe);
-    private _maxDistanceToTarget = _damage^2 + 1;
-    private _calculatedDamage = _damage * ((_maxDistanceToTarget - _distanceToTarget)/_maxDistanceToTarget);
-    0 max _calculatedDamage
-};
