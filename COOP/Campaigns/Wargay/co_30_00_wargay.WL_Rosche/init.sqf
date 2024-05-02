@@ -6,6 +6,8 @@ maxviewdistance = 10000;
 #define DEV_DEBUG
 #define MAX_HP 10
 #define NO_ARMOR [0, 0, 0, 0]
+#define DISPLAY_NAME_PROPERTY "displayNameShort"
+#define KEY_TAB 15 // 0x0F
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
 EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
 IconMode = 0;
@@ -19,6 +21,73 @@ PositionHits = [];
 SurfaceVectors = [];
 VelocityVectors = [];
 #endif
+
+// Handle "Info" button
+findDisplay 46 displayAddEventHandler ["KeyDown", {
+    params ["_displayOrControl", "_key", "_shift", "_ctrl", "_alt"];
+
+    if (_key isNotEqualTo KEY_TAB) exitWith {};
+
+    private _cursorTarget = cursorTarget;
+    if (_cursorTarget isEqualTo objNull) exitWith {};
+
+    [_cursorTarget] call fnc_showUnitInfo;
+}];
+
+fnc_showUnitInfo = {
+    params ["_unit"];
+
+    if !(_unit isKindOf "AllVehicles") exitWith {};
+
+    private _unitInfo = [_unit] call fnc_getVehicleInfo;
+
+    private _messageParts = [
+        [_unitInfo] call fnc_getVehicleDisplayName,
+        lineBreak,
+        lineBreak,
+        "Armor [Front/Sides/Back/Top]:",
+        lineBreak,
+        _unitInfo get "armor" joinString "/"
+    ];
+
+    private _text = composeText _messageParts;
+    hint _text;
+};
+
+fnc_getVehicleDisplayName = {
+    params ["_vehicleOrInfo"];
+
+    if (_vehicleOrInfo isEqualType objNull && {!(_vehicleOrInfo isKindOf "AllVehicles")}) exitWith { "" };
+
+    private _vehicleInfo = if (_vehicleOrInfo isEqualType objNull) then {
+        private _retrievedVehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _vehicleOrInfo, objNull];
+
+        if (_retrievedVehicleInfo isEqualTo objNull) then {
+            _retrievedVehicleInfo = [_vehicleOrInfo] call fnc_createVehicleInfoForNonConfiguredVehicle;
+        };
+
+        _retrievedVehicleInfo
+    } else {
+        _vehicleOrInfo
+    };
+    
+    _vehicleInfo getOrDefault [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgVehicles" >> (_vehicleInfo get "className") >> DISPLAY_NAME_PROPERTY), true]
+};
+
+fnc_createVehicleInfoForNonConfiguredVehicle = {
+    params ["_vehicle"];
+
+    private _newVehicleInfo = createHashMapFromArray [
+        ["className", toUpper typeOf _vehicle],
+        [DISPLAY_NAME_PROPERTY, getText (configOf _vehicle >> DISPLAY_NAME_PROPERTY)]
+    ];
+    
+    VehicleTypes set [toUpper typeOf _vehicle, _newVehicleInfo];
+
+    _newVehicleInfo
+};
+
+// TODO: Consider adding initial projectile position/velocity in Fired EH and base damage on that
 
 fnc_shouldStillBeVisible = {
     params ["_target"];
@@ -125,6 +194,7 @@ VehicleTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Vehicles")
     apply {
         private _hashMap = createHashMap;
+        _hashMap set ["className", toUpper configName _x];
         _hashMap set ["hitpoints", getNumber (_x >> "hitpoints")];
         _hashMap set ["armor", getArray (_x >> "armor")];
         _hashMap set ["isRecon", getNumber (_x >> "isRecon")];
@@ -331,14 +401,7 @@ fnc_drawIcon = {
     
     private _worldPos = _target modelToWorldVisual [0, 0, 1.5];
     private _iconDescription = if (_includeText) then {
-        private _vehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _target, []];
-        private _vehicleDisplayNameShort = if (_vehicleInfo isEqualTo []) then {
-            private _hashMap = createHashMapFromArray [["displayNameShort", getText (configOf _target >> "displayNameShort")]];
-            VehicleTypes set [toUpper typeOf _target, _hashMap];
-        } else {
-            _vehicleInfo getOrDefault ["displayNameShort", getText (configOf _target >> "displayNameShort"), true]
-        };
-        format ["%1 - %2", _vehicleDisplayNameShort, [_target, " "] call fnc_currentHpString]
+        format ["%1 - %2", [_target] call fnc_getVehicleDisplayName, [_target, " "] call fnc_currentHpString]
     } else { "" };
 
     private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
