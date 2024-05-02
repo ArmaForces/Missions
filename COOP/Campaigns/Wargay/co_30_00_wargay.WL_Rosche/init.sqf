@@ -5,7 +5,6 @@ maxviewdistance = 10000;
 
 #define DEV_DEBUG
 #define MAX_HP 10
-#define NO_ARMOR [0, 0, 0, 0]
 #define DISPLAY_NAME_PROPERTY "displayNameShort"
 #define KEY_TAB 15 // 0x0F
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
@@ -31,28 +30,8 @@ findDisplay 46 displayAddEventHandler ["KeyDown", {
     private _cursorTarget = cursorTarget;
     if (_cursorTarget isEqualTo objNull) exitWith {};
 
-    [_cursorTarget] call fnc_showUnitInfo;
+    [_cursorTarget] call FUNC(showUnitInfo);
 }];
-
-fnc_showUnitInfo = {
-    params ["_unit"];
-
-    if !(_unit isKindOf "AllVehicles") exitWith {};
-
-    private _unitInfo = [_unit] call fnc_getVehicleInfo;
-
-    private _messageParts = [
-        [_unitInfo] call fnc_getVehicleDisplayName,
-        lineBreak,
-        lineBreak,
-        "Armor [Front/Sides/Back/Top]:",
-        lineBreak,
-        _unitInfo get "armor" joinString "/"
-    ];
-
-    private _text = composeText _messageParts;
-    hint _text;
-};
 
 fnc_getVehicleDisplayName = {
     params ["_vehicleOrInfo"];
