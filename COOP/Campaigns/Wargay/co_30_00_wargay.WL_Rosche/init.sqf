@@ -9,6 +9,7 @@ maxviewdistance = 10000;
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
 EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
 IconMode = 0;
+OnlyReconCanSpot = true;
 
 /* Custom test things */
 
@@ -57,6 +58,21 @@ fnc_visibilityCheckLoop = {
 
 call fnc_visibilityCheckLoop;
 
+fnc_isReconVehicle = {
+    params ["_unitOrGroup"];
+
+    private _unit = if (_unitOrGroup isEqualType objNull) then {
+        vehicle _unitOrGroup
+    } else {
+        vehicle leader _unitOrGroup
+    };
+
+    private _vehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _unit, objNull];
+    if (_vehicleInfo isEqualTo objNull) exitWith { false };
+
+    _vehicleInfo getOrDefault ["isRecon", 0] isEqualTo 1
+};
+
 {
     _x addEventHandler ["KnowsAboutChanged", {
         params ["_group", "_targetUnit", "_newKnowsAbout", "_oldKnowsAbout"];
@@ -64,6 +80,8 @@ call fnc_visibilityCheckLoop;
         // TODO: Consider limiting reveal for all only to recon groups/units/vehicles
 
         if (side _targetUnit isNotEqualTo EAST) exitWith {};
+
+        if (OnlyReconCanSpot && {!([_group] call fnc_isReconVehicle)}) exitWith {};
 
         #ifdef DEV_DEBUG
         diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Group: %2, Target: %3, KnowsAbout: %4 -> %5", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
@@ -73,38 +91,26 @@ call fnc_visibilityCheckLoop;
 
         if (_newKnowsAbout > 0.75 && {!_isRevealed}) then {
 
-            if (leader _group targetKnowledge _targetUnit select 0) then {
+            // BUG: Doesn't work for groups larger than 1 person
+            private _anyUnitRecognizesTarget = units _group findIf {_x targetKnowledge _targetUnit select 1} != -1;
+            if (_anyUnitRecognizesTarget) then {
+            // if (leader _group targetKnowledge _targetUnit select 0) then {
                 #ifdef DEV_DEBUG
                 diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Revealing Target: %3 detected by Group: %2", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
                 #endif
                 _targetUnit setVariable ["MDL_IsVisible", true, true];
             };
-
-            
-            // systemChat format ["Revealing %1", _targetUnit];
-            // {
-            //     _x reveal _targetUnit;
-            // } forEach (groups WEST);
-
-            // [{
-            //     params ["_targetUnit"];
-            //     _targetUnit setVariable ["MDL_IsVisible", false];
-            // }, [_targetUnit], 15] call CBA_fnc_waitAndExecute;
         };
     }];
+
+    _x addEventHandler ["EnemyDetected", {
+        params ["_group", "_newTarget"];
+
+        #ifdef DEV_DEBUG
+        diag_log format ["WARGAY DEBUG ENEMY DETECTED [%1]: Group %1, Target: %2", diag_tickTime, _group, _newTarget];
+        #endif
+    }];
 } forEach (groups WEST);
-
-// SpottedEnemies = [];
-
-// // TODO: Handle recon
-// #define T_KEY 20 // 0x14
-// findDisplay 46 displayAddEventHandler ["KeyDown", {
-//     params ["_displayOrControl", "_key", "_shift", "_ctrl", "_alt"];
-//     if (_key isNotEqualTo T_KEY) exitWith {};
-
-//     private _cursorObject = cursorObject;
-
-// }];
 
 AmmoTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Ammo")
@@ -119,6 +125,7 @@ VehicleTypes = createHashMapFromArray
     apply {
         private _hashMap = createHashMap;
         _hashMap set ["armor", getArray (_x >> "armor")];
+        _hashMap set ["isRecon", getNumber (_x >> "isRecon")];
         [toUpper configName _x, _hashMap]
     });
 
@@ -324,7 +331,11 @@ fnc_drawIcon = {
     private _iconWidth = (0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
     private _iconHeight = _iconWidth;
     private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { WestIconColor } else { EastIconColor };
-    drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
+    private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
+    #ifdef DEV_DEBUG
+    diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
+    #endif
+    drawIcon3D _icon3DParams;
 };
 
 // addMissionEventHandler ["Draw3D", {

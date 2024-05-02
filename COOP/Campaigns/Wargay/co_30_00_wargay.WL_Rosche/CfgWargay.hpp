@@ -3,6 +3,11 @@
         { \
             ARMOR(armorFront,armorSides,armorBack,armorTop);\
         }
+#define VEHICLE_RECON(vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
+        { \
+            ARMOR(armorFront,armorSides,armorBack,armorTop);\
+            isRecon = 1;\
+        }
 #define VEHICLE_LIKE(otherVehicleClass,vehicleClass) class vehicleClass : otherVehicleClass {}
 
 class CfgWargay
@@ -393,7 +398,8 @@ class CfgWargay
     class Vehicles
     {
         // West Germany
-        VEHICLE(gm_ge_army_Leopard1a1,6,2,2,1);
+        VEHICLE(gm_ge_army_Leopard1a1,6,2,2,1); // 1A1 should be recon with 5/2/2/1
+        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a1);
         VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a2);
         VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_bpz2a0)
         VEHICLE(gm_ge_army_Leopard1a3,8,3,2,2);
@@ -404,15 +410,19 @@ class CfgWargay
         VEHICLE(gm_ge_army_marder1a1,4,2,1,1);
         VEHICLE_LIKE(gm_ge_army_marder1a1,gm_ge_army_marder1a1plus);
         VEHICLE_LIKE(gm_ge_army_marder1a1,gm_ge_army_marder1a2);
-        VEHICLE(gm_ge_army_luchsa1,2,1,1,1);
-        VEHICLE(gm_ge_army_luchsa2,2,2,1,1);
+        VEHICLE_RECON(gm_ge_army_luchsa1,2,1,1,1);
+        VEHICLE_RECON(gm_ge_army_luchsa2,2,2,1,1);
         VEHICLE(gm_ge_army_m113a1g_apc,1,1,1,1);
         VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_m113a1g_apc_milan);
         VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_m113a1g_command);
         VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_m113a1g_medic);
         VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_fuchsa0_command);
         VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_fuchsa0_engineer);
-        VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_fuchsa0_reconnaissance);
+        VEHICLE_RECON(gm_ge_army_fuchsa0_reconnaissance,1,1,1,1);
+        VEHICLE_RECON(gm_ge_army_bo105m_vbh,0,0,0,0);
+        VEHICLE_LIKE(gm_ge_army_bo105m_vbh,gm_ge_army_bo105p1m_vbh);
+        VEHICLE_LIKE(gm_ge_army_bo105m_vbh,gm_ge_army_bo105p1m_vbh_swooper);
+
         VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_bibera0);
 
         // East Germany
@@ -426,12 +436,13 @@ class CfgWargay
         VEHICLE(gm_gc_army_2s1,1,1,1,1);
         VEHICLE(gm_gc_army_2p16,1,1,1,1);
         VEHICLE(gm_gc_army_bmp1sp2,1,1,1,1);
-        VEHICLE(gm_gc_army_brdm2,1,1,1,1);
+        VEHICLE_RECON(gm_gc_army_brdm2,1,1,1,1);
         VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_brdm2rkh);
         VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_brdm2um);
-        VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_btr60pa);
-        VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_btr60pa_dshkm);
-        VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_btr60pb);
-        VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_btr60pu12);
+        VEHICLE(gm_gc_army_btr60pa,1,1,1,1);
+        VEHICLE_LIKE(gm_gc_army_btr60pa,gm_gc_army_btr60pa_dshkm);
+        VEHICLE_LIKE(gm_gc_army_btr60pa,gm_gc_army_btr60pb);
+        VEHICLE_LIKE(gm_gc_army_btr60pa,gm_gc_army_btr60pu12);
+        VEHICLE_LIKE(gm_ge_army_bo105m_vbh,gm_gc_airforce_mi2p);
     };
 };
