@@ -19,6 +19,93 @@ SurfaceVectors = [];
 VelocityVectors = [];
 #endif
 
+fnc_shouldStillBeVisible = {
+    params ["_target"];
+
+    private _anyoneKnowsAbout = groups WEST findIf {leader _x targetKnowledge _target select 0} != -1;
+
+    _anyoneKnowsAbout
+};
+
+fnc_visibilityCheckLoop = {
+    params [["_targetsToCheck", []]];
+
+    if (_targetsToCheck isEqualTo []) then {
+        _targetsToCheck = vehicles select {side effectiveCommander _x isEqualTo EAST};
+    };
+    if (_targetsToCheck isEqualTo []) exitWith {
+        [fnc_visibilityCheckLoop, [], 5] call CBA_fnc_waitAndExecute;
+    };
+
+    private _target = _targetsToCheck deleteAt (count _targetsToCheck - 1);
+
+    #ifdef DEV_DEBUG
+    diag_log format ["WARGAY DEBUG VISIBILITY CHECK [%1]: Checking Target %2", diag_tickTime, _target];
+    #endif
+
+    private _shouldBeVisible = [_target] call fnc_shouldStillBeVisible;
+    private _isVisible = _target getVariable ["MDL_IsVisible", false];
+    if (_isVisible && {!_shouldBeVisible}) then {
+        #ifdef DEV_DEBUG
+        diag_log format ["WARGAY DEBUG VISIBILITY CHECK [%1]: Making Target %2 not visible", diag_tickTime, _target];
+        #endif
+        _target setVariable ["MDL_IsVisible", false, false];
+    };
+
+    [fnc_visibilityCheckLoop, [_targetsToCheck], 1] call CBA_fnc_waitAndExecute;
+};
+
+call fnc_visibilityCheckLoop;
+
+{
+    _x addEventHandler ["KnowsAboutChanged", {
+        params ["_group", "_targetUnit", "_newKnowsAbout", "_oldKnowsAbout"];
+
+        // TODO: Consider limiting reveal for all only to recon groups/units/vehicles
+
+        if (side _targetUnit isNotEqualTo EAST) exitWith {};
+
+        #ifdef DEV_DEBUG
+        diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Group: %2, Target: %3, KnowsAbout: %4 -> %5", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
+        #endif
+
+        private _isRevealed = _targetUnit getVariable ["MDL_IsVisible", false];
+
+        if (_newKnowsAbout > 0.75 && {!_isRevealed}) then {
+
+            if (leader _group targetKnowledge _targetUnit select 0) then {
+                #ifdef DEV_DEBUG
+                diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Revealing Target: %3 detected by Group: %2", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
+                #endif
+                _targetUnit setVariable ["MDL_IsVisible", true, true];
+            };
+
+            
+            // systemChat format ["Revealing %1", _targetUnit];
+            // {
+            //     _x reveal _targetUnit;
+            // } forEach (groups WEST);
+
+            // [{
+            //     params ["_targetUnit"];
+            //     _targetUnit setVariable ["MDL_IsVisible", false];
+            // }, [_targetUnit], 15] call CBA_fnc_waitAndExecute;
+        };
+    }];
+} forEach (groups WEST);
+
+// SpottedEnemies = [];
+
+// // TODO: Handle recon
+// #define T_KEY 20 // 0x14
+// findDisplay 46 displayAddEventHandler ["KeyDown", {
+//     params ["_displayOrControl", "_key", "_shift", "_ctrl", "_alt"];
+//     if (_key isNotEqualTo T_KEY) exitWith {};
+
+//     private _cursorObject = cursorObject;
+
+// }];
+
 AmmoTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Ammo")
     apply {
@@ -163,7 +250,11 @@ addMissionEventHandler ["Draw3D", {
     };
 
     // Always draw icon for cursor object;
-    private _vehiclesWithIcons = [[cursorObject, true]];
+    // TODO: Consider cursorTarget
+    private _cursorObject = cursorObject;
+    private _vehiclesWithIcons = if (_cursorObject getVariable ["MDL_IsVisible", false]) then {
+        [[_cursorObject, true]]
+    } else { [] };
     curatorMouseOver params ["_type", "_entity", "_index"];
     if (_type isEqualTo "OBJECT") then {
         _vehiclesWithIcons pushBackUnique [_entity, true];
@@ -189,7 +280,12 @@ addMissionEventHandler ["Draw3D", {
         case 0: {
             {
                 _vehiclesWithIcons pushBackUnique [_x, false];
-            } forEach (vehicles select {side effectiveCommander _x isNotEqualTo SideUNKNOWN});
+            // } forEach (vehicles select {
+            //     side effectiveCommander _x isNotEqualTo SideUNKNOWN && side effectiveCommander _x isNotEqualTo EAST
+            //     || {(side effectiveCommander _x isEqualTo EAST && {player knowsAbout _x > 1})}});
+            } forEach (vehicles select {
+                side effectiveCommander _x isNotEqualTo SideUNKNOWN && side effectiveCommander _x isNotEqualTo EAST
+                || {(side effectiveCommander _x isEqualTo EAST && {_x getVariable ["MDL_IsVisible", false]})}});
         };
         // Enemy only
         case 1: {
