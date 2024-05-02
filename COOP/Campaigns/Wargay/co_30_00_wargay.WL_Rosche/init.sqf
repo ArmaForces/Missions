@@ -9,7 +9,7 @@ maxviewdistance = 10000;
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
 EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
 IconMode = 0;
-OnlyReconCanSpot = true;
+OnlyReconCanSpot = false;
 
 /* Custom test things */
 
@@ -91,15 +91,11 @@ fnc_isReconVehicle = {
 
         if (_newKnowsAbout > 0.75 && {!_isRevealed}) then {
 
-            // BUG: Doesn't work for groups larger than 1 person
-            private _anyUnitRecognizesTarget = units _group findIf {_x targetKnowledge _targetUnit select 1} != -1;
-            if (_anyUnitRecognizesTarget) then {
-            // if (leader _group targetKnowledge _targetUnit select 0) then {
-                #ifdef DEV_DEBUG
-                diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Revealing Target: %3 detected by Group: %2", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
-                #endif
-                _targetUnit setVariable ["MDL_IsVisible", true, true];
-            };
+            _targetUnit setVariable ["MDL_IsVisible", true, true];
+            #ifdef DEV_DEBUG
+            diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Revealing Target: %3 detected by Group: %2", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
+            #endif
+            _group reveal _targetUnit;
         };
     }];
 
@@ -331,11 +327,11 @@ fnc_drawIcon = {
     private _iconWidth = (0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
     private _iconHeight = _iconWidth;
     private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { WestIconColor } else { EastIconColor };
-    private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
-    #ifdef DEV_DEBUG
-    diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
-    #endif
-    drawIcon3D _icon3DParams;
+    // #ifdef DEV_DEBUG
+    // private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
+    // diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
+    // #endif
+    drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
 };
 
 // addMissionEventHandler ["Draw3D", {
