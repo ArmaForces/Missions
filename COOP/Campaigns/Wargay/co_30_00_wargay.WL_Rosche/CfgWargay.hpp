@@ -1,10 +1,12 @@
 #define ARMOR(FRONT,SIDES,BACK,TOP) armor[] = { FRONT, SIDES, BACK, TOP }
 #define VEHICLE(vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
         { \
+            hitpoints = 10;\
             ARMOR(armorFront,armorSides,armorBack,armorTop);\
         }
 #define VEHICLE_RECON(vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
         { \
+            hitpoints = 10;\
             ARMOR(armorFront,armorSides,armorBack,armorTop);\
             isRecon = 1;\
         }

@@ -58,8 +58,8 @@ fnc_visibilityCheckLoop = {
 
 call fnc_visibilityCheckLoop;
 
-fnc_isReconVehicle = {
-    params ["_unitOrGroup"];
+fnc_getVehicleInfo = {
+    params ["_unitOrGroup", ["_key", ""], ["_defaultValue", objNull]];
 
     private _unit = if (_unitOrGroup isEqualType objNull) then {
         vehicle _unitOrGroup
@@ -68,16 +68,21 @@ fnc_isReconVehicle = {
     };
 
     private _vehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _unit, objNull];
-    if (_vehicleInfo isEqualTo objNull) exitWith { false };
+    if (_vehicleInfo isEqualTo objNull) exitWith { _defaultValue };
 
-    _vehicleInfo getOrDefault ["isRecon", 0] isEqualTo 1
+    if (_key isEqualTo "") exitWith { _vehicleInfo };
+
+    _vehicleInfo getOrDefault [_key, _defaultValue]
+};
+
+fnc_isReconVehicle = {
+    params ["_unitOrGroup"];
+    [_unitOrGroup, "isRecon", false] call fnc_getVehicleInfo isEqualTo 1
 };
 
 {
     _x addEventHandler ["KnowsAboutChanged", {
         params ["_group", "_targetUnit", "_newKnowsAbout", "_oldKnowsAbout"];
-
-        // TODO: Consider limiting reveal for all only to recon groups/units/vehicles
 
         if (side _targetUnit isNotEqualTo EAST) exitWith {};
 
@@ -120,6 +125,7 @@ VehicleTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Vehicles")
     apply {
         private _hashMap = createHashMap;
+        _hashMap set ["hitpoints", getNumber (_x >> "hitpoints")];
         _hashMap set ["armor", getArray (_x >> "armor")];
         _hashMap set ["isRecon", getNumber (_x >> "isRecon")];
         [toUpper configName _x, _hashMap]
@@ -194,7 +200,20 @@ VehicleTypes = createHashMapFromArray
     }];
 
     _x setVariable ["MDL_HitPartEHID", _ehId];
-    _x setVariable ["MDL_currentHp", MAX_HP];
+    private _vehicleHitpoints = [_x, "hitpoints"] call fnc_getVehicleInfo;
+    if (_vehicleHitpoints isEqualTo objNull) then {
+        private _defaultHitpoints = 10;
+        _vehicleHitpoints = _defaultHitpoints;
+        diag_log format ["WARGAY WARNING Hitpoints not defined for %1. Setting default hitpoints %2", typeof _x, _defaultHitpoints];
+    } else {
+        diag_log format ["WARGAY DEBUG Hitpoints %1", str _vehicleHitpoints];
+    };
+    
+    _x setVariable ["MDL_currentHp", _vehicleHitpoints];
+    _x setVariable ["MDL_maxHp", _vehicleHitpoints];
+
+    // 
+    _x setFuelConsumptionCoef 10;
 } forEach vehicles;
 
 fnc_getHitDir = {
