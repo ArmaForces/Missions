@@ -498,13 +498,14 @@ fnc_heatDamage = {
 // Not using distance as velocity seems to fit better
 fnc_keDamage = {
     params ["_armor", "_ammoBaseDamage", "_velocity"];
-    if (_armor isEqualTo 0) exitWith { 2 * _ammoBaseDamage };
+    private _damageFromVelocity = _ammoBaseDamage - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
 
-    private _damageNoArmor = _ammoBaseDamage - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
-    private _damagePart1 = (_damageNoArmor * (2 - _armor)) max 0; // Standard for 1 armor, 0 for 2 armor
-    private _damagePart2 = _damageNoArmor - (_damageNoArmor/2) - (_armor - 2) * 0.5; // Half for 2 armor, decreasing .5 for every additional armor point
-    
-    _damagePart1 max _damagePart2
+    if (_armor isEqualTo 0) exitWith { 2 * (_ammoBaseDamage max _damageFromVelocity) };
+    if (_armor isEqualTo 1) exitWith { (_ammoBaseDamage max _damageFromVelocity) };
+    if (_damageFromVelocity < 0) exitWith { 0 };
+
+    // Half for 2 armor, decreasing .5 for every additional armor point
+    _damageFromVelocity - (_damageFromVelocity/2) - (_armor - 2) * 0.5
 };
 
 // TODO: Consider distance from projectile
