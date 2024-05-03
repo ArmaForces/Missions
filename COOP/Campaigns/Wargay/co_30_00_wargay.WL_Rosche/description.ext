@@ -40,11 +40,19 @@ class CfgFunctions {
         };
         class Damage
         {
+            class calculateAndApplyDamage {};
             class getHitDir {};
-            class handleDamage {};
             class heatDamage {};
             class heDamage {};
             class keDamage {};
+        };
+        class EventHandlers
+        {
+            class draw3D {};
+            class handleDamage {};
+            class hitPart {};
+            class keyDown {};
+            class knowsAboutChanged {};
         };
         class Icons
         {
