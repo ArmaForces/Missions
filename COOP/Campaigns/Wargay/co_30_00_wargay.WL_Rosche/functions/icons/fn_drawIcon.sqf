@@ -33,4 +33,15 @@ private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { 
 // private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
 // diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
 // #endif
-drawIcon3D [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
+drawIcon3D [
+    _iconPath,
+    [_sideColor, [1,1,1,1]],
+    _worldPos,
+    _iconWidth,
+    _iconHeight,
+    0,
+    _iconDescription,
+    _includeText, // True = outline, False = nothing
+    0.02,
+    "EtelkaMonospacePro"
+];
