@@ -78,8 +78,7 @@ if (_newHp <= 0) exitWith {
     {_x setDamage 1} forEach crew _unit;
     _unit setDamage 1;
 
-    private _ehId = _unit getVariable ["MDL_HitPartEHID", -1];
-    _unit removeEventHandler ["HitPart", _ehId];
+    _unit removeEventHandler [_thisEvent, _thisEventHandler];
 };
 
 #ifdef DEV_DEBUG

@@ -54,32 +54,44 @@ VehicleTypes = createHashMapFromArray
         [toUpper configName _x, _hashMap]
     });
 
-// ["AllVehicles", "HandleDamage", ] call CBA_fnc_addClassEventHandler;
+["AllVehicles", "HandleDamage", {
+    // Nested call to allow using "exitWith" without leaving Event Handler
+    _this call FUNC(handleDamage)
+},
+true,
+["Man"],
+true] call CBA_fnc_addClassEventHandler;
 
-{
-    _x addEventHandler ["HandleDamage", {
-        // Nested call to allow using "exitWith" without leaving Event Handler
-        _this call FUNC(handleDamage);
-    }];
+// ["AllVehicles", "HitPart", FUNC(hitPart)] call CBA_fnc_addClassEventHandler;
 
-    private _ehId = _x addEventHandler ["HitPart", FUNC(hitPart)];
+["AllVehicles", "Init", {
+    // TODO: Check if waitAndExecute is needed
+    params ["_entity"];
 
-    _x setVariable ["MDL_HitPartEHID", _ehId];
-    private _vehicleHitpoints = [_x, "hitpoints"] call FUNC(getVehicleInfo);
+    #ifdef DEV_DEBUG
+    diag_log format ["WARGAY DEBUG Init [%1]: Entity: %2, Type: %3", diag_tickTime, _entity, typeOf _entity];
+    #endif
+
+    private _vehicleHitpoints = [_entity, "hitpoints"] call FUNC(getVehicleInfo);
     if (_vehicleHitpoints isEqualTo objNull) then {
         private _defaultHitpoints = 10;
         _vehicleHitpoints = _defaultHitpoints;
-        diag_log format ["WARGAY WARNING Hitpoints not defined for %1. Setting default hitpoints %2", typeof _x, _defaultHitpoints];
+        diag_log format ["WARGAY WARNING Hitpoints not defined for %1. Setting default hitpoints %2", typeof _entity, _defaultHitpoints];
     } else {
         diag_log format ["WARGAY DEBUG Hitpoints %1", str _vehicleHitpoints];
     };
     
-    _x setVariable ["MDL_currentHp", _vehicleHitpoints];
-    _x setVariable ["MDL_maxHp", _vehicleHitpoints];
+    _entity setVariable ["MDL_currentHp", _vehicleHitpoints];
+    _entity setVariable ["MDL_maxHp", _vehicleHitpoints];
 
-    // 
-    _x setFuelConsumptionCoef 10;
-} forEach vehicles;
+    _entity addEventHandler ["HitPart", FUNC(hitPart)];
+
+    // Increase fuel consumption;
+    _entity setFuelConsumptionCoef 10;
+},
+true, // Allow inheritance
+["Man"], // Excluded classes
+true /* Apply retroactive */] call CBA_fnc_addClassEventHandler;
 
 addMissionEventHandler ["Draw3D", FUNC(draw3D)];
 
