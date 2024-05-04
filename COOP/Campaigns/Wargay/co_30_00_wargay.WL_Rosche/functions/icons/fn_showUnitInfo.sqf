@@ -17,10 +17,10 @@ params ["_unit"];
 
 if !(_unit isKindOf "AllVehicles") exitWith {};
 
-private _unitInfo = [_unit] call fnc_getVehicleInfo;
+private _unitInfo = [_unit] call FUNC(getVehicleInfo);
 
 private _messageParts = [
-    [_unitInfo] call fnc_getVehicleDisplayName,
+    [_unitInfo] call FUNC(getVehicleDisplayName),
     lineBreak,
     lineBreak,
     "Armor [Front/Sides/Back/Top]:",

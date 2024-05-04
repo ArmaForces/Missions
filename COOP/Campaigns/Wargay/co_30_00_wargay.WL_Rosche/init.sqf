@@ -18,9 +18,6 @@ SurfaceVectors = [];
 VelocityVectors = [];
 #endif
 
-// Handle "Info" button
-findDisplay 46 displayAddEventHandler ["KeyDown", FUNC(keyDown)];
-
 // TODO: Consider adding initial projectile position/velocity in Fired EH and base damage on that
 
 {

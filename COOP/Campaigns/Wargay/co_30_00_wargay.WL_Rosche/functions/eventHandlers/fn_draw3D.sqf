@@ -32,9 +32,10 @@
 // Always draw icon for cursor object;
 // TODO: Consider cursorTarget
 private _cursorObject = cursorObject;
-private _vehiclesWithIcons = if (_cursorObject getVariable ["MDL_IsVisible", false]) then {
+private _vehiclesWithIcons = if (_cursorObject getVariable ["MDL_IsVisible", false] && {side effectiveCommander _cursorObject isNotEqualTo SideUnknown}) then {
     [[_cursorObject, true]]
 } else { [] };
+
 curatorMouseOver params ["_type", "_entity", "_index"];
 if (_type isEqualTo "OBJECT") then {
     _vehiclesWithIcons pushBackUnique [_entity, true];

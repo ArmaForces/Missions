@@ -51,8 +51,11 @@ class CfgFunctions {
             class draw3D {};
             class handleDamage {};
             class hitPart {};
-            class keyDown {};
             class knowsAboutChanged {};
+        };
+        class KeyHandlers
+        {
+            class keyUnitInfo {};
         };
         class Icons
         {

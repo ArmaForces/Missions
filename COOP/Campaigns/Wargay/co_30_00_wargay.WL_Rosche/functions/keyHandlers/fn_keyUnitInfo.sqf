@@ -16,11 +16,7 @@
  * Public: No
  */
 
-#define KEY_TAB 15 // 0x0F
-
 params ["_displayOrControl", "_key", "_shift", "_ctrl", "_alt"];
-
-if (_key isNotEqualTo KEY_TAB) exitWith {};
 
 private _cursorTarget = cursorTarget;
 if (_cursorTarget isEqualTo objNull) exitWith {};

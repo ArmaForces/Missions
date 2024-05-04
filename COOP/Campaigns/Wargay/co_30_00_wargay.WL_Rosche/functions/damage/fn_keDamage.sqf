@@ -18,6 +18,8 @@
 #define BASE_AP_SPEED 1300
 #define VELOCITY_STEP 150
 
+// TODO: Consider if 0.1 AP should do damage vs 1 armor
+
 params ["_armor", "_ammoBaseDamage", "_velocity"];
 
 private _damageFromVelocity = _ammoBaseDamage - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
