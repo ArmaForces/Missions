@@ -87,6 +87,8 @@ true] call CBA_fnc_addClassEventHandler;
     // Increase fuel consumption;
     _entity setFuelConsumptionCoef 10;
 
+    _entity allowCrewInImmobile true;
+
     if (hasInterface) then {
         // TODO: Repair/rearm/refuel action handling
         [
