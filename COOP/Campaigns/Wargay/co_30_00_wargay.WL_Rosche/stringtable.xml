@@ -74,6 +74,34 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Repair interrupted %1/%2 HP</English>
             <Polish>Naprawa przerwana %1/%2 PŻ</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_UnitIcons">
+            <English>Icon size multiplier</English>
+            <Polish>Mnożnik rozmiaru znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeDependsOnDistance">
+            <English>Icon size depending on distance</English>
+            <Polish>Rozmiar znaczników zależny od odległości</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeDependsOnDistance_Description">
+            <English>Enables autoscaling of icon size depending on the distance to the unit. The closer the unit is, the bigger the icon gets (up to 2x the standard size when it's 50 m or closer).</English>
+            <Polish>Włącza skalowanie rozmiaru znaczników w zależności od odległości do jednostki. Im bliżej jest jednostka, tym większy będzie jej znacznik (do 2x normalnego rozmiaru jeżeli jest w odległości do 50 m).</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeMultiplier">
+            <English>Icon size multiplier</English>
+            <Polish>Mnożnik rozmiaru znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeMultiplier_Description">
+            <English>Allows adjusting size of icons shown above known units</English>
+            <Polish>Pozwala dostosować rozmiar znaczników wyświetlanych nad znanymi jednostkami</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconTextSizeMultiplier">
+            <English>Icon text size multiplier</English>
+            <Polish>Mnożnik rozmiaru tekstu znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconTextSizeMultiplier_Description">
+            <English>Allows adjusting size of text shown above targeted unit</English>
+            <Polish>Pozwala dostosować rozmiar tekstu wyświetlanego nad namierzoną jednostką</Polish>
+        </Key>
     </Package>
 </Project>
 

@@ -26,23 +26,30 @@ private _iconDescription = if (_includeText) then {
 
 private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
 private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
-private _iconWidth = (0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
-// TODO: Configurable icon size multiplier (and text size separately)
-private _iconHeight = _iconWidth;
+private _iconSize = (GVAR(unitIconSizeMultiplier) * 0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
 private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { WestIconColor } else { EastIconColor };
 // #ifdef DEV_DEBUG
-// private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconWidth, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
+// private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconSize, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
 // diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
 // #endif
+
+// TODO: Configurable switch to increase/decrease size with distance
+if (GVAR(unitIconSizeDependsOnDistance)) then {
+    private _distance = player distance _worldPos;
+    private _factor = (2 - ((_distance - 50) * 0.0005)) min 2 max 0.75;
+    // private _factor = 2 min (1 max ((_distance - 300) * 0.0014));
+    _iconSize = _iconSize * _factor;
+};
+
 drawIcon3D [
     _iconPath,
     [_sideColor, [1,1,1,1]],
     _worldPos,
-    _iconWidth,
-    _iconHeight,
+    _iconSize,
+    _iconSize,
     0,
     _iconDescription,
     _includeText, // True = outline, False = nothing
-    0.02,
+    GVAR(unitIconTextSizeMultiplier) * 0.02,
     "EtelkaMonospacePro"
 ];
