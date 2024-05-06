@@ -17,8 +17,8 @@
 params ["_unit", ["_nonDamagedMark", "_"]];
 
 private _currentHp = _unit getVariable ["MDL_currentHp", 0];
-// TODO: Get max HP
-private _missingHp = 10 - _currentHp;
+private _maxHp = _unit getVariable ["MDL_maxHp", MAX_HP];
+private _missingHp = _maxHp - _currentHp;
 
 // BUG: Doesn't work properly when 0 HP
 private _string = "";
