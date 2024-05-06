@@ -42,6 +42,8 @@
 // Wargay stuff
 #define DISPLAY_NAME_PROPERTY "displayNameShort"
 #define MAX_HP 10
+#define HEAL_AMOUNT 0.5
+#define HEAL_SECONDS_PER_POINT 5
 #define NO_ARMOR [0, 0, 0, 0]
 
 #include "\x\cba\addons\main\script_macros_mission.hpp"

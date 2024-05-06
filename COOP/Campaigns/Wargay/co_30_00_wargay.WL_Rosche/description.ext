@@ -40,8 +40,10 @@ class CfgFunctions {
         };
         class Damage
         {
+            class applyDamage {};
             class calculateAndApplyDamage {};
             class getHitDir {};
+            class healDamage {};
             class heatDamage {};
             class heDamage {};
             class keDamage {};

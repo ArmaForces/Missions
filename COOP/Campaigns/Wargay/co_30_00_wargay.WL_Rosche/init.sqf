@@ -97,6 +97,7 @@ true] call CBA_fnc_addClassEventHandler;
             "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
             "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
             "_target getVariable ['MDL_currentHp', 0] < _target getVariable ['MDL_maxHp', 0]", // Condition show
+            // TODO: Allow only for engineers and near supply vehicles
             "true", // Condition progress
             {
                 params ["_target"];
@@ -105,7 +106,7 @@ true] call CBA_fnc_addClassEventHandler;
 
                 private _currentHp = _target getVariable ["MDL_currentHp", 0];
                 private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
-                private _actualDuration = (_maxHp - _currentHp) * 5;
+                private _actualDuration = (_maxHp - _currentHp) * HEAL_SECONDS_PER_POINT;
                 // TODO: Shorten duration based on unit skill
 
                 // Please forgive me for magically changing variable from unknown outer scope
@@ -113,7 +114,7 @@ true] call CBA_fnc_addClassEventHandler;
 
                 // Determine at which steps we want to repair
                 #define MAX_FRAME 24
-                private _stepsToHeal = ceil ((_maxHp - _currentHp)/0.5);
+                private _stepsToHeal = ceil ((_maxHp - _currentHp)/HEAL_AMOUNT);
                 private _healEvery = MAX_FRAME / _stepsToHeal;
                 private _lastHeal = MAX_FRAME;
                 private _stepsWithRepair = [];
@@ -133,22 +134,21 @@ true] call CBA_fnc_addClassEventHandler;
                 private _nextRepairStep = _stepsWithRepair select (count _stepsWithRepair - 1);
                 
                 if (_frame > _nextRepairStep) then {
+                    // For display purposes only
                     private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
                     private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
-                    private _newHp = (_currentHp + 0.5) min 10;
-                    _target setVariable ["MDL_currentHp", _newHp, true];
-                    _target setDamage ((_newHp/_maxHp) min 0.8);
+                    private _newHp = (_currentHp + HEAL_AMOUNT) min 10;
                     systemChat format [LLSTRING(RepairProgress), _newHp, _maxHp];
+                    
+                    // Actual healing
+                    ["MDL_healDamage", [_target, HEAL_AMOUNT]] call CBA_fnc_serverEvent;
 
                     _stepsWithRepair deleteAt (count _stepsWithRepair - 1);
                 };
             }, // Code progress
             {
                 params ["_target"];
-                // TODO: Consider extracting healing to a separate function
-                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
-                _target setVariable ["MDL_currentHp", _maxHp, true];
-                _target setDamage 0;
+                ["MDL_healDamage", [_target]] call CBA_fnc_serverEvent;
                 systemChat LLSTRING(RepairFinished);
             }, // Code completed
             {

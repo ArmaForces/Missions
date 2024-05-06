@@ -70,22 +70,4 @@ diag_log _infoMsg;
 
 if (_damage isEqualTo 0) exitWith {};
 
-private _currentHp = _unit getVariable ["MDL_currentHp", 10];
-private _newHp = _currentHp - _damage;
-
-if (_newHp <= 0) exitWith {
-    _unit setVariable ["MDL_currentHp", 0, true];
-    {_x setDamage 1} forEach crew _unit;
-    _unit setDamage 1;
-
-    _unit removeEventHandler [_thisEvent, _thisEventHandler];
-};
-
-#ifdef DEV_DEBUG
-systemChat format ["Remaining HP: %1/10", _newHp];
-#endif
-
-_unit setVariable ["MDL_currentHp", _newHp, true];
-// Limit to 0.8 to avoid explosions when hull or fuel are almost destroyed
-_unit setDamage ((_newHp/MAX_HP) min 0.8);
-["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
+["MDL_applyDamage", [_unit, _damage]] call CBA_fnc_serverEvent;
