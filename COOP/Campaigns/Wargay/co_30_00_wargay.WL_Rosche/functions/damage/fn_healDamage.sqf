@@ -27,6 +27,6 @@ private _maxHp = _unit getVariable ["MDL_maxHp", MAX_HP];
 private _currentHp = _unit getVariable ["MDL_currentHp", MAX_HP];
 private _newHp = (_currentHp + 0.5) min 10;
 _unit setVariable ["MDL_currentHp", _newHp, true];
-_unit setDamage ((_newHp/_maxHp) min 0.8);
+_unit setDamage (((1 - _newHp)/_maxHp) min 0.8);
 
 ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
