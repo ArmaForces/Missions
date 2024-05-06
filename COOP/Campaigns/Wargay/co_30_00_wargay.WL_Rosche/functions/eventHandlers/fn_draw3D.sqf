@@ -31,9 +31,12 @@
 
 // Always draw icon for cursor object;
 // TODO: Consider cursorTarget
-// BUG: Doesn't work for friendlies
 private _cursorObject = cursorObject;
-private _vehiclesWithIcons = if (_cursorObject getVariable ["MDL_IsVisible", false] && {side effectiveCommander _cursorObject isNotEqualTo SideUnknown}) then {
+private _vehiclesWithIcons = if (
+    side effectiveCommander _cursorObject isEqualTo side player || {
+        (_cursorObject getVariable ["MDL_IsVisible", false]
+        && {side effectiveCommander _cursorObject isNotEqualTo SideUnknown})
+}) then {
     [[_cursorObject, true]]
 } else { [] };
 
