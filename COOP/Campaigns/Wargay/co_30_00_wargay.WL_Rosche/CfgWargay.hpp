@@ -403,10 +403,15 @@ class CfgWargay
         VEHICLE(gm_ge_army_Leopard1a1,6,2,2,1); // 1A1 should be recon with 5/2/2/1
         VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a1);
         VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a2);
+        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a3);
+        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a4);
         VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_bpz2a0)
         VEHICLE(gm_ge_army_Leopard1a3,8,3,2,2);
         VEHICLE_LIKE(gm_ge_army_Leopard1a3,gm_ge_army_Leopard1a3a1);
+        VEHICLE_LIKE(gm_ge_army_Leopard1a3,gm_ge_army_Leopard1a3a2);
+        VEHICLE_LIKE(gm_ge_army_Leopard1a3,gm_ge_army_Leopard1a3a3);
         VEHICLE(gm_ge_army_Leopard1a5,10,3,2,2);
+        VEHICLE_LIKE(gm_ge_army_Leopard1a5,gm_ge_army_Leopard1a5a1);
         VEHICLE(gm_ge_army_gepard1a1,3,2,2,1);
         VEHICLE(gm_ge_army_m109g,2,1,1,1);
         VEHICLE(gm_ge_army_marder1a1,4,2,1,1);
