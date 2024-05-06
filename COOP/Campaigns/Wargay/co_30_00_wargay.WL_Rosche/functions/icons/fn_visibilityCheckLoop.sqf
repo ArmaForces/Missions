@@ -19,7 +19,7 @@ if (_targetsToCheck isEqualTo []) then {
 	_targetsToCheck = vehicles select {side effectiveCommander _x isEqualTo EAST};
 };
 if (_targetsToCheck isEqualTo []) exitWith {
-	[fnc_visibilityCheckLoop, [], 5] call CBA_fnc_waitAndExecute;
+	[FUNC(visibilityCheckLoop), [], 5] call CBA_fnc_waitAndExecute;
 };
 
 private _target = _targetsToCheck deleteAt (count _targetsToCheck - 1);
