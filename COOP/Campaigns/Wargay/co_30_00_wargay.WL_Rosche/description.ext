@@ -73,6 +73,18 @@ class CfgFunctions {
             class showUnitInfo {};
             class visibilityCheckLoop {};
         };
+        class Repair
+        {
+            class addRepairAction {};
+            class completeRepair {};
+            class interruptedRepair {};
+            class progressRepair {};
+            class startRepair {};
+        };
+        class Settings
+        {
+            class initSettings { preInit = 1; };
+        };
     };
 };
 

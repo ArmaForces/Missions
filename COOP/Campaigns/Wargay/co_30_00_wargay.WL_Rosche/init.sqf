@@ -93,76 +93,7 @@ true] call CBA_fnc_addClassEventHandler;
         // TODO: Consider allowing repair only near supply vehicles
         // TODO: Disallow repair when active (damage received, shooting)
         // TODO: Consider repair/rearm/refuel for all eligible vehicles in some radius (e.g., via some deployable)
-        [
-            _entity,
-            localize "str_state_repair",
-            "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
-            "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
-            QUOTE([ARR_2(_this,_target)] call FUNC(canRepair)), // Condition show
-            "vehicle _this isEqualTo _this && {_this distance _target < 5}", // Condition progress
-            {
-                params ["_target"];
-
-                // TODO: Stop action if unit shoots or gets damaged
-
-                private _currentHp = _target getVariable ["MDL_currentHp", 0];
-                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
-                private _actualDuration = (_maxHp - _currentHp) * HEAL_SECONDS_PER_POINT;
-                // TODO: Shorten duration based on unit skill
-
-                // Please forgive me for magically changing variable from unknown outer scope
-                _duration = _actualDuration;
-
-                // Determine at which steps we want to repair
-                #define MAX_FRAME 24
-                private _stepsToHeal = ceil ((_maxHp - _currentHp)/HEAL_AMOUNT);
-                private _healEvery = MAX_FRAME / _stepsToHeal;
-                private _lastHeal = MAX_FRAME;
-                private _stepsWithRepair = [];
-                while {(_stepsToHeal - 1) > count _stepsWithRepair} do {
-                    _lastHeal = _lastHeal - _healEvery;
-                    _stepsWithRepair pushBack (_lastHeal);
-                };
-
-                _target setVariable ["MDL_repairAtSteps", _stepsWithRepair];
-            }, // Code start
-            {
-                params ["_target", "_caller", "_actionId", "_arguments", "_frame", "_maxFrame"];
-
-                private _stepsWithRepair = _target getVariable ["MDL_repairAtSteps", []];
-                if (_stepsWithRepair isEqualTo []) exitWith {};
-
-                private _nextRepairStep = _stepsWithRepair select (count _stepsWithRepair - 1);
-                
-                if (_frame > _nextRepairStep) then {
-                    // For display purposes only
-                    private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
-                    private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
-                    private _newHp = (_currentHp + HEAL_AMOUNT) min 10;
-                    systemChat format [LLSTRING(RepairProgress), _newHp, _maxHp];
-                    
-                    // Actual healing
-                    ["MDL_healDamage", [_target, HEAL_AMOUNT]] call CBA_fnc_serverEvent;
-
-                    _stepsWithRepair deleteAt (count _stepsWithRepair - 1);
-                };
-            }, // Code progress
-            {
-                params ["_target"];
-                ["MDL_healDamage", [_target]] call CBA_fnc_serverEvent;
-                systemChat LLSTRING(RepairFinished);
-            }, // Code completed
-            {
-                params ["_target"];
-                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
-                private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
-                systemChat format [LLSTRING(RepairInterrupted), _currentHp, _maxHp];
-            }, // Code interrupted,
-            [], // Arguments
-            1, // Duration (will be changed by codeStart)
-            300, // Priority
-            false // Remove completed
-        ] call BIS_fnc_holdActionAdd;
+        [_entity] call FUNC(addRepairAction);
     };
 },
 true, // Allow inheritance
