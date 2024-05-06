@@ -67,8 +67,12 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <Polish>Naprawa zakończona</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_RepairProgress">
-            <English>Repair progress %1/%2</English>
-            <Polish>Postęp naprawy %1/%2</Polish>
+            <English>Repair progress %1/%2 HP</English>
+            <Polish>Postęp naprawy %1/%2 PŻ</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairInterrupted">
+            <English>Repair interrupted %1/%2 HP</English>
+            <Polish>Naprawa przerwana %1/%2 PŻ</Polish>
         </Key>
     </Package>
 </Project>

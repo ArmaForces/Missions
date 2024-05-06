@@ -108,40 +108,53 @@ true] call CBA_fnc_addClassEventHandler;
 
                 // Please forgive me for magically changing variable from unknown outer scope
                 _duration = _actualDuration;
+
+                // Determine at which steps we want to repair
+                #define MAX_FRAME 24
+                private _stepsToHeal = ceil ((_maxHp - _currentHp)/0.5);
+                private _healEvery = MAX_FRAME / _stepsToHeal;
+                private _lastHeal = MAX_FRAME;
+                private _stepsWithRepair = [];
+                while {(_stepsToHeal - 1) > count _stepsWithRepair} do {
+                    _lastHeal = _lastHeal - _healEvery;
+                    _stepsWithRepair pushBack (_lastHeal);
+                };
+
+                _target setVariable ["MDL_repairAtSteps", _stepsWithRepair];
             }, // Code start
             {
                 params ["_target", "_caller", "_actionId", "_arguments", "_frame", "_maxFrame"];
+
+                private _stepsWithRepair = _target getVariable ["MDL_repairAtSteps", []];
+                if (_stepsWithRepair isEqualTo []) exitWith {};
+
+                private _nextRepairStep = _stepsWithRepair select (count _stepsWithRepair - 1);
                 
-                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
-
-                if (_frame isEqualTo _maxFrame) exitWith {
-                    // TODO: Consider extracting this to a separate function
-                    _target setVariable ["MDL_currentHp", _maxHp, true];
-                    _target setDamage 0;
-                    systemChat LLSTRING(RepairFinished);
-                };
-
-                private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
-                private _remainingStepsToHeal = ceil ((_maxHp - _currentHp)/0.5);
-
-                #ifdef DEV_DEBUG
-                systemChat format ["Remaining steps to heal: %1", _remainingStepsToHeal];
-                #endif
-
-                if (_remainingStepsToHeal < 2) exitWith {};
-                private _remainingSteps = _maxFrame - _frame;
-                _arguments params ["_"]
-
-                // TODO: Handle healing per 0.5 HP linearly so that the action can be interrupted
-                if (_remainingStepsToHeal isEqualTo _remainingSteps || {ceil (_maxFrame/_remainingStepsToHeal) isEqualTo _frame}) then {
+                if (_frame > _nextRepairStep) then {
+                    private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
+                    private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
                     private _newHp = (_currentHp + 0.5) min 10;
-                    _target setVariable ["MDL_currentHp", _newHp];
+                    _target setVariable ["MDL_currentHp", _newHp, true];
                     _target setDamage ((_newHp/_maxHp) min 0.8);
                     systemChat format [LLSTRING(RepairProgress), _newHp, _maxHp];
+
+                    _stepsWithRepair deleteAt (count _stepsWithRepair - 1);
                 };
             }, // Code progress
-            {}, // Code completed
-            {}, // Code interrupted,
+            {
+                params ["_target"];
+                // TODO: Consider extracting healing to a separate function
+                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
+                _target setVariable ["MDL_currentHp", _maxHp, true];
+                _target setDamage 0;
+                systemChat LLSTRING(RepairFinished);
+            }, // Code completed
+            {
+                params ["_target"];
+                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
+                private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
+                systemChat format [LLSTRING(RepairInterrupted), _currentHp, _maxHp];
+            }, // Code interrupted,
             [], // Arguments
             1, // Duration (will be changed by codeStart)
             300, // Priority
