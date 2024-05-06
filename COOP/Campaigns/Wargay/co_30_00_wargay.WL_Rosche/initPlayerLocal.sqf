@@ -12,6 +12,11 @@ CUP_stopLampCheck = true;
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 
 // Handle "Info" button
-["MDL Wargay", "MDL_WG_UnitInfo", ["Unit Info", "Opens info popup of targeted unit"], {
-    _this call FUNC(keyUnitInfo)
-}, {}, [DIK_TAB, [false, false, false]]] call CBA_fnc_addKeybind;
+[
+    "MDL Wargay",
+    "MDL_WG_UnitInfo",
+    ["Unit Info", "Opens info popup of targeted unit"],
+    FUNC(keyUnitInfo),
+    {},
+    [DIK_TAB, [false, false, false]]
+] call CBA_fnc_addKeybind;
