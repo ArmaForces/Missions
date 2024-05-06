@@ -20,6 +20,7 @@ VelocityVectors = [];
 
 // TODO: Consider adding initial projectile position/velocity in Fired EH and base damage on that
 
+// TODO: Add KnowsAboutChanged EH to WEST groups as needed as this thing most likely won't work
 {
     _x addEventHandler ["KnowsAboutChanged", FUNC(knowsAboutChanged)];
 
@@ -85,6 +86,68 @@ true] call CBA_fnc_addClassEventHandler;
 
     // Increase fuel consumption;
     _entity setFuelConsumptionCoef 10;
+
+    if (hasInterface) then {
+        // TODO: Repair/rearm/refuel action handling
+        [
+            _entity,
+            localize "str_state_repair",
+            "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
+            "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
+            "_target getVariable ['MDL_currentHp', 0] < _target getVariable ['MDL_maxHp', 0]", // Condition show
+            "true", // Condition progress
+            {
+                params ["_target"];
+
+                // TODO: Stop action if unit shoots or gets damaged
+
+                private _currentHp = _target getVariable ["MDL_currentHp", 0];
+                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
+                private _actualDuration = (_maxHp - _currentHp) * 5;
+                // TODO: Shorten duration based on unit skill
+
+                // Please forgive me for magically changing variable from unknown outer scope
+                _duration = _actualDuration;
+            }, // Code start
+            {
+                params ["_target", "_caller", "_actionId", "_arguments", "_frame", "_maxFrame"];
+                
+                private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
+
+                if (_frame isEqualTo _maxFrame) exitWith {
+                    // TODO: Consider extracting this to a separate function
+                    _target setVariable ["MDL_currentHp", _maxHp, true];
+                    _target setDamage 0;
+                    systemChat LLSTRING(RepairFinished);
+                };
+
+                private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
+                private _remainingStepsToHeal = ceil ((_maxHp - _currentHp)/0.5);
+
+                #ifdef DEV_DEBUG
+                systemChat format ["Remaining steps to heal: %1", _remainingStepsToHeal];
+                #endif
+
+                if (_remainingStepsToHeal < 2) exitWith {};
+                private _remainingSteps = _maxFrame - _frame;
+                _arguments params ["_"]
+
+                // TODO: Handle healing per 0.5 HP linearly so that the action can be interrupted
+                if (_remainingStepsToHeal isEqualTo _remainingSteps || {ceil (_maxFrame/_remainingStepsToHeal) isEqualTo _frame}) then {
+                    private _newHp = (_currentHp + 0.5) min 10;
+                    _target setVariable ["MDL_currentHp", _newHp];
+                    _target setDamage ((_newHp/_maxHp) min 0.8);
+                    systemChat format [LLSTRING(RepairProgress), _newHp, _maxHp];
+                };
+            }, // Code progress
+            {}, // Code completed
+            {}, // Code interrupted,
+            [], // Arguments
+            1, // Duration (will be changed by codeStart)
+            300, // Priority
+            false // Remove completed
+        ] call BIS_fnc_holdActionAdd;
+    };
 },
 true, // Allow inheritance
 ["Man"], // Excluded classes

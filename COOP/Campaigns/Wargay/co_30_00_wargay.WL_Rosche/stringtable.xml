@@ -61,6 +61,15 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <Polish>Powrót do bazy.</Polish>
         </Key>
 
+        <!-- WARGAY -->
+        <Key ID="STR_AFP_Scripts_RepairFinished">
+            <English>Repair finished</English>
+            <Polish>Naprawa zakończona</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairProgress">
+            <English>Repair progress %1/%2</English>
+            <Polish>Postęp naprawy %1/%2</Polish>
+        </Key>
     </Package>
 </Project>
 
