@@ -36,7 +36,9 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class Common
         {
+            class canRepair {};
             class getGroupVehicles {};
+            class isEngineer {};
         };
         class Damage
         {

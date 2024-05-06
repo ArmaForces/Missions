@@ -90,15 +90,16 @@ true] call CBA_fnc_addClassEventHandler;
     _entity allowCrewInImmobile true;
 
     if (hasInterface) then {
-        // TODO: Repair/rearm/refuel action handling
+        // TODO: Consider allowing repair only near supply vehicles
+        // TODO: Disallow repair when active (damage received, shooting)
+        // TODO: Consider repair/rearm/refuel for all eligible vehicles in some radius (e.g., via some deployable)
         [
             _entity,
             localize "str_state_repair",
             "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
             "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
-            "_target getVariable ['MDL_currentHp', 0] < _target getVariable ['MDL_maxHp', 0]", // Condition show
-            // TODO: Allow only for engineers and near supply vehicles
-            "true", // Condition progress
+            QUOTE([ARR_2(_this,_target)] call FUNC(canRepair)), // Condition show
+            "vehicle _this isEqualTo _this && {_this distance _target < 5}", // Condition progress
             {
                 params ["_target"];
 

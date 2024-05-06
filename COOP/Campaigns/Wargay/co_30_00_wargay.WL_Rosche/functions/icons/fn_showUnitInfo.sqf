@@ -28,5 +28,7 @@ private _messageParts = [
     _unitInfo getOrDefault ["armor", NO_ARMOR] joinString "/"
 ];
 
+// TODO: Include ammo stats
+
 private _text = composeText _messageParts;
 hint _text;

@@ -27,6 +27,7 @@ private _iconDescription = if (_includeText) then {
 private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
 private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
 private _iconWidth = (0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
+// TODO: Configurable icon size multiplier (and text size separately)
 private _iconHeight = _iconWidth;
 private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { WestIconColor } else { EastIconColor };
 // #ifdef DEV_DEBUG
