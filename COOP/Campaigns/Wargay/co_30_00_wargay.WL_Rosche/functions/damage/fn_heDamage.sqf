@@ -34,6 +34,6 @@ fnc_damagePerHe = {
 };
 
 private _damage = _ammoBaseDamage * ([_armor] call fnc_damagePerHe);
-private _maxDistanceToTarget = _damage^2 + 1;
+private _maxDistanceToTarget = _ammoBaseDamage^2 + 1;
 private _calculatedDamage = _damage * ((_maxDistanceToTarget - _distanceToTarget)/_maxDistanceToTarget);
 0 max _calculatedDamage
