@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+private _respawnMarker = createMarker ["respawn", getPosATL respawn];
+
 call FUNC(visibilityCheckLoop);
 
 ["MDL_applyDamage", FUNC(applyDamage)] call CBA_fnc_addEventHandler;
