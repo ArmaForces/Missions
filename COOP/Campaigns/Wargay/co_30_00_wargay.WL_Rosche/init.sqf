@@ -67,7 +67,7 @@ true] call CBA_fnc_addClassEventHandler;
     _entity addEventHandler ["HitPart", FUNC(hitPart)];
 
     // Increase fuel consumption;
-    _entity setFuelConsumptionCoef 10;
+    _entity setFuelConsumptionCoef GVAR(fuelConsumptionMultiplier);
 
     _entity allowCrewInImmobile true;
 
