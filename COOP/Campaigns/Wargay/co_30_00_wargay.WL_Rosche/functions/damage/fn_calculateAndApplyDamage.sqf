@@ -68,7 +68,14 @@ if (_isUnknownAmmoType) exitWith {
     #endif
 };
 
-// TODO: Consider configurable option to show such information
+if (GVAR(showDamageFeedback)) then {
+    private _infoMsg = format ["Potential damage: %1 %2, Hit armor: %3 %4, Actual damage: %5", _ammoDamage, _ammoType, _hitDir, _armor, _damage];
+    systemChat _infoMsg;
+    #ifdef DEV_DEBUG
+    diag_log _infoMsg;
+    #endif
+};
+
 #ifdef DEV_DEBUG
 private _infoMsg = format ["Potential damage: %1 %2, Hit armor: %3 %4, Actual damage: %5", _ammoDamage, _ammoType, _hitDir, _armor, _damage];
 systemChat _infoMsg;

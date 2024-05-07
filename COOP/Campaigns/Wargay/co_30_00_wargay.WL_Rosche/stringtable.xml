@@ -74,6 +74,14 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Repair interrupted %1/%2 HP</English>
             <Polish>Naprawa przerwana %1/%2 PŻ</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_ShowDamageFeedback">
+            <English>Show Damage Feedback</English>
+            <Polish>Informacja zwrotna o obrażeniach</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_ShowDamageFeedback_Description">
+            <English>Adds feedback message with dealt damage information - potential damage, armor hit and actual damage.</English>
+            <Polish>Dodaje informację zwrotną o zadanych obrażeniach - obrażenia potencjalne, trafiony pancerz i faktycznie zadane obrażenia.</Polish>
+        </Key>
         <Key ID="STR_AFP_Scripts_UnitIcons">
             <English>Icon size multiplier</English>
             <Polish>Mnożnik rozmiaru znaczników</Polish>
