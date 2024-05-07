@@ -465,3 +465,25 @@ class CfgWargay
         VEHICLE_LIKE(gm_ge_army_bo105m_vbh,gm_gc_airforce_mi2p);
     };
 };
+
+// For future CSLA usage:
+// ["CSLA_T72", [11, 6, 3, 2]];
+// ["CSLA_T72M", [12, 7, 3, 2]];
+// ["CSLA_T72M1", [14, 7, 3, 2]];
+// ["CSLA_BVP1", [3, 1, 1, 1]];
+// ["CSLA_BPzV", [3, 1, 1, 1]];
+// ["CSLA_DTP90", [3, 1, 1, 1]];
+// ["CSLA_MU90", [3, 1, 1, 1]];
+// ["CSLA_OZV90", [3, 1, 1, 1]];
+// ["CSLA_OT62", [2, 1, 1, 1]];
+// ["CSLA_OT64C", [1, 1, 1, 1]];
+// ["CSLA_OT64C_VB", [1, 1, 1, 1]];
+// ["CSLA_OT65A", [1, 1, 1, 1]];
+// ["AFMC_M1IP", [17, 7, 3, 3]];
+// ["AFMC_M1A1", [17, 7, 4, 3]];
+// ["AFMC_LAV25", [1, 1, 1, 1]];
+// ["AFMC_M113_AMB", [1, 1, 1, 1]];
+// ["AFMC_M113_DTP", [1, 1, 1, 1]];
+// ["AFMC_M113", [1, 1, 1, 1]];
+// ["AFMC_M163", [1, 1, 1, 1]];
+// ["AFMC_M270", [1, 0, 0, 0]];

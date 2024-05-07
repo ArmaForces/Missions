@@ -20,3 +20,8 @@ CUP_stopLampCheck = true;
     {},
     [DIK_TAB, [false, false, false]]
 ] call CBA_fnc_addKeybind;
+
+["MDL_showCurrentHp", {
+    if (vehicle player isEqualTo player) exitWith {};
+    call FUNC(updateHitpointsDisplay);
+}] call CBA_fnc_addEventHandler;

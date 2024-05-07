@@ -83,6 +83,10 @@ class CfgFunctions {
             class showUnitInfo {};
             class visibilityCheckLoop {};
         };
+        class Init
+        {
+            class vehicleInit {};
+        };
         class Repair
         {
             class addRepairAction {};
