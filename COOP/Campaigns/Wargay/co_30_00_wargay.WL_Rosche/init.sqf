@@ -6,6 +6,8 @@ maxviewdistance = 10000;
 #define DEV_DEBUG
 WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
 EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
+FilledHpColor = getArray (missionConfigFile >> "CfgWargay" >> "filledHpColor");
+MissingHpColor = getArray (missionConfigFile >> "CfgWargay" >> "missingHpColor");
 IconMode = 0;
 OnlyReconCanSpot = false;
 

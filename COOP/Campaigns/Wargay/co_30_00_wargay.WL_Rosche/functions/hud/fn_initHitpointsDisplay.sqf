@@ -33,7 +33,7 @@ _ctrlContainer ctrlCommit 0;
 // hide original hitzones ctrl
 _hitZonesCtrl ctrlShow false;
 
-uiNamespace setVariable ["my_hitpointsContainer", _ctrlContainer];
+uiNamespace setVariable ["MDL_hitpointsContainer", _ctrlContainer];
 
 /*
     cameraOn setVariable ["my_hitpoints", 2];

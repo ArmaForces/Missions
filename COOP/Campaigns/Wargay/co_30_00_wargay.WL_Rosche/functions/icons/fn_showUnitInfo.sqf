@@ -19,6 +19,8 @@ if !(_unit isKindOf "AllVehicles") exitWith {};
 
 private _unitInfo = [_unit] call FUNC(getVehicleInfo);
 
+if (_unitInfo isEqualTo objNull) exitWith {};
+
 private _messageParts = [
     [_unitInfo] call FUNC(getVehicleDisplayName),
     lineBreak,

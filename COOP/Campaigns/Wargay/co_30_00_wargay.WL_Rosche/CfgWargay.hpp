@@ -15,16 +15,28 @@
 class CfgWargay
 {
     westMarkerColor[] = {
-        __EVAL(96/256),
-        __EVAL(159/256),
-        __EVAL(197/256),
+        __EVAL(96/255),
+        __EVAL(159/255),
+        __EVAL(197/255),
         0.85
     };
     eastMarkerColor[] = {
-        __EVAL(192/256),
-        __EVAL(29/256),
-        __EVAL(46/256),
+        __EVAL(192/255),
+        __EVAL(29/255),
+        __EVAL(46/255),
         0.85
+    };
+    filledHpColor[] = {
+        __EVAL(117/255),
+        1,
+        1,
+        1
+    };
+    missingHpColor[] = {
+        __EVAL(117/255),
+        __EVAL(117/255),
+        __EVAL(117/255),
+        1
     };
 
     class Ammo
