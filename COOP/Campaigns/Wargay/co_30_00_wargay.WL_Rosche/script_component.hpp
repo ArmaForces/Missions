@@ -40,6 +40,7 @@
 #define RESPAWN_HELPER_VR respawn
 
 // Wargay stuff
+// #define DEV_DEBUG
 #define DISPLAY_NAME_PROPERTY "displayNameShort"
 #define MAX_HP 10
 #define HEAL_AMOUNT 0.5

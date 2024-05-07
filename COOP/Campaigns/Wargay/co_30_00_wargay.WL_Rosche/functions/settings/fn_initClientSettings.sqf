@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: 3Mydlo3
- * Initializes settings
+ * Initializes clientside settings.
  *
  * Arguments:
  * None

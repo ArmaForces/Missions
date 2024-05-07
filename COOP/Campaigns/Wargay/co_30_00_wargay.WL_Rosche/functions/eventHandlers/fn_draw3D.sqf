@@ -60,7 +60,7 @@ curatorSelected params ["_objects", "_groups"];
     } forEach ([_x] call FUNC(getGroupVehicles));
 } forEach _groups;
 
-switch (IconMode) do {
+switch (GVAR(unitIconMode)) do {
     // Friendly and enemy
     case 0: {
         {
@@ -76,7 +76,10 @@ switch (IconMode) do {
     case 1: {
         {
             _vehiclesWithIcons pushBackUnique [_x, false];
-        } forEach (vehicles select {side effectiveCommander _x isNotEqualTo SideUNKNOWN && {side effectiveCommander _x isEqualTo EAST}});
+        } forEach (vehicles select {
+            side effectiveCommander _x isNotEqualTo SideUNKNOWN
+            && {side effectiveCommander _x isEqualTo EAST}
+            && {_x getVariable ["MDL_IsVisible", false]}});
     };
     default {};
 };

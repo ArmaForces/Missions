@@ -19,7 +19,7 @@ params ["_group", "_targetUnit", "_newKnowsAbout", "_oldKnowsAbout"];
 
 if (side _targetUnit isNotEqualTo EAST) exitWith {};
 
-if (OnlyReconCanSpot && {!([_group] call FUNC(isReconVehicle))}) exitWith {};
+if (GVAR(onlyReconCanSpot) && {!([_group] call FUNC(isReconVehicle))}) exitWith {};
 
 #ifdef DEV_DEBUG
 diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Group: %2, Target: %3, KnowsAbout: %4 -> %5", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];

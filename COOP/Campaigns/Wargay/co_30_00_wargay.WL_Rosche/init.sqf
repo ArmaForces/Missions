@@ -3,13 +3,10 @@
 minviewdistance = 500;
 maxviewdistance = 10000;
 
-#define DEV_DEBUG
-WestIconColor = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
-EastIconColor = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
-FilledHpColor = getArray (missionConfigFile >> "CfgWargay" >> "filledHpColor");
-MissingHpColor = getArray (missionConfigFile >> "CfgWargay" >> "missingHpColor");
-IconMode = 0;
-OnlyReconCanSpot = false;
+GVAR(westIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
+GVAR(eastIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
+GVAR(filledHpColor) = getArray (missionConfigFile >> "CfgWargay" >> "filledHpColor");
+GVAR(missingHpColor) = getArray (missionConfigFile >> "CfgWargay" >> "missingHpColor");
 
 /* Custom test things */
 

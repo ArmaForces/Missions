@@ -32,8 +32,8 @@ private _indicators = [];
 for "_i" from 0 to (_totalHitPoints-1) do {
     private _hpCtrl = _display ctrlCreate ["RscText", -1, _ctrlContainer];
 	_hpCtrl ctrlSetBackgroundColor ([
-        MissingHpColor,
-    	FilledHpColor
+        GVAR(missingHpColor),
+    	GVAR(filledHpColor)
     ] select (_i < _hitPoints));
         
 	_hpCtrl ctrlSetPosition [
