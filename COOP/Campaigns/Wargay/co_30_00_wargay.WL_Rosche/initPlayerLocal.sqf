@@ -25,3 +25,5 @@ CUP_stopLampCheck = true;
     if (vehicle player isEqualTo player) exitWith {};
     call FUNC(updateHitpointsDisplay);
 }] call CBA_fnc_addEventHandler;
+
+["MDL_rearmVehicle", FUNC(rearmVehicle)] call CBA_fnc_addEventHandler;

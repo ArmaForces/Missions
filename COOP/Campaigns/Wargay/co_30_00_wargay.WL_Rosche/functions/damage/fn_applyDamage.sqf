@@ -34,3 +34,8 @@ _unit setVariable ["MDL_currentHp", _newHp, true];
 // Limit to 0.8 to avoid explosions when hull or fuel are almost destroyed
 _unit setDamage (((1 - _newHp)/_maxHp) min 0.8);
 ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
+
+if (isPlayer _unit) then {
+    // Need to publicize it as this function runs locally for one player
+    _unit setVariable ["MDL_lastCombatActive", CBA_missionTime, true];
+};

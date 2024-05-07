@@ -74,6 +74,14 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Repair interrupted %1/%2 HP</English>
             <Polish>Naprawa przerwana %1/%2 PŻ</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_RearmFinished">
+            <English>Rearm finished</English>
+            <Polish>Przezbrojenie zakończone</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RearmInterrupted">
+            <English>Rearm interrupted</English>
+            <Polish>Przezbrojenie przerwane</Polish>
+        </Key>
         <Key ID="STR_AFP_Scripts_ShowDamageFeedback">
             <English>Show Damage Feedback</English>
             <Polish>Informacja zwrotna o obrażeniach</Polish>
@@ -111,8 +119,8 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <Polish>Pozwala dostosować rozmiar tekstu wyświetlanego nad namierzoną jednostką</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_VehicleInCombat">
-            <English>Repair interrupted, vehicle is in combat.</English>
-            <Polish>Naprawa przerwana, pojazd uczestniczy w walce.</Polish>
+            <English>Action interrupted, vehicle is in combat.</English>
+            <Polish>Akcja przerwana, pojazd uczestniczy w walce.</Polish>
         </Key>
     </Package>
 </Project>

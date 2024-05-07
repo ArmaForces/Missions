@@ -89,6 +89,14 @@ class CfgFunctions {
         {
             class vehicleInit {};
         };
+        class Rearm
+        {
+            class addRearmAction {};
+            class canRearm {};
+            class completeRearm {};
+            class interruptedRearm {};
+            class rearmVehicle {};
+        };
         class Repair
         {
             class addRepairAction {};

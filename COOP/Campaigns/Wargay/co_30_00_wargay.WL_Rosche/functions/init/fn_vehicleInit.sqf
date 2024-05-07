@@ -42,6 +42,7 @@ if (hasInterface) then {
     // TODO: Consider allowing repair only near supply vehicles
     // TODO: Consider repair/rearm/refuel for all eligible vehicles in some radius (e.g., via some deployable)
     [_entity] call FUNC(addRepairAction);
+    [_entity] call FUNC(addRearmAction);
         
     addMissionEventHandler ["Draw3D", FUNC(draw3D)];
 };
