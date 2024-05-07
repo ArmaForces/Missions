@@ -1,13 +1,15 @@
 #include "..\script_component.hpp"
 /*
  * Author: 3Mydlo3
- * //TODO: Fill
+ * Retrieves vehicle info hashmap for given unit or group (leader vehicle) if available.
  *
  * Arguments:
- * //TODO: Fill
+ * 0: Unit or group to get its vehicle <OBJECT/GROUP>
+ * 1: Unit info key <STRING> (Optional, if empty whole hashmap is returned)
+ * 2: Default value if key or unit info doesn't exist <ANY>
  *
  * Return Value:
- * //TODO: Fill
+ * Unit info <HASHMAP> or <ANY> retrieved or default value
  *
  * Public: No
  */

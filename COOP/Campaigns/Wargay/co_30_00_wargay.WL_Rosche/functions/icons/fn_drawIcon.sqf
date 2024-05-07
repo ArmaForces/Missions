@@ -37,7 +37,6 @@ private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { 
 // diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
 // #endif
 
-// TODO: Configurable switch to increase/decrease size with distance
 if (GVAR(unitIconSizeDependsOnDistance)) then {
     private _distance = player distance _worldPos;
     private _factor = (2 - ((_distance - 50) * 0.0005)) min 2 max 0.75;

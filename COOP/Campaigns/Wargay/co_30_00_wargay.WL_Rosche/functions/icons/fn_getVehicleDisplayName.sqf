@@ -4,7 +4,7 @@
  * Returns displayNameShort for given vehicle type.
  *
  * Arguments:
- * //TODO: Fill
+ * 0: Vehicle or unit info <OBJECT/HASHMAP>
  *
  * Return Value:
  * Short display name of a vehicle type <STRING>
