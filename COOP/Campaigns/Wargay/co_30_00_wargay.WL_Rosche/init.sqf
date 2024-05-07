@@ -142,9 +142,6 @@ addMissionEventHandler ["Draw3D", FUNC(draw3D)];
 ["AFMC_M270", [1, 0, 0, 0]];
 
 ["MDL_showCurrentHp", {
-    params ["_vehicle"];
-    if (vehicle player isNotEqualTo _vehicle) exitWith {};
-
-    private _string = [_vehicle, "_"] call FUNC(currentHpString);
-    titleText ["\n\n\n\n\n" + _string, "PLAIN", 0.3, true];
+    if (vehicle player isEqualTo player) exitWith {};
+    call FUNC(updateHitpointsDisplay);
 }] call CBA_fnc_addEventHandler;

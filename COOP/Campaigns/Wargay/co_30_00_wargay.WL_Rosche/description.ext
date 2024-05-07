@@ -57,6 +57,11 @@ class CfgFunctions {
             class hitPart {};
             class knowsAboutChanged {};
         };
+        class HUD
+        {
+            class initHitpointsDisplay {};
+            class updateHitpointsDisplay {};
+        };
         class KeyHandlers
         {
             class keyUnitInfo {};
@@ -91,6 +96,12 @@ class CfgFunctions {
 // Ustawienia CBA muszą być dodane poprzez CBA XEH PreInit, w przeciwnym wypadku nie będą dostępne w edytorze
 class Extended_PreInit_EventHandlers {
 
+};
+
+class Extended_DisplayLoad_EventHandlers {
+    class RscUnitInfo {
+        MDL_Wargay = QUOTE(call FUNC(initHitpointsDisplay));
+    };
 };
 
 // https://github.com/acemod/ACEX/tree/master/addons/killtracker
