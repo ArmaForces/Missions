@@ -14,5 +14,4 @@
 
 params ["_unit"];
 
-// _unit getUnitTrait "Engineer" isEqualTo 1 || {[_unit] call ACE_repair_fnc_isEngineer}
-true
+_unit getUnitTrait "Engineer" isEqualTo 1 || {[_unit] call ACE_repair_fnc_isEngineer}
