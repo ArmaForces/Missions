@@ -15,6 +15,8 @@
 #ifdef DEV_DEBUG
 HitpointHits = [];
 PositionHits = [];
+TargetDirVectors = [];
+ProjectileRelPosVectors = [];
 SurfaceVectors = [];
 VelocityVectors = [];
 #endif

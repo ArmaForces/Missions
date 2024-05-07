@@ -7,7 +7,7 @@
  * 0: Target hit <OBJECT>
  * 1: Vector prependicular to surface hit <VECTOR>
  * 2: Velocity vector of a projectile <VECTOR>
- * 3: Hit position (AGL world) <POSITION>
+ * 3: Projectile <OBJECT>
  *
  * Return Value:
  * Hit direction one of: FRONT/SIDE/REAR/TOP <STRING>
@@ -15,19 +15,31 @@
  * Public: No
  */
 
-params ["_target", "_surfaceVector", "_velocity", "_hitWorldPosition"];
+params ["_target", "_surfaceVector", "_velocity", "_projectile"];
 
-private _hitModelPosition = _target worldToModel _hitWorldPosition;
-private _surfaceVectorNormalized = vectorNormalized _surfaceVector;
-private _velocityVectorNormalized = vectorNormalized _velocity;
+private _hitDirVectorNormalized = if (_velocity isEqualTo [0, 0, 0]) then {
+	#ifdef DEV_DEBUG
+	HitpointHits pushBack getPosATL _projectile;
+	#endif
+	getPosATL _target vectorDiff getPosATL _projectile vectorMultiply -1
+} else {
+	vectorNormalized _surfaceVector
+};
 
 #ifdef DEV_DEBUG
-diag_log format ["WARGAY DEBUG GET HIT DIR [%1]: Target: %2, Vector: %3, Velocity: %4, HitPosition: %5", diag_tickTime, _target, _surfaceVector, _velocity, _hitModelPosition];
+diag_log format ["WARGAY DEBUG GET HIT DIR [%1]: Target position: %2 Projectile position: %3", diag_tickTime, getPosATL _target, getPosATL _projectile];
+SurfaceVectors pushBack [getPosASL _target vectorAdd [0, 0, 1], getPosATL _target vectorDiff getPosATL _projectile vectorMultiply -1];
+ProjectileRelPosVectors pushBack [getPosATL _target vectorAdd [0, 0, 1], _hitDirVectorNormalized];
+
+diag_log format ["WARGAY DEBUG GET HIT DIR [%1]: Target: %2, Vector: %3, Velocity: %4, HitVector: %5", diag_tickTime, _target, _surfaceVector, _velocity, _hitDirVectorNormalized];
 #endif
     
 private _targetDir = vectorDir _target;
-    
-private _dotProduct = _targetDir vectorDotProduct _surfaceVectorNormalized;
+#ifdef DEV_DEBUG
+TargetDirVectors pushBack [getPosATL _target vectorAdd [0, 0, 1], _targetDir];
+#endif
+
+private _dotProduct = _targetDir vectorDotProduct _hitDirVectorNormalized;
 private _topHitDir = _surfaceVector#2 atan2 sqrt (_surfaceVector#0^2 + _surfaceVector#1^2);
     
 private _hitDir = if (_topHitDir > 70) then {

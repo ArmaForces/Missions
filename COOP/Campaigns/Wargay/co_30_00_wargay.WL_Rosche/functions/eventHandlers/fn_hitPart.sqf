@@ -14,7 +14,15 @@
 
 (_this select 0) params ["_target", "_shooter", "_projectile", "_position", "_velocity", "_selection", "_ammo", "_vector", "_radius", "_surfaceType", "_isDirect", "_instigator"];
 
-// if (_selection isEqualTo []) exitWith {};
+#ifdef DEV_DEBUG
+private _i = 0;
+{
+	diag_log format ["WARGAY DEBUG HIT PART [%1]: All [%2]: %3", diag_tickTime, _i, str _x];
+	_i = _i + 1;
+} forEach _this;
+diag_log format ["WARGAY DEBUG HIT PART [%1]: Projectile relative position: %2 | Hit relative position: %3", diag_tickTime, str (_target worldToModel getPosATL _projectile), str (_target worldToModel ASLToAGL _position)];
+#endif
+
 if (!alive _target) exitWith {
 	_target removeEventHandler [_thisEvent, _thisEventHandler];
 };
@@ -31,7 +39,7 @@ diag_log format ["WARGAY DEBUG HIT PART [%1]: Selection: %2 Vector: %3, Velocity
 private _velocityAndSurfaceProduct = vectorNormalized _velocity vectorDotProduct _vector;
 if (_velocity isNotEqualTo [0, 0, 0] && {_velocityAndSurfaceProduct < 0.15 && {_velocityAndSurfaceProduct > -0.15}}) exitWith {};
 
-private _hitDir = [_target, _vector, _velocity, _position] call FUNC(getHitDir);
+private _hitDir = [_target, _vector, _velocity, _projectile] call FUNC(getHitDir);
 
 #ifdef DEV_DEBUG
 PositionHits pushBack (_position);
@@ -41,6 +49,6 @@ VelocityVectors pushBack ([_position, _velocity]);
 
 _projectile setVariable [str _target, true];
 
-private _hitPosition = if (_isDirect) then { [] } else { ASLToAGL _position };
+private _hitPosition = if (_isDirect) then { [] } else { getPosATL _projectile };
 
 [_target, _hitDir, _hitPosition, _velocity, _ammo] call FUNC(calculateAndApplyDamage);

@@ -27,4 +27,12 @@
     _x params ["_position", "_vector"];
     drawLine3D [ASLToAGL _position, ASLToAGL _position vectorAdd vectorNormalized _vector, [0,0,1,1]];
 } forEach VelocityVectors;
+{
+    _x params ["_position", "_vector"];
+    drawLine3D [_position, _position vectorAdd vectorNormalized _vector, [1,1,0,1]];
+} forEach ProjectileRelPosVectors;
+{
+    _x params ["_position", "_vector"];
+    drawLine3D [_position, _position vectorAdd vectorNormalized _vector, [0,1,1,1]];
+} forEach TargetDirVectors;
 #endif
