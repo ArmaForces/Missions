@@ -50,6 +50,11 @@ class CfgFunctions {
             class heDamage {};
             class keDamage {};
         };
+        class Debug
+        {
+            class drawHitDebug {};
+            class initDebug { preInit = 1; };
+        };
         class EventHandlers
         {
             class draw3D {};

@@ -3,20 +3,6 @@
 minviewdistance = 500;
 maxviewdistance = 10000;
 
-GVAR(westIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
-GVAR(eastIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
-GVAR(filledHpColor) = getArray (missionConfigFile >> "CfgWargay" >> "filledHpColor");
-GVAR(missingHpColor) = getArray (missionConfigFile >> "CfgWargay" >> "missingHpColor");
-
-/* Custom test things */
-
-#ifdef DEV_DEBUG
-HitpointHits = [];
-PositionHits = [];
-SurfaceVectors = [];
-VelocityVectors = [];
-#endif
-
 // TODO: Consider adding initial projectile position/velocity in Fired EH and base damage on that
 
 // TODO: Add KnowsAboutChanged EH to WEST groups as needed as this thing most likely won't work
@@ -59,10 +45,7 @@ true,
 ["Man"],
 true] call CBA_fnc_addClassEventHandler;
 
-// ["AllVehicles", "HitPart", FUNC(hitPart)] call CBA_fnc_addClassEventHandler;
-
 ["AllVehicles", "Init", {
-    // TODO: Check if waitAndExecute is needed
     params ["_entity"];
 
     #ifdef DEV_DEBUG
@@ -93,31 +76,13 @@ true] call CBA_fnc_addClassEventHandler;
         // TODO: Disallow repair when active (damage received, shooting)
         // TODO: Consider repair/rearm/refuel for all eligible vehicles in some radius (e.g., via some deployable)
         [_entity] call FUNC(addRepairAction);
+        
+        addMissionEventHandler ["Draw3D", FUNC(draw3D)];
     };
 },
 true, // Allow inheritance
 ["Man"], // Excluded classes
 true /* Apply retroactive */] call CBA_fnc_addClassEventHandler;
-
-addMissionEventHandler ["Draw3D", FUNC(draw3D)];
-
-// addMissionEventHandler ["Draw3D", {
-//     private _veh = cursorObject;
-
-//     private _selectionNames = selectionNames _veh;
-
-//     private _selectionNamesAndPos = _selectionNames apply {
-//         [_x, _veh selectionPosition _x]
-//     } select { _x select 1 isNotEqualTo [0, 0, 0]};
-
-//     {
-//         _x params ["_selectionName", "_selectionRelPos"];
-
-//         private _worldPos = _veh modelToWorld _selectionRelPos;
-//         drawIcon3D ["#(argb,8,8,3)color(1,1,1,1)", [1,1,1,1], _worldPos, 0.25, 0.25, 0, _selectionName, 0, 0.03];
-
-//     } forEach _selectionNamesAndPos;
-// }];
 
 ["CSLA_T72", [11, 6, 3, 2]];
 ["CSLA_T72M", [12, 7, 3, 2]];
