@@ -30,6 +30,9 @@ if (_vehicleHitpoints isEqualTo objNull) then {
 _entity setVariable ["MDL_currentHp", _vehicleHitpoints];
 _entity setVariable ["MDL_maxHp", _vehicleHitpoints];
 
+_entity addEventHandler ["HandleDamage", {
+    _this call FUNC(handleDamage);
+}];
 _entity addEventHandler ["HitPart", FUNC(hitPart)];
 _entity addEventHandler ["Fired", FUNC(fired)];
 

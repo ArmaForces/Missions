@@ -29,11 +29,6 @@ VehicleTypes = createHashMapFromArray
         [toUpper configName _x, _hashMap]
     });
 
-["AllVehicles", "HandleDamage", {
-    // Nested call to allow using "exitWith" without leaving Event Handler
-    _this call FUNC(handleDamage)
-}, true, ["Man"], true] call CBA_fnc_addClassEventHandler;
-
 [
     "AllVehicles",
     "Init",
