@@ -406,6 +406,9 @@ class CfgWargay
 
         // Strela-2
         class gm_rocket_72mm_HE_9m32m : gm_rocket_70mm_HE_m585 {};
+
+        // DShKM
+        class gm_bullet_127x108mm_API_T_BZT : SMALL_ARMS {};
     };
 
     // TODO: Consider adding vehicle cost for veterancy
