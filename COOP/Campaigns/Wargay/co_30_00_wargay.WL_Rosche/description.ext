@@ -38,7 +38,6 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class Common
         {
-            class canRepair {};
             class getGroupVehicles {};
             class isEngineer {};
         };
@@ -60,6 +59,7 @@ class CfgFunctions {
         class EventHandlers
         {
             class draw3D {};
+            class fired {};
             class handleDamage {};
             class hitPart {};
             class knowsAboutChanged {};
@@ -92,6 +92,7 @@ class CfgFunctions {
         class Repair
         {
             class addRepairAction {};
+            class canRepair {};
             class completeRepair {};
             class interruptedRepair {};
             class progressRepair {};

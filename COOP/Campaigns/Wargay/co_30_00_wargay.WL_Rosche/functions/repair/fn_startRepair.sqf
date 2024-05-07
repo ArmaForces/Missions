@@ -14,8 +14,6 @@
 
 params ["_target"];
 
-// TODO: Stop action if unit shoots or gets damaged
-
 private _currentHp = _target getVariable ["MDL_currentHp", 0];
 private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
 private _actualDuration = (_maxHp - _currentHp) * HEAL_SECONDS_PER_POINT;

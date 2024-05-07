@@ -85,3 +85,8 @@ diag_log _infoMsg;
 if (_damage isEqualTo 0) exitWith {};
 
 ["MDL_applyDamage", [_unit, _damage]] call CBA_fnc_serverEvent;
+
+if (isPlayer _unit) then {
+    // Need to publicize it as this function runs locally for one player
+    _unit setVariable ["MDL_lastCombatActive", CBA_missionTime, true];
+};

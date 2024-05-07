@@ -20,7 +20,7 @@ params ["_entity"];
     "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
     "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",
     QUOTE([ARR_2(_this,_target)] call FUNC(canRepair)), // Condition show
-    "vehicle _this isEqualTo _this && {_this distance _target < 5}", // Condition progress
+    QUOTE([ARR_2(_this,_target)] call FUNC(canRepair)), // Condition progress
     FUNC(startRepair), // Code start
     FUNC(progressRepair), // Code progress
     FUNC(completeRepair), // Code completed

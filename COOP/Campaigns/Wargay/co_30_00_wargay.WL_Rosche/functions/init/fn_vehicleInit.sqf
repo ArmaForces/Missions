@@ -31,6 +31,7 @@ _entity setVariable ["MDL_currentHp", _vehicleHitpoints];
 _entity setVariable ["MDL_maxHp", _vehicleHitpoints];
 
 _entity addEventHandler ["HitPart", FUNC(hitPart)];
+_entity addEventHandler ["Fired", FUNC(fired)];
 
 // Increase fuel consumption;
 _entity setFuelConsumptionCoef GVAR(fuelConsumptionMultiplier);
@@ -39,7 +40,6 @@ _entity allowCrewInImmobile true;
 
 if (hasInterface) then {
     // TODO: Consider allowing repair only near supply vehicles
-    // TODO: Disallow repair when active (damage received, shooting)
     // TODO: Consider repair/rearm/refuel for all eligible vehicles in some radius (e.g., via some deployable)
     [_entity] call FUNC(addRepairAction);
         

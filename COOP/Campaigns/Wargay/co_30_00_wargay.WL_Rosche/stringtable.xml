@@ -110,6 +110,10 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Allows adjusting size of text shown above targeted unit</English>
             <Polish>Pozwala dostosować rozmiar tekstu wyświetlanego nad namierzoną jednostką</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_VehicleInCombat">
+            <English>Repair interrupted, vehicle is in combat.</English>
+            <Polish>Naprawa przerwana, pojazd uczestniczy w walce.</Polish>
+        </Key>
     </Package>
 </Project>
 
