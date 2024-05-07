@@ -37,12 +37,18 @@ if (_ammoInfo isEqualTo []) then {
         AmmoTypes set [toUpper _ammoClassName, _hashMap];
     };
 };
-if (_ammoInfo isEqualTo []) exitWith {};
+if (_ammoInfo isEqualTo []) exitWith {
+    #ifdef DEV_DEBUG
+    private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
+    systemChat _infoMsg;
+    diag_log _infoMsg;
+    #endif
+};
 
 private _ammoDamage = _ammoInfo getOrDefault ["damage", 0];
 if (_ammoDamage isEqualTo 0) exitWith {};
 
-private _isUnknownAmmo = false;
+private _isUnknownAmmoType = false;
 private _ammoType = _ammoInfo getOrDefault ["type", "NONE"];
 private _damage = switch (_ammoType) do {
     case "AP": { [_armor, _ammoDamage, _velocity] call FUNC(keDamage) };
@@ -51,12 +57,12 @@ private _damage = switch (_ammoType) do {
         private _distanceToTarget = if (_hitPositionAGL isEqualTo []) then { 0 } else { getPosATL _unit distance _hitPositionAGL };
         [_armor, _ammoDamage, _distanceToTarget] call FUNC(heDamage)
     };
-    default { _isUnknownAmmo = true; 0 };
+    default { _isUnknownAmmoType = true; 0 };
 };
 
-if (_isUnknownAmmo) exitWith {
+if (_isUnknownAmmoType) exitWith {
     #ifdef DEV_DEBUG
-    private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
+    private _infoMsg = format ["Unknown ammunition type '%1' used, ignoring calculations",_ammoType];
     systemChat _infoMsg;
     diag_log _infoMsg;
     #endif
