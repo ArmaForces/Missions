@@ -85,7 +85,6 @@ switch (GVAR(unitIconMode)) do {
 };
 
 // Draws icons. Might draw an icon twice for one object if it's targeted/highlighted.
-// TODO: Don't draw icons off-screen
 {
     _x call FUNC(drawIcon);
 } forEach _vehiclesWithIcons;

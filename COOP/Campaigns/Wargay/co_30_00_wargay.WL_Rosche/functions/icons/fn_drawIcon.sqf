@@ -20,6 +20,10 @@ params ["_target", ["_includeText", false]];
 if (!alive _target || {_target getVariable ["MDL_currentHp", 0] isEqualTo 0}) exitWith {};
    
 private _worldPos = _target modelToWorldVisual ABOVE_UNIT;
+
+private _screenPosition = worldToScreen _worldPos;
+if (_screenPosition isEqualTo []) exitWith {};
+
 private _iconDescription = if (_includeText) then {
     format ["%1 - %2", [_target] call FUNC(getVehicleDisplayName), [_target, " "] call FUNC(currentHpString)]
 } else { "" };
