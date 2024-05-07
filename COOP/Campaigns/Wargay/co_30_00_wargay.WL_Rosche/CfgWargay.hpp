@@ -156,12 +156,13 @@ class CfgWargay
             damage = 11;
             type = "AP";
         };
-        class gm_shell_105x617mm_heat_mp_t_dm12
+        // TODO: Change penetrators to deal the damage instead of shells due to splash hits
+        class gm_shell_105x617mm_heat_mp_t_dm12 : NO_DAMAGE {};
+        class gm_penetrator_105x617mm_heat_dm12
         {
             damage = 11;
             type = "HEAT";
         };
-        class gm_penetrator_105x617mm_heat_dm12 : NO_DAMAGE {};
 
         class gm_shell_105x617mm_apfsds_t_dm23 : gm_shell_105x617mm_apds_t_dm13 {};
         
@@ -312,11 +313,12 @@ class CfgWargay
         class gm_bullet_23x152mm_api_t_bzt : gm_bullet_23x152mm_hei_t_ofzt {};
 
         // SFL 2S1
-        class gm_shell_122x447mm_he_of462
+        class gm_warhead_122x447mm_he_of462
         {
             damage = 6;
             type = "HE";
         };
+        // class gm_shell_122x447mm_he_of462 {};
         class gm_shell_122x447mm_heat_t_bk13
         {
             damage = 9;
