@@ -15,6 +15,10 @@
 params ["_unit", "_hitDir", "_hitPositionAGL", "_velocity", "_ammo"];
 _ammo params ["_hitValue", "_indirectHitValue", "_indirectHitRange", "_explosiveDamage", "_ammoClassName"];
 
+#ifdef DEV_DEBUG
+diag_log format ["WARGAY DEBUG CALCULATE DAMAGE [%1]: %2", diag_tickTime, str _this];
+#endif
+
 private _unitType = VehicleTypes getOrDefault [toUpper typeOf _unit, []];
 private _unitArmor = if (_unitType isEqualTo []) then { NO_ARMOR } else {
     _unitType getOrDefault ["armor", NO_ARMOR]
@@ -52,7 +56,11 @@ private _isUnknownAmmoType = false;
 private _ammoType = _ammoInfo getOrDefault ["type", "NONE"];
 private _damage = switch (_ammoType) do {
     case "AP": { [_armor, _ammoDamage, _velocity] call FUNC(keDamage) };
-    case "HEAT": { [_armor, _ammoDamage] call FUNC(heatDamage) };
+    case "HEAT": {
+        // Ignore no velocity HEAT as this is most likely some splash and we don't want that
+        if (_velocity isEqualTo [0, 0, 0]) exitWith {};
+        [_armor, _ammoDamage] call FUNC(heatDamage)
+    };
     case "HE" : {
         private _distanceToTarget = if (_hitPositionAGL isEqualTo []) then { 0 } else { getPosATL _unit distance _hitPositionAGL };
         [_armor, _ammoDamage, _distanceToTarget] call FUNC(heDamage)
