@@ -14,12 +14,17 @@
 
 params ["_vehicleOrInfo"];
 
-if (_vehicleOrInfo isEqualType objNull && {!(_vehicleOrInfo isKindOf "AllVehicles")}) exitWith { "" };
+if (
+    _vehicleOrInfo isEqualType objNull 
+    && {!(_vehicleOrInfo isKindOf "AllVehicles")}
+) exitWith { "" };
 
-private _vehicleInfo = if (_vehicleOrInfo isEqualType objNull) then {
-    [_vehicleOrInfo] call FUNC(getVehicleInfo)
-} else {
-    _vehicleOrInfo
+if (_vehicleOrInfo isEqualType objNull) then {
+    _vehicleOrInfo = [_vehicleOrInfo] call FUNC(getVehicleInfo)
 };
-    
-_vehicleInfo getOrDefault [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgVehicles" >> (_vehicleInfo get CLASS_NAME_PROPERTY) >> DISPLAY_NAME_PROPERTY), true]
+
+_vehicleOrInfo getOrDefaultCall [
+    DISPLAY_NAME_PROPERTY,
+    {getText (configFile >> "CfgVehicles" >> (_vehicleOrInfo get CLASS_NAME_PROPERTY) >> DISPLAY_NAME_PROPERTY)},
+    true
+] // return
