@@ -155,4 +155,5 @@ class CfgDebriefingSections {
 // For AF - Mods Tasks Framework
 // #include "CfgTasks.hpp"
 // #include "CfgDebriefing.hpp"
+#include "CfgMusic.hpp"
 #include "CfgWargay.hpp"
