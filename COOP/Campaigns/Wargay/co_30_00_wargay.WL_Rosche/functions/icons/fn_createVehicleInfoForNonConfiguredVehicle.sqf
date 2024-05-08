@@ -16,7 +16,7 @@
 params ["_vehicle"];
 
 private _newVehicleInfo = createHashMapFromArray [
-    ["className", toUpper typeOf _vehicle],
+    [CLASS_NAME_PROPERTY, toUpper typeOf _vehicle],
 	[DISPLAY_NAME_PROPERTY, getText (configOf _vehicle >> DISPLAY_NAME_PROPERTY)]
 ];
     

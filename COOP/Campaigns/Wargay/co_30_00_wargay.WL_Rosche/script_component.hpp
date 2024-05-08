@@ -41,6 +41,7 @@
 
 // Wargay stuff
 // #define DEV_DEBUG
+#define CLASS_NAME_PROPERTY "className"
 #define DISPLAY_NAME_PROPERTY "displayNameShort"
 #define MAX_HP 10
 #define HEAL_AMOUNT 0.5

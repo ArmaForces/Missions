@@ -417,57 +417,39 @@ class CfgWargay
     class Vehicles
     {
         // West Germany
-        VEHICLE(gm_ge_army_Leopard1a1,6,2,2,1); // 1A1 should be recon with 5/2/2/1
-        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a1);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a2);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a3);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_Leopard1a1a4);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a1,gm_ge_army_bpz2a0)
-        VEHICLE(gm_ge_army_Leopard1a3,8,3,2,2);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a3,gm_ge_army_Leopard1a3a1);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a3,gm_ge_army_Leopard1a3a2);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a3,gm_ge_army_Leopard1a3a3);
-        VEHICLE(gm_ge_army_Leopard1a5,10,3,2,2);
-        VEHICLE_LIKE(gm_ge_army_Leopard1a5,gm_ge_army_Leopard1a5a1);
-        VEHICLE(gm_ge_army_gepard1a1,3,2,2,1);
-        VEHICLE(gm_ge_army_m109g,2,1,1,1);
-        VEHICLE(gm_ge_army_marder1a1,4,2,1,1);
-        VEHICLE_LIKE(gm_ge_army_marder1a1,gm_ge_army_marder1a1plus);
-        VEHICLE_LIKE(gm_ge_army_marder1a1,gm_ge_army_marder1a2);
-        VEHICLE_RECON(gm_ge_army_luchsa1,2,1,1,1);
-        VEHICLE_RECON(gm_ge_army_luchsa2,2,2,1,1);
-        VEHICLE(gm_ge_army_m113a1g_apc,1,1,1,1);
-        VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_m113a1g_apc_milan);
-        VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_m113a1g_command);
-        VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_m113a1g_medic);
-        VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_fuchsa0_command);
-        VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_fuchsa0_engineer);
-        VEHICLE_RECON(gm_ge_army_fuchsa0_reconnaissance,1,1,1,1);
-        VEHICLE_RECON(gm_ge_army_bo105m_vbh,0,0,0,0);
-        VEHICLE_LIKE(gm_ge_army_bo105m_vbh,gm_ge_army_bo105p1m_vbh);
-        VEHICLE_LIKE(gm_ge_army_bo105m_vbh,gm_ge_army_bo105p1m_vbh_swooper);
-
-        VEHICLE_LIKE(gm_ge_army_m113a1g_apc,gm_ge_army_bibera0);
+        VEHICLE(gm_Leopard1_base,6,2,2,1);
+        VEHICLE_LIKE(gm_Leopard1_base,gm_Leopard1a1_base); // 1A1 should be recon with 5/2/2/1
+        VEHICLE_LIKE(gm_Leopard1_base,gm_BPz2_base)
+        VEHICLE(gm_Leopard1a3_base,8,3,2,2);
+        VEHICLE(gm_leopard1a5_base,10,3,2,2);
+        VEHICLE(gm_Gepard1a1_base,3,2,2,1);
+        VEHICLE(gm_m109g_base,2,1,1,1);
+        VEHICLE(gm_marder1_base,4,2,1,1);
+        VEHICLE(gm_marder1a1plus_base,4,2,2,1);
+        VEHICLE(gm_marder1a2_base,5,3,2,2);
+        VEHICLE_RECON(gm_luchs_base,2,1,1,1);
+        VEHICLE(gm_m113_base,1,1,1,1);
+        VEHICLE_LIKE(gm_m113_base,gm_fuchs_base);
+        VEHICLE_RECON(gm_fuchsa0_reconnaissance_base,1,1,1,1);
+        VEHICLE_RECON(gm_bo105m_base,0,0,0,0);
+        VEHICLE(gm_bo105p_base,0,0,0,0);
 
         // East Germany
-        VEHICLE(gm_gc_army_pt76b,2,1,1,1);
-        VEHICLE(gm_gc_army_t55,7,3,2,1);
-        VEHICLE_LIKE(gm_gc_army_t55,gm_gc_army_t55a);
-        VEHICLE_LIKE(gm_gc_army_t55,gm_gc_army_t55ak);
-        VEHICLE(gm_gc_army_t55am2,10,5,2,2);
-        VEHICLE_LIKE(gm_gc_army_t55am2,gm_gc_army_t55am2b);
-        VEHICLE(gm_gc_army_zsu234v1,1,1,1,1);
-        VEHICLE(gm_gc_army_2s1,1,1,1,1);
-        VEHICLE(gm_gc_army_2p16,1,1,1,1);
-        VEHICLE(gm_gc_army_bmp1sp2,1,1,1,1);
-        VEHICLE_RECON(gm_gc_army_brdm2,1,1,1,1);
-        VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_brdm2rkh);
-        VEHICLE_LIKE(gm_gc_army_brdm2,gm_gc_army_brdm2um);
-        VEHICLE(gm_gc_army_btr60pa,1,1,1,1);
-        VEHICLE_LIKE(gm_gc_army_btr60pa,gm_gc_army_btr60pa_dshkm);
-        VEHICLE_LIKE(gm_gc_army_btr60pa,gm_gc_army_btr60pb);
-        VEHICLE_LIKE(gm_gc_army_btr60pa,gm_gc_army_btr60pu12);
-        VEHICLE_LIKE(gm_ge_army_bo105m_vbh,gm_gc_airforce_mi2p);
+        VEHICLE(gm_pt76_base,2,1,1,1);
+        VEHICLE(gm_t55_base,7,3,2,1);
+        VEHICLE_LIKE(gm_t55_base,gm_t55a_base);
+        VEHICLE_LIKE(gm_t55_base,gm_t55ak_base);
+        VEHICLE(gm_t55am2_base,10,4,2,2);
+        VEHICLE(gm_t55am2b_base,10,5,2,2);
+        VEHICLE(gm_zsu234_base,1,1,1,1);
+        VEHICLE(gm_2s1_base,1,1,1,1);
+        VEHICLE(gm_2p16_base,1,1,1,1);
+        VEHICLE(gm_bmp1_base,1,1,1,1);
+        VEHICLE_RECON(gm_brdm2_base,1,1,1,1);
+        VEHICLE(gm_btr60_base,1,1,1,1);
+        VEHICLE_RECON(gm_mi2p_base,0,0,0,0);
+        VEHICLE(gm_mi2urn_base,0,0,0,0);
+        VEHICLE_LIKE(gm_mi2urn_base,gm_mi2us_base);
     };
 };
 

@@ -22,7 +22,7 @@ VehicleTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Vehicles")
     apply {
         private _hashMap = createHashMap;
-        _hashMap set ["className", toUpper configName _x];
+        _hashMap set [CLASS_NAME_PROPERTY, toUpper configName _x];
         _hashMap set ["hitpoints", getNumber (_x >> "hitpoints")];
         _hashMap set ["armor", getArray (_x >> "armor")];
         _hashMap set ["isRecon", getNumber (_x >> "isRecon")];

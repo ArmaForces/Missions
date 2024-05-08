@@ -17,15 +17,9 @@ params ["_vehicleOrInfo"];
 if (_vehicleOrInfo isEqualType objNull && {!(_vehicleOrInfo isKindOf "AllVehicles")}) exitWith { "" };
 
 private _vehicleInfo = if (_vehicleOrInfo isEqualType objNull) then {
-    private _retrievedVehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _vehicleOrInfo, objNull];
-
-	if (_retrievedVehicleInfo isEqualTo objNull) then {
-        _retrievedVehicleInfo = [_vehicleOrInfo] call FUNC(createVehicleInfoForNonConfiguredVehicle);
-    };
-
-    _retrievedVehicleInfo
+    [_vehicleOrInfo] call FUNC(getVehicleInfo)
 } else {
     _vehicleOrInfo
 };
     
-_vehicleInfo getOrDefault [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgVehicles" >> (_vehicleInfo get "className") >> DISPLAY_NAME_PROPERTY), true]
+_vehicleInfo getOrDefault [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgVehicles" >> (_vehicleInfo get CLASS_NAME_PROPERTY) >> DISPLAY_NAME_PROPERTY), true]
