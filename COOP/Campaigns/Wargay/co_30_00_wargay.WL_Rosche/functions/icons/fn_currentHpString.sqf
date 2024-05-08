@@ -22,11 +22,12 @@ private _missingHp = _maxHp - _currentHp;
 
 // BUG: Doesn't work properly when 0 HP
 private _string = "";
+// TODO: Optimize
 for "_a" from 1 to round _currentHp do {
 	_string = _string + "[" + _nonDamagedMark + "]";
 };
 for "_a" from 1 to round _missingHp do {
 	_string = _string + "[X]";
 };
-    
+
 _string

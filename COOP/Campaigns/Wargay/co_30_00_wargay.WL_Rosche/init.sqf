@@ -101,7 +101,7 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
     ["gm_ge_army_luchsa1", 2]
 ];
 
-// TODO: Music
-// TODO: 
-// TODO: Some initial units
-// TODO: Simple XP
+// BUG: Crews die
+// TODO: Global info when vehicle dies
+// TODO: Refuel
+// TODO: Store total XP
