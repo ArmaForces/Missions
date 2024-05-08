@@ -114,6 +114,15 @@ class CfgFunctions {
     };
 };
 
+class CfgSounds {
+    class MDL_Wargay_Alarm
+    {
+        name = "Wargay alarm";
+        sound[] = { "sounds\wargay-alarm.ogg", 2, 1 };
+        titles[] = { 0, CSTRING(DamageReceived) };
+    };
+};
+
 // Ustawienia CBA muszą być dodane poprzez CBA XEH PreInit, w przeciwnym wypadku nie będą dostępne w edytorze
 class Extended_PreInit_EventHandlers {
 

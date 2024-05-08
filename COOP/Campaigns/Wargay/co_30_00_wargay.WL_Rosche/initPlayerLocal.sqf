@@ -8,6 +8,8 @@ CUP_stopLampCheck = true;
     call FUNC(playerActions);
 }, [], -1] call CBA_fnc_waitUntilAndExecute;
 
+GVAR(isSoundPlaying) = false;
+
 // Register a simple keypress to an action
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"
 
@@ -27,3 +29,14 @@ CUP_stopLampCheck = true;
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_rearmVehicle", FUNC(rearmVehicle)] call CBA_fnc_addEventHandler;
+["MDL_applyDamage", {
+    params ["_unit"];
+    
+    if (GVAR(damageAlarmEnabled) && {_unit isEqualTo vehicle player} && {!GVAR(isSoundPlaying)}) then {
+        GVAR(isSoundPlaying) = true;
+        playSound ["MDL_Wargay_Alarm", 2];
+        [{
+            GVAR(isSoundPlaying) = false;
+        }, [], 4] call CBA_fnc_waitAndExecute;
+    };
+}] call CBA_fnc_addEventHandler;

@@ -62,6 +62,18 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
         </Key>
 
         <!-- WARGAY -->
+        <Key ID="STR_AFP_Scripts_DamageAlarmEnabled">
+            <English>Damage alarm</English>
+            <Polish>Alarm o uszkodzeniach</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DamageAlarmEnabled_Description">
+            <English>Audible alarm when your vehicle gets damaged.</English>
+            <Polish>Alarm dźwiękowy gdy Twój pojazd zostanie uszkodzony.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DamageReceived">
+            <English>Damage received</English>
+            <Polish>Otrzymano uszkodzenia</Polish>
+        </Key>
         <Key ID="STR_AFP_Scripts_RepairFinished">
             <English>Repair finished</English>
             <Polish>Naprawa zakończona</Polish>
