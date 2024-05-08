@@ -95,7 +95,7 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
     ["gm_ge_army_Leopard1a1", 12],
 
     // REC
-    ["gm_ge_army_bo105m_vbh", 1],
+    ["gm_ge_army_bo105m_vbh", 2],
     ["gm_ge_army_fuchsa0_reconnaissance", 4],
     ["gm_ge_army_luchsa1", 2]
 ];
