@@ -68,6 +68,10 @@ class CfgFunctions {
             class hitPart {};
             class knowsAboutChanged {};
         };
+        class Experience
+        {
+            class addExperienceForKill {};
+        };
         class HUD
         {
             class initHitpointsDisplay {};

@@ -146,6 +146,10 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Action interrupted, vehicle is in combat.</English>
             <Polish>Akcja przerwana, pojazd uczestniczy w walce.</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_XpReceived">
+            <English>Received %1 XP. New total: %2 XP</English>
+            <Polish>Otrzymano %1 PD. Całkowite PD: %2</Polish>
+        </Key>
     </Package>
 </Project>
 

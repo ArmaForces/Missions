@@ -68,3 +68,9 @@ GVAR(isSoundPlaying) = false;
 
     [WEST, "HQ"] commandChat format [LLSTRING(DeploymentOfVehicleNoLongerPossible), _vehicleName];
 }] call CBA_fnc_addEventHandler;
+
+["MDL_xpReceived", {
+    params ["_receivedXp", "_newTotalXp"];
+
+    systemChat format [LLSTRING(XpReceived), _receivedXp, _newTotalXp];
+}] call CBA_fnc_addEventHandler;
