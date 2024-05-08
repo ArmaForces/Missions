@@ -56,6 +56,10 @@ class CfgFunctions {
             class drawHitDebug {};
             class initDebug { preInit = 1; };
         };
+        class Deployment
+        {
+            class deployVehicle {};
+        };
         class EventHandlers
         {
             class draw3D {};
@@ -89,6 +93,7 @@ class CfgFunctions {
         class Init
         {
             class vehicleInit {};
+            class vehicleSpawnerInit {};
         };
         class Rearm
         {

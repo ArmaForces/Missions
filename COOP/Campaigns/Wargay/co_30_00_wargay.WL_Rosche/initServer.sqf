@@ -6,6 +6,7 @@ call FUNC(visibilityCheckLoop);
 
 ["MDL_applyDamage", FUNC(applyDamage)] call CBA_fnc_addEventHandler;
 ["MDL_healDamage", FUNC(healDamage)] call CBA_fnc_addEventHandler;
+["MDL_deployVehicle", FUNC(deployVehicle)] call CBA_fnc_addEventHandler;
 
 // {
 //     [_x] call FUNC(hideAllMarkersInLayer);

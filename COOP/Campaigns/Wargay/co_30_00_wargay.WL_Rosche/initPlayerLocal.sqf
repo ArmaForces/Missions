@@ -40,3 +40,31 @@ GVAR(isSoundPlaying) = false;
         }, [], 4] call CBA_fnc_waitAndExecute;
     };
 }] call CBA_fnc_addEventHandler;
+
+["MDL_createVehicleFailed", {
+    systemChat LLSTRING(DeploymentFailure);
+}] call CBA_fnc_addEventHandler;
+
+["MDL_vehicleDeployment", {
+    params ["_vehicleClassName"];
+    private _vehicleInfo = VehicleTypes getOrDefault [toUpper _vehicleClassName, ""];
+    private _vehicleName = if (_vehicleInfo isNotEqualTo "") then {
+        [_vehicleInfo] call FUNC(getVehicleDisplayName)
+    } else {
+        _vehicleClassName
+    };
+
+    [WEST, "HQ"] commandChat format [LLSTRING(DeploymentOfVehicle), _vehicleName];
+}] call CBA_fnc_addEventHandler;
+
+["MDL_vehicleDeploymentNoLongerPossible", {
+    params ["_vehicleClassName"];
+    private _vehicleInfo = VehicleTypes getOrDefault [toUpper _vehicleClassName, ""];
+    private _vehicleName = if (_vehicleInfo isNotEqualTo "") then {
+        [_vehicleInfo] call FUNC(getVehicleDisplayName)
+    } else {
+        _vehicleClassName
+    };
+
+    [WEST, "HQ"] commandChat format [LLSTRING(DeploymentOfVehicleNoLongerPossible), _vehicleName];
+}] call CBA_fnc_addEventHandler;

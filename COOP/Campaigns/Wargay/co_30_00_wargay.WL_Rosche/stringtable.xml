@@ -74,6 +74,18 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Damage received</English>
             <Polish>Otrzymano uszkodzenia</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentFailure">
+            <English>Failed deploying vehicle</English>
+            <Polish>Nie udało się rozmieścić pojazdu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentOfVehicle">
+            <English>Deployed new '%1' vehicle.</English>
+            <Polish>Rozmieszczono nowy pojazd '%1'.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentOfVehicleNoLongerPossible">
+            <English>Deployment of new '%1' vehicle is no longer possible.</English>
+            <Polish>Rozmieszczenie nowych pojazdów '%1' już nie jest możliwe.</Polish>
+        </Key>
         <Key ID="STR_AFP_Scripts_RepairFinished">
             <English>Repair finished</English>
             <Polish>Naprawa zakończona</Polish>

@@ -81,3 +81,21 @@ MagazineTypes = createHashMapFromArray _magazineTypes;
     ["Man"], // Excluded classes
     true // Apply retroactive
 ] call CBA_fnc_addClassEventHandler;
+
+GVAR(spawnableVehicles) = createHashMapFromArray [
+    // LOG
+    ["gm_ge_army_m113a1g_command", 2],
+    ["gm_ge_army_bpz2a0", 2],
+
+    // SUP
+    ["gm_ge_army_gepard1a1", 4],
+    ["gm_ge_army_m109g", 2],
+
+    // TNK
+    ["gm_ge_army_Leopard1a1", 12],
+
+    // REC
+    ["gm_ge_army_bo105m_vbh", 1],
+    ["gm_ge_army_fuchsa0_reconnaissance", 4],
+    ["gm_ge_army_luchsa1", 2]
+];
