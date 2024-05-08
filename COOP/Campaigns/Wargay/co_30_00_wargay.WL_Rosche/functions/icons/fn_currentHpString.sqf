@@ -14,20 +14,14 @@
  * Public: No
  */
 
-params ["_unit", ["_nonDamagedMark", "_"]];
+params ["_unit"];
 
 private _currentHp = _unit getVariable ["MDL_currentHp", 0];
 private _maxHp = _unit getVariable ["MDL_maxHp", MAX_HP];
 private _missingHp = _maxHp - _currentHp;
 
-// BUG: Doesn't work properly when 0 HP
-private _string = "";
-// TODO: Optimize
-for "_a" from 1 to round _currentHp do {
-	_string = _string + "[" + _nonDamagedMark + "]";
-};
-for "_a" from 1 to round _missingHp do {
-	_string = _string + "[X]";
-};
+private _string = [];
+_string resize [_currentHp, "[ ]"];
+_string resize [_maxHp, "[X]"];
 
-_string
+_string joinString "" // return

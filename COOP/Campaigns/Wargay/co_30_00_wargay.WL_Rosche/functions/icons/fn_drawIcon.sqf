@@ -25,7 +25,7 @@ private _screenPosition = worldToScreen _worldPos;
 if (_screenPosition isEqualTo []) exitWith {};
 
 private _iconDescription = if (_includeText) then {
-    format ["%1 - %2", [_target] call FUNC(getVehicleDisplayName), [_target, " "] call FUNC(currentHpString)]
+    format ["%1 - %2", [_target] call FUNC(getVehicleDisplayName), _target call FUNC(currentHpString)]
 } else { "" };
 
 private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;

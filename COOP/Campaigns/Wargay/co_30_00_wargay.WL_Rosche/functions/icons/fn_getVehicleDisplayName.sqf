@@ -20,7 +20,7 @@ if (
 ) exitWith { "" };
 
 if (_vehicleOrInfo isEqualType objNull) then {
-    _vehicleOrInfo = [_vehicleOrInfo] call FUNC(getVehicleInfo)
+    _vehicleOrInfo = [_vehicleOrInfo] call FUNC(getVehicleInfo);
 };
 
 _vehicleOrInfo getOrDefaultCall [
