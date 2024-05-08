@@ -325,14 +325,14 @@ class CfgWargay
         class gm_bullet_23x152mm_api_t_bzt : gm_bullet_23x152mm_hei_t_ofzt {};
 
         // SFL 2S1
+        class gm_shell_122x447mm_he_of462 : HAS_PENETRATOR(gm_warhead_122x447mm_he_of462);
         class gm_warhead_122x447mm_he_of462
         {
             damage = 6;
             type = "HE";
         };
-        // class gm_shell_122x447mm_he_of462 {};
+
         class gm_shell_122x447mm_heat_t_bk13 : HAS_PENETRATOR(gm_penetrator_122x447mm_heat_t_bk13);
-        
         class gm_penetrator_122x447mm_heat_bk6m
         {
             damage = 9;
@@ -348,7 +348,7 @@ class CfgWargay
             type = "HE";
         };
 
-        class gm_rocket_mlrs_122mm_icm_9m218 : HAS_PENETRATOR(gm_penetrator_3b30) {};
+        class gm_rocket_mlrs_122mm_icm_9m218 : HAS_PENETRATOR(gm_penetrator_3b30);
         class gm_penetrator_3b30
         {
             damage = 5;
