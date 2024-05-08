@@ -46,8 +46,6 @@ if (hasInterface) then {
     // TODO: Consider repair/rearm/refuel for all eligible vehicles in some radius (e.g., via some deployable)
     [_entity] call FUNC(addRepairAction);
     [_entity] call FUNC(addRearmAction);
-        
-    addMissionEventHandler ["Draw3D", FUNC(draw3D)];
 
     if (_entity getVariable ["MDL_isSpawner", false]) then {
         [_entity] call FUNC(vehicleSpawnerInit);

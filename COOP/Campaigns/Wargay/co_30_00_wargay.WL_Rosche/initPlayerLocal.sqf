@@ -74,3 +74,5 @@ GVAR(isSoundPlaying) = false;
 
     systemChat format [LLSTRING(XpReceived), _receivedXp, _newTotalXp];
 }] call CBA_fnc_addEventHandler;
+
+addMissionEventHandler ["Draw3D", FUNC(draw3D)];
