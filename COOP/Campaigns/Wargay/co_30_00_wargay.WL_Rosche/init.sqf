@@ -105,3 +105,4 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Global info when vehicle dies
 // TODO: Refuel
 // TODO: Store total XP
+// TODO: Make only HQ able to spawn new vehicles

@@ -8,6 +8,7 @@
  * 0: Armor value <NUMBER>
  * 1: Ammo base damage <NUMBER>
  * 2: Projectile velocity <VECTOR>
+ * 3: Projectile initial velocity <VECTOR>
  *
  * Return Value:
  * Damage <NUMBER>
@@ -15,16 +16,15 @@
  * Public: No
  */
 
-#define BASE_AP_SPEED 1300
-#define VELOCITY_STEP 150
+#define VELOCITY_STEP 125
 
-params ["_armor", "_ammoBaseDamage", "_velocity"];
+params ["_armor", "_ammoBaseDamage", "_velocity", "_initialVelocity"];
 
 if (_ammoBaseDamage isEqualTo 0.1) exitWith {
 	if (_armor isEqualTo 0) then { _ammoBaseDamage } else { 0 };
 };
 
-private _damageFromVelocity = _ammoBaseDamage - ((BASE_AP_SPEED - vectorMagnitude _velocity) / VELOCITY_STEP);
+private _damageFromVelocity = _ammoBaseDamage - ((vectorMagnitude _initialVelocity - vectorMagnitude _velocity) / VELOCITY_STEP);
 if (_armor isEqualTo 0) exitWith { 2 * (_ammoBaseDamage max _damageFromVelocity) };
 if (_armor isEqualTo 1) exitWith { (_ammoBaseDamage max _damageFromVelocity) };
 if (_damageFromVelocity < 0) exitWith { 0 };

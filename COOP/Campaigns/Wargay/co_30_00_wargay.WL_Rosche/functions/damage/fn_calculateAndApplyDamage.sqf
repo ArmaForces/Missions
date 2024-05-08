@@ -12,7 +12,7 @@
  * Public: No
  */
 
-params ["_unit", "_hitDir", "_hitPositionAGL", "_velocity", "_ammo"];
+params ["_unit", "_hitDir", "_hitPositionAGL", "_velocity", "_projectile", "_ammo"];
 _ammo params ["_hitValue", "_indirectHitValue", "_indirectHitRange", "_explosiveDamage", "_ammoClassName"];
 
 #ifdef DEV_DEBUG
@@ -55,7 +55,10 @@ if (_ammoDamage isEqualTo 0) exitWith {};
 private _isUnknownAmmoType = false;
 private _ammoType = _ammoInfo getOrDefault ["type", "NONE"];
 private _damage = switch (_ammoType) do {
-    case "AP": { [_armor, _ammoDamage, _velocity] call FUNC(keDamage) };
+    case "AP": {
+        private _initialVelocity = _projectile getVariable ["MDL_initialVelocity", [0, 0, 0]];
+        [_armor, _ammoDamage, _velocity, _initialVelocity] call FUNC(keDamage)
+    };
     case "HEAT": {
         // Ignore no velocity HEAT as this is most likely some splash and we don't want that
         if (_velocity isEqualTo [0, 0, 0]) exitWith {};

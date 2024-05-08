@@ -20,3 +20,4 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 if !(isPlayer _unit) exitWith {};
 
 _unit setVariable ["MDL_lastCombatActive", CBA_missionTime];
+_projectile setVariable ["MDL_initialVelocity", velocity _projectile];
