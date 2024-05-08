@@ -20,9 +20,9 @@ call FUNC(drawHitDebug);
 // TODO: Consider cursorTarget
 private _cursorObject = cursorObject;
 private _vehiclesWithIcons = if (
-    side effectiveCommander _cursorObject isEqualTo side player || {
+    side effectiveCommander _cursorObject isEqualTo playerSide || {
         (_cursorObject getVariable ["MDL_IsVisible", false]
-        && {side effectiveCommander _cursorObject isNotEqualTo SideUnknown})
+        && {side effectiveCommander _cursorObject isNotEqualTo sideUnknown})
 }) then {
     [[_cursorObject, true]]
 } else { [] };
@@ -52,21 +52,22 @@ switch (GVAR(unitIconMode)) do {
     case 0: {
         {
             _vehiclesWithIcons pushBackUnique [_x, false];
-        // } forEach (vehicles select {
-        //     side effectiveCommander _x isNotEqualTo SideUNKNOWN && side effectiveCommander _x isNotEqualTo EAST
-        //     || {(side effectiveCommander _x isEqualTo EAST && {player knowsAbout _x > 1})}});
-        } forEach (vehicles select {
-            side effectiveCommander _x isNotEqualTo SideUNKNOWN && side effectiveCommander _x isNotEqualTo EAST
-            || {(side effectiveCommander _x isEqualTo EAST && {_x getVariable ["MDL_IsVisible", false]})}});
+        } forEach (vehicles select {(
+                side effectiveCommander _x isEqualTo playerSide
+            ) || {
+                _x getVariable ["MDL_IsVisible", false]
+                && {side effectiveCommander _x isEqualTo EAST}
+            }
+        });
     };
     // Enemy only
     case 1: {
         {
             _vehiclesWithIcons pushBackUnique [_x, false];
         } forEach (vehicles select {
-            side effectiveCommander _x isNotEqualTo SideUNKNOWN
+            _x getVariable ["MDL_IsVisible", false]
             && {side effectiveCommander _x isEqualTo EAST}
-            && {_x getVariable ["MDL_IsVisible", false]}});
+        });
     };
     default {};
 };
