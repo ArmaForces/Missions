@@ -41,8 +41,11 @@
 
 // Wargay stuff
 // #define DEV_DEBUG
+#define AMMO_PROPERTY "ammo"
 #define CLASS_NAME_PROPERTY "className"
+#define DAMAGE_PROPERTY "damage"
 #define DISPLAY_NAME_PROPERTY "displayNameShort"
+#define TYPE_PROPERTY "type"
 #define MAX_HP 10
 #define HEAL_AMOUNT 0.5
 #define HEAL_SECONDS_PER_POINT 5

@@ -78,6 +78,7 @@ class CfgFunctions {
             class createVehicleInfoForNonConfiguredVehicle {};
             class currentHpString {};
             class drawIcon {};
+            class getAmmoInfo {};
             class getVehicleDisplayName {};
             class getVehicleInfo {};
             class isReconVehicle {};

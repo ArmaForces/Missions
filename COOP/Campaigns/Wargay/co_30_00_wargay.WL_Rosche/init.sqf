@@ -14,10 +14,13 @@ AmmoTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Ammo")
     apply {
         private _hashMap = createHashMap;
-        _hashMap set ["damage", getNumber (_x >> "damage")];
-        _hashMap set ["type", getText (_x >> "type")];
+        _hashMap set [CLASS_NAME_PROPERTY, toUpper configName _x];
+        _hashMap set [DAMAGE_PROPERTY, getNumber (_x >> DAMAGE_PROPERTY)];
+        _hashMap set [TYPE_PROPERTY, getText (_x >> TYPE_PROPERTY)];
+
         [toUpper configName _x, _hashMap]
     });
+
 VehicleTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Vehicles")
     apply {
