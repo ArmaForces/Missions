@@ -30,7 +30,7 @@ private _iconDescription = if (_includeText) then {
 
 private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
 private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
-private _iconSize = (GVAR(unitIconSizeMultiplier) * 0.01 * safeZoneW) / getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
+private _iconSize = (GVAR(unitIconSizeMultiplier) * 0.01 * safeZoneW) / GVAR(iconWidth);
 private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { GVAR(westIconColor) } else { GVAR(eastIconColor) };
 // #ifdef DEV_DEBUG
 // private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconSize, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
