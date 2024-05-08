@@ -11,6 +11,10 @@
             isRecon = 1;\
         }
 #define VEHICLE_LIKE(otherVehicleClass,vehicleClass) class vehicleClass : otherVehicleClass {}
+#define HAS_PENETRATOR(penetratorClass) NO_DAMAGE \
+        { \
+            child = penetratorClass;\
+        }
 
 class CfgWargay
 {
@@ -112,26 +116,29 @@ class CfgWargay
             Western Germany
         */
         // LARS-2
-        class gm_rocket_mlrs_110mm_he_dm21 : NO_DAMAGE {};
+        class gm_rocket_mlrs_110mm_he_dm21 : HAS_PENETRATOR(gm_warhead_mlrs_110mm_he_dm21);
         class gm_warhead_mlrs_110mm_he_dm21
         {
             damage = 7;
             type = "HE";
         };
-        class gm_rocket_mlrs_110mm_icm_dm602 : NO_DAMAGE {};
+
+        class gm_rocket_mlrs_110mm_icm_dm602 : HAS_PENETRATOR(gm_penetrator_m77);
         class gm_penetrator_m77
         {
             damage = 6;
             type = "HEAT";
         };
+
         // M-109G
-        class gm_shell_155mm_he_dm21 : NO_DAMAGE {};
+        class gm_shell_155mm_he_dm21 : HAS_PENETRATOR(gm_warhead_155mm_he_dm21);
         class gm_warhead_155mm_he_dm21
         {
             damage = 7;
             type = "HE";
         };
-        class gm_shell_155mm_icm_602 : NO_DAMAGE {};
+
+        class gm_shell_155mm_icm_602 : HAS_PENETRATOR(gm_warhead_155mm_icm_602);
         class gm_warhead_155mm_icm_602
         {
             damage = 6;
@@ -156,8 +163,8 @@ class CfgWargay
             damage = 11;
             type = "AP";
         };
-        // TODO: Change penetrators to deal the damage instead of shells due to splash hits
-        class gm_shell_105x617mm_heat_mp_t_dm12 : NO_DAMAGE {};
+
+        class gm_shell_105x617mm_heat_mp_t_dm12 : HAS_PENETRATOR(gm_penetrator_105x617mm_heat_dm12);
         class gm_penetrator_105x617mm_heat_dm12
         {
             damage = 11;
@@ -181,78 +188,83 @@ class CfgWargay
         };
 
         // Milan
-        class gm_missile_milan_heat_dm92
+        class gm_missile_milan_heat_dm92 : HAS_PENETRATOR(gm_penetrator_milan_HEAT_dm92);
+        class gm_penetrator_milan_HEAT_dm82
         {
             damage = 17;
             type = "HEAT";
         };
-        class gm_penetrator_milan_HEAT_dm82 : NO_DAMAGE {};
-        class gm_penetrator_milan_HEAT_dm92 : NO_DAMAGE {};
+        class gm_penetrator_milan_HEAT_dm92 : gm_penetrator_milan_HEAT_dm82 {};
 
         // Hot 1 & 2
-        class gm_missile_hot_heat_dm72
+        class gm_missile_hot_heat_dm72 : HAS_PENETRATOR(gm_penetrator_hot_HEAT_dm72);
+        class gm_missile_hot_heat_dm102 : HAS_PENETRATOR(gm_penetrator_hot_HEAT_dm102);
+        class gm_penetrator_hot_HEAT_dm72
         {
             damage = 22;
             type = "HEAT";
         };
-        class gm_missile_hot_heat_dm102
+        class gm_penetrator_hot_HEAT_dm102
         {
             damage = 25;
             type = "HEAT";
         };
-        class gm_penetrator_hot_HEAT_dm102 : NO_DAMAGE {};
-        class gm_penetrator_hot_HEAT_dm72 : NO_DAMAGE {};
 
         // PzF 44
-        class gm_rocket_44x537mm_HEAT_dm32
+        class gm_rocket_44x537mm_HEAT_dm32 : HAS_PENETRATOR(gm_penetrator_44x537mm_HEAT_dm32);
+        class gm_penetrator_44x537mm_HEAT_dm32
         {
             damage = 16;
             type = "HEAT";
         };
-        class gm_penetrator_44x537mm_HEAT_dm32 : NO_DAMAGE {};
+
         // PzF 3
-        class gm_rocket_60mm_HEAT_dm12
+        class gm_rocket_60mm_HEAT_dm12 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm12);
+        class gm_rocket_60mm_HEAT_dm22 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm22);
+        class gm_rocket_60mm_HEAT_dm32 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm32);
+        class gm_penetrator_60mm_HEAT_dm12
         {
             damage = 24;
             type = "HEAT";
         };
-        class gm_rocket_60mm_HEAT_dm22 : gm_rocket_60mm_HEAT_dm12
+        class gm_penetrator_60mm_HEAT_dm22 : gm_penetrator_60mm_HEAT_dm12
         {
             damage = 26;
         };
-        class gm_rocket_60mm_HEAT_dm32 : gm_rocket_60mm_HEAT_dm12
+        class gm_penetrator_60mm_HEAT_dm32 : gm_penetrator_60mm_HEAT_dm12
         {
             damage = 28;
         };
-        class gm_penetrator_60mm_HEAT_dm12 : NO_DAMAGE {};
-        class gm_penetrator_60mm_HEAT_dm22 : NO_DAMAGE {};
-        class gm_penetrator_60mm_HEAT_dm32 : NO_DAMAGE {};
+
         // PzF 84 (Carl Gustav M2)
-        class gm_rocket_84x245mm_HEAT_T_DM12
+        class gm_rocket_84x245mm_HEAT_T_DM12 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM12);
+        class gm_rocket_84x245mm_HEAT_T_DM12A1 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM12A1);
+        class gm_rocket_84x245mm_HEAT_T_DM22 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM22);
+        class gm_rocket_84x245mm_HEAT_T_DM32 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM32);
+
+        class gm_penetrator_84x245mm_HEAT_DM12
         {
             damage = 18;
             type = "HEAT";
         };
-        class gm_rocket_84x245mm_HEAT_T_DM12A1 : gm_rocket_84x245mm_HEAT_T_DM12 {};
-        class gm_rocket_84x245mm_HEAT_T_DM22 : gm_rocket_84x245mm_HEAT_T_DM12
+        class gm_penetrator_84x245mm_HEAT_DM12A1 : gm_penetrator_84x245mm_HEAT_DM12 {};
+        class gm_penetrator_84x245mm_HEAT_DM22 : gm_penetrator_84x245mm_HEAT_DM12
         {
             damage = 20;
         };
-        class gm_rocket_84x245mm_HEAT_T_DM32 : gm_rocket_84x245mm_HEAT_T_DM12
+        class gm_penetrator_84x245mm_HEAT_DM32 : gm_penetrator_84x245mm_HEAT_DM12
         {
             damage = 22;
         };
-        class gm_penetrator_84x245mm_HEAT_DM12 : NO_DAMAGE {};
-        class gm_penetrator_84x245mm_HEAT_DM12A1 : NO_DAMAGE {};
-        class gm_penetrator_84x245mm_HEAT_DM22 : NO_DAMAGE {};
-        class gm_penetrator_84x245mm_HEAT_DM32 : NO_DAMAGE {};
+
         // M72A3 LAW
-        class gm_rocket_66mm_HEAT_m72a3
+        class gm_rocket_66mm_HEAT_m72a3 : HAS_PENETRATOR(gm_penetrator_66mm_HEAT_m72a3);
+        
+        class gm_penetrator_66mm_HEAT_m72a3
         {
             damage = 13;
             type = "HEAT";
         };
-        class gm_penetrator_66mm_HEAT_m72a3 : NO_DAMAGE {};
 
         // FIM-43 (Redeye)
         class gm_rocket_70mm_HE_m585
@@ -288,12 +300,12 @@ class CfgWargay
         class gm_shell_100x695mm_he_of412 : Tank_HE {};
 
         // T-55A
-        class gm_shell_100x695mm_heat_t_bk5m
+        class gm_shell_100x695mm_heat_t_bk5m : HAS_PENETRATOR(gm_penetrator_100x695mm_HEAT_T_bk5m);
+        class gm_penetrator_100x695mm_HEAT_T_bk5m
         {
             damage = 11;
             type = "HEAT";
         };
-        class gm_penetrator_100x695mm_HEAT_T_bk5m : NO_DAMAGE {};
         
         class gm_shell_100x695mm_apfsds_t_bm20
         {
@@ -319,22 +331,24 @@ class CfgWargay
             type = "HE";
         };
         // class gm_shell_122x447mm_he_of462 {};
-        class gm_shell_122x447mm_heat_t_bk13
+        class gm_shell_122x447mm_heat_t_bk13 : HAS_PENETRATOR(gm_penetrator_122x447mm_heat_t_bk13);
+        
+        class gm_penetrator_122x447mm_heat_bk6m
         {
             damage = 9;
             type = "HEAT";
         };
-        class gm_penetrator_122x447mm_heat_bk6m : NO_DAMAGE {};
-        class gm_penetrator_122x447mm_heat_t_bk13 : NO_DAMAGE {};
+        class gm_penetrator_122x447mm_heat_t_bk13 : gm_penetrator_122x447mm_heat_bk6m {};
 
         // BM-21
-        class gm_rocket_mlrs_122mm_he_9m22u : NO_DAMAGE {};
+        class gm_rocket_mlrs_122mm_he_9m22u : HAS_PENETRATOR(gm_warhead_122mm_he_9m22u);
         class gm_warhead_122mm_he_9m22u
         {
             damage = 7;
             type = "HE";
         };
-        class gm_rocket_mlrs_122mm_icm_9m218 : NO_DAMAGE {};
+
+        class gm_rocket_mlrs_122mm_icm_9m218 : HAS_PENETRATOR(gm_penetrator_3b30) {};
         class gm_penetrator_3b30
         {
             damage = 5;
@@ -355,56 +369,61 @@ class CfgWargay
             type = "HEAT";
         };
         class gm_shell_73mm_he_og15v : Small_HE {};
-        class gm_missile_maljutka_heat_9m14m
+
+        class gm_missile_maljutka_heat_9m14m : HAS_PENETRATOR(gm_penetrator_maljutka_HEAT_9m14m);
+        class gm_penetrator_maljutka_HEAT_9m14
         {
             damage = 15;
             type = "HEAT";
         };
-        class gm_penetrator_maljutka_HEAT_9m14 : NO_DAMAGE {};
-        class gm_penetrator_maljutka_HEAT_9m14m : NO_DAMAGE {};
+        class gm_penetrator_maljutka_HEAT_9m14m : gm_penetrator_maljutka_HEAT_9m14 {};
 
         // SPW-60PB
         class gm_bullet_145x114mm_AP_B32 : HMG_AP {};
         class gm_bullet_145x114mm_HEI_T_MDZ : HMG_HE {};
 
         // Fagot
-        class gm_missile_fagot_heat_9m111
+        class gm_missile_fagot_heat_9m111 : HAS_PENETRATOR(gm_penetrator_fagot_HEAT_9m111);
+        class gm_penetrator_fagot_HEAT_9m111
         {
             damage = 16;
             type = "HEAT";
         };
-        class gm_penetrator_fagot_HEAT_9m111 : NO_DAMAGE {};
 
         
-        class gm_rocket_40mm_HEAT_pg7v
+        class gm_rocket_40mm_HEAT_pg7v : HAS_PENETRATOR(gm_penetrator_40mm_HEAT_pg7v);
+        class gm_penetrator_40mm_HEAT_pg7v
         {
             damage = 14;
             type = "HEAT";
         };
-        class gm_penetrator_40mm_HEAT_pg7v : NO_DAMAGE {};
-        class gm_rocket_40mm_HEAT_pg7v1
+
+        class gm_rocket_40mm_HEAT_pg7v1 : HAS_PENETRATOR(gm_penetrator_40mm_HEAT_pg7v1);
+        class gm_penetrator_40mm_HEAT_pg7v1
         {
             damage = 17;
             type = "HEAT";
         };
-        class gm_penetrator_40mm_HEAT_pg7v1 : NO_DAMAGE {};
+
         class gm_rocket_55mm_HE_s5
         {
             damage = 1;
             type = "HE";
         };
-        class gm_rocket_55mm_heat_s5k
+
+        class gm_rocket_55mm_heat_s5k : HAS_PENETRATOR(gm_penetrator_55mm_heat_s5k);
+        class gm_penetrator_55mm_heat_s5k
         {
             damage = 2;
             type = "HEAT";
         };
-        class gm_penetrator_55mm_heat_s5k : NO_DAMAGE {};
-        class gm_rocket_64mm_HEAT_pg18
+
+        class gm_rocket_64mm_HEAT_pg18 : HAS_PENETRATOR(gm_penetrator_64mm_HEAT_pg18);
+        class gm_penetrator_64mm_HEAT_pg18
         {
             damage = 15;
             type = "HEAT";
         };
-        class gm_penetrator_64mm_HEAT_pg18 : NO_DAMAGE {};
 
         // Strela-2
         class gm_rocket_72mm_HE_9m32m : gm_rocket_70mm_HE_m585 {};

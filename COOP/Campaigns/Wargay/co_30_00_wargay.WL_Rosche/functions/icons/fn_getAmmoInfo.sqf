@@ -28,18 +28,19 @@ private _ammoInfo = _vehicleInfo getOrDefault [AMMO_PROPERTY, objNull];
 if (_ammoInfo isEqualTo objNull) then {
 	private _vehicleClassName = _vehicleInfo get CLASS_NAME_PROPERTY;
 
-	diag_log format ["DDd %1", _vehicleClassName];
+	// diag_log format ["DDd %1", _vehicleClassName];
 
 	private _magazines = getArray (configFile >> "CfgVehicles" >> _vehicleClassName >> "Turrets" >> "MainTurret" >> "magazines");
 	_magazines = _magazines arrayIntersect _magazines;
 
-	diag_log format ["Ddd mags: %1", str _magazines];
+	// diag_log format ["Ddd mags: %1", str _magazines];
 
 	private _ammo = _magazines apply {
- 		[_x, getText (configFile >> "CfgMagazines" >> _x >> "ammo")]
+ 		MagazineTypes getOrDefault [toUpper _x, objNull]
 	}
+	select {_x isNotEqualTo objNull}
 	apply {
-  		[_x select 0, AmmoTypes getOrDefault [toUpper (_x select 1), objNull]];
+  		[_x get CLASS_NAME_PROPERTY, _x getOrDefault [AMMO_PROPERTY, objNull]]
 	}
 	select {_x select 1 isNotEqualTo objNull}
 	apply {
@@ -47,17 +48,17 @@ if (_ammoInfo isEqualTo objNull) then {
   		_x select 1
 	};
 
-	diag_log ["Ddd ammo: %1", str _ammo];
+	// diag_log ["Ddd ammo: %1", str _ammo];
 
 	private _ammoInfo = createHashMap;
 	{
 		_ammoInfo set [_x get CLASS_NAME_PROPERTY, _x];
 	} forEach _ammo;
 
-	diag_log ["Ddd ammo info: %1", str _ammoInfo];
+	// diag_log ["Ddd ammo info: %1", str _ammoInfo];
 	
 	_vehicleInfo set [AMMO_PROPERTY, _ammoInfo];
-	diag_log ["Ddd vehicle info: %1", str _vehicleInfo];
+	// diag_log ["Ddd vehicle info: %1", str _vehicleInfo];
 };
 
 _ammoInfo

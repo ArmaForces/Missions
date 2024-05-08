@@ -40,6 +40,9 @@ if (_ammoInfo isNotEqualTo objNull) then {
     } select {_x isNotEqualTo ""};
 
     if (_ammoInfoText isNotEqualTo []) then {
+        _messageParts pushBack "Ammo:";
+        _messageParts pushBack lineBreak;
+
         {
             _messageParts pushBack _x;
             _messageParts pushBack lineBreak;

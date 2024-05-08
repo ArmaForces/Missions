@@ -41,6 +41,7 @@
 
 // Wargay stuff
 // #define DEV_DEBUG
+// #define DEBUG_MODE_FULL
 #define AMMO_PROPERTY "ammo"
 #define CLASS_NAME_PROPERTY "className"
 #define DAMAGE_PROPERTY "damage"
