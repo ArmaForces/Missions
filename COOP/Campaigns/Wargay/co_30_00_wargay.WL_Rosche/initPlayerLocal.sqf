@@ -48,9 +48,14 @@ GVAR(isSoundPlaying) = false;
 ["MDL_unitLost", {
     params ["_unit"];
     private _vehicleDisplayName = [_unit] call FUNC(getVehicleDisplayName);
-    private _crewNames = crew _unit apply {name _x};
-    if (_crewNames isEqualTo []) then { _crewNames = ""; };
-    [WEST, "HQ"] commandChat format [LLSTRING(UnitLost), _vehicleClassName, str _crewNames];
+    private _crew = crew _unit;
+    private _crewNames = if (_crew isEqualTo []) then {
+        ""
+    } else {
+        format ["%1: %2", groupId group leader effectiveCommander _unit, _crew]
+    };
+    
+    [WEST, "HQ"] commandChat format [LLSTRING(UnitLost), _vehicleDisplayName, _crewNames]
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_vehicleDeployment", {
