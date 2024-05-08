@@ -26,6 +26,10 @@ if (_newHp <= 0) exitWith {
         [_shooter, _unit] call FUNC(addExperienceForKill);
     };
 
+    if (_unit getVariable ["MDL_deployedVehicle", false]) then {
+        ["MDL_unitLost", [_unit]] call CBA_fnc_globalEvent;
+    };
+
     _unit setVariable ["MDL_currentHp", 0, true];
     ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
     {_x setDamage 1} forEach crew _unit;
