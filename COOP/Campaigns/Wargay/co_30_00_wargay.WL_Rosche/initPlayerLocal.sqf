@@ -70,7 +70,7 @@ GVAR(isSoundPlaying) = false;
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_xpReceived", {
-    params ["_receivedXp", "_newTotalXp"];
+    params ["_receivedXp", "_newLifeXp", "_newTotalXp"];
 
     systemChat format [LLSTRING(XpReceived), _receivedXp, _newTotalXp];
 }] call CBA_fnc_addEventHandler;

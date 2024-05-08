@@ -147,8 +147,8 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <Polish>Akcja przerwana, pojazd uczestniczy w walce.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_XpReceived">
-            <English>Received %1 XP. New total: %2 XP</English>
-            <Polish>Otrzymano %1 PD. Całkowite PD: %2</Polish>
+            <English>Received %1 XP. New total from last death: %2 XP. Grand total: %3 XP</English>
+            <Polish>Otrzymano %1 PD. Całkowite PD od ostatniej śmierci: %2. PD w kampanii: %3 XP</Polish>
         </Key>
     </Package>
 </Project>

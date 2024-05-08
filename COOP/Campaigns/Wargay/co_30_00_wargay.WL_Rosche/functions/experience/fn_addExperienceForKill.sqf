@@ -26,5 +26,10 @@ private _xpAmount = if (_vehicleInfo isEqualTo objNull) then { 5 } else { _vehic
 	private _currentXp = _x getVariable ["MDL_xp", 0];
 	private _newXp = _currentXp + _xpAmount;
 	_x setVariable ["MDL_xp", _newXp, true];
-	["MDL_xpReceived", [_xpAmount, _newXp], _x] call CBA_fnc_targetEvent;
+
+	private _currentTotalXp = _x getVariable ["MDL_totalXp", 0];
+	private _newTotalXp = _currentTotalXp + _xpAmount;
+	_x setVariable ["MDL_totalXp", _newTotalXp, true];
+
+	["MDL_xpReceived", [_xpAmount, _newXp, _newTotalXp], _x] call CBA_fnc_targetEvent;
 } forEach crew vehicle _shooter;
