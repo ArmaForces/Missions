@@ -17,7 +17,8 @@ params ["_vehicle"];
 
 private _newVehicleInfo = createHashMapFromArray [
     [CLASS_NAME_PROPERTY, toUpper typeOf _vehicle],
-	[DISPLAY_NAME_PROPERTY, getText (configOf _vehicle >> DISPLAY_NAME_PROPERTY)]
+	[DISPLAY_NAME_PROPERTY, getText (configOf _vehicle >> DISPLAY_NAME_PROPERTY)],
+	["pointCost", 5]
 ];
     
 VehicleTypes set [toUpper typeOf _vehicle, _newVehicleInfo];

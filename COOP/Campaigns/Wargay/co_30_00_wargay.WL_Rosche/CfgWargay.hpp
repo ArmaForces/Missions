@@ -1,11 +1,13 @@
 #define ARMOR(FRONT,SIDES,BACK,TOP) armor[] = { FRONT, SIDES, BACK, TOP }
-#define VEHICLE(vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
+#define VEHICLE(cost,vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
         { \
+            pointCost = cost;\
             hitpoints = 10;\
             ARMOR(armorFront,armorSides,armorBack,armorTop);\
         }
-#define VEHICLE_RECON(vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
+#define VEHICLE_RECON(cost,vehicleClass,armorFront,armorSides,armorBack,armorTop) class vehicleClass \
         { \
+            pointCost = cost;\
             hitpoints = 10;\
             ARMOR(armorFront,armorSides,armorBack,armorTop);\
             isRecon = 1;\
@@ -436,38 +438,38 @@ class CfgWargay
     class Vehicles
     {
         // West Germany
-        VEHICLE(gm_Leopard1_base,6,2,2,1);
+        VEHICLE(30,gm_Leopard1_base,6,2,2,1);
         VEHICLE_LIKE(gm_Leopard1_base,gm_Leopard1a1_base); // 1A1 should be recon with 5/2/2/1
         VEHICLE_LIKE(gm_Leopard1_base,gm_BPz2_base)
-        VEHICLE(gm_Leopard1a3_base,8,3,2,2);
-        VEHICLE(gm_leopard1a5_base,10,3,2,2);
-        VEHICLE(gm_Gepard1a1_base,3,2,2,1);
-        VEHICLE(gm_m109g_base,2,1,1,1);
-        VEHICLE(gm_marder1_base,4,2,1,1);
-        VEHICLE(gm_marder1a1plus_base,4,2,2,1);
-        VEHICLE(gm_marder1a2_base,5,3,2,2);
-        VEHICLE_RECON(gm_luchs_base,2,1,1,1);
-        VEHICLE(gm_m113_base,1,1,1,1);
+        VEHICLE(30,gm_Leopard1a3_base,8,3,2,2);
+        VEHICLE(65,gm_leopard1a5_base,10,3,2,2);
+        VEHICLE(55,gm_Gepard1a1_base,3,2,2,1);
+        VEHICLE(50,gm_m109g_base,2,1,1,1);
+        VEHICLE(15,gm_marder1_base,4,2,1,1);
+        VEHICLE(20,gm_marder1a1plus_base,4,2,2,1);
+        VEHICLE(20,gm_marder1a2_base,5,3,2,2);
+        VEHICLE_RECON(25,gm_luchs_base,2,1,1,1);
+        VEHICLE(5,gm_m113_base,1,1,1,1);
         VEHICLE_LIKE(gm_m113_base,gm_fuchs_base);
-        VEHICLE_RECON(gm_fuchsa0_reconnaissance_base,1,1,1,1);
-        VEHICLE_RECON(gm_bo105m_base,0,0,0,0);
-        VEHICLE(gm_bo105p_base,0,0,0,0);
+        VEHICLE_RECON(10,gm_fuchsa0_reconnaissance_base,1,1,1,1);
+        VEHICLE_RECON(45,gm_bo105m_base,0,0,0,0);
+        VEHICLE(50,gm_bo105p_base,0,0,0,0);
 
         // East Germany
-        VEHICLE(gm_pt76_base,2,1,1,1);
-        VEHICLE(gm_t55_base,7,3,2,1);
+        VEHICLE_RECON(15,gm_pt76_base,2,1,1,1);
+        VEHICLE(25,gm_t55_base,7,3,2,1);
         VEHICLE_LIKE(gm_t55_base,gm_t55a_base);
         VEHICLE_LIKE(gm_t55_base,gm_t55ak_base);
-        VEHICLE(gm_t55am2_base,10,4,2,2);
-        VEHICLE(gm_t55am2b_base,10,5,2,2);
-        VEHICLE(gm_zsu234_base,1,1,1,1);
-        VEHICLE(gm_2s1_base,1,1,1,1);
-        VEHICLE(gm_2p16_base,1,1,1,1);
-        VEHICLE(gm_bmp1_base,1,1,1,1);
-        VEHICLE_RECON(gm_brdm2_base,1,1,1,1);
-        VEHICLE(gm_btr60_base,1,1,1,1);
-        VEHICLE_RECON(gm_mi2p_base,0,0,0,0);
-        VEHICLE(gm_mi2urn_base,0,0,0,0);
+        VEHICLE(50,gm_t55am2_base,10,4,2,2);
+        VEHICLE(55,gm_t55am2b_base,10,5,2,2);
+        VEHICLE(35,gm_zsu234_base,1,1,1,1);
+        VEHICLE(55,gm_2s1_base,1,1,1,1);
+        VEHICLE(130,gm_2p16_base,1,1,1,1);
+        VEHICLE(10,gm_bmp1_base,1,1,1,1);
+        VEHICLE_RECON(15,gm_brdm2_base,1,1,1,1);
+        VEHICLE(10,gm_btr60_base,1,1,1,1);
+        VEHICLE_RECON(40,gm_mi2p_base,0,0,0,0);
+        VEHICLE(30,gm_mi2urn_base,0,0,0,0);
         VEHICLE_LIKE(gm_mi2urn_base,gm_mi2us_base);
     };
 };

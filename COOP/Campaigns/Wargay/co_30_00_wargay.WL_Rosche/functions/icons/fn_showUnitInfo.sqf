@@ -24,6 +24,9 @@ if (_unitInfo isEqualTo objNull) exitWith {};
 private _messageParts = [
     [_unitInfo] call FUNC(getVehicleDisplayName),
     lineBreak,
+    lineBreak,
+    format ["Points cost: %1", _unitInfo getOrDefault ["pointCost", 5]],
+    lineBreak,
     lineBreak
 ];
 

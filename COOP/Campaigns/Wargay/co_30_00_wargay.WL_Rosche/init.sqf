@@ -31,6 +31,7 @@ VehicleTypes = createHashMapFromArray
     apply {
         private _hashMap = createHashMap;
         _hashMap set [CLASS_NAME_PROPERTY, toUpper configName _x];
+        _hashMap set ["pointCost", getNumber (_x >> "pointCost")];
         _hashMap set ["hitpoints", getNumber (_x >> "hitpoints")];
         _hashMap set ["armor", getArray (_x >> "armor")];
         _hashMap set ["isRecon", getNumber (_x >> "isRecon")];
@@ -99,3 +100,8 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
     ["gm_ge_army_fuchsa0_reconnaissance", 4],
     ["gm_ge_army_luchsa1", 2]
 ];
+
+// TODO: Music
+// TODO: 
+// TODO: Some initial units
+// TODO: Simple XP

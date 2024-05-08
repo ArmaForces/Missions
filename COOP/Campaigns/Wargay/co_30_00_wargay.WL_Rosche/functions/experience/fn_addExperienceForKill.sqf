@@ -15,7 +15,8 @@
 
 params ["_shooter", "_unit"];
 
-private _xpAmount = 1;
+private _vehicleInfo = VehicleTypes getOrDefault [toUpper typeOf _unit, objNull];
+private _xpAmount = if (_vehicleInfo isEqualTo objNull) then { 5 } else { _vehicleInfo get "pointCost" };
 
 {
 	private _killedUnits = _x getVariable ["MDL_killedUnits", []];
