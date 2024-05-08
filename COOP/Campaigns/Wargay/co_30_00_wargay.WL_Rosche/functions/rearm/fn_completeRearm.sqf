@@ -14,5 +14,5 @@
 
 params ["_target"];
 
-["MDL_rearmVehicle", [_target, 1], _target] call CBA_fnc_targetEvent;
+["MDL_rearmVehicle", [_target, 1]] call CBA_fnc_globalEvent;
 systemChat LLSTRING(RearmFinished);
