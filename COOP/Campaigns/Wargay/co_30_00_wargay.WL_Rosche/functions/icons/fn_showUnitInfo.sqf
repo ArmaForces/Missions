@@ -60,7 +60,5 @@ private _armorInfoParts = [
 
 _messageParts append _armorInfoParts;
 
-// TODO: Include ammo stats
-
 private _text = composeText _messageParts;
 hint _text;
