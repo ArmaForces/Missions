@@ -3,8 +3,6 @@
 minviewdistance = 500;
 maxviewdistance = 10000;
 
-// TODO: Consider adding initial projectile position/velocity in Fired EH and base damage on that
-
 // TODO: Add KnowsAboutChanged EH to WEST groups as needed as this thing most likely won't work
 {
     _x addEventHandler ["KnowsAboutChanged", FUNC(knowsAboutChanged)];
