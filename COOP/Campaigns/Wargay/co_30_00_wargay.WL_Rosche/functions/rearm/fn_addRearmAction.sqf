@@ -14,6 +14,7 @@
 
 params ["_entity"];
 
+// TODO For never: Rearming one by one/mag by mag
 [
     _entity,
     localize "str_state_rearm",

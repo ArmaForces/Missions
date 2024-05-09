@@ -434,7 +434,6 @@ class CfgWargay
         class gm_bullet_127x108mm_API_T_BZT : SMALL_ARMS {};
     };
 
-    // TODO: Consider adding vehicle cost for veterancy
     class Vehicles
     {
         // West Germany

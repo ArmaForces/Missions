@@ -16,8 +16,8 @@
 call FUNC(drawHitDebug);
 #endif
 
-// Always draw icon for cursor object;
-// TODO: Consider cursorTarget
+// Always draw icon for cursor object
+// Not using cursorTarget to avoid issues with knowledge that might be lagging
 private _cursorObject = cursorObject;
 private _vehiclesWithIcons = if (
     side effectiveCommander _cursorObject isEqualTo playerSide || {

@@ -103,3 +103,4 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Refuel
 // TODO: Make only HQ able to spawn new vehicles
 // TODO: Save XP somewhere for next missions
+// TODO: Add red outline for non-full HP points (and round up instead of normal)
