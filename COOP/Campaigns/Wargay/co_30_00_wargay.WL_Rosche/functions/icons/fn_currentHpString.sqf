@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 3Mydlo3
+ * Author: 3Mydlo3, veteran29
  * Returns the unit HP in [ ] string representation.
  * Allows specifying optional character for non-damaged squares in case whitespace characters are removed and result doesn't look satisfying.
  *
