@@ -110,7 +110,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Add red outline for non-full HP points (and round up instead of normal)
 // TODO: Music autoplay
 // TODO: Rerecord Tension as it's paused around 0:35
-// TODO: Enable LAMBS info share
 // TODO: Test LAMBS artillery target module from right panel (skip adjustment rounds)
 // BUG: Gepard has tank icon
 // BUG: Artillery has tank or motorized icon
@@ -119,3 +118,5 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // BUG: Rearm action always visible
 // BUG: Artillery firing at units gets spotted
 // TODO: Consider markers on the map for enemy units
+// TODO: Consider display of unit name on hover (ctrlMapMouseOver)
+// TODO: Split client from global settings in Addon Settings
