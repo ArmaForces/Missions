@@ -101,6 +101,24 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 
 // BUG: Crews die
 // TODO: Refuel
+// TODO: Smaller fuel usage coef
 // TODO: Make only HQ able to spawn new vehicles
 // TODO: Save XP somewhere for next missions
+// TODO: Rearm/Refuel/Repair supplies
+// TODO: Decrease XP for friendly fire
+// TODO: Increase XP for repairing vehicles
+// TODO: Think about XP for recon?
 // TODO: Add red outline for non-full HP points (and round up instead of normal)
+// TODO: Music autoplay
+// TODO: Rerecord Tension as it's paused around 0:35
+// TODO: Enable LAMBS info share
+// TODO: Test LAMBS artillery target module from right panel (skip adjustment rounds)
+// BUG: Gepard has tank icon
+// BUG: Artillery has tank or motorized icon
+// TODO: Try defining icons in CfgWargay
+// TODO: Command zones & capture mechanic
+// BUG: AIs should not have fuel coef
+// BUG: Rearm action always visible
+// BUG: Zeus should not "spot" units
+// BUG: Artillery firing at units gets spotted
+// TODO: Consider markers on the map for enemy units
