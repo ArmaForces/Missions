@@ -37,7 +37,13 @@ _entity addEventHandler ["HitPart", FUNC(hitPart)];
 _entity addEventHandler ["Fired", FUNC(fired)];
 
 // Increase fuel consumption;
-_entity setFuelConsumptionCoef GVAR(fuelConsumptionMultiplier);
+private _fuelCoef = if (_entity isKindOf "Air") then {
+    GVAR(fuelConsumptionMultiplier)/2
+} else {
+    GVAR(fuelConsumptionMultiplier)
+};
+
+_entity setFuelConsumptionCoef _fuelCoef;
 
 _entity allowCrewInImmobile true;
 

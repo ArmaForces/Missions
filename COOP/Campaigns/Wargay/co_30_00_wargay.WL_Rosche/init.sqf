@@ -101,7 +101,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 
 // BUG: Crews die
 // TODO: Refuel
-// TODO: Smaller fuel usage coef
 // TODO: Make only HQ able to spawn new vehicles
 // TODO: Save XP somewhere for next missions
 // TODO: Rearm/Refuel/Repair supplies

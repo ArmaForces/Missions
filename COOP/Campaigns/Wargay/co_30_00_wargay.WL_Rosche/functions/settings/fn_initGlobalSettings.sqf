@@ -44,4 +44,4 @@ GVAR(westIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerC
 GVAR(eastIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
 GVAR(filledHpColor) = getArray (missionConfigFile >> "CfgWargay" >> "filledHpColor");
 GVAR(missingHpColor) = getArray (missionConfigFile >> "CfgWargay" >> "missingHpColor");
-GVAR(fuelConsumptionMultiplier) = 5;
+GVAR(fuelConsumptionMultiplier) = 4;
