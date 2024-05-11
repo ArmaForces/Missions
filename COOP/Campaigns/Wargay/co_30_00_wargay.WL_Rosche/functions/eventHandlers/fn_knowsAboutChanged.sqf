@@ -18,6 +18,7 @@
 params ["_group", "_targetUnit", "_newKnowsAbout", "_oldKnowsAbout"];
 
 if (side _targetUnit isNotEqualTo EAST) exitWith {};
+if (isObjectHidden leader _group) exitWith {};
 
 if (GVAR(onlyReconCanSpot) && {!([_group] call FUNC(isReconVehicle))}) exitWith {};
 

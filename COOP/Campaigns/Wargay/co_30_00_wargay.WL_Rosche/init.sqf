@@ -118,6 +118,5 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Command zones & capture mechanic
 // BUG: AIs should not have fuel coef
 // BUG: Rearm action always visible
-// BUG: Zeus should not "spot" units
 // BUG: Artillery firing at units gets spotted
 // TODO: Consider markers on the map for enemy units
