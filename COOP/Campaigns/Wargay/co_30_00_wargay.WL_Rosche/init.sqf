@@ -81,6 +81,15 @@ MagazineTypes = createHashMapFromArray _magazineTypes;
     true // Apply retroactive
 ] call CBA_fnc_addClassEventHandler;
 
+[
+    "Man",
+    "Init",
+    FUNC(manInit),
+    true, // Allow inheritance
+    [], // Excluded classes
+    true // Apply retroactive
+] call CBA_fnc_addClassEventHandler;
+
 GVAR(spawnableVehicles) = createHashMapFromArray [
     // LOG
     ["gm_ge_army_m113a1g_command", 2],
@@ -99,7 +108,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
     ["gm_ge_army_luchsa1", 2]
 ];
 
-// BUG: Crews die
 // TODO: Refuel
 // TODO: Make only HQ able to spawn new vehicles
 // TODO: Save XP somewhere for next missions

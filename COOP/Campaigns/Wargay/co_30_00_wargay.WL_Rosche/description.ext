@@ -65,6 +65,7 @@ class CfgFunctions {
             class draw3D {};
             class fired {};
             class handleDamage {};
+            class handleDamageMan {};
             class hitPart {};
             class knowsAboutChanged {};
         };
@@ -96,6 +97,7 @@ class CfgFunctions {
         };
         class Init
         {
+            class manInit {};
             class vehicleInit {};
             class vehicleSpawnerInit {};
         };
