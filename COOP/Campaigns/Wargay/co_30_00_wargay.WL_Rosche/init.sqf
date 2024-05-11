@@ -116,7 +116,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // BUG: Artillery has tank or motorized icon
 // TODO: Try defining icons in CfgWargay
 // TODO: Command zones & capture mechanic
-// BUG: AIs should not have fuel coef
 // BUG: Rearm action always visible
 // BUG: Artillery firing at units gets spotted
 // TODO: Consider markers on the map for enemy units

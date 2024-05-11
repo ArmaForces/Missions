@@ -36,14 +36,16 @@ _entity addEventHandler ["HandleDamage", {
 _entity addEventHandler ["HitPart", FUNC(hitPart)];
 _entity addEventHandler ["Fired", FUNC(fired)];
 
-// Increase fuel consumption;
-private _fuelCoef = if (_entity isKindOf "Air") then {
-    GVAR(fuelConsumptionMultiplier)/2
-} else {
-    GVAR(fuelConsumptionMultiplier)
-};
+// Increase fuel consumption for players
+if (_entity getVariable ["MDL_deployedVehicle", false]) then {
+    private _fuelCoef = if (_entity isKindOf "Air") then {
+        GVAR(fuelConsumptionMultiplier)/2
+    } else {
+        GVAR(fuelConsumptionMultiplier)
+    };
 
-_entity setFuelConsumptionCoef _fuelCoef;
+    _entity setFuelConsumptionCoef _fuelCoef;
+};
 
 _entity allowCrewInImmobile true;
 
