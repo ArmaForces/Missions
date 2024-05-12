@@ -41,6 +41,7 @@ if (_vehicleInfo isEqualTo objNull) then {
     if (_vehicleInfo isNotEqualTo objNull) then {
         LOG_3("Found matching parent '%1' for '%2' with vehicle info: %3",_vehicleInfo get CLASS_NAME_PROPERTY,_unitClassName,str _vehicleInfo);
         
+        // BUG:? It might replace value in original hashmap
         _vehicleInfo set [CLASS_NAME_PROPERTY, _unitClassName];
         _vehicleInfo set [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgVehicles" >> _unitClassName >> DISPLAY_NAME_PROPERTY)];
         VehicleTypes set [_unitClassName, _vehicleInfo];

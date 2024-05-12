@@ -28,8 +28,7 @@ private _iconDescription = if (_includeText) then {
     format ["%1 - %2", [_target] call FUNC(getVehicleDisplayName), _target call FUNC(currentHpString)]
 } else { "" };
 
-private _icon = [_target] call afft_friendly_tracker_fnc_getVehicleMarkerType;
-private _iconPath = format ["\A3\ui_f\data\map\markers\nato\%1.paa", _icon];
+private _iconPath = [_target] call FUNC(getIconPath);
 private _iconSize = (GVAR(unitIconSizeMultiplier) * 0.01 * safeZoneW) / GVAR(iconWidth);
 private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { GVAR(westIconColor) } else { GVAR(eastIconColor) };
 // #ifdef DEV_DEBUG
@@ -38,6 +37,7 @@ private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { 
 // #endif
 
 if (GVAR(unitIconSizeDependsOnDistance)) then {
+    // BUG: Distance should be from camera?
     private _distance = (player distance _worldPos) + 0.001; // Adding fraction to ensure it's positive in case someone ends up perfectly aligned (not gonna happen)
     private _factor = (3 - (log _distance)/1.5) min 2 max 0.75;
     // private _factor = 2 min (1 max ((_distance - 300) * 0.0014));

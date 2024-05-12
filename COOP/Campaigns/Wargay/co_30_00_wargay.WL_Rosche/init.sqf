@@ -34,6 +34,9 @@ VehicleTypes = createHashMapFromArray
         _hashMap set ["pointCost", getNumber (_x >> "pointCost")];
         _hashMap set ["hitpoints", getNumber (_x >> "hitpoints")];
         _hashMap set ["armor", getArray (_x >> "armor")];
+        _hashMap set ["iconPath", getText (_x >> "iconPath")];
+        _hashMap set ["isCommandVehicle", getNumber (_x >> "isCommandVehicle")];
+        _hashMap set ["isLogistics", getNumber (_x >> "isLogistics")];
         _hashMap set ["isRecon", getNumber (_x >> "isRecon")];
         [toUpper configName _x, _hashMap]
     });
@@ -119,12 +122,11 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Music autoplay
 // TODO: Rerecord Tension as it's paused around 0:35
 // TODO: Test LAMBS artillery target module from right panel (skip adjustment rounds)
-// BUG: Gepard has tank icon
-// BUG: Artillery has tank or motorized icon
-// TODO: Try defining icons in CfgWargay
 // TODO: Command zones & capture mechanic
 // BUG: Rearm action always visible
 // BUG: Artillery firing at units gets spotted
 // TODO: Consider markers on the map for enemy units
 // TODO: Consider display of unit name on hover (ctrlMapMouseOver)
 // TODO: Split client from global settings in Addon Settings
+// TODO: Multiply explosion of logistic vehicles
+// TODO: Consider Metis Markers https://github.com/Metis-Team/mts_marker/wiki/Mission-Designer-Manuel

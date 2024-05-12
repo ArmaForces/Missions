@@ -88,6 +88,7 @@ class CfgFunctions {
             class currentHpString {};
             class drawIcon {};
             class getAmmoInfo {};
+            class getIconPath {};
             class getVehicleDisplayName {};
             class getVehicleInfo {};
             class isReconVehicle {};

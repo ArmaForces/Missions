@@ -18,6 +18,28 @@
             child = penetratorClass;\
         }
 
+// Icon macros
+#define ARMA_NATO_MARKERS_DIR \A3\ui_f\data\map\markers\nato
+#define ANTIAIR_SPAAG_ICON __EVAL(getMissionPath "gui\markers\b_antiair_spaag.paa")
+#define ANTIAIR_SPAAG_RADAR_ICON __EVAL(getMissionPath "gui\markers\b_antiair_spaag_radar.paa")
+#define ANTITANK_ICON __EVAL(getMissionPath "gui\markers\b_antitank.paa")
+#define ANTITANK_ARMOR_ICON __EVAL(getMissionPath "gui\markers\b_antitank_armor.paa")
+#define ART_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_art.paa)
+#define ART_ROCKET_ICON __EVAL(getMissionPath "gui\markers\b_art_rocket.paa")
+#define ARMOR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_armor.paa)
+#define CV_ARMOR_ICON __EVAL(getMissionPath "gui\markers\b_cv_armor.paa")
+#define CV_ICON __EVAL(getMissionPath "gui\markers\b_cv.paa")
+#define HELI_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_air.paa)
+#define LOG_ARMOR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_support.paa)
+#define LOG_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_support.paa)
+#define MECH_INF_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_mech_inf.paa)
+#define MECH_INF_ARMED_ICON __EVAL(getMissionPath "gui\markers\b_mech_inf_armed.paa")
+#define MOTOR_INF_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_motor_inf.paa)
+#define RECON_AIR_ICON __EVAL(getMissionPath "gui\markers\b_recon_air.paa")
+#define RECON_ANTITANK_ICON __EVAL(getMissionPath "gui\markers\b_recon_antitank.paa")
+#define RECON_ARMOR_ICON __EVAL(getMissionPath "gui\markers\b_recon_armor.paa")
+// TODO: Add missing icons
+
 class CfgWargay
 {
     westMarkerColor[] = {
@@ -436,40 +458,425 @@ class CfgWargay
 
     class Vehicles
     {
-        // West Germany
-        VEHICLE(30,gm_Leopard1_base,6,2,2,1);
-        VEHICLE_LIKE(gm_Leopard1_base,gm_Leopard1a1_base); // 1A1 should be recon with 5/2/2/1
-        VEHICLE_LIKE(gm_Leopard1_base,gm_BPz2_base)
-        VEHICLE(30,gm_Leopard1a3_base,8,3,2,2);
-        VEHICLE(65,gm_leopard1a5_base,10,3,2,2);
-        VEHICLE(55,gm_Gepard1a1_base,3,2,2,1);
-        VEHICLE(50,gm_m109g_base,2,1,1,1);
-        VEHICLE(15,gm_marder1_base,4,2,1,1);
-        VEHICLE(20,gm_marder1a1plus_base,4,2,2,1);
-        VEHICLE(20,gm_marder1a2_base,5,3,2,2);
-        VEHICLE_RECON(25,gm_luchs_base,2,1,1,1);
-        VEHICLE(5,gm_m113_base,1,1,1,1);
-        VEHICLE_LIKE(gm_m113_base,gm_fuchs_base);
-        VEHICLE_RECON(10,gm_fuchsa0_reconnaissance_base,1,1,1,1);
-        VEHICLE_RECON(45,gm_bo105m_base,0,0,0,0);
-        VEHICLE(50,gm_bo105p_base,0,0,0,0);
+        /*
+            West Germany
+        */
 
-        // East Germany
-        VEHICLE_RECON(15,gm_pt76_base,2,1,1,1);
-        VEHICLE(25,gm_t55_base,7,3,2,1);
+        // LOG
+        class gm_ge_army_m113a1g_command
+        {
+            pointCost = 105;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = CV_ARMOR_ICON;
+            isCommandVehicle = 1;
+        };
+        class gm_iltis_cargo_base
+        {
+            pointCost = 110;
+            hitpoints = 5;
+            ARMOR(0,0,0,0);
+            iconPath = CV_ICON;
+            isCommandVehicle = 1;
+        };
+        class gm_fuchsa0_command_base
+        {
+            pointCost = 120;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            isCommandVehicle = 1;
+            iconPath = CV_ARMOR_ICON;
+        };
+
+        class gm_kat1_451_reammo_base
+        {
+            pointCost = 30;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = LOG_ICON;
+            isLogistics = 1;
+        };
+        VEHICLE_LIKE(gm_kat1_451_reammo_base,gm_kat1_451_refuel_base);
+        VEHICLE_LIKE(gm_kat1_451_reammo_base,gm_kat1_451_container_base);
+        class gm_kat1_452_container_base : gm_kat1_451_reammo_base
+        {
+            pointCost = 35;
+        };
+        class gm_kat1_454_cargo_base : gm_kat1_451_reammo_base
+        {
+            pointCost = 40;
+        };
+        class gm_u1300l_repair_base : gm_kat1_451_reammo_base
+        {
+            pointCost = 10;
+            hitpoints = 5;
+        };
+        VEHICLE_LIKE(gm_u1300l_repair_base,gm_u1300l_container_base);
+        VEHICLE_LIKE(gm_u1300l_repair_base,gm_u1300l_medic_base);
+
+        // TNK
+        class gm_Leopard1_base
+        {
+            pointCost = 30;
+            hitpoints = 10;
+            ARMOR(6,2,2,1);
+            iconPath = ARMOR_ICON;
+        };
+        VEHICLE_LIKE(gm_Leopard1_base,gm_Leopard1a1_base); // 1A1 should be recon with 5/2/2/1
+        
+        class gm_BPz2_base : gm_Leopard1_base
+        {
+            pointCost = 40;
+            iconPath = LOG_ARMOR_ICON;
+            isLogistics = 1;
+        };
+        class gm_Leopard1a3_base
+        {
+            pointCost = 40;
+            hitpoints = 10;
+            ARMOR(8,3,2,2);
+            iconPath = ARMOR_ICON;
+        };
+        class gm_leopard1a5_base
+        {
+            pointCost = 65;
+            hitpoints = 10;
+            ARMOR(10,3,2,2);
+            iconPath = ARMOR_ICON;
+        };
+
+        // SUP
+        class gm_Gepard1a1_base
+        {
+            pointCost = 55;
+            hitpoints = 10;
+            ARMOR(3,2,2,1);
+            iconPath = ANTIAIR_SPAAG_RADAR_ICON;
+        };
+        class gm_m109g_base
+        {
+            pointCost = 50;
+            hitpoints = 10;
+            ARMOR(2,1,1,1);
+            iconPath = ART_ICON;
+        };
+        class gm_kat1_463_mlrs_base
+        {
+            pointCost = 70;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = ART_ROCKET_ICON;
+        };
+
+        // VEH
+        class gm_iltis_base
+        {
+            pointCost = 5;
+            hitpoints = 5;
+            ARMOR(0,0,0,0);
+            iconPath = MOTOR_INF_ICON;
+        };
+        class gm_iltis_milan_base : gm_iltis_base
+        {
+            pointCost = 20;
+            iconPath = ANTITANK_ICON;
+        };
+        class gm_kat1_base
+        {
+            pointCost = 5;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = MOTOR_INF_ICON;
+        };
+        class gm_u1300l_base : gm_kat1_base
+        {
+            hitpoints = 5;
+        };
+
+        class gm_marder1_base
+        {
+            pointCost = 15;
+            hitpoints = 10;
+            ARMOR(4,2,1,1);
+            iconPath = MECH_INF_ARMED_ICON;
+        };
+        class gm_marder1a1plus_base : gm_marder1_base
+        {
+            pointCost = 15;
+            ARMOR(4,2,2,1);
+        };
+        class gm_marder1a2_base : gm_marder1_base
+        {
+            pointCost = 20;
+            ARMOR(5,3,2,2);
+        };
+        class gm_m113_base
+        {
+            pointCost = 5;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = MECH_INF_ICON;
+        };
+        class gm_m113a1g_apc_milan_base : gm_m113_base
+        {
+            pointCost = 20;
+            iconPath = ANTITANK_ARMOR_ICON;
+        };
+        class gm_m113a1g_medic_base : gm_m113_base
+        {
+            pointCost = 15;
+            iconPath = LOG_ARMOR_ICON;
+            isLogistics = 1;
+        };
+        class gm_fuchs_base : gm_m113_base
+        {
+            iconPath = MOTOR_INF_ICON;
+        };
+        class gm_fuchsa0_engineer_base : gm_fuchs_base
+        {
+            pointCost = 20;
+            iconPath = LOG_ARMOR_ICON;
+            isLogistics = 1;
+        };
+
+        // REC
+        class gm_iltis_mg3_base : gm_iltis_base
+        {
+            pointCost = 25;
+            iconPath = RECON_ICON;
+            isRecon = 1;
+        };
+        class gm_luchs_base
+        {
+            pointCost = 25;
+            hitpoints = 10;
+            ARMOR(2,1,1,1);
+            iconPath = RECON_ARMOR_ICON;
+            isRecon = 1;
+        };
+        class gm_fuchsa0_reconnaissance_base : gm_luchs_base
+        {
+            pointCost = 10;
+            ARMOR(1,1,1,1);
+            iconPath = RECON_ANTITANK_ICON;
+        };
+        class gm_bo105m_base
+        {
+            pointCost = 45;
+            hitpoints = 10; // Should be 4 according to Wargay
+            ARMOR(0,0,0,0);
+            iconPath = RECON_AIR_ICON;
+            isRecon = 1;
+        };
+
+        // HEL
+        class gm_bo105p_base
+        {
+            pointCost = 50;
+            hitpoints = 10; // Should be 4 according to Wargay
+            ARMOR(0,0,0,0);
+            iconPath = HELI_ICON;
+        };
+        class gm_bo105p_pah1a1_base : gm_bo105p_base
+        {
+            pointCost = 60;
+        };
+        class gm_ch53_base
+        {
+            pointCost = 20;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = HELI_ICON; // TODO: Consider Heli cargo vs heli attack icon
+        };
+
+        /*
+            East Germany
+        */
+
+        // LOG
+        class gm_uaz469_cargo_base
+        {
+            pointCost = 100;
+            hitpoints = 5;
+            ARMOR(0,0,0,0);
+            iconPath = CV_ICON;
+            isCommandVehicle = 1;
+        };
+        class gm_btr60pu12_base
+        {
+            pointCost = 110;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = CV_ARMOR_ICON;
+            isCommandVehicle = 1;
+        };
+        class gm_brdm2um_base
+        {
+            pointCost = 120;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = CV_ARMOR_ICON;
+            isCommandVehicle = 1;
+        };
+        class gm_t55ak_base
+        {
+            pointCost = 120;
+            hitpoints = 10;
+            ARMOR(7,3,2,1);
+            iconPath = CV_ARMOR_ICON;
+            isCommandVehicle = 1;
+        };
+        class gm_ural4320_repair_base
+        {
+            pointCost = 20;
+            hitpoints = 5;
+            ARMOR(0,0,0,0);
+            iconPath = LOG_ICON;
+            isLogistics = 1;
+        };
+        VEHICLE_LIKE(gm_ural4320_repair_base,gm_ural4320_reammo_base);
+        class gm_ural375d_refuel_base : gm_ural4320_repair_base
+        {
+            pointCost = 15;
+        };
+        VEHICLE_LIKE(gm_ural375d_refuel_base,gm_ural375d_medic_base);
+
+        // SUP
+        class gm_zsu234_base
+        {
+            pointCost = 35;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = ANTIAIR_SPAAG_RADAR_ICON;
+        };
+        class gm_2s1_base
+        {
+            pointCost = 55;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = ART_ICON;
+        };
+        class gm_2p16_base
+        {
+            pointCost = 130;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = ART_ROCKET_ICON;
+        };
+        class gm_ural375d_mlrs_base
+        {
+            pointCost = 65;
+            hitpoints = 5;
+            ARMOR(0,0,0,0);
+            iconPath = ART_ROCKET_ICON;
+        };
+
+        // TNK
+        class gm_t55_base
+        {
+            pointCost = 25;
+            hitpoints = 10;
+            ARMOR(7,3,2,1);
+            iconPath = ARMOR_ICON;
+        };
         VEHICLE_LIKE(gm_t55_base,gm_t55a_base);
-        VEHICLE_LIKE(gm_t55_base,gm_t55ak_base);
-        VEHICLE(50,gm_t55am2_base,10,4,2,2);
-        VEHICLE(55,gm_t55am2b_base,10,5,2,2);
-        VEHICLE(35,gm_zsu234_base,1,1,1,1);
-        VEHICLE(55,gm_2s1_base,1,1,1,1);
-        VEHICLE(130,gm_2p16_base,1,1,1,1);
-        VEHICLE(10,gm_bmp1_base,1,1,1,1);
-        VEHICLE_RECON(15,gm_brdm2_base,1,1,1,1);
-        VEHICLE(10,gm_btr60_base,1,1,1,1);
-        VEHICLE_RECON(40,gm_mi2p_base,0,0,0,0);
-        VEHICLE(30,gm_mi2urn_base,0,0,0,0);
-        VEHICLE_LIKE(gm_mi2urn_base,gm_mi2us_base);
+        class gm_t55am2_base : gm_t55_base
+        {
+            pointCost = 50;
+            ARMOR(10,4,2,2);
+        };
+        class gm_t55am2b_base
+        {
+            pointCost = 55;
+            ARMOR(10,5,2,2);
+        };
+        
+        // VEH
+        class gm_ural4320_base
+        {
+            pointCost = 5;
+            hitpoints = 5;
+            ARMOR(0,0,0,0);
+            iconPath = MOTOR_INF_ICON;
+        };
+        class gm_uaz469_base
+        {
+            pointCost = 5;
+            hitpoints = 5;
+            ARMOR(0,0,0,0);
+            iconPath = MOTOR_INF_ICON;
+        };
+        class gm_uaz469_spg9_base : gm_uaz469_base
+        {
+            pointCost = 10;
+            iconPath = ANTITANK_ICON;
+        };
+        class gm_bmp1_base
+        {
+            pointCost = 10;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = MECH_INF_ARMED_ICON;
+        };
+        class gm_btr60_base
+        {
+            pointCost = 10;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = MOTOR_INF_ICON;
+        };
+        class gm_btr60pb_base : gm_btr60_base
+        {
+            pointCost = 15;
+            iconPath = MECH_INF_ARMED_ICON;// TODO: Consider MOTOR_INF_ARMED_ICON;
+        };
+        
+        // REC
+        class gm_pt76_base
+        {
+            pointCost = 15;
+            hitpoints = 10;
+            ARMOR(2,1,1,1);
+            iconPath = RECON_ARMOR_ICON;
+            isRecon = 1;
+        };
+        class gm_brdm2_base
+        {
+            pointCost = 15;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = RECON_ARMOR_ICON;
+            isRecon = 1;
+        };
+        class gm_mi2p_base
+        {
+            pointCost = 40;
+            hitpoints = 10; // Should be 4 according to Wargay
+            ARMOR(0,0,0,0);
+            iconPath = RECON_AIR_ICON;
+            isRecon = 1;
+        };
+
+        // HEL
+        class gm_mi2_base
+        {
+            pointCost = 10;
+            hitpoints = 10; // Should be 4 according to Wargay
+            ARMOR(0,0,0,0);
+            iconPath = HELI_ICON;
+        };
+        class gm_mi2t_base : gm_mi2_base
+        {
+            pointCost = 15;
+        };
+        class gm_mi2us_base : gm_mi2_base
+        {
+            pointCost = 20;
+        };
+        class gm_mi2urn_base : gm_mi2_base
+        {
+            pointCost = 30;
+        };
     };
 };
 
