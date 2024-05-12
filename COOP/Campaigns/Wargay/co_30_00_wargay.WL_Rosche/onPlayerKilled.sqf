@@ -1,4 +1,5 @@
 #include "script_component.hpp"
 
-player setVariable ["MDL_xp", 0, true];
-player setVariable ["MDL_killedUnits", [], true];
+private _vehicle = if (vehicle player isEqualTo player) then { objNull } else { vehicle player };
+
+["MDL_playerKilled", [getPlayerUID player, player, _vehicle]] call CBA_fnc_serverEvent;

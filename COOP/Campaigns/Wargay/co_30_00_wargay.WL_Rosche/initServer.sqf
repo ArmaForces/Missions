@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
+GVAR(loadedPlayers) = [];
+GVAR(allPlayersStats) = call FUNC(loadAllStats);
+
 private _respawnMarker = createMarker ["respawn", getPosATL respawn];
 
 call FUNC(visibilityCheckLoop);
@@ -7,6 +10,13 @@ call FUNC(visibilityCheckLoop);
 ["MDL_applyDamage", FUNC(applyDamage)] call CBA_fnc_addEventHandler;
 ["MDL_healDamage", FUNC(healDamage)] call CBA_fnc_addEventHandler;
 ["MDL_deployVehicle", FUNC(deployVehicle)] call CBA_fnc_addEventHandler;
+
+addMissionEventHandler ["Ended", FUNC(saveAllStats)];
+addMissionEventHandler ["MPEnded", FUNC(saveAllStats)];
+
+["MDL_playerKilled", FUNC(playerKilled)] call CBA_fnc_addEventHandler;
+
+["MDL_loadPlayerStats", FUNC(loadPlayerStats)] call CBA_fnc_localEvent;
 
 // {
 //     [_x] call FUNC(hideAllMarkersInLayer);

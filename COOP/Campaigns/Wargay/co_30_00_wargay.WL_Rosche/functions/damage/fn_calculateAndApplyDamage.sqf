@@ -12,7 +12,7 @@
  * Public: No
  */
 
-params ["_unit", "_hitDir", "_hitPositionAGL", "_velocity", "_projectile", "_ammo"];
+params ["_unit", "_shooter", "_hitDir", "_hitPositionAGL", "_velocity", "_projectile", "_ammo"];
 _ammo params ["_hitValue", "_indirectHitValue", "_indirectHitRange", "_explosiveDamage", "_ammoClassName"];
 
 #ifdef DEV_DEBUG
@@ -95,4 +95,4 @@ diag_log _infoMsg;
 
 if (_damage isEqualTo 0) exitWith {};
 
-["MDL_applyDamage", [_unit, _damage, player]] call CBA_fnc_serverEvent;
+["MDL_applyDamage", [_unit, _damage, _shooter]] call CBA_fnc_serverEvent;

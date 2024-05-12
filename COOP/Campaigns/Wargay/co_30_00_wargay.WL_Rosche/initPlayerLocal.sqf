@@ -23,6 +23,9 @@ GVAR(isSoundPlaying) = false;
     [DIK_TAB, [false, false, false]]
 ] call CBA_fnc_addKeybind;
 
+// Load statistics from server
+call FUNC(loadPlayerStats);
+
 ["MDL_showCurrentHp", {
     if (vehicle player isEqualTo player) exitWith {};
     call FUNC(updateHitpointsDisplay);
@@ -85,7 +88,13 @@ GVAR(isSoundPlaying) = false;
 ["MDL_xpReceived", {
     params ["_receivedXp", "_newLifeXp", "_newTotalXp"];
 
-    systemChat format [LLSTRING(XpReceived), _receivedXp, _newTotalXp];
+    systemChat format [LLSTRING(XpReceived), _receivedXp, _newLifeXp, _newTotalXp];
+}] call CBA_fnc_addEventHandler;
+
+["MDL_showXp", {
+    params ["_currentXp", "_totalXp"];
+
+    systemChat format [LLSTRING(CurrentAndTotalXp), _currentXp, _totalXp];
 }] call CBA_fnc_addEventHandler;
 
 addMissionEventHandler ["Draw3D", FUNC(draw3D)];

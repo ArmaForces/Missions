@@ -3,6 +3,8 @@
 minviewdistance = 500;
 maxviewdistance = 10000;
 
+GVAR(isTest) = true;
+
 // TODO: Add KnowsAboutChanged EH to WEST groups as needed as this thing most likely won't work
 {
     _x addEventHandler ["KnowsAboutChanged", FUNC(knowsAboutChanged)];
@@ -110,9 +112,7 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 
 // TODO: Refuel
 // TODO: Make only HQ able to spawn new vehicles
-// TODO: Save XP somewhere for next missions
 // TODO: Rearm/Refuel/Repair supplies
-// TODO: Decrease XP for friendly fire
 // TODO: Increase XP for repairing vehicles
 // TODO: Think about XP for recon?
 // TODO: Add red outline for non-full HP points (and round up instead of normal)

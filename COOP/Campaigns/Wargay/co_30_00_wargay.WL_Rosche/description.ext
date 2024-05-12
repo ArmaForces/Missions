@@ -123,6 +123,15 @@ class CfgFunctions {
             class initClientSettings { preInit = 1; };
             class initGlobalSettings { preInit = 1; };
         };
+        class Stats
+        {
+            class getPlayerStats {};
+            class loadAllStats {};
+            class loadPlayerStats {};
+            class playerKilled {};
+            class saveAllStats {};
+            class showPlayerStats {};
+        };
     };
 };
 

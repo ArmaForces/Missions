@@ -22,8 +22,13 @@ private _newHp = _currentHp - _damage;
 // Check if this is a kill
 if (_newHp <= 0) exitWith {
     // Add experience for players first
-    if (isPlayer _shooter && {[side _shooter, side _unit] call BIS_fnc_sideIsEnemy}) then {
-        [_shooter, _unit] call FUNC(addExperienceForKill);
+    if (isPlayer _shooter) then {
+        if ([side _shooter, side _unit] call BIS_fnc_sideIsEnemy) then {
+            [_shooter, _unit] call FUNC(addExperienceForKill);
+        } else {
+            // TODO: Handle friendly-fire
+            // TODO: Consider removing XP for damaging friendly units too
+        };
     };
 
     if (_unit getVariable ["MDL_deployedVehicle", false]) then {

@@ -51,4 +51,4 @@ _projectile setVariable [str _target, true];
 
 private _hitPosition = if (_isDirect) then { [] } else { getPosATL _projectile };
 
-[_target, _hitDir, _hitPosition, _velocity, _projectile, _ammo] call FUNC(calculateAndApplyDamage);
+[_target, _shooter, _hitDir, _hitPosition, _velocity, _projectile, _ammo] call FUNC(calculateAndApplyDamage);
