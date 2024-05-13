@@ -140,7 +140,7 @@ class CfgSounds {
     class MDL_Wargay_Alarm
     {
         name = "Wargay alarm";
-        sound[] = { "sounds\wargay-alarm.ogg", 3, 1 };
+        sound[] = { "sounds\wargay-alarm.ogg", 4, 1 };
         titles[] = { 0, CSTRING(DamageReceived) };
     };
 };
