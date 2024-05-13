@@ -106,6 +106,14 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Rearm interrupted</English>
             <Polish>Przezbrojenie przerwane</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_Settings_DisplayName">
+            <Polish>Mydlana Kampania Wargay</Polish>
+            <English>Mydlana Kampania Wargay</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Settings_DisplayNameClient">
+            <Polish>Mydlana Kampania Wargay - Klient</Polish>
+            <English>Mydlana Kampania Wargay - Client</English>
+        </Key>
         <Key ID="STR_AFP_Scripts_ShowDamageFeedback">
             <English>Show Damage Feedback</English>
             <Polish>Informacja zwrotna o obrażeniach</Polish>
@@ -115,6 +123,10 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <Polish>Dodaje informację zwrotną o zadanych obrażeniach - obrażenia potencjalne, trafiony pancerz i faktycznie zadane obrażenia.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_UnitIcons">
+            <English>Unit Icons</English>
+            <Polish>Znaczniki jednostek</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconsSize">
             <English>Icon size multiplier</English>
             <Polish>Mnożnik rozmiaru znaczników</Polish>
         </Key>

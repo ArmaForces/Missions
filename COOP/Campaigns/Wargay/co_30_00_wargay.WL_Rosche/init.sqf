@@ -126,7 +126,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // BUG: Artillery firing at units gets spotted
 // TODO: Consider markers on the map for enemy units
 // TODO: Consider display of unit name on hover (ctrlMapMouseOver)
-// TODO: Split client from global settings in Addon Settings
 // TODO: Multiply explosion of logistic vehicles
 // TODO: Consider Metis Markers https://github.com/Metis-Team/mts_marker/wiki/Mission-Designer-Manuel
 // TODO: Add deployment zone(s) with 0 fuel outside of it

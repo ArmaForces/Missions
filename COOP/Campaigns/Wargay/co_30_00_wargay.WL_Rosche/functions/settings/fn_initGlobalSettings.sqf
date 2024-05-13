@@ -16,7 +16,7 @@
     QGVAR(unitIconMode),
     "LIST",
     ["Unit icon mode", ""],
-    [LSTRING(DisplayName), LSTRING(UnitIcons)],
+    [LSTRING(Settings_DisplayName), LSTRING(UnitIcons)],
     [[0, 1], ["All", "Enemy only"]],
     true
 ] call CBA_fnc_addSetting;
@@ -25,7 +25,7 @@
     QGVAR(onlyReconCanSpot),
     "CHECKBOX",
     ["Only recon can spot", "If enabled, only recon units can spot enemies to be visible for other units"],
-    [LSTRING(DisplayName)],
+    [LSTRING(Settings_DisplayName)],
     false,
     true
 ] call CBA_fnc_addSetting;
@@ -34,7 +34,7 @@
     QGVAR(repairMinNoCombatTime),
     "TIME",
     ["Minimum no combat time", "Vehicle must be out of combat for long enough to be able to be repaired"],
-    [LSTRING(DisplayName), localize "str_state_repair"],
+    [LSTRING(Settings_DisplayName), localize "str_state_repair"],
     [0, 900, 60],
     true
 ] call CBA_fnc_addSetting;
