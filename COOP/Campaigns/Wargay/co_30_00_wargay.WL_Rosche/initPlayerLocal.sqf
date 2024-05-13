@@ -101,6 +101,7 @@ call FUNC(loadPlayerStats);
 
 ["MDL_unitSpotted", {
     params ["_unit"];
+    if (_unit isKindOf "Man") exitWith {};
     [_unit] call FUNC(createVehicleMarker);
 }] call CBA_fnc_addEventHandler;
 
