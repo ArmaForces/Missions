@@ -35,9 +35,10 @@ VehicleTypes = createHashMapFromArray
         _hashMap set ["hitpoints", getNumber (_x >> "hitpoints")];
         _hashMap set ["armor", getArray (_x >> "armor")];
         _hashMap set ["iconPath", getText (_x >> "iconPath")];
-        _hashMap set ["isCommandVehicle", getNumber (_x >> "isCommandVehicle")];
-        _hashMap set ["isLogistics", getNumber (_x >> "isLogistics")];
-        _hashMap set ["isRecon", getNumber (_x >> "isRecon")];
+        _hashMap set ["markerType", getText (_x >> "markerType")];
+        _hashMap set ["isCommandVehicle", (_x >> "isCommandVehicle") call BIS_fnc_getCfgDataBool];
+        _hashMap set ["isLogistics", (_x >> "isLogistics") call BIS_fnc_getCfgDataBool];
+        _hashMap set ["isRecon", (_x >> "isRecon") call BIS_fnc_getCfgDataBool];
         [toUpper configName _x, _hashMap]
     });
 
@@ -123,7 +124,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Command zones & capture mechanic
 // BUG: Rearm action always visible
 // BUG: Artillery firing at units gets spotted
-// TODO: Consider markers on the map for enemy units
 // TODO: Consider display of unit name on hover (ctrlMapMouseOver)
 // TODO: Multiply explosion of logistic vehicles
 // TODO: Consider Metis Markers https://github.com/Metis-Team/mts_marker/wiki/Mission-Designer-Manuel

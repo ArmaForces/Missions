@@ -39,6 +39,7 @@ if (_newHp <= 0) exitWith {
     ["MDL_showCurrentHp", [_unit], crew _unit] call CBA_fnc_targetEvent;
     {_x setDamage 1} forEach crew _unit;
     _unit setDamage 1;
+    _unit setVariable ["MDL_IsVisible", false];
 };
 
 #ifdef DEV_DEBUG

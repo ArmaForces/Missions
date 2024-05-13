@@ -22,6 +22,24 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(enemyMarkersEnabled),
+    "CHECKBOX",
+    ["Enable map markers enemies", "If enabled, map markers will be show for spotted enemy units (icons might look different on map vs in-game)."],
+    [LSTRING(Settings_DisplayName), LSTRING(UnitIcons)],
+    true,
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(enemyMarkersRefreshRate),
+    "TIME",
+    ["Refresh rate for enemy markers", "Controls how often map markers for enemies should refresh."],
+    [LSTRING(Settings_DisplayName), LSTRING(UnitIcons)],
+    [0, 60, 5],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(onlyReconCanSpot),
     "CHECKBOX",
     ["Only recon can spot", "If enabled, only recon units can spot enemies to be visible for other units"],

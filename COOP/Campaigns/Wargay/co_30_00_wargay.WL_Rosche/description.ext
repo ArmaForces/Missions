@@ -102,6 +102,12 @@ class CfgFunctions {
             class vehicleInit {};
             class vehicleSpawnerInit {};
         };
+        class Markers
+        {
+            class createVehicleMarker {};
+            class enemyMarkersLoop {};
+            class removeVehicleMarker {};
+        };
         class Rearm
         {
             class addRearmAction {};

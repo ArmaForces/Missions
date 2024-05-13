@@ -25,6 +25,7 @@ GVAR(isSoundPlaying) = false;
 
 // Load statistics from server
 call FUNC(loadPlayerStats);
+[FUNC(enemyMarkersLoop)] call afm_common_fnc_runAfterSettingsInit;
 
 ["MDL_showCurrentHp", {
     if (vehicle player isEqualTo player) exitWith {};
@@ -96,6 +97,11 @@ call FUNC(loadPlayerStats);
     params ["_currentXp", "_totalXp"];
 
     systemChat format [LLSTRING(CurrentAndTotalXp), _currentXp, _totalXp];
+}] call CBA_fnc_addEventHandler;
+
+["MDL_unitSpotted", {
+    params ["_unit"];
+    [_unit] call FUNC(createVehicleMarker);
 }] call CBA_fnc_addEventHandler;
 
 addMissionEventHandler ["Draw3D", FUNC(draw3D)];
