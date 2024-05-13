@@ -113,7 +113,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
     ["gm_ge_army_luchsa1", 2]
 ];
 
-// TODO: Refuel
 // TODO: Make only HQ able to spawn new vehicles
 // TODO: Rearm/Refuel/Repair supplies
 // TODO: Increase XP for repairing vehicles

@@ -86,6 +86,18 @@ Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobi
             <English>Deployment of new '%1' vehicle is no longer possible.</English>
             <Polish>Rozmieszczenie nowych pojazdów '%1' już nie jest możliwe.</Polish>
         </Key>
+        <Key ID="STR_AFP_Scripts_RefuelInterrupted">
+            <English>Refuel interrupted %1 percent</English>
+            <Polish>Tankowanie przerwane %1 procent</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelProgress">
+            <English>Refuel progress %1 percent</English>
+            <Polish>Postęp tankowania %1 procent</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelFinished">
+            <English>Refuel finished</English>
+            <Polish>Tankowanie zakończone</Polish>
+        </Key>
         <Key ID="STR_AFP_Scripts_RepairFinished">
             <English>Repair finished</English>
             <Polish>Naprawa zakończona</Polish>

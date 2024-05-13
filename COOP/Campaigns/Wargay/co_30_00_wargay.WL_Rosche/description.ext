@@ -110,6 +110,16 @@ class CfgFunctions {
             class interruptedRearm {};
             class rearmVehicle {};
         };
+        class Refuel
+        {
+            class addRefuelAction {};
+            class canRefuel {};
+            class completeRefuel {};
+            class interruptedRefuel {};
+            class progressRefuel {};
+            class refuelVehicle {};
+            class startRefuel {};
+        };
         class Repair
         {
             class addRepairAction {};

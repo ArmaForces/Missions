@@ -32,6 +32,7 @@ call FUNC(loadPlayerStats);
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_rearmVehicle", FUNC(rearmVehicle)] call CBA_fnc_addEventHandler;
+["MDL_refuelVehicle", FUNC(refuelVehicle)] call CBA_fnc_addEventHandler;
 ["MDL_applyDamage", {
     params ["_unit"];
     
