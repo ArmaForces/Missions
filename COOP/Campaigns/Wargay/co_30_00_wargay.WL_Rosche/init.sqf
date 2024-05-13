@@ -120,7 +120,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Think about XP for recon?
 // TODO: Add red outline for non-full HP points (and round up instead of normal)
 // TODO: Music autoplay
-// TODO: Rerecord Tension as it's paused around 0:35
 // TODO: Test LAMBS artillery target module from right panel (skip adjustment rounds)
 // TODO: Command zones & capture mechanic
 // BUG: Rearm action always visible
