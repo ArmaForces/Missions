@@ -60,7 +60,7 @@ call FUNC(loadPlayerStats);
         format ["%1: %2", groupId group leader effectiveCommander _unit, _crew]
     };
     
-    [WEST, "HQ"] commandChat format [LLSTRING(UnitLost), _vehicleDisplayName, _crewNames]
+    [WEST, "HQ"] sideChat format [LLSTRING(UnitLost), _vehicleDisplayName, _crewNames]
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_vehicleDeployment", {
@@ -72,7 +72,7 @@ call FUNC(loadPlayerStats);
         _vehicleClassName
     };
 
-    [WEST, "HQ"] commandChat format [LLSTRING(DeploymentOfVehicle), _vehicleName];
+    [WEST, "HQ"] sideChat format [LLSTRING(DeploymentOfVehicle), _vehicleName];
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_vehicleDeploymentNoLongerPossible", {
@@ -84,7 +84,7 @@ call FUNC(loadPlayerStats);
         _vehicleClassName
     };
 
-    [WEST, "HQ"] commandChat format [LLSTRING(DeploymentOfVehicleNoLongerPossible), _vehicleName];
+    [WEST, "HQ"] sideChat format [LLSTRING(DeploymentOfVehicleNoLongerPossible), _vehicleName];
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_xpReceived", {
