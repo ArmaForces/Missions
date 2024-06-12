@@ -34,6 +34,7 @@ if (_index isEqualTo -1) then {
 
 _unit setVariable ["MDL_playerStats", _playerData, true];
 
+// BUG: probably doesn't work
 ["MDL_showStats", [_playerData], _unit] call CBA_fnc_targetEvent;
 
 true
