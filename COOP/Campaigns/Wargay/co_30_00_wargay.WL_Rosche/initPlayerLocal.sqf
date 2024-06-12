@@ -64,7 +64,12 @@ call FUNC(loadPlayerStats);
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_vehicleDeployment", {
-    params ["_vehicleClassName"];
+    params ["_vehicleClassName", "_caller", "_vehicle"];
+
+    if (_caller isEqualTo player) then {
+        player moveInDriver _vehicle;
+    };
+
     private _vehicleInfo = VehicleTypes getOrDefault [toUpper _vehicleClassName, ""];
     private _vehicleName = if (_vehicleInfo isNotEqualTo "") then {
         [_vehicleInfo] call FUNC(getVehicleDisplayName)
@@ -72,7 +77,7 @@ call FUNC(loadPlayerStats);
         _vehicleClassName
     };
 
-    [WEST, "HQ"] sideChat format [LLSTRING(DeploymentOfVehicle), _vehicleName];
+    [WEST, "HQ"] sideChat format [LLSTRING(DeploymentOfVehicle), _vehicleName, name _caller];
 }] call CBA_fnc_addEventHandler;
 
 ["MDL_vehicleDeploymentNoLongerPossible", {

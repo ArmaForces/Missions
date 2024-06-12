@@ -120,6 +120,7 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
     ["gm_ge_army_luchsa1", 2]
 ];
 
+// TODO: Add assignable roles within a group so you get teleported to a vehicle on deployment
 // TODO: Make only HQ able to spawn new vehicles
 // TODO: Rearm/Refuel/Repair supplies
 // TODO: Increase XP for repairing vehicles

@@ -29,7 +29,7 @@ if (_vehicle isEqualTo objNull) exitWith {
     ["MDL_createVehicleFailed", [], _caller] call CBA_fnc_targetEvent;
 };
 
-["MDL_vehicleDeployment", [_vehicleClassName]] call CBA_fnc_globalEvent;
+["MDL_vehicleDeployment", [_vehicleClassName, _caller, _vehicle]] call CBA_fnc_globalEvent;
 
 private _newRemainingSpawns = _remainingSpawns - 1;
 GVAR(spawnableVehicles) set [_vehicleClassName, _newRemainingSpawns];
