@@ -21,7 +21,8 @@ private _display = ctrlParent _ctrlContainer;
 {ctrlDelete _x} forEach (_ctrlContainer getVariable ["MDL_hitpointsContainer_indicators", []]);
 
 private _totalHitPoints = vehicle cameraOn getVariable ["MDL_maxHp", MAX_HP];
-private _hitPoints = round (vehicle cameraOn getVariable ["MDL_currentHp", MAX_HP]);
+private _exactHitPoints = vehicle cameraOn getVariable ["MDL_currentHp", MAX_HP];
+private _hitPoints = ceil _exactHitPoints;
 // calculate size of the hitzone squares
 ctrlPosition _ctrlContainer params ["", "", "_w"];
 private _hpW = _w / _totalHitPoints;
@@ -45,6 +46,12 @@ for "_i" from 0 to (_totalHitPoints-1) do {
 	_hpCtrl ctrlCommit 0;
 
     _indicators pushBack _hpCtrl;
+};
+
+if (_exactHitPoints isNotEqualTo _hitPoints) then {
+    private _partialHpCtrl = _indicators select (_hitPoints - 1);
+    _partialHpCtrl ctrlSetFade (_hitPoints - _exactHitPoints);
+    _partialHpCtrl ctrlCommit 0;
 };
 
 _ctrlContainer setVariable ["MDL_hitpointsContainer_indicators", _indicators];

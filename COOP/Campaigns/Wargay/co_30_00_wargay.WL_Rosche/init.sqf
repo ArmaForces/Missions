@@ -125,7 +125,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Rearm/Refuel/Repair supplies
 // TODO: Increase XP for repairing vehicles
 // TODO: Think about XP for recon?
-// TODO: Add red outline for non-full HP points (and round up instead of normal)
 // TODO: Music autoplay
 // TODO: Test LAMBS artillery target module from right panel (skip adjustment rounds)
 // TODO: Command zones & capture mechanic
