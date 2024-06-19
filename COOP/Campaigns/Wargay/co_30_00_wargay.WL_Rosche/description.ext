@@ -68,6 +68,7 @@ class CfgFunctions {
             class handleDamageMan {};
             class hitPart {};
             class knowsAboutChanged {};
+            class musicStop { postInit = 1; };
         };
         class Experience
         {
@@ -107,6 +108,13 @@ class CfgFunctions {
             class createVehicleMarker {};
             class enemyMarkersLoop {};
             class removeVehicleMarker {};
+        };
+        class Music
+        {
+            class addToMusicQueue {};
+            class isMusicPlaying {};
+            class isMusicQueueEmpty {};
+            class playNextMusic {};
         };
         class Rearm
         {

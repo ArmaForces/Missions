@@ -134,3 +134,9 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Multiply explosion of logistic vehicles
 // TODO: Consider Metis Markers https://github.com/Metis-Team/mts_marker/wiki/Mission-Designer-Manuel
 // TODO: Add deployment zone(s) with 0 fuel outside of it
+
+if (GVAR(isTest)) then {
+    [{
+        ["MDL_startGame"] call CBA_fnc_globalEvent;
+    }] call CBA_fnc_execNextFrame;
+};

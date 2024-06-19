@@ -2,6 +2,8 @@
 
 GVAR(loadedPlayers) = [];
 GVAR(allPlayersStats) = call FUNC(loadAllStats);
+GVAR(musicQueue) = [];
+GVAR(gameStarted) = false;
 
 private _respawnMarker = createMarker ["respawn", getPosATL respawn];
 
@@ -17,6 +19,15 @@ addMissionEventHandler ["MPEnded", FUNC(saveAllStats)];
 ["MDL_playerKilled", FUNC(playerKilled)] call CBA_fnc_addEventHandler;
 
 ["MDL_loadPlayerStats", FUNC(loadPlayerStats)] call CBA_fnc_localEvent;
+
+["MDL_startGame", {
+	if (GVAR(gameStarted)) exitWith {};
+	
+	private _allWargayTracks = ["WARGAME_EE_Preparation","WARGAME_EE_Campaign_Brief","WARGAME_EE_Tension","WARGAME_EE_The_Lost_Rites","WARGAME_RD_Keep_it_Cool","WARGAME_RD_Sweeping_Bass","WARGAME_RD_Cryptoplanets","WARGAME_RD_Mission_Omega","WARGAME_RD_The_Infiltrator","WARNO_Dark_City_Beats","WARNO_Lap_Time","WARNO_Mysteries","WARNO_Raging_Burn"];
+	[(_allWargayTracks call BIS_fnc_arrayShuffle)] call FUNC(addToMusicQueue);
+	
+	GVAR(gameStarted) = true;
+}] call CBA_fnc_addEventHandler;
 
 // {
 //     [_x] call FUNC(hideAllMarkersInLayer);
