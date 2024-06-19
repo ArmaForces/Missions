@@ -10,6 +10,10 @@ GVAR(isTest) = true;
     _x addEventHandler ["KnowsAboutChanged", FUNC(knowsAboutChanged)];
 } forEach (groups WEST);
 
+{
+    _x addEventHandler ["CuratorObjectDeleted", FUNC(curatorObjectDeleted)];
+} forEach allCurators;
+
 AmmoTypes = createHashMapFromArray
     ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Ammo")
     apply {

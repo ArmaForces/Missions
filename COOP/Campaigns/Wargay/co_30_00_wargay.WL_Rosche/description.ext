@@ -62,6 +62,7 @@ class CfgFunctions {
         };
         class EventHandlers
         {
+            class curatorObjectDeleted {};
             class draw3D {};
             class fired {};
             class handleDamage {};
