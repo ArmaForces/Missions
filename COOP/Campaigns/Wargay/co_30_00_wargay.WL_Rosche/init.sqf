@@ -150,6 +150,11 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Consider Metis Markers https://github.com/Metis-Team/mts_marker/wiki/Mission-Designer-Manuel
 // TODO: Add deployment zone(s) with 0 fuel outside of it
 // BUG: 1 AP HMGs shred through the helicopters
+// BUG: displayNameShort doesn't work for non-GM vehicles
+// TODO: XP for assists
+// BUG: Vehicles not added to zeus automatically
+// TODO: Lock & disable simulation for spawners automatically
+// BUG: OCAP reports suicides
 
 if (GVAR(isTest)) then {
     [{
