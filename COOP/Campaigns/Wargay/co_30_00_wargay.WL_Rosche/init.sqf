@@ -104,24 +104,36 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
     // LOG
     ["gm_ge_army_iltis_cargo", 2],
     ["gm_ge_army_m113a1g_command", 1],
+    ["cwr3_b_m577_hq", 1],
     ["gm_ge_army_fuchsa0_command", 1],
     ["gm_ge_army_bpz2a0", 2],
     ["gm_ge_army_kat1_451_reammo", 4],
+    ["B_Truck_01_fuel_F", 2],
 
     // SUP
     ["gm_ge_army_gepard1a1", 2], // 3
     ["gm_ge_army_m109g", 2],
+    ["cwr3_b_m163", 4],
     ["gm_ge_army_kat1_463_mlrs", 1],
 
     // TNK
-    ["gm_ge_army_Leopard1a1", 4], // 6
-    ["gm_ge_army_marder1a1a", 6],
+    ["gm_ge_army_Leopard1a1", 1], // 6
+    ["gm_ge_army_Leopard1a3", 6],
+    ["gm_ge_army_marder1a1a", 4],
+    ["cwr3_b_m60a3", 4],
 
     // REC
     ["gm_ge_army_iltis_milan", 4],
     ["gm_ge_army_bo105m_vbh", 1],
     ["gm_ge_army_fuchsa0_reconnaissance", 1], // 3
-    ["gm_ge_army_luchsa1", 2]
+    ["gm_ge_army_luchsa1", 2],
+    
+    // VEH
+    ["cwr3_b_m901_itv", 2],
+    ["cwr3_b_hmmwv_tow", 4],
+
+    // HEL
+    ["cwr3_b_ah1f", 2]
 ];
 
 // TODO: Add assignable roles within a group so you get teleported to a vehicle on deployment
