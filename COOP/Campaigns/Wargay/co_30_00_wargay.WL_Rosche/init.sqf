@@ -152,7 +152,6 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // BUG: 1 AP HMGs shred through the helicopters
 // BUG: displayNameShort doesn't work for non-GM vehicles
 // TODO: XP for assists
-// BUG: Vehicles not added to zeus automatically
 // TODO: Lock & disable simulation for spawners automatically
 // BUG: OCAP reports suicides
 

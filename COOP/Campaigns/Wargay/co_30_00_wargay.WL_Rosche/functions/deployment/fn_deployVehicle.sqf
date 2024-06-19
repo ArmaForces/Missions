@@ -25,6 +25,10 @@ if (_remainingSpawns < 1) exitWith {
 private _vehicle = createVehicle [_vehicleClassName, getMarkerPos "sys_marker_spawner_1", ["sys_marker_spawner_1", "sys_marker_spawner_2", "sys_marker_spawner_3"]];
 _vehicle setVariable ["MDL_deployedVehicle", true, true];
 
+{
+	_x addCuratorEditableObjects [[_vehicle], true];
+} forEach allCurators;
+
 if (_vehicle isEqualTo objNull) exitWith {
     ["MDL_createVehicleFailed", [], _caller] call CBA_fnc_targetEvent;
 };
