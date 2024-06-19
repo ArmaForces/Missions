@@ -30,7 +30,10 @@ private _iconDescription = if (_includeText) then {
 
 private _iconPath = [_target] call FUNC(getIconPath);
 private _iconSize = (GVAR(unitIconSizeMultiplier) * 0.01 * safeZoneW) / GVAR(iconWidth);
-private _sideColor = if (side effectiveCommander _target isEqualTo WEST) then { GVAR(westIconColor) } else { GVAR(eastIconColor) };
+private _effectiveCommander = effectiveCommander _target;
+private _sideColor = if (side _effectiveCommander isEqualTo WEST) then {
+    [GVAR(westAiIconColor), GVAR(westIconColor)] select isPlayer _effectiveCommander
+} else { GVAR(eastIconColor) };
 // #ifdef DEV_DEBUG
 // private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconSize, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
 // diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];

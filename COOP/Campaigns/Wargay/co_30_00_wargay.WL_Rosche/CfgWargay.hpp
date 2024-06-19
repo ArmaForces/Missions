@@ -48,6 +48,12 @@ class CfgWargay
         __EVAL(197/255),
         0.85
     };
+    westAiMarkerColor[] = {
+        __EVAL(29/255),
+        __EVAL(197/255),
+        __EVAL(46/255),
+        0.85
+    };
     eastMarkerColor[] = {
         __EVAL(192/255),
         __EVAL(29/255),
