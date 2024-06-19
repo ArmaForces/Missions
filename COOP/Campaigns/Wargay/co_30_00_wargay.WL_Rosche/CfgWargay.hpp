@@ -20,6 +20,7 @@
 
 // Icon macros
 #define ARMA_NATO_MARKERS_DIR \A3\ui_f\data\map\markers\nato
+#define ANTIAIR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_antiair.paa)
 #define ANTIAIR_SPAAG_ICON __EVAL(getMissionPath "gui\markers\b_antiair_spaag.paa")
 #define ANTIAIR_SPAAG_RADAR_ICON __EVAL(getMissionPath "gui\markers\b_antiair_spaag_radar.paa")
 #define ANTITANK_ICON __EVAL(getMissionPath "gui\markers\b_antitank.paa")
@@ -35,6 +36,7 @@
 #define MECH_INF_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_mech_inf.paa)
 #define MECH_INF_ARMED_ICON __EVAL(getMissionPath "gui\markers\b_mech_inf_armed.paa")
 #define MOTOR_INF_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_motor_inf.paa)
+#define PLANE_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_air.paa)
 #define RECON_AIR_ICON __EVAL(getMissionPath "gui\markers\b_recon_air.paa")
 #define RECON_ANTITANK_ICON __EVAL(getMissionPath "gui\markers\b_recon_antitank.paa")
 #define RECON_ARMOR_ICON __EVAL(getMissionPath "gui\markers\b_recon_armor.paa")
@@ -141,6 +143,53 @@ class CfgWargay
         };
         class ace_frag_huge_HD : ace_frag_huge {};
 
+        class ACE_ammoExplosionLarge
+        {
+            damage = 4;
+            type = "HE";
+        };
+
+        /*
+            USA
+        */
+        class CUP_R_70mm_Hydra_HE
+        {
+            damage = 2;
+            type = "HE";
+        };
+        class CUP_B_20mm_AP_Tracer_Red
+        {
+            damage = 2;
+            type = "AP";
+        };
+        class CUP_R_TOW_AT
+        {
+            damage = 20;
+            type = "HEAT";
+        };
+        
+        class CUP_Sh_105mm_M900
+        {
+            damage = 13;
+            type = "AP";
+        };
+        class CUP_Sh_105mm_M456A2 : HAS_PENETRATOR(CUP_P_105mm_M393A3);
+        class CUP_P_105mm_M393A3
+        {
+            damage = 13;
+            type = "HEAT";
+        };
+        class CUP_P_120mm_HESH
+        {
+            damage = 3;
+            type = "HE";
+        };
+
+        class CUP_B_20mm_API_Tracer_Red : AA_HE {};
+
+        class CUP_B_127x99_Ball_Red_Tracer : SMALL_ARMS {};
+        class B_127x107_Ball : SMALL_ARMS {};
+        class B_762x51_Tracer_Red : SMALL_ARMS {};
 
         /*
             Western Germany
@@ -460,10 +509,162 @@ class CfgWargay
 
         // DShKM
         class gm_bullet_127x108mm_API_T_BZT : SMALL_ARMS {};
+
+        /*
+            Soviet Union
+        */
+        class ammo_Missile_AA_R77
+        {
+            damage = 5;
+            type = "HE";
+        };
+        class CUP_M_9M119M_Refleks_AT11_Sniper_AT
+        {
+            damage = 20;
+            type = "HEAT";
+        };
+        class CUP_B_30mm_CAS_Red_Tracer : AA_HE {};
+        class CUP_B_23mm_APHE_Tracer_Green : AA_HE {};
+        class cwr3_b_30mm_nr30_hedp_tracer_red : AA_HE {};
+        class Rocket_03_HE_F
+        {
+            damage = 2;
+            type = "HE";
+        };
+        class Rocket_03_AP_F
+        {
+            damage = 2;
+            type = "HEAT";
+        };
+        
+        class Sh_125mm_APFSDS_T_Green
+        {
+            damage = 16;
+            type = "AP";
+        };
+        class Sh_125mm_HE_T_Green
+        {
+            damage = 4;
+            type = "HE";
+        };
+
+        /*
+            Military Aviation
+        */
+        class B_20mm_Tracer_Red : AA_HE {};
+        class sab_milavi_27mm_he_ammo : AA_HE {};
+        class sab_milavi_rkt_hydra_ammo
+        {
+            damage = 3;
+            type = "HE";
+        };
+        class sab_milavi_rkt_zuni_ammo
+        {
+            damage = 4;
+            type = "HE";
+        };
+        class sab_milavi_bmb_mk82_ammo
+        {
+            damage = 10;
+            type = "HE";
+        };
+        class sab_milavi_bomblets_he_subammo
+        {
+            damage = 1;
+            type = "HE";
+        };
+        class sab_milavi_msl_maverick_ammo
+        {
+            damage = 26;
+            type = "HEAT";
+        };
     };
 
     class Vehicles
     {
+        /*
+            USA
+        */
+
+        // LOG
+        class CUP_M113New_HQ_Base
+        {
+            pointCost = 120;
+            hitpoints = 10;
+            ARMOR(2,2,1,1);
+            iconPath = CV_ARMOR_ICON;
+            markerType = "b_hq";
+            isCommandVehicle = 1;
+        };
+        class Truck_01_base_F // HEMTT
+        {
+            pointCost = 40;
+            hitpoints = 10;
+            ARMOR(1,1,1,0);
+            iconPath = LOG_ICON;
+            markerType = "b_support";
+            isLogistics = 1;
+        };
+
+        // SUP
+        class CUP_M163New_Base
+        {
+            pointCost = 40;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = ANTIAIR_SPAAG_RADAR_ICON;
+            markerType = "b_antiair";
+        };
+
+        // TNK
+        class CUP_M60A3_Base
+        {
+            pointCost = 50;
+            hitpoints = 10;
+            ARMOR(10,5,2,2);
+            iconPath = ARMOR_ICON;
+            markerType = "b_armor";
+        };
+
+        // VEH
+        class cwr3_m901_itv_base
+        {
+            pointCost = 40;
+            hitpoints = 10;
+            ARMOR(2,2,1,1);
+            iconPath = ANTITANK_ICON;
+            markerType = "b_motor_inf";
+        };
+
+        class CUP_nM1036_TOW_Base
+        {
+            pointCost = 40;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = ANTITANK_ICON;
+            markerType = "b_motor_inf";
+        };
+
+        // HEL
+        class cwr3_ah1f_base
+        {
+            pointCost = 80;
+            hitpoints = 10; // Should be 6 according to Wargay
+            ARMOR(0,0,0,0);
+            iconPath = HELI_ICON;
+            markerType = "b_air";
+        };
+
+        // PLA
+        class sab_f104_base
+        {
+            pointCost = 70;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = PLANE_ICON;
+            markerType = "b_air";
+        };
+
         /*
             West Germany
         */
@@ -721,6 +922,16 @@ class CfgWargay
             markerType = "b_air";
         };
 
+        // PLA
+        class sab_alphajet_base
+        {
+            pointCost = 50;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = PLANE_ICON;
+            markerType = "b_air";
+        };
+
         /*
             East Germany
         */
@@ -928,6 +1139,80 @@ class CfgWargay
         class gm_mi2urn_base : gm_mi2_base
         {
             pointCost = 30;
+        };
+
+        /*
+            Soviet Union
+        */
+
+        // SUP
+        class cwr3_mtlb_sa13_base
+        {
+            pointCost = 45;
+            hitpoints = 10;
+            ARMOR(1,1,1,1);
+            iconPath = ANTIAIR_ICON;
+        };
+
+        // TNK
+        class cwr3_t64b_base
+        {
+            pointCost = 65;
+            hitpoints = 10;
+            ARMOR(13,6,3,2);
+            iconPath = ARMOR_ICON;
+            markerType = "b_armor";
+        };
+        class cwr3_t72_base
+        {
+            pointCost = 40;
+            hitpoints = 10;
+            ARMOR(11,6,3,2);
+            iconPath = ARMOR_ICON;
+            markerType = "b_armor";
+        };
+        class cwr3_o_t72a : cwr3_t72_base
+        {
+            pointCost = 50;
+            ARMOR(13,7,3,2);
+        };
+        class cwr3_o_t72b1 : cwr3_t72_base
+        {
+            pointCost = 85;
+            ARMOR(15,8,4,4);
+            // TODO: Ammo config
+        };
+
+        // HEL
+        class CUP_Mi24_D_Dynamic_Base
+        {
+            pointCost = 55;
+            hitpoints = 10;
+            ARMOR(1,1,0,0);
+            iconPath = HELI_ICON;
+            markerType = "b_air";
+        };
+
+        // PLA
+        class cwr3_mig23_base
+        {
+            pointCost = 90;
+            hitpoints = 10;
+            ARMOR(0,0,0,0);
+            iconPath = PLANE_ICON;
+            markerType = "b_air";
+        };
+        class cwr3_mig27_base : cwr3_mig23_base
+        {
+            pointCost = 115;
+        };
+        class cwr3_su17_base : cwr3_mig23_base
+        {
+            pointCost = 70;
+        };
+        class cwr3_su25_base : cwr3_mig23_base
+        {
+            pointCost = 130;
         };
     };
 };

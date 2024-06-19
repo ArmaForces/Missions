@@ -137,6 +137,7 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Multiply explosion of logistic vehicles
 // TODO: Consider Metis Markers https://github.com/Metis-Team/mts_marker/wiki/Mission-Designer-Manuel
 // TODO: Add deployment zone(s) with 0 fuel outside of it
+// BUG: 1 AP HMGs shred through the helicopters
 
 if (GVAR(isTest)) then {
     [{
