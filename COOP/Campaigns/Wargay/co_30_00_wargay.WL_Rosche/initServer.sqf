@@ -18,7 +18,7 @@ addMissionEventHandler ["MPEnded", FUNC(saveAllStats)];
 
 ["MDL_playerKilled", FUNC(playerKilled)] call CBA_fnc_addEventHandler;
 
-["MDL_loadPlayerStats", FUNC(loadPlayerStats)] call CBA_fnc_localEvent;
+["MDL_loadPlayerStats", FUNC(loadPlayerStats)] call CBA_fnc_addEventHandler;
 
 ["MDL_startGame", {
 	if (GVAR(gameStarted)) exitWith {};
