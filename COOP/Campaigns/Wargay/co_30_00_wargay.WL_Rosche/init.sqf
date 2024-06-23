@@ -151,9 +151,9 @@ GVAR(spawnableVehicles) = createHashMapFromArray [
 // TODO: Add deployment zone(s) with 0 fuel outside of it
 // BUG: 1 AP HMGs shred through the helicopters
 // BUG: displayNameShort doesn't work for non-GM vehicles
-// TODO: XP for assists
+// TODO: XP for assists (50% goes to killer, the rest is distributed proportionally or 1/3 for everyone who dealt more than 1 dmg)
 // TODO: Lock & disable simulation for spawners automatically
-// BUG: OCAP reports suicides
+// BUG: OCAP reports suicides (setDamage)
 
 if (GVAR(isTest)) then {
     [{
