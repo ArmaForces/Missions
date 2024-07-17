@@ -12,6 +12,7 @@ class ADDON {
 
         class addAndForcePointer {};
         class holsterWeapon {};
+        class initRadarTablet {};
 
         // Info Text
         class infoText {};

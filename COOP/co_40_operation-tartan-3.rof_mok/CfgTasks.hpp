@@ -15,15 +15,17 @@ class CfgTasks {
         description = CSTRING(Task_HackRadar_Description);
 
         conditionEventsCancelled[] = { "Evac" };
-        conditionEventsFailed[] = { "PlayersDead" };
+        conditionEventsFailed[] = { "RadarMachariochBayDestroyed" };
         conditionEventsSuccess[] = { "RadarMachariochBayHacked" };
     };
     class RadarTorrMor : RadarMachariochBay {
         marker = "marker_radar_torr_mor";
+        conditionEventsFailed[] = { "RadarTorrMorDestroyed" };
         conditionEventsSuccess[] = { "RadarTorrMorHacked" };
     };
     class RadarGlenKerran : RadarMachariochBay {
         marker = "marker_radar_glen_kerran";
+        conditionEventsFailed[] = { "RadarGlenKerranDestroyed" };
         conditionEventsSuccess[] = { "RadarGlenKerranHacked" };
     };
 
