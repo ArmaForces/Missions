@@ -2,8 +2,8 @@ class CfgTasks {
     tag = QUOTE(DOUBLES(PREFIX,COMPONENT));
 
     class OperationTartan {
-        title = CSTRING(Mission_Title);
-        description = CSTRING(Mission_Briefing);
+        title = LSTRING(Mission_Title);
+        description = LSTRING(Mission_Briefing);
         icon = "unknown";
     };
 
@@ -11,8 +11,8 @@ class CfgTasks {
         parentTask = "OperationTartan";
         icon = "interact";
         marker = "marker_radar_macharioch_bay";
-        title = CSTRING(Task_HackRadar_Title);
-        description = CSTRING(Task_HackRadar_Description);
+        title = LSTRING(Task_HackRadar_Title);
+        description = LSTRING(Task_HackRadar_Description);
 
         conditionEventsCancelled[] = { "Evac" };
         conditionEventsFailed[] = { "RadarMachariochBayDestroyed" };

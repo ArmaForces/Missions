@@ -26,8 +26,8 @@ if (isServer) then {
 	_tablet setVectorDirAndUp [_vectorDir, _vectorUp];
 
 	// _helper enableSimulation false;
-
-	private _downloadSize = random [1, 1.5, 2]; // In GB
-	private _downloadTime = 2 * _downloadSize; // In seconds
-	private _result = [_tablet, _downloadTime, _downloadSize] call afmf_task_download_fnc_setupSimple;
 };
+
+private _downloadSize = 2; // In GB
+private _downloadTime = 300 * _downloadSize; // In seconds
+private _result = [_tablet, _downloadTime, _downloadSize] call afmf_task_download_fnc_setupSimple;
