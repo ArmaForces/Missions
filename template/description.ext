@@ -24,7 +24,7 @@ class Header {
 };
 
 /* Other stuff */
-disableChannels[] = {1, 2, 3, 4, 5}; // 0 - Global, 1 - Side, 2 - Command, 3 - Group, 4 - Vehicle, 5 - Direct
+disableChannels[] = {0, 1, 2, 3, 4, 5}; // 0 - Global, 1 - Side, 2 - Command, 3 - Group, 4 - Vehicle, 5 - Direct
 disabledAI = true;
 
 // Mission CBA settings must be added through CBA XEH PreInit, otherwise they won't be visible in 3den
