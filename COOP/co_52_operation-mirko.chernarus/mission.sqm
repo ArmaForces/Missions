@@ -60041,7 +60041,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -60057,7 +60057,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -60263,7 +60263,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -60291,7 +60291,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -60505,7 +60505,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -60664,7 +60664,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -60846,7 +60846,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -61052,7 +61052,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -61068,7 +61068,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -61273,7 +61273,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -61497,7 +61497,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							goggles="G_Bandanna_oli";
 							headgear="H_Bandanna_khk";
 						};
@@ -61680,7 +61680,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -61899,7 +61899,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -61915,7 +61915,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -62122,7 +62122,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -62150,7 +62150,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -62365,7 +62365,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -62525,7 +62525,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -62707,7 +62707,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -62914,7 +62914,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -62930,7 +62930,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -63135,7 +63135,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -63359,7 +63359,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							goggles="G_Bandanna_oli";
 							headgear="H_Bandanna_khk";
 						};
@@ -63542,7 +63542,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -63762,7 +63762,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -63778,7 +63778,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -63985,7 +63985,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -64013,7 +64013,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -64228,7 +64228,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -64388,7 +64388,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -64571,7 +64571,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -64778,7 +64778,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -64794,7 +64794,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -65000,7 +65000,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -65224,7 +65224,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							goggles="G_Bandanna_oli";
 							headgear="H_Bandanna_khk";
 						};
@@ -65407,7 +65407,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -65627,7 +65627,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -65643,7 +65643,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -65850,7 +65850,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -65878,7 +65878,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -66093,7 +66093,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -66253,7 +66253,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -66436,7 +66436,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -66643,7 +66643,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -66659,7 +66659,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -66865,7 +66865,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -67090,7 +67090,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							goggles="G_Bandanna_oli";
 							headgear="H_Bandanna_khk";
 						};
@@ -67274,7 +67274,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -67495,7 +67495,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -67511,7 +67511,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -67717,7 +67717,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -67745,7 +67745,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -67959,7 +67959,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -68119,7 +68119,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -68302,7 +68302,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -68509,7 +68509,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr3000_bwmod";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -68525,7 +68525,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -68731,7 +68731,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -68956,7 +68956,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							goggles="G_Bandanna_oli";
 							headgear="H_Bandanna_khk";
 						};
@@ -69140,7 +69140,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_6b27m_green";
 						};
 					};
@@ -69335,13 +69335,13 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							gps="B_UavTerminal";
 							headgear="rhssaf_beret_black";
 						};
@@ -69506,13 +69506,13 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							gps="B_UavTerminal";
 							headgear="rhssaf_beret_black";
 						};
@@ -69677,13 +69677,13 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							gps="B_UavTerminal";
 							headgear="rhssaf_beret_black";
 						};
@@ -69848,13 +69848,13 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_anprc152";
+							radio="ItemRadio";
 							gps="B_UavTerminal";
 							headgear="rhssaf_beret_black";
 						};
@@ -70039,7 +70039,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -70187,7 +70187,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -70389,7 +70389,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_zsh7a_mike";
 						};
 					};
@@ -70585,7 +70585,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_zsh7a_mike";
 						};
 					};
@@ -70727,7 +70727,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -70874,7 +70874,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -71075,7 +71075,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_zsh7a_mike";
 						};
 					};
@@ -71270,7 +71270,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_zsh7a_mike";
 						};
 					};
@@ -71411,7 +71411,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -71559,7 +71559,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_mr6000l";
+								typeName="B_AssaultPack_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -71761,7 +71761,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_zsh7a_mike";
 						};
 					};
@@ -71957,7 +71957,7 @@ class Mission
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							radio="tf_rf7800str";
+							radio="ItemRadio";
 							headgear="rhs_zsh7a_mike";
 						};
 					};
