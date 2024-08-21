@@ -11,7 +11,7 @@ respawnTemplates[] = {"afm_respawn_default", "Counter"};
 cba_settings_hasSettingsFile = true;
 
 /* Mission description and stuff */
-author = "3Mydlo3, ArmaForces";
+author = "3Mydlo3, Madin, ArmaForces";
 onLoadIntro = CSTRING(Mission_ShortDescription);
 briefingName = CSTRING(DisplayName); // Visible in the mission selection menu
 onLoadMission = CSTRING(Mission_ShortDescription);

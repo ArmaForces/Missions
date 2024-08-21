@@ -4,7 +4,7 @@ ace_medical_treatment_locationIV = 2; // Medical facilities only
 ace_medical_statemachine_fatalInjuriesPlayer = 2; // Never
 ace_medical_statemachine_cardiacArrestTime = 1800; // 30 minutes
 ace_medical_statemachine_cardiacArrestBleedoutEnabled = false; // Prevent bleedout death
-ace_medical_ivFlowRate = 3; // 3x faster IV transfusion.
+ace_medical_ivFlowRate = 5; // 5x faster IV transfusion.
 
 // AF Friendly Tracker
 afft_friendly_tracker_enabled = true;
