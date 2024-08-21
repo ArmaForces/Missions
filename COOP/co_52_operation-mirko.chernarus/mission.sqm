@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4751.123,341.90451,10318.117};
-		dir[]={0.64716417,-0.32142535,0.69128692};
-		up[]={0.21967426,0.94693202,0.23465163};
-		aside[]={0.73002422,-1.7089769e-007,-0.68343121};
+		pos[]={4741.4932,347.29077,10326.08};
+		dir[]={0.77640754,-0.42471826,0.46573269};
+		up[]={0.36423442,0.90531313,0.21848789};
+		aside[]={0.51442575,3.0570664e-007,-0.85758883};
 	};
 };
 binarizationWanted=0;
@@ -132,8 +132,11 @@ addons[]=
 	"A3_Structures_F_EPC_Items_Electronics",
 	"rhs_sounds",
 	"jsrs_soundmod_rhs_afrf_weapons",
+	"afmed_medical_treatment",
+	"ace_maptools",
 	"rhsusf_c_weapons",
 	"acre_sys_prc117f",
+	"ace_microdagr",
 	"acre_sys_prc152",
 	"ace_compat_rhs_afrf3_scopes",
 	"A3_Characters_F",
@@ -162,7 +165,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=71;
+		items=74;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -505,137 +508,157 @@ class AddonsMetaData
 		};
 		class Item51
 		{
+			className="afmed_medical_treatment";
+			name="AFMED - medical_treatment";
+			author="ArmaForces";
+		};
+		class Item52
+		{
+			className="ace_maptools";
+			name="ACE3 - Map Tools";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item53
+		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item52
+		class Item54
 		{
 			className="acre_sys_prc117f";
 			name="ACRE2 - AN/PRC-117F";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item53
+		class Item55
+		{
+			className="ace_microdagr";
+			name="ACE3 - MicroDAGR";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item56
 		{
 			className="acre_sys_prc152";
 			name="ACRE2 - AN/PRC-152";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item54
+		class Item57
 		{
 			className="ace_compat_rhs_afrf3_scopes";
 			name="ACE3 - RHS AFRF Compatibility - Scopes";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item55
+		class Item58
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item56
+		class Item59
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item57
+		class Item60
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item58
+		class Item61
 		{
 			className="rhssaf_c_gear";
 			name="RHS: SAF gear configuration";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item59
+		class Item62
 		{
 			className="rhsgref_c_vehicles_ret";
 			name="GREF Vehicle Retextures";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item60
+		class Item63
 		{
 			className="rhsusf_c_m113";
 			name="M113A3 APC";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item61
+		class Item64
 		{
 			className="A3_Air_F_EPC";
 			name="Arma 3 Win Episode - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item65
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item63
+		class Item66
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item64
+		class Item67
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item65
+		class Item68
 		{
 			className="rhsgref_c_a2port_armor";
 			name="BRDM-2";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item66
+		class Item69
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item70
 		{
 			className="armaforces_med_stretcher";
 			name="armaforces_med_stretcher";
 			author="veteran29";
 		};
-		class Item68
+		class Item71
 		{
 			className="acre_sys_radio";
 			name="ACRE2 - Radio";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item69
+		class Item72
 		{
 			className="rhs_c_a2port_car";
 			name="A2 ported cars";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item70
+		class Item73
 		{
 			className="MAI_main";
 			name="mai_main";
@@ -60014,21 +60037,26 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=25;
+										count=20;
 									};
 									class Item2
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -60108,6 +60136,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
+							gps="ItemGPS";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -60238,34 +60267,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -60448,6 +60475,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -60476,28 +60504,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=3;
-										ammoLeft=30;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -60636,6 +60664,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -60646,34 +60675,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=2;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -60796,6 +60819,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -60815,28 +60839,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -61039,34 +61063,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -61248,6 +61270,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_pkm";
+								firemode="rhs_weap_pkm:manual";
 								class primaryMuzzleMag
 								{
 									name="rhs_100Rnd_762x54mmR";
@@ -61267,34 +61290,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_mag_9x19_17";
-										count=1;
-										ammoLeft=17;
+										name="ACE_tourniquet";
+										count=2;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -61454,6 +61470,7 @@ class Mission
 							{
 								name="rhs_weap_svd";
 								optics="rhs_acc_pso1m2";
+								firemode="rhs_weap_svd:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_10Rnd_762x54mmR_7N1";
@@ -61477,22 +61494,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_10Rnd_762x54mmR_7N1";
-										count=7;
-										ammoLeft=10;
-									};
-								};
 								class ItemCargo
 								{
-									items=1;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
+										name="AFMED_apap";
+										count=10;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -61654,6 +61676,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -61673,28 +61696,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -61937,21 +61960,26 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=25;
+										count=20;
 									};
 									class Item2
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -62031,6 +62059,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
+							gps="ItemGPS";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -62161,34 +62190,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -62372,6 +62399,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -62400,28 +62428,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=3;
-										ammoLeft=30;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -62561,6 +62589,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -62571,34 +62600,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=2;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -62721,6 +62744,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -62740,28 +62764,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -62965,34 +62989,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -63174,6 +63196,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_pkm";
+								firemode="rhs_weap_pkm:manual";
 								class primaryMuzzleMag
 								{
 									name="rhs_100Rnd_762x54mmR";
@@ -63193,34 +63216,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_mag_9x19_17";
-										count=1;
-										ammoLeft=17;
+										name="ACE_tourniquet";
+										count=2;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -63380,6 +63396,7 @@ class Mission
 							{
 								name="rhs_weap_svd";
 								optics="rhs_acc_pso1m2";
+								firemode="rhs_weap_svd:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_10Rnd_762x54mmR_7N1";
@@ -63403,22 +63420,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_10Rnd_762x54mmR_7N1";
-										count=7;
-										ammoLeft=10;
-									};
-								};
 								class ItemCargo
 								{
-									items=1;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
+										name="AFMED_apap";
+										count=10;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -63580,6 +63602,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -63599,28 +63622,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -63863,21 +63886,26 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=25;
+										count=20;
 									};
 									class Item2
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -63957,6 +63985,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
+							gps="ItemGPS";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -64087,34 +64116,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -64298,6 +64325,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -64326,28 +64354,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=3;
-										ammoLeft=30;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -64487,6 +64515,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -64497,34 +64526,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=2;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -64648,6 +64671,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -64667,28 +64691,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -64892,34 +64916,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -65102,6 +65124,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_pkm";
+								firemode="rhs_weap_pkm:manual";
 								class primaryMuzzleMag
 								{
 									name="rhs_100Rnd_762x54mmR";
@@ -65121,34 +65144,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_mag_9x19_17";
-										count=1;
-										ammoLeft=17;
+										name="ACE_tourniquet";
+										count=2;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -65308,6 +65324,7 @@ class Mission
 							{
 								name="rhs_weap_svd";
 								optics="rhs_acc_pso1m2";
+								firemode="rhs_weap_svd:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_10Rnd_762x54mmR_7N1";
@@ -65331,22 +65348,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_10Rnd_762x54mmR_7N1";
-										count=7;
-										ammoLeft=10;
-									};
-								};
 								class ItemCargo
 								{
-									items=1;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
+										name="AFMED_apap";
+										count=10;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -65508,6 +65530,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -65527,28 +65550,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -65791,21 +65814,26 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=25;
+										count=20;
 									};
 									class Item2
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -65885,6 +65913,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
+							gps="ItemGPS";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -66015,34 +66044,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -66226,6 +66253,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -66254,28 +66282,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=3;
-										ammoLeft=30;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -66415,6 +66443,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -66425,34 +66454,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=2;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -66576,6 +66599,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -66595,28 +66619,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -66820,34 +66844,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -67030,6 +67052,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_pkm";
+								firemode="rhs_weap_pkm:manual";
 								class primaryMuzzleMag
 								{
 									name="rhs_100Rnd_762x54mmR";
@@ -67049,34 +67072,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_mag_9x19_17";
-										count=1;
-										ammoLeft=17;
+										name="ACE_tourniquet";
+										count=2;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -67237,6 +67253,7 @@ class Mission
 							{
 								name="rhs_weap_svd";
 								optics="rhs_acc_pso1m2";
+								firemode="rhs_weap_svd:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_10Rnd_762x54mmR_7N1";
@@ -67260,22 +67277,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_10Rnd_762x54mmR_7N1";
-										count=7;
-										ammoLeft=10;
-									};
-								};
 								class ItemCargo
 								{
-									items=1;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
+										name="AFMED_apap";
+										count=10;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -67438,6 +67460,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -67457,28 +67480,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -67722,21 +67745,26 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=25;
+										count=20;
 									};
 									class Item2
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -67816,6 +67844,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
+							gps="ItemGPS";
 							headgear="LOP_H_6B27M_CDF";
 						};
 					};
@@ -67946,34 +67975,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -68156,6 +68183,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -68184,28 +68212,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=3;
-										ammoLeft=30;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=5;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -68345,6 +68373,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -68355,34 +68384,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_AK";
-										count=2;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
-										count=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="ACE_morphine";
-										count=10;
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -68506,6 +68529,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -68525,28 +68549,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
@@ -68750,34 +68774,32 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_30Rnd_545x39_AK";
+										name="ACE_tourniquet";
 										count=2;
-										ammoLeft=30;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_microDAGR";
 										count=1;
 									};
 								};
@@ -68960,6 +68982,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="rhs_weap_pkm";
+								firemode="rhs_weap_pkm:manual";
 								class primaryMuzzleMag
 								{
 									name="rhs_100Rnd_762x54mmR";
@@ -68979,34 +69002,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
+								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
-										name="rhs_mag_rdg2_white";
-										count=1;
-										ammoLeft=1;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
-										name="rhs_mag_rgd5";
-										count=1;
-										ammoLeft=1;
+										name="ACE_elasticBandage";
+										count=20;
 									};
 									class Item2
 									{
-										name="rhs_mag_9x19_17";
-										count=1;
-										ammoLeft=17;
+										name="ACE_tourniquet";
+										count=2;
 									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
+									class Item3
 									{
-										name="FirstAidKit";
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -69167,6 +69183,7 @@ class Mission
 							{
 								name="rhs_weap_svd";
 								optics="rhs_acc_pso1m2";
+								firemode="rhs_weap_svd:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_10Rnd_762x54mmR_7N1";
@@ -69190,22 +69207,27 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_10Rnd_762x54mmR_7N1";
-										count=7;
-										ammoLeft=10;
-									};
-								};
 								class ItemCargo
 								{
-									items=1;
+									items=4;
 									class Item0
 									{
-										name="FirstAidKit";
+										name="AFMED_apap";
+										count=10;
+									};
+									class Item1
+									{
+										name="ACE_elasticBandage";
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
 										count=1;
 									};
 								};
@@ -69368,6 +69390,7 @@ class Mission
 							{
 								name="rhs_weap_ak74m_camo";
 								muzzle="rhs_acc_dtk";
+								firemode="rhs_weap_ak74m_camo:Single";
 								class primaryMuzzleMag
 								{
 									name="rhs_30Rnd_545x39_AK";
@@ -69387,28 +69410,28 @@ class Mission
 							{
 								typeName="LOP_U_CDF_Fatigue_01";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_9x19_17";
-										count=3;
-										ammoLeft=17;
-									};
-								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
-										name="ACE_morphine";
-										count=5;
+										name="AFMED_apap";
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_elasticBandage";
-										count=10;
+										count=20;
+									};
+									class Item2
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
 									};
 								};
 							};
