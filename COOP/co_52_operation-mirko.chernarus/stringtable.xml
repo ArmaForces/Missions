@@ -2,30 +2,26 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <Polish>ArmaForces - Preset</Polish>
-            <English>ArmaForces - Mission Template</English>
+            <Polish>Operacja Mirko</Polish>
+            <English>Operation Mirko</English>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <Polish>ArmaForces - Preset</Polish>
-            <English>ArmaForces - Mission Template</English>
+            <Polish>Operacja Mirko</Polish>
+            <English>Operation Mirko</English>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>Long mission description
-
-Visible when selecting mission and can be useful as description of the main mission task as well.</English>
-            <Polish>Długi opis misji
-
-Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadania.</Polish>
+            <English></English>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>Short description which will be visible when loading the mission.</English>
-            <Polish>Krótki opis, który będzie widoczny podczas ładowania misji.</Polish>
+            <!-- <English>Short description which will be visible when loading the mission.</English> -->
+            <Polish>Banda randomów z internetu zostaje wysłana odbić Czarnoruś z rąk rosyjskiego okupanta.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <English>Briefing visible when selecting mission.</English>
-            <Polish>Briefing widoczny podczas wyboru misji.</Polish>
+            <!-- <English>Briefing visible when selecting mission.</English> -->
+            <Polish>Banda randomów z internetu zostaje wysłana odbić Czarnoruś z rąk rosyjskiego okupanta..</Polish>
         </Key>
     </Package>
 

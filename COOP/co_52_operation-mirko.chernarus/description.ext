@@ -8,7 +8,7 @@ respawnOnStart = -1; // Dont respawn on start. Don't run OnPlayerRespawn.sqf on 
 respawnTemplates[] = {"afm_respawn_default", "Counter"};
 // If mission doesn't feature standard respawn timer, "Counter" option should be removed.
 // This applies to permadeath missions and when using custom respawn based on events or whatever.
-cba_settings_hasSettingsFile = true;
+cba_settings_hasSettingsFile = 1;
 
 /* Mission description and stuff */
 author = "3Mydlo3, Madin, ArmaForces";
