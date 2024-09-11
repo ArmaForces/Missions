@@ -35,6 +35,8 @@ Siły Jej Królewskiej Mości ruszają w pościg by uniemożliwić przeciwnikowi
 
 Wsparcie operacji wciąż będzie zapewniać niszczyciel HMS Cup O' Tea przy pomocy działa artyleryjskiego i rakiet manewrujących.</Key>
 
+        
+        <!-- OLD TASKS -->
         <!-- TASKS -->
         <Key ID="STR_AFP_Scripts_Task_HackRadar_Title">
             <English>Hack AA Radar</English>
@@ -44,8 +46,6 @@ Wsparcie operacji wciąż będzie zapewniać niszczyciel HMS Cup O' Tea przy pom
             <English>We need to regain control over this AA Radar, we cannot destroy it. Go there, find a control panel and hack them for us. After that, we'll remotely make sure it's not possible to unhack it. After that you need to leave ASAP.</English>
             <Polish>Musimy odzyskać kontrolę nad tym radarem przeciwlotniczym. Udajcie się tam, znajdźcie panel sterowania i shackujcie go. Po tym zabezpieczymy go zdalnie tak, żeby wróg nie mógł już odzyskać nad nim kontroli. Zaraz po przejęciu uciekajcie jak najszybciej.</Polish>
         </Key>
-        
-        <!-- OLD TASKS -->
         <Key ID="STR_AFP_Scripts_Task_Recon_Title">
             <English>Recon</English>
             <Polish>Rekonesans</Polish>

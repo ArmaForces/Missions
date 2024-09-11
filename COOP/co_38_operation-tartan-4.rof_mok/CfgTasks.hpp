@@ -7,27 +7,27 @@ class CfgTasks {
         icon = "unknown";
     };
 
-    class RadarMachariochBay {
-        parentTask = "OperationTartan";
-        icon = "interact";
-        marker = "marker_radar_macharioch_bay";
-        title = LSTRING(Task_HackRadar_Title);
-        description = LSTRING(Task_HackRadar_Description);
+    // class RadarMachariochBay {
+    //     parentTask = "OperationTartan";
+    //     icon = "interact";
+    //     marker = "marker_radar_macharioch_bay";
+    //     title = LSTRING(Task_HackRadar_Title);
+    //     description = LSTRING(Task_HackRadar_Description);
 
-        conditionEventsCancelled[] = { "Evac" };
-        conditionEventsFailed[] = { "RadarMachariochBayDestroyed" };
-        conditionEventsSuccess[] = { "RadarMachariochBayHacked" };
-    };
-    class RadarTorrMor : RadarMachariochBay {
-        marker = "marker_radar_torr_mor";
-        conditionEventsFailed[] = { "RadarTorrMorDestroyed" };
-        conditionEventsSuccess[] = { "RadarTorrMorHacked" };
-    };
-    class RadarGlenKerran : RadarMachariochBay {
-        marker = "marker_radar_glen_kerran";
-        conditionEventsFailed[] = { "RadarGlenKerranDestroyed" };
-        conditionEventsSuccess[] = { "RadarGlenKerranHacked" };
-    };
+    //     conditionEventsCancelled[] = { "Evac" };
+    //     conditionEventsFailed[] = { "RadarMachariochBayDestroyed" };
+    //     conditionEventsSuccess[] = { "RadarMachariochBayHacked" };
+    // };
+    // class RadarTorrMor : RadarMachariochBay {
+    //     marker = "marker_radar_torr_mor";
+    //     conditionEventsFailed[] = { "RadarTorrMorDestroyed" };
+    //     conditionEventsSuccess[] = { "RadarTorrMorHacked" };
+    // };
+    // class RadarGlenKerran : RadarMachariochBay {
+    //     marker = "marker_radar_glen_kerran";
+    //     conditionEventsFailed[] = { "RadarGlenKerranDestroyed" };
+    //     conditionEventsSuccess[] = { "RadarGlenKerranHacked" };
+    // };
 
     // Evac
     class Evac {
