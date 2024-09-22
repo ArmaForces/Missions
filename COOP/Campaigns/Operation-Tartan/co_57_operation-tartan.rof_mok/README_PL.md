@@ -2,65 +2,71 @@
 
 ## Opis misji
 
-
+Siły zbrojne Wielkiej Brytanii utraciły kontrolę nad półwyspem Mull of Kintyre. Obszar został zajęty bez wystrzału, dowództwo nie ma pojęcia co się tam dzieje. Tuż przed desantem wysłany został oddział zwiadowczy, którego zadaniem jest zbadanie aktualnej sytuacji.
 
 ## Briefing
 
-Korea Północna dokonała inwazji na rosyjską wyspę pod władaniem duńskim w Zatoce Fińskiej. Nie wiadomo jak udało im się tam dostać, jak przemycili na Bałtyk 3 fregaty i lotniskowiec, ani tym bardziej skąd wytrzasnęli lotniskowiec.
+Południowa Szkocja, 2014
 
-Koalicja skandynawska, złożona z Duńczyków, Norwegów i Szwedów zebrała siły i przygotowuje się do operacji odbicia wyspy. Duńczycy wystawili fregatę, jednego F-16 i drużynę piechoty, Norwegowie dorzucili swojego F-16 oraz drużynę piechoty, a Szwedzi Blackhawka i 2 drużyny piechoty. Razem stawią czoła flocie Hu Ju Sona z zadaniem odbicia wyspy oraz znalezienia odpowiedzi na nurtujące nas pytania.
+Siły zbrojne Wielkiej Brytanii utraciły kontrolę nad półwyspem Mull of Kintyre. Obszar został zajęty bez wystrzału, dowództwo nie ma pojęcia co się tam dzieje. Pomimo braku kontaktu z obsługą lokalnych radarów przeciwlotniczych, udało się ustalić, że wciąż pracują i uniemożliwiają tym samym bezpieczne przeprowadzenie rozpoznania z powietrza. Tuż przed desantem wysłany został oddział zwiadowczy, którego zadaniem jest zbadanie aktualnej sytuacji. Od powodzenia ich misji zależy Wasze zadanie.
+
+W sile 3 drużyn zmotoryzowanych (Alpha-Charlie), zmotoryzowanej drużyny wsparcia (Delta) oraz 2 drużyn powietrznodesantowych (Echo + Foxtrot) z helikopterami marynarki wojennej Wildcat (November 1 + 2), dokonacie desantu na południu półwyspu przy pomocy barek desantowych. Wsparcie będzie zapewniać niszczyciel HMS Cup O' Tea przy pomocy działa artyleryjskiego i rakiet manewrujących.
+
+Waszym głównym celem jest miasteczko Southend i jego bezpośrednie sąsiedztwo, włączając w to wzgórza na północny zachód od miasteczka. Zajęcia wzgórz zapewni Wam kontrolę nad obszarem na zachód, północ i wschód. Jeżeli będzie to możliwe, po zabezpieczeniu strefy Southend, ruszajcie zabezpieczyć willę, włączając w to wszystkie możliwe materiały wywiadowcze oraz wysokich rangą oficerów.
 
 ### Zadania
 
-1. Zajmij lotnisko i pobliską wyspę
-   1. Zniszcz wieżę komunikacyjną
-   2. Zniszcz AA
-   3. Zniszcz baterie przeciwokrętowe
-2. Załóż bazę polową na lotnisku (opcjonalne)
-   1. Szpital
-   2. Punkt serwisowy
-   3. Zbrojownia
-3. Zlokalizuj 3 artefakty
-   1. Cing dzban
-   2. Cing miska
-   3. Cing fajka wodna
-4. Zneutralizuj flotę Hu Ju Sona
-   1. Zatop fregaty
-   2. Zneutralizuj lotniskowiec
+1. Desant
+   1. Zneutralizuj pobliski obóz
+2. Zabezpiecz obszar Southend
+   1. Zajmij wieże radiowe
+   2. Zneutralizuj stanowiska wyrzutni ziemia-powietrze
+   3. Zabezpiecz Southend
+3. Zabezpiecz obszar willi
+   1. Zneutralizuj wrogie obozowiska
+   2. Zabezpiecz willę
 
 ### Wykonanie
 
-Piechota rozpoczyna podzielona. 2 drużyny startują na brzegu wyspy z lotniskiem (stanowią pierwszą grupę), pozostałe 2 startują na małej wyspie na wschodzie (stanowią oni drugą grupę). Pierwsza grupa powinna pozostać niewykryta dopóki druga grupa nie zniszczy wieży komuniacyjnej, co uniemożliwi komunikację lotniska z główną wyspą. Gdy to nastąpi, obie grupy muszą wyeliminować nieprzyjacielskie siły na obu wyspach, efektywnie przejmując nad nimi pełną kontrolę. Gdy AA zostanie zniszczone, jednostki powietrzne mogą wejść do pojazdów i wystartować z lotniskowca.
+Misja jest podzielona na 2 fazy.
 
-Po zabezpieczeniu lotniska helikoptery mogą dostarczyć skrzynie z zaopatrzeniem (znajdują się one na lotniskowcu), które mogą zostać użyte do zbudowania bazy polowej. Załogi helikopterów powinni załadować skrzynie przez ACE Cargo zamiast podwieszać je. W przeciwnym razie mogą nieodwracalnie utracić skrzynie w locie i niektóre elementy bazy polowej mogą pozostać niedostępne.
+1. Zwiad
+2. Lądowanie
 
-Po przegrupowaniu i przezbrojeniu musicie rozpocząć poszukiwania artefaktów na głównej wyspie. Być może znaleźliście jakieś informacje na lotnisku lub pobliskiej wyspie, które mogą was prowadzić do pierwszego miejsca (albo mówić gdzie nie szukać). Możecie użyć samolotów do zwiadu (jeżeli jeszcze są dostępne), skupcie sięna interesujących punktach jak budynki, nie szukajcie w środku lasu. Podążajcie za intelem znajdowanym podczas misji (jeżeli będzie jakikowiek).
+Zalecane jest rozegranie obu faz niezależnie by uniknąć problemów organizacyjnych. Jeżeli osoby grające misję zwiadowczą zginą, nie mogą się podzielić żadnymi informacjami poza tym co zostało powiedziane przez radio. Mogą jednak grać drugą część, ale nie zajmując slotów dowódczych jeżeli zginęli podczas zwiadu.
 
-Podczas całej misji musicie uważać na marynarkę wojenną przeciwnika. Koreańczycy mają kilka fregat, które mogą być gdziekolwiek. Musicie je zniszczyć.
+#### Zwiad
+
+Drużyna zwiadowcza rozpoczyna misję 90 minut przed rozpoczęciem lądowania. Ich zadaniem jest zebranie jak największej ilości danych o wrogich siłach w pobliżu Southend. Muszą pozostać niewykryci przez cały czas trwania misji, w przeciwnym razie nikt nie będzie mógł im pomóc.
+
+Cisza radiowa nie jest opcjonalna ponieważ wróg może namierzyć pozycję zwiadowców przy użyciu triangulacji. Kontakt radiowy dozwolony jest jedynie w przypadku sytuacji awarynej oraz podczas wzywania ewakuacji. Komunikacja musi być jak najkrótsza by zminimalizować ryzyko wykrycia.
+
+
+#### Lądowanie
+
+Piechota wyląduje na południowy wschód od Southend przy użyciu barek desantowych. Po pozostawieniu barek na brzegu spodziewamy się kontaktu ze strony wrogich lądowych patroli wybrzeża. Kolejne czynności są do decyzji HQ na podstawie zadań oraz informacji od drużyny zwiadowczej (jeżeli ktoś przeżył misję).
+
+Lądowanie będzie wspierane przez 2 uzbrojone śmigłowce Wildcat. Piloci są proszeni o zachowanie najwyższej ostrożności podczas operowania w obszarze misji ze względu na liczne wyrzutnie ziemia-powietrze.
 
 ## Sprzęt i ludzie
 
 - Dowództwo kompanii (3 ludzi)
-- 4 drużyny piechoty (po 8 ludzi)
-  - 1 duńska
-  - 1 norweska
-  - 2 szwedzkie
-- 2 F-16 (po 1 pilocie)
-  - 1 duński
-  - 1 norweski
-- 2 Blackhawks
-  - MH-60L DAP (2-3 ludzi)
-  - UH-60M (Medevac) (2-6 ludzi)
-- ANZAC Class Frigate (2-3 ludzi)
-- Lotniskowiec (0 ludzi)
+- 3 zmotoryzowane drużyny piechoty (po 8 osób)
+- 2 powietrznodesantowe drużyny piechoty (po 8 osób)
+- 1 zmotoryzowana drużyna wsparcia (6 osób)
+  - Land Rover GMG (granatnik)
+  - Land Rover Milan (PPK)
+- 6-osobowy zespół zwiadowczy
+- 2 Wildcaty (po 2 osoby)
+- HMS Cup O'Tea (2 osoby)
 
 Sloty Zeusa: 2
-Suma slotów: 51
+Suma slotów: 61
 
 ## Rozegrana
 
-- 2019-07-17
-- 2021-07-21 (ulepszona wersja)
+- 2022-02-24 (misja zwiadowcza)
+- 2022-03-09
 
 ## Autorzy
 
