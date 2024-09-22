@@ -12,24 +12,24 @@
             <Polish>Operacja Tartan 4 - Tearing Tartan</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>TODO</English>
-            <Polish>TODO</Polish>
+            <English>After medicore success of airborne operation and neutralization of a part of aerial defense, rebellion forces seem to be retreating north. Royal Army soldiers are in pursuit to prevent them from reorganizing.</English>
+            <Polish>Po umiarkowanym sukcesie operacji powietrznodesantowej i unieszkodliwieniu części obrony przeciwlotniczej, zaobserwowano odwrót sił rebelianckich w kierunku północnym. Siły Jej Królewskiej Mości ruszają w pościg by uniemożliwić przeciwnikowi reorganizację.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>TODO</English>
+            <English>Royal Army soldiers are in pursuit of retreating rebelliants to prevent them from reorganizing.</English>
             <Polish>Siły Jej Królewskiej Mości ruszają w pościg za wycofującymi się rebeliantami by uniemożliwić przeciwnikowi reorganizację.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <!-- <English>Southern Scotland, 2014
+            <English>Southern Scotland, 2014
 
-British Armed Forces lost control over Mull of Kintyre peninsula. The area was secured without a single shot, the command has no idea what happened. Despite no contact with local radars crew, we've managed to confirm the radars are still working, effectively preventing us from performing safe aerial reconnaisance mission. Shortly before the landing, small recon team was sent to infiltrate the area and provide intel about current situation. Your task depends on their performance.
+After medicore success of airborne operation and neutralization of a part of aerial defense, rebellion forces seem to be retreating north.
 
-Your task force consists of 3 motorized teams (Alpha-Charlie), motorized support team (Delta) and 2 airborne infantry squads (Echo + Foxtrot) with Wildcat Royal Navy helicopters (November 1 + 2). You will land on the southern part of the peninsula, using the landing barges. Destroyer HMS Cup O' Tea will provide fire support with its artillery cannon and cruise missiles.
+Royal Army soldiers are in pursuit to prevent them from reorganizing.
 
-Your main objective is Southend town and its immediate neighbourhood, including hills to the northwest of the town. Capturing the hills will give you control over a vast area to the west, north and east. If possible, after securing Southend area, proceed to villa and secure it, including any possible intel nad high ranked officers.</English> -->
+HMS Cup O'Tea will still support the operation, together with newly arrived HMS Five O'Clock.</English>
             <Polish>Południowa Szkocja, 2014
 
-Po umiarkowanym sukcesie operacji powietrznodesantowej i unieszkodliwieniu części obrony przeciwlotniczej, zaobserwowano odwrót sił rebelianckich w kierunku północnyn.
+Po umiarkowanym sukcesie operacji powietrznodesantowej i unieszkodliwieniu części obrony przeciwlotniczej, zaobserwowano odwrót sił rebelianckich w kierunku północnym.
 
 Siły Jej Królewskiej Mości ruszają w pościg by uniemożliwić przeciwnikowi reorganizację.
 
