@@ -2,38 +2,47 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <English>Operation Tartan</English>
-            <Polish>Operacja Tartan</Polish>
+            <English>Operation Tartan 3 - Tartan From Above</English>
+            <Polish>Operacja Tartan 3 - Tartan z góry</Polish>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <English>Operation Tartan</English>
-            <Polish>Operacja Tartan</Polish>
+            <English>Operation Tartan 3 - Tartan From Above</English>
+            <Polish>Operacja Tartan 3 - Tartan z góry</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>British Armed Forces lost control over the Mull of Kintyre peninsula. The area was secured without a single shot, the command has no idea what happened. Just before the landing, small recon team was sent to infiltrate the area and provide details on current situation.</English>
-            <Polish>Siły zbrojne Wielkiej Brytanii utraciły kontrolę nad półwyspem Mull of Kintyre. Obszar został zajęty bez wystrzału, dowództwo nie ma pojęcia co się tam dzieje. Tuż przed desantem wysłany został oddział zwiadowczy, którego zadaniem jest zbadanie aktualnej sytuacji.</Polish>
+            <English>After initial success and reaching villa, company was surprised by reinforcements from nearby FOB. Only BBC journalist made their way out of 30 minutes long firefight that ended existence of the task force. Highly armed airborne unit is approaching the area at the moment. Their task is to disable enemy air defence and introduce chaos behind enemy lines.</English>
+            <Polish>Po początkowym sukcesie i dotarciu do wilii kompania została zaskoczona przez wsparcie z pobliskiej bazy wroga. Z trwającej 30 minut jatki uratowali się tylko dziennikarze BBC. Na miejsce operacji dociera właśnie uzbrojona po zęby jednostka powietrznodesantowa z zadaniem unieszkodliwienia obrony przeciwlotniczej oraz wprowadzenia chaosu za liniami wroga.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>British Armed Forces land on the peninsula to repel enemy forces and regain control over the southern part of the peninsula.</English>
-            <Polish>Siły zbrojne Wielkiej Brytanii lądują na półwyspie by wypchnąć siły nieprzyjaciela i odzyskać kontrolę nad południową częścią półwyspu.</Polish>
+            <English>Highly armed airborne unit is approaching the area at the moment. Their task is to disable enemy air defence and introduce chaos behind enemy lines.</English>
+            <Polish>Na miejsce operacji dociera właśnie uzbrojona po zęby jednostka powietrznodesantowa z zadaniem unieszkodliwienia obrony przeciwlotniczej oraz wprowadzenia chaosu za liniami wroga.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <!-- <English>Southern Scotland, 2014
+            <English>Southern Scotland, 2014
 
-British Armed Forces lost control over Mull of Kintyre peninsula. The area was secured without a single shot, the command has no idea what happened. Despite no contact with local radars crew, we've managed to confirm the radars are still working, effectively preventing us from performing safe aerial reconnaisance mission. Shortly before the landing, small recon team was sent to infiltrate the area and provide intel about current situation. Your task depends on their performance.
+British Armed Forces attempted to regain control over Mull of Kintyre peninsula. Reinforcements for remains of the morning landing managed to reach Southend on time and together they witheld Southend. Unfortunately, due to heavy artillery shelling, the town was leveled to the ground.
 
-Your task force consists of 3 motorized teams (Alpha-Charlie), motorized support team (Delta) and 2 airborne infantry squads (Echo + Foxtrot) with Wildcat Royal Navy helicopters (November 1 + 2). You will land on the southern part of the peninsula, using the landing barges. Destroyer HMS Cup O' Tea will provide fire support with its artillery cannon and cruise missiles.
+Platoons formed new task force and were assigned task of securing villa 3 km west of Southend. Intelligence reported that it might be unvaluable source of new data that might help reveal enemy locations and plans.
 
-Your main objective is Southend town and its immediate neighbourhood, including hills to the northwest of the town. Capturing the hills will give you control over a vast area to the west, north and east. If possible, after securing Southend area, proceed to villa and secure it, including any possible intel nad high ranked officers.</English> -->
+After initial success and reaching villa, company was surprised by reinforcements from nearby FOB. 30 minutes long firefight started, that only BBC journalists made their way out of, due to heroic cover by Royal Army Soldiers.
+
+Highly armed airborne unit is reaching the area now. Their task will be to neutralize enemy air defence and introduce chaose behind enemy lines.
+
+HMS Cup O'Tea will still provide fire support for the mission using artillery and cruise missiles.</English>
             <Polish>Południowa Szkocja, 2014
 
-Siły zbrojne Wielkiej Brytanii podjęły próbę odzyskania kontroli nad półwyspem Mull of Kintyre. Poranny desant, początkowo udany, finalnie skończył się rozbiciem sił inwazyjnych. Niedobitki z drużyn Alpha i Delta wycofały się do Southend, gdzie zorganizowali ostatni punkt oporu w oczekiwaniu na przybycie wsparcia.
+Siły zbrojne Wielkiej Brytanii podjęły próbę odzyskania kontroli nad półwyspem Mull of Kintyre. Wsparcie dla niedobitków z porannego desantu zdołało dotrzeć na czas i wspólnie utrzymali Southend. Miasteczko zostało jednak zrównane z ziemią przez ciągły ostrzał artyleryjski przeciwnika.
 
-Do opinii publicznej dotarły wstrząsające wieści. Żołnierze Jej Królewskiej Mości mieli rozstrzelać autobus pełny ludności cywilnej. BBC w porozumieniu z najwyższym dowództwem sił zbrojnych Wielkiej Brytanii, wysłało dziennikarzy na miejsce, dotarli oni już do sił zmierzających do Southend. Będą kontrolować przebieg działań wojennych i relacjonować sytuację z odpowiednim opóźnieniem.
+Drużyny połączone w pluton otrzymały zadanie zabezpieczenia Willi 3 km na zachód od Southend. Wywiad doniósł, że znajduje się tam sporo materiałów, które pomogą nam zlokalizować siły nieprzyjaciela i poznać ich plany.
 
-Wsparcie operacji wciąż będzie zapewniać niszczyciel HMS Cup O' Tea przy pomocy działa artyleryjskiego i rakiet manewrujących.</Key>
+Po początkowym sukcesie i dotarciu do wilii zostali zaskoczeni przez wsparcie z pobliskiego FOBa. Rozpoczęła się trwająca 30 minut jatka, z której uratowali się tylko dziennikarze BBC, których odwrót został bohatersko osłonięty przez żołnierzy Jej Królewskiej Mości.
+
+Na miejsce operacji dociera właśnie uzbrojona po zęby jednostka powietrznodesantowa z zadaniem unieszkodliwienia obrony przeciwlotniczej oraz wprowadzenia chaosu za liniami wroga.
+
+Wsparcie operacji wciąż będzie zapewniać niszczyciel HMS Cup O' Tea przy pomocy działa artyleryjskiego i rakiet manewrujących.</Polish>
+        </Key>
 
         <!-- TASKS -->
         <Key ID="STR_AFP_Scripts_Task_HackRadar_Title">

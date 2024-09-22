@@ -41,7 +41,6 @@ Drużyna zwiadowcza rozpoczyna misję 90 minut przed rozpoczęciem lądowania. I
 
 Cisza radiowa nie jest opcjonalna ponieważ wróg może namierzyć pozycję zwiadowców przy użyciu triangulacji. Kontakt radiowy dozwolony jest jedynie w przypadku sytuacji awarynej oraz podczas wzywania ewakuacji. Komunikacja musi być jak najkrótsza by zminimalizować ryzyko wykrycia.
 
-
 #### Lądowanie
 
 Piechota wyląduje na południowy wschód od Southend przy użyciu barek desantowych. Po pozostawieniu barek na brzegu spodziewamy się kontaktu ze strony wrogich lądowych patroli wybrzeża. Kolejne czynności są do decyzji HQ na podstawie zadań oraz informacji od drużyny zwiadowczej (jeżeli ktoś przeżył misję).

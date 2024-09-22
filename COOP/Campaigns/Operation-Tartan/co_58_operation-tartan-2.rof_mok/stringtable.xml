@@ -2,38 +2,39 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <English>Operation Tartan</English>
-            <Polish>Operacja Tartan</Polish>
+            <English>Operation Tartan 2</English>
+            <Polish>Operacja Tartan 2</Polish>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <English>Operation Tartan</English>
-            <Polish>Operacja Tartan</Polish>
+            <English>Operation Tartan 2</English>
+            <Polish>Operacja Tartan 2</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>British Armed Forces lost control over the Mull of Kintyre peninsula. The area was secured without a single shot, the command has no idea what happened. Just before the landing, small recon team was sent to infiltrate the area and provide details on current situation.</English>
-            <Polish>Siły zbrojne Wielkiej Brytanii utraciły kontrolę nad półwyspem Mull of Kintyre. Obszar został zajęty bez wystrzału, dowództwo nie ma pojęcia co się tam dzieje. Tuż przed desantem wysłany został oddział zwiadowczy, którego zadaniem jest zbadanie aktualnej sytuacji.</Polish>
+            <English>British Armed Forces made an attempt to regain control over Mull of Kintyre peninsula. Morning landing, albait initially successful, ended with total destruction of the task force. Remains of Alpha and Delta teams have retreated to Southend where they mounted last stand while awaiting reinforcements.</English>
+            <Polish>Siły zbrojne Wielkiej Brytanii podjęły próbę odzyskania kontroli nad półwyspem Mull of Kintyre. Poranny desant, początkowo udany, finalnie skończył się rozbiciem sił inwazyjnych. Niedobitki z drużyn Alpha i Delta wycofały się do Southend, gdzie zorganizowali ostatni punkt oporu w oczekiwaniu na przybycie wsparcia.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>British Armed Forces land on the peninsula to repel enemy forces and regain control over the southern part of the peninsula.</English>
-            <Polish>Siły zbrojne Wielkiej Brytanii lądują na półwyspie by wypchnąć siły nieprzyjaciela i odzyskać kontrolę nad południową częścią półwyspu.</Polish>
+            <English>Remains of Alpha and Delta teams have retreated to Southend where they mounted last stand while awaiting reinforcements.</English>
+            <Polish>Niedobitki z drużyn Alpha i Delta wycofały się do Southend, gdzie zorganizowali ostatni punkt oporu w oczekiwaniu na przybycie wsparcia.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <!-- <English>Southern Scotland, 2014
+            <English>Southern Scotland, 2014
 
-British Armed Forces lost control over Mull of Kintyre peninsula. The area was secured without a single shot, the command has no idea what happened. Despite no contact with local radars crew, we've managed to confirm the radars are still working, effectively preventing us from performing safe aerial reconnaisance mission. Shortly before the landing, small recon team was sent to infiltrate the area and provide intel about current situation. Your task depends on their performance.
+British Armed Forces made an attempt to regain control over Mull of Kintyre peninsula. Morning landing, albait initially successful, ended with total destruction of the task force. Remains of Alpha and Delta teams have retreated to Southend where they mounted last stand while awaiting reinforcements.
 
-Your task force consists of 3 motorized teams (Alpha-Charlie), motorized support team (Delta) and 2 airborne infantry squads (Echo + Foxtrot) with Wildcat Royal Navy helicopters (November 1 + 2). You will land on the southern part of the peninsula, using the landing barges. Destroyer HMS Cup O' Tea will provide fire support with its artillery cannon and cruise missiles.
+Public opinion have heard terrible news. Her Majesty's soldiers were supposed to shoot a bus full of civilians. BBC in agreement with highest command of British Armed Forces has sent journalists to the area. They've already reached reinforcements forces. They'll monitor and report the situation with appropriate delay.
 
-Your main objective is Southend town and its immediate neighbourhood, including hills to the northwest of the town. Capturing the hills will give you control over a vast area to the west, north and east. If possible, after securing Southend area, proceed to villa and secure it, including any possible intel nad high ranked officers.</English> -->
+HMS Cup O'Tea will still support the operation using artillery and cruise missiles.</English>
             <Polish>Południowa Szkocja, 2014
 
 Siły zbrojne Wielkiej Brytanii podjęły próbę odzyskania kontroli nad półwyspem Mull of Kintyre. Poranny desant, początkowo udany, finalnie skończył się rozbiciem sił inwazyjnych. Niedobitki z drużyn Alpha i Delta wycofały się do Southend, gdzie zorganizowali ostatni punkt oporu w oczekiwaniu na przybycie wsparcia.
 
 Do opinii publicznej dotarły wstrząsające wieści. Żołnierze Jej Królewskiej Mości mieli rozstrzelać autobus pełny ludności cywilnej. BBC w porozumieniu z najwyższym dowództwem sił zbrojnych Wielkiej Brytanii, wysłało dziennikarzy na miejsce, dotarli oni już do sił zmierzających do Southend. Będą kontrolować przebieg działań wojennych i relacjonować sytuację z odpowiednim opóźnieniem.
 
-Wsparcie operacji wciąż będzie zapewniać niszczyciel HMS Cup O' Tea przy pomocy działa artyleryjskiego i rakiet manewrujących.</Key>
+Wsparcie operacji wciąż będzie zapewniać niszczyciel HMS Cup O' Tea przy pomocy działa artyleryjskiego i rakiet manewrujących.</Polish>
+        </Key>
 
         <!-- TASKS -->
         <Key ID="STR_AFP_Scripts_Task_Recon_Title">
