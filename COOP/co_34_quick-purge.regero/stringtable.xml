@@ -52,17 +52,27 @@ Po zabezpieczeniu Bardzo Ważnego Gościa wrócicie do samolotów i odlecicie.</
         </Key>
         <Key ID="STR_AFP_Tasks_Task_Airfield_Description">
             <!-- <English></English> -->
-            <Polish></Polish>
+            <Polish>Lądowisko będzie Wam potrzebne, żeby reszta zaopatrzenia mogła dotrzeć. Po zajęciu lotniska będziecie mieli dostępne m.in. granaty zapalające AN-M14 oraz granaty hukowo-błyskowe.</Polish>
         </Key>
 
-        <!-- Airfield -->
+        <!-- Burn Weed -->
         <Key ID="STR_AFP_Tasks_Task_BurnWeed_Title">
             <!-- <English>Capture airfield</English> -->
             <Polish>Spal zioło</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_BurnWeed_Description">
             <!-- <English></English> -->
-            <Polish>W oznaczonej lokalizacji znajduje się 8 pól z ziołem. Spalcie je przy użyciu granatów zapalających AN-M14.</Polish>
+            <Polish>W strefie zioła znajduje się 8 pól z ziołem. Spalcie je przy użyciu granatów zapalających AN-M14. To na pewno rozjuszy Bardzo Ważnego Gościa.</Polish>
+        </Key>
+
+        <!-- Steal Radar Data -->
+        <Key ID="STR_AFP_Tasks_Task_StealRadarData_Title">
+            <!-- <English>Capture airfield</English> -->
+            <Polish>Pobierz dane z radaru</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_StealRadarData_Description">
+            <!-- <English></English> -->
+            <Polish>W pobliżu rzeki znajduje się baza z radarem. Dane z niego mogą być kluczowe do znalezienia Bardzo Ważnego Gościa.</Polish>
         </Key>
     </Package>
 
@@ -74,6 +84,10 @@ Po zabezpieczeniu Bardzo Ważnego Gościa wrócicie do samolotów i odlecicie.</
         <Key ID="STR_AFP_Markers_Drop_Zone">
             <English>Drop Zone</English>
             <Polish>Strefa Zrzutu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Radar_Base">
+            <English>Radar Base</English>
+            <Polish>Baza radarowa</Polish>
         </Key>
         <Key ID="STR_AFP_Markers_Weed_Zone">
             <English>Weed Zone</English>

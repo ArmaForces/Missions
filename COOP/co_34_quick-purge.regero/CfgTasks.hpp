@@ -32,4 +32,13 @@ class CfgTasks
             "WeedFieldBurns_8"
         };
     };
+
+    class StealRadarData
+    {
+        marker = "marker_radar_base";
+        icon = "download";
+
+        conditionEventsSuccess[] = { "afmf_task_download_successful" };
+        conditionEventsFailed[] = { "afmf_task_download_failed" };
+    };
 };

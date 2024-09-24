@@ -21,6 +21,7 @@ if (_uav isEqualType "") then {
 
 _uav enableUAVWaypoints false;
 _uav lockDriver true;
+_uav setCaptive true;
 // _uav flyInHeight LOITER_HEIGHT;
 _uav setGroupIdGlobal ["Hawk Eye"];
 _uav setFuel 1;
