@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=135;
+		nextID=136;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=19;
+		nextID=24;
 	};
 	class Camera
 	{
-		pos[]={5631.1362,89.237259,7388.4082};
-		dir[]={0.84818166,-0.42917916,-0.31056464};
-		up[]={0.40309781,0.90317351,-0.14759386};
-		aside[]={-0.34384084,9.1415495e-007,-0.93906462};
+		pos[]={5639.7563,81.431007,7369.6626};
+		dir[]={0.92613107,-0.3582885,-0.11856797};
+		up[]={0.35543802,0.9335922,-0.045505758};
+		aside[]={-0.12699673,3.1168747e-007,-0.99198484};
 	};
 };
 binarizationWanted=0;
-sourceName="Szybkie-Przeczyszczenie";
+sourceName="co_34_quick-purge";
 addons[]=
 {
 	"A3_Structures_F_Bootcamp_VR_Helpers",
@@ -281,7 +281,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=33;
+		items=34;
 		class Item0
 		{
 			dataType="Layer";
@@ -1438,8 +1438,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5751.7798,49.623642,7422.4639};
-						angles[]={0,3.3712969,-0};
+						position[]={5675.4497,50.017658,7462.3501};
+						angles[]={0,3.3712969,0};
 					};
 					side="West";
 					flags=7;
@@ -1566,14 +1566,12 @@ class Mission
 					};
 					id=102;
 					type="B_support_AMort_F";
-					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=101;
-			atlOffset=-7.6293945e-006;
 		};
 		class Item17
 		{
@@ -4364,7 +4362,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5750.0278,54.445824,7342.8921};
-					angle=3.3820465;
+					angle=3.382046;
 					class Attributes
 					{
 						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
@@ -4448,7 +4446,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5720.4849,51.287178,7371.4512};
-					angle=0.027070053;
+					angle=0.027070051;
 					class Attributes
 					{
 						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
@@ -4499,6 +4497,23 @@ class Mission
 			colorName="ColorKhaki";
 			id=127;
 			atlOffset=-0.00038528442;
+		};
+		class Item33
+		{
+			dataType="Trigger";
+			position[]={5735.1992,50.710537,7357.9102};
+			class Attributes
+			{
+				text="Players near weed";
+				onActivation="""ACTION_Skrillex_Make_It_Bun_Dem"" remoteExec [""playMusic"", 0];";
+				sizeA=100;
+				sizeB=100;
+				activationBy="ANYPLAYER";
+				isServerOnly=1;
+				triggerInterval=5;
+			};
+			id=135;
+			type="EmptyDetectorAreaR50";
 		};
 	};
 	class Connections
