@@ -3,6 +3,13 @@ class CfgFunctions
     class ADDON
     {
         tag = QUOTE(ADDON);
+        class crap
+        {
+            class incendiaryGrenadeInArea {};
+            class removeVegetationInArea {};
+            class removeVegetationInAreaLoop {};
+        };
+
         class gui
         {
             // For ViewDistance and GroupRename GUIs
