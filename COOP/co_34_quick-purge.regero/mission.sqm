@@ -12,11 +12,11 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=127;
+		nextID=135;
 	};
 	class MarkerIDProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class LayerIndexProvider
 	{
@@ -24,18 +24,16 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5727.2251,103.88387,7448.1567};
-		dir[]={0.045690916,-0.68283832,-0.72913933};
-		up[]={0.042705733,0.73056948,-0.68150151};
-		aside[]={-0.99804229,1.8626451e-009,-0.0625415};
+		pos[]={5631.1362,89.237259,7388.4082};
+		dir[]={0.84818166,-0.42917916,-0.31056464};
+		up[]={0.40309781,0.90317351,-0.14759386};
+		aside[]={-0.34384084,9.1415495e-007,-0.93906462};
 	};
 };
 binarizationWanted=0;
 sourceName="Szybkie-Przeczyszczenie";
 addons[]=
 {
-	"A3_Characters_F_Common",
-	"USAF_RQ4A",
 	"A3_Structures_F_Bootcamp_VR_Helpers",
 	"A3_Characters_F",
 	"ace_headless",
@@ -71,181 +69,175 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=25;
 		class Item0
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item1
-		{
-			className="USAF_RQ4A";
-			name="USAF_RQ4A";
-			author="USAF Mod Team";
-		};
-		class Item2
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
 		{
 			className="ace_headless";
 			name="ACE3 - Headless";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item4
+		class Item3
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="afm_map";
 			name="AFM - map";
 			author="ArmaForces";
 		};
-		class Item9
+		class Item8
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item9
 		{
 			className="ace_scopes";
 			name="ACE3 - Scopes";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item11
+		class Item10
 		{
 			className="ace_laserpointer";
 			name="ACE3 - Laser Pointer";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item12
+		class Item11
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item13
+		class Item12
 		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item14
+		class Item13
 		{
 			className="A3_Sounds_F";
 			name="Arma 3 - Sound Effects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item14
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item16
+		class Item15
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USAF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item20
+		class Item19
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item21
+		class Item20
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item22
+		class Item21
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item22
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item24
+		class Item23
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item25
+		class Item24
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
@@ -289,191 +281,8 @@ class Mission
 	};
 	class Entities
 	{
-		items=35;
+		items=33;
 		class Item0
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=7;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1869.0874,60.031437,1849.6288};
-						angles[]={0.051958453,6.2453113,6.2751913};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						name="hawkeyeD";
-					};
-					id=2;
-					type="B_UAV_AI";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1869.0874,61.83213,1851.2957};
-						angles[]={0.051958453,6.2453113,6.2751913};
-					};
-					side="West";
-					class Attributes
-					{
-						name="hawkeyeG";
-					};
-					id=3;
-					type="B_UAV_AI";
-					atlOffset=1.8006935;
-				};
-				class Item2
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={398.90201,-0.013999939,9990.6416};
-					combatMode="BLUE";
-					combat="CARELESS";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=4;
-					type="Move";
-					atlOffset=27.146;
-				};
-				class Item3
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={10021.427,0.014777064,10035.306};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=5;
-					type="Move";
-					atlOffset=39.794868;
-				};
-				class Item4
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={10039.279,0.018097252,227.01355};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=6;
-					type="Move";
-					atlOffset=39.317913;
-				};
-				class Item5
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={148.96622,-0.041475337,235.94604};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=7;
-					type="Move";
-					atlOffset=35.218521;
-				};
-				class Item6
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={318.565,-0.075559616,9811.9844};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=8;
-					type="Cycle";
-					atlOffset=26.66;
-				};
-			};
-			class Attributes
-			{
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=2;
-				};
-				class Links
-				{
-					items=2;
-					class Item0
-					{
-						linkID=0;
-						item0=2;
-						item1=1;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=3;
-						item1=1;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-				};
-			};
-			id=0;
-			atlOffset=0.071006775;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Hawk Eye";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item1
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={614.12598,102.90193,5082.1621};
-				angles[]={0.051958453,6.2453113,6.2751913};
-			};
-			side="West";
-			flags=6;
-			class Attributes
-			{
-				fuel=0;
-				name="hawkeye";
-			};
-			id=1;
-			type="USAF_RQ4A";
-			atlOffset=0.071006775;
-		};
-		class Item2
 		{
 			dataType="Layer";
 			name="AF-Mission-Template";
@@ -691,7 +500,7 @@ class Mission
 			};
 			id=17;
 		};
-		class Item3
+		class Item1
 		{
 			dataType="Layer";
 			name="Players";
@@ -1109,7 +918,7 @@ class Mission
 			};
 			id=31;
 		};
-		class Item4
+		class Item2
 		{
 			dataType="Layer";
 			name="Markers";
@@ -1470,7 +1279,7 @@ class Mission
 			id=61;
 			atlOffset=0.99263096;
 		};
-		class Item5
+		class Item3
 		{
 			dataType="Marker";
 			position[]={9601.0215,22.618,9607.873};
@@ -1483,7 +1292,7 @@ class Mission
 			id=63;
 			atlOffset=0.00026130676;
 		};
-		class Item6
+		class Item4
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1494,7 +1303,7 @@ class Mission
 			id=65;
 			atlOffset=3.4332275e-005;
 		};
-		class Item7
+		class Item5
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1504,7 +1313,7 @@ class Mission
 			title="Sniper";
 			id=66;
 		};
-		class Item8
+		class Item6
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1515,7 +1324,7 @@ class Mission
 			id=67;
 			atlOffset=0.00019073486;
 		};
-		class Item9
+		class Item7
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1526,7 +1335,7 @@ class Mission
 			id=68;
 			atlOffset=0.00019836426;
 		};
-		class Item10
+		class Item8
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1536,7 +1345,7 @@ class Mission
 			title="Radar Base";
 			id=69;
 		};
-		class Item11
+		class Item9
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1547,7 +1356,7 @@ class Mission
 			id=70;
 			atlOffset=0.00049209595;
 		};
-		class Item12
+		class Item10
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1558,7 +1367,7 @@ class Mission
 			id=71;
 			atlOffset=-0.0004196167;
 		};
-		class Item13
+		class Item11
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1569,7 +1378,7 @@ class Mission
 			id=72;
 			atlOffset=-1.9073486e-005;
 		};
-		class Item14
+		class Item12
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1579,7 +1388,7 @@ class Mission
 			title="Heli base";
 			id=73;
 		};
-		class Item15
+		class Item13
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1590,7 +1399,7 @@ class Mission
 			id=74;
 			atlOffset=0.00048065186;
 		};
-		class Item16
+		class Item14
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -1601,7 +1410,7 @@ class Mission
 			id=75;
 			atlOffset=-0.00010681152;
 		};
-		class Item17
+		class Item15
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1617,7 +1426,7 @@ class Mission
 			type="Land_SharpRock_spike";
 			atlOffset=0.79857635;
 		};
-		class Item18
+		class Item16
 		{
 			dataType="Group";
 			side="West";
@@ -1766,18 +1575,7 @@ class Mission
 			id=101;
 			atlOffset=-7.6293945e-006;
 		};
-		class Item19
-		{
-			dataType="Trigger";
-			position[]={5797.5444,54.927818,7358.8237};
-			class Attributes
-			{
-				activationBy="WEST";
-			};
-			id=103;
-			type="EmptyDetectorAreaR50";
-		};
-		class Item20
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1935,7 +1733,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item21
+		class Item18
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2093,7 +1891,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item22
+		class Item19
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2251,7 +2049,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item23
+		class Item20
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2409,7 +2207,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item24
+		class Item21
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2567,7 +2365,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item25
+		class Item22
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2725,7 +2523,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item26
+		class Item23
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2883,7 +2681,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item27
+		class Item24
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3068,7 +2866,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item28
+		class Item25
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3252,7 +3050,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item29
+		class Item26
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3436,7 +3234,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item30
+		class Item27
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3620,7 +3418,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item31
+		class Item28
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3804,7 +3602,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item32
+		class Item29
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3988,7 +3786,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item33
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4172,13 +3970,13 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item34
+		class Item31
 		{
 			dataType="Layer";
 			name="Weed field 1";
 			class Entities
 			{
-				items=3;
+				items=10;
 				class Item0
 				{
 					dataType="Trigger";
@@ -4186,7 +3984,7 @@ class Mission
 					class Attributes
 					{
 						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
-						onActivation="[{" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{ " \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						onActivation="[{" \n "  [""WeedFieldBurns_1""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
 						sizeA=14.434;
 						sizeB=7.4990001;
 						sizeC=5;
@@ -4541,8 +4339,166 @@ class Mission
 						nAttributes=13;
 					};
 				};
+				class Item3
+				{
+					dataType="Trigger";
+					position[]={5752.2031,51.264236,7370.7871};
+					class Attributes
+					{
+						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
+						onActivation="[{" \n "  [""WeedFieldBurns_2""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						sizeA=14.434;
+						sizeB=7.4990001;
+						sizeC=7.842;
+						timeout[]={5,10,15};
+						interuptable=1;
+						isRectangle=1;
+						isServerOnly=1;
+						triggerInterval=5;
+					};
+					id=128;
+					type="EmptyDetectorAreaR50";
+					atlOffset=-3.8146973e-006;
+				};
+				class Item4
+				{
+					dataType="Trigger";
+					position[]={5750.0278,54.445824,7342.8921};
+					angle=3.3820465;
+					class Attributes
+					{
+						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
+						onActivation="[{" \n "  [""WeedFieldBurns_3""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						sizeA=14.434;
+						sizeB=8.0240002;
+						sizeC=8.1140003;
+						timeout[]={5,10,15};
+						interuptable=1;
+						isRectangle=1;
+						isServerOnly=1;
+						triggerInterval=5;
+					};
+					id=129;
+					type="EmptyDetectorAreaR50";
+				};
+				class Item5
+				{
+					dataType="Trigger";
+					position[]={5743.5762,55.073242,7320.0059};
+					angle=0.26003662;
+					class Attributes
+					{
+						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
+						onActivation="[{" \n "  [""WeedFieldBurns_4""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						sizeA=14.974;
+						sizeB=7.4990001;
+						sizeC=7.4879999;
+						timeout[]={5,10,15};
+						interuptable=1;
+						isRectangle=1;
+						isServerOnly=1;
+						triggerInterval=5;
+					};
+					id=130;
+					type="EmptyDetectorAreaR50";
+				};
+				class Item6
+				{
+					dataType="Trigger";
+					position[]={5712.3042,52.206379,7328.0361};
+					angle=0.25274107;
+					class Attributes
+					{
+						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
+						onActivation="[{" \n "  [""WeedFieldBurns_5""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						sizeA=14.719;
+						sizeB=8.6990004;
+						sizeC=9.1409998;
+						timeout[]={5,10,15};
+						interuptable=1;
+						isRectangle=1;
+						isServerOnly=1;
+						triggerInterval=5;
+					};
+					id=131;
+					type="EmptyDetectorAreaR50";
+				};
+				class Item7
+				{
+					dataType="Trigger";
+					position[]={5718.3301,51.697697,7350.0781};
+					angle=0.2043955;
+					class Attributes
+					{
+						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
+						onActivation="[{" \n "  [""WeedFieldBurns_6""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						sizeA=14.434;
+						sizeB=7.9120002;
+						sizeC=7.3330002;
+						timeout[]={5,10,15};
+						interuptable=1;
+						isRectangle=1;
+						isServerOnly=1;
+						triggerInterval=5;
+					};
+					id=132;
+					type="EmptyDetectorAreaR50";
+				};
+				class Item8
+				{
+					dataType="Trigger";
+					position[]={5720.4849,51.287178,7371.4512};
+					angle=0.027070053;
+					class Attributes
+					{
+						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
+						onActivation="[{" \n "  [""WeedFieldBurns_7""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						sizeA=14.434;
+						sizeB=7.934;
+						sizeC=5.6290002;
+						timeout[]={5,10,15};
+						interuptable=1;
+						isRectangle=1;
+						isServerOnly=1;
+						triggerInterval=5;
+					};
+					id=133;
+					type="EmptyDetectorAreaR50";
+				};
+				class Item9
+				{
+					dataType="Trigger";
+					position[]={5719.4741,50.603561,7389.6348};
+					class Attributes
+					{
+						condition="[thisTrigger] call AFP_Scripts_fnc_incendiaryGrenadeInArea;";
+						onActivation="[{" \n "  [""WeedFieldBurns_8""] call CBA_fnc_serverEvent;" \n "  [_this, 170] call AFP_Scripts_fnc_removeVegetationInArea;" \n "}, thisTrigger, 10] call CBA_fnc_waitAndExecute;" \n " " \n "[{" \n "    deleteVehicle _this;" \n "}, thisTrigger, 180] call CBA_fnc_waitAndExecute; " \n "";
+						sizeA=14.434;
+						sizeB=7.948;
+						sizeC=6.0869999;
+						timeout[]={5,10,15};
+						interuptable=1;
+						isRectangle=1;
+						isServerOnly=1;
+						triggerInterval=5;
+					};
+					id=134;
+					type="EmptyDetectorAreaR50";
+				};
 			};
 			id=123;
+			atlOffset=0.026126862;
+		};
+		class Item32
+		{
+			dataType="Marker";
+			position[]={5734.8779,50.716999,7357.332};
+			name="marker_weed_zone";
+			text="@STR_AFP_Markers_Weed_Zone";
+			type="mil_warning";
+			colorName="ColorKhaki";
+			id=127;
+			atlOffset=-0.00038528442;
 		};
 	};
 	class Connections
@@ -4557,8 +4513,8 @@ class Mission
 			class Item0
 			{
 				linkID=0;
-				item0=107;
-				item1=103;
+				item0=122;
+				item1=111;
 				class CustomData
 				{
 					type="Sync";
@@ -4567,8 +4523,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=108;
-				item1=103;
+				item0=122;
+				item1=97;
 				class CustomData
 				{
 					type="Sync";
@@ -4577,8 +4533,8 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=109;
-				item1=103;
+				item0=104;
+				item1=128;
 				class CustomData
 				{
 					type="Sync";
@@ -4587,8 +4543,8 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=110;
-				item1=103;
+				item0=112;
+				item1=128;
 				class CustomData
 				{
 					type="Sync";
@@ -4597,8 +4553,8 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=104;
-				item1=103;
+				item0=105;
+				item1=129;
 				class CustomData
 				{
 					type="Sync";
@@ -4607,8 +4563,8 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=105;
-				item1=103;
+				item0=113;
+				item1=129;
 				class CustomData
 				{
 					type="Sync";
@@ -4617,8 +4573,8 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=106;
-				item1=103;
+				item0=114;
+				item1=130;
 				class CustomData
 				{
 					type="Sync";
@@ -4627,8 +4583,8 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=112;
-				item1=103;
+				item0=106;
+				item1=130;
 				class CustomData
 				{
 					type="Sync";
@@ -4637,8 +4593,8 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=113;
-				item1=103;
+				item0=107;
+				item1=131;
 				class CustomData
 				{
 					type="Sync";
@@ -4647,8 +4603,8 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=114;
-				item1=103;
+				item0=115;
+				item1=131;
 				class CustomData
 				{
 					type="Sync";
@@ -4657,8 +4613,8 @@ class Mission
 			class Item10
 			{
 				linkID=10;
-				item0=115;
-				item1=103;
+				item0=108;
+				item1=132;
 				class CustomData
 				{
 					type="Sync";
@@ -4668,7 +4624,7 @@ class Mission
 			{
 				linkID=11;
 				item0=116;
-				item1=103;
+				item1=132;
 				class CustomData
 				{
 					type="Sync";
@@ -4677,8 +4633,8 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=117;
-				item1=103;
+				item0=109;
+				item1=133;
 				class CustomData
 				{
 					type="Sync";
@@ -4687,8 +4643,8 @@ class Mission
 			class Item13
 			{
 				linkID=13;
-				item0=118;
-				item1=103;
+				item0=117;
+				item1=133;
 				class CustomData
 				{
 					type="Sync";
@@ -4697,8 +4653,8 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=122;
-				item1=111;
+				item0=118;
+				item1=134;
 				class CustomData
 				{
 					type="Sync";
@@ -4707,8 +4663,8 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=122;
-				item1=97;
+				item0=110;
+				item1=134;
 				class CustomData
 				{
 					type="Sync";

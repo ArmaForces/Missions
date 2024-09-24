@@ -2,30 +2,82 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <Polish>ArmaForces - Preset</Polish>
-            <English>ArmaForces - Mission Template</English>
+            <Polish>Szybkie Przeczyszczenie</Polish>
+            <English>Quick Purge</English>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <Polish>ArmaForces - Preset</Polish>
-            <English>ArmaForces - Mission Template</English>
+            <Polish>Szybkie Przeczyszczenie</Polish>
+            <English>Quick Purge</English>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <English>Long mission description
+            <!-- <English>Long mission description
 
-Visible when selecting mission and can be useful as description of the main mission task as well.</English>
-            <Polish>Długi opis misji
-
-Widoczny podczas wyboru misji i może być użyteczny jako opis głównego zadania.</Polish>
+Visible when selecting mission and can be useful as description of the main mission task as well.</English> -->
+            <Polish>Mission_Description</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <English>Short description which will be visible when loading the mission.</English>
-            <Polish>Krótki opis, który będzie widoczny podczas ładowania misji.</Polish>
+            <English>US Army tasked to capture Very Important Dude attempts daring drop from C-17</English>
+            <Polish>US Army dokonuje brawurowego zrzutu z C-17 celem zatrzymania Bardzo Ważnego Gościa</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <English>Briefing visible when selecting mission.</English>
-            <Polish>Briefing widoczny podczas wyboru misji.</Polish>
+            <!-- <English>Briefing visible when selecting mission.</English> -->
+            <Polish>Królestwo Regero, 2019
+
+Lokalny reżim to złe typy i robią zły biznes, któremu trzeba położyć kres. Dowództwo wytypowało 7 celów w prowincji, które muszą zostać wykonane jak najszybciej. Niestety nie wiemy gdzie znajduje się Bardzo Ważny Gościu, będziecie musieli poszukać informacji na jego temat.
+
+Ze względu na brak sojuszniczych sił w okolicy, musimy działać nieszablonowo. Dokonacie zrzutu z C-17 na niskiej wysokości, następnie zabezpieczycie pobliskie lotnisko. W międzyczasie C-17 wrócą po zaopatrzenie, które zostanie wykorzystane do przygotowania wysuniętej bazy.
+
+Po zabezpieczeniu Bardzo Ważnego Gościa wrócicie do samolotów i odlecicie.</Polish>
+        </Key>
+    </Package>
+
+    <!-- TASKS -->
+    <Package name="Tasks">
+        <!-- Drop Zone -->
+        <Key ID="STR_AFP_Tasks_Task_DropZone_Title">
+            <!-- <English>Low altitude drop</English> -->
+            <Polish>Zrzut z niskiej wysokości</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_DropZone_Description">
+            <!-- <English></English> -->
+            <Polish>Załadujecie po 2 Strykery do każdego C-17 i udacie się nad strefę zrzutu od wschodu. Cała strefa to tak naprawdę 2 osobne strefy "rozdzielone" małym laskiem. Jeżeli nie uda się dokonać zrzutu w pierwszej strefie, od razu próbujcie w drugiej. Macie tylko jedno podejście zanim przeciwnik się połapie.</Polish>
+        </Key>
+
+        <!-- Airfield -->
+        <Key ID="STR_AFP_Tasks_Task_Airfield_Title">
+            <!-- <English>Capture airfield</English> -->
+            <Polish>Zajmij lądowisko</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_Airfield_Description">
+            <!-- <English></English> -->
+            <Polish></Polish>
+        </Key>
+
+        <!-- Airfield -->
+        <Key ID="STR_AFP_Tasks_Task_BurnWeed_Title">
+            <!-- <English>Capture airfield</English> -->
+            <Polish>Spal zioło</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_BurnWeed_Description">
+            <!-- <English></English> -->
+            <Polish>W oznaczonej lokalizacji znajduje się 8 pól z ziołem. Spalcie je przy użyciu granatów zapalających AN-M14.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Markers">
+        <Key ID="STR_AFP_Markers_Airfield">
+            <English>Airfield</English>
+            <Polish>Lądowisko</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Drop_Zone">
+            <English>Drop Zone</English>
+            <Polish>Strefa Zrzutu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Weed_Zone">
+            <English>Weed Zone</English>
+            <Polish>Strefa Zioła</Polish>
         </Key>
     </Package>
 

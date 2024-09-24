@@ -16,10 +16,11 @@
 params ["_objects", "_interval"];
 
 private _objectToRemove = _objects deleteAt 0;
-deleteVehicle _objectToRemove;
-if (!isNil "_objectToRemove") then {
-    _objectToRemove hideObjectGlobal true;
-};
+_objectToRemove setDamage 1;
+// deleteVehicle _objectToRemove;
+// if (!isNil "_objectToRemove") then {
+    // _objectToRemove hideObjectGlobal true;
+// };
 
 // systemChat "Object removed";
 

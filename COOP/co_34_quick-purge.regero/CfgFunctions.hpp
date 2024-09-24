@@ -6,6 +6,7 @@ class CfgFunctions
         class crap
         {
             class incendiaryGrenadeInArea {};
+            class initializeUAV {};
             class removeVegetationInArea {};
             class removeVegetationInAreaLoop {};
         };

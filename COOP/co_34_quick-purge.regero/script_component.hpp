@@ -39,4 +39,9 @@
 // Preset stuff
 #define RESPAWN_HELPER_VR respawn
 
+// Mission stuff
+#define LOITER_POSITION [7736, 7589, 0]
+#define LOITER_RADIUS 3000
+#define LOITER_HEIGHT 2000
+
 #include "\x\cba\addons\main\script_macros_mission.hpp"
