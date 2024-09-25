@@ -99,6 +99,16 @@ Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i 
             <Polish>W pobliżu rzeki znajduje się baza z radarem. Dane z niego mogą być kluczowe do znalezienia Bardzo Ważnego Gościa.</Polish>
         </Key>
 
+        <!-- InterrogatePriest -->
+        <Key ID="STR_AFP_Tasks_Task_InterrogatePriest_Title">
+            <English>Interrogate priest</English>
+            <Polish>Przesłuchaj księdza</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_InterrogatePriest_Description">
+            <English>Local priest surely knows who goes to the church and who doesn't. He must have some information on Dude.</English>
+            <Polish>Lokalny ksiądz na pewno będzie wiedział kto chodzi a kto nie chodzi do kościoła. Musi mieć jakieś informacje o Gościu.</Polish>
+        </Key>
+
         <!-- Task3 -->
         <Key ID="STR_AFP_Tasks_Task_Task3_Title">
             <English>Task3</English>
@@ -118,6 +128,10 @@ Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i 
         <Key ID="STR_AFP_Markers_Drop_Zone">
             <English>Drop Zone</English>
             <Polish>Strefa Zrzutu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_FOB">
+            <English>Forward Operating Base</English>
+            <Polish>Wysunięta Baza Operacyjna</Polish>
         </Key>
         <Key ID="STR_AFP_Markers_Heli_Base">
             <English>Helicopter Base</English>

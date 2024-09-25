@@ -56,9 +56,12 @@ class CfgTasks
         conditionEventsFailed[] = { "afmf_task_download_failed" };
     };
 
-    class Task3
+    class InterrogatePriest
     {
+        marker = "sys_marker_church";
+        icon = "meet";
 
+        conditionEventsCanceled[] = { "PriestIsGone" };
     };
 
     class Task4

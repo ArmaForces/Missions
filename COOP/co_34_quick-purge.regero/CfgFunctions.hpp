@@ -13,6 +13,7 @@ class CfgFunctions
 
         class equipment
         {
+            class initResupplyEquipment {};
             class initVehicleEquipment {};
         };
 
