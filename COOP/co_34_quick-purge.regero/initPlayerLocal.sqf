@@ -9,5 +9,5 @@ CUP_stopLampCheck = true;
 }, [], -1] call CBA_fnc_waitUntilAndExecute;
 
 ["MissionStart", {
-    // TODO: Intro text
+    [FUNC(initInfoText), [], 5] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;

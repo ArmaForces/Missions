@@ -26,6 +26,12 @@ class CfgFunctions
             class playerActions {};
         };
 
+        class intro
+        {
+            class infoText {};
+            class initInfoText {};
+        };
+
         class tasks
         {
             // Tasks

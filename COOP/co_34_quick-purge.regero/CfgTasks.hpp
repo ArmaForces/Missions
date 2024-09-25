@@ -7,7 +7,6 @@ class CfgTasks
     {
         icon = "search";
 
-        // TODO: Place the dude
         conditionEventsSuccess[] = { "DudeArrested" };
         conditionEventsFailed[] = { "DudeDeadge" };
     };
@@ -69,6 +68,6 @@ class CfgTasks
 
     class Taks5
     {
-        
+
     };
 };
