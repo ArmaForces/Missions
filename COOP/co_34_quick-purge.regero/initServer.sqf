@@ -10,3 +10,6 @@ if (!isNil QUOTE(RESPAWN_HELPER_VR)) then {
 }] call CBA_fnc_addEventHandler;
 
 setTimeMultiplier 0.1;
+
+EAST setFriend [CIVILIAN, 1];
+CIVILIAN setFriend [EAST, 1];

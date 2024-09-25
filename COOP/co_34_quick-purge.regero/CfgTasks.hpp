@@ -73,8 +73,11 @@ class CfgTasks
         conditionEventsFailed[] = { "ManagerKilled" };
     };
 
-    class Taks5
+    class TakistaniOfficer
     {
+        marker = "sys_marker_checkpoint";
+        icon = "kill";
 
+        conditionEventsSuccess[] = { "OfficerKilled" };
     };
 };

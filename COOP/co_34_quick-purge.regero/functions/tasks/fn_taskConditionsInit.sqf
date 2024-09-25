@@ -17,6 +17,10 @@ if (!isServer) exitWith { nil };
 GVAR(conditionsWithEvents) = [];
 
 [{
+    !alive takistani_officer
+}, "OfficerKilled"] call FUNC(taskConditionsAdd);
+
+[{
     !alive factory_manager
 }, "ManagerKilled"] call FUNC(taskConditionsAdd);
 

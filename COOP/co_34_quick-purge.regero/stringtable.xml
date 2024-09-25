@@ -115,18 +115,18 @@ Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i 
             <Polish>Poturbuj kierownika fabryki czołgów</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_TankFactory_Description">
-            <English>Despite it's name, it doesn't produce tanks. Well, T-34-85M doesn't count these days. He's a good friend of Dude, so if we beat him, maybe he will go cry to Dude. Just don't kill him.</English>
-            <Polish>Pomimo swojej nazwy wcale nie produkuje czołgów. No chyba że ktoś liczy T-34-85M jako czołg. Kierownik jest dobrym ziomkiem Gościa, więc jest szansa, że pójdzie mu popłakać jak go pobijemy.</Polish>
+            <English>Despite it's name, it doesn't produce tanks. Well, T-34-85M doesn't count these days. He's a good friend of Dude, so if we beat him, maybe he will go cry to Dude after waking up. Just don't kill him.</English>
+            <Polish>Pomimo swojej nazwy wcale nie produkuje czołgów. No chyba że ktoś liczy T-34-85M jako czołg. Kierownik jest dobrym ziomkiem Gościa, więc jest szansa, że jak się już obudzi to pójdzie mu popłakać.</Polish>
         </Key>
 
-        <!-- Task3 -->
-        <Key ID="STR_AFP_Tasks_Task_Task3_Title">
-            <English>Task3</English>
-            <Polish>Task3</Polish>
+        <!-- TakistaniOfficer -->
+        <Key ID="STR_AFP_Tasks_Task_TakistaniOfficer_Title">
+            <English>Kill Takistani officer</English>
+            <Polish>Zabij Takistańskiego oficera</Polish>
         </Key>
-        <Key ID="STR_AFP_Tasks_Task_Task3_Description">
-            <English>Task3</English>
-            <Polish>Task3</Polish>
+        <Key ID="STR_AFP_Tasks_Task_TakistaniOfficer_Description">
+            <English>Get the commander of the checkpoint. Because why not, he must be guilty of something.</English>
+            <Polish>Dorwij dowódcę puntu kontrolnego. Ponieważ dlaczego nie, na pewno ma coś na sumieniu.</Polish>
         </Key>
     </Package>
 
