@@ -41,4 +41,5 @@ class CfgDebriefingSections {
 };
 
 #include "CfgFunctions.hpp"
+#include "CfgInfoText.hpp"
 #include "CfgTasks.hpp"

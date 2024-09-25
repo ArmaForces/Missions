@@ -12,10 +12,8 @@
             <English>Quick Purge</English>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
-            <!-- <English>Long mission description
-
-Visible when selecting mission and can be useful as description of the main mission task as well.</English> -->
-            <Polish>Mission_Description</Polish>
+            <English>US Army tasked to capture Very Important Dude attempts daring drop from C-17</English>
+            <Polish>US Army dokonuje brawurowego zrzutu z C-17 celem zatrzymania Bardzo Ważnego Gościa</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
             <English>US Army tasked to capture Very Important Dude attempts daring drop from C-17</English>
@@ -37,6 +35,15 @@ Lokalny reżim to złe typy i robią zły biznes, któremu trzeba położyć kre
 Ze względu na brak sojuszniczych sił w okolicy, musimy działać nieszablonowo. Dokonacie zrzutu z C-17 na niskiej wysokości, następnie zabezpieczycie pobliskie lotnisko. W międzyczasie C-17 wrócą po zaopatrzenie, które zostanie wykorzystane do przygotowania wysuniętej bazy.
 
 Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i odlecicie.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Scripts_CurrentLocation">
+            <English>C-17 near Kingdom of Regero's coast</English>
+            <Polish>C-17 w pobliżu wybrzeża Królestwa Regero</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_USArmyInfantry">
+            <English>US Army Motorized Infantry Platoon</English>
+            <Polish>Zmotoryzowany pluton piechoty US Army</Polish>
         </Key>
     </Package>
 
