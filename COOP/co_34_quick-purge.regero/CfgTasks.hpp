@@ -24,8 +24,8 @@ class CfgTasks
         marker = "marker_morabin_airfield";
         icon = "plane";
 
-        // TODO: Handle AirfieldClear event
-        conditionEventsSuccess[] = { "AirfieldClear" };
+        conditionEventsSuccessRequired = 2;
+        conditionEventsSuccess[] = { "AirfieldClear", "FOBBuilt" };
     };
 
     // "Secondary" tasks
@@ -64,9 +64,13 @@ class CfgTasks
         conditionEventsCanceled[] = { "PriestIsGone" };
     };
 
-    class Task4
+    class TankFactory
     {
+        marker = "marker_tank_factory";
+        icon = "kill";
 
+        conditionEventsSuccess[] = { "ManagerBeaten" };
+        conditionEventsFailed[] = { "ManagerKilled" };
     };
 
     class Taks5

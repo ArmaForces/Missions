@@ -109,6 +109,16 @@ Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i 
             <Polish>Lokalny ksiądz na pewno będzie wiedział kto chodzi a kto nie chodzi do kościoła. Musi mieć jakieś informacje o Gościu.</Polish>
         </Key>
 
+        <!-- TankFactory -->
+        <Key ID="STR_AFP_Tasks_Task_TankFactory_Title">
+            <English>Beat up tank factory manager</English>
+            <Polish>Poturbuj kierownika fabryki czołgów</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_TankFactory_Description">
+            <English>Despite it's name, it doesn't produce tanks. Well, T-34-85M doesn't count these days. He's a good friend of Dude, so if we beat him, maybe he will go cry to Dude. Just don't kill him.</English>
+            <Polish>Pomimo swojej nazwy wcale nie produkuje czołgów. No chyba że ktoś liczy T-34-85M jako czołg. Kierownik jest dobrym ziomkiem Gościa, więc jest szansa, że pójdzie mu popłakać jak go pobijemy.</Polish>
+        </Key>
+
         <!-- Task3 -->
         <Key ID="STR_AFP_Tasks_Task_Task3_Title">
             <English>Task3</English>
