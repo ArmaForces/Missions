@@ -22,57 +22,84 @@ Visible when selecting mission and can be useful as description of the main miss
             <Polish>US Army dokonuje brawurowego zrzutu z C-17 celem zatrzymania Bardzo Ważnego Gościa</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <!-- <English>Briefing visible when selecting mission.</English> -->
+            <English>Kingdom of Regero, 2019
+
+Local regime is a bunch of bad guys doing ugly business that needs to be taken care of. Command nominated 7 targets in the province that must be accomplished as fast as possible. Unfortunately we don't know where Dude actually is, so you'll need to do some digging on his whereabouts.
+
+Considering that there are no friendly forces nearby, we need to get creative. You'll drop from C-17 from low altitude using LAPES procedure, and proceed to secure nearby airfield. In the meantime, C-17s will go back for the remaining supplies that will be used to prepare FOB on the airfield.
+
+After arresting Dude, go back to planes and evacuate ASAP.
+            </English>
             <Polish>Królestwo Regero, 2019
 
 Lokalny reżim to złe typy i robią zły biznes, któremu trzeba położyć kres. Dowództwo wytypowało 7 celów w prowincji, które muszą zostać wykonane jak najszybciej. Niestety nie wiemy gdzie znajduje się Bardzo Ważny Gościu, będziecie musieli poszukać informacji na jego temat.
 
 Ze względu na brak sojuszniczych sił w okolicy, musimy działać nieszablonowo. Dokonacie zrzutu z C-17 na niskiej wysokości, następnie zabezpieczycie pobliskie lotnisko. W międzyczasie C-17 wrócą po zaopatrzenie, które zostanie wykorzystane do przygotowania wysuniętej bazy.
 
-Po zabezpieczeniu Bardzo Ważnego Gościa wrócicie do samolotów i odlecicie.</Polish>
+Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i odlecicie.</Polish>
         </Key>
     </Package>
 
     <!-- TASKS -->
     <Package name="Tasks">
+        <!-- Very Important Dude -->
+        <Key ID="STR_AFP_Tasks_Task_CaptureVeryImportantDude_Title">
+            <English>Arrest Very Important Dude</English>
+            <Polish>Aresztuj Bardzo Ważnego Gościa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CaptureVeryImportantDude_Description">
+            <English>Very Important Dude is our main target. Unfortunately he's hiding very well and we cannot track him down. We're sure he's on the island though. During your tasks watch out for any clues on his whereabouts that might lead us to him. Arrest him on sight, target cannot be killed!</English>
+            <Polish>Bardzo Ważny Gościu jest naszym głównym celem. Niestety bardzo dobrze się ukrywa i nie jesteśmy w stanie określić jego pozycji. Wiemy tylko, że znajduje się gdzieś na wyspie. W trakcie działań bądźcie uważni na wszelkie wskazówki, które mogą nas do niego doprowadzić. W przypadku spotkania aresztować, cel nie może zginąć!</Polish>
+        </Key>
+
         <!-- Drop Zone -->
         <Key ID="STR_AFP_Tasks_Task_DropZone_Title">
-            <!-- <English>Low altitude drop</English> -->
+            <English>Low altitude drop</English>
             <Polish>Zrzut z niskiej wysokości</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_DropZone_Description">
-            <!-- <English></English> -->
-            <Polish>Załadujecie po 2 Strykery do każdego C-17 i udacie się nad strefę zrzutu od wschodu. Cała strefa to tak naprawdę 2 osobne strefy "rozdzielone" małym laskiem. Jeżeli nie uda się dokonać zrzutu w pierwszej strefie, od razu próbujcie w drugiej. Macie tylko jedno podejście zanim przeciwnik się połapie.</Polish>
+            <English>Load 2 Strykers to each C-17 using red load action and fly to the drop zone in formation. Whole zone is actually split into 2 drop zones separated by small forest in the middle. If you don't manage to drop in the first zone, immediately try the second one. You have only one attempt before enemy figures out what's happening.</English>
+            <Polish>Załadujecie po 2 Strykery do każdego C-17 i w formacji udacie się nad strefę zrzutu od wschodu. Cała strefa to tak naprawdę 2 osobne strefy "rozdzielone" małym laskiem. Jeżeli nie uda się dokonać zrzutu w pierwszej strefie, od razu próbujcie w drugiej. Macie tylko jedno podejście zanim przeciwnik się połapie.</Polish>
         </Key>
 
         <!-- Airfield -->
         <Key ID="STR_AFP_Tasks_Task_Airfield_Title">
-            <!-- <English>Capture airfield</English> -->
+            <English>Capture airfield</English>
             <Polish>Zajmij lądowisko</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_Airfield_Description">
-            <!-- <English></English> -->
+            <English>Airfield will be necessary to deliver remaining supplies necessary for the mission. Supplies will contain incendiary grenades AN-M14 and flashbangs among other equipment.</English>
             <Polish>Lądowisko będzie Wam potrzebne, żeby reszta zaopatrzenia mogła dotrzeć. Po zajęciu lotniska będziecie mieli dostępne m.in. granaty zapalające AN-M14 oraz granaty hukowo-błyskowe.</Polish>
         </Key>
 
         <!-- Burn Weed -->
         <Key ID="STR_AFP_Tasks_Task_BurnWeed_Title">
-            <!-- <English>Capture airfield</English> -->
+            <English>Burn weed</English>
             <Polish>Spal zioło</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_BurnWeed_Description">
-            <!-- <English></English> -->
+            <English>There are 8 fields in weed zone. Burn them using AN-M14 incendiary grenades. That will surely piss Very Important Dude off.</English>
             <Polish>W strefie zioła znajduje się 8 pól z ziołem. Spalcie je przy użyciu granatów zapalających AN-M14. To na pewno rozjuszy Bardzo Ważnego Gościa.</Polish>
         </Key>
 
         <!-- Steal Radar Data -->
         <Key ID="STR_AFP_Tasks_Task_StealRadarData_Title">
-            <!-- <English>Capture airfield</English> -->
+            <English>Fetch data from radar</English>
             <Polish>Pobierz dane z radaru</Polish>
         </Key>
         <Key ID="STR_AFP_Tasks_Task_StealRadarData_Description">
-            <!-- <English></English> -->
+            <English>There's a radar base near the river. Its data might be crucial to finding where Very Important Dude is hiding.</English>
             <Polish>W pobliżu rzeki znajduje się baza z radarem. Dane z niego mogą być kluczowe do znalezienia Bardzo Ważnego Gościa.</Polish>
+        </Key>
+
+        <!-- Task3 -->
+        <Key ID="STR_AFP_Tasks_Task_Task3_Title">
+            <English>Task3</English>
+            <Polish>Task3</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_Task3_Description">
+            <English>Task3</English>
+            <Polish>Task3</Polish>
         </Key>
     </Package>
 

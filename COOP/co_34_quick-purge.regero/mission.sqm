@@ -4970,6 +4970,7 @@ class Mission
 					class Attributes
 					{
 						text="Players detected in Drop Zone";
+						onActivation="[""PlayersInDropZone""] call CBA_fnc_serverEvent;";
 						sizeA=803.53802;
 						sizeB=248.99899;
 						sizeC=0;

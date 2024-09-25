@@ -11,6 +11,11 @@ class CfgFunctions
             class removeVegetationInAreaLoop {};
         };
 
+        class equipment
+        {
+            class initVehicleEquipment {};
+        };
+
         class gui
         {
             // For ViewDistance and GroupRename GUIs
@@ -19,6 +24,14 @@ class CfgFunctions
             class setViewDistance {};
             class viewDistanceGUI {};
             class playerActions {};
+        };
+
+        class tasks
+        {
+            // Tasks
+            class taskConditionsAdd {};
+            class taskConditionsInit { postInit = 1; };
+            class taskConditionsLoop {};
         };
     };
 };

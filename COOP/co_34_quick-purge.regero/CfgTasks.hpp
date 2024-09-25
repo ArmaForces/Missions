@@ -2,19 +2,34 @@ class CfgTasks
 {
     tag = "AFP_Tasks";
 
-    // Put your tasks here
+    // Main task
+    class CaptureVeryImportantDude
+    {
+        icon = "search";
+
+        // TODO: Place the dude
+        conditionEventsSuccess[] = { "DudeArrested" };
+        conditionEventsFailed[] = { "DudeDeadge" };
+    };
+
     class DropZone
     {
         marker = "marker_drop_zone";
         icon = "land";
+
+        conditionEventsSuccess[] = { "PlayersInDropZone" };
     };
 
     class Airfield
     {
         marker = "marker_morabin_airfield";
         icon = "plane";
+
+        // TODO: Handle AirfieldClear event
+        conditionEventsSuccess[] = { "AirfieldClear" };
     };
 
+    // "Secondary" tasks
     class BurnWeed
     {
         marker = "marker_weed_zone";
@@ -40,5 +55,20 @@ class CfgTasks
 
         conditionEventsSuccess[] = { "afmf_task_download_successful" };
         conditionEventsFailed[] = { "afmf_task_download_failed" };
+    };
+
+    class Task3
+    {
+
+    };
+
+    class Task4
+    {
+
+    };
+
+    class Taks5
+    {
+        
     };
 };
