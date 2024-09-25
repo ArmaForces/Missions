@@ -7,3 +7,7 @@ CUP_stopLampCheck = true;
     // Add action to change view distance and group names
     call FUNC(playerActions);
 }, [], -1] call CBA_fnc_waitUntilAndExecute;
+
+["MissionStart", {
+    // TODO: Intro text
+}] call CBA_fnc_addEventHandler;

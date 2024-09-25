@@ -5,5 +5,8 @@ if (!isNil QUOTE(RESPAWN_HELPER_VR)) then {
 };
 
 ["MissionStart", {
+    setTimeMultiplier 1;
     ["USAF_RQ4A"] call FUNC(initializeUAV);
 }] call CBA_fnc_addEventHandler;
+
+setTimeMultiplier 0.1;

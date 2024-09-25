@@ -19,8 +19,8 @@ overviewText = CSTRING(Mission_Description); // Visible in the mission selection
 
 class Header {
     gameType = Coop;
-    minPlayers = 20; // Minimum viable number of players
-    maxPlayers = 51; // Maximum possible number of players (inc. zeus), setting too low might prevent people from joining server
+    minPlayers = 22; // Minimum viable number of players
+    maxPlayers = 34; // Maximum possible number of players (inc. zeus), setting too low might prevent people from joining server
 };
 
 /* Other stuff */

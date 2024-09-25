@@ -14,10 +14,13 @@
 
 params ["_vehicle"];
 
+// TODO: Consider replacing M16A4 with rhs_weap_m4a1_carryhandle_mstock
+
 private _equipmentList = [
 	// Primary weapon ammo
 	["rhs_mag_30Rnd_556x45_M855A1_PMAG", 30],
-	["rhsusf_200Rnd_556x45_mixed_soft_pouch", 5],
+	["rhsusf_200Rnd_556x45_soft_pouch", 5],
+	["rhsusf_mag_15Rnd_9x19_JHP", 4],
 
 	// Launchers
 	["rhs_weap_m72a7", 2],
