@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=381;
+		nextID=383;
 	};
 	class MarkerIDProvider
 	{
@@ -1412,7 +1412,7 @@ class Mission
 					name="Bases";
 					class Entities
 					{
-						items=3;
+						items=5;
 						class Item0
 						{
 							dataType="Marker";
@@ -1445,6 +1445,26 @@ class Mission
 							type="mil_warning";
 							colorName="ColorEAST";
 							id=380;
+						};
+						class Item3
+						{
+							dataType="Marker";
+							position[]={7006,64.4592,7532};
+							name="marker_outpost_1";
+							text="@STR_AFP_Markers_Outpost";
+							type="mil_warning";
+							colorName="ColorEAST";
+							id=381;
+						};
+						class Item4
+						{
+							dataType="Marker";
+							position[]={7520,22.84,6232};
+							name="marker_outpost_2";
+							text="@STR_AFP_Markers_Outpost";
+							type="mil_warning";
+							colorName="ColorEAST";
+							id=382;
 						};
 					};
 					id=144;

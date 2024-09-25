@@ -116,6 +116,10 @@ Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i 
             <English>Helicopter Base</English>
             <Polish>Baza helikopterów</Polish>
         </Key>
+        <Key ID="STR_AFP_Markers_Outpost">
+            <English>Enemy Outpost</English>
+            <Polish>Wrogi posterunek</Polish>
+        </Key>
         <Key ID="STR_AFP_Markers_Radar_Base">
             <English>Radar Base</English>
             <Polish>Baza radarowa</Polish>
