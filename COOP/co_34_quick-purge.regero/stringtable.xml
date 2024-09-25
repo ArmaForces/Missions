@@ -85,6 +85,10 @@ Po zabezpieczeniu Bardzo Ważnego Gościa wrócicie do samolotów i odlecicie.</
             <English>Drop Zone</English>
             <Polish>Strefa Zrzutu</Polish>
         </Key>
+        <Key ID="STR_AFP_Markers_Heli_Base">
+            <English>Helicopter Base</English>
+            <Polish>Baza helikopterów</Polish>
+        </Key>
         <Key ID="STR_AFP_Markers_Radar_Base">
             <English>Radar Base</English>
             <Polish>Baza radarowa</Polish>
