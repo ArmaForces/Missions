@@ -22,15 +22,19 @@ After arresting Dude, go back to planes and evacuate ASAP.
 3. Do 5 more things while looking for intel on Very Important Dude
    1. Steal Radar Data
    2. Burn Weed
-   3. 3
-   4. 4
-   5. 5
-4. Capture Very Important Dude
+   3. Interrogate Priest
+   4. Beat up tank factory manager
+   5. Kill Takistani oficer on checkpoint
+4. Arrest Very Important Dude
 5. Escape the island using C-17s
 
 ### Execution
 
-TODO
+See briefing section.
+
+After securing the airfield, there's no particular order in which tasks should be completed.
+
+Keep in mind that you're here to complete the tasks, not kill all the bad guys. Focus solely on them and don't try to clear everything.
 
 ## Assets
 
@@ -47,7 +51,7 @@ Total slots: 34
 
 ## Played on
 
-- Scheduled for 2024-09-25
+- 2024-09-25
 
 ## Authors
 
