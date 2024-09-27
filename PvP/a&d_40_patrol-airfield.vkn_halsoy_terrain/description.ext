@@ -1,0 +1,49 @@
+#include "script_component.hpp"
+#include "gui\gui_init.hpp"
+
+/* Respawn stuff */
+respawn = 3;
+respawnOnStart = -1;
+respawnDelay = 1e10;
+respawnTemplates[] = {"afm_respawn_default"};
+// Jeśli misja nie przewiduje standardowego respawnu na czas to można usunąć "Counter".
+// Tj. dla misji permadeath i z własnym respawnem np. po wykonaniu zadania.
+
+disableChannels[] = {1, 2, 3, 4, 5};
+
+/* Mission description and stuff */
+author = "3Mydlo3";
+onLoadIntro = CSTRING(Mission_ShortDescription);
+briefingName = CSTRING(DisplayName);
+onLoadMission = CSTRING(Mission_ShortDescription);
+onLoadName = CSTRING(Mission_Title);
+
+loadScreen = "images\screen.paa";
+overviewPicture = "images\screen.paa"
+
+/* Other stuff */
+disabledAI = true;
+joinUnassigned = 0;
+
+// Bibloteka funkcji
+class CfgFunctions
+{
+    #include "AF_functions.hpp"
+};
+
+// Ustawienia CBA muszą być dodane poprzez CBA XEH PreInit, w przeciwnym wypadku nie będą dostępne w edytorze
+class Extended_PreInit_EventHandlers
+{
+
+};
+
+// https://github.com/acemod/ACEX/tree/master/addons/killtracker
+class CfgDebriefingSections {
+    class acex_killTracker {
+        title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
+};
+
+#include "CfgTasks.hpp"
+#include "CfgDebriefing.hpp"
