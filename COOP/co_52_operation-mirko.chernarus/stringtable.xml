@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Operacja Mirko</Polish>
+            <English>Operation Mirko</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Operacja Mirko</Polish>
+            <English>Operation Mirko</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English></English>
+            <Polish></Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <!-- <English>Short description which will be visible when loading the mission.</English> -->
+            <Polish>Banda randomów z internetu zostaje wysłana odbić Czarnoruś z rąk rosyjskiego okupanta.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <!-- <English>Briefing visible when selecting mission.</English> -->
+            <Polish>Banda randomów z internetu zostaje wysłana odbić Czarnoruś z rąk rosyjskiego okupanta..</Polish>
+        </Key>
+    </Package>
+
+    <Package name="GUI">
+        <!-- COMMON -->
+        <Key ID="STR_AFP_GUI_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_AFP_GUI_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_AFP_GUI_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_AFP_GUI_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_AFP_GUI_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
