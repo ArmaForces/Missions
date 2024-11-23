@@ -1,0 +1,1 @@
+[WEST, 100000] call BIS_fnc_respawnTickets;
