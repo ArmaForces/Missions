@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Żelazna Kurtyna - Kontratak</Polish>
+            <English>Iron Curtain - Counterattack</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Kontratak</Polish>
+            <English>Counterattack</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <Polish>Rosche, 21 Lipca 1979
+
+Panzerjägerabteilung 3 zdołał przebić się do resztek Panzerbrigade 2 i wyciągnąć ich z okrążenia. Wykorzystując zaskoczenie przeciwnika wspólnie przypuścili kontratak drogą 493 w kierunku Ratzlingen.
+                
+Kilka elementów odłączyło się i przypuściło samotny rajd na tyły Ratzlingen by zaskoczyć wroga. Żaden z nich nie wrócił.
+                
+Kontratak Panzerausbildungsregiment 23 został ostatecznie powstrzymany na wysokości Gross Liedern.
+                
+Zachodnioniemieckie oddziały Jägerów z Jägerabteilung 142 zabezpieczyły wioski Tatern, Klein Liedern oraz Gross Liedern. Reszta sił przegrupowuje się na lotnisku.
+                
+4 godziny po poprzednich wydarzeniach.
+                
+Jednostki NATO oraz Paktu Warszawskiego, dotychczasowo biernie obserwujące przebieg walk, dołączają się do wojny.
+                
+Panzerbrigade 2 otrzymuje uzupełnienie najnowszym sprzętem a także wsparcie 4. Batalionu Pancernego USA.
+</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <!-- <English>Elements of Panzerbrigade 2 are encircled in Hansted. Panzerjägerabteilung 3 moves for the rescue.</English> -->
+            <Polish>Elementy Panzerbrigade 2 ruszają z kontratakiem przy pomocy Amerykanów</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <!-- <English>Save the Panzerbrigade 2 and commence a counterattack together.</English> -->
+            <Polish>Elementy Panzerbrigade 2 ruszają z kontratakiem przy pomocy Amerykanów.</Polish>
+        </Key>
+
+        <!-- TASKS -->
+
+        <!-- LAND -->
+        
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evac</English>
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+        <!-- LOCATIONS/MARKERS -->
+        <Key ID="STR_AFP_Scripts_Bridge">
+            <English>Bridge</English>
+            <Polish>Most</Polish>
+        </Key>
+        <Key ID="@STR_AFP_Scripts_BridgeBlocked">
+            <English>Blocked bridge</English>
+            <Polish>Zablokowany most</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_BridgeWooden">
+            <English>Wooden bridge</English>
+            <Polish>Przeprawa drewniana</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Minefield">
+            <English>Minefield</English>
+            <Polish>Pole minowe</Polish>
+        </Key>
+
+        <!-- WARGAY -->
+        <Key ID="STR_AFP_Scripts_DamageAlarmEnabled">
+            <English>Damage alarm</English>
+            <Polish>Alarm o uszkodzeniach</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DamageAlarmEnabled_Description">
+            <English>Audible alarm when your vehicle gets damaged.</English>
+            <Polish>Alarm dźwiękowy gdy Twój pojazd zostanie uszkodzony.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DamageReceived">
+            <English>Damage received</English>
+            <Polish>Otrzymano uszkodzenia</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentFailure">
+            <English>Failed deploying vehicle</English>
+            <Polish>Nie udało się rozmieścić pojazdu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentOfVehicle">
+            <English>Deployed new '%1' vehicle.</English>
+            <Polish>Rozmieszczono nowy pojazd '%1'.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentOfVehicleNoLongerPossible">
+            <English>Deployment of new '%1' vehicle is no longer possible.</English>
+            <Polish>Rozmieszczenie nowych pojazdów '%1' już nie jest możliwe.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelInterrupted">
+            <English>Refuel interrupted %1 percent</English>
+            <Polish>Tankowanie przerwane %1 procent</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelProgress">
+            <English>Refuel progress %1 percent</English>
+            <Polish>Postęp tankowania %1 procent</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelFinished">
+            <English>Refuel finished</English>
+            <Polish>Tankowanie zakończone</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairFinished">
+            <English>Repair finished</English>
+            <Polish>Naprawa zakończona</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairProgress">
+            <English>Repair progress %1/%2 HP</English>
+            <Polish>Postęp naprawy %1/%2 PŻ</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairInterrupted">
+            <English>Repair interrupted %1/%2 HP</English>
+            <Polish>Naprawa przerwana %1/%2 PŻ</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RearmFinished">
+            <English>Rearm finished</English>
+            <Polish>Przezbrojenie zakończone</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RearmInterrupted">
+            <English>Rearm interrupted</English>
+            <Polish>Przezbrojenie przerwane</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Settings_DisplayName">
+            <Polish>Mydlana Kampania Wargay</Polish>
+            <English>Mydlana Kampania Wargay</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Settings_DisplayNameClient">
+            <Polish>Mydlana Kampania Wargay - Klient</Polish>
+            <English>Mydlana Kampania Wargay - Client</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_ShowDamageFeedback">
+            <English>Show Damage Feedback</English>
+            <Polish>Informacja zwrotna o obrażeniach</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_ShowDamageFeedback_Description">
+            <English>Adds feedback message with dealt damage information - potential damage, armor hit and actual damage.</English>
+            <Polish>Dodaje informację zwrotną o zadanych obrażeniach - obrażenia potencjalne, trafiony pancerz i faktycznie zadane obrażenia.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIcons">
+            <English>Unit Icons</English>
+            <Polish>Znaczniki jednostek</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconsSize">
+            <English>Icon size multiplier</English>
+            <Polish>Mnożnik rozmiaru znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeDependsOnDistance">
+            <English>Icon size depending on distance</English>
+            <Polish>Rozmiar znaczników zależny od odległości</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeDependsOnDistance_Description">
+            <English>Enables autoscaling of icon size depending on the distance to the unit. The closer the unit is, the bigger the icon gets (up to 2x the standard size when it's 50 m or closer).</English>
+            <Polish>Włącza skalowanie rozmiaru znaczników w zależności od odległości do jednostki. Im bliżej jest jednostka, tym większy będzie jej znacznik (do 2x normalnego rozmiaru jeżeli jest w odległości do 50 m).</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeMultiplier">
+            <English>Icon size multiplier</English>
+            <Polish>Mnożnik rozmiaru znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeMultiplier_Description">
+            <English>Allows adjusting size of icons shown above known units</English>
+            <Polish>Pozwala dostosować rozmiar znaczników wyświetlanych nad znanymi jednostkami</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconTextSizeMultiplier">
+            <English>Icon text size multiplier</English>
+            <Polish>Mnożnik rozmiaru tekstu znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconTextSizeMultiplier_Description">
+            <English>Allows adjusting size of text shown above targeted unit</English>
+            <Polish>Pozwala dostosować rozmiar tekstu wyświetlanego nad namierzoną jednostką</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitLost">
+            <English>Lost %1 %2</English>
+            <Polish>Utracono %1 %2</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_VehicleInCombat">
+            <English>Action interrupted, vehicle is in combat.</English>
+            <Polish>Akcja przerwana, pojazd uczestniczy w walce.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_XpReceived">
+            <English>Received %1 XP. New total from last death: %2 XP. Grand total: %3 XP</English>
+            <Polish>Otrzymano %1 PD. Całkowite PD od ostatniej śmierci: %2. PD w kampanii: %3 XP</Polish>
+        </Key>
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
