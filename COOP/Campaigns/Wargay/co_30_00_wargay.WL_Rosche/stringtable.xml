@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Żelazna Kurtyna</Polish>
+            <English>Iron Curtain</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Żelazna Kurtyna</Polish>
+            <English>Iron Curtain</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English>Rosche, 21 June 1975
+
+The tensions between two Germanies is at a peak.
+
+Border Guards report a skirmish in the area of Bergen. West German Intelligence has detected Panzerausbildungsregiment 19 movement not far from the border.
+
+Panzerbrigade 2 near Uelzen is put on alert. Border Guards confirm a violation of the territory of the Federal Republic by the East Germans. The Chancellery in Bonn declares a state of war.
+
+East German forces are approaching from the east. Their last reported position was on 493 in Waddeweitz, just 12 km from Rosche and around 25 km from Uelzen Flughafen. They have also breached the border in Bergen and are coming for Ellenberg down the road 71.
+
+Enemy will reach the Elbe Lateral Canal within half an hour. Your task is to prevent them from crossing the canal.
+</English>
+            <Polish>Rosche, 21 Lipca 1975
+
+Napięcie pomiędzy podzielonymi Niemcami sięga zenitu.
+
+Straż Graniczna zgłasza potyczkę w obszarze Bergen. Zachodnioniemiecki wywiad zauważył wzmożoną aktywność Panzerausbildungsregiment 19 niedaleko granicy.
+
+Panzerbrigade 2 w pobliżu Ulzen zostaje postawiona w stan gotowości. Straż Graniczna potwierdza naruszenie terytorium Republiki Federalnej przez Republikę Demokratyczną. Kanclerz w Bonn ogłasza stan wojny.
+
+Siły wschodnioniemieckie zbliżają się od wschodu. Ich ostatnia znana pozycja była na drodze 493 w pobliżu Waddeweitz, jedynie 12 km od Rosche i około 25 km od Lotniska w Uelzen. Przekroczyli także granicę w Bergen i jadą w stronę Ellenberg drogą 71.
+
+Wróg dotrze do kanału Elbe w ciągu pół godziny. Waszym zadaniem jest zapobiec przekroczeniu kanału przez wroga.
+</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <English>East German forces breached the Iron Curtain and took Rosche. Panzerbrigade 2 reaches the action.</English>
+            <Polish>Siły Niemiec Wschodnich przełamały Żelazną Kurtynę i zajęły Rosche. Panzerbrigade 2 dociera na miejsce.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <English>You need to hold East Germans on the other side of the canal until more reinforcements are available. In case they break through, make sure to push them back as quickly as possible.</English>
+            <Polish>Musicie utrzymać Niemców Wschodnich po drugiej stronie kanału dopóki nie dotrą posiłki. Jeżeli uda im się przekroczyć kanał, wypchnijcie ich z powrotem tak szybko jak to możliwe.</Polish>
+        </Key>
+
+        <!-- TASKS -->
+
+        <!-- LAND -->
+        
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evac</English>
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+        <!-- WARGAY -->
+        <Key ID="STR_AFP_Scripts_DamageAlarmEnabled">
+            <English>Damage alarm</English>
+            <Polish>Alarm o uszkodzeniach</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DamageAlarmEnabled_Description">
+            <English>Audible alarm when your vehicle gets damaged.</English>
+            <Polish>Alarm dźwiękowy gdy Twój pojazd zostanie uszkodzony.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DamageReceived">
+            <English>Damage received</English>
+            <Polish>Otrzymano uszkodzenia</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentFailure">
+            <English>Failed deploying vehicle</English>
+            <Polish>Nie udało się rozmieścić pojazdu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentOfVehicle">
+            <English>%2 deployed new '%1' vehicle.</English>
+            <Polish>%2 rozmieścił nowy pojazd '%1'.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_DeploymentOfVehicleNoLongerPossible">
+            <English>Deployment of new '%1' vehicle is no longer possible.</English>
+            <Polish>Rozmieszczenie nowych pojazdów '%1' już nie jest możliwe.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelInterrupted">
+            <English>Refuel interrupted %1 percent</English>
+            <Polish>Tankowanie przerwane %1 procent</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelProgress">
+            <English>Refuel progress %1 percent</English>
+            <Polish>Postęp tankowania %1 procent</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RefuelFinished">
+            <English>Refuel finished</English>
+            <Polish>Tankowanie zakończone</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairFinished">
+            <English>Repair finished</English>
+            <Polish>Naprawa zakończona</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairProgress">
+            <English>Repair progress %1/%2 HP</English>
+            <Polish>Postęp naprawy %1/%2 PŻ</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RepairInterrupted">
+            <English>Repair interrupted %1/%2 HP</English>
+            <Polish>Naprawa przerwana %1/%2 PŻ</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RearmFinished">
+            <English>Rearm finished</English>
+            <Polish>Przezbrojenie zakończone</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_RearmInterrupted">
+            <English>Rearm interrupted</English>
+            <Polish>Przezbrojenie przerwane</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Settings_DisplayName">
+            <Polish>Mydlana Kampania Wargay</Polish>
+            <English>Mydlana Kampania Wargay</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Settings_DisplayNameClient">
+            <Polish>Mydlana Kampania Wargay - Klient</Polish>
+            <English>Mydlana Kampania Wargay - Client</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_ShowDamageFeedback">
+            <English>Show Damage Feedback</English>
+            <Polish>Informacja zwrotna o obrażeniach</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_ShowDamageFeedback_Description">
+            <English>Adds feedback message with dealt damage information - potential damage, armor hit and actual damage.</English>
+            <Polish>Dodaje informację zwrotną o zadanych obrażeniach - obrażenia potencjalne, trafiony pancerz i faktycznie zadane obrażenia.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIcons">
+            <English>Unit Icons</English>
+            <Polish>Znaczniki jednostek</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconsSize">
+            <English>Icon size multiplier</English>
+            <Polish>Mnożnik rozmiaru znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeDependsOnDistance">
+            <English>Icon size depending on distance</English>
+            <Polish>Rozmiar znaczników zależny od odległości</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeDependsOnDistance_Description">
+            <English>Enables autoscaling of icon size depending on the distance to the unit. The closer the unit is, the bigger the icon gets (up to 2x the standard size when it's 50 m or closer).</English>
+            <Polish>Włącza skalowanie rozmiaru znaczników w zależności od odległości do jednostki. Im bliżej jest jednostka, tym większy będzie jej znacznik (do 2x normalnego rozmiaru jeżeli jest w odległości do 50 m).</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeMultiplier">
+            <English>Icon size multiplier</English>
+            <Polish>Mnożnik rozmiaru znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconSizeMultiplier_Description">
+            <English>Allows adjusting size of icons shown above known units</English>
+            <Polish>Pozwala dostosować rozmiar znaczników wyświetlanych nad znanymi jednostkami</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconTextSizeMultiplier">
+            <English>Icon text size multiplier</English>
+            <Polish>Mnożnik rozmiaru tekstu znaczników</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitIconTextSizeMultiplier_Description">
+            <English>Allows adjusting size of text shown above targeted unit</English>
+            <Polish>Pozwala dostosować rozmiar tekstu wyświetlanego nad namierzoną jednostką</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_UnitLost">
+            <English>Lost %1 %2</English>
+            <Polish>Utracono %1 %2</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_VehicleInCombat">
+            <English>Action interrupted, vehicle is in combat.</English>
+            <Polish>Akcja przerwana, pojazd uczestniczy w walce.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_XpReceived">
+            <English>Received %1 XP. New total from last death: %2 XP. Grand total: %3 XP</English>
+            <Polish>Otrzymano %1 PD. Całkowite PD od ostatniej śmierci: %2. PD w kampanii: %3 XP</Polish>
+        </Key>
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
