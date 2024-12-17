@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <English>Operation Tartan 3 - Tartan From Above</English>
+            <Polish>Operacja Tartan 3 - Tartan z góry</Polish>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <English>Operation Tartan 3 - Tartan From Above</English>
+            <Polish>Operacja Tartan 3 - Tartan z góry</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English>After initial success and reaching villa, company was surprised by reinforcements from nearby FOB. Only BBC journalist made their way out of 30 minutes long firefight that ended existence of the task force. Highly armed airborne unit is approaching the area at the moment. Their task is to disable enemy air defence and introduce chaos behind enemy lines.</English>
+            <Polish>Po początkowym sukcesie i dotarciu do wilii kompania została zaskoczona przez wsparcie z pobliskiej bazy wroga. Z trwającej 30 minut jatki uratowali się tylko dziennikarze BBC. Na miejsce operacji dociera właśnie uzbrojona po zęby jednostka powietrznodesantowa z zadaniem unieszkodliwienia obrony przeciwlotniczej oraz wprowadzenia chaosu za liniami wroga.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <English>Highly armed airborne unit is approaching the area at the moment. Their task is to disable enemy air defence and introduce chaos behind enemy lines.</English>
+            <Polish>Na miejsce operacji dociera właśnie uzbrojona po zęby jednostka powietrznodesantowa z zadaniem unieszkodliwienia obrony przeciwlotniczej oraz wprowadzenia chaosu za liniami wroga.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <English>Southern Scotland, 2014
+
+British Armed Forces attempted to regain control over Mull of Kintyre peninsula. Reinforcements for remains of the morning landing managed to reach Southend on time and together they witheld Southend. Unfortunately, due to heavy artillery shelling, the town was leveled to the ground.
+
+Platoons formed new task force and were assigned task of securing villa 3 km west of Southend. Intelligence reported that it might be unvaluable source of new data that might help reveal enemy locations and plans.
+
+After initial success and reaching villa, company was surprised by reinforcements from nearby FOB. 30 minutes long firefight started, that only BBC journalists made their way out of, due to heroic cover by Royal Army Soldiers.
+
+Highly armed airborne unit is reaching the area now. Their task will be to neutralize enemy air defence and introduce chaose behind enemy lines.
+
+HMS Cup O'Tea will still provide fire support for the mission using artillery and cruise missiles.</English>
+            <Polish>Południowa Szkocja, 2014
+
+Siły zbrojne Wielkiej Brytanii podjęły próbę odzyskania kontroli nad półwyspem Mull of Kintyre. Wsparcie dla niedobitków z porannego desantu zdołało dotrzeć na czas i wspólnie utrzymali Southend. Miasteczko zostało jednak zrównane z ziemią przez ciągły ostrzał artyleryjski przeciwnika.
+
+Drużyny połączone w pluton otrzymały zadanie zabezpieczenia Willi 3 km na zachód od Southend. Wywiad doniósł, że znajduje się tam sporo materiałów, które pomogą nam zlokalizować siły nieprzyjaciela i poznać ich plany.
+
+Po początkowym sukcesie i dotarciu do wilii zostali zaskoczeni przez wsparcie z pobliskiego FOBa. Rozpoczęła się trwająca 30 minut jatka, z której uratowali się tylko dziennikarze BBC, których odwrót został bohatersko osłonięty przez żołnierzy Jej Królewskiej Mości.
+
+Na miejsce operacji dociera właśnie uzbrojona po zęby jednostka powietrznodesantowa z zadaniem unieszkodliwienia obrony przeciwlotniczej oraz wprowadzenia chaosu za liniami wroga.
+
+Wsparcie operacji wciąż będzie zapewniać niszczyciel HMS Cup O' Tea przy pomocy działa artyleryjskiego i rakiet manewrujących.</Polish>
+        </Key>
+
+        <!-- TASKS -->
+        <Key ID="STR_AFP_Scripts_Task_HackRadar_Title">
+            <English>Hack AA Radar</English>
+            <Polish>Shackuj radar przeciwlotniczy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_HackRadar_Description">
+            <English>We need to regain control over this AA Radar, we cannot destroy it. Go there, find a control panel and hack them for us. After that, we'll remotely make sure it's not possible to unhack it. After that you need to leave ASAP.</English>
+            <Polish>Musimy odzyskać kontrolę nad tym radarem przeciwlotniczym. Udajcie się tam, znajdźcie panel sterowania i shackujcie go. Po tym zabezpieczymy go zdalnie tak, żeby wróg nie mógł już odzyskać nad nim kontroli. Zaraz po przejęciu uciekajcie jak najszybciej.</Polish>
+        </Key>
+        
+        <!-- OLD TASKS -->
+        <Key ID="STR_AFP_Scripts_Task_Recon_Title">
+            <English>Recon</English>
+            <Polish>Rekonesans</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Recon_Description">
+            <English>You need to stay undetected and perform a recon of designated area, before main forces begin their landing. Don't let anyone see you. We don't know anything about the enemy and civilian population, every information you obtain is worth more than its weight in gold. If you don't survive, you will not be able to share gathered information and intel data (including screenshots) with HQ. You may choose to abort the mission and trigger the evacuation, to be able to share your information.</English>
+            <Polish>Musicie pozostać niewykryci i przeprowadzić rozpoznanie wyznaczonego obszaru, zanim główne siły rozpoczną desant. Nie dajcie się nikomu zobaczyć. Zarówno o przeciwniku jak i o ludności cywilnej nie wiemy kompletnie nic, każda informacja jest na wagę złota. Jeżeli nie przeżyjecie, nie będziecie mogli przekazać zdobytych informacji i materiałów wywiadowczych (w tym screenów!) dowództwu. W dowolnym momencie możecie przerwać zwiad i zdecydować się na ewakuację, żeby móc przekazać zdobyte do tego momentu materiały wywiadowcze.</Polish>
+        </Key>
+
+        <!-- SOUTHEND DEFENSE -->
+        <Key ID="STR_AFP_Scripts_Task_DefendSouthend_Title">
+            <English>Defend Southend</English>
+            <Polish>Broń Southend</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_DefendSouthend_Description">
+            <English>Enemy forces are commencing a counterattack on Southend. You need to hold the town at all cost. Losing Southend means failing the Operation.</English>
+            <Polish>Wróg zamierza przeprowadzić kontratak na Southend. Musicie utrzymać miasto za wszelką cenę. Utrata Southend będzie oznaczała klęskę.</Polish>
+        </Key>
+
+        <!-- FORTIFICATION -->
+        <Key ID="STR_AFP_Scripts_Task_OptionalBuildFortifications_Title">
+            <English>Optional: Build fortifications</English>
+            <Polish>Opcjonalne: Wybuduj umocnienia</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalBuildFortifications_Description">
+            <!-- <English></English> -->
+            <Polish>Jednostka logistyczna będzie mogła wybudować fortyfikacje, które pomogą bronić miasta. Należy dostarczyć skrzynie zaopatrzeniowe i amunicyjne w odpowiednie miejsca i rozpocząć budowę.
+
+UWAGA: Skrzynie amunicyjne dostarczcie po zbudowaniu głównych fortyfikacji!</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalBuildWestFortifications_Title">
+            <English>Western fortifications</English>
+            <Polish>Zachodnie umocnienia</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalBuildWestFortifications_Description">
+            <!-- <English></English> -->
+            <Polish>Te umocnienia pozwolą nam kontrolować północny wjazd do Southend. Plan umocnień jest gigantyczny, miejsca jest na kilka drużyn piechoty. Zapewnią one też dobrą osłonę przed pociskami artyleryjskimi.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalBuildHillFortifications_Title">
+            <English>Hill fortifications</English>
+            <Polish>Umocnienia na zboczu wzgórza</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalBuildHillFortifications_Description">
+            <!-- <English></English> -->
+            <Polish>Te stosunkowo małe umocnienia pozwolą nam kontrolować północny wjazd do Southend od boku, dając nam przewagę przeciwko wrogim jednostkom opancerzonym. Niestety będą one narażone na flankowanie od zachodu oraz na ogień artyleryjski.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalDeliverWeaponsWest_Title">
+            <English>Deliver weapons to western fortifications</English>
+            <Polish>Dostarcz broń do zachodnich umocnień</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalDeliverWeaponsWest_Description">
+            <!-- <English></English> -->
+            <Polish>Gdy umocnienia będą gotowe, możemy tam rozłożyć ciężką broń defensywną, od stacjonarnych KMów, przez wyrzutnie TOW aż po lekką haubicę kalibru 105 mm.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalDeliverWeaponsHill_Title">
+            <English>Deliver weapons to hill</English>
+            <Polish>Dostarcz broń na wzgórze</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_OptionalDeliverWeaponsHill_Description">
+            <!-- <English></English> -->
+            <Polish>Gdy umocnienia będą gotowe, możemy tam rozłożyć ciężką broń defensywną, od stacjonarnych KMów, przez wyrzutnie TOW aż po lekką haubicę kalibru 105 mm.</Polish>
+        </Key>
+
+
+        <!-- OLD -->
+
+        <!-- LANDING TASKS -->
+        <Key ID="STR_AFP_Scripts_Task_Landing_Title">
+            <English>Land</English>
+            <Polish>Desant</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Landing_Description">
+            <English>HQ selected Cove Point as our landing site. It will allow us to reach the beach quicker and will minimize the time spent at open water, reducing the risk of being spotted early.</English>
+            <Polish>HQ wybrało miejsce lądowania w pobliżu Cove Point. Pozwoli nam to szybko dopłynąć do brzegu i zminimalizuje szansę na wykrycie barek na wodzie.</Polish>
+        </Key>
+
+        <!-- SOUTHEND AREA -->
+        <Key ID="STR_AFP_Scripts_Task_SecureSouthendArea_Title">
+            <English>Secure Southend area</English>
+            <Polish>Zabezpiecz obszar Southend</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_SecureSouthendArea_Description">
+            <English>Southend area is the most important area of the southern part of the peninsula. Controlling the hill near Southend gives control over villa and the town, including any roads leading there from the north and east side. Your target is to secure the hill and eliminate any hostiles in camps, bases and fortifications in the neighbourhood.</English>
+            <Polish>Okolice Southend to najważniejszy obszar południowej części półwyspu. Kontrola nad wzgórzem przy Southend daje równocześnie całkowitą kontrolę nad okolicami willi oraz nad drogami dojazdowymi do willi i miasta od północy, i wschodu. Celem jest zabezpieczenie wzgórza oraz wyeliminowanie przeciwników w obozach, bazach i fortyfikacjach w jego pobliżu.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Southend_Title">
+            <English>Secure Southend</English>
+            <Polish>Zabezpiecz Southend</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Southend_Description">
+            <English>Recon team didn't mention any enemy forces inside the town. Securing it shouldn't be a problem then, but you need to be aware of a possible counterattack from the north.</English>
+            <Polish>Informacje dostarczone przez zwiadowców nie wspominają o obecności sił nieprzyjaciela w mieście. Zabezpieczenie miasta nie powinno więc być trudne, ale należy uważać na możliwy kontratak nieprzyjaciela z północy.</Polish>
+        </Key>
+
+        <!-- VILLA AREA -->
+        <Key ID="STR_AFP_Scripts_Task_SecureVillaArea_Title">
+            <English>Secure Villa area</English>
+            <Polish>Zabezpiecz obszar przy villi</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_SecureVillaArea_Description">
+            <English>This area contains villa, which is surrounded with hills and mountains. There are camps in northern and western hills, which we should be aware of. Some of them might be armed with MANPADS. The villa itself is surrounded with trees and walls, so it's hard to see what's inside. Don't forget about base which was spotted not far to the northeast from the villa.</English>
+            <Polish>W tym obszarze znajduje się willa, otoczona wzgórzami i górami. Znalezione zostały obozy w górach na zachodzie oraz na północy, trzeba na nie uważać, bo mogą mieć MANPADy. Willa jest otoczona drzewami i murami, więc trudno dostrzec co tam się znajduje. Nie zapominajcie o bazie dostrzeżonej niedaleko na północny wschód o willi.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Villa_Title">
+            <English>Secure Villa</English>
+            <Polish>Zabezpiecz villę</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Villa_Description">
+            <English>We need to secure the villa. Any intel should be secured. Any high ranked officers should be captured if possible.</English>
+            <Polish>Musimy zabezpieczyć willę. Znalezione laptopy, notatki itd. zabezpieczyć. Oficerów aresztować jeżeli będzie to możliwe.</Polish>
+        </Key>
+
+        <!-- ADDITIONAL TASKS -->
+        <Key ID="STR_AFP_Scripts_Task_Camp_Title">
+            <English>Destroy camp</English>
+            <Polish>Zniszcz obóz</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Camp_Description">
+            <English>Some camp, probably should be destroyed.</English>
+            <Polish>Jakiś obóz, trzeba by go zniszczyć.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Scripts_Task_RadioTowers_Title">
+            <English>Radio Towers</English>
+            <Polish>Wieże radiowe</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RadioTowers_Description">
+            <English>There are 2 radio towers in AO. Capturing at least one of them would allow us to intercept their communication. If we choose to destroy one, their communication will be disrupted.</English>
+            <Polish>W obszarze działań znajdują się przynajmniej 2 wieże radiowe. Zajęcie przynajmniej jednej z nich umożliwi nam podsłuchiwanie nieprzyjaciela. Zniszczenie utrudni nieprzyjacielowi komunikację.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RadioTower_Title">
+            <English>Radio Tower</English>
+            <Polish>Wieża radiowa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RadioTower_Description">
+            <English>Capturing the radio tower will allow us to intercept enemy communication in the area. Destroying the radio tower will distrupt enemy communication.</English>
+            <Polish>Zabezpieczenie wieży radiowej umożliwi podsłuchiwanie komunikacji nieprzyjaciela w obszarze. Zniszczenie jej utrudni nieprzyjacielowi komunikację.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Scripts_Task_SAMs_Title">
+            <English>SAM sites</English>
+            <Polish>Wyrzutnie przeciwlotnicze</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_SAMs_Description">
+            <English>Recon team discovered 2 SAM sites, marked on your map. There are only launchers, so they must be connected to some remote radar unit. We can destroy the launchers to allow our air assets to operate safely. Keep in mind that there might be more launchers which weren't spotted. We might also choose to find and capture/destroy the radar.</English>
+            <Polish>Drużyna zwiadowcza zlokalizowała 2 wyrzutnie przeciwlotnicze, zostały one oznaczone na mapie. W oznaczonych miejscach znajdują się tylko wyrzutnie, radar naprowadzający pociski jest gdzieś indziej. Możemy zniszczyć wyrzutnie, by nasze lotnictwo mogło bezpiecznie się poruszać w powietrzu. Musimy pamiętać, że zwiad mógł nie znaleźć wszystkich wyrzutni. Możemy też spróbować znaleźć i zniszczyć lub zająć radar.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_SAM_Title">
+            <English>S-300</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_SAM_Description">
+            <English>There is an AA launcher there, we need to destroy it.</English>
+            <Polish>Tu znajduje się wyrzutnia przeciwlotnicza, musimy ją zniszczyć.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RadarCapture_Title">
+            <English>Capture radar</English>
+            <Polish>Przejmij radar</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RadarCapture_Description">
+            <English>If we capture the radar, we'll be able to detect and track enemy aircraft in the area.</English>
+            <Polish>Jeżeli przejmiemy radar, będziemy mogli wykryć i śledzić wrogie lotnictwo w obszarze.</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RadarDestroy_Title">
+            <English>Destroy radar</English>
+            <Polish>Zniszcz radar</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_RadarDestroy_Description">
+            <English>We might destroy the radar so our aircraft can operate safely.</English>
+            <Polish>Możemy po prostu zniszczyć radar, żeby przeciwnik nie mógł zagrozić naszemu lotnictwu.</Polish>
+        </Key>
+
+        <!-- EVAC -->
+        <Key ID="STR_AFP_Scripts_Task_Evac_Title">
+            <English>Evacuation</English>
+            <Polish>Ewakuacja</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Task_Evac_Description">
+            <English>Return to base.</English>
+            <Polish>Powrót do bazy.</Polish>
+        </Key>
+
+
+        <!-- MARKERS -->
+        <Key ID="STR_AFP_Scripts_Marker_Villa">
+            <English>Villa</English>
+            <Polish>Willa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_RUAF">
+            <English>RUAF HQ</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_Radar_Base">
+            <English>Radar Base</English>
+            <Polish>Baza radarowa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_AA_Radar">
+            <English>Anti-Air Radar</English>
+            <Polish>Radar przeciwlotniczy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_SAM">
+            <English>SAM</English>
+            <Polish>SAM</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Marker_Camp">
+            <English>Camp</English>
+            <Polish>Obóz</Polish>
+        </Key>
+
+        <!-- COMMON -->
+        <Key ID="STR_AFP_Scripts_ParasBattalion">
+            <English>1st Paras Air Assault Battalion</English>
+            <Polish>1. Batalion Desantowo-Szturmowy Spadochroniarzy</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_SouthOfTheShore">
+            <English>Few miles south of the peninsula</English>
+            <Polish>Kilka mil na południe od półwyspu</Polish>
+        </Key>
+
+    </Package>
+</Project>
+
+<!--
+    Legacy stuff
+-->
+
+<Project name="ArmaForces">
+    <Package name="Preset">
+        <Key ID="STR_ArmaForces_Preset_DisplayName">
+            <English>ArmaForces - Preset</English>
+            <Polish>ArmaForces - Preset</Polish>
+        </Key>
+        <!-- COMMON -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_Close">
+            <Original>Close</Original>
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_GroupRename_Rename">
+            <Original>Rename</Original>
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_ArmaForces_Preset_Dialog_ViewDistance_Custom">
+            <Original>Custom</Original>
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>

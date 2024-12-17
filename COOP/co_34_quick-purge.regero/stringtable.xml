@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFP">
+    <Package name="Scripts">
+        <Key ID="STR_AFP_Scripts_DisplayName">
+            <Polish>Szybkie Przeczyszczenie</Polish>
+            <English>Quick Purge</English>
+        </Key>
+
+        <!-- MISSION -->
+        <Key ID="STR_AFP_Scripts_Mission_Title">
+            <Polish>Szybkie Przeczyszczenie</Polish>
+            <English>Quick Purge</English>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Description">
+            <English>US Army tasked to capture Very Important Dude attempts daring drop from C-17</English>
+            <Polish>US Army dokonuje brawurowego zrzutu z C-17 celem zatrzymania Bardzo Ważnego Gościa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
+            <English>US Army tasked to capture Very Important Dude attempts daring drop from C-17</English>
+            <Polish>US Army dokonuje brawurowego zrzutu z C-17 celem zatrzymania Bardzo Ważnego Gościa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_Mission_Briefing">
+            <English>Kingdom of Regero, 2019
+
+Local regime is a bunch of bad guys doing ugly business that needs to be taken care of. Command nominated 7 targets in the province that must be accomplished as fast as possible. Unfortunately we don't know where Dude actually is, so you'll need to do some digging on his whereabouts.
+
+Considering that there are no friendly forces nearby, we need to get creative. You'll drop from C-17 from low altitude using LAPES procedure, and proceed to secure nearby airfield. In the meantime, C-17s will go back for the remaining supplies that will be used to prepare FOB on the airfield.
+
+After arresting Dude, go back to planes and evacuate ASAP.
+            </English>
+            <Polish>Królestwo Regero, 2019
+
+Lokalny reżim to złe typy i robią zły biznes, któremu trzeba położyć kres. Dowództwo wytypowało 7 celów w prowincji, które muszą zostać wykonane jak najszybciej. Niestety nie wiemy gdzie znajduje się Bardzo Ważny Gościu, będziecie musieli poszukać informacji na jego temat.
+
+Ze względu na brak sojuszniczych sił w okolicy, musimy działać nieszablonowo. Dokonacie zrzutu z C-17 na niskiej wysokości, następnie zabezpieczycie pobliskie lotnisko. W międzyczasie C-17 wrócą po zaopatrzenie, które zostanie wykorzystane do przygotowania wysuniętej bazy.
+
+Po zabezpieczeniu Bardzo Ważnego Gościa natychmiast wrócicie do samolotów i odlecicie.</Polish>
+        </Key>
+
+        <Key ID="STR_AFP_Scripts_CurrentLocation">
+            <English>C-17 near Kingdom of Regero's coast</English>
+            <Polish>C-17 w pobliżu wybrzeża Królestwa Regero</Polish>
+        </Key>
+        <Key ID="STR_AFP_Scripts_USArmyInfantry">
+            <English>US Army Motorized Infantry Platoon</English>
+            <Polish>Zmotoryzowany pluton piechoty US Army</Polish>
+        </Key>
+    </Package>
+
+    <!-- TASKS -->
+    <Package name="Tasks">
+        <!-- Very Important Dude -->
+        <Key ID="STR_AFP_Tasks_Task_CaptureVeryImportantDude_Title">
+            <English>Arrest Very Important Dude</English>
+            <Polish>Aresztuj Bardzo Ważnego Gościa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_CaptureVeryImportantDude_Description">
+            <English>Very Important Dude is our main target. Unfortunately he's hiding very well and we cannot track him down. We're sure he's on the island though. During your tasks watch out for any clues on his whereabouts that might lead us to him. Arrest him on sight, target cannot be killed!</English>
+            <Polish>Bardzo Ważny Gościu jest naszym głównym celem. Niestety bardzo dobrze się ukrywa i nie jesteśmy w stanie określić jego pozycji. Wiemy tylko, że znajduje się gdzieś na wyspie. W trakcie działań bądźcie uważni na wszelkie wskazówki, które mogą nas do niego doprowadzić. W przypadku spotkania aresztować, cel nie może zginąć!</Polish>
+        </Key>
+
+        <!-- Drop Zone -->
+        <Key ID="STR_AFP_Tasks_Task_DropZone_Title">
+            <English>Low altitude drop</English>
+            <Polish>Zrzut z niskiej wysokości</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_DropZone_Description">
+            <English>Load 2 Strykers to each C-17 using red load action and fly to the drop zone in formation. Whole zone is actually split into 2 drop zones separated by small forest in the middle. If you don't manage to drop in the first zone, immediately try the second one. You have only one attempt before enemy figures out what's happening.</English>
+            <Polish>Załadujecie po 2 Strykery do każdego C-17 i w formacji udacie się nad strefę zrzutu od wschodu. Cała strefa to tak naprawdę 2 osobne strefy "rozdzielone" małym laskiem. Jeżeli nie uda się dokonać zrzutu w pierwszej strefie, od razu próbujcie w drugiej. Macie tylko jedno podejście zanim przeciwnik się połapie.</Polish>
+        </Key>
+
+        <!-- Airfield -->
+        <Key ID="STR_AFP_Tasks_Task_Airfield_Title">
+            <English>Capture airfield</English>
+            <Polish>Zajmij lądowisko</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_Airfield_Description">
+            <English>Airfield will be necessary to deliver remaining supplies necessary for the mission. Supplies will contain incendiary grenades AN-M14 and flashbangs among other equipment.</English>
+            <Polish>Lądowisko będzie Wam potrzebne, żeby reszta zaopatrzenia mogła dotrzeć. Po zajęciu lotniska będziecie mieli dostępne m.in. granaty zapalające AN-M14 oraz granaty hukowo-błyskowe.</Polish>
+        </Key>
+
+        <!-- Burn Weed -->
+        <Key ID="STR_AFP_Tasks_Task_BurnWeed_Title">
+            <English>Burn weed</English>
+            <Polish>Spal zioło</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_BurnWeed_Description">
+            <English>There are 8 fields in weed zone. Burn them using AN-M14 incendiary grenades. That will surely piss Very Important Dude off.</English>
+            <Polish>W strefie zioła znajduje się 8 pól z ziołem. Spalcie je przy użyciu granatów zapalających AN-M14. To na pewno rozjuszy Bardzo Ważnego Gościa.</Polish>
+        </Key>
+
+        <!-- Steal Radar Data -->
+        <Key ID="STR_AFP_Tasks_Task_StealRadarData_Title">
+            <English>Fetch data from radar</English>
+            <Polish>Pobierz dane z radaru</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_StealRadarData_Description">
+            <English>There's a radar base near the river. Its data might be crucial to finding where Very Important Dude is hiding.</English>
+            <Polish>W pobliżu rzeki znajduje się baza z radarem. Dane z niego mogą być kluczowe do znalezienia Bardzo Ważnego Gościa.</Polish>
+        </Key>
+
+        <!-- InterrogatePriest -->
+        <Key ID="STR_AFP_Tasks_Task_InterrogatePriest_Title">
+            <English>Interrogate priest</English>
+            <Polish>Przesłuchaj księdza</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_InterrogatePriest_Description">
+            <English>Local priest surely knows who goes to the church and who doesn't. He must have some information on Dude.</English>
+            <Polish>Lokalny ksiądz na pewno będzie wiedział kto chodzi a kto nie chodzi do kościoła. Musi mieć jakieś informacje o Gościu.</Polish>
+        </Key>
+
+        <!-- TankFactory -->
+        <Key ID="STR_AFP_Tasks_Task_TankFactory_Title">
+            <English>Beat up tank factory manager</English>
+            <Polish>Poturbuj kierownika fabryki czołgów</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_TankFactory_Description">
+            <English>Despite it's name, it doesn't produce tanks. Well, T-34-85M doesn't count these days. He's a good friend of Dude, so if we beat him, maybe he will go cry to Dude after waking up. Just don't kill him.</English>
+            <Polish>Pomimo swojej nazwy wcale nie produkuje czołgów. No chyba że ktoś liczy T-34-85M jako czołg. Kierownik jest dobrym ziomkiem Gościa, więc jest szansa, że jak się już obudzi to pójdzie mu popłakać.</Polish>
+        </Key>
+
+        <!-- TakistaniOfficer -->
+        <Key ID="STR_AFP_Tasks_Task_TakistaniOfficer_Title">
+            <English>Kill Takistani officer</English>
+            <Polish>Zabij Takistańskiego oficera</Polish>
+        </Key>
+        <Key ID="STR_AFP_Tasks_Task_TakistaniOfficer_Description">
+            <English>Get the commander of the checkpoint. Because why not, he must be guilty of something.</English>
+            <Polish>Dorwij dowódcę puntu kontrolnego. Ponieważ dlaczego nie, na pewno ma coś na sumieniu.</Polish>
+        </Key>
+    </Package>
+
+    <Package name="Markers">
+        <Key ID="STR_AFP_Markers_Airfield">
+            <English>Airfield</English>
+            <Polish>Lądowisko</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Drop_Zone">
+            <English>Drop Zone</English>
+            <Polish>Strefa Zrzutu</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_FOB">
+            <English>Forward Operating Base</English>
+            <Polish>Wysunięta Baza Operacyjna</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Heli_Base">
+            <English>Helicopter Base</English>
+            <Polish>Baza helikopterów</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Outpost">
+            <English>Enemy Outpost</English>
+            <Polish>Wrogi posterunek</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Radar_Base">
+            <English>Radar Base</English>
+            <Polish>Baza radarowa</Polish>
+        </Key>
+        <Key ID="STR_AFP_Markers_Weed_Zone">
+            <English>Weed Zone</English>
+            <Polish>Strefa Zioła</Polish>
+        </Key>
+    </Package>
+
+    <Package name="GUI">
+        <!-- COMMON -->
+        <Key ID="STR_AFP_GUI_Dialog_Close">
+            <English>Close</English>
+            <Polish>Zamknij</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_AFP_GUI_Dialog_GroupRename_Action">
+            <English>Rename groups</English>
+            <Polish>Zmień nazwy drużyn</Polish>
+        </Key>
+        <!-- GROUP RENAME -->
+        <Key ID="STR_AFP_GUI_Dialog_GroupRename_Rename">
+            <English>Rename</English>
+            <Polish>Zmień nazwę</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_AFP_GUI_Dialog_ViewDistance_Action">
+            <English>Set view distance</English>
+            <Polish>Ustaw odległość widzenia</Polish>
+        </Key>
+        <!-- VIEW DISTANCE -->
+        <Key ID="STR_AFP_GUI_Dialog_ViewDistance_Custom">
+            <English>Custom</English>
+            <Polish>Ustaw własną</Polish>
+        </Key>
+    </Package>
+</Project>
