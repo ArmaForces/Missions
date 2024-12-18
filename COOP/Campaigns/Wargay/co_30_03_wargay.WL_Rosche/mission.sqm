@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2041;
+		nextID=2078;
 	};
 	class MarkerIDProvider
 	{
@@ -24,479 +24,24 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4500.0859,36.575191,9947.4355};
-		dir[]={0.58516151,-0.57870471,-0.56814623};
-		up[]={0.41520917,0.81552041,-0.4031345};
-		aside[]={-0.69663036,-5.3789699e-07,-0.71749842};
+		pos[]={7410.6943,107.66912,10174.674};
+		dir[]={0.31161705,-0.48403215,0.81768954};
+		up[]={0.17237037,0.87504911,0.45230305};
+		aside[]={0.93444794,-1.4919351e-08,-0.35611367};
 	};
 };
 binarizationWanted=0;
 sourceName="co_30_03_wargay";
 addons[]=
-{
-	"gm_vehicles_land_tracked_2s1_gc_army_2s1",
-	"gm_vehicles_land_wheeled_ural375d_gc_army_ural375d",
-	"gm_vehicles_land_wheeled_kat1_ge_army_kat1",
-	"gm_vehicles_land_tracked_m109_ge_army_m109",
-	"gm_vehicles_land_tracked_leopard1_ge_army_leopard1",
-	"gm_vehicles_land_tracked_bpz2_ge_army_bpz2",
-	"gm_vehicles_land_tracked_gepard_ge_army_gepard",
-	"gm_vehicles_land_tracked_m113_ge_army_m113",
-	"gm_vehicles_land_wheeled_luchs_ge_army_luchs",
-	"gm_vehicles_land_wheeled_fuchs_ge_army_fuchs",
-	"amx10rc",
-	"cwr3_vehicle_m60a3",
-	"gm_vehicles_land_wheeled_iltis_ge_army_iltis",
-	"cwr3_vehicle_ah1f",
-	"amx30",
-	"cwr3_vehicle_hmmwv",
-	"cwr3_vehicle_m113",
-	"gm_vehicles_land_tracked_marder_ge_army_marder1",
-	"mephisto",
-	"A3_Soft_F_Exp_Truck_01",
-	"A3_Characters_F",
-	"gm_weapons_machinepistols_gm_mp2",
-	"gm_weapons_equipment_binoculars_ferod16",
-	"A3_Weapons_F",
-	"gm_weapons_items_ge_items",
-	"acre_main",
-	"gm_characters_ge_characters",
-	"ace_compat_gm",
-	"A3_Weapons_F_Items",
-	"acre_sys_prc152",
-	"ace_maptools",
-	"ace_flashlights",
-	"ace_realisticnames",
-	"gm_weapons_throw",
-	"ace_grenades",
-	"gm_weapons_pistols_p1",
-	"A3_Structures_F_Bootcamp_VR_Helpers",
-	"A3_Modules_F_Curator_Curator",
-	"A3_Structures_F_Mil_Helipads",
-	"A3_Ui_F",
-	"gm_characters_gc_characters",
-	"gm_vehicles_land_tracked_t55_gc_army_t55",
-	"gm_vehicles_land_tracked_bmp1_gc_army_bmp1",
-	"gm_vehicles_land_tracked_pt76_gc_army_pt76",
-	"gm_vehicles_land_wheeled_btr60_gc_army_btr60",
-	"gm_vehicles_land_wheeled_ural4320_gc_army_ural4320",
-	"gm_vehicles_land_wheeled_uaz469_gc_army_uaz469",
-	"afm_map",
-	"gm_core",
-	"A3_Structures_F_Wrecks",
-	"A3_Structures_F_Argo_Military_Fortifications",
-	"A3_Props_F_Exp_Commercial_Market",
-	"A3_Structures_F_Mil_Fortification",
-	"ace_logistics_wirecutter",
-	"ace_concertina_wire",
-	"A3_Structures_F_Enoch_Wrecks",
-	"gm_characters_pl_characters",
-	"lambs_wp",
-	"gm_vehicles_land_tracked_bmp1_pl_army_bmp1",
-	"gm_vehicles_land_tracked_2s1_pl_army_2s1"
-};
+{};
 class AddonsMetaData
-{
-	class List
-	{
-		items=56;
-		class Item0
-		{
-			className="gm_vehicles_land_tracked_2s1_gc_army_2s1";
-			name="gm_vehicles_land_tracked_2s1_gc_army_2s1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item1
-		{
-			className="gm_vehicles_land_wheeled_ural375d_gc_army_ural375d";
-			name="gm_vehicles_land_wheeled_ural375d_gc_army_ural375d";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item2
-		{
-			className="gm_vehicles_land_wheeled_kat1_ge_army_kat1";
-			name="gm_vehicles_land_wheeled_kat1_ge_army_kat1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item3
-		{
-			className="gm_vehicles_land_tracked_m109_ge_army_m109";
-			name="gm_vehicles_land_tracked_m109_ge_army_m109";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item4
-		{
-			className="gm_vehicles_land_tracked_leopard1_ge_army_leopard1";
-			name="gm_vehicles_land_tracked_leopard1_ge_army_leopard1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item5
-		{
-			className="gm_vehicles_land_tracked_bpz2_ge_army_bpz2";
-			name="gm_vehicles_land_tracked_bpz2_ge_army_bpz2";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item6
-		{
-			className="gm_vehicles_land_tracked_gepard_ge_army_gepard";
-			name="gm_vehicles_land_tracked_gepard_ge_army_gepard";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item7
-		{
-			className="gm_vehicles_land_tracked_m113_ge_army_m113";
-			name="gm_vehicles_land_tracked_m113_ge_army_m113";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item8
-		{
-			className="gm_vehicles_land_wheeled_luchs_ge_army_luchs";
-			name="gm_vehicles_land_wheeled_luchs_ge_army_luchs";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item9
-		{
-			className="gm_vehicles_land_wheeled_fuchs_ge_army_fuchs";
-			name="gm_vehicles_land_wheeled_fuchs_ge_army_fuchs";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item10
-		{
-			className="A3_Armor_F_Tank";
-			name="Arma 3 Tank - Armored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item11
-		{
-			className="cwr3_vehicle_m60a3";
-			name="cwr3_vehicle_m60a3";
-			author="CWR III Modification";
-			url="http://cwr3.arma2.fr";
-		};
-		class Item12
-		{
-			className="gm_vehicles_land_wheeled_iltis_ge_army_iltis";
-			name="gm_vehicles_land_wheeled_iltis_ge_army_iltis";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item13
-		{
-			className="cwr3_vehicle_ah1f";
-			name="cwr3_vehicle_ah1f";
-			author="CWR III Modification";
-			url="http://cwr3.arma2.fr";
-		};
-		class Item14
-		{
-			className="A3_Armor_F_Gamma";
-			name="Arma 3 - Armored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item15
-		{
-			className="cwr3_vehicle_hmmwv";
-			name="cwr3_vehicle_hmmwv";
-			author="CWR III Modification";
-			url="http://cwr3.arma2.fr";
-		};
-		class Item16
-		{
-			className="cwr3_vehicle_m113";
-			name="cwr3_vehicle_m113";
-			author="CWR III Modification";
-			url="http://cwr3.arma2.fr";
-		};
-		class Item17
-		{
-			className="gm_vehicles_land_tracked_marder_ge_army_marder1";
-			name="gm_vehicles_land_tracked_marder_ge_army_marder1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item18
-		{
-			className="A3_Soft_F_Exp";
-			name="Arma 3 Apex - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item19
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item20
-		{
-			className="gm_weapons_machinepistols_gm_mp2";
-			name="gm_weapons_machinepistols_gm_mp2";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item21
-		{
-			className="gm_weapons_equipment_binoculars_ferod16";
-			name="gm_weapons_equipment_binoculars_ferod16";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item22
-		{
-			className="A3_Weapons_F";
-			name="Arma 3 Alpha - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item23
-		{
-			className="gm_weapons_items_ge_items";
-			name="gm_weapons_items_ge_items";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item24
-		{
-			className="acre_main";
-			name="ACRE2 - Main";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item25
-		{
-			className="gm_characters_ge_characters";
-			name="gm_characters_ge_characters";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item26
-		{
-			className="ace_compat_gm";
-			name="ACE3 - GM Compatibility";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item27
-		{
-			className="acre_sys_prc152";
-			name="ACRE2 - AN/PRC-152";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item28
-		{
-			className="ace_maptools";
-			name="ACE3 - Map Tools";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item29
-		{
-			className="ace_flashlights";
-			name="ACE3 - Flashlights";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item30
-		{
-			className="gm_weapons_throw";
-			name="gm_weapons_throw";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item31
-		{
-			className="ace_grenades";
-			name="ACE3 - Grenades";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item32
-		{
-			className="gm_weapons_pistols_p1";
-			name="gm_weapons_pistols_p1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item33
-		{
-			className="A3_Structures_F_Bootcamp";
-			name="Arma 3 Bootcamp Update - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item34
-		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item35
-		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item36
-		{
-			className="A3_Ui_F";
-			name="Arma 3 - User Interface";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item37
-		{
-			className="gm_characters_gc_characters";
-			name="gm_characters_gc_characters";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item38
-		{
-			className="gm_vehicles_land_tracked_t55_gc_army_t55";
-			name="gm_vehicles_land_tracked_t55_gc_army_t55";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item39
-		{
-			className="gm_vehicles_land_tracked_bmp1_gc_army_bmp1";
-			name="gm_vehicles_land_tracked_bmp1_gc_army_bmp1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item40
-		{
-			className="gm_vehicles_land_tracked_pt76_gc_army_pt76";
-			name="gm_vehicles_land_tracked_pt76_gc_army_pt76";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item41
-		{
-			className="gm_vehicles_land_wheeled_btr60_gc_army_btr60";
-			name="gm_vehicles_land_wheeled_btr60_gc_army_btr60";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item42
-		{
-			className="gm_vehicles_land_wheeled_ural4320_gc_army_ural4320";
-			name="gm_vehicles_land_wheeled_ural4320_gc_army_ural4320";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item43
-		{
-			className="gm_vehicles_land_wheeled_uaz469_gc_army_uaz469";
-			name="gm_vehicles_land_wheeled_uaz469_gc_army_uaz469";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item44
-		{
-			className="afm_map";
-			name="AFM - map";
-			author="ArmaForces";
-		};
-		class Item45
-		{
-			className="gm_core";
-			name="gm_core";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item46
-		{
-			className="A3_Structures_F_Wrecks";
-			name="Arma 3 - Vehicle Wrecks";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item47
-		{
-			className="A3_Structures_F_Argo";
-			name="Arma 3 Malden - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item48
-		{
-			className="A3_Props_F_Exp";
-			name="Arma 3 Apex - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item49
-		{
-			className="ace_logistics_wirecutter";
-			name="ACE3 - Logistics Wire Cutter";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item50
-		{
-			className="ace_concertina_wire";
-			name="ACE3 - Concertina Wire";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item51
-		{
-			className="A3_Structures_F_Enoch";
-			name="Arma 3 Contact Platform - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item52
-		{
-			className="gm_characters_pl_characters";
-			name="gm_characters_pl_characters";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item53
-		{
-			className="lambs_wp";
-			name="LAMBS Danger WP";
-			author="LAMBS Danger Dev Team";
-		};
-		class Item54
-		{
-			className="gm_vehicles_land_tracked_bmp1_pl_army_bmp1";
-			name="gm_vehicles_land_tracked_bmp1_pl_army_bmp1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item55
-		{
-			className="gm_vehicles_land_tracked_2s1_pl_army_2s1";
-			name="gm_vehicles_land_tracked_2s1_pl_army_2s1";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-	};
-};
+{};
 dlcs[]=
 {
 	"gm",
 	"cwr3_dlc",
 	"Expansion",
+	"CUP_Weapons",
 	"Argo",
 	"Enoch"
 };
@@ -552,7 +97,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=107;
+		items=119;
 		class Item0
 		{
 			dataType="Object";
@@ -7583,21 +7128,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -7626,16 +7167,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -7645,7 +7186,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -7672,8 +7213,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1024;
@@ -7728,21 +7268,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -7771,16 +7307,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -7790,7 +7326,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -7817,8 +7353,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1025;
@@ -7902,21 +7437,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -7945,16 +7476,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -7964,7 +7495,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -7991,8 +7522,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1027;
@@ -8047,21 +7577,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -8090,16 +7616,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -8109,7 +7635,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -8136,8 +7662,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1028;
@@ -8222,21 +7747,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -8265,16 +7786,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -8284,7 +7805,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -8311,8 +7832,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1030;
@@ -8367,21 +7887,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -8410,16 +7926,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -8429,7 +7945,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -8456,8 +7972,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1031;
@@ -10298,21 +9813,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -10341,16 +9852,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -10360,7 +9871,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -10387,8 +9898,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1332;
@@ -10442,21 +9952,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -10485,16 +9991,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -10504,7 +10010,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -10531,8 +10037,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1333;
@@ -10587,21 +10092,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -10630,16 +10131,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -10649,7 +10150,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -10676,8 +10177,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1334;
@@ -10763,21 +10263,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -10806,16 +10302,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -10825,7 +10321,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -10852,8 +10348,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1336;
@@ -10907,21 +10402,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -10950,16 +10441,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -10969,7 +10460,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -10996,8 +10487,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1337;
@@ -11052,21 +10542,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -11095,16 +10581,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -11114,7 +10600,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -11141,8 +10627,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=1338;
@@ -11237,21 +10722,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -11280,16 +10761,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -11299,7 +10780,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -11326,8 +10807,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2031;
@@ -11382,21 +10862,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -11425,16 +10901,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -11444,7 +10920,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -11471,8 +10947,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2032;
@@ -11558,21 +11033,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -11601,16 +11072,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -11620,7 +11091,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -11647,8 +11118,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2034;
@@ -11702,21 +11172,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -11745,16 +11211,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -11764,7 +11230,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -11791,8 +11257,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2035;
@@ -11848,21 +11313,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -11891,16 +11352,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -11910,7 +11371,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -11937,8 +11398,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2036;
@@ -12024,21 +11484,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -12067,16 +11523,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -12086,7 +11542,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -12113,8 +11569,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2038;
@@ -12169,21 +11624,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -12212,16 +11663,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -12231,7 +11682,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -12258,8 +11709,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2039;
@@ -12315,21 +11765,17 @@ class Mission
 								{
 									class primaryWeapon
 									{
-										name="gm_mp2a1_blk";
-										firemode="gm_mp2a1_blk:SemiAuto";
+										name="cwr3_arifle_xm177e2";
+										firemode="cwr3_arifle_xm177e2:Single";
 										class primaryMuzzleMag
 										{
-											name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-											ammoLeft=32;
+											name="CUP_30Rnd_556x45_Stanag";
+											ammoLeft=30;
 										};
-									};
-									class binocular
-									{
-										name="gm_ferod16_oli";
 									};
 									class uniform
 									{
-										typeName="gm_ge_army_uniform_crew_80_oli";
+										typeName="cwr3_b_uniform_tanksuit";
 										isBackpack=0;
 										class ItemCargo
 										{
@@ -12358,16 +11804,16 @@ class Mission
 									};
 									class vest
 									{
-										typeName="gm_ge_army_vest_80_crew";
+										typeName="cwr3_b_vest_pasgt_alice_od_crew";
 										isBackpack=0;
 										class MagazineCargo
 										{
 											items=6;
 											class Item0
 											{
-												name="gm_32Rnd_9x19mm_B_DM11_mp2_blk";
-												count=4;
-												ammoLeft=32;
+												name="CUP_30Rnd_556x45_Stanag";
+												count=3;
+												ammoLeft=30;
 											};
 											class Item1
 											{
@@ -12377,7 +11823,7 @@ class Mission
 											};
 											class Item2
 											{
-												name="gm_handgrenade_frag_dm51a1";
+												name="CUP_HandGrenade_M67";
 												count=2;
 												ammoLeft=1;
 											};
@@ -12404,8 +11850,7 @@ class Mission
 									map="ItemMap";
 									compass="gm_ge_army_conat2";
 									watch="ItemWatch";
-									radio="ItemRadio";
-									headgear="gm_ge_headgear_crewhat_80_blk";
+									headgear="cwr3_b_headgear_cvc";
 								};
 							};
 							id=2040;
@@ -22036,6 +21481,882 @@ class Mission
 			flags=1;
 			id=2020;
 			type="lambs_wp_TaskArtilleryRegister";
+		};
+		class Item107
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=9;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7753.1548,19.594532,8974.8398};
+						angles[]={0.015998369,5.1806493,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2043;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7753.1548,22.750984,8974.9365};
+						angles[]={0.015998369,5.1806493,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2044;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7753.1548,22.750984,8974.9365};
+						angles[]={0.015998369,5.1806493,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=2045;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7749.417,19.488064,8986.6436};
+						angles[]={0.014664836,5.2823424,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2048;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=3.8146973e-06;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7749.417,22.64566,8986.6895};
+						angles[]={0.014664836,5.2823424,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2049;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=3.8146973e-06;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7749.417,22.64566,8986.6895};
+						angles[]={0.014664836,5.2823424,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2050;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=3.8146973e-06;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7745.1191,19.588943,8974.9082};
+						angles[]={0.029324362,5.1506042,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2052;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7745.1191,22.745523,8975.001};
+						angles[]={0.029324362,5.1506042,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2053;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7745.1191,22.745523,8975.001};
+						angles[]={0.029324362,5.1506042,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2054;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=9;
+				};
+				class Links
+				{
+					items=9;
+					class Item0
+					{
+						linkID=0;
+						item0=2043;
+						item1=2042;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2044;
+						item1=2042;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=2045;
+						item1=2042;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=2048;
+						item1=2047;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item4
+					{
+						linkID=4;
+						item0=2049;
+						item1=2047;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item5
+					{
+						linkID=5;
+						item0=2050;
+						item1=2047;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item6
+					{
+						linkID=6;
+						item0=2052;
+						item1=2051;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item7
+					{
+						linkID=7;
+						item0=2053;
+						item1=2051;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item8
+					{
+						linkID=8;
+						item0=2054;
+						item1=2051;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+				};
+			};
+			id=2041;
+		};
+		class Item108
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7736.3984,22.631413,8987.2861};
+				angles[]={0.015998369,5.1806493,0};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=2042;
+			type="gm_gc_army_t55ak";
+		};
+		class Item109
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7749.417,22.644222,8986.6396};
+				angles[]={0.014664836,5.2823424,0};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2047;
+			type="gm_gc_army_t55a";
+			atlOffset=3.8146973e-06;
+		};
+		class Item110
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7739.3291,22.677216,8977.2295};
+				angles[]={0.029324362,5.1506042,0};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2051;
+			type="gm_gc_army_t55a";
+		};
+		class Item111
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=9;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7814.4531,15.756201,10454.594};
+						angles[]={-0,5.1806493,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2056;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7814.4531,18.912651,10454.69};
+						angles[]={-0,5.1806493,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2057;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7814.4531,18.912651,10454.69};
+						angles[]={-0,5.1806493,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=2058;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7810.7153,15.649733,10466.397};
+						angles[]={-0,5.2823424,6.2818937};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2059;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=2.8610229e-06;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7810.7153,18.807327,10466.443};
+						angles[]={-0,5.2823424,6.2818937};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2060;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=2.8610229e-06;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7810.7153,18.807327,10466.443};
+						angles[]={-0,5.2823424,6.2818937};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2061;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=2.8610229e-06;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7806.4175,15.750612,10454.662};
+						angles[]={6.2738566,5.1506042,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2062;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7806.4175,18.907192,10454.755};
+						angles[]={6.2738566,5.1506042,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2063;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7806.4175,18.907192,10454.755};
+						angles[]={6.2738566,5.1506042,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2064;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=9;
+				};
+				class Links
+				{
+					items=9;
+					class Item0
+					{
+						linkID=0;
+						item0=2056;
+						item1=2065;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2057;
+						item1=2065;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=2058;
+						item1=2065;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=2059;
+						item1=2066;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item4
+					{
+						linkID=4;
+						item0=2060;
+						item1=2066;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item5
+					{
+						linkID=5;
+						item0=2061;
+						item1=2066;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item6
+					{
+						linkID=6;
+						item0=2062;
+						item1=2067;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item7
+					{
+						linkID=7;
+						item0=2063;
+						item1=2067;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item8
+					{
+						linkID=8;
+						item0=2064;
+						item1=2067;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+				};
+			};
+			id=2055;
+		};
+		class Item112
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7792.79,18.847799,10474.372};
+				angles[]={-0,5.1806493,0};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=2065;
+			type="gm_gc_army_t55ak";
+		};
+		class Item113
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7805.8086,18.840094,10473.726};
+				angles[]={-0,5.2823424,6.2818937};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2066;
+			type="gm_gc_army_t55a";
+			atlOffset=2.8610229e-06;
+		};
+		class Item114
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7795.7207,18.794121,10464.315};
+				angles[]={6.2738566,5.1506042,0};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2067;
+			type="gm_gc_army_t55a";
+		};
+		class Item115
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7632.7319,14.971439,10369.236};
+						angles[]={-0,5.3595357,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2070;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7632.7319,17.921219,10369.236};
+						angles[]={-0,5.3595357,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2071;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7632.7319,17.921219,10369.236};
+						angles[]={-0,5.3595357,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=2072;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=3;
+				};
+				class Links
+				{
+					items=3;
+					class Item0
+					{
+						linkID=0;
+						item0=2070;
+						item1=2069;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2071;
+						item1=2069;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=2072;
+						item1=2069;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+				};
+			};
+			id=2068;
+		};
+		class Item116
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7632.7319,17.919781,10369.187};
+				angles[]={-0,5.3595357,0};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=2069;
+			type="gm_gc_army_zsu234v1";
+		};
+		class Item117
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7367.4805,17.091885,9242.6836};
+						angles[]={0.018667053,0,0.019999012};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2075;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=-7.6293945e-06;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7367.4214,20.040562,9242.7383};
+						angles[]={0.018667053,0,0.020001993};
+					};
+					side="East";
+					class Attributes
+					{
+					};
+					id=2076;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=0.48288536;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7367.4214,20.040562,9242.7383};
+						angles[]={0.018667053,0,0.020001993};
+					};
+					side="East";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=2077;
+					type="gm_gc_army_crew_mpiaks74nk_80_blk";
+					atlOffset=0.48288536;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=3;
+				};
+				class Links
+				{
+					items=3;
+					class Item0
+					{
+						linkID=0;
+						item0=2075;
+						item1=2074;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2076;
+						item1=2074;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=2077;
+						item1=2074;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+				};
+			};
+			id=2073;
+			atlOffset=-7.6293945e-06;
+		};
+		class Item118
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7367.4214,20.039124,9242.6885};
+				angles[]={0.018667053,0,0.019999012};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=2074;
+			type="gm_gc_army_zsu234v1";
+			atlOffset=-7.6293945e-06;
 		};
 	};
 	class Connections
