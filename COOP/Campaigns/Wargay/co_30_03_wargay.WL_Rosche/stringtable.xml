@@ -2,46 +2,36 @@
 <Project name="AFP">
     <Package name="Scripts">
         <Key ID="STR_AFP_Scripts_DisplayName">
-            <Polish>Żelazna Kurtyna - Kontratak</Polish>
-            <English>Iron Curtain - Counterattack</English>
+            <Polish>Żelazna Kurtyna - Rolująca Stal</Polish>
+            <English>Iron Curtain - Rolling Steel</English>
         </Key>
 
         <!-- MISSION -->
         <Key ID="STR_AFP_Scripts_Mission_Title">
-            <Polish>Kontratak</Polish>
-            <English>Counterattack</English>
+            <Polish>Rolująca Stal</Polish>
+            <English>Rolling Steel</English>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Description">
             <Polish>Rosche, 21 Lipca 1979
 
-Panzerjägerabteilung 3 zdołał przebić się do resztek Panzerbrigade 2 i wyciągnąć ich z okrążenia. Wykorzystując zaskoczenie przeciwnika wspólnie przypuścili kontratak drogą 493 w kierunku Ratzlingen.
-                
-Kilka elementów odłączyło się i przypuściło samotny rajd na tyły Ratzlingen by zaskoczyć wroga. Żaden z nich nie wrócił.
-                
-Kontratak Panzerausbildungsregiment 23 został ostatecznie powstrzymany na wysokości Gross Liedern.
-                
-Zachodnioniemieckie oddziały Jägerów z Jägerabteilung 142 zabezpieczyły wioski Tatern, Klein Liedern oraz Gross Liedern. Reszta sił przegrupowuje się na lotnisku.
-                
-4 godziny po poprzednich wydarzeniach.
-                
-Jednostki NATO oraz Paktu Warszawskiego, dotychczasowo biernie obserwujące przebieg walk, dołączają się do wojny.
-                
-Panzerbrigade 2 otrzymuje uzupełnienie najnowszym sprzętem a także wsparcie 4. Batalionu Pancernego USA.
+Szybki kontratak wyprowadzony przez siły aliantów zaskoczył komunistów. W ciągu godziny udało się zająć trzy spore miejscowości na północnej flance drogi 493 oraz odciąć Mot.-Schützenregiment 11 znajdujący się przy kanale.
+
+W międzyczasie dotarła francuska jednostka szybkiego reagowania. Siły alianckie stają przed trudnym wyborem - wykończyć okrążonego przeciwnika czy wykorzystać lukę i przeć dalej na wschód.
 </Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_ShortDescription">
-            <!-- <English>Elements of Panzerbrigade 2 are encircled in Hansted. Panzerjägerabteilung 3 moves for the rescue.</English> -->
-            <Polish>Elementy Panzerbrigade 2 ruszają z kontratakiem przy pomocy Amerykanów</Polish>
+            <English>Allies take the initiative on Oetzen direction.</English>
+            <Polish>Alianci przejmują inicjatywę na kierunku Oetzen.</Polish>
         </Key>
         <Key ID="STR_AFP_Scripts_Mission_Briefing">
-            <!-- <English>Save the Panzerbrigade 2 and commence a counterattack together.</English> -->
-            <Polish>Elementy Panzerbrigade 2 ruszają z kontratakiem przy pomocy Amerykanów.</Polish>
+            <English>Allies take the initiative on Oetzen direction.</English>
+            <Polish>Alianci przejmują inicjatywę na kierunku Oetzen.</Polish>
         </Key>
 
         <!-- TASKS -->
 
         <!-- LAND -->
-        
+
 
         <!-- EVAC -->
         <Key ID="STR_AFP_Scripts_Task_Evac_Title">
@@ -58,7 +48,7 @@ Panzerbrigade 2 otrzymuje uzupełnienie najnowszym sprzętem a także wsparcie 4
             <English>Bridge</English>
             <Polish>Most</Polish>
         </Key>
-        <Key ID="@STR_AFP_Scripts_BridgeBlocked">
+        <Key ID="STR_AFP_Scripts_BridgeBlocked">
             <English>Blocked bridge</English>
             <Polish>Zablokowany most</Polish>
         </Key>
